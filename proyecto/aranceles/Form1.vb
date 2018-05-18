@@ -1,7 +1,7 @@
 ﻿Public Class Form1
     Public id As Integer
 
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Consulta = "select * from aranceles"
         consultar()
         DataGridView1.DataSource = Tabla
@@ -30,5 +30,9 @@
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Form3.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Form1_Load_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
