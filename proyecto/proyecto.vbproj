@@ -88,6 +88,12 @@
     <Compile Include="aranceles\Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="aranceles\Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aranceles\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="pacientes\Crear_Cita.Designer.vb">
       <DependentUpon>Crear_Cita.vb</DependentUpon>
     </Compile>

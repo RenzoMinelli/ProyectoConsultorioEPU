@@ -7,10 +7,6 @@
         DataGridView1.DataSource = Tabla
     End Sub
 
-    Private Sub agregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Botton1.Click
-        Me.Hide()
-        Form2.Show()
-    End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
@@ -34,5 +30,10 @@
 
     Private Sub Form1_Load_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Hide()
+        Form2.Show()
     End Sub
 End Class
