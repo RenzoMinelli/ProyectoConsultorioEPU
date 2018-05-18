@@ -31,11 +31,8 @@ Partial Class Form2
 <<<<<<< HEAD:proyecto/aranceles/Form2.Designer.vb
         Me.Text = "Form2"
 =======
-        Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Name = "Form4"
-        Me.Text = "Form4"
-        Me.ResumeLayout(False)
+       
 
->>>>>>> b2987b6d8e3966b9756d92f2bdd3f2c1a354112e:proyecto/aranceles/Form4.Designer.vb
+
     End Sub
 End Class
