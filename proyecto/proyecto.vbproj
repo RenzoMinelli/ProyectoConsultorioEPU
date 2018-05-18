@@ -76,10 +76,16 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="aranceles\Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="aranceles\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
-    <Compile Include="aranceles\Form4.vb">
+    <Compile Include="aranceles\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aranceles\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aranceles\Form2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="pacientes\Crear_Cita.Designer.vb">
@@ -125,6 +131,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="aranceles\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pacientes\Crear_Cita.resx">
       <DependentUpon>Crear_Cita.vb</DependentUpon>
     </EmbeddedResource>
