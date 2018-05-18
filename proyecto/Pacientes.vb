@@ -120,6 +120,10 @@
     End Sub
 
     Private Sub Label17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label17.Click
-        'megutaelnepe
+
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        Form4.Show()
     End Sub
 End Class
