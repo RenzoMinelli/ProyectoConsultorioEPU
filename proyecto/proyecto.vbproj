@@ -82,29 +82,29 @@
     <Compile Include="aranceles\Form4.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Crear_Cita.Designer.vb">
+    <Compile Include="pacientes\Crear_Cita.Designer.vb">
       <DependentUpon>Crear_Cita.vb</DependentUpon>
     </Compile>
-    <Compile Include="Crear_Cita.vb">
+    <Compile Include="pacientes\Crear_Cita.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modificar_Paciente.Designer.vb">
+    <Compile Include="pacientes\Modificar_Paciente.Designer.vb">
       <DependentUpon>Modificar_Paciente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Modificar_Paciente.vb">
+    <Compile Include="pacientes\Modificar_Paciente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pacientes.vb">
+    <Compile Include="pacientes\Pacientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pacientes.Designer.vb">
+    <Compile Include="pacientes\Pacientes.Designer.vb">
       <DependentUpon>Pacientes.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Agregar_Paciente.Designer.vb">
+    <Compile Include="pacientes\Agregar_Paciente.Designer.vb">
       <DependentUpon>Agregar_Paciente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Agregar_Paciente.vb">
+    <Compile Include="pacientes\Agregar_Paciente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -125,16 +125,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Crear_Cita.resx">
+    <EmbeddedResource Include="pacientes\Crear_Cita.resx">
       <DependentUpon>Crear_Cita.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modificar_Paciente.resx">
+    <EmbeddedResource Include="pacientes\Modificar_Paciente.resx">
       <DependentUpon>Modificar_Paciente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pacientes.resx">
+    <EmbeddedResource Include="pacientes\Pacientes.resx">
       <DependentUpon>Pacientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Agregar_Paciente.resx">
+    <EmbeddedResource Include="pacientes\Agregar_Paciente.resx">
       <DependentUpon>Agregar_Paciente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
