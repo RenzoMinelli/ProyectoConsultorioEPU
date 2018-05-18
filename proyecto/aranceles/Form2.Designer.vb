@@ -22,8 +22,20 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.SuspendLayout()
+        '
+        'Form4
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD:proyecto/aranceles/Form2.Designer.vb
         Me.Text = "Form2"
+=======
+        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Name = "Form4"
+        Me.Text = "Form4"
+        Me.ResumeLayout(False)
+
+>>>>>>> b2987b6d8e3966b9756d92f2bdd3f2c1a354112e:proyecto/aranceles/Form4.Designer.vb
     End Sub
 End Class
