@@ -31,17 +31,17 @@ Module Module1
         End Try
 
     End Sub
-    Public Sub veriCon()
-        Try
-            conex = True
-            Consulta = "select * from paciente"
-            Conexion = New MySqlDataAdapter(Consulta, ubicacion)
-            Conexion.Fill(Tabla)
-        Catch ex As Exception
+    'Public Sub veriCon()
+    'Try
+    ' conex = True
+    ' Consulta = "select * from paciente"
+    ' Conexion = New MySqlDataAdapter(Consulta, ubicacion)
+    'Conexion.Fill(Tabla)
+    'Catch ex As Exception
 
-            conex = False
+    ''conex = False
 
-        End Try
+    ' End Try
 
-    End Sub
+    'End Sub
 End Module

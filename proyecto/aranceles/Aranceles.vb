@@ -51,12 +51,12 @@
         Label3.Text = Date.Now.ToLongTimeString
     End Sub
     Private Sub verificarCon()
-        veriCon()
-        If conex = True Then
-            Panel7.BackColor = Color.Green
-        Else
-            Panel7.BackColor = Color.Red
-        End If
+        ' veriCon()
+        'If conex = True Then
+        'Panel7.BackColor = Color.Green
+        '' Else
+        'Panel7.BackColor = Color.Red
+        'End If
     End Sub
 
     Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click

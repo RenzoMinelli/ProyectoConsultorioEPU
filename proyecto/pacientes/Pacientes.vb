@@ -9,15 +9,15 @@
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Size = New System.Drawing.Size(704, 440)
 
-        veriCon()
-        If conex = True Then
-            Panel9.BackColor = Color.Green
-            actTabla()
-        Else
-            Panel9.BackColor = Color.Red
-        End If
+        '  veriCon()
+        ' If conex = True Then
+        'Panel9.BackColor = Color.Green
+        '' actTabla()
+        ' Else
+        ' Panel9.BackColor = Color.Red
+        ' End If
 
-        Label20.ForeColor = Color.Gold
+        ' Label20.ForeColor = Color.Gold
     End Sub
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
