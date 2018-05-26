@@ -41,4 +41,7 @@
         Me.Hide()
         Agregar_Paciente.Show()
     End Sub
+
+    
+
 End Class
