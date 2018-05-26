@@ -5,6 +5,7 @@
         Consulta = "select * from aranceles"
         consultar()
         DataGridView1.DataSource = Tabla
+        DataGridView1.ClearSelection()
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Consulta = " delete from aranceles where id_a = " + Str(id) + ""

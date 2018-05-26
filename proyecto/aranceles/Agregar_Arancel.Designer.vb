@@ -100,7 +100,7 @@ Partial Class Agregar_Arancel
         Me.Button2.Text = "atras"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Form2
+        'Agregar_Arancel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -113,7 +113,8 @@ Partial Class Agregar_Arancel
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form2"
+        Me.Name = "Agregar_Arancel"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         Me.ResumeLayout(False)
         Me.PerformLayout()

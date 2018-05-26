@@ -80,6 +80,7 @@ Partial Class Crear_Cita
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MonthCalendar1)
         Me.Name = "Crear_Cita"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
