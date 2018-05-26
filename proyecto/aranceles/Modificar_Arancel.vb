@@ -1,10 +1,10 @@
 ﻿Public Class Modificar_Arancel
     Dim id As Integer = Aranceles.id
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Consulta = "update aranceles set descripcion = '" + TextBox1.Text + "' and costo = '" + TextBox2.Text + "' and ref = '" + ComboBox1.SelectedItem + "' where id_a = " + Str(id) + ";"
+        Consulta = "update aranceles set descripcion = '" + TextBox1.Text + "', costo = '" + TextBox2.Text + "', ref = '" + ComboBox1.SelectedItem + "' where id_a = " + Str(id) + ";"
         consultar()
-        Me.Dispose()
         Aranceles.Show()
+        Me.Dispose()
     End Sub
 
     Private Sub Form3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
