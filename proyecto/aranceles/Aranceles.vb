@@ -3,14 +3,7 @@
 
     Private Sub Aranceles_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
         Me.Size = New System.Drawing.Size(704, 440)
-
-        veriCon()
-        If conex = True Then
-            Panel7.BackColor = Color.Green
-        Else
-            Panel7.BackColor = Color.Red
-        End If
-
+        verificarCon()
         Consulta = "select * from aranceles"
         consultar()
         DataGridView1.DataSource = Tabla
@@ -57,10 +50,14 @@
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Label3.Text = Date.Now.ToLongTimeString
     End Sub
-
-
-
-
+    Private Sub verificarCon()
+        veriCon()
+        If conex = True Then
+            Panel7.BackColor = Color.Green
+        Else
+            Panel7.BackColor = Color.Red
+        End If
+    End Sub
 
     Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
         Me.WindowState = FormWindowState.Minimized
