@@ -123,7 +123,7 @@
 
     End Sub
 
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
@@ -133,6 +133,7 @@
 
     Private Sub Label19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label19.Click
         Aranceles.Show()
-        Me.Hide()
+        Me.Dispose()
     End Sub
+
 End Class

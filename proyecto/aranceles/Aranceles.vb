@@ -35,8 +35,8 @@
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-        Me.Hide()
         Pacientes.Show()
+        Me.Hide()
     End Sub
 
 
@@ -49,5 +49,6 @@
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Label3.Text = Date.Now.ToLongTimeString
     End Sub
+
 
 End Class
