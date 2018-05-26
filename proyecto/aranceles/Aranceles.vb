@@ -2,12 +2,14 @@
     Public id As Integer
 
     Private Sub Aranceles_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
+        Me.Size = New System.Drawing.Size(704, 440)
         Consulta = "select * from aranceles"
         consultar()
         DataGridView1.DataSource = Tabla
         DataGridView1.ClearSelection()
         Button2.Hide()
         Button3.Hide()
+        Label2.ForeColor = Color.Gold
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Consulta = " delete from aranceles where id_a = " + Str(id) + ""
