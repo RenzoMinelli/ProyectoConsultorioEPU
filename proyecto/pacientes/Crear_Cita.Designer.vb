@@ -47,14 +47,14 @@ Partial Class Crear_Cita
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(432, 104)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(312, 72)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(403, 296)
+        Me.Label1.Location = New System.Drawing.Point(233, 276)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(36, 13)
         Me.Label1.TabIndex = 1
@@ -62,25 +62,25 @@ Partial Class Crear_Cita
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(475, 289)
+        Me.TextBox1.Location = New System.Drawing.Point(333, 276)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(186, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(269, 20)
         Me.TextBox1.TabIndex = 2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(333, 337)
+        Me.Button1.Location = New System.Drawing.Point(236, 348)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(150, 62)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Crear"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(577, 358)
+        Me.Button2.Location = New System.Drawing.Point(485, 348)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(154, 62)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True

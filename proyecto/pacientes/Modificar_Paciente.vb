@@ -89,6 +89,7 @@
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Size = New System.Drawing.Size(850, 500)
         TextBox1.Text = nombre
         TextBox2.Text = cedula
         TextBox3.Text = enviado

@@ -7,6 +7,7 @@
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Size = New System.Drawing.Size(850, 500)
         actTabla()
     End Sub
 

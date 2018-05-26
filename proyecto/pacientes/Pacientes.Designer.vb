@@ -317,7 +317,7 @@ Partial Class Pacientes
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Location = New System.Drawing.Point(0, -3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(843, 39)
+        Me.Panel3.Size = New System.Drawing.Size(858, 39)
         Me.Panel3.TabIndex = 12
         '
         'Panel4
@@ -423,7 +423,7 @@ Partial Class Pacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(833, 504)
+        Me.ClientSize = New System.Drawing.Size(852, 504)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Button4)

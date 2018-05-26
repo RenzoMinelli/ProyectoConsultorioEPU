@@ -58,6 +58,7 @@
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Size = New System.Drawing.Size(850, 500)
         Dim nac As String = MonthCalendar1.SelectionRange.Start
         Label7.Text = "Fecha seleccionada " + nac
     End Sub
