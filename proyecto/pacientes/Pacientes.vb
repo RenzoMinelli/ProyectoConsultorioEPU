@@ -1,8 +1,5 @@
 ﻿Public Class Pacientes
 
-
-
-
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Hide()
         Agregar_Paciente.Show()
@@ -96,7 +93,7 @@
         Label9.Text = direTra
         Label10.Text = saldo
 
-        
+
     End Sub
 
     Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
@@ -128,7 +125,7 @@
     End Sub
 
     Private Sub Label20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label20.Click
-       
+
     End Sub
 
     Private Sub Label19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label19.Click
