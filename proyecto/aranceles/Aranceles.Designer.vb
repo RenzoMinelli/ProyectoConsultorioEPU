@@ -171,6 +171,7 @@ Partial Class Aranceles
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.money_bag
         Me.PictureBox1.Location = New System.Drawing.Point(27, 120)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(27, 32)
@@ -188,6 +189,7 @@ Partial Class Aranceles
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.users_21945
         Me.PictureBox2.Location = New System.Drawing.Point(27, 82)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(27, 32)
