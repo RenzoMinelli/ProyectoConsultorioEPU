@@ -8,7 +8,7 @@ Module Module1
     Public Tabla As DataTable
     Public Consulta As String
 
-    Public conex As Boolean = False
+    Public conex As Boolean
     Public nombre As String
     Public cedula As String
     Public direccion As String
@@ -34,15 +34,15 @@ Module Module1
     End Sub
     Public Sub veriCon()
         Try
+            conex = True
             Consulta = "select * from paciente"
             Conexion = New MySqlDataAdapter(Consulta, ubicacion)
-            conex = True
 
         Catch ex As Exception
 
             conex = False
 
         End Try
-
+        MsgBox(Str(conex))
     End Sub
 End Module
