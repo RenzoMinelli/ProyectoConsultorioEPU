@@ -1,14 +1,11 @@
 ﻿Public Class Aranceles
     Public id As Integer
 
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub Aranceles_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
         Consulta = "select * from aranceles"
         consultar()
         DataGridView1.DataSource = Tabla
-
     End Sub
-
-
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Consulta = " delete from aranceles where id_a = " + Str(id) + ""
         consultar()
