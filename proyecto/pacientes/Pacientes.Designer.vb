@@ -22,6 +22,7 @@ Partial Class Pacientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -57,6 +58,7 @@ Partial Class Pacientes
         Me.Label20 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -94,10 +96,10 @@ Partial Class Pacientes
         '
         Me.Label1.AutoSize = True
         Me.Label1.Enabled = False
-        Me.Label1.Font = New System.Drawing.Font("Arial Unicode MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(-1, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(153, 39)
+        Me.Label1.Size = New System.Drawing.Size(152, 33)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Pacientes"
         '
@@ -413,6 +415,10 @@ Partial Class Pacientes
         Me.Panel8.Size = New System.Drawing.Size(10, 32)
         Me.Panel8.TabIndex = 6
         '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        '
         'Pacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -479,5 +485,6 @@ Partial Class Pacientes
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
