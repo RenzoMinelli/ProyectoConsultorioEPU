@@ -10,7 +10,6 @@
 
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-
         Consulta = " delete from aranceles where id_a = " + Str(id) + ""
         consultar()
         Consulta = "select * from aranceles"
@@ -53,4 +52,5 @@
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Label3.Text = Date.Now.ToLongTimeString
     End Sub
+
 End Class

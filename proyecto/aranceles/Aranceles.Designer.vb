@@ -39,18 +39,25 @@ Partial Class Aranceles
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label21 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToResizeColumns = False
+        Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(180, 31)
+        Me.DataGridView1.Location = New System.Drawing.Point(180, 54)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(512, 334)
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView1.Size = New System.Drawing.Size(512, 311)
         Me.DataGridView1.TabIndex = 0
         '
         'Button1
@@ -92,9 +99,9 @@ Partial Class Aranceles
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Location = New System.Drawing.Point(-4, 1)
+        Me.Panel1.Location = New System.Drawing.Point(-4, 34)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(146, 441)
+        Me.Panel1.Size = New System.Drawing.Size(146, 408)
         Me.Panel1.TabIndex = 4
         '
         'Panel6
@@ -178,16 +185,28 @@ Partial Class Aranceles
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Gold
-        Me.Panel2.Location = New System.Drawing.Point(-7, 1)
+        Me.Panel2.Controls.Add(Me.Label21)
+        Me.Panel2.Location = New System.Drawing.Point(-7, -10)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(714, 24)
+        Me.Panel2.Size = New System.Drawing.Size(714, 46)
         Me.Panel2.TabIndex = 5
         '
         'Timer1
         '
         Me.Timer1.Enabled = True
         '
-        'Form1
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Enabled = False
+        Me.Label21.Font = New System.Drawing.Font("Arial Unicode MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(6, 7)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(155, 39)
+        Me.Label21.TabIndex = 4
+        Me.Label21.Text = "Aranceles"
+        '
+        'Aranceles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -199,13 +218,15 @@ Partial Class Aranceles
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
+        Me.Name = "Aranceles"
         Me.Text = "Form1"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -225,4 +246,5 @@ Partial Class Aranceles
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Label21 As System.Windows.Forms.Label
 End Class
