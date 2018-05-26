@@ -16,7 +16,6 @@
             If TextBox1.Text <> nombre Then
                 ver = 1
                 nombre = TextBox1.Text
-
             End If
             If TextBox2.Text <> cedula Then
                 ver2 = 1
@@ -39,41 +38,45 @@
             End If
 
             nac = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
+            Try
+                If ver = 1 Then
+                    Consulta = "UPDATE paciente SET nombre = '" + nombre + "' WHERE id_p = " + Str(id_p) + ";"
+                    consultar()
+                End If
+                If ver2 = 1 Then
+                    Consulta = "UPDATE paciente SET cedula = '" + cedula + "' WHERE id_p = " + Str(id_p) + ";"
+                    consultar()
+                End If
+                If ver3 = 1 Then
+                    Consulta = "UPDATE paciente SET enviado_por = '" + enviado + "' WHERE id_p = " + Str(id_p) + ";"
+                    consultar()
+                End If
+                If ver4 = 1 Then
+                    Consulta = "UPDATE paciente SET direccion_particular = '" + direccion + "' WHERE id_p = " + Str(id_p) + ";"
+                    consultar()
+                End If
+                If ver5 = 1 Then
+                    Consulta = "UPDATE paciente SET direccion_trabajo = '" + direTra + "' WHERE id_p = " + Str(id_p) + ";"
+                    consultar()
+                End If
+                If ver6 = 1 Then
+                    Consulta = "UPDATE paciente SET fecha_nacimiento = '" + nac + "' WHERE id_p = " + Str(id_p) + ";"
+                    consultar()
+                End If
 
+                MsgBox("Guardado con Exito")
 
-            If ver = 1 Then
-                Consulta = "UPDATE paciente SET nombre = '" + nombre + "' WHERE id_p = " + Str(id_p) + ";"
-                consultar()
-            End If
-            If ver2 = 1 Then
-                Consulta = "UPDATE paciente SET cedula = '" + cedula + "' WHERE id_p = " + Str(id_p) + ";"
-                consultar()
-            End If
-            If ver3 = 1 Then
-                Consulta = "UPDATE paciente SET enviado_por = '" + enviado + "' WHERE id_p = " + Str(id_p) + ";"
-                consultar()
-            End If
-            If ver4 = 1 Then
-                Consulta = "UPDATE paciente SET direccion_particular = '" + direccion + "' WHERE id_p = " + Str(id_p) + ";"
-                consultar()
-            End If
-            If ver5 = 1 Then
-                Consulta = "UPDATE paciente SET direccion_trabajo = '" + direTra + "' WHERE id_p = " + Str(id_p) + ";"
-                consultar()
-            End If
-            If ver6 = 1 Then
-                Consulta = "UPDATE paciente SET fecha_nacimiento = '" + nac + "' WHERE id_p = " + Str(id_p) + ";"
-                consultar()
-            End If
+                Pacientes.Show()
+                Pacientes.actTabla()
+                Pacientes.actPanel()
+                Me.Dispose()
 
+            Catch ex As Exception
 
+                MsgBox("Error")
 
-
-            MsgBox("Guardado con Exito")
-            Pacientes.Show()
-            Pacientes.actTabla()
-            Pacientes.actPanel()
-            Me.Dispose()
+            End Try
+            
         Else
 
             MsgBox("Complete los campos necesarios")
