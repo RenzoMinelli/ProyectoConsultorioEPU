@@ -70,9 +70,9 @@ Partial Class Pacientes
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(169, 436)
+        Me.Button1.Location = New System.Drawing.Point(202, 382)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(117, 56)
+        Me.Button1.Size = New System.Drawing.Size(107, 46)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Ingresar Nuevo Paciente"
         Me.Button1.UseVisualStyleBackColor = True
@@ -89,7 +89,7 @@ Partial Class Pacientes
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(340, 214)
+        Me.DataGridView1.Size = New System.Drawing.Size(188, 143)
         Me.DataGridView1.TabIndex = 1
         '
         'Label1
@@ -121,7 +121,7 @@ Partial Class Pacientes
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Location = New System.Drawing.Point(531, 44)
+        Me.Panel1.Location = New System.Drawing.Point(387, 42)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(290, 322)
         Me.Panel1.TabIndex = 3
@@ -276,16 +276,16 @@ Partial Class Pacientes
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ControlDark
         Me.Panel2.Controls.Add(Me.Label17)
-        Me.Panel2.Location = New System.Drawing.Point(531, 44)
+        Me.Panel2.Location = New System.Drawing.Point(387, 42)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(290, 322)
         Me.Panel2.TabIndex = 6
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(497, 436)
+        Me.Button2.Location = New System.Drawing.Point(489, 382)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(151, 56)
+        Me.Button2.Size = New System.Drawing.Size(97, 32)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "Modificar Datos"
         Me.Button2.UseVisualStyleBackColor = True
@@ -293,9 +293,9 @@ Partial Class Pacientes
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(670, 436)
+        Me.Button3.Location = New System.Drawing.Point(593, 382)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(151, 56)
+        Me.Button3.Size = New System.Drawing.Size(101, 30)
         Me.Button3.TabIndex = 8
         Me.Button3.Text = "Eliminar"
         Me.Button3.UseVisualStyleBackColor = True
@@ -303,9 +303,9 @@ Partial Class Pacientes
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(321, 436)
+        Me.Button4.Location = New System.Drawing.Point(346, 382)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(152, 56)
+        Me.Button4.Size = New System.Drawing.Size(115, 32)
         Me.Button4.TabIndex = 9
         Me.Button4.Text = "Registrar Cita"
         Me.Button4.UseVisualStyleBackColor = True
@@ -317,7 +317,7 @@ Partial Class Pacientes
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Location = New System.Drawing.Point(0, -3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(858, 39)
+        Me.Panel3.Size = New System.Drawing.Size(715, 39)
         Me.Panel3.TabIndex = 12
         '
         'Panel4
@@ -423,7 +423,7 @@ Partial Class Pacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(852, 504)
+        Me.ClientSize = New System.Drawing.Size(704, 440)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Button4)
