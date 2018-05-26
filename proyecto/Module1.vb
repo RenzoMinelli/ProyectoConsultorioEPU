@@ -23,11 +23,10 @@ Module Module1
 
             Conexion = New MySqlDataAdapter(Consulta, ubicacion)
             Tabla = New DataTable
-            Conexion.Fill(Tabla)
 
         Catch ex As MySqlException
 
-            'MsgBox(ex.ToString)
+            MsgBox(ex.ToString)
 
         End Try
 
@@ -37,12 +36,12 @@ Module Module1
             conex = True
             Consulta = "select * from paciente"
             Conexion = New MySqlDataAdapter(Consulta, ubicacion)
-
+            Conexion.Fill(Tabla)
         Catch ex As Exception
 
             conex = False
 
         End Try
-        ' MsgBox(Str(conex))
+
     End Sub
 End Module
