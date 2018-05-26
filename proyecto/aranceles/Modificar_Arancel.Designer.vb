@@ -109,7 +109,7 @@ Partial Class Modificar_Arancel
         Me.Button2.Text = "Atras"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Form3
+        'Modificar_Arancel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -123,7 +123,8 @@ Partial Class Modificar_Arancel
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "Form3"
+        Me.Name = "Modificar_Arancel"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
