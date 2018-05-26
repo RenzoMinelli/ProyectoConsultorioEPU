@@ -5,6 +5,12 @@
         consultar()
         Aranceles.Show()
         Me.Dispose()
+
+        Consulta = "select * from aranceles"
+        consultar()
+        Aranceles.DataGridView1.DataSource = Tabla
+        Me.Dispose()
+        Aranceles.Show()
     End Sub
 
     Private Sub Form3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
