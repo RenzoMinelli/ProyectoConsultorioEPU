@@ -15,6 +15,7 @@
         Aranceles.DataGridView1.DataSource = Tabla
         Me.Dispose()
         Aranceles.Show()
+        Label5.ForeColor = Color.Gold
     End Sub
 
 
@@ -24,6 +25,19 @@
 
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Me.Hide()
+        Aranceles.Show()
+    End Sub
+
+    Private Sub Label21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label21.Click
+
+    End Sub
+
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        Label4.Text = Date.Now.ToLongTimeString
+    End Sub
+
+    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
         Me.Hide()
         Aranceles.Show()
     End Sub
