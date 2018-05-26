@@ -38,6 +38,9 @@ Partial Class Modificar_Paciente
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -171,11 +174,32 @@ Partial Class Modificar_Paciente
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 16
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Gold
+        Me.Panel3.Controls.Add(Me.Label8)
+        Me.Panel3.Location = New System.Drawing.Point(-2, -3)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(857, 43)
+        Me.Panel3.TabIndex = 17
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Enabled = False
+        Me.Label8.Font = New System.Drawing.Font("Arial Unicode MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(-1, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(153, 39)
+        Me.Label8.TabIndex = 2
+        Me.Label8.Text = "Pacientes"
+        '
         'Modificar_Paciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(849, 456)
+        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.MonthCalendar1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button3)
@@ -192,9 +216,12 @@ Partial Class Modificar_Paciente
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Modificar_Paciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -215,4 +242,6 @@ Partial Class Modificar_Paciente
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class
