@@ -189,7 +189,7 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cancel_exit_cross_close.png" />
+    <Content Include="Resources\cancel_exit_cross_close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

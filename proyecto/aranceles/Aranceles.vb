@@ -3,6 +3,14 @@
 
     Private Sub Aranceles_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
         Me.Size = New System.Drawing.Size(704, 440)
+
+        veriCon()
+        If conex = True Then
+            Panel7.BackColor = Color.Green
+        Else
+            Panel7.BackColor = Color.Red
+        End If
+
         Consulta = "select * from aranceles"
         consultar()
         DataGridView1.DataSource = Tabla
