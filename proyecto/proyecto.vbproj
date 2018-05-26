@@ -189,6 +189,10 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\edit-file.png" />
+    <None Include="Resources\índice%281%29.png" />
+    <None Include="Resources\56238.png" />
     <Content Include="Resources\cancel_exit_cross_close.png" />
     <None Include="Resources\índice.png" />
     <None Include="Resources\minimize-window.png" />
