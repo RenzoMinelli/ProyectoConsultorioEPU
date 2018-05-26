@@ -40,12 +40,25 @@ Partial Class Agregar_Paciente
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(158, 78)
+        Me.TextBox1.Location = New System.Drawing.Point(322, 88)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(220, 20)
         Me.TextBox1.TabIndex = 0
@@ -53,7 +66,7 @@ Partial Class Agregar_Paciente
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(27, 78)
+        Me.Label1.Location = New System.Drawing.Point(191, 88)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 13)
         Me.Label1.TabIndex = 1
@@ -62,7 +75,7 @@ Partial Class Agregar_Paciente
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(30, 122)
+        Me.Label2.Location = New System.Drawing.Point(194, 132)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(40, 13)
         Me.Label2.TabIndex = 2
@@ -70,7 +83,7 @@ Partial Class Agregar_Paciente
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(158, 122)
+        Me.TextBox2.Location = New System.Drawing.Point(322, 132)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(220, 20)
         Me.TextBox2.TabIndex = 3
@@ -78,7 +91,7 @@ Partial Class Agregar_Paciente
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(572, 88)
+        Me.Label3.Location = New System.Drawing.Point(660, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(93, 13)
         Me.Label3.TabIndex = 4
@@ -87,7 +100,7 @@ Partial Class Agregar_Paciente
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 168)
+        Me.Label4.Location = New System.Drawing.Point(176, 178)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(132, 13)
         Me.Label4.TabIndex = 6
@@ -95,7 +108,7 @@ Partial Class Agregar_Paciente
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(158, 165)
+        Me.TextBox3.Location = New System.Drawing.Point(322, 175)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(220, 20)
         Me.TextBox3.TabIndex = 7
@@ -103,7 +116,7 @@ Partial Class Agregar_Paciente
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(30, 214)
+        Me.Label5.Location = New System.Drawing.Point(194, 224)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(96, 13)
         Me.Label5.TabIndex = 8
@@ -111,7 +124,7 @@ Partial Class Agregar_Paciente
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(158, 214)
+        Me.TextBox4.Location = New System.Drawing.Point(322, 224)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(220, 20)
         Me.TextBox4.TabIndex = 9
@@ -119,7 +132,7 @@ Partial Class Agregar_Paciente
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(23, 252)
+        Me.Label6.Location = New System.Drawing.Point(187, 262)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(123, 13)
         Me.Label6.TabIndex = 10
@@ -127,14 +140,14 @@ Partial Class Agregar_Paciente
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(158, 252)
+        Me.TextBox5.Location = New System.Drawing.Point(322, 262)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(220, 20)
         Me.TextBox5.TabIndex = 11
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(125, 376)
+        Me.Button1.Location = New System.Drawing.Point(289, 386)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(136, 39)
         Me.Button1.TabIndex = 12
@@ -143,7 +156,7 @@ Partial Class Agregar_Paciente
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(526, 370)
+        Me.Button2.Location = New System.Drawing.Point(614, 370)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(137, 50)
         Me.Button2.TabIndex = 13
@@ -152,7 +165,7 @@ Partial Class Agregar_Paciente
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(33, 310)
+        Me.Button3.Location = New System.Drawing.Point(197, 320)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(345, 23)
         Me.Button3.TabIndex = 14
@@ -162,7 +175,7 @@ Partial Class Agregar_Paciente
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(498, 297)
+        Me.Label7.Location = New System.Drawing.Point(586, 297)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(106, 13)
         Me.Label7.TabIndex = 15
@@ -170,7 +183,7 @@ Partial Class Agregar_Paciente
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(482, 110)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(570, 110)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 16
         '
@@ -194,6 +207,101 @@ Partial Class Agregar_Paciente
         Me.Label8.TabIndex = 3
         Me.Label8.Text = "Pacientes"
         '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.Panel6)
+        Me.Panel4.Controls.Add(Me.Panel5)
+        Me.Panel4.Controls.Add(Me.Label18)
+        Me.Panel4.Controls.Add(Me.Label19)
+        Me.Panel4.Controls.Add(Me.Panel7)
+        Me.Panel4.Controls.Add(Me.PictureBox1)
+        Me.Panel4.Controls.Add(Me.Label20)
+        Me.Panel4.Controls.Add(Me.PictureBox2)
+        Me.Panel4.Controls.Add(Me.Panel8)
+        Me.Panel4.Location = New System.Drawing.Point(-5, 43)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(166, 482)
+        Me.Panel4.TabIndex = 18
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.Gold
+        Me.Panel6.Location = New System.Drawing.Point(0, 193)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(10, 30)
+        Me.Panel6.TabIndex = 8
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Gold
+        Me.Panel5.Location = New System.Drawing.Point(0, 158)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(10, 29)
+        Me.Panel5.TabIndex = 7
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label18.Location = New System.Drawing.Point(3, 30)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(49, 13)
+        Me.Label18.TabIndex = 9
+        Me.Label18.Text = "00:00:00"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(60, 129)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(54, 13)
+        Me.Label19.TabIndex = 9
+        Me.Label19.Text = "Aranceles"
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.Gold
+        Me.Panel7.Location = New System.Drawing.Point(0, 120)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(10, 32)
+        Me.Panel7.TabIndex = 7
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
+        Me.PictureBox1.Location = New System.Drawing.Point(27, 120)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(60, 88)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(54, 13)
+        Me.Label20.TabIndex = 9
+        Me.Label20.Text = "Pacientes"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources._25437
+        Me.PictureBox2.Location = New System.Drawing.Point(27, 82)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox2.TabIndex = 9
+        Me.PictureBox2.TabStop = False
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.Gold
+        Me.Panel8.Location = New System.Drawing.Point(0, 82)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(10, 32)
+        Me.Panel8.TabIndex = 6
+        '
         'Agregar_Paciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -216,12 +324,17 @@ Partial Class Agregar_Paciente
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Panel4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Agregar_Paciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -244,4 +357,14 @@ Partial Class Agregar_Paciente
     Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents Panel6 As System.Windows.Forms.Panel
+    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Panel7 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel8 As System.Windows.Forms.Panel
 End Class
