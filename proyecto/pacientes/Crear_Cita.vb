@@ -1,6 +1,7 @@
 ﻿Public Class Crear_Cita
 
-    Private Sub Panel3_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
-
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Pacientes.Show()
+        Me.Dispose()
     End Sub
 End Class

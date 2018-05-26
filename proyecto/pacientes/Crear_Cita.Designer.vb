@@ -90,7 +90,7 @@ Partial Class Crear_Cita
         Me.Label8.AutoSize = True
         Me.Label8.Enabled = False
         Me.Label8.Font = New System.Drawing.Font("Arial Unicode MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(11, 9)
+        Me.Label8.Location = New System.Drawing.Point(11, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(153, 39)
         Me.Label8.TabIndex = 2
@@ -102,7 +102,7 @@ Partial Class Crear_Cita
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Location = New System.Drawing.Point(1, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(757, 52)
+        Me.Panel1.Size = New System.Drawing.Size(757, 45)
         Me.Panel1.TabIndex = 5
         '
         'Panel4
@@ -117,9 +117,9 @@ Partial Class Crear_Cita
         Me.Panel4.Controls.Add(Me.Label20)
         Me.Panel4.Controls.Add(Me.PictureBox2)
         Me.Panel4.Controls.Add(Me.Panel8)
-        Me.Panel4.Location = New System.Drawing.Point(1, 51)
+        Me.Panel4.Location = New System.Drawing.Point(1, 42)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(160, 388)
+        Me.Panel4.Size = New System.Drawing.Size(160, 397)
         Me.Panel4.TabIndex = 12
         '
         'Panel6

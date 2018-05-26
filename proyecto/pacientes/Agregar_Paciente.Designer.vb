@@ -149,14 +149,14 @@ Partial Class Agregar_Paciente
         '
         Me.Button1.Location = New System.Drawing.Point(289, 386)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(136, 39)
+        Me.Button1.Size = New System.Drawing.Size(144, 50)
         Me.Button1.TabIndex = 12
         Me.Button1.Text = "Agregar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(614, 370)
+        Me.Button2.Location = New System.Drawing.Point(616, 386)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(137, 50)
         Me.Button2.TabIndex = 13
