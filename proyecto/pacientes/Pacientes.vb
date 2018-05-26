@@ -11,10 +11,10 @@
 
         veriCon()
         If conex = True Then
-            Panel7.BackColor = Color.Green
+            Panel9.BackColor = Color.Green
             actTabla()
         Else
-            Panel7.BackColor = Color.Red
+            Panel9.BackColor = Color.Red
         End If
 
         Label20.ForeColor = Color.Gold

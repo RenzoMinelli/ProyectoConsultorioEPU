@@ -43,6 +43,6 @@ Module Module1
             conex = False
 
         End Try
-        MsgBox(Str(conex))
+        ' MsgBox(Str(conex))
     End Sub
 End Module
