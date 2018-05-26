@@ -1,10 +1,10 @@
-﻿Public Class Form3
-    Dim id As Integer = Form1.id
+﻿Public Class Modificar_Arancel
+    Dim id As Integer = Aranceles.id
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Consulta = "update aranceles set descripcion = '" + TextBox1.Text + "' and costo = '" + TextBox2.Text + "' and ref = '" + ComboBox1.SelectedItem + "' where id_a = " + Str(id) + ";"
         consultar()
         Me.Dispose()
-        Form1.Show()
+        Aranceles.Show()
     End Sub
 
     Private Sub Form3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -36,6 +36,8 @@
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Hide()
-        Form1.Show()
+        Aranceles.Show()
     End Sub
+
+
 End Class

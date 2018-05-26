@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Aranceles
     Public id As Integer
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -25,7 +25,7 @@
 
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        Form3.Show()
+        Modificar_Arancel.Show()
         Me.Hide()
     End Sub
 
@@ -35,7 +35,7 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Hide()
-        Form2.Show()
+        Agregar_Arancel.Show()
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
@@ -43,7 +43,7 @@
         Pacientes.Show()
     End Sub
 
-    
+
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
         Me.Hide()

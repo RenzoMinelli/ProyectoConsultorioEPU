@@ -1,4 +1,4 @@
-﻿Public Class Form2
+﻿Public Class Agregar_Arancel
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim nombre As String = TextBox1.Text
@@ -12,9 +12,9 @@
 
         Consulta = "select * from aranceles"
         consultar()
-        Form1.DataGridView1.DataSource = Tabla
+        Aranceles.DataGridView1.DataSource = Tabla
         Me.Dispose()
-        Form1.Show()
+        Aranceles.Show()
     End Sub
 
 
@@ -25,6 +25,6 @@
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Hide()
-        Form1.Show()
+        Aranceles.Show()
     End Sub
 End Class

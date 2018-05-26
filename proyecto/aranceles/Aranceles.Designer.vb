@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Aranceles
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -28,16 +28,16 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -97,81 +97,21 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(146, 441)
         Me.Panel1.TabIndex = 4
         '
-        'Label1
+        'Panel6
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(60, 88)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Pacientes"
+        Me.Panel6.BackColor = System.Drawing.Color.Gold
+        Me.Panel6.Location = New System.Drawing.Point(3, 193)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(10, 30)
+        Me.Panel6.TabIndex = 8
         '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.Gold
-        Me.Panel5.Location = New System.Drawing.Point(3, 168)
+        Me.Panel5.Location = New System.Drawing.Point(3, 158)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(21, 10)
+        Me.Panel5.Size = New System.Drawing.Size(10, 29)
         Me.Panel5.TabIndex = 7
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.Gold
-        Me.Panel4.Location = New System.Drawing.Point(3, 129)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(21, 11)
-        Me.Panel4.TabIndex = 7
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.Gold
-        Me.Panel3.Location = New System.Drawing.Point(0, 91)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(24, 10)
-        Me.Panel3.TabIndex = 6
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Gold
-        Me.Panel2.Location = New System.Drawing.Point(-7, 1)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(714, 24)
-        Me.Panel2.TabIndex = 5
-        '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.Color.Gold
-        Me.Panel6.Location = New System.Drawing.Point(6, 211)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(22, 11)
-        Me.Panel6.TabIndex = 8
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
-        Me.PictureBox1.Location = New System.Drawing.Point(27, 120)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources._25437
-        Me.PictureBox2.Location = New System.Drawing.Point(27, 82)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox2.TabIndex = 9
-        Me.PictureBox2.TabStop = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(60, 129)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Aranceles"
         '
         'Label3
         '
@@ -182,6 +122,66 @@ Partial Class Form1
         Me.Label3.Size = New System.Drawing.Size(49, 13)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "00:00:00"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(60, 129)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.TabIndex = 9
+        Me.Label2.Text = "Aranceles"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Gold
+        Me.Panel4.Location = New System.Drawing.Point(3, 120)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(10, 32)
+        Me.Panel4.TabIndex = 7
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
+        Me.PictureBox1.Location = New System.Drawing.Point(27, 120)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(60, 88)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "Pacientes"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources._25437
+        Me.PictureBox2.Location = New System.Drawing.Point(27, 82)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox2.TabIndex = 9
+        Me.PictureBox2.TabStop = False
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Gold
+        Me.Panel3.Location = New System.Drawing.Point(0, 82)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(13, 32)
+        Me.Panel3.TabIndex = 6
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Gold
+        Me.Panel2.Location = New System.Drawing.Point(-7, 1)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(714, 24)
+        Me.Panel2.TabIndex = 5
         '
         'Timer1
         '

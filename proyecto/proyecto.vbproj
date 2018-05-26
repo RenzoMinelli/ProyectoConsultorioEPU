@@ -76,22 +76,22 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="aranceles\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="aranceles\Aranceles.Designer.vb">
+      <DependentUpon>Aranceles.vb</DependentUpon>
     </Compile>
-    <Compile Include="aranceles\Form1.vb">
+    <Compile Include="aranceles\Aranceles.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="aranceles\Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="aranceles\Agregar_Arancel.Designer.vb">
+      <DependentUpon>Agregar_Arancel.vb</DependentUpon>
     </Compile>
-    <Compile Include="aranceles\Form2.vb">
+    <Compile Include="aranceles\Agregar_Arancel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="aranceles\Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="aranceles\Modificar_Arancel.Designer.vb">
+      <DependentUpon>Modificar_Arancel.vb</DependentUpon>
     </Compile>
-    <Compile Include="aranceles\Form3.vb">
+    <Compile Include="aranceles\Modificar_Arancel.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="pacientes\Crear_Cita.Designer.vb">
@@ -137,14 +137,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="aranceles\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="aranceles\Aranceles.resx">
+      <DependentUpon>Aranceles.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="aranceles\Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="aranceles\Agregar_Arancel.resx">
+      <DependentUpon>Agregar_Arancel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="aranceles\Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="aranceles\Modificar_Arancel.resx">
+      <DependentUpon>Modificar_Arancel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\Crear_Cita.resx">
       <DependentUpon>Crear_Cita.vb</DependentUpon>

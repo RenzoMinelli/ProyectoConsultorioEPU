@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form3
+Partial Class Modificar_Arancel
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
