@@ -6,6 +6,8 @@
         consultar()
         DataGridView1.DataSource = Tabla
         DataGridView1.ClearSelection()
+        Button2.Hide()
+        Button3.Hide()
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Consulta = " delete from aranceles where id_a = " + Str(id) + ""
@@ -16,6 +18,7 @@
     End Sub
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        Button2.Show()
         Button3.Show()
         id = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells(0).Value
     End Sub

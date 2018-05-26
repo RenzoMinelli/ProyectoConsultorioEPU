@@ -68,6 +68,7 @@ Partial Class Modificar_Arancel
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"lab", "odo"})
         Me.ComboBox1.Location = New System.Drawing.Point(108, 133)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(167, 21)
