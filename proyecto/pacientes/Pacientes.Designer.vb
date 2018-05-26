@@ -70,9 +70,9 @@ Partial Class Pacientes
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(202, 382)
+        Me.Button1.Location = New System.Drawing.Point(192, 384)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(107, 46)
+        Me.Button1.Size = New System.Drawing.Size(154, 30)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Ingresar Nuevo Paciente"
         Me.Button1.UseVisualStyleBackColor = True
@@ -283,7 +283,7 @@ Partial Class Pacientes
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(489, 382)
+        Me.Button2.Location = New System.Drawing.Point(483, 381)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(97, 32)
         Me.Button2.TabIndex = 7
@@ -303,7 +303,7 @@ Partial Class Pacientes
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(346, 382)
+        Me.Button4.Location = New System.Drawing.Point(362, 382)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(115, 32)
         Me.Button4.TabIndex = 9
