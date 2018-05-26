@@ -44,12 +44,6 @@
     End Sub
 
 
-
-    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
-        Me.Hide()
-        Me.Show()
-    End Sub
-
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Label3.Text = Date.Now.ToLongTimeString
     End Sub
