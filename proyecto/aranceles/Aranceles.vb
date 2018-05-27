@@ -11,6 +11,9 @@
         Button2.Hide()
         Button3.Hide()
         Label2.ForeColor = Color.Gold
+        ''DataGridView1.Columns(0).Visible = False
+        'PictureBox5.Hide()
+        'PictureBox6.Hide()
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Consulta = " delete from aranceles where id_a = " + Str(id) + ""
@@ -52,9 +55,11 @@
 
         Select Case conex
             Case True
-                Panel7.BackColor = Color.Green
+                PictureBox5.Show()
+                PictureBox6.Hide()
             Case False
-                Panel7.BackColor = Color.Red
+                PictureBox6.Show()
+                PictureBox5.Hide()
         End Select
 
     End Sub
@@ -67,4 +72,5 @@
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
         Me.Dispose()
     End Sub
+
 End Class
