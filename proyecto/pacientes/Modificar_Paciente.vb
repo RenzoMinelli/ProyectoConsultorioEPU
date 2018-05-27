@@ -92,7 +92,7 @@
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Size = New System.Drawing.Size(850, 500)
+        Me.Size = New System.Drawing.Size(704, 440)
         TextBox1.Text = nombre
         TextBox2.Text = cedula
         TextBox3.Text = enviado
@@ -105,5 +105,13 @@
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Hide()
         Pacientes.Show()
+    End Sub
+
+    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
+        Aranceles.Dispose()
+    End Sub
+
+    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class

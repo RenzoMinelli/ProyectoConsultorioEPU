@@ -8,16 +8,9 @@
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Size = New System.Drawing.Size(704, 440)
-
-        '  veriCon()
-        ' If conex = True Then
-        'Panel9.BackColor = Color.Green
-        '' actTabla()
-        ' Else
-        ' Panel9.BackColor = Color.Red
-        ' End If
-
-        ' Label20.ForeColor = Color.Gold
+        actTabla()
+        verificarCon()
+        Label20.ForeColor = Color.Gold
     End Sub
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
@@ -118,25 +111,9 @@
         Label3.Font = New Font("Sans Serif", 8, GraphicsUnit.Point)
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
-    End Sub
-
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         Crear_Cita.Show()
         Me.Hide()
-    End Sub
-
-    Private Sub Label17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label17.Click
-
-    End Sub
-
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Label20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label20.Click
-
     End Sub
 
     Private Sub Label19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label19.Click
@@ -144,8 +121,28 @@
         Me.Dispose()
     End Sub
 
-
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Label18.Text = Date.Now.ToLongTimeString
     End Sub
+
+    Private Sub verificarCon()
+        veriCon()
+
+        Select Case conex
+            Case True
+                Panel9.BackColor = Color.Green
+            Case False
+                Panel9.BackColor = Color.Red
+        End Select
+
+    End Sub
+
+    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox6.Click
+        Aranceles.Dispose()
+    End Sub
+
+    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox5.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
 End Class

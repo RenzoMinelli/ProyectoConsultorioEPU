@@ -49,6 +49,8 @@ Partial Class Pacientes
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -59,8 +61,8 @@ Partial Class Pacientes
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -68,6 +70,8 @@ Partial Class Pacientes
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -87,11 +91,11 @@ Partial Class Pacientes
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(169, 44)
+        Me.DataGridView1.Location = New System.Drawing.Point(169, 90)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(188, 143)
+        Me.DataGridView1.Size = New System.Drawing.Size(188, 274)
         Me.DataGridView1.TabIndex = 1
         '
         'Label1
@@ -123,9 +127,9 @@ Partial Class Pacientes
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Location = New System.Drawing.Point(387, 42)
+        Me.Panel1.Location = New System.Drawing.Point(387, 90)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(290, 322)
+        Me.Panel1.Size = New System.Drawing.Size(290, 274)
         Me.Panel1.TabIndex = 3
         '
         'Label3
@@ -278,9 +282,9 @@ Partial Class Pacientes
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ControlDark
         Me.Panel2.Controls.Add(Me.Label17)
-        Me.Panel2.Location = New System.Drawing.Point(387, 42)
+        Me.Panel2.Location = New System.Drawing.Point(387, 90)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(290, 322)
+        Me.Panel2.Size = New System.Drawing.Size(290, 274)
         Me.Panel2.TabIndex = 6
         '
         'Button2
@@ -316,10 +320,12 @@ Partial Class Pacientes
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Gold
+        Me.Panel3.Controls.Add(Me.PictureBox5)
+        Me.Panel3.Controls.Add(Me.PictureBox6)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Location = New System.Drawing.Point(0, -3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(715, 39)
+        Me.Panel3.Size = New System.Drawing.Size(715, 53)
         Me.Panel3.TabIndex = 12
         '
         'Panel4
@@ -340,6 +346,24 @@ Partial Class Pacientes
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(149, 471)
         Me.Panel4.TabIndex = 11
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.ForeColor = System.Drawing.Color.Red
+        Me.Label21.Location = New System.Drawing.Point(24, 366)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(54, 13)
+        Me.Label21.TabIndex = 14
+        Me.Label21.Text = "Conexion:"
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.White
+        Me.Panel9.Location = New System.Drawing.Point(97, 360)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(37, 24)
+        Me.Panel9.TabIndex = 13
         '
         'Panel6
         '
@@ -423,23 +447,23 @@ Partial Class Pacientes
         '
         Me.Timer1.Enabled = True
         '
-        'Label21
+        'PictureBox5
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.ForeColor = System.Drawing.Color.Red
-        Me.Label21.Location = New System.Drawing.Point(24, 366)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(54, 13)
-        Me.Label21.TabIndex = 14
-        Me.Label21.Text = "Conexion:"
+        Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
+        Me.PictureBox5.Location = New System.Drawing.Point(633, 15)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(28, 33)
+        Me.PictureBox5.TabIndex = 24
+        Me.PictureBox5.TabStop = False
         '
-        'Panel9
+        'PictureBox6
         '
-        Me.Panel9.BackColor = System.Drawing.Color.White
-        Me.Panel9.Location = New System.Drawing.Point(97, 360)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(37, 24)
-        Me.Panel9.TabIndex = 13
+        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.índice
+        Me.PictureBox6.Location = New System.Drawing.Point(667, 15)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox6.TabIndex = 23
+        Me.PictureBox6.TabStop = False
         '
         'Pacientes
         '
@@ -469,6 +493,8 @@ Partial Class Pacientes
         Me.Panel4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -510,5 +536,7 @@ Partial Class Pacientes
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Panel9 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
 
 End Class

@@ -7,6 +7,7 @@ Module Module1
     Public Tabla As DataTable
     Public Consulta As String
     Public MysqlConexion As MySqlConnection = New MySqlConnection(ubicacion)
+
     Public conex As Boolean
     Public nombre As String
     Public cedula As String
@@ -19,10 +20,31 @@ Module Module1
 
 
     Public Sub consultar()
+        Try
+            Conexion = New MySqlDataAdapter(Consulta, ubicacion)
+            Tabla = New DataTable
+            Conexion.Fill(Tabla)
+        Catch ex As Exception
+            'MsgBox(ex.ToString)
+            conex = False
+        End Try
+        
+    End Sub
 
-        Conexion = New MySqlDataAdapter(Consulta, ubicacion)
-        Tabla = New DataTable
-        Conexion.Fill(Tabla)
+    Public Sub veriCon()
+        Try
+
+            Consulta = "select * from aranceles"
+            Conexion = New MySqlDataAdapter(Consulta, ubicacion)
+            Tabla = New DataTable
+            Conexion.Fill(Tabla)
+            conex = True
+
+        Catch ex As Exception
+
+            conex = False
+
+        End Try
 
     End Sub
 End Module
@@ -34,42 +56,4 @@ End Module
 
 
 
-'Imports System.Data
-'Imports System.Data.OleDb
-'Imports MySql.Data.MySqlClient
-'Module Module1
 
-'Dim ubicacion As String = "server=localhost; user id=root ; password='';database = consultorio_odontologico"
-'Public Conexion As MySqlDataAdapter
-'Public Tabla As DataTable
-'Public Consulta As String
-
-
-
-'Public Sub consultar()
-'  Try
-
-'        Conexion = New MySqlDataAdapter(Consulta, ubicacion)
-'       Tabla = New DataTable
-
-'    Catch ex As MySqlException
-
-'        MsgBox(ex.ToString)
-
-'    End Try
-
-'End Sub
-'Public Sub veriCon()
-'Try
-' conex = True
-' Consulta = "select * from paciente"
-' Conexion = New MySqlDataAdapter(Consulta, ubicacion)
-'Conexion.Fill(Tabla)
-'Catch ex As Exception
-
-''conex = False
-
-' End Try
-
-'End Sub
-'End Module
