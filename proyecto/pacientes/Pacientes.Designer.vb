@@ -103,7 +103,7 @@ Partial Class Pacientes
         Me.Label1.AutoSize = True
         Me.Label1.Enabled = False
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(-1, 0)
+        Me.Label1.Location = New System.Drawing.Point(6, 13)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(152, 33)
         Me.Label1.TabIndex = 2

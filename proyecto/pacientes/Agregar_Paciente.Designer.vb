@@ -108,7 +108,7 @@ Partial Class Agregar_Paciente
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(132, 181)
+        Me.Label4.Location = New System.Drawing.Point(143, 181)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(132, 13)
         Me.Label4.TabIndex = 6
@@ -249,7 +249,7 @@ Partial Class Agregar_Paciente
         Me.Label8.AutoSize = True
         Me.Label8.Enabled = False
         Me.Label8.Font = New System.Drawing.Font("Arial Unicode MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(6, 7)
+        Me.Label8.Location = New System.Drawing.Point(6, 8)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(153, 39)
         Me.Label8.TabIndex = 3
@@ -291,10 +291,11 @@ Partial Class Agregar_Paciente
         'Label18
         '
         Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label18.Location = New System.Drawing.Point(3, 30)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(49, 13)
+        Me.Label18.Size = New System.Drawing.Size(143, 37)
         Me.Label18.TabIndex = 9
         Me.Label18.Text = "00:00:00"
         '

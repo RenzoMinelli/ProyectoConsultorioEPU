@@ -225,7 +225,7 @@ Partial Class Modificar_Paciente
         Me.Label8.AutoSize = True
         Me.Label8.Enabled = False
         Me.Label8.Font = New System.Drawing.Font("Arial Unicode MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(-1, 0)
+        Me.Label8.Location = New System.Drawing.Point(6, 7)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(153, 39)
         Me.Label8.TabIndex = 2
