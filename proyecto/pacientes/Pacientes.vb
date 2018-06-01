@@ -1,5 +1,10 @@
 ﻿Public Class Pacientes
-
+    '--------------------------------------------------------------------------------------------
+    '- Renzo no te olvides que hay que agregar una forma de visualizar las citas para cada paciente
+    '- Y una forma de marcar como realizada la cita anteriormente creada
+    '-
+    '-
+    '--------------------------------------------------------------------------------------------
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Hide()
         Agregar_Paciente.Show()

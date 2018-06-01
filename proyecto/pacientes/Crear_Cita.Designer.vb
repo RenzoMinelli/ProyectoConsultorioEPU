@@ -22,9 +22,6 @@ Partial Class Crear_Cita
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -41,6 +38,8 @@ Partial Class Crear_Cita
         Me.Label20 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,31 +48,9 @@ Partial Class Crear_Cita
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'MonthCalendar1
-        '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(312, 72)
-        Me.MonthCalendar1.Name = "MonthCalendar1"
-        Me.MonthCalendar1.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(233, 276)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(36, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "ALGO"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(333, 276)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(269, 20)
-        Me.TextBox1.TabIndex = 2
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(236, 348)
+        Me.Button1.Location = New System.Drawing.Point(208, 348)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(150, 62)
         Me.Button1.TabIndex = 3
@@ -224,18 +201,37 @@ Partial Class Crear_Cita
         Me.Panel8.Size = New System.Drawing.Size(10, 32)
         Me.Panel8.TabIndex = 6
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(180, 124)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(146, 18)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Fecha Seleccionada:"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy        HH:mm"
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker1.Location = New System.Drawing.Point(332, 116)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(212, 29)
+        Me.DateTimePicker1.TabIndex = 15
+        '
         'Crear_Cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(704, 440)
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.MonthCalendar1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Crear_Cita"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -252,9 +248,6 @@ Partial Class Crear_Cita
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
@@ -271,4 +264,6 @@ Partial Class Crear_Cita
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
 End Class
