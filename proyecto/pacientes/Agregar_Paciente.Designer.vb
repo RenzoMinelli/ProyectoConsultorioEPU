@@ -39,10 +39,6 @@ Partial Class Agregar_Paciente
         Me.Label7 = New System.Windows.Forms.Label()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -50,16 +46,20 @@ Partial Class Agregar_Paciente
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -208,42 +208,6 @@ Partial Class Agregar_Paciente
         Me.Panel1.Size = New System.Drawing.Size(714, 46)
         Me.Panel1.TabIndex = 17
         '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox5.Location = New System.Drawing.Point(639, 14)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(28, 33)
-        Me.PictureBox5.TabIndex = 22
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.índice
-        Me.PictureBox6.Location = New System.Drawing.Point(672, 14)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox6.TabIndex = 21
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox3.Location = New System.Drawing.Point(774, 30)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(28, 33)
-        Me.PictureBox3.TabIndex = 18
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.índice
-        Me.PictureBox4.Location = New System.Drawing.Point(817, 30)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(28, 28)
-        Me.PictureBox4.TabIndex = 17
-        Me.PictureBox4.TabStop = False
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -316,15 +280,6 @@ Partial Class Agregar_Paciente
         Me.Panel7.Size = New System.Drawing.Size(10, 32)
         Me.Panel7.TabIndex = 7
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
-        Me.PictureBox1.Location = New System.Drawing.Point(27, 120)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
-        '
         'Label20
         '
         Me.Label20.AutoSize = True
@@ -334,6 +289,59 @@ Partial Class Agregar_Paciente
         Me.Label20.TabIndex = 9
         Me.Label20.Text = "Pacientes"
         '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.Gold
+        Me.Panel8.Location = New System.Drawing.Point(0, 82)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(10, 32)
+        Me.Panel8.TabIndex = 6
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
+        Me.PictureBox5.Location = New System.Drawing.Point(639, 14)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(28, 33)
+        Me.PictureBox5.TabIndex = 22
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.índice
+        Me.PictureBox6.Location = New System.Drawing.Point(672, 14)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox6.TabIndex = 21
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
+        Me.PictureBox3.Location = New System.Drawing.Point(774, 30)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(28, 33)
+        Me.PictureBox3.TabIndex = 18
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.índice
+        Me.PictureBox4.Location = New System.Drawing.Point(817, 30)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(28, 28)
+        Me.PictureBox4.TabIndex = 17
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
+        Me.PictureBox1.Location = New System.Drawing.Point(27, 120)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources._25437
@@ -342,14 +350,6 @@ Partial Class Agregar_Paciente
         Me.PictureBox2.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox2.TabIndex = 9
         Me.PictureBox2.TabStop = False
-        '
-        'Panel8
-        '
-        Me.Panel8.BackColor = System.Drawing.Color.Gold
-        Me.Panel8.Location = New System.Drawing.Point(0, 82)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(10, 32)
-        Me.Panel8.TabIndex = 6
         '
         'Agregar_Paciente
         '
@@ -380,12 +380,12 @@ Partial Class Agregar_Paciente
         Me.Text = "Form2"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -408,7 +408,6 @@ Partial Class Agregar_Paciente
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
@@ -424,4 +423,5 @@ Partial Class Agregar_Paciente
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
 End Class

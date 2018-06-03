@@ -94,6 +94,12 @@
     <Compile Include="aranceles\Modificar_Arancel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="citas\Citas.Designer.vb">
+      <DependentUpon>Citas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="citas\Citas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="pacientes\Crear_Cita.Designer.vb">
       <DependentUpon>Crear_Cita.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="aranceles\Modificar_Arancel.resx">
       <DependentUpon>Modificar_Arancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="citas\Citas.resx">
+      <DependentUpon>Citas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\Crear_Cita.resx">
       <DependentUpon>Crear_Cita.vb</DependentUpon>
