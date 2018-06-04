@@ -15,6 +15,6 @@
     End Sub
 
     Private Sub PictureBox6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox6.Click
-        Citas.Dispose()
+        Me.Dispose()
     End Sub
 End Class
