@@ -75,4 +75,8 @@
         Me.Dispose()
     End Sub
 
+    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
+        Me.Hide()
+        Citas.Show()
+    End Sub
 End Class
