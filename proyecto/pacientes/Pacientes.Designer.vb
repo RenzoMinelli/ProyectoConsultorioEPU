@@ -63,6 +63,7 @@ Partial Class Pacientes
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label22 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -466,11 +467,21 @@ Partial Class Pacientes
         '
         Me.Timer1.Enabled = True
         '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(192, 56)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(21, 13)
+        Me.Label22.TabIndex = 13
+        Me.Label22.Text = "KK"
+        '
         'Pacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(704, 440)
+        Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Button4)
@@ -497,6 +508,7 @@ Partial Class Pacientes
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -539,5 +551,6 @@ Partial Class Pacientes
     Friend WithEvents Panel9 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label22 As System.Windows.Forms.Label
 
 End Class
