@@ -63,7 +63,6 @@ Partial Class Pacientes
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label22 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -77,9 +76,9 @@ Partial Class Pacientes
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(192, 384)
+        Me.Button1.Location = New System.Drawing.Point(212, 507)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(154, 30)
+        Me.Button1.Size = New System.Drawing.Size(180, 63)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Ingresar Nuevo Paciente"
         Me.Button1.UseVisualStyleBackColor = True
@@ -92,12 +91,12 @@ Partial Class Pacientes
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(169, 90)
+        Me.DataGridView1.Location = New System.Drawing.Point(212, 93)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(188, 274)
+        Me.DataGridView1.Size = New System.Drawing.Size(378, 325)
         Me.DataGridView1.TabIndex = 1
         '
         'Label1
@@ -129,7 +128,7 @@ Partial Class Pacientes
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Location = New System.Drawing.Point(388, 56)
+        Me.Panel1.Location = New System.Drawing.Point(717, 93)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(290, 319)
         Me.Panel1.TabIndex = 3
@@ -284,16 +283,16 @@ Partial Class Pacientes
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ControlDark
         Me.Panel2.Controls.Add(Me.Label17)
-        Me.Panel2.Location = New System.Drawing.Point(388, 56)
+        Me.Panel2.Location = New System.Drawing.Point(717, 93)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(290, 320)
         Me.Panel2.TabIndex = 6
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(483, 381)
+        Me.Button2.Location = New System.Drawing.Point(717, 507)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(97, 32)
+        Me.Button2.Size = New System.Drawing.Size(136, 63)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "Modificar Datos"
         Me.Button2.UseVisualStyleBackColor = True
@@ -301,9 +300,9 @@ Partial Class Pacientes
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(593, 382)
+        Me.Button3.Location = New System.Drawing.Point(901, 507)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(101, 30)
+        Me.Button3.Size = New System.Drawing.Size(124, 63)
         Me.Button3.TabIndex = 8
         Me.Button3.Text = "Eliminar"
         Me.Button3.UseVisualStyleBackColor = True
@@ -311,9 +310,9 @@ Partial Class Pacientes
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(362, 382)
+        Me.Button4.Location = New System.Drawing.Point(486, 507)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(115, 32)
+        Me.Button4.Size = New System.Drawing.Size(129, 63)
         Me.Button4.TabIndex = 9
         Me.Button4.Text = "Registrar Cita"
         Me.Button4.UseVisualStyleBackColor = True
@@ -327,13 +326,13 @@ Partial Class Pacientes
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Location = New System.Drawing.Point(-7, -10)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(714, 46)
+        Me.Panel3.Size = New System.Drawing.Size(1067, 46)
         Me.Panel3.TabIndex = 12
         '
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox5.Location = New System.Drawing.Point(639, 14)
+        Me.PictureBox5.Location = New System.Drawing.Point(1004, 13)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(28, 33)
         Me.PictureBox5.TabIndex = 24
@@ -342,7 +341,7 @@ Partial Class Pacientes
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.índice
-        Me.PictureBox6.Location = New System.Drawing.Point(672, 14)
+        Me.PictureBox6.Location = New System.Drawing.Point(1037, 13)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox6.TabIndex = 23
@@ -364,7 +363,7 @@ Partial Class Pacientes
         Me.Panel4.Controls.Add(Me.Panel8)
         Me.Panel4.Location = New System.Drawing.Point(-4, 34)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(146, 408)
+        Me.Panel4.Size = New System.Drawing.Size(146, 572)
         Me.Panel4.TabIndex = 11
         '
         'Label21
@@ -467,21 +466,11 @@ Partial Class Pacientes
         '
         Me.Timer1.Enabled = True
         '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(192, 56)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(21, 13)
-        Me.Label22.TabIndex = 13
-        Me.Label22.Text = "KK"
-        '
         'Pacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(704, 440)
-        Me.Controls.Add(Me.Label22)
+        Me.ClientSize = New System.Drawing.Size(1060, 600)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Button4)
@@ -508,7 +497,6 @@ Partial Class Pacientes
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -551,6 +539,5 @@ Partial Class Pacientes
     Friend WithEvents Panel9 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label22 As System.Windows.Forms.Label
 
 End Class

@@ -6,7 +6,7 @@
     End Sub
 
     Private Sub Crear_Cita_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Size = New System.Drawing.Size(704, 440)
+        Me.Size = New System.Drawing.Size(1060, 600)
 
     End Sub
 

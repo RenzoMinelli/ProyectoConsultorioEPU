@@ -50,7 +50,7 @@ Partial Class Crear_Cita
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(208, 348)
+        Me.Button1.Location = New System.Drawing.Point(236, 496)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(150, 62)
         Me.Button1.TabIndex = 3
@@ -59,7 +59,7 @@ Partial Class Crear_Cita
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(485, 348)
+        Me.Button2.Location = New System.Drawing.Point(862, 496)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(154, 62)
         Me.Button2.TabIndex = 4
@@ -85,13 +85,13 @@ Partial Class Crear_Cita
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Location = New System.Drawing.Point(-7, -10)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(714, 46)
+        Me.Panel1.Size = New System.Drawing.Size(1085, 46)
         Me.Panel1.TabIndex = 5
         '
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox5.Location = New System.Drawing.Point(639, 14)
+        Me.PictureBox5.Location = New System.Drawing.Point(995, 14)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(28, 33)
         Me.PictureBox5.TabIndex = 24
@@ -100,7 +100,7 @@ Partial Class Crear_Cita
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.índice
-        Me.PictureBox6.Location = New System.Drawing.Point(672, 14)
+        Me.PictureBox6.Location = New System.Drawing.Point(1028, 14)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox6.TabIndex = 23
@@ -120,7 +120,7 @@ Partial Class Crear_Cita
         Me.Panel4.Controls.Add(Me.Panel8)
         Me.Panel4.Location = New System.Drawing.Point(-4, 34)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(146, 408)
+        Me.Panel4.Size = New System.Drawing.Size(146, 577)
         Me.Panel4.TabIndex = 12
         '
         'Panel6
@@ -205,7 +205,7 @@ Partial Class Crear_Cita
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(180, 124)
+        Me.Label1.Location = New System.Drawing.Point(446, 239)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(146, 18)
         Me.Label1.TabIndex = 13
@@ -216,7 +216,7 @@ Partial Class Crear_Cita
         Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy        HH:mm"
         Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(332, 116)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(598, 231)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(212, 29)
         Me.DateTimePicker1.TabIndex = 15
@@ -225,7 +225,7 @@ Partial Class Crear_Cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(704, 440)
+        Me.ClientSize = New System.Drawing.Size(1060, 600)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel4)

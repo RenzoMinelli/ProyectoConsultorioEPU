@@ -62,15 +62,15 @@ Partial Class Modificar_Paciente
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(287, 69)
+        Me.TextBox1.Location = New System.Drawing.Point(357, 145)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(138, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(234, 20)
         Me.TextBox1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(156, 69)
+        Me.Label1.Location = New System.Drawing.Point(226, 145)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 13)
         Me.Label1.TabIndex = 1
@@ -79,7 +79,7 @@ Partial Class Modificar_Paciente
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(159, 113)
+        Me.Label2.Location = New System.Drawing.Point(229, 189)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(40, 13)
         Me.Label2.TabIndex = 2
@@ -87,15 +87,15 @@ Partial Class Modificar_Paciente
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(287, 113)
+        Me.TextBox2.Location = New System.Drawing.Point(357, 189)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(138, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(234, 20)
         Me.TextBox2.TabIndex = 3
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(522, 69)
+        Me.Label3.Location = New System.Drawing.Point(775, 135)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(93, 13)
         Me.Label3.TabIndex = 4
@@ -104,7 +104,7 @@ Partial Class Modificar_Paciente
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(141, 159)
+        Me.Label4.Location = New System.Drawing.Point(211, 235)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(132, 13)
         Me.Label4.TabIndex = 6
@@ -112,15 +112,15 @@ Partial Class Modificar_Paciente
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(287, 156)
+        Me.TextBox3.Location = New System.Drawing.Point(357, 232)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(138, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(234, 20)
         Me.TextBox3.TabIndex = 7
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(159, 205)
+        Me.Label5.Location = New System.Drawing.Point(229, 281)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(96, 13)
         Me.Label5.TabIndex = 8
@@ -128,15 +128,15 @@ Partial Class Modificar_Paciente
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(287, 205)
+        Me.TextBox4.Location = New System.Drawing.Point(357, 281)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(138, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(234, 20)
         Me.TextBox4.TabIndex = 9
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(152, 243)
+        Me.Label6.Location = New System.Drawing.Point(222, 319)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(123, 13)
         Me.Label6.TabIndex = 10
@@ -144,34 +144,34 @@ Partial Class Modificar_Paciente
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(287, 243)
+        Me.TextBox5.Location = New System.Drawing.Point(357, 319)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(138, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(234, 20)
         Me.TextBox5.TabIndex = 11
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(264, 382)
+        Me.Button1.Location = New System.Drawing.Point(218, 506)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(102, 45)
+        Me.Button1.Size = New System.Drawing.Size(142, 53)
         Me.Button1.TabIndex = 12
         Me.Button1.Text = "Guardar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(469, 382)
+        Me.Button2.Location = New System.Drawing.Point(881, 506)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(127, 45)
+        Me.Button2.Size = New System.Drawing.Size(148, 60)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(154, 293)
+        Me.Button3.Location = New System.Drawing.Point(224, 369)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(271, 23)
+        Me.Button3.Size = New System.Drawing.Size(367, 23)
         Me.Button3.TabIndex = 14
         Me.Button3.Text = "Modificar Antecedentes"
         Me.Button3.UseVisualStyleBackColor = True
@@ -179,7 +179,7 @@ Partial Class Modificar_Paciente
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(448, 265)
+        Me.Label7.Location = New System.Drawing.Point(701, 331)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(106, 13)
         Me.Label7.TabIndex = 15
@@ -187,7 +187,7 @@ Partial Class Modificar_Paciente
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(451, 94)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(704, 160)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 16
         '
@@ -199,13 +199,13 @@ Partial Class Modificar_Paciente
         Me.Panel3.Controls.Add(Me.Label8)
         Me.Panel3.Location = New System.Drawing.Point(-7, -10)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(714, 46)
+        Me.Panel3.Size = New System.Drawing.Size(1069, 46)
         Me.Panel3.TabIndex = 17
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox3.Location = New System.Drawing.Point(639, 14)
+        Me.PictureBox3.Location = New System.Drawing.Point(995, 14)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(28, 33)
         Me.PictureBox3.TabIndex = 20
@@ -214,7 +214,7 @@ Partial Class Modificar_Paciente
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.índice
-        Me.PictureBox4.Location = New System.Drawing.Point(672, 14)
+        Me.PictureBox4.Location = New System.Drawing.Point(1028, 14)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox4.TabIndex = 19
@@ -245,7 +245,7 @@ Partial Class Modificar_Paciente
         Me.Panel4.Controls.Add(Me.Panel8)
         Me.Panel4.Location = New System.Drawing.Point(-4, 34)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(146, 408)
+        Me.Panel4.Size = New System.Drawing.Size(146, 573)
         Me.Panel4.TabIndex = 18
         '
         'Panel6
@@ -330,7 +330,7 @@ Partial Class Modificar_Paciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(704, 440)
+        Me.ClientSize = New System.Drawing.Size(1060, 600)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.MonthCalendar1)

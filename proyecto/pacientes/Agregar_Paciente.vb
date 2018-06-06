@@ -58,7 +58,7 @@
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Size = New System.Drawing.Size(704, 440)
+        Me.Size = New System.Drawing.Size(1060, 600)
         Dim nac As String = MonthCalendar1.SelectionRange.Start
         Label7.Text = "Fecha seleccionada " + nac
     End Sub
@@ -76,15 +76,5 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub Panel4_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel4.Paint
-
-    End Sub
-
-    Private Sub Label18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label18.Click
-
-    End Sub
-
-    Private Sub Label20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label20.Click
-
-    End Sub
+    
 End Class
