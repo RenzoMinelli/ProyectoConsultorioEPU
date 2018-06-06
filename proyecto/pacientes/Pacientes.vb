@@ -157,4 +157,9 @@
         consultar()
         DataGridView1.DataSource = Tabla
     End Sub
+
+    Private Sub Label23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label23.Click
+        Me.Dispose()
+        Citas.Show()
+    End Sub
 End Class
