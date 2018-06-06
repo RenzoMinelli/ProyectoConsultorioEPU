@@ -196,6 +196,9 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\f7d19e11011fb8ddfe0d533909dc8ace-icono-de-lupa-para-acampar-by-vexels.png" />
+    <None Include="Resources\Users-Edit-User-icon %281%291.png" />
+    <None Include="Resources\delete %281%29.png" />
     <None Include="Resources\letterx_87521.png" />
     <None Include="Resources\delete.png" />
     <None Include="Resources\edit-file.png" />
@@ -203,6 +206,9 @@
     <None Include="Resources\56238.png" />
     <None Include="Resources\70002.png" />
     <None Include="Resources\add-user_icon-icons %282%291.png" />
+    <None Include="Resources\42954 %281%29.png" />
+    <None Include="Resources\777d48d425c5f93a54d01a413639fd83 %281%29.jpg" />
+    <None Include="Resources\777d48d425c5f93a54d01a413639fd83.jpg" />
     <Content Include="Resources\cancel_exit_cross_close.png" />
     <None Include="Resources\índice.png" />
     <None Include="Resources\minimize-window.png" />

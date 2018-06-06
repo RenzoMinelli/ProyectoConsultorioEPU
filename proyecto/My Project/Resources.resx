@@ -124,8 +124,8 @@
   <data name="letterx_87521" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\letterx_87521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="70002" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\70002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Users-Edit-User-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Users-Edit-User-icon (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="users_21945" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users_21945.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,11 +136,11 @@
   <data name="minimize-window" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimize-window.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Users-Edit-User-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Users-Edit-User-icon (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="70002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\70002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="índice(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\índice(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +154,14 @@
   <data name="money-bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money-bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="777d48d425c5f93a54d01a413639fd83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\777d48d425c5f93a54d01a413639fd83.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cancel_exit_cross_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_exit_cross_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="42954 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\42954 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="edit-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,7 +169,10 @@
   <data name="56238" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\56238.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="42954 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\42954 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="777d48d425c5f93a54d01a413639fd83 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\777d48d425c5f93a54d01a413639fd83 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="f7d19e11011fb8ddfe0d533909dc8ace-icono-de-lupa-para-acampar-by-vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\f7d19e11011fb8ddfe0d533909dc8ace-icono-de-lupa-para-acampar-by-vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

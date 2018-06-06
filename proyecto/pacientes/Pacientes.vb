@@ -151,4 +151,10 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+        Dim a As String = TextBox1.Text
+        Consulta = "Select * from paciente where nombre like '" + a + "%' or cedula like '" + a + "%';"
+        consultar()
+        DataGridView1.DataSource = Tabla
+    End Sub
 End Class
