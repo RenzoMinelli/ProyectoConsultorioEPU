@@ -185,7 +185,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Antecedentes\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\users_21945.png" />
   </ItemGroup>
