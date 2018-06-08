@@ -33,4 +33,9 @@
         Label9.Text = +descripcion
 
     End Sub
+
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        Label18.Text = Date.Now.ToLongTimeString
+        Label18.Font = New Font("Microsoft Sans Serif", 15, FontStyle.Bold)
+    End Sub
 End Class
