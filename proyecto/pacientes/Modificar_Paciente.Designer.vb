@@ -188,6 +188,7 @@ Partial Class Modificar_Paciente
         'MonthCalendar1
         '
         Me.MonthCalendar1.Location = New System.Drawing.Point(704, 160)
+        Me.MonthCalendar1.MaxSelectionCount = 1
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 16
         '

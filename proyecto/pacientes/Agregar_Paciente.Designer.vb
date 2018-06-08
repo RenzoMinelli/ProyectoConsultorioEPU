@@ -188,6 +188,7 @@ Partial Class Agregar_Paciente
         'MonthCalendar1
         '
         Me.MonthCalendar1.Location = New System.Drawing.Point(700, 166)
+        Me.MonthCalendar1.MaxSelectionCount = 1
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 16
         '
