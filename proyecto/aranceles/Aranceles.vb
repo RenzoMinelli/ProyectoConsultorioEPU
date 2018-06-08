@@ -14,6 +14,7 @@
         ''DataGridView1.Columns(0).Visible = False
         'PictureBox5.Hide()
         'PictureBox6.Hide()
+        DataGridView1.Columns(0).Visible = False
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Consulta = " delete from aranceles where id_a = " + Str(id) + ""
@@ -78,5 +79,9 @@
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
         Me.Hide()
         Citas.Show()
+    End Sub
+
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
+
     End Sub
 End Class

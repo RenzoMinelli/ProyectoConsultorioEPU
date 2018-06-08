@@ -25,6 +25,7 @@ Partial Class Aranceles
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -46,7 +47,6 @@ Partial Class Aranceles
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,6 +93,15 @@ Partial Class Aranceles
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(146, 408)
         Me.Panel1.TabIndex = 4
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(63, 173)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(30, 13)
+        Me.Label4.TabIndex = 16
+        Me.Label4.Text = "Citas"
         '
         'Panel7
         '
@@ -277,15 +286,6 @@ Partial Class Aranceles
         Me.Button1.Size = New System.Drawing.Size(81, 37)
         Me.Button1.TabIndex = 1
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(63, 173)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(30, 13)
-        Me.Label4.TabIndex = 16
-        Me.Label4.Text = "Citas"
         '
         'Aranceles
         '

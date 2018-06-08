@@ -15,12 +15,12 @@
         Aranceles.DataGridView1.DataSource = Tabla
         Me.Dispose()
         Aranceles.Show()
-        Label5.ForeColor = Color.Gold
+
     End Sub
 
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+        Label5.ForeColor = Color.Gold
     End Sub
 
 
