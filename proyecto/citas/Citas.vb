@@ -20,27 +20,28 @@
         Dim descripcion As String
         Dim cedula As String
         Dim id_p As Integer
-        Consulta = "select id_p from cita where fecha_hora = " + fecha + ";"
-        consultar()
-        DataGridView1.DataSource = Tabla
-        id_p = DataGridView1.Rows(0).Cells(0).Value
-        Consulta = "select nombre from pacientes where id_p = " + id_p + ";"
-        consultar()
-        DataGridView1.DataSource = Tabla
-        nombre = DataGridView1.Rows(0).Cells(0).Value
-        Consulta = "select descripcion from registro_medico where id_p = " + id_p + ";"
-        consultar()
-        DataGridView1.DataSource = Tabla
-        descripcion = DataGridView1.Rows(0).Cells(0).Value
-        consultar()
-        DataGridView1.DataSource = Tabla
-        Consulta = "select cedula from paciente where id_p = " + id_p + ";"
-        consultar()
-        DataGridView1.DataSource = Tabla
-        cedula = DataGridView1.Rows(0).Cells(0).Value
-        Label11.Text = +nombre
-        Label12.Text = +cedula
-        Label9.Text = +descripcion
+
+            Consulta = "select id_p from cita where fecha_hora = " + fecha + ";"
+            consultar()
+            DataGridView1.DataSource = Tabla
+            id_p = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells(0).Value
+            Consulta = "select nombre from pacientes where id_p = " + id_p + ";"
+            consultar()
+            DataGridView1.DataSource = Tabla
+            nombre = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells(0).Value
+            Consulta = "select descripcion from registro_medico where id_p = " + id_p + ";"
+            consultar()
+            DataGridView1.DataSource = Tabla
+            descripcion = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells(0).Value
+            consultar()
+            DataGridView1.DataSource = Tabla
+            Consulta = "select cedula from paciente where id_p = " + id_p + ";"
+            consultar()
+            DataGridView1.DataSource = Tabla
+            cedula = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells(0).Value
+            Label11.Text = +nombre
+            Label12.Text = +cedula
+            Label9.Text = +descripcion
 
     End Sub
 
