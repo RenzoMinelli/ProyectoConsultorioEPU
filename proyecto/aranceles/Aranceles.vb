@@ -15,6 +15,7 @@
         'PictureBox5.Hide()
         'PictureBox6.Hide()
         DataGridView1.Columns(0).Visible = False
+        Me.WindowState = FormWindowState.Maximized
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Consulta = " delete from aranceles where id_a = " + Str(id) + ""

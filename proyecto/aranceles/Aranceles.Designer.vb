@@ -27,7 +27,6 @@ Partial Class Aranceles
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -79,7 +78,6 @@ Partial Class Aranceles
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.Panel7)
         Me.Panel1.Controls.Add(Me.PictureBox5)
         Me.Panel1.Controls.Add(Me.PictureBox6)
         Me.Panel1.Controls.Add(Me.PictureBox1)
@@ -93,7 +91,7 @@ Partial Class Aranceles
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Location = New System.Drawing.Point(-4, 34)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(146, 408)
+        Me.Panel1.Size = New System.Drawing.Size(157, 565)
         Me.Panel1.TabIndex = 4
         '
         'Label5
@@ -113,14 +111,6 @@ Partial Class Aranceles
         Me.Label4.Size = New System.Drawing.Size(30, 13)
         Me.Label4.TabIndex = 16
         Me.Label4.Text = "Citas"
-        '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.Gold
-        Me.Panel7.Location = New System.Drawing.Point(4, 346)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(139, 10)
-        Me.Panel7.TabIndex = 7
         '
         'PictureBox5
         '
@@ -178,7 +168,7 @@ Partial Class Aranceles
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.Gold
-        Me.Label3.Location = New System.Drawing.Point(5, 384)
+        Me.Label3.Location = New System.Drawing.Point(16, 529)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 13)
         Me.Label3.TabIndex = 9
@@ -303,7 +293,7 @@ Partial Class Aranceles
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(704, 440)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -351,7 +341,6 @@ Partial Class Aranceles
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel7 As System.Windows.Forms.Panel
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class
