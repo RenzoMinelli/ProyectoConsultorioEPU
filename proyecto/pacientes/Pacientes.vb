@@ -109,8 +109,6 @@
     Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
         MsgBox("Crea el formulario de antecedentes")
 
-        MsgBox("try 1")
-
 
     End Sub
 
