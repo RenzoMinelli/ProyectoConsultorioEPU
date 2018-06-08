@@ -16,7 +16,6 @@
 
     Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DateTimePicker1.ValueChanged
         Dim fecha As String = DateTimePicker1.Value.ToString("yyyy-MM-dd HH:mm:ss")
-        Dim ciitas As String
         Dim nombre As String
         Dim descripcion As String
         Dim cedula As String
