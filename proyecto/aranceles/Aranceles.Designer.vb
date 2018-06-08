@@ -66,11 +66,11 @@ Partial Class Aranceles
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(43, 28)
+        Me.DataGridView1.Location = New System.Drawing.Point(50, 33)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(340, 256)
+        Me.DataGridView1.Size = New System.Drawing.Size(753, 421)
         Me.DataGridView1.TabIndex = 0
         '
         'Panel1
@@ -115,7 +115,7 @@ Partial Class Aranceles
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources._70002
-        Me.PictureBox5.Location = New System.Drawing.Point(115, 373)
+        Me.PictureBox5.Location = New System.Drawing.Point(113, 522)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(28, 32)
         Me.PictureBox5.TabIndex = 0
@@ -124,7 +124,7 @@ Partial Class Aranceles
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
-        Me.PictureBox6.Location = New System.Drawing.Point(115, 373)
+        Me.PictureBox6.Location = New System.Drawing.Point(113, 522)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(28, 32)
         Me.PictureBox6.TabIndex = 15
@@ -144,7 +144,7 @@ Partial Class Aranceles
         Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources._25437
         Me.PictureBox3.Location = New System.Drawing.Point(27, 82)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox3.Size = New System.Drawing.Size(38, 32)
         Me.PictureBox3.TabIndex = 13
         Me.PictureBox3.TabStop = False
         '
@@ -216,13 +216,13 @@ Partial Class Aranceles
         Me.Panel2.Controls.Add(Me.Label21)
         Me.Panel2.Location = New System.Drawing.Point(-7, -10)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(714, 46)
+        Me.Panel2.Size = New System.Drawing.Size(1067, 57)
         Me.Panel2.TabIndex = 5
         '
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.índice
-        Me.PictureBox4.Location = New System.Drawing.Point(672, 14)
+        Me.PictureBox4.Location = New System.Drawing.Point(1017, 14)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox4.TabIndex = 16
@@ -231,7 +231,7 @@ Partial Class Aranceles
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox2.Location = New System.Drawing.Point(639, 14)
+        Me.PictureBox2.Location = New System.Drawing.Point(972, 14)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox2.TabIndex = 15
@@ -258,34 +258,45 @@ Partial Class Aranceles
         Me.Panel8.Controls.Add(Me.DataGridView1)
         Me.Panel8.Location = New System.Drawing.Point(207, 53)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(427, 322)
+        Me.Panel8.Size = New System.Drawing.Size(841, 475)
         Me.Panel8.TabIndex = 6
         '
         'Button3
         '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.edit_file
-        Me.Button3.Location = New System.Drawing.Point(607, 391)
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.Location = New System.Drawing.Point(928, 540)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 37)
+        Me.Button3.Size = New System.Drawing.Size(109, 48)
         Me.Button3.TabIndex = 3
+        Me.Button3.Text = "editar"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.delete
-        Me.Button2.Location = New System.Drawing.Point(381, 391)
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(573, 540)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(82, 37)
+        Me.Button2.Size = New System.Drawing.Size(124, 54)
         Me.Button2.TabIndex = 2
+        Me.Button2.Text = "eliminar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources._56238
-        Me.Button1.Location = New System.Drawing.Point(180, 391)
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(207, 540)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(81, 37)
+        Me.Button1.Size = New System.Drawing.Size(107, 54)
         Me.Button1.TabIndex = 1
+        Me.Button1.Text = "  agregar"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Aranceles
@@ -293,12 +304,12 @@ Partial Class Aranceles
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(800, 600)
+        Me.ClientSize = New System.Drawing.Size(1060, 600)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Aranceles"

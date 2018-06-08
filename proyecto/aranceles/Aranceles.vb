@@ -2,7 +2,7 @@
     Public id As Integer
 
     Private Sub Aranceles_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
-        Me.Size = New System.Drawing.Size(704, 440)
+        'Me.Size = New System.Drawing.Size(704, 440)
         verificarCon()
         Consulta = "select * from aranceles"
         consultar()
@@ -15,7 +15,13 @@
         'PictureBox5.Hide()
         'PictureBox6.Hide()
         DataGridView1.Columns(0).Visible = False
-        Me.WindowState = FormWindowState.Maximized
+        '   Me.WindowState = FormWindowState.Maximized
+
+        DataGridView1.Columns(0).Width = 300
+
+        DataGridView1.Columns(1).Width = 300
+
+        DataGridView1.Columns(2).Width = 300
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Consulta = " delete from aranceles where id_a = " + Str(id) + ""
