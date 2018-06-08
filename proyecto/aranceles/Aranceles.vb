@@ -21,7 +21,15 @@
 
         DataGridView1.Columns(1).Width = 300
 
-        DataGridView1.Columns(2).Width = 300
+        DataGridView1.Columns(2).Width = 310
+
+        DataGridView1.DefaultCellStyle.Font = New Font("Microsoft Sans Serif", 15)
+
+
+
+
+
+
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Consulta = " delete from aranceles where id_a = " + Str(id) + ""

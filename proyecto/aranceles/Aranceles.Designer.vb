@@ -115,7 +115,7 @@ Partial Class Aranceles
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources._70002
-        Me.PictureBox5.Location = New System.Drawing.Point(113, 522)
+        Me.PictureBox5.Location = New System.Drawing.Point(126, 522)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(28, 32)
         Me.PictureBox5.TabIndex = 0
@@ -124,7 +124,7 @@ Partial Class Aranceles
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
-        Me.PictureBox6.Location = New System.Drawing.Point(113, 522)
+        Me.PictureBox6.Location = New System.Drawing.Point(126, 522)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(28, 32)
         Me.PictureBox6.TabIndex = 15
@@ -168,7 +168,7 @@ Partial Class Aranceles
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.Gold
-        Me.Label3.Location = New System.Drawing.Point(16, 529)
+        Me.Label3.Location = New System.Drawing.Point(9, 529)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 13)
         Me.Label3.TabIndex = 9
@@ -244,7 +244,7 @@ Partial Class Aranceles
         Me.Label21.AutoSize = True
         Me.Label21.Enabled = False
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(6, 7)
+        Me.Label21.Location = New System.Drawing.Point(9, 14)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(154, 33)
         Me.Label21.TabIndex = 4
