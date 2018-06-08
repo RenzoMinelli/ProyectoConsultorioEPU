@@ -106,7 +106,7 @@ Partial Class Aranceles
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(63, 173)
+        Me.Label4.Location = New System.Drawing.Point(60, 174)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(30, 13)
         Me.Label4.TabIndex = 16
@@ -133,7 +133,7 @@ Partial Class Aranceles
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
-        Me.PictureBox1.Location = New System.Drawing.Point(27, 120)
+        Me.PictureBox1.Location = New System.Drawing.Point(19, 120)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox1.TabIndex = 14
@@ -142,7 +142,7 @@ Partial Class Aranceles
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources._25437
-        Me.PictureBox3.Location = New System.Drawing.Point(27, 82)
+        Me.PictureBox3.Location = New System.Drawing.Point(19, 82)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(38, 32)
         Me.PictureBox3.TabIndex = 13
@@ -177,9 +177,10 @@ Partial Class Aranceles
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(60, 129)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(52, 127)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(108, 25)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Aranceles"
         '
@@ -194,9 +195,10 @@ Partial Class Aranceles
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(60, 88)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(50, 89)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.Size = New System.Drawing.Size(107, 25)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Pacientes"
         '
