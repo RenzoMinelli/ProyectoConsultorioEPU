@@ -51,6 +51,7 @@ Partial Class Citas
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,6 +59,7 @@ Partial Class Citas
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel4
@@ -181,6 +183,7 @@ Partial Class Citas
         Me.Panel1.Controls.Add(Me.PictureBox5)
         Me.Panel1.Controls.Add(Me.PictureBox6)
         Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.DataGridView1)
         Me.Panel1.Location = New System.Drawing.Point(-4, -5)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1065, 46)
@@ -286,9 +289,12 @@ Partial Class Citas
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy        HH:mm"
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker1.Location = New System.Drawing.Point(155, 76)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(222, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(212, 29)
         Me.DateTimePicker1.TabIndex = 29
         '
         'Label10
@@ -323,6 +329,14 @@ Partial Class Citas
         '
         Me.Timer1.Enabled = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(1019, 33)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(10, 10)
+        Me.DataGridView1.TabIndex = 33
+        '
         'Citas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -354,6 +368,7 @@ Partial Class Citas
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -386,4 +401,5 @@ Partial Class Citas
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
 End Class
