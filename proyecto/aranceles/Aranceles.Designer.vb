@@ -106,7 +106,7 @@ Partial Class Aranceles
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(63, 173)
+        Me.Label4.Location = New System.Drawing.Point(60, 174)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(30, 13)
         Me.Label4.TabIndex = 16
@@ -115,7 +115,7 @@ Partial Class Aranceles
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources._70002
-        Me.PictureBox5.Location = New System.Drawing.Point(113, 522)
+        Me.PictureBox5.Location = New System.Drawing.Point(126, 522)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(28, 32)
         Me.PictureBox5.TabIndex = 0
@@ -124,7 +124,7 @@ Partial Class Aranceles
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
-        Me.PictureBox6.Location = New System.Drawing.Point(113, 522)
+        Me.PictureBox6.Location = New System.Drawing.Point(126, 522)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(28, 32)
         Me.PictureBox6.TabIndex = 15
@@ -133,7 +133,7 @@ Partial Class Aranceles
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
-        Me.PictureBox1.Location = New System.Drawing.Point(27, 120)
+        Me.PictureBox1.Location = New System.Drawing.Point(19, 120)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox1.TabIndex = 14
@@ -142,7 +142,7 @@ Partial Class Aranceles
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources._25437
-        Me.PictureBox3.Location = New System.Drawing.Point(27, 82)
+        Me.PictureBox3.Location = New System.Drawing.Point(19, 82)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(38, 32)
         Me.PictureBox3.TabIndex = 13
@@ -168,7 +168,7 @@ Partial Class Aranceles
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.Gold
-        Me.Label3.Location = New System.Drawing.Point(16, 529)
+        Me.Label3.Location = New System.Drawing.Point(9, 529)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 13)
         Me.Label3.TabIndex = 9
@@ -177,9 +177,10 @@ Partial Class Aranceles
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(60, 129)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(52, 127)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(108, 25)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Aranceles"
         '
@@ -194,9 +195,10 @@ Partial Class Aranceles
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(60, 88)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(50, 89)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.Size = New System.Drawing.Size(107, 25)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Pacientes"
         '
@@ -242,7 +244,7 @@ Partial Class Aranceles
         Me.Label21.AutoSize = True
         Me.Label21.Enabled = False
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(6, 7)
+        Me.Label21.Location = New System.Drawing.Point(9, 14)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(154, 33)
         Me.Label21.TabIndex = 4
