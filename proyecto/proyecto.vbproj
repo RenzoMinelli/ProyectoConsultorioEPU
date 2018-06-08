@@ -76,6 +76,13 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Antecedentes\antecedentes.vb" />
+    <Compile Include="Antecedentes\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Antecedentes\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="aranceles\Aranceles.Designer.vb">
       <DependentUpon>Aranceles.vb</DependentUpon>
     </Compile>
@@ -143,6 +150,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Antecedentes\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="aranceles\Aranceles.resx">
       <DependentUpon>Aranceles.vb</DependentUpon>
     </EmbeddedResource>
@@ -185,9 +195,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Antecedentes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\users_21945.png" />
   </ItemGroup>
