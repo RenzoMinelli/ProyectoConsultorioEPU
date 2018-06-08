@@ -107,8 +107,9 @@
     End Sub
 
     Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
-        MsgBox("Crea el formulario de antecedentes")
-
+        'MsgBox("Crea el formulario de antecedentes")
+        Me.Hide()
+        Antecedentes.Show()
 
     End Sub
 
@@ -166,4 +167,6 @@
         Me.Dispose()
         Citas.Show()
     End Sub
+
+
 End Class
