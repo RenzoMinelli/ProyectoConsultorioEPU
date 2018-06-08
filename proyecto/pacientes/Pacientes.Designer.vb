@@ -47,6 +47,7 @@ Partial Class Pacientes
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label23 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -66,7 +67,6 @@ Partial Class Pacientes
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -281,7 +281,7 @@ Partial Class Pacientes
         Me.Panel2.Controls.Add(Me.Label17)
         Me.Panel2.Location = New System.Drawing.Point(717, 122)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(290, 320)
+        Me.Panel2.Size = New System.Drawing.Size(290, 319)
         Me.Panel2.TabIndex = 6
         '
         'Panel3
@@ -332,6 +332,15 @@ Partial Class Pacientes
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(146, 572)
         Me.Panel4.TabIndex = 11
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(63, 173)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(25, 13)
+        Me.Label23.TabIndex = 15
+        Me.Label23.Text = "Cita"
         '
         'Label21
         '
@@ -511,15 +520,6 @@ Partial Class Pacientes
         Me.Label22.Size = New System.Drawing.Size(58, 13)
         Me.Label22.TabIndex = 15
         Me.Label22.Text = "Busqueda:"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(63, 173)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(25, 13)
-        Me.Label23.TabIndex = 15
-        Me.Label23.Text = "Cita"
         '
         'Pacientes
         '

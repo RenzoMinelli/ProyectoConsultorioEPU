@@ -35,8 +35,10 @@
         direccion = ""
         direTra = ""
         saldo = 0
+
         Consulta = "SELECT * FROM paciente"
         consultar()
+
         DataGridView1.DataSource = Tabla
         DataGridView1.Columns(0).Visible = False
         DataGridView1.Columns(2).Visible = False
@@ -106,6 +108,10 @@
 
     Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
         MsgBox("Crea el formulario de antecedentes")
+
+
+
+
     End Sub
 
     Private Sub Label3_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label3.MouseHover

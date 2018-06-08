@@ -1,6 +1,6 @@
 ﻿Public Class Form1
 
-    'Dim antecedentes As antecedentes = New antecedentes
+    Dim antecedentes As antecedentes = New antecedentes
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         'antecedentes.Conectar()
@@ -44,9 +44,7 @@
         ' End If
     End Sub
 
-    Private Function txtid_p() As Object
-        Throw New NotImplementedException
-    End Function
+  
 
     Private Function txtalergicos() As Object
         Throw New NotImplementedException
@@ -81,6 +79,10 @@
     End Function
 
     Private Function Editar() As Object
+        Throw New NotImplementedException
+    End Function
+
+    Private Function txtid_p() As Object
         Throw New NotImplementedException
     End Function
 

@@ -77,10 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Antecedentes\antecedentes.vb" />
-    <Compile Include="Antecedentes\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="pacientes\Antecedentes.Designer.vb">
+      <DependentUpon>Antecedentes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Antecedentes\Form1.vb">
+    <Compile Include="pacientes\Antecedentes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="aranceles\Aranceles.Designer.vb">
@@ -150,8 +150,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Antecedentes\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\Antecedentes.resx">
+      <DependentUpon>Antecedentes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="aranceles\Aranceles.resx">
       <DependentUpon>Aranceles.vb</DependentUpon>

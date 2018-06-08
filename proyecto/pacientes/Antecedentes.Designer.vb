@@ -26,7 +26,7 @@ Partial Class Form1
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.alergicos = New System.Windows.Forms.CheckBox()
         Me.CheckBox9 = New System.Windows.Forms.CheckBox()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.CheckBox7 = New System.Windows.Forms.CheckBox()
@@ -77,15 +77,15 @@ Partial Class Form1
         Me.CheckBox2.Text = "Fiebre Reumatica"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'alergicos
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(23, 47)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(69, 17)
-        Me.CheckBox1.TabIndex = 8
-        Me.CheckBox1.Text = "Alergicos"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.alergicos.AutoSize = True
+        Me.alergicos.Location = New System.Drawing.Point(23, 47)
+        Me.alergicos.Name = "alergicos"
+        Me.alergicos.Size = New System.Drawing.Size(69, 17)
+        Me.alergicos.TabIndex = 8
+        Me.alergicos.Text = "Alergicos"
+        Me.alergicos.UseVisualStyleBackColor = True
         '
         'CheckBox9
         '
@@ -180,7 +180,7 @@ Partial Class Form1
         Me.Controls.Add(Me.CheckBox4)
         Me.Controls.Add(Me.CheckBox3)
         Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.alergicos)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -191,7 +191,7 @@ Partial Class Form1
     Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents alergicos As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox9 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
