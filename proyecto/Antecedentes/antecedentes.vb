@@ -4,7 +4,7 @@ Imports System.Windows.Forms
 
 Public Class antecedentes
 
-    Public antecedentes As SqlConnection = New SqlConnection("C:\Users\Ana\Downloads\consultorio_odontologico (6) (1).sql")
+    Public antecedentes As SqlConnection = New SqlConnection("C:\Users\Renzo\Downloads\consultorio_odontologico (6).sql")
     Private cmb As SqlCommandBuilder
     Public ds As DataSet = New DataSet()
     Public da As SqlDataAdapter
@@ -27,6 +27,7 @@ Public Class antecedentes
         ds.Tables.Clear()
         da = New SqlDataAdapter(sql, antecedentes)
         cmb = New SqlCommandBuilder(da)
+
         da.Fill(ds, tabla)
     End Sub
 
