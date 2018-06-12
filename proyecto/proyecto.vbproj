@@ -76,10 +76,10 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="pacientes\Agreagar_Antecedentes.Designer.vb">
-      <DependentUpon>Agreagar_Antecedentes.vb</DependentUpon>
+    <Compile Include="pacientes\Agregar_Antecedentes.Designer.vb">
+      <DependentUpon>Agregar_Antecedentes.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\Agreagar_Antecedentes.vb">
+    <Compile Include="pacientes\Agregar_Antecedentes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="aranceles\Aranceles.Designer.vb">
@@ -155,8 +155,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="pacientes\Agreagar_Antecedentes.resx">
-      <DependentUpon>Agreagar_Antecedentes.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\Agregar_Antecedentes.resx">
+      <DependentUpon>Agregar_Antecedentes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="aranceles\Aranceles.resx">
       <DependentUpon>Aranceles.vb</DependentUpon>
