@@ -76,6 +76,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Menu1\Menu_Inicio.Designer.vb">
+      <DependentUpon>Menu_Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu1\Menu_Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="pacientes\Agregar_Antecedentes.Designer.vb">
       <DependentUpon>Agregar_Antecedentes.vb</DependentUpon>
     </Compile>
@@ -155,6 +161,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Menu1\Menu_Inicio.resx">
+      <DependentUpon>Menu_Inicio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pacientes\Agregar_Antecedentes.resx">
       <DependentUpon>Agregar_Antecedentes.vb</DependentUpon>
     </EmbeddedResource>
