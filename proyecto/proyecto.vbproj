@@ -159,6 +159,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="pacientes\Registro_Medico.Designer.vb">
+      <DependentUpon>Registro_Medico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pacientes\Registro_Medico.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Menu1\Menu_Inicio.resx">
@@ -199,6 +205,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pacientes\Registro_Medico.resx">
+      <DependentUpon>Registro_Medico.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

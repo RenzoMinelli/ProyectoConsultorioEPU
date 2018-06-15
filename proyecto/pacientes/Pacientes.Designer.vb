@@ -43,22 +43,23 @@ Partial Class Pacientes
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -266,24 +267,6 @@ Partial Class Pacientes
         Me.Panel3.Size = New System.Drawing.Size(1067, 56)
         Me.Panel3.TabIndex = 12
         '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox5.Location = New System.Drawing.Point(824, 19)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(28, 33)
-        Me.PictureBox5.TabIndex = 24
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.índice
-        Me.PictureBox6.Location = New System.Drawing.Point(858, 19)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox6.TabIndex = 23
-        Me.PictureBox6.TabStop = False
-        '
         'Timer1
         '
         Me.Timer1.Enabled = True
@@ -306,61 +289,6 @@ Partial Class Pacientes
         Me.Label22.TabIndex = 15
         Me.Label22.Text = "Busqueda:"
         '
-        'Button4
-        '
-        Me.Button4.ForeColor = System.Drawing.Color.Black
-        Me.Button4.Image = Global.WindowsApplication1.My.Resources.Resources._42954__1_
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(314, 476)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(129, 63)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "Registrar Cita"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button4.UseVisualStyleBackColor = True
-        Me.Button4.Visible = False
-        '
-        'Button3
-        '
-        Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.delete__1_
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(705, 474)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(106, 63)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Eliminar"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button3.UseVisualStyleBackColor = True
-        Me.Button3.Visible = False
-        '
-        'Button2
-        '
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(508, 474)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(136, 63)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Modificar Datos"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.UseVisualStyleBackColor = True
-        Me.Button2.Visible = False
-        '
-        'Button1
-        '
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.add_user_icon_icons__2_
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(54, 476)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(139, 63)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Ingresar Paciente"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToAddRows = False
@@ -377,12 +305,98 @@ Partial Class Pacientes
         Me.DataGridView1.Size = New System.Drawing.Size(378, 325)
         Me.DataGridView1.TabIndex = 1
         '
+        'Button5
+        '
+        Me.Button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button5.Location = New System.Drawing.Point(644, 474)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(128, 63)
+        Me.Button5.TabIndex = 16
+        Me.Button5.Text = "Registro Médico"
+        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.Visible = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
+        Me.PictureBox5.Location = New System.Drawing.Point(824, 19)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(28, 33)
+        Me.PictureBox5.TabIndex = 24
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.índice
+        Me.PictureBox6.Location = New System.Drawing.Point(858, 19)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox6.TabIndex = 23
+        Me.PictureBox6.TabStop = False
+        '
+        'Button4
+        '
+        Me.Button4.ForeColor = System.Drawing.Color.Black
+        Me.Button4.Image = Global.WindowsApplication1.My.Resources.Resources._42954__1_
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button4.Location = New System.Drawing.Point(176, 474)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(129, 63)
+        Me.Button4.TabIndex = 9
+        Me.Button4.Text = "Registrar Cita"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.Visible = False
+        '
+        'Button3
+        '
+        Me.Button3.ForeColor = System.Drawing.Color.Black
+        Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.delete__1_
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.Location = New System.Drawing.Point(487, 474)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(119, 63)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Eliminar"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.Visible = False
+        '
+        'Button2
+        '
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(331, 474)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(136, 63)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Modificar Datos"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.Visible = False
+        '
+        'Button1
+        '
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.add_user_icon_icons__2_
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(18, 474)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(139, 63)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Ingresar Paciente"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Pacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(880, 580)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Panel3)
@@ -403,9 +417,9 @@ Partial Class Pacientes
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -440,5 +454,6 @@ Partial Class Pacientes
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 
 End Class

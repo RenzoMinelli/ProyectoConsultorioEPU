@@ -28,6 +28,7 @@
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         actPanel()
+
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -79,6 +80,7 @@
         Button3.Show()
         Button4.Show()
         Label3.Show()
+        Button5.Show()
 
         'Guardamos en Variables
         id_p = DataGridView1.CurrentRow.Cells(0).Value
@@ -207,5 +209,10 @@
         Me.Location = New Point(Menu_Inicio.Location.X + 160, Menu_Inicio.Location.Y)
         xf = Me.Location.X
         yf = Me.Location.Y
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        Me.Hide()
+        Registro_Medico.Show()
     End Sub
 End Class
