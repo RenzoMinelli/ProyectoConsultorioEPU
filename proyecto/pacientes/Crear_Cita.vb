@@ -9,12 +9,11 @@
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Pacientes.Show()
         Me.Dispose()
+        Pacientes.actPos()
     End Sub
 
     Private Sub Crear_Cita_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Location = New Point(Menu_Inicio.Location.X + 160, Menu_Inicio.Location.Y)
-        xf = Me.Location.X
-        yf = Me.Location.Y
+        actPos()
         Me.Size = New System.Drawing.Size(880, 580)
     End Sub
 
@@ -37,6 +36,10 @@
         Me.Dispose()
         Pacientes.Show()
 
+    End Sub
+    Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseDown
+        a = 1
+        ver = 0
     End Sub
     Private Sub Panel3_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseMove
 
@@ -74,7 +77,9 @@
 
     End Sub
 
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-
+    Public Sub actPos()
+        Me.Location = New Point(Menu_Inicio.Location.X + 160, Menu_Inicio.Location.Y)
+        xf = Me.Location.X
+        yf = Me.Location.Y
     End Sub
 End Class

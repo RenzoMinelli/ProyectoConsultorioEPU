@@ -96,9 +96,7 @@
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Location = New Point(Menu_Inicio.Location.X + 160, Menu_Inicio.Location.Y)
-        xf = Me.Location.X
-        yf = Me.Location.Y
+        actPos()
         Me.Size = New System.Drawing.Size(880, 580)
 
         TextBox1.Text = nombre
@@ -111,8 +109,9 @@
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Hide()
+        Me.Dispose()
         Pacientes.Show()
+        Pacientes.actPos()
     End Sub
 
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
@@ -122,6 +121,10 @@
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
         Me.WindowState = FormWindowState.Minimized
         Menu_Inicio.WindowState = FormWindowState.Minimized
+    End Sub
+    Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel3.MouseDown
+        a = 1
+        ver = 0
     End Sub
     Private Sub Panel3_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel3.MouseMove
 
@@ -158,8 +161,9 @@
         End If
 
     End Sub
-
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-
+    Public Sub actPos()
+        Me.Location = New Point(Menu_Inicio.Location.X + 160, Menu_Inicio.Location.Y)
+        xf = Me.Location.X
+        yf = Me.Location.Y
     End Sub
 End Class
