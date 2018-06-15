@@ -3,6 +3,7 @@ Imports System.Data.OleDb
 Imports MySql.Data.MySqlClient
 Module Module1
     Dim ubicacion As String = "server=localhost; user id=root ; password='';database = consultorio_odontologico"
+
     Public Conexion As MySqlDataAdapter
     Public Tabla As DataTable
     Public Consulta As String
@@ -17,6 +18,8 @@ Module Module1
     Public nac As String
     Public saldo As Integer
     Public id_p As Integer
+
+
 
 
     Public Sub consultar()

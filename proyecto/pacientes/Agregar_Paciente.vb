@@ -1,5 +1,11 @@
 ﻿Public Class Agregar_Paciente
 
+    Dim a As Integer = 0
+    Dim ver As Integer = -1
+    Dim xco, yco As Integer
+    Dim xc, yc As Integer
+    Dim xf, yf As Integer
+
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         direTra = ""
         enviado = ""
@@ -58,7 +64,10 @@
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Size = New System.Drawing.Size(1060, 600)
+        Me.Location = New Point(Menu_Inicio.Location.X + 160, Menu_Inicio.Location.Y)
+        xf = Me.Location.X
+        yf = Me.Location.Y
+        Me.Size = New System.Drawing.Size(880, 580)
         Dim nac As String = MonthCalendar1.SelectionRange.Start
         Label7.Text = "Fecha seleccionada " + nac
     End Sub
@@ -74,7 +83,46 @@
 
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox5.Click
         Me.WindowState = FormWindowState.Minimized
+        Menu_Inicio.WindowState = FormWindowState.Minimized
+    End Sub
+    Private Sub Panel1_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseMove
+
+        If a = 1 Then
+
+            xc = Cursor.Position.X
+            yc = Cursor.Position.Y
+
+            Dim holax, holay As Integer
+
+            holax = xc - xco
+            holay = yc - yco
+
+            Me.Location = New Point(xf + holax, yf + holay)
+
+        End If
+
+        If a = 0 Then
+
+            xco = Cursor.Position.X
+            yco = Cursor.Position.Y
+
+        End If
+    End Sub
+    Private Sub Panel3_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseUp
+        xf = Me.Location.X
+        yf = Me.Location.Y
+        a = 0
     End Sub
 
+    Private Sub Form2_LocationChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.LocationChanged
+        If Not ver = -1 Then
+            Menu_Inicio.Location = New Point(Me.Location.X - 160, Me.Location.Y)
+        End If
+
+    End Sub
+
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+
+    End Sub
     
 End Class

@@ -23,7 +23,6 @@ Partial Class Pacientes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -53,29 +52,14 @@ Partial Class Pacientes
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AllowUserToResizeColumns = False
-        Me.DataGridView1.AllowUserToResizeRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(18, 115)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(378, 325)
-        Me.DataGridView1.TabIndex = 1
         '
         'Label1
         '
@@ -155,7 +139,7 @@ Partial Class Pacientes
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(154, 282)
+        Me.Label10.Location = New System.Drawing.Point(170, 282)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(59, 18)
         Me.Label10.TabIndex = 7
@@ -173,7 +157,7 @@ Partial Class Pacientes
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(154, 158)
+        Me.Label7.Location = New System.Drawing.Point(170, 158)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(51, 18)
         Me.Label7.TabIndex = 4
@@ -182,7 +166,7 @@ Partial Class Pacientes
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(154, 74)
+        Me.Label4.Location = New System.Drawing.Point(170, 74)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 18)
         Me.Label4.TabIndex = 1
@@ -200,7 +184,7 @@ Partial Class Pacientes
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(154, 118)
+        Me.Label6.Location = New System.Drawing.Point(170, 117)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(51, 18)
         Me.Label6.TabIndex = 3
@@ -218,7 +202,7 @@ Partial Class Pacientes
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(154, 242)
+        Me.Label9.Location = New System.Drawing.Point(170, 242)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(51, 18)
         Me.Label9.TabIndex = 6
@@ -227,7 +211,7 @@ Partial Class Pacientes
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(154, 199)
+        Me.Label8.Location = New System.Drawing.Point(170, 199)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(51, 18)
         Me.Label8.TabIndex = 5
@@ -236,7 +220,7 @@ Partial Class Pacientes
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(154, 32)
+        Me.Label5.Location = New System.Drawing.Point(170, 32)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(51, 18)
         Me.Label5.TabIndex = 2
@@ -254,7 +238,7 @@ Partial Class Pacientes
         'Label17
         '
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(23, 92)
+        Me.Label17.Location = New System.Drawing.Point(31, 90)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(282, 125)
         Me.Label17.TabIndex = 0
@@ -285,7 +269,7 @@ Partial Class Pacientes
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox5.Location = New System.Drawing.Point(790, 20)
+        Me.PictureBox5.Location = New System.Drawing.Point(824, 19)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(28, 33)
         Me.PictureBox5.TabIndex = 24
@@ -294,7 +278,7 @@ Partial Class Pacientes
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.índice
-        Me.PictureBox6.Location = New System.Drawing.Point(824, 20)
+        Me.PictureBox6.Location = New System.Drawing.Point(858, 19)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox6.TabIndex = 23
@@ -377,12 +361,28 @@ Partial Class Pacientes
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToResizeColumns = False
+        Me.DataGridView1.AllowUserToResizeRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(18, 115)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView1.Size = New System.Drawing.Size(378, 325)
+        Me.DataGridView1.TabIndex = 1
+        '
         'Pacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(880, 570)
+        Me.ClientSize = New System.Drawing.Size(880, 580)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Panel3)
@@ -398,7 +398,6 @@ Partial Class Pacientes
         Me.Name = "Pacientes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -406,12 +405,12 @@ Partial Class Pacientes
         Me.Panel3.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label16 As System.Windows.Forms.Label
@@ -440,5 +439,6 @@ Partial Class Pacientes
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
 
 End Class

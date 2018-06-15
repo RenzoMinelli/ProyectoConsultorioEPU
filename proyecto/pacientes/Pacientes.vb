@@ -150,6 +150,7 @@
 
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox5.Click
         Me.WindowState = FormWindowState.Minimized
+        Menu_Inicio.WindowState = FormWindowState.Minimized
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
