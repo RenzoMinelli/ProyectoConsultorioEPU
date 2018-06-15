@@ -48,7 +48,7 @@
             Me.Dispose()
             Pacientes.Show()
             Pacientes.actTabla()
-
+            Pacientes.actPos()
         Else
 
             MsgBox("complete los campos necesarios")
@@ -64,6 +64,7 @@
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.ShowInTaskbar = False
         actPos()
         Me.Size = New System.Drawing.Size(880, 580)
         Dim nac As String = MonthCalendar1.SelectionRange.Start

@@ -13,6 +13,7 @@
     End Sub
 
     Private Sub Crear_Cita_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.ShowInTaskbar = False
         actPos()
         Me.Size = New System.Drawing.Size(880, 580)
     End Sub
@@ -35,6 +36,7 @@
         MsgBox("Registrado")
         Me.Dispose()
         Pacientes.Show()
+        Pacientes.actPos()
 
     End Sub
     Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseDown

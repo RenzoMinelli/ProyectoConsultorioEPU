@@ -73,6 +73,7 @@
                 Pacientes.Show()
                 Pacientes.actTabla()
                 Pacientes.actPanel()
+                Pacientes.actPos()
                 Me.Dispose()
 
             Catch ex As Exception
@@ -96,6 +97,7 @@
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.ShowInTaskbar = False
         actPos()
         Me.Size = New System.Drawing.Size(880, 580)
 
