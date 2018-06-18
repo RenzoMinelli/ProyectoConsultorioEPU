@@ -19,7 +19,16 @@ Module Module1
     Public saldo As Integer
     Public id_p As Integer
 
+    '////////////////Posicionamiento///////////////////////////
+    Public xf, yf As Integer
 
+    Public Sub actPos()
+
+        xf = Menu_Inicio.Location.X
+        yf = Menu_Inicio.Location.Y
+
+    End Sub
+    '///////////////////////////////////////////////////////
 
 
     Public Sub consultar()

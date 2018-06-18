@@ -59,9 +59,9 @@ Partial Class Menu_Inicio
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Location = New System.Drawing.Point(1, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(161, 582)
+        Me.Panel1.Size = New System.Drawing.Size(169, 576)
         Me.Panel1.TabIndex = 5
         '
         'Label5
@@ -184,9 +184,10 @@ Partial Class Menu_Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(162, 580)
+        Me.ClientSize = New System.Drawing.Size(1050, 580)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.IsMdiContainer = True
         Me.Name = "Menu_Inicio"
         Me.Text = "Menu_Inicio"
         Me.Panel1.ResumeLayout(False)

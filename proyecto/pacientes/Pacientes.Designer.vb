@@ -410,7 +410,6 @@ Partial Class Pacientes
         Me.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Pacientes"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
