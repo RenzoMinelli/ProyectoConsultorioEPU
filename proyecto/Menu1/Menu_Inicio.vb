@@ -9,6 +9,16 @@
         formu.MdiParent = Me
         formu.Dock = DockStyle.Right
         formu.Show()
+
+
+        veriCon()
+        If conex = True Then
+            PictureBox5.Show()
+            PictureBox6.Hide()
+        Else
+            PictureBox5.Hide()
+            PictureBox6.Show()
+        End If
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
