@@ -14,11 +14,11 @@
         Me.Size = New System.Drawing.Size(880, 580)
     End Sub
 
-    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox6.Click
+    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Aranceles.Dispose()
     End Sub
 
-    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox5.Click
+    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.WindowState = FormWindowState.Minimized
         Menu_Inicio.WindowState = FormWindowState.Minimized
     End Sub
@@ -34,36 +34,6 @@
         Pacientes.Show()
 
     End Sub
-    Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseDown
-        a = 1
-    End Sub
-    Private Sub Panel3_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseMove
 
-        If a = 1 Then
-
-            xc = Cursor.Position.X
-            yc = Cursor.Position.Y
-
-            Dim holax, holay As Integer
-
-            holax = xc - xco
-            holay = yc - yco
-
-            Menu_Inicio.Location = New Point(xf + holax, yf + holay)
-
-        End If
-
-        If a = 0 Then
-
-            xco = Cursor.Position.X
-            yco = Cursor.Position.Y
-
-        End If
-    End Sub
-    Private Sub Panel3_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseUp
-        xf = Menu_Inicio.Location.X
-        yf = Menu_Inicio.Location.Y
-        a = 0
-    End Sub
 
 End Class

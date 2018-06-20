@@ -57,10 +57,6 @@ Partial Class Registro_Medico
         Me.Panel55 = New System.Windows.Forms.Panel()
         Me.Panel555 = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Panel159 = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel01477 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -70,9 +66,6 @@ Partial Class Registro_Medico
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel000 = New System.Windows.Forms.Panel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel159.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -362,47 +355,6 @@ Partial Class Registro_Medico
         Me.DataGridView1.Size = New System.Drawing.Size(779, 156)
         Me.DataGridView1.TabIndex = 22
         '
-        'Panel159
-        '
-        Me.Panel159.BackColor = System.Drawing.Color.Gold
-        Me.Panel159.Controls.Add(Me.PictureBox5)
-        Me.Panel159.Controls.Add(Me.Label1)
-        Me.Panel159.Controls.Add(Me.PictureBox6)
-        Me.Panel159.Location = New System.Drawing.Point(-1, -3)
-        Me.Panel159.Name = "Panel159"
-        Me.Panel159.Size = New System.Drawing.Size(892, 48)
-        Me.Panel159.TabIndex = 23
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox5.Location = New System.Drawing.Point(808, 12)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(28, 33)
-        Me.PictureBox5.TabIndex = 26
-        Me.PictureBox5.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Enabled = False
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(13, 12)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(152, 33)
-        Me.Label1.TabIndex = 24
-        Me.Label1.Text = "Pacientes"
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.índice
-        Me.PictureBox6.Location = New System.Drawing.Point(842, 12)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox6.TabIndex = 25
-        Me.PictureBox6.TabStop = False
-        '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -485,7 +437,6 @@ Partial Class Registro_Medico
         Me.ClientSize = New System.Drawing.Size(880, 580)
         Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Panel159)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Panel555)
         Me.Controls.Add(Me.Panel55)
@@ -525,10 +476,6 @@ Partial Class Registro_Medico
         Me.Name = "Registro_Medico"
         Me.Text = "Registro_Medico"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel159.ResumeLayout(False)
-        Me.Panel159.PerformLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel01477.ResumeLayout(False)
         Me.Panel01477.PerformLayout()
         Me.ResumeLayout(False)
@@ -569,10 +516,6 @@ Partial Class Registro_Medico
     Friend WithEvents Panel55 As System.Windows.Forms.Panel
     Friend WithEvents Panel555 As System.Windows.Forms.Panel
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents Panel159 As System.Windows.Forms.Panel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Panel01477 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label

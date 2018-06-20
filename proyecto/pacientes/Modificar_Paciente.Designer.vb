@@ -38,13 +38,6 @@ Partial Class Modificar_Paciente
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -179,52 +172,11 @@ Partial Class Modificar_Paciente
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 16
         '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.Gold
-        Me.Panel3.Controls.Add(Me.PictureBox3)
-        Me.Panel3.Controls.Add(Me.PictureBox4)
-        Me.Panel3.Controls.Add(Me.Label8)
-        Me.Panel3.Location = New System.Drawing.Point(-5, -10)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1067, 46)
-        Me.Panel3.TabIndex = 17
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox3.Location = New System.Drawing.Point(823, 14)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(28, 33)
-        Me.PictureBox3.TabIndex = 20
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.índice
-        Me.PictureBox4.Location = New System.Drawing.Point(856, 14)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox4.TabIndex = 19
-        Me.PictureBox4.TabStop = False
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Enabled = False
-        Me.Label8.Font = New System.Drawing.Font("Arial Unicode MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(6, 7)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(153, 39)
-        Me.Label8.TabIndex = 2
-        Me.Label8.Text = "Pacientes"
-        '
         'Modificar_Paciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(880, 580)
-        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.MonthCalendar1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button3)
@@ -245,10 +197,6 @@ Partial Class Modificar_Paciente
         Me.Name = "Modificar_Paciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -269,8 +217,4 @@ Partial Class Modificar_Paciente
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
 End Class
