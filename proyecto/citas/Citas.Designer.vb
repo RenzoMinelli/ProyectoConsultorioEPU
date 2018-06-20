@@ -27,6 +27,7 @@ Partial Class Citas
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.AxCalendar1 = New AxCALENDARLib.AxCalendar()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
         CType(Me.AxCalendar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,6 +50,7 @@ Partial Class Citas
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(889, 635)
         Me.Controls.Add(Me.AxCalendar1)
+        Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Citas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -60,4 +62,5 @@ Partial Class Citas
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents AxCalendar1 As AxCALENDARLib.AxCalendar
     Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
+    Friend WithEvents SaveFileDialog2 As System.Windows.Forms.SaveFileDialog
 End Class
