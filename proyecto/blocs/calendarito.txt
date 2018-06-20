@@ -1,0 +1,25 @@
+Public Class Form1
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        TextBox1.Text = CStr(Me.calendario.Year)
+        TextBox2.Text = CStr(Me.calendario.Month)
+
+    End Sub
+    Public Function Color2Uint32(ByVal clr As Color) As UInt32
+        Dim t As Int32
+        Dim a() As Byte
+        t = ColorTranslator.ToOle(clr)
+        a = BitConverter.GetBytes(t)
+        Return BitConverter.ToUInt32(a, 0)
+    End Function
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+        ColorDialog1.ShowDialog()
+        calendario.SetHighLightDay(CShort(TextBox1.Text), CShort(TextBox2.Text), CShort(TextBox3.Text), Color2Uint32(ColorDialog1.Color))
+
+    End Sub
+
+  
+End Class
