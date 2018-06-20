@@ -35,4 +35,7 @@
         formu.Show()
     End Sub
 
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        Label3.Text = Date.Now.ToLongTimeString
+    End Sub
 End Class
