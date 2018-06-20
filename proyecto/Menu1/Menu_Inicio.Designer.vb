@@ -75,18 +75,20 @@ Partial Class Menu_Inicio
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(48, 209)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
+        Me.Label5.Location = New System.Drawing.Point(66, 198)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.Size = New System.Drawing.Size(77, 25)
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "Label5"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(60, 174)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
+        Me.Label4.Location = New System.Drawing.Point(66, 162)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(30, 13)
+        Me.Label4.Size = New System.Drawing.Size(61, 25)
         Me.Label4.TabIndex = 16
         Me.Label4.Text = "Citas"
         '
