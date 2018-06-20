@@ -6,8 +6,10 @@
     Dim xc, yc As Integer
 
 
+
     Private Sub Menu_Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        actPos()
+        xf = Me.Location.X
+        yf = Me.Location.Y
         formu = Pacientes
         formu.MdiParent = Me
         formu.Dock = DockStyle.Right
@@ -59,12 +61,10 @@
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
         Me.Dispose()
     End Sub
-
-    Private Sub Panel2_MouseDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel2.Paint
+    Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
         a = 1
     End Sub
-
-    Private Sub Panel2_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel2.Paint
+    Private Sub Panel3_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseMove
 
         If a = 1 Then
 
@@ -86,13 +86,11 @@
             yco = Cursor.Position.Y
 
         End If
-
-
     End Sub
-
-    Private Sub Panel2_MouseUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel2.Paint
+    Private Sub Panel3_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseUp
         xf = Me.Location.X
         yf = Me.Location.Y
         a = 0
     End Sub
+   
 End Class
