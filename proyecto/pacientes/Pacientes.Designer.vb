@@ -358,6 +358,7 @@ Partial Class Pacientes
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
+        Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Pacientes"
