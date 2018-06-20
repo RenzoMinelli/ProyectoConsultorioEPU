@@ -38,10 +38,10 @@ Partial Class Citas
         'AxCalendar1
         '
         Me.AxCalendar1.Enabled = True
-        Me.AxCalendar1.Location = New System.Drawing.Point(36, 65)
+        Me.AxCalendar1.Location = New System.Drawing.Point(134, 52)
         Me.AxCalendar1.Name = "AxCalendar1"
         Me.AxCalendar1.OcxState = CType(resources.GetObject("AxCalendar1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxCalendar1.Size = New System.Drawing.Size(534, 348)
+        Me.AxCalendar1.Size = New System.Drawing.Size(611, 476)
         Me.AxCalendar1.TabIndex = 34
         '
         'Citas

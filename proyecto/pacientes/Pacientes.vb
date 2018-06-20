@@ -22,6 +22,7 @@
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
         actPos()
         Me.Size = New System.Drawing.Size(880, 580)
         actTabla()
