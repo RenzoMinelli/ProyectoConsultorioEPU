@@ -79,6 +79,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="finanzas\finanzas.Designer.vb">
+      <DependentUpon>finanzas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="finanzas\finanzas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Menu1\Menu_Inicio.Designer.vb">
       <DependentUpon>Menu_Inicio.vb</DependentUpon>
     </Compile>
@@ -170,6 +176,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="finanzas\finanzas.resx">
+      <DependentUpon>finanzas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu1\Menu_Inicio.resx">
       <DependentUpon>Menu_Inicio.vb</DependentUpon>
     </EmbeddedResource>
