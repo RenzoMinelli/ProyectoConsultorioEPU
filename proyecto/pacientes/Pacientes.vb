@@ -24,6 +24,7 @@
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         actPos()
+
         Me.Size = New System.Drawing.Size(880, 580)
         actTabla()
 
@@ -51,17 +52,23 @@
         direTra = ""
         saldo = 0
 
-        Consulta = "SELECT * FROM paciente"
-        consultar()
+        Try
+            Consulta = "SELECT * FROM paciente"
+            consultar()
 
-        DataGridView1.DataSource = Tabla
-        DataGridView1.Columns(0).Visible = False
-        DataGridView1.Columns(2).Visible = False
-        DataGridView1.Columns(4).Visible = False
-        DataGridView1.Columns(5).Visible = False
-        DataGridView1.Columns(6).Visible = False
-        DataGridView1.Columns(7).Visible = False
-        DataGridView1.ClearSelection()
+            DataGridView1.DataSource = Tabla
+            DataGridView1.Columns(0).Visible = False
+            DataGridView1.Columns(2).Visible = False
+            DataGridView1.Columns(4).Visible = False
+            DataGridView1.Columns(5).Visible = False
+            DataGridView1.Columns(6).Visible = False
+            DataGridView1.Columns(7).Visible = False
+            DataGridView1.ClearSelection()
+        Catch ex As Exception
+            MsgBox("No hay conexión", MsgBoxStyle.Exclamation)
+            Button1.Visible = False
+        End Try
+        
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
