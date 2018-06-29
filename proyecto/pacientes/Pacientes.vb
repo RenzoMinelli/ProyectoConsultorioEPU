@@ -52,6 +52,7 @@
         direTra = ""
         saldo = 0
 
+
         Try
             Consulta = "SELECT * FROM paciente"
             consultar()
@@ -65,10 +66,9 @@
             DataGridView1.Columns(7).Visible = False
             DataGridView1.ClearSelection()
         Catch ex As Exception
-            MsgBox("No hay conexión", MsgBoxStyle.Exclamation)
-            Button1.Visible = False
+            Button1.Hide()
         End Try
-        
+
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
