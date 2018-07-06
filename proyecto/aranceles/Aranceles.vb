@@ -1,5 +1,6 @@
 ﻿Public Class Aranceles
     Public id As Integer
+    Dim formu As New Form
 
     Private Sub Aranceles_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
         Me.Size = New System.Drawing.Size(880, 580)
@@ -50,7 +51,11 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Hide()
-        Agregar_Arancel.Show()
+        formu = Agregar_Arancel
+        formu.MdiParent = Menu_Inicio
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
