@@ -24,8 +24,6 @@
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         actPos()
-
-
         actTabla()
 
     End Sub
@@ -64,6 +62,8 @@
             DataGridView1.Columns(5).Visible = False
             DataGridView1.Columns(6).Visible = False
             DataGridView1.Columns(7).Visible = False
+            DataGridView1.Columns(1).HeaderText = "Cédula"
+            DataGridView1.Columns(3).HeaderText = "Nombre"
             DataGridView1.ClearSelection()
         Catch ex As Exception
             Button1.Hide()
@@ -130,10 +130,7 @@
 
     End Sub
 
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-
-    End Sub
+  
 
     Private Sub Label3_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label3.MouseHover
         Label3.Font = New Font("Sans Serif", 14, FontStyle.Underline, GraphicsUnit.Point)
@@ -156,9 +153,7 @@
         Me.Dispose()
     End Sub
 
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        
-    End Sub
+   
 
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Menu_Inicio.Dispose()
@@ -203,5 +198,10 @@
         formu.MdiParent = Menu_Inicio
         formu.Dock = DockStyle.Fill
         formu.Show()
+    End Sub
+
+    Private Sub DataGridView1_CellClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        id_p = DataGridView1.CurrentRow.Cells(0).Value
+        actPanel()
     End Sub
 End Class

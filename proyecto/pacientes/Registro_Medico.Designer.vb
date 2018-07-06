@@ -374,9 +374,10 @@ Partial Class Registro_Medico
         Me.Panel01477.Controls.Add(Me.Panel0000)
         Me.Panel01477.Controls.Add(Me.Label2)
         Me.Panel01477.Controls.Add(Me.Panel000)
+        Me.Panel01477.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel01477.Location = New System.Drawing.Point(420, 393)
         Me.Panel01477.Name = "Panel01477"
-        Me.Panel01477.Size = New System.Drawing.Size(271, 132)
+        Me.Panel01477.Size = New System.Drawing.Size(297, 151)
         Me.Panel01477.TabIndex = 25
         '
         'Label4
@@ -384,7 +385,7 @@ Partial Class Registro_Medico
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(67, 106)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 13)
+        Me.Label4.Size = New System.Drawing.Size(71, 24)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Normal"
         '
@@ -399,9 +400,9 @@ Partial Class Registro_Medico
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(67, 74)
+        Me.Label3.Location = New System.Drawing.Point(66, 64)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(104, 13)
+        Me.Label3.Size = New System.Drawing.Size(183, 24)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Otra cosa que poner"
         '
@@ -416,9 +417,9 @@ Partial Class Registro_Medico
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(64, 29)
+        Me.Label2.Location = New System.Drawing.Point(63, 17)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(116, 13)
+        Me.Label2.Size = New System.Drawing.Size(205, 24)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "alguna cosa que poner"
         '

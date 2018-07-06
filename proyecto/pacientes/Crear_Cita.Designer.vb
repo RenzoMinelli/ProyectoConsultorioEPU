@@ -30,6 +30,7 @@ Partial Class Crear_Cita
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(543, 426)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(149, 62)
@@ -39,6 +40,7 @@ Partial Class Crear_Cita
         '
         'Button2
         '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(170, 426)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(154, 62)
@@ -49,10 +51,10 @@ Partial Class Crear_Cita
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(228, 168)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(146, 18)
+        Me.Label1.Size = New System.Drawing.Size(189, 24)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Fecha Seleccionada:"
         '
@@ -61,7 +63,7 @@ Partial Class Crear_Cita
         Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy        HH:mm"
         Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(380, 160)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(423, 168)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(212, 29)
         Me.DateTimePicker1.TabIndex = 15

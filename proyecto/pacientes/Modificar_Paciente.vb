@@ -3,6 +3,23 @@
     Dim xco, yco As Integer
     Dim xc, yc As Integer
     Dim nac2 As String
+    Dim formu As New Form
+
+    '/////////////////////////Antecedentes//////////////////////////
+    Public alergicos As Boolean
+    Public diabeticos As Boolean
+    Public cardiovasculares As Boolean
+    Public fiebre_reumatica As Boolean
+    Public coagulacion As Boolean
+    Public odontologicos As Boolean
+    Public farmacos_recibidos As Boolean
+    Public familiares As Boolean
+    Public tratamiento_medico As Boolean
+    Public obs As String
+
+    Public cambio As Integer = 0
+    '/////////////////////////////////////////////////////////////
+
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
@@ -66,6 +83,20 @@
                     consultar()
                 End If
 
+                If cambio <> 0 Then
+
+                    If DataGridView1.Rows(0).Cells(0).Value = Nothing Then
+                        Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "', '" + alergicos.GetHashCode.ToString + "', '" + diabeticos.GetHashCode.ToString + "', '" + cardiovasculares.GetHashCode.ToString + "', '" + fiebre_reumatica.GetHashCode.ToString + "', '" + coagulacion.GetHashCode.ToString + "', '" + odontologicos.GetHashCode.ToString + "', '" + farmacos_recibidos.GetHashCode.ToString + "', '" + familiares.GetHashCode.ToString + "', '" + tratamiento_medico.GetHashCode.ToString + "', '" + obs + "');"
+                        consultar()
+                    Else
+
+                        Consulta = "UPDATE antecedentes SET alergicos = '" + alergicos.GetHashCode.ToString + "', diabeticos = '" + diabeticos.GetHashCode.ToString + "', cardiovasculares = '" + cardiovasculares.GetHashCode.ToString + "', fiebre_reumatica = '" + fiebre_reumatica.GetHashCode.ToString + "', coagulacion = '" + coagulacion.GetHashCode.ToString + "', odontologicos = '" + odontologicos.GetHashCode.ToString + "', farmacos_recibidos = '" + farmacos_recibidos.GetHashCode.ToString + "', familiares = '" + familiares.GetHashCode.ToString + "', tratamientos_medicos = '" + tratamiento_medico.GetHashCode.ToString + "', observaciones = '" + obs + "' WHERE id_p = '" + Str(id_p) + "';"
+                        consultar()
+                    End If
+
+
+
+                End If
                 MsgBox("Guardado con Exito")
 
                 Pacientes.Show()
@@ -75,7 +106,7 @@
 
             Catch ex As Exception
 
-                MsgBox("Error")
+                MsgBox("Error" + vbNewLine + ex.ToString)
 
             End Try
             
@@ -105,6 +136,23 @@
         TextBox5.Text = direTra
         MonthCalendar1.SelectionRange.Start = nac
         Label7.Text = "Fecha seleccionada " + nac
+
+        'Antecedentes
+        Consulta = "SELECT * FROM antecedentes where id_p = '" + Str(id_p) + "';"
+        consultar()
+        DataGridView1.DataSource = Tabla
+
+        alergicos = DataGridView1.Rows(0).Cells(1).Value
+        diabeticos = DataGridView1.Rows(0).Cells(2).Value
+        cardiovasculares = DataGridView1.Rows(0).Cells(3).Value
+        fiebre_reumatica = DataGridView1.Rows(0).Cells(4).Value
+        coagulacion = DataGridView1.Rows(0).Cells(5).Value
+        odontologicos = DataGridView1.Rows(0).Cells(6).Value
+        farmacos_recibidos = DataGridView1.Rows(0).Cells(7).Value
+        familiares = DataGridView1.Rows(0).Cells(8).Value
+        tratamiento_medico = DataGridView1.Rows(0).Cells(9).Value
+        obs = DataGridView1.Rows(0).Cells(10).Value
+
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -113,4 +161,11 @@
     End Sub
 
 
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Me.Hide()
+        formu = Modificar_Antecedentes
+        formu.MdiParent = Menu_Inicio
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+    End Sub
 End Class
