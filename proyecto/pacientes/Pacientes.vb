@@ -17,7 +17,7 @@
         Me.Hide()
         formu = Agregar_Paciente
         formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Right
+        formu.Dock = DockStyle.Fill
         formu.Show()
     End Sub
 
@@ -39,7 +39,7 @@
         Me.Hide()
         formu = Modificar_Paciente
         formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Right
+        formu.Dock = DockStyle.Fill
         formu.Show()
     End Sub
     Public Sub actTabla()
@@ -92,8 +92,9 @@
         Button2.Show()
         Button3.Show()
         Button4.Show()
-        Label3.Show()
+        Button6.Show()
         Button5.Show()
+        Label3.Show()
 
         'Guardamos en Variables
         id_p = DataGridView1.CurrentRow.Cells(0).Value
@@ -129,26 +130,24 @@
 
     End Sub
 
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
-        'MsgBox("Crea el formulario de antecedentes")
-        Me.Hide()
-        Antecedentes.Show()
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
 
     End Sub
 
     Private Sub Label3_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label3.MouseHover
-        Label3.Font = New Font("Sans Serif", 8, FontStyle.Underline, GraphicsUnit.Point)
+        Label3.Font = New Font("Sans Serif", 14, FontStyle.Underline, GraphicsUnit.Point)
     End Sub
 
     Private Sub Label3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label3.MouseLeave
-        Label3.Font = New Font("Sans Serif", 8, GraphicsUnit.Point)
+        Label3.Font = New Font("Sans Serif", 14, GraphicsUnit.Point)
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         Me.Hide()
         formu = Crear_Cita
         formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Right
+        formu.Dock = DockStyle.Fill
         formu.Show()
     End Sub
 
@@ -186,8 +185,23 @@
         Me.Hide()
         formu = Registro_Medico
         formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Right
+        formu.Dock = DockStyle.Fill
         formu.Show()
     End Sub
 
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+        Me.Hide()
+        formu = Antecedentes
+        formu.MdiParent = Menu_Inicio
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+    End Sub
+
+    Private Sub Label3_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+        Me.Hide()
+        formu = Antecedentes
+        formu.MdiParent = Menu_Inicio
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+    End Sub
 End Class

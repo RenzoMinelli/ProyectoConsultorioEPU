@@ -3,6 +3,7 @@
     Dim a As Integer = 0
     Dim xco, yco As Integer
     Dim xc, yc As Integer
+    Dim formu As New Form
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         direTra = ""
@@ -62,7 +63,6 @@
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         actPos()
-
         Me.Size = New System.Drawing.Size(880, 580)
         Dim nac As String = MonthCalendar1.SelectionRange.Start
         Label7.Text = "Fecha seleccionada " + nac
@@ -72,6 +72,12 @@
         Me.Hide()
         Pacientes.Show()
     End Sub
- 
 
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Me.Hide()
+        formu = Agregar_Antecedentes
+        formu.MdiParent = Menu_Inicio
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+    End Sub
 End Class

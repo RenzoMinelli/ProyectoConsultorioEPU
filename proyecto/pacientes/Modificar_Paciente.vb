@@ -112,13 +112,5 @@
         Pacientes.Show()
     End Sub
 
-    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Aranceles.Dispose()
-    End Sub
-
-    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.WindowState = FormWindowState.Minimized
-        Menu_Inicio.WindowState = FormWindowState.Minimized
-    End Sub
 
 End Class

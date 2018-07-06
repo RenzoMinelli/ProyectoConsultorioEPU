@@ -30,16 +30,16 @@ Partial Class Crear_Cita
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(224, 385)
+        Me.Button1.Location = New System.Drawing.Point(543, 426)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(150, 62)
+        Me.Button1.Size = New System.Drawing.Size(149, 62)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Crear"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(503, 396)
+        Me.Button2.Location = New System.Drawing.Point(170, 426)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(154, 62)
         Me.Button2.TabIndex = 4

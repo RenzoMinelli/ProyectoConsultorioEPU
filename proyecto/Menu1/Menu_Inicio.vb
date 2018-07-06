@@ -12,7 +12,7 @@
         yf = Me.Location.Y
         formu = Pacientes
         formu.MdiParent = Me
-        formu.Dock = DockStyle.Right
+        formu.Dock = DockStyle.Fill
         formu.Show()
 
 
@@ -30,7 +30,7 @@
         formu.Dispose()
         formu = Pacientes
         formu.MdiParent = Me
-        formu.Dock = DockStyle.Right
+        formu.Dock = DockStyle.Fill
         formu.Show()
     End Sub
 
@@ -38,7 +38,7 @@
         formu.Dispose()
         formu = Aranceles
         formu.MdiParent = Me
-        formu.Dock = DockStyle.Right
+        formu.Dock = DockStyle.Fill
         formu.Show()
     End Sub
 
@@ -46,7 +46,7 @@
         formu.Dispose()
         formu = Citas
         formu.MdiParent = Me
-        formu.Dock = DockStyle.Right
+        formu.Dock = DockStyle.Fill
         formu.Show()
     End Sub
 
@@ -54,11 +54,11 @@
         Label3.Text = Date.Now.ToLongTimeString
     End Sub
 
-    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
+    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Dispose()
     End Sub
     Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
@@ -93,7 +93,7 @@
         a = 0
     End Sub
    
-    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
+    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
@@ -102,6 +102,10 @@
     End Sub
 
     Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub PictureBox6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox6.Click
 
     End Sub
 End Class

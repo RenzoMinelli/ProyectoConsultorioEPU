@@ -42,7 +42,7 @@ Partial Class Agregar_Paciente
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(171, 120)
+        Me.TextBox1.Location = New System.Drawing.Point(173, 62)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(227, 20)
         Me.TextBox1.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class Agregar_Paciente
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(40, 120)
+        Me.Label1.Location = New System.Drawing.Point(42, 62)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 13)
         Me.Label1.TabIndex = 1
@@ -59,7 +59,7 @@ Partial Class Agregar_Paciente
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(43, 164)
+        Me.Label2.Location = New System.Drawing.Point(45, 106)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(40, 13)
         Me.Label2.TabIndex = 2
@@ -67,7 +67,7 @@ Partial Class Agregar_Paciente
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(171, 164)
+        Me.TextBox2.Location = New System.Drawing.Point(173, 106)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(227, 20)
         Me.TextBox2.TabIndex = 3
@@ -75,7 +75,7 @@ Partial Class Agregar_Paciente
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(593, 142)
+        Me.Label3.Location = New System.Drawing.Point(595, 84)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(93, 13)
         Me.Label3.TabIndex = 4
@@ -84,7 +84,7 @@ Partial Class Agregar_Paciente
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(36, 210)
+        Me.Label4.Location = New System.Drawing.Point(38, 152)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(132, 13)
         Me.Label4.TabIndex = 6
@@ -92,7 +92,7 @@ Partial Class Agregar_Paciente
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(171, 207)
+        Me.TextBox3.Location = New System.Drawing.Point(173, 149)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(227, 20)
         Me.TextBox3.TabIndex = 7
@@ -100,7 +100,7 @@ Partial Class Agregar_Paciente
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(43, 256)
+        Me.Label5.Location = New System.Drawing.Point(45, 198)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(96, 13)
         Me.Label5.TabIndex = 8
@@ -108,7 +108,7 @@ Partial Class Agregar_Paciente
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(171, 256)
+        Me.TextBox4.Location = New System.Drawing.Point(173, 198)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(227, 20)
         Me.TextBox4.TabIndex = 9
@@ -116,7 +116,7 @@ Partial Class Agregar_Paciente
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(36, 294)
+        Me.Label6.Location = New System.Drawing.Point(38, 236)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(123, 13)
         Me.Label6.TabIndex = 10
@@ -124,32 +124,32 @@ Partial Class Agregar_Paciente
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(171, 294)
+        Me.TextBox5.Location = New System.Drawing.Point(173, 236)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(227, 20)
         Me.TextBox5.TabIndex = 11
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(43, 500)
+        Me.Button1.Location = New System.Drawing.Point(509, 467)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(144, 50)
+        Me.Button1.Size = New System.Drawing.Size(150, 54)
         Me.Button1.TabIndex = 12
         Me.Button1.Text = "Agregar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(607, 500)
+        Me.Button2.Location = New System.Drawing.Point(85, 467)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(137, 50)
+        Me.Button2.Size = New System.Drawing.Size(144, 54)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(39, 334)
+        Me.Button3.Location = New System.Drawing.Point(41, 276)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(359, 23)
         Me.Button3.TabIndex = 14
@@ -159,7 +159,7 @@ Partial Class Agregar_Paciente
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(519, 335)
+        Me.Label7.Location = New System.Drawing.Point(521, 277)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(106, 13)
         Me.Label7.TabIndex = 15
@@ -167,7 +167,7 @@ Partial Class Agregar_Paciente
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(522, 164)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(524, 106)
         Me.MonthCalendar1.MaxSelectionCount = 1
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 16

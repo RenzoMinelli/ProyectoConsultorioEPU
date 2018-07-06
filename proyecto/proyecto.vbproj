@@ -96,12 +96,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\Agregar_Antecedentes.Designer.vb">
-      <DependentUpon>Agregar_Antecedentes.vb</DependentUpon>
-    </Compile>
-    <Compile Include="pacientes\Agregar_Antecedentes.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="aranceles\Aranceles.Designer.vb">
       <DependentUpon>Aranceles.vb</DependentUpon>
     </Compile>
@@ -124,6 +118,12 @@
       <DependentUpon>Citas.vb</DependentUpon>
     </Compile>
     <Compile Include="citas\Citas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pacientes\Agregar_Antecedentes.Designer.vb">
+      <DependentUpon>Agregar_Antecedentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pacientes\Agregar_Antecedentes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="pacientes\Antecedentes.Designer.vb">
@@ -182,9 +182,6 @@
     <EmbeddedResource Include="Menu1\Menu_Inicio.resx">
       <DependentUpon>Menu_Inicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\Agregar_Antecedentes.resx">
-      <DependentUpon>Agregar_Antecedentes.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="aranceles\Aranceles.resx">
       <DependentUpon>Aranceles.vb</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="citas\Citas.resx">
       <DependentUpon>Citas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pacientes\Agregar_Antecedentes.resx">
+      <DependentUpon>Agregar_Antecedentes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\Antecedentes.resx">
       <DependentUpon>Antecedentes.vb</DependentUpon>
@@ -233,9 +233,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Antecedentes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\users_21945.png" />
   </ItemGroup>
@@ -246,9 +244,10 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\X.png" />
+    <None Include="Resources\checkmark.png" />
     <None Include="Resources\rambocursor.ico" />
     <None Include="Resources\punteraso.ico" />
-    <None Include="Resources\micepointer_87506.ico" />
     <None Include="Resources\cursor.png" />
     <None Include="Resources\f7d19e11011fb8ddfe0d533909dc8ace-icono-de-lupa-para-acampar-by-vexels.png" />
     <None Include="Resources\Users-Edit-User-icon %281%291.png" />

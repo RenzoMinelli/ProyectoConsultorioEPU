@@ -78,7 +78,7 @@
 
     Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Hide()
-        Form1.Show()
+        'Form1.Show()
     End Sub
 
     Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
