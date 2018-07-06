@@ -121,6 +121,9 @@
   <data name="índice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\índice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="letterx_87521" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\letterx_87521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,11 +139,14 @@
   <data name="minimize-window" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimize-window.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="777d48d425c5f93a54d01a413639fd83 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\777d48d425c5f93a54d01a413639fd83 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="epu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\epu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="70002" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\70002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="índice(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\índice(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -156,6 +162,9 @@
   </data>
   <data name="777d48d425c5f93a54d01a413639fd83" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\777d48d425c5f93a54d01a413639fd83.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="epu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\epu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel_exit_cross_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_exit_cross_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,10 +187,10 @@
   <data name="56238" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\56238.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="777d48d425c5f93a54d01a413639fd83 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\777d48d425c5f93a54d01a413639fd83 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="70002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\70002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="epu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\epu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

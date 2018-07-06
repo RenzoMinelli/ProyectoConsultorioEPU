@@ -26,6 +26,8 @@ Partial Class Citas
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MonthCalendar1
@@ -39,7 +41,7 @@ Partial Class Citas
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(14, 49)
+        Me.Label1.Location = New System.Drawing.Point(14, 54)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(327, 20)
         Me.Label1.TabIndex = 1
@@ -63,11 +65,21 @@ Partial Class Citas
         Me.ListBox1.Size = New System.Drawing.Size(347, 355)
         Me.ListBox1.TabIndex = 3
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(28, 426)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
+        Me.DataGridView1.TabIndex = 4
+        Me.DataGridView1.Visible = False
+        '
         'Citas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(889, 635)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
@@ -77,6 +89,7 @@ Partial Class Citas
         Me.Name = "Citas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Citas"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -85,4 +98,5 @@ Partial Class Citas
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
 End Class

@@ -259,6 +259,9 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\epu2.png" />
+    <None Include="Resources\epu1.png" />
+    <None Include="Resources\epu.png" />
     <None Include="Resources\X.png" />
     <None Include="Resources\checkmark.png" />
     <None Include="Resources\rambocursor.ico" />

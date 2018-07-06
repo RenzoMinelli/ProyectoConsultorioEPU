@@ -2,9 +2,9 @@
     Dim cita As String
     Dim formu As New Form
     Private Sub Citas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim a As Icon
-        a = My.Resources.rambocursor
-        Me.Cursor = New Cursor(a.Handle)
+        ' Dim a As Icon
+        ' a = My.Resources.rambocursor
+        ' Me.Cursor = New Cursor(a.Handle)
 
     End Sub
 
@@ -25,12 +25,11 @@
     End Sub
 
     Private Sub MonthCalendar1_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar1.DateChanged
-        Dim fecha As String = MonthCalendar1.SelectionRange.Start
-        Dim vector(7) As Char
-        vector = fecha.ToCharArray
-        fecha = vector.ToString
-        MsgBox(vector)
-        Consulta = "Select "
+        Dim fecha As String = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
+        Consulta = "Select * from citas where fecha like '" + fecha + "%';"
+        consultar()
+        DataGridView1.DataSource = Tabla
+        ListBox1.Items.Add(DataGridView1)
 
     End Sub
 
