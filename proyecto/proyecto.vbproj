@@ -76,6 +76,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="citas\agregarcitas2.Designer.vb">
+      <DependentUpon>agregarcitas2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="citas\agregarcitas2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="finanzas\finanzas.Designer.vb">
       <DependentUpon>finanzas.vb</DependentUpon>
     </Compile>
@@ -179,6 +185,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="citas\agregarcitas2.resx">
+      <DependentUpon>agregarcitas2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="finanzas\finanzas.resx">
       <DependentUpon>finanzas.vb</DependentUpon>
     </EmbeddedResource>
