@@ -17,23 +17,37 @@
 
             If Not IsDBNull(DataGridView1.Rows(x).Cells(2).Value) Then
                 Select Case DataGridView1.Rows(x).Cells(2).Value
-                    Case "nor-este"
-                        zona = "2"
+
                     Case "nor-oeste"
                         zona = "1"
-                    Case "sur-este"
-                        zona = "4"
+                    Case "nor-este"
+                        zona = "2"
                     Case "sur-oeste"
                         zona = "3"
+                    Case "sur-este"
+                        zona = "4"
+
                 End Select
 
                 zona += DataGridView1.Rows(x).Cells(3).Value.ToString
 
                 Select Case zona
                     Case "11"
-                        Panel11.BackColor = Color.Red
+                        If DataGridView1.Rows(x).Cells(1).Value = "malo" Then
+                            Panel11.BackColor = Color.Red
+                        ElseIf DataGridView1.Rows(x).Cells(1).Value = "bueno" Then
+                            Panel11.BackColor = Color.Green
+                        Else
+                            Panel11.BackColor = Color.White
+                        End If
                     Case "12"
-                        Panel12.BackColor = Color.Red
+                        If DataGridView1.Rows(x).Cells(1).Value = "malo" Then
+                            Panel12.BackColor = Color.Red
+                        ElseIf DataGridView1.Rows(x).Cells(1).Value = "bueno" Then
+                            Panel12.BackColor = Color.Green
+                        Else
+                            Panel12.BackColor = Color.White
+                        End If
                     Case "24"
 
                         If DataGridView1.Rows(x).Cells(1).Value = "malo" Then

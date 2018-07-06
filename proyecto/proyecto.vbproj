@@ -276,23 +276,6 @@
     <None Include="Resources\minimize-window.png" />
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="AxCALENDARLib">
-      <Guid>{A035D4AC-4104-4772-AD67-C48F484EA961}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
-    <COMReference Include="CALENDARLib">
-      <Guid>{A035D4AC-4104-4772-AD67-C48F484EA961}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
     <COMReference Include="stdole">
       <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>2</VersionMajor>

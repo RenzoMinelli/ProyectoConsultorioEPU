@@ -23,44 +23,25 @@ Partial Class Citas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Citas))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.AxCalendar1 = New AxCALENDARLib.AxCalendar()
-        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
-        CType(Me.AxCalendar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
         '
         Me.Timer1.Enabled = True
         '
-        'AxCalendar1
-        '
-        Me.AxCalendar1.Enabled = True
-        Me.AxCalendar1.Location = New System.Drawing.Point(134, 52)
-        Me.AxCalendar1.Name = "AxCalendar1"
-        Me.AxCalendar1.OcxState = CType(resources.GetObject("AxCalendar1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxCalendar1.Size = New System.Drawing.Size(611, 476)
-        Me.AxCalendar1.TabIndex = 34
-        '
         'Citas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(889, 635)
-        Me.Controls.Add(Me.AxCalendar1)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Citas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Citas"
-        CType(Me.AxCalendar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents AxCalendar1 As AxCALENDARLib.AxCalendar
-    Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
-    Friend WithEvents SaveFileDialog2 As System.Windows.Forms.SaveFileDialog
 End Class
