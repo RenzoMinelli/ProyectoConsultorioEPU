@@ -68,4 +68,8 @@
         Me.Dispose()
         Pacientes.Show()
     End Sub
+
+    Private Sub Panel11_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel11.Paint
+
+    End Sub
 End Class
