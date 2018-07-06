@@ -25,12 +25,12 @@
 
         actPos()
 
-        Me.Size = New System.Drawing.Size(880, 580)
+
         actTabla()
 
     End Sub
 
-    Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
         actPanel()
 
     End Sub

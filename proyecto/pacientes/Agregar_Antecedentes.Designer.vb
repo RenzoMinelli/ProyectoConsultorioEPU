@@ -32,13 +32,15 @@ Partial Class Agregar_Antecedentes
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.CheckBox9 = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(43, 21)
+        Me.CheckBox1.Location = New System.Drawing.Point(85, 40)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(108, 28)
         Me.CheckBox1.TabIndex = 0
@@ -49,7 +51,7 @@ Partial Class Agregar_Antecedentes
         '
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.Location = New System.Drawing.Point(43, 72)
+        Me.CheckBox2.Location = New System.Drawing.Point(85, 91)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(116, 28)
         Me.CheckBox2.TabIndex = 1
@@ -60,7 +62,7 @@ Partial Class Agregar_Antecedentes
         '
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox3.Location = New System.Drawing.Point(43, 123)
+        Me.CheckBox3.Location = New System.Drawing.Point(85, 142)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(173, 28)
         Me.CheckBox3.TabIndex = 2
@@ -71,7 +73,7 @@ Partial Class Agregar_Antecedentes
         '
         Me.CheckBox4.AutoSize = True
         Me.CheckBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox4.Location = New System.Drawing.Point(43, 174)
+        Me.CheckBox4.Location = New System.Drawing.Point(85, 193)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(178, 28)
         Me.CheckBox4.TabIndex = 3
@@ -82,7 +84,7 @@ Partial Class Agregar_Antecedentes
         '
         Me.CheckBox5.AutoSize = True
         Me.CheckBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox5.Location = New System.Drawing.Point(43, 226)
+        Me.CheckBox5.Location = New System.Drawing.Point(85, 245)
         Me.CheckBox5.Name = "CheckBox5"
         Me.CheckBox5.Size = New System.Drawing.Size(135, 28)
         Me.CheckBox5.TabIndex = 4
@@ -93,7 +95,7 @@ Partial Class Agregar_Antecedentes
         '
         Me.CheckBox6.AutoSize = True
         Me.CheckBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox6.Location = New System.Drawing.Point(43, 277)
+        Me.CheckBox6.Location = New System.Drawing.Point(85, 296)
         Me.CheckBox6.Name = "CheckBox6"
         Me.CheckBox6.Size = New System.Drawing.Size(152, 28)
         Me.CheckBox6.TabIndex = 5
@@ -104,7 +106,7 @@ Partial Class Agregar_Antecedentes
         '
         Me.CheckBox7.AutoSize = True
         Me.CheckBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox7.Location = New System.Drawing.Point(43, 324)
+        Me.CheckBox7.Location = New System.Drawing.Point(85, 343)
         Me.CheckBox7.Name = "CheckBox7"
         Me.CheckBox7.Size = New System.Drawing.Size(202, 28)
         Me.CheckBox7.TabIndex = 6
@@ -115,7 +117,7 @@ Partial Class Agregar_Antecedentes
         '
         Me.CheckBox8.AutoSize = True
         Me.CheckBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox8.Location = New System.Drawing.Point(43, 377)
+        Me.CheckBox8.Location = New System.Drawing.Point(85, 396)
         Me.CheckBox8.Name = "CheckBox8"
         Me.CheckBox8.Size = New System.Drawing.Size(115, 28)
         Me.CheckBox8.TabIndex = 7
@@ -126,7 +128,7 @@ Partial Class Agregar_Antecedentes
         '
         Me.CheckBox9.AutoSize = True
         Me.CheckBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox9.Location = New System.Drawing.Point(43, 428)
+        Me.CheckBox9.Location = New System.Drawing.Point(85, 447)
         Me.CheckBox9.Name = "CheckBox9"
         Me.CheckBox9.Size = New System.Drawing.Size(214, 28)
         Me.CheckBox9.TabIndex = 8
@@ -137,17 +139,38 @@ Partial Class Agregar_Antecedentes
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(529, 41)
+        Me.Label1.Location = New System.Drawing.Point(388, 44)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(142, 24)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Observaciones:"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(392, 82)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(580, 172)
+        Me.TextBox1.TabIndex = 10
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(584, 439)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(148, 62)
+        Me.Button1.TabIndex = 11
+        Me.Button1.Text = "Atrás"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Agregar_Antecedentes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1024, 568)
+        Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CheckBox9)
         Me.Controls.Add(Me.CheckBox8)
@@ -175,4 +198,6 @@ Partial Class Agregar_Antecedentes
     Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox9 As System.Windows.Forms.CheckBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
