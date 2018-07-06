@@ -20,9 +20,7 @@
         Pacientes.Show()
     End Sub
 
-    Private Sub AxCalendar1_OnDayClick(ByVal sender As System.Object, ByVal e As AxCALENDARLib._DCalendarEvents_OnDayClickEvent)
-
-    End Sub
+   
 
     Private Sub SaveFileDialog3_FileOk(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs)
 
