@@ -54,13 +54,6 @@
         Label3.Text = Date.Now.ToLongTimeString
     End Sub
 
-    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.WindowState = FormWindowState.Minimized
-    End Sub
-
-    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Dispose()
-    End Sub
     Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
         a = 1
     End Sub
@@ -92,20 +85,12 @@
         yf = Me.Location.Y
         a = 0
     End Sub
-   
-    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
+    Private Sub PictureBox4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
+        Me.Dispose()
     End Sub
 
-    Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
-    Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label7.Click
-
-    End Sub
-
-    Private Sub PictureBox6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox6.Click
-
+    Private Sub PictureBox2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class

@@ -42,7 +42,6 @@ Partial Class Antecedentes
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.tablita = New System.Windows.Forms.DataGridView()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -53,6 +52,7 @@ Partial Class Antecedentes
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -255,16 +255,6 @@ Partial Class Antecedentes
         Me.tablita.TabIndex = 42
         Me.tablita.Visible = False
         '
-        'ListBox1
-        '
-        Me.ListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 25
-        Me.ListBox1.Location = New System.Drawing.Point(419, 67)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(550, 379)
-        Me.ListBox1.TabIndex = 43
-        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -365,11 +355,23 @@ Partial Class Antecedentes
         Me.Button1.Text = "Atrás"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(426, 70)
+        Me.TextBox1.MaxLength = 132431
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(581, 269)
+        Me.TextBox1.TabIndex = 54
+        '
         'Antecedentes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1034, 619)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label18)
@@ -380,7 +382,6 @@ Partial Class Antecedentes
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.tablita)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.PictureBox9)
@@ -438,7 +439,6 @@ Partial Class Antecedentes
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents tablita As System.Windows.Forms.DataGridView
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
@@ -449,4 +449,5 @@ Partial Class Antecedentes
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

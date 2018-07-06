@@ -18,7 +18,10 @@
             Dim tratamiento_medico As Boolean = tablita.Rows(0).Cells(9).Value
             Dim obs As String = tablita.Rows(0).Cells(10).Value
 
-            ListBox1.Items.Add(obs)
+            TextBox1.Text = obs
+
+
+
 
 
 
@@ -93,5 +96,9 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Pacientes.Show()
         Me.Dispose()
+    End Sub
+
+    Private Sub ListBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 End Class
