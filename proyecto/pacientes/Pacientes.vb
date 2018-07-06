@@ -94,7 +94,7 @@
         Button4.Show()
         Button6.Show()
         Button5.Show()
-        Label3.Show()
+
 
         'Guardamos en Variables
         id_p = DataGridView1.CurrentRow.Cells(0).Value
@@ -132,13 +132,7 @@
 
   
 
-    Private Sub Label3_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label3.MouseHover
-        Label3.Font = New Font("Sans Serif", 14, FontStyle.Underline, GraphicsUnit.Point)
-    End Sub
-
-    Private Sub Label3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label3.MouseLeave
-        Label3.Font = New Font("Sans Serif", 14, GraphicsUnit.Point)
-    End Sub
+    
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         Me.Hide()
@@ -146,22 +140,6 @@
         formu.MdiParent = Menu_Inicio
         formu.Dock = DockStyle.Fill
         formu.Show()
-    End Sub
-
-    Private Sub Label19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Aranceles.Show()
-        Me.Dispose()
-    End Sub
-
-   
-
-    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Menu_Inicio.Dispose()
-    End Sub
-
-    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.WindowState = FormWindowState.Minimized
-        Menu_Inicio.WindowState = FormWindowState.Minimized
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
@@ -192,7 +170,7 @@
         formu.Show()
     End Sub
 
-    Private Sub Label3_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+    Private Sub Label3_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Hide()
         formu = Antecedentes
         formu.MdiParent = Menu_Inicio
