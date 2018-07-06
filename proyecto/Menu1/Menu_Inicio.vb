@@ -24,6 +24,9 @@
             PictureBox5.Hide()
             PictureBox6.Show()
         End If
+
+        Label1.ForeColor = Color.White
+
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
@@ -32,6 +35,11 @@
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
         formu.Show()
+        Label1.ForeColor = Color.White
+        Label2.ForeColor = Color.Gold
+        Label3.ForeColor = Color.Gold
+        Label4.ForeColor = Color.Gold
+
     End Sub
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
@@ -40,6 +48,10 @@
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
         formu.Show()
+        Label1.ForeColor = Color.Gold
+        Label2.ForeColor = Color.White
+        Label3.ForeColor = Color.Gold
+        Label4.ForeColor = Color.Gold
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
@@ -48,6 +60,10 @@
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
         formu.Show()
+        Label1.ForeColor = Color.Gold
+        Label2.ForeColor = Color.Gold
+        Label3.ForeColor = Color.Gold
+        Label4.ForeColor = Color.White
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
@@ -97,4 +113,5 @@
     Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
 
     End Sub
+
 End Class

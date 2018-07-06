@@ -81,6 +81,7 @@ Partial Class Menu_Inicio
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
+        Me.Label7.ForeColor = System.Drawing.Color.Gold
         Me.Label7.Location = New System.Drawing.Point(50, 198)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(93, 25)
@@ -108,6 +109,7 @@ Partial Class Menu_Inicio
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
+        Me.Label4.ForeColor = System.Drawing.Color.Gold
         Me.Label4.Location = New System.Drawing.Point(52, 162)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 25)
@@ -180,6 +182,7 @@ Partial Class Menu_Inicio
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Gold
         Me.Label2.Location = New System.Drawing.Point(52, 127)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(108, 25)
@@ -197,7 +200,9 @@ Partial Class Menu_Inicio
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Gold
         Me.Label1.Location = New System.Drawing.Point(50, 89)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(107, 25)
