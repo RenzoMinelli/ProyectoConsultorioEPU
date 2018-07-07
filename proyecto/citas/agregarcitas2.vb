@@ -3,10 +3,15 @@
     Dim fc As String
 
     Private Sub agregarcitas2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Consulta = "Select nombre as 'Nombre',id_p from pacientes;"
-        consultar()
-        DataGridView1.DataSource = Tabla
-        DataGridView1.Columns(1).Visible = False
+        Try
+            Consulta = "Select nombre as 'Nombre',id_p from paciente;"
+            consultar()
+            DataGridView1.DataSource = Tabla
+            DataGridView1.Columns(1).Visible = False
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+       
 
     End Sub
 
