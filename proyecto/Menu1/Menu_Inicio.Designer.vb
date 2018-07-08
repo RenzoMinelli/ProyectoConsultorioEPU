@@ -224,9 +224,9 @@ Partial Class Menu_Inicio
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Gold
-        Me.Panel3.Location = New System.Drawing.Point(0, 82)
+        Me.Panel3.Location = New System.Drawing.Point(3, 82)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(13, 32)
+        Me.Panel3.Size = New System.Drawing.Size(10, 32)
         Me.Panel3.TabIndex = 6
         '
         'Timer1

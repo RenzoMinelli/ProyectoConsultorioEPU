@@ -59,7 +59,7 @@ Partial Class agregarcitas2
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(622, 255)
+        Me.Label3.Location = New System.Drawing.Point(611, 262)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(50, 18)
         Me.Label3.TabIndex = 2
@@ -118,7 +118,7 @@ Partial Class agregarcitas2
         'DateTimePicker1
         '
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.DateTimePicker1.Location = New System.Drawing.Point(729, 281)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(712, 275)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 10

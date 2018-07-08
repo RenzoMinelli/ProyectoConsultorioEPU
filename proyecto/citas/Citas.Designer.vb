@@ -50,7 +50,7 @@ Partial Class Citas
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(549, 522)
+        Me.Button1.Location = New System.Drawing.Point(551, 506)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(308, 83)
         Me.Button1.TabIndex = 2
