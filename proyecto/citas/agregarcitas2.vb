@@ -13,7 +13,7 @@
         DataGridView1.Columns(1).Visible = False
 
         fc = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
-        'h = DateTimePicker1.Value.ToString("hh:mm:ss")
+        h = DateTimePicker1.Value.ToString("hh:mm:ss")
     End Sub
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
@@ -26,13 +26,13 @@
     End Sub
 
     Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        'h = DateTimePicker1.Text
+        h = DateTimePicker1.Text
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Try
-            Consulta = "insert into cita (id_p,fecha_hora,realizada,descripcion) values ('" + id_p.ToString + "','" + fc + " " + h + "', 0,'" + TextBox1.Text + "');"
-            'consultar()
+            Consulta = "insert into cita (id_p,fecha,hora,realizada,descripcion) values ('" + id_p.ToString + "','" + fc + "','" + h + "', 0,'" + TextBox1.Text + "');"
+            consultar()
 
             MsgBox("Agregado con éxito")
         Catch ex As Exception

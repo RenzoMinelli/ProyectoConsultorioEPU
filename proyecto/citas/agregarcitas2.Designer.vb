@@ -30,7 +30,6 @@ Partial Class agregarcitas2
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -108,17 +107,10 @@ Partial Class agregarcitas2
         Me.TextBox1.Size = New System.Drawing.Size(384, 174)
         Me.TextBox1.TabIndex = 4
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(729, 233)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(168, 20)
-        Me.TextBox2.TabIndex = 9
-        '
         'DateTimePicker1
         '
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.DateTimePicker1.Location = New System.Drawing.Point(712, 275)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(712, 262)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 10
@@ -129,7 +121,6 @@ Partial Class agregarcitas2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MonthCalendar1)
@@ -154,6 +145,5 @@ Partial Class agregarcitas2
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
 End Class

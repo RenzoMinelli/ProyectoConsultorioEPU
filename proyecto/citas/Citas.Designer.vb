@@ -25,14 +25,13 @@ Partial Class Citas
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.CalendarDimensions = New System.Drawing.Size(2, 2)
+        Me.MonthCalendar1.CalendarDimensions = New System.Drawing.Size(1, 2)
         Me.MonthCalendar1.Location = New System.Drawing.Point(18, 103)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 0
@@ -57,22 +56,20 @@ Partial Class Citas
         Me.Button1.Text = "agregar cita"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(530, 72)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(347, 355)
-        Me.ListBox1.TabIndex = 3
-        '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToOrderColumns = True
+        Me.DataGridView1.AllowUserToResizeColumns = False
+        Me.DataGridView1.AllowUserToResizeRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(28, 426)
+        Me.DataGridView1.Location = New System.Drawing.Point(315, 103)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(534, 311)
         Me.DataGridView1.TabIndex = 4
-        Me.DataGridView1.Visible = False
         '
         'Citas
         '
@@ -80,7 +77,6 @@ Partial Class Citas
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(889, 635)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MonthCalendar1)
@@ -97,6 +93,5 @@ Partial Class Citas
     Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
 End Class
