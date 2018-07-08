@@ -39,6 +39,7 @@
         Label2.ForeColor = Color.Gold
         Label3.ForeColor = Color.Gold
         Label4.ForeColor = Color.Gold
+        Label7.ForeColor = Color.Gold
 
     End Sub
 
@@ -51,6 +52,7 @@
         Label1.ForeColor = Color.Gold
         Label2.ForeColor = Color.White
         Label3.ForeColor = Color.Gold
+        Label7.ForeColor = Color.Gold
         Label4.ForeColor = Color.Gold
     End Sub
 
@@ -63,6 +65,7 @@
         Label1.ForeColor = Color.Gold
         Label2.ForeColor = Color.Gold
         Label3.ForeColor = Color.Gold
+        Label7.ForeColor = Color.Gold
         Label4.ForeColor = Color.White
     End Sub
 
@@ -121,4 +124,17 @@
     End Sub
 
    
+    Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label7.Click
+        formu.Dispose()
+        formu = finanzas
+        formu.MdiParent = Me
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+
+        Label7.ForeColor = Color.White
+        Label1.ForeColor = Color.Gold
+        Label2.ForeColor = Color.Gold
+        Label3.ForeColor = Color.Gold
+        Label4.ForeColor = Color.Gold
+    End Sub
 End Class
