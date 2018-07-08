@@ -70,8 +70,13 @@
         Label3.Text = Date.Now.ToLongTimeString
     End Sub
 
+    Private Sub Panel2_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseClick
+
+    End Sub
+
     Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
         a = 1
+        Me.Opacity = 0.5
     End Sub
     Private Sub Panel3_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseMove
 
@@ -100,6 +105,7 @@
         xf = Me.Location.X
         yf = Me.Location.Y
         a = 0
+        Me.Opacity = 1
     End Sub
 
     Private Sub PictureBox4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
@@ -114,4 +120,5 @@
 
     End Sub
 
+   
 End Class

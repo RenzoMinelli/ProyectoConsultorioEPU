@@ -94,7 +94,7 @@ Partial Class Menu_Inicio
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
         Me.Label7.ForeColor = System.Drawing.Color.Gold
-        Me.Label7.Location = New System.Drawing.Point(50, 198)
+        Me.Label7.Location = New System.Drawing.Point(50, 206)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(93, 25)
         Me.Label7.TabIndex = 19
@@ -103,7 +103,7 @@ Partial Class Menu_Inicio
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.Gold
-        Me.Panel7.Location = New System.Drawing.Point(3, 229)
+        Me.Panel7.Location = New System.Drawing.Point(3, 237)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(10, 30)
         Me.Panel7.TabIndex = 9
@@ -111,7 +111,7 @@ Partial Class Menu_Inicio
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(19, 162)
+        Me.Label6.Location = New System.Drawing.Point(17, 97)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(16, 13)
         Me.Label6.TabIndex = 18
@@ -122,7 +122,7 @@ Partial Class Menu_Inicio
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
         Me.Label4.ForeColor = System.Drawing.Color.Gold
-        Me.Label4.Location = New System.Drawing.Point(52, 162)
+        Me.Label4.Location = New System.Drawing.Point(50, 97)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 25)
         Me.Label4.TabIndex = 16
@@ -149,7 +149,7 @@ Partial Class Menu_Inicio
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
-        Me.PictureBox1.Location = New System.Drawing.Point(19, 120)
+        Me.PictureBox1.Location = New System.Drawing.Point(19, 165)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox1.TabIndex = 14
@@ -158,7 +158,7 @@ Partial Class Menu_Inicio
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources._25437
-        Me.PictureBox3.Location = New System.Drawing.Point(19, 82)
+        Me.PictureBox3.Location = New System.Drawing.Point(19, 127)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox3.TabIndex = 13
@@ -167,7 +167,7 @@ Partial Class Menu_Inicio
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.Gold
-        Me.Panel6.Location = New System.Drawing.Point(3, 193)
+        Me.Panel6.Location = New System.Drawing.Point(3, 201)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(10, 30)
         Me.Panel6.TabIndex = 8
@@ -175,7 +175,7 @@ Partial Class Menu_Inicio
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.Gold
-        Me.Panel5.Location = New System.Drawing.Point(3, 158)
+        Me.Panel5.Location = New System.Drawing.Point(1, 93)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(10, 29)
         Me.Panel5.TabIndex = 7
@@ -195,7 +195,7 @@ Partial Class Menu_Inicio
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Gold
-        Me.Label2.Location = New System.Drawing.Point(52, 127)
+        Me.Label2.Location = New System.Drawing.Point(52, 172)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(108, 25)
         Me.Label2.TabIndex = 9
@@ -204,7 +204,7 @@ Partial Class Menu_Inicio
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Gold
-        Me.Panel4.Location = New System.Drawing.Point(3, 120)
+        Me.Panel4.Location = New System.Drawing.Point(3, 165)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(10, 32)
         Me.Panel4.TabIndex = 7
@@ -215,7 +215,7 @@ Partial Class Menu_Inicio
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Gold
-        Me.Label1.Location = New System.Drawing.Point(50, 89)
+        Me.Label1.Location = New System.Drawing.Point(50, 134)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(107, 25)
         Me.Label1.TabIndex = 9
@@ -224,7 +224,7 @@ Partial Class Menu_Inicio
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Gold
-        Me.Panel3.Location = New System.Drawing.Point(3, 82)
+        Me.Panel3.Location = New System.Drawing.Point(3, 127)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(10, 32)
         Me.Panel3.TabIndex = 6
