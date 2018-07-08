@@ -37,14 +37,13 @@ Partial Class Agregar_Arancel
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
-        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(66, 29)
+        Me.Label1.Location = New System.Drawing.Point(239, 142)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(87, 25)
         Me.Label1.TabIndex = 0
@@ -54,7 +53,7 @@ Partial Class Agregar_Arancel
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(89, 141)
+        Me.Label2.Location = New System.Drawing.Point(239, 268)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(45, 25)
         Me.Label2.TabIndex = 1
@@ -64,7 +63,7 @@ Partial Class Agregar_Arancel
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(89, 277)
+        Me.Label3.Location = New System.Drawing.Point(239, 404)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(68, 25)
         Me.Label3.TabIndex = 2
@@ -72,14 +71,14 @@ Partial Class Agregar_Arancel
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(353, 34)
+        Me.TextBox1.Location = New System.Drawing.Point(503, 148)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(209, 20)
         Me.TextBox1.TabIndex = 3
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(353, 277)
+        Me.TextBox2.Location = New System.Drawing.Point(503, 404)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(209, 20)
         Me.TextBox2.TabIndex = 4
@@ -88,7 +87,7 @@ Partial Class Agregar_Arancel
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"lab", "odo"})
-        Me.ComboBox1.Location = New System.Drawing.Point(353, 147)
+        Me.ComboBox1.Location = New System.Drawing.Point(503, 274)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(209, 21)
         Me.ComboBox1.TabIndex = 5
@@ -96,7 +95,7 @@ Partial Class Agregar_Arancel
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(794, 513)
+        Me.Button1.Location = New System.Drawing.Point(797, 497)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(105, 35)
         Me.Button1.TabIndex = 6
@@ -106,7 +105,7 @@ Partial Class Agregar_Arancel
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(88, 513)
+        Me.Button2.Location = New System.Drawing.Point(221, 497)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(105, 35)
         Me.Button2.TabIndex = 7
@@ -120,6 +119,9 @@ Partial Class Agregar_Arancel
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.TextBox2)
@@ -143,7 +145,6 @@ Partial Class Agregar_Arancel
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(951, 66)
@@ -162,8 +163,6 @@ Partial Class Agregar_Arancel
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -172,8 +171,6 @@ Partial Class Agregar_Arancel
         Me.Text = "Form2"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
