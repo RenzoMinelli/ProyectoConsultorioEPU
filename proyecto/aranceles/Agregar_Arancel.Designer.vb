@@ -119,11 +119,11 @@ Partial Class Agregar_Arancel
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.TextBox2)
         Me.Panel1.Controls.Add(Me.ComboBox1)
         Me.Panel1.Controls.Add(Me.Label3)
@@ -131,7 +131,7 @@ Partial Class Agregar_Arancel
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Location = New System.Drawing.Point(2, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(943, 614)
+        Me.Panel1.Size = New System.Drawing.Size(1047, 627)
         Me.Panel1.TabIndex = 8
         '
         'Panel2
@@ -139,7 +139,7 @@ Partial Class Agregar_Arancel
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel2.Location = New System.Drawing.Point(3, 538)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(951, 73)
+        Me.Panel2.Size = New System.Drawing.Size(1052, 73)
         Me.Panel2.TabIndex = 6
         '
         'Panel3
@@ -147,7 +147,7 @@ Partial Class Agregar_Arancel
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(951, 66)
+        Me.Panel3.Size = New System.Drawing.Size(1044, 66)
         Me.Panel3.TabIndex = 7
         '
         'Panel4

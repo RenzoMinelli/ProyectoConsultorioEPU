@@ -24,7 +24,6 @@ Partial Class Menu_Inicio
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -44,8 +43,8 @@ Partial Class Menu_Inicio
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,8 +56,8 @@ Partial Class Menu_Inicio
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.PictureBox7)
+        Me.Panel1.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.Panel1.Controls.Add(Me.Panel8)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Panel7)
         Me.Panel1.Controls.Add(Me.Label6)
@@ -79,15 +78,6 @@ Partial Class Menu_Inicio
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(174, 665)
         Me.Panel1.TabIndex = 5
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = Global.WindowsApplication1.My.Resources.Resources.epu2
-        Me.PictureBox7.Location = New System.Drawing.Point(22, 3)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(107, 74)
-        Me.PictureBox7.TabIndex = 20
-        Me.PictureBox7.TabStop = False
         '
         'Label7
         '
@@ -262,6 +252,14 @@ Partial Class Menu_Inicio
         Me.PictureBox2.TabIndex = 17
         Me.PictureBox2.TabStop = False
         '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.Gold
+        Me.Panel8.Location = New System.Drawing.Point(0, 0)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(182, 58)
+        Me.Panel8.TabIndex = 20
+        '
         'Menu_Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -275,7 +273,6 @@ Partial Class Menu_Inicio
         Me.Text = "Menu_Inicio"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -306,5 +303,5 @@ Partial Class Menu_Inicio
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel8 As System.Windows.Forms.Panel
 End Class
