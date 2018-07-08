@@ -1,6 +1,8 @@
 ﻿Public Class agregarcitas2
     Dim h As String
     Dim fc As String
+    Dim nombre As String
+
 
     'Mira este video para ver como hacer,  porque funciona pero no esta bien, sale el calendario otra vez en el datetimepicker
     'https://www.youtube.com/watch?v=t8fGIK3PQBM
@@ -14,11 +16,14 @@
 
         fc = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
         h = DateTimePicker1.Value.ToString("hh:mm:ss")
+        id_p = vbNull
+
     End Sub
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         id_p = DataGridView1.CurrentRow.Cells(1).Value
-
+        nombre = DataGridView1.CurrentRow.Cells(0).Value
+        Label6.Text = nombre
     End Sub
 
     Private Sub MonthCalendar1_DateChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar1.DateChanged
@@ -30,15 +35,22 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Try
-            Consulta = "insert into cita (id_p,fecha,hora,realizada,descripcion) values ('" + id_p.ToString + "','" + fc + "','" + h + "', 0,'" + TextBox1.Text + "');"
-            consultar()
+        If id_p <> vbNull Then
 
-            MsgBox("Agregado con éxito")
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-        End Try
+            Try
+                Consulta = "insert into cita (id_p,fecha,hora,realizada,descripcion) values ('" + id_p.ToString + "','" + fc + "','" + h + "', 0,'" + TextBox1.Text + "');"
+                consultar()
+
+                MsgBox("Agregado con éxito")
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+        Else
+            MsgBox("rellene todos los campos")
+
+        End If
 
     End Sub
+
 
 End Class
