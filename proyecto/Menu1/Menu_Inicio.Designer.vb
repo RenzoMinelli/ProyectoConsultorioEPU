@@ -24,6 +24,7 @@ Partial Class Menu_Inicio
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -43,7 +44,6 @@ Partial Class Menu_Inicio
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,6 +79,14 @@ Partial Class Menu_Inicio
         Me.Panel1.Size = New System.Drawing.Size(174, 665)
         Me.Panel1.TabIndex = 5
         '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.Gold
+        Me.Panel8.Location = New System.Drawing.Point(0, 0)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(182, 58)
+        Me.Panel8.TabIndex = 20
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -95,7 +103,7 @@ Partial Class Menu_Inicio
         Me.Panel7.BackColor = System.Drawing.Color.Gold
         Me.Panel7.Location = New System.Drawing.Point(3, 237)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(10, 30)
+        Me.Panel7.Size = New System.Drawing.Size(10, 32)
         Me.Panel7.TabIndex = 9
         '
         'Label6
@@ -159,15 +167,15 @@ Partial Class Menu_Inicio
         Me.Panel6.BackColor = System.Drawing.Color.Gold
         Me.Panel6.Location = New System.Drawing.Point(3, 201)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(10, 30)
+        Me.Panel6.Size = New System.Drawing.Size(10, 32)
         Me.Panel6.TabIndex = 8
         '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.Gold
-        Me.Panel5.Location = New System.Drawing.Point(1, 93)
+        Me.Panel5.Location = New System.Drawing.Point(3, 93)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(10, 29)
+        Me.Panel5.Size = New System.Drawing.Size(10, 32)
         Me.Panel5.TabIndex = 7
         '
         'Label3
@@ -213,7 +221,7 @@ Partial Class Menu_Inicio
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Gold
-        Me.Panel3.Location = New System.Drawing.Point(3, 127)
+        Me.Panel3.Location = New System.Drawing.Point(3, 129)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(10, 32)
         Me.Panel3.TabIndex = 6
@@ -250,14 +258,6 @@ Partial Class Menu_Inicio
         Me.PictureBox2.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox2.TabIndex = 17
         Me.PictureBox2.TabStop = False
-        '
-        'Panel8
-        '
-        Me.Panel8.BackColor = System.Drawing.Color.Gold
-        Me.Panel8.Location = New System.Drawing.Point(0, 0)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(182, 58)
-        Me.Panel8.TabIndex = 20
         '
         'Menu_Inicio
         '

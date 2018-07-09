@@ -10,7 +10,7 @@
     Private Sub Menu_Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         xf = Me.Location.X
         yf = Me.Location.Y
-        formu = Pacientes
+        formu = Citas
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
         formu.Show()
@@ -25,7 +25,7 @@
             PictureBox6.Show()
         End If
 
-        Label1.ForeColor = Color.White
+        Label4.ForeColor = Color.White
 
     End Sub
 
@@ -136,5 +136,9 @@
         Label2.ForeColor = Color.Gold
         Label3.ForeColor = Color.Gold
         Label4.ForeColor = Color.Gold
+    End Sub
+
+    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
+
     End Sub
 End Class

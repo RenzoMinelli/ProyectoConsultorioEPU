@@ -66,6 +66,70 @@ Partial Class Registro_Medico
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel000 = New System.Windows.Forms.Panel()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Panel17.SuspendLayout()
+        Me.Panel25.SuspendLayout()
+        Me.Panel12.SuspendLayout()
+        Me.Panel24.SuspendLayout()
+        Me.Panel18.SuspendLayout()
+        Me.Panel27.SuspendLayout()
+        Me.Panel26.SuspendLayout()
+        Me.Panel23.SuspendLayout()
+        Me.Panel11.SuspendLayout()
+        Me.Panel14.SuspendLayout()
+        Me.Panel13.SuspendLayout()
+        Me.Panel15.SuspendLayout()
+        Me.Panel16.SuspendLayout()
+        Me.Panel22.SuspendLayout()
+        Me.Panel21.SuspendLayout()
+        Me.Panel28.SuspendLayout()
+        Me.Panel33.SuspendLayout()
+        Me.Panel48.SuspendLayout()
+        Me.Panel41.SuspendLayout()
+        Me.Panel42.SuspendLayout()
+        Me.Panel36.SuspendLayout()
+        Me.Panel35.SuspendLayout()
+        Me.Panel34.SuspendLayout()
+        Me.Panel31.SuspendLayout()
+        Me.Panel43.SuspendLayout()
+        Me.Panel46.SuspendLayout()
+        Me.Panel47.SuspendLayout()
+        Me.Panel38.SuspendLayout()
+        Me.Panel44.SuspendLayout()
+        Me.Panel32.SuspendLayout()
+        Me.Panel45.SuspendLayout()
+        Me.Panel37.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,6 +138,7 @@ Partial Class Registro_Medico
         'Panel17
         '
         Me.Panel17.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel17.Controls.Add(Me.Label5)
         Me.Panel17.Location = New System.Drawing.Point(78, 22)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(42, 47)
@@ -82,6 +147,7 @@ Partial Class Registro_Medico
         'Panel25
         '
         Me.Panel25.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel25.Controls.Add(Me.Label16)
         Me.Panel25.Location = New System.Drawing.Point(627, 22)
         Me.Panel25.Name = "Panel25"
         Me.Panel25.Size = New System.Drawing.Size(42, 47)
@@ -90,6 +156,7 @@ Partial Class Registro_Medico
         'Panel12
         '
         Me.Panel12.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel12.Controls.Add(Me.Label10)
         Me.Panel12.Location = New System.Drawing.Point(318, 22)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(42, 47)
@@ -98,6 +165,7 @@ Partial Class Registro_Medico
         'Panel24
         '
         Me.Panel24.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel24.Controls.Add(Me.Label15)
         Me.Panel24.Location = New System.Drawing.Point(579, 22)
         Me.Panel24.Name = "Panel24"
         Me.Panel24.Size = New System.Drawing.Size(42, 47)
@@ -106,6 +174,7 @@ Partial Class Registro_Medico
         'Panel18
         '
         Me.Panel18.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel18.Controls.Add(Me.Label1)
         Me.Panel18.Location = New System.Drawing.Point(30, 22)
         Me.Panel18.Name = "Panel18"
         Me.Panel18.Size = New System.Drawing.Size(42, 47)
@@ -114,6 +183,7 @@ Partial Class Registro_Medico
         'Panel27
         '
         Me.Panel27.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel27.Controls.Add(Me.Label18)
         Me.Panel27.Location = New System.Drawing.Point(723, 22)
         Me.Panel27.Name = "Panel27"
         Me.Panel27.Size = New System.Drawing.Size(42, 47)
@@ -122,6 +192,7 @@ Partial Class Registro_Medico
         'Panel26
         '
         Me.Panel26.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel26.Controls.Add(Me.Label17)
         Me.Panel26.Location = New System.Drawing.Point(675, 22)
         Me.Panel26.Name = "Panel26"
         Me.Panel26.Size = New System.Drawing.Size(42, 47)
@@ -130,6 +201,7 @@ Partial Class Registro_Medico
         'Panel23
         '
         Me.Panel23.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel23.Controls.Add(Me.Label14)
         Me.Panel23.Location = New System.Drawing.Point(531, 22)
         Me.Panel23.Name = "Panel23"
         Me.Panel23.Size = New System.Drawing.Size(42, 47)
@@ -138,6 +210,7 @@ Partial Class Registro_Medico
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel11.Controls.Add(Me.Label11)
         Me.Panel11.Location = New System.Drawing.Point(366, 22)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(42, 47)
@@ -146,6 +219,7 @@ Partial Class Registro_Medico
         'Panel14
         '
         Me.Panel14.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel14.Controls.Add(Me.Label8)
         Me.Panel14.Location = New System.Drawing.Point(222, 22)
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(42, 47)
@@ -154,6 +228,7 @@ Partial Class Registro_Medico
         'Panel13
         '
         Me.Panel13.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel13.Controls.Add(Me.Label9)
         Me.Panel13.Location = New System.Drawing.Point(270, 22)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(42, 47)
@@ -162,6 +237,7 @@ Partial Class Registro_Medico
         'Panel15
         '
         Me.Panel15.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel15.Controls.Add(Me.Label7)
         Me.Panel15.Location = New System.Drawing.Point(174, 22)
         Me.Panel15.Name = "Panel15"
         Me.Panel15.Size = New System.Drawing.Size(42, 47)
@@ -170,6 +246,7 @@ Partial Class Registro_Medico
         'Panel16
         '
         Me.Panel16.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel16.Controls.Add(Me.Label6)
         Me.Panel16.Location = New System.Drawing.Point(126, 22)
         Me.Panel16.Name = "Panel16"
         Me.Panel16.Size = New System.Drawing.Size(42, 47)
@@ -178,6 +255,7 @@ Partial Class Registro_Medico
         'Panel22
         '
         Me.Panel22.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel22.Controls.Add(Me.Label13)
         Me.Panel22.Location = New System.Drawing.Point(483, 22)
         Me.Panel22.Name = "Panel22"
         Me.Panel22.Size = New System.Drawing.Size(42, 47)
@@ -186,6 +264,7 @@ Partial Class Registro_Medico
         'Panel21
         '
         Me.Panel21.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel21.Controls.Add(Me.Label12)
         Me.Panel21.Location = New System.Drawing.Point(435, 22)
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(42, 47)
@@ -194,6 +273,7 @@ Partial Class Registro_Medico
         'Panel28
         '
         Me.Panel28.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel28.Controls.Add(Me.Label19)
         Me.Panel28.Location = New System.Drawing.Point(771, 22)
         Me.Panel28.Name = "Panel28"
         Me.Panel28.Size = New System.Drawing.Size(42, 47)
@@ -202,6 +282,7 @@ Partial Class Registro_Medico
         'Panel33
         '
         Me.Panel33.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel33.Controls.Add(Me.Label25)
         Me.Panel33.Location = New System.Drawing.Point(270, 102)
         Me.Panel33.Name = "Panel33"
         Me.Panel33.Size = New System.Drawing.Size(42, 47)
@@ -210,6 +291,7 @@ Partial Class Registro_Medico
         'Panel48
         '
         Me.Panel48.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel48.Controls.Add(Me.Label35)
         Me.Panel48.Location = New System.Drawing.Point(771, 102)
         Me.Panel48.Name = "Panel48"
         Me.Panel48.Size = New System.Drawing.Size(42, 47)
@@ -218,6 +300,7 @@ Partial Class Registro_Medico
         'Panel41
         '
         Me.Panel41.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel41.Controls.Add(Me.Label28)
         Me.Panel41.Location = New System.Drawing.Point(435, 102)
         Me.Panel41.Name = "Panel41"
         Me.Panel41.Size = New System.Drawing.Size(42, 47)
@@ -226,6 +309,7 @@ Partial Class Registro_Medico
         'Panel42
         '
         Me.Panel42.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel42.Controls.Add(Me.Label29)
         Me.Panel42.Location = New System.Drawing.Point(483, 102)
         Me.Panel42.Name = "Panel42"
         Me.Panel42.Size = New System.Drawing.Size(42, 47)
@@ -234,6 +318,7 @@ Partial Class Registro_Medico
         'Panel36
         '
         Me.Panel36.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel36.Controls.Add(Me.Label22)
         Me.Panel36.Location = New System.Drawing.Point(126, 102)
         Me.Panel36.Name = "Panel36"
         Me.Panel36.Size = New System.Drawing.Size(42, 47)
@@ -242,6 +327,7 @@ Partial Class Registro_Medico
         'Panel35
         '
         Me.Panel35.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel35.Controls.Add(Me.Label23)
         Me.Panel35.Location = New System.Drawing.Point(174, 102)
         Me.Panel35.Name = "Panel35"
         Me.Panel35.Size = New System.Drawing.Size(42, 47)
@@ -250,6 +336,7 @@ Partial Class Registro_Medico
         'Panel34
         '
         Me.Panel34.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel34.Controls.Add(Me.Label24)
         Me.Panel34.Location = New System.Drawing.Point(222, 102)
         Me.Panel34.Name = "Panel34"
         Me.Panel34.Size = New System.Drawing.Size(42, 47)
@@ -258,6 +345,7 @@ Partial Class Registro_Medico
         'Panel31
         '
         Me.Panel31.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel31.Controls.Add(Me.Label27)
         Me.Panel31.Location = New System.Drawing.Point(366, 102)
         Me.Panel31.Name = "Panel31"
         Me.Panel31.Size = New System.Drawing.Size(42, 47)
@@ -266,6 +354,7 @@ Partial Class Registro_Medico
         'Panel43
         '
         Me.Panel43.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel43.Controls.Add(Me.Label30)
         Me.Panel43.Location = New System.Drawing.Point(531, 102)
         Me.Panel43.Name = "Panel43"
         Me.Panel43.Size = New System.Drawing.Size(42, 47)
@@ -274,6 +363,7 @@ Partial Class Registro_Medico
         'Panel46
         '
         Me.Panel46.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel46.Controls.Add(Me.Label33)
         Me.Panel46.Location = New System.Drawing.Point(675, 102)
         Me.Panel46.Name = "Panel46"
         Me.Panel46.Size = New System.Drawing.Size(42, 47)
@@ -282,6 +372,7 @@ Partial Class Registro_Medico
         'Panel47
         '
         Me.Panel47.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel47.Controls.Add(Me.Label34)
         Me.Panel47.Location = New System.Drawing.Point(723, 102)
         Me.Panel47.Name = "Panel47"
         Me.Panel47.Size = New System.Drawing.Size(42, 47)
@@ -290,6 +381,7 @@ Partial Class Registro_Medico
         'Panel38
         '
         Me.Panel38.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel38.Controls.Add(Me.Label20)
         Me.Panel38.Location = New System.Drawing.Point(30, 102)
         Me.Panel38.Name = "Panel38"
         Me.Panel38.Size = New System.Drawing.Size(42, 47)
@@ -298,6 +390,7 @@ Partial Class Registro_Medico
         'Panel44
         '
         Me.Panel44.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel44.Controls.Add(Me.Label31)
         Me.Panel44.Location = New System.Drawing.Point(579, 102)
         Me.Panel44.Name = "Panel44"
         Me.Panel44.Size = New System.Drawing.Size(42, 47)
@@ -306,6 +399,7 @@ Partial Class Registro_Medico
         'Panel32
         '
         Me.Panel32.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel32.Controls.Add(Me.Label26)
         Me.Panel32.Location = New System.Drawing.Point(318, 102)
         Me.Panel32.Name = "Panel32"
         Me.Panel32.Size = New System.Drawing.Size(42, 47)
@@ -314,6 +408,7 @@ Partial Class Registro_Medico
         'Panel45
         '
         Me.Panel45.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel45.Controls.Add(Me.Label32)
         Me.Panel45.Location = New System.Drawing.Point(627, 102)
         Me.Panel45.Name = "Panel45"
         Me.Panel45.Size = New System.Drawing.Size(42, 47)
@@ -322,6 +417,7 @@ Partial Class Registro_Medico
         'Panel37
         '
         Me.Panel37.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel37.Controls.Add(Me.Label21)
         Me.Panel37.Location = New System.Drawing.Point(78, 102)
         Me.Panel37.Name = "Panel37"
         Me.Panel37.Size = New System.Drawing.Size(42, 47)
@@ -449,6 +545,326 @@ Partial Class Registro_Medico
         Me.DataGridView2.Size = New System.Drawing.Size(781, 162)
         Me.DataGridView2.TabIndex = 26
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(7, 10)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(31, 33)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "8"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(8, 10)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(31, 33)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "7"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(8, 10)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(31, 33)
+        Me.Label6.TabIndex = 2
+        Me.Label6.Text = "6"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(8, 10)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(31, 33)
+        Me.Label7.TabIndex = 3
+        Me.Label7.Text = "5"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(8, 10)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(31, 33)
+        Me.Label8.TabIndex = 4
+        Me.Label8.Text = "4"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(8, 10)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(31, 33)
+        Me.Label9.TabIndex = 5
+        Me.Label9.Text = "3"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(8, 10)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(31, 33)
+        Me.Label10.TabIndex = 6
+        Me.Label10.Text = "2"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(8, 10)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(31, 33)
+        Me.Label11.TabIndex = 7
+        Me.Label11.Text = "1"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(8, 10)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(31, 33)
+        Me.Label12.TabIndex = 8
+        Me.Label12.Text = "1"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(8, 10)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(31, 33)
+        Me.Label13.TabIndex = 9
+        Me.Label13.Text = "2"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(8, 10)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(31, 33)
+        Me.Label14.TabIndex = 10
+        Me.Label14.Text = "3"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(8, 10)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(31, 33)
+        Me.Label15.TabIndex = 11
+        Me.Label15.Text = "4"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(8, 10)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(31, 33)
+        Me.Label16.TabIndex = 12
+        Me.Label16.Text = "5"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(8, 10)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(31, 33)
+        Me.Label17.TabIndex = 13
+        Me.Label17.Text = "6"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(8, 10)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(31, 33)
+        Me.Label18.TabIndex = 14
+        Me.Label18.Text = "7"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(8, 10)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(31, 33)
+        Me.Label19.TabIndex = 15
+        Me.Label19.Text = "8"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(7, 9)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(31, 33)
+        Me.Label20.TabIndex = 16
+        Me.Label20.Text = "8"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(8, 9)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(31, 33)
+        Me.Label21.TabIndex = 17
+        Me.Label21.Text = "7"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(8, 9)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(31, 33)
+        Me.Label22.TabIndex = 18
+        Me.Label22.Text = "6"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(8, 9)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(31, 33)
+        Me.Label23.TabIndex = 19
+        Me.Label23.Text = "5"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(8, 9)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(31, 33)
+        Me.Label24.TabIndex = 20
+        Me.Label24.Text = "4"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(8, 9)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(31, 33)
+        Me.Label25.TabIndex = 21
+        Me.Label25.Text = "3"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(8, 9)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(31, 33)
+        Me.Label26.TabIndex = 22
+        Me.Label26.Text = "2"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Location = New System.Drawing.Point(8, 9)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(31, 33)
+        Me.Label27.TabIndex = 23
+        Me.Label27.Text = "1"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(8, 9)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(31, 33)
+        Me.Label28.TabIndex = 24
+        Me.Label28.Text = "1"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(8, 9)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(31, 33)
+        Me.Label29.TabIndex = 25
+        Me.Label29.Text = "2"
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(8, 9)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(31, 33)
+        Me.Label30.TabIndex = 26
+        Me.Label30.Text = "3"
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Location = New System.Drawing.Point(8, 9)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(31, 33)
+        Me.Label31.TabIndex = 27
+        Me.Label31.Text = "4"
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.Location = New System.Drawing.Point(8, 9)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(31, 33)
+        Me.Label32.TabIndex = 28
+        Me.Label32.Text = "5"
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.Location = New System.Drawing.Point(8, 9)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(31, 33)
+        Me.Label33.TabIndex = 29
+        Me.Label33.Text = "6"
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.Location = New System.Drawing.Point(8, 9)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(31, 33)
+        Me.Label34.TabIndex = 30
+        Me.Label34.Text = "7"
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.Location = New System.Drawing.Point(8, 9)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(31, 33)
+        Me.Label35.TabIndex = 31
+        Me.Label35.Text = "8"
+        '
         'Registro_Medico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -495,6 +911,70 @@ Partial Class Registro_Medico
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Registro_Medico"
         Me.Text = "Registro_Medico"
+        Me.Panel17.ResumeLayout(False)
+        Me.Panel17.PerformLayout()
+        Me.Panel25.ResumeLayout(False)
+        Me.Panel25.PerformLayout()
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
+        Me.Panel24.ResumeLayout(False)
+        Me.Panel24.PerformLayout()
+        Me.Panel18.ResumeLayout(False)
+        Me.Panel18.PerformLayout()
+        Me.Panel27.ResumeLayout(False)
+        Me.Panel27.PerformLayout()
+        Me.Panel26.ResumeLayout(False)
+        Me.Panel26.PerformLayout()
+        Me.Panel23.ResumeLayout(False)
+        Me.Panel23.PerformLayout()
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel11.PerformLayout()
+        Me.Panel14.ResumeLayout(False)
+        Me.Panel14.PerformLayout()
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel13.PerformLayout()
+        Me.Panel15.ResumeLayout(False)
+        Me.Panel15.PerformLayout()
+        Me.Panel16.ResumeLayout(False)
+        Me.Panel16.PerformLayout()
+        Me.Panel22.ResumeLayout(False)
+        Me.Panel22.PerformLayout()
+        Me.Panel21.ResumeLayout(False)
+        Me.Panel21.PerformLayout()
+        Me.Panel28.ResumeLayout(False)
+        Me.Panel28.PerformLayout()
+        Me.Panel33.ResumeLayout(False)
+        Me.Panel33.PerformLayout()
+        Me.Panel48.ResumeLayout(False)
+        Me.Panel48.PerformLayout()
+        Me.Panel41.ResumeLayout(False)
+        Me.Panel41.PerformLayout()
+        Me.Panel42.ResumeLayout(False)
+        Me.Panel42.PerformLayout()
+        Me.Panel36.ResumeLayout(False)
+        Me.Panel36.PerformLayout()
+        Me.Panel35.ResumeLayout(False)
+        Me.Panel35.PerformLayout()
+        Me.Panel34.ResumeLayout(False)
+        Me.Panel34.PerformLayout()
+        Me.Panel31.ResumeLayout(False)
+        Me.Panel31.PerformLayout()
+        Me.Panel43.ResumeLayout(False)
+        Me.Panel43.PerformLayout()
+        Me.Panel46.ResumeLayout(False)
+        Me.Panel46.PerformLayout()
+        Me.Panel47.ResumeLayout(False)
+        Me.Panel47.PerformLayout()
+        Me.Panel38.ResumeLayout(False)
+        Me.Panel38.PerformLayout()
+        Me.Panel44.ResumeLayout(False)
+        Me.Panel44.PerformLayout()
+        Me.Panel32.ResumeLayout(False)
+        Me.Panel32.PerformLayout()
+        Me.Panel45.ResumeLayout(False)
+        Me.Panel45.PerformLayout()
+        Me.Panel37.ResumeLayout(False)
+        Me.Panel37.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel01477.ResumeLayout(False)
         Me.Panel01477.PerformLayout()
@@ -546,4 +1026,36 @@ Partial Class Registro_Medico
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents Label35 As System.Windows.Forms.Label
+    Friend WithEvents Label28 As System.Windows.Forms.Label
+    Friend WithEvents Label29 As System.Windows.Forms.Label
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents Label23 As System.Windows.Forms.Label
+    Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents Label27 As System.Windows.Forms.Label
+    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents Label33 As System.Windows.Forms.Label
+    Friend WithEvents Label34 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents Label31 As System.Windows.Forms.Label
+    Friend WithEvents Label26 As System.Windows.Forms.Label
+    Friend WithEvents Label32 As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
 End Class

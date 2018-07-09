@@ -42,9 +42,9 @@ Partial Class Citas
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(14, 54)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(327, 20)
+        Me.Label1.Size = New System.Drawing.Size(264, 20)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "ingrese el dia para ver/agregar una cita:"
+        Me.Label1.Text = "Ingrese el día para ver las citas:"
         '
         'Button1
         '
@@ -68,6 +68,7 @@ Partial Class Citas
         Me.DataGridView1.Location = New System.Drawing.Point(315, 103)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.Size = New System.Drawing.Size(534, 311)
         Me.DataGridView1.TabIndex = 4
         '

@@ -38,33 +38,81 @@
 
                 zona += DataGridView1.Rows(x).Cells(2).Value.ToString
 
+                Dim panel As New Panel
+
+                If DataGridView1.Rows(x).Cells(0).Value = "malo" Then
+                    panel.BackColor = Color.Red
+                ElseIf DataGridView1.Rows(x).Cells(0).Value = "precaucion" Then
+                    panel.BackColor = Color.Yellow
+                Else
+                    panel.BackColor = Color.White
+                End If
+
                 Select Case zona
                     Case "11"
-                        If DataGridView1.Rows(x).Cells(0).Value = "malo" Then
-                            Panel11.BackColor = Color.Red
-                        ElseIf DataGridView1.Rows(x).Cells(0).Value = "precaucion" Then
-                            Panel11.BackColor = Color.Yellow
-                        Else
-                            Panel11.BackColor = Color.White
-                        End If
+                        Panel11.BackColor = panel.BackColor
                     Case "12"
-                        If DataGridView1.Rows(x).Cells(0).Value = "malo" Then
-                            Panel12.BackColor = Color.Red
-                        ElseIf DataGridView1.Rows(x).Cells(0).Value = "precaucion" Then
-                            Panel12.BackColor = Color.Yellow
-                        Else
-                            Panel12.BackColor = Color.White
-                        End If
+                        Panel12.BackColor = panel.BackColor
+                    Case "13"
+                        Panel13.BackColor = panel.BackColor
+                    Case "14"
+                        Panel14.BackColor = panel.BackColor
+                    Case "15"
+                        Panel15.BackColor = panel.BackColor
+                    Case "16"
+                        Panel16.BackColor = panel.BackColor
+                    Case "17"
+                        Panel17.BackColor = panel.BackColor
+                    Case "18"
+                        Panel18.BackColor = panel.BackColor
+                    Case "21"
+                        Panel21.BackColor = panel.BackColor
+                    Case "22"
+                        Panel22.BackColor = panel.BackColor
+                    Case "23"
+                        Panel23.BackColor = panel.BackColor
                     Case "24"
-
-                        If DataGridView1.Rows(x).Cells(0).Value = "malo" Then
-                            Panel24.BackColor = Color.Red
-                        ElseIf DataGridView1.Rows(x).Cells(0).Value = "precaucion" Then
-                            Panel24.BackColor = Color.Yellow
-                        Else
-                            Panel24.BackColor = Color.White
-                        End If
-
+                        Panel24.BackColor = panel.BackColor
+                    Case "25"
+                        Panel25.BackColor = panel.BackColor
+                    Case "26"
+                        Panel26.BackColor = panel.BackColor
+                    Case "27"
+                        Panel27.BackColor = panel.BackColor
+                    Case "28"
+                        Panel28.BackColor = panel.BackColor
+                    Case "31"
+                        Panel31.BackColor = panel.BackColor
+                    Case "32"
+                        Panel32.BackColor = panel.BackColor
+                    Case "33"
+                        Panel33.BackColor = panel.BackColor
+                    Case "34"
+                        Panel34.BackColor = panel.BackColor
+                    Case "35"
+                        Panel35.BackColor = panel.BackColor
+                    Case "36"
+                        Panel36.BackColor = panel.BackColor
+                    Case "37"
+                        Panel37.BackColor = panel.BackColor
+                    Case "38"
+                        Panel38.BackColor = panel.BackColor
+                    Case "41"
+                        Panel41.BackColor = panel.BackColor
+                    Case "42"
+                        Panel42.BackColor = panel.BackColor
+                    Case "43"
+                        Panel43.BackColor = panel.BackColor
+                    Case "44"
+                        Panel44.BackColor = panel.BackColor
+                    Case "45"
+                        Panel45.BackColor = panel.BackColor
+                    Case "46"
+                        Panel46.BackColor = panel.BackColor
+                    Case "47"
+                        Panel47.BackColor = panel.BackColor
+                    Case "48"
+                        Panel48.BackColor = panel.BackColor
 
                 End Select
             End If
