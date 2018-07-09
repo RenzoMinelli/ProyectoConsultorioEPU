@@ -394,7 +394,7 @@ Partial Class Registro_Medico
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel1.Location = New System.Drawing.Point(15, 101)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(42, 28)
