@@ -69,7 +69,7 @@ Partial Class Antecedentes
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(89, 23)
+        Me.Label1.Location = New System.Drawing.Point(91, 41)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(107, 25)
         Me.Label1.TabIndex = 23
@@ -79,7 +79,7 @@ Partial Class Antecedentes
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(89, 195)
+        Me.Label2.Location = New System.Drawing.Point(91, 213)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(187, 25)
         Me.Label2.TabIndex = 24
@@ -89,7 +89,7 @@ Partial Class Antecedentes
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(89, 78)
+        Me.Label3.Location = New System.Drawing.Point(91, 96)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(119, 25)
         Me.Label3.TabIndex = 25
@@ -99,7 +99,7 @@ Partial Class Antecedentes
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(89, 258)
+        Me.Label4.Location = New System.Drawing.Point(91, 276)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(138, 25)
         Me.Label4.TabIndex = 26
@@ -109,7 +109,7 @@ Partial Class Antecedentes
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(89, 424)
+        Me.Label5.Location = New System.Drawing.Point(91, 442)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(117, 25)
         Me.Label5.TabIndex = 27
@@ -119,7 +119,7 @@ Partial Class Antecedentes
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(89, 139)
+        Me.Label6.Location = New System.Drawing.Point(91, 157)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(185, 25)
         Me.Label6.TabIndex = 28
@@ -129,7 +129,7 @@ Partial Class Antecedentes
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(89, 314)
+        Me.Label7.Location = New System.Drawing.Point(91, 332)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(156, 25)
         Me.Label7.TabIndex = 29
@@ -139,7 +139,7 @@ Partial Class Antecedentes
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(89, 484)
+        Me.Label8.Location = New System.Drawing.Point(91, 502)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(230, 25)
         Me.Label8.TabIndex = 30
@@ -148,7 +148,7 @@ Partial Class Antecedentes
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox1.Location = New System.Drawing.Point(325, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(327, 30)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox1.TabIndex = 31
@@ -157,7 +157,7 @@ Partial Class Antecedentes
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox2.Location = New System.Drawing.Point(325, 67)
+        Me.PictureBox2.Location = New System.Drawing.Point(327, 85)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox2.TabIndex = 32
@@ -166,7 +166,7 @@ Partial Class Antecedentes
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox3.Location = New System.Drawing.Point(325, 128)
+        Me.PictureBox3.Location = New System.Drawing.Point(327, 146)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox3.TabIndex = 33
@@ -175,7 +175,7 @@ Partial Class Antecedentes
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox4.Location = New System.Drawing.Point(325, 184)
+        Me.PictureBox4.Location = New System.Drawing.Point(327, 202)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox4.TabIndex = 34
@@ -184,7 +184,7 @@ Partial Class Antecedentes
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox5.Location = New System.Drawing.Point(325, 247)
+        Me.PictureBox5.Location = New System.Drawing.Point(327, 265)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox5.TabIndex = 35
@@ -193,7 +193,7 @@ Partial Class Antecedentes
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox6.Location = New System.Drawing.Point(325, 303)
+        Me.PictureBox6.Location = New System.Drawing.Point(327, 321)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox6.TabIndex = 36
@@ -202,7 +202,7 @@ Partial Class Antecedentes
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox7.Location = New System.Drawing.Point(325, 355)
+        Me.PictureBox7.Location = New System.Drawing.Point(327, 373)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox7.TabIndex = 37
@@ -211,7 +211,7 @@ Partial Class Antecedentes
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox8.Location = New System.Drawing.Point(325, 413)
+        Me.PictureBox8.Location = New System.Drawing.Point(327, 431)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox8.TabIndex = 38
@@ -221,7 +221,7 @@ Partial Class Antecedentes
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(89, 366)
+        Me.Label9.Location = New System.Drawing.Point(91, 384)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(214, 25)
         Me.Label9.TabIndex = 39
@@ -230,7 +230,7 @@ Partial Class Antecedentes
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox9.Location = New System.Drawing.Point(325, 473)
+        Me.PictureBox9.Location = New System.Drawing.Point(327, 491)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox9.TabIndex = 40
@@ -259,7 +259,7 @@ Partial Class Antecedentes
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(61, 23)
+        Me.Label11.Location = New System.Drawing.Point(63, 41)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(32, 42)
         Me.Label11.TabIndex = 44
@@ -269,7 +269,7 @@ Partial Class Antecedentes
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(61, 78)
+        Me.Label12.Location = New System.Drawing.Point(63, 96)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(32, 42)
         Me.Label12.TabIndex = 45
@@ -279,7 +279,7 @@ Partial Class Antecedentes
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(61, 139)
+        Me.Label13.Location = New System.Drawing.Point(63, 157)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(32, 42)
         Me.Label13.TabIndex = 46
@@ -289,7 +289,7 @@ Partial Class Antecedentes
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(61, 195)
+        Me.Label14.Location = New System.Drawing.Point(63, 213)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(32, 42)
         Me.Label14.TabIndex = 47
@@ -299,7 +299,7 @@ Partial Class Antecedentes
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(61, 258)
+        Me.Label15.Location = New System.Drawing.Point(63, 276)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(32, 42)
         Me.Label15.TabIndex = 48
@@ -309,7 +309,7 @@ Partial Class Antecedentes
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(61, 314)
+        Me.Label16.Location = New System.Drawing.Point(63, 332)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(32, 42)
         Me.Label16.TabIndex = 49
@@ -319,7 +319,7 @@ Partial Class Antecedentes
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(61, 366)
+        Me.Label17.Location = New System.Drawing.Point(63, 384)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(32, 42)
         Me.Label17.TabIndex = 50
@@ -329,7 +329,7 @@ Partial Class Antecedentes
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(61, 424)
+        Me.Label18.Location = New System.Drawing.Point(63, 442)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(32, 42)
         Me.Label18.TabIndex = 51
@@ -339,7 +339,7 @@ Partial Class Antecedentes
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(61, 484)
+        Me.Label19.Location = New System.Drawing.Point(63, 502)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(32, 42)
         Me.Label19.TabIndex = 52

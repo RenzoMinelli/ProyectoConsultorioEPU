@@ -259,6 +259,7 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\fac159a300a5cd5efbd3c544cb37d3b0%281%29.png" />
     <None Include="Resources\epu2.png" />
     <None Include="Resources\epu1.png" />
     <None Include="Resources\epu.png" />
@@ -280,6 +281,7 @@
     <None Include="Resources\42954 %281%29.png" />
     <None Include="Resources\777d48d425c5f93a54d01a413639fd83 %281%29.jpg" />
     <None Include="Resources\777d48d425c5f93a54d01a413639fd83.jpg" />
+    <None Include="Resources\104901%281%29.png" />
     <Content Include="Resources\cancel_exit_cross_close.png" />
     <None Include="Resources\índice.png" />
     <None Include="Resources\minimize-window.png" />

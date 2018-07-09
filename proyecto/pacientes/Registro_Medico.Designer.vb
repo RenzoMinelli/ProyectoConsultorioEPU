@@ -349,10 +349,10 @@ Partial Class Registro_Medico
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(39, 202)
+        Me.DataGridView1.Location = New System.Drawing.Point(30, 202)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(779, 156)
+        Me.DataGridView1.Size = New System.Drawing.Size(788, 156)
         Me.DataGridView1.TabIndex = 22
         '
         'Button1

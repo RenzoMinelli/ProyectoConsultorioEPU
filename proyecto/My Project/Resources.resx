@@ -148,6 +148,9 @@
   <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rambocursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rambocursor.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="índice(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\índice(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,11 +160,14 @@
   <data name="25437" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\25437.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rambocursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rambocursor.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="money-bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money-bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="777d48d425c5f93a54d01a413639fd83" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\777d48d425c5f93a54d01a413639fd83.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fac159a300a5cd5efbd3c544cb37d3b0(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fac159a300a5cd5efbd3c544cb37d3b0(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="epu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\epu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,16 +187,16 @@
   <data name="checkmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="money-bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money-bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="56238" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\56238.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="epu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\epu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="70002" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\70002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="epu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\epu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="104901(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\104901(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
