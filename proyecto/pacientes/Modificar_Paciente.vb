@@ -17,7 +17,7 @@
     Public tratamiento_medico As Boolean
     Public obs As String
 
-    Public cambio As Integer = 0
+    Public cambio As Integer
     '/////////////////////////////////////////////////////////////
 
 
@@ -67,23 +67,35 @@
                     consultar()
                 End If
                 If ver3 = 1 Then
-                    Consulta = "UPDATE paciente SET enviado_por = '" + enviado + "' WHERE id_p = " + Str(id_p) + ";"
-                    consultar()
+                    If enviado = "" Then
+                        Consulta = "UPDATE paciente SET enviado_por = null WHERE id_p = " + Str(id_p) + ";"
+                        consultar()
+                    Else
+                        Consulta = "UPDATE paciente SET enviado_por = '" + enviado + "' WHERE id_p = " + Str(id_p) + ";"
+                        consultar()
+                    End If
+                    
                 End If
                 If ver4 = 1 Then
                     Consulta = "UPDATE paciente SET direccion_particular = '" + direccion + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
                 If ver5 = 1 Then
-                    Consulta = "UPDATE paciente SET direccion_trabajo = '" + direTra + "' WHERE id_p = " + Str(id_p) + ";"
-                    consultar()
+                    If direTra = "" Then
+                        Consulta = "UPDATE paciente SET direccion_trabajo = null WHERE id_p = " + Str(id_p) + ";"
+                        consultar()
+                    Else
+                        Consulta = "UPDATE paciente SET direccion_trabajo = '" + direTra + "' WHERE id_p = " + Str(id_p) + ";"
+                        consultar()
+                    End If
+                    
                 End If
                 If ver6 = 1 Then
                     Consulta = "UPDATE paciente SET fecha_nacimiento = '" + nac + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
 
-                If cambio <> 0 Then
+                If cambio = 1 Then
 
                     If DataGridView1.Rows(0).Cells(0).Value = Nothing Then
                         Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "', '" + alergicos.GetHashCode.ToString + "', '" + diabeticos.GetHashCode.ToString + "', '" + cardiovasculares.GetHashCode.ToString + "', '" + fiebre_reumatica.GetHashCode.ToString + "', '" + coagulacion.GetHashCode.ToString + "', '" + odontologicos.GetHashCode.ToString + "', '" + farmacos_recibidos.GetHashCode.ToString + "', '" + familiares.GetHashCode.ToString + "', '" + tratamiento_medico.GetHashCode.ToString + "', '" + obs + "');"
@@ -93,7 +105,6 @@
                         Consulta = "UPDATE antecedentes SET alergicos = '" + alergicos.GetHashCode.ToString + "', diabeticos = '" + diabeticos.GetHashCode.ToString + "', cardiovasculares = '" + cardiovasculares.GetHashCode.ToString + "', fiebre_reumatica = '" + fiebre_reumatica.GetHashCode.ToString + "', coagulacion = '" + coagulacion.GetHashCode.ToString + "', odontologicos = '" + odontologicos.GetHashCode.ToString + "', farmacos_recibidos = '" + farmacos_recibidos.GetHashCode.ToString + "', familiares = '" + familiares.GetHashCode.ToString + "', tratamientos_medicos = '" + tratamiento_medico.GetHashCode.ToString + "', observaciones = '" + obs + "' WHERE id_p = '" + Str(id_p) + "';"
                         consultar()
                     End If
-
 
 
                 End If

@@ -22,9 +22,8 @@ Partial Class Pacientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -43,7 +42,6 @@ Partial Class Pacientes
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -52,6 +50,7 @@ Partial Class Pacientes
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +79,7 @@ Partial Class Pacientes
         Me.Panel1.ForeColor = System.Drawing.Color.Black
         Me.Panel1.Location = New System.Drawing.Point(572, 38)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(397, 413)
+        Me.Panel1.Size = New System.Drawing.Size(444, 413)
         Me.Panel1.TabIndex = 3
         '
         'Panel2
@@ -91,7 +90,7 @@ Partial Class Pacientes
         Me.Panel2.ForeColor = System.Drawing.Color.Black
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(397, 413)
+        Me.Panel2.Size = New System.Drawing.Size(444, 413)
         Me.Panel2.TabIndex = 6
         '
         'Label17
@@ -253,10 +252,6 @@ Partial Class Pacientes
         Me.Label15.TabIndex = 13
         Me.Label15.Text = "Direccion de Trabajo:"
         '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -280,7 +275,7 @@ Partial Class Pacientes
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button5.Location = New System.Drawing.Point(841, 503)
+        Me.Button5.Location = New System.Drawing.Point(638, 503)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(128, 63)
         Me.Button5.TabIndex = 16
@@ -295,7 +290,7 @@ Partial Class Pacientes
         Me.Button4.ForeColor = System.Drawing.Color.Black
         Me.Button4.Image = Global.WindowsApplication1.My.Resources.Resources._42954__1_
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(230, 503)
+        Me.Button4.Location = New System.Drawing.Point(178, 503)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(130, 63)
         Me.Button4.TabIndex = 9
@@ -310,7 +305,7 @@ Partial Class Pacientes
         Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.delete__1_
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(652, 503)
+        Me.Button3.Location = New System.Drawing.Point(497, 503)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(126, 63)
         Me.Button3.TabIndex = 8
@@ -325,7 +320,7 @@ Partial Class Pacientes
         Me.Button2.ForeColor = System.Drawing.Color.Black
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(436, 503)
+        Me.Button2.Location = New System.Drawing.Point(332, 503)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(136, 63)
         Me.Button2.TabIndex = 7
@@ -340,7 +335,7 @@ Partial Class Pacientes
         Me.Button1.ForeColor = System.Drawing.Color.Black
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.add_user_icon_icons__2_
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(27, 503)
+        Me.Button1.Location = New System.Drawing.Point(17, 503)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(139, 63)
         Me.Button1.TabIndex = 0
@@ -355,23 +350,23 @@ Partial Class Pacientes
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.Location = New System.Drawing.Point(17, 70)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
@@ -380,12 +375,26 @@ Partial Class Pacientes
         Me.DataGridView1.Size = New System.Drawing.Size(488, 381)
         Me.DataGridView1.TabIndex = 17
         '
+        'Button7
+        '
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button7.Location = New System.Drawing.Point(818, 503)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(128, 63)
+        Me.Button7.TabIndex = 18
+        Me.Button7.Text = "Realizar Pago"
+        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button7.UseVisualStyleBackColor = True
+        Me.Button7.Visible = False
+        '
         'Pacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label22)
@@ -429,11 +438,11 @@ Partial Class Pacientes
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents Button7 As System.Windows.Forms.Button
 
 End Class
