@@ -34,9 +34,11 @@
 
     Private Sub MonthCalendar1_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar1.DateChanged
         Try
+
             fecha = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
             Consulta = "select hora as 'Hora', nombre as 'Nombre', descripcion as 'Descripcion' from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + fecha + "';"
             consultar()
+
             DataGridView1.DataSource = Tabla
         Catch ex As Exception
             MsgBox("error intente de nuevo o reinicie el programa" + vbNewLine + "si el error persiste contacte a los administradores EPU©", MsgBoxStyle.Exclamation)

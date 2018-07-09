@@ -24,12 +24,20 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
 
-        Dim fecha As String = DateTimePicker1.Value.ToString("yyyy-MM-dd HH:mm:ss")
-        Consulta = "INSERT INTO cita (id_p, fecha_hora, realizada) values ('" + Str(id_p) + "', '" + fecha + "', '0');"
-        consultar()
-        MsgBox("Registrado")
-        Me.Dispose()
-        Pacientes.Show()
+        Dim fecha As String = DateTimePicker1.Value.ToString("yyyy-MM-dd")
+        Dim hora As String = DateTimePicker1.Value.ToString("HH:mm:ss")
+        Dim descr = TextBox1.Text
+        MsgBox("fecha: " + fecha + " hora:" + hora)
+        Try
+            Consulta = "INSERT INTO cita (id_p, fecha, hora, realizada, descripcion) values ('" + Str(id_p) + "', '" + fecha + "','" + hora + "', '0','" + descr + "');"
+            consultar()
+            MsgBox("Registrado")
+            Me.Dispose()
+            Pacientes.Show()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+        
 
     End Sub
 
