@@ -1,8 +1,6 @@
 ﻿Public Class Crear_Cita
 
-    Dim a As Integer = 0
-    Dim xco, yco As Integer
-    Dim xc, yc As Integer
+
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Pacientes.Show()

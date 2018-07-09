@@ -1,8 +1,6 @@
 ﻿Public Class Agregar_Paciente
 
-    Dim a As Integer = 0
-    Dim xco, yco As Integer
-    Dim xc, yc As Integer
+
     Dim formu As New Form
 
     '/////////////////////////Cosas Para Los Antecedentes/////////////////////////////////

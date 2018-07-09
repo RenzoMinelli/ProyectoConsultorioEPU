@@ -1,7 +1,5 @@
 ﻿Public Class Modificar_Paciente
-    Dim a As Integer = 0
-    Dim xco, yco As Integer
-    Dim xc, yc As Integer
+
     Dim nac2 As String
     Dim formu As New Form
 

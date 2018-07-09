@@ -65,8 +65,10 @@ Partial Class Registro_Medico
         Me.Panel0000 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel000 = New System.Windows.Forms.Panel()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel17
@@ -349,11 +351,12 @@ Partial Class Registro_Medico
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(30, 202)
+        Me.DataGridView1.Location = New System.Drawing.Point(608, 393)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(788, 156)
+        Me.DataGridView1.Size = New System.Drawing.Size(404, 151)
         Me.DataGridView1.TabIndex = 22
+        Me.DataGridView1.Visible = False
         '
         'Button1
         '
@@ -375,7 +378,7 @@ Partial Class Registro_Medico
         Me.Panel01477.Controls.Add(Me.Label2)
         Me.Panel01477.Controls.Add(Me.Panel000)
         Me.Panel01477.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel01477.Location = New System.Drawing.Point(420, 393)
+        Me.Panel01477.Location = New System.Drawing.Point(270, 393)
         Me.Panel01477.Name = "Panel01477"
         Me.Panel01477.Size = New System.Drawing.Size(297, 151)
         Me.Panel01477.TabIndex = 25
@@ -402,13 +405,13 @@ Partial Class Registro_Medico
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(66, 64)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(183, 24)
+        Me.Label3.Size = New System.Drawing.Size(106, 24)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Otra cosa que poner"
+        Me.Label3.Text = "Precaucion"
         '
         'Panel0000
         '
-        Me.Panel0000.BackColor = System.Drawing.Color.Lime
+        Me.Panel0000.BackColor = System.Drawing.Color.Yellow
         Me.Panel0000.Location = New System.Drawing.Point(15, 60)
         Me.Panel0000.Name = "Panel0000"
         Me.Panel0000.Size = New System.Drawing.Size(42, 28)
@@ -419,9 +422,9 @@ Partial Class Registro_Medico
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(63, 17)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(205, 24)
+        Me.Label2.Size = New System.Drawing.Size(51, 24)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "alguna cosa que poner"
+        Me.Label2.Text = "Malo"
         '
         'Panel000
         '
@@ -431,11 +434,27 @@ Partial Class Registro_Medico
         Me.Panel000.Size = New System.Drawing.Size(42, 26)
         Me.Panel000.TabIndex = 0
         '
+        'DataGridView2
+        '
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AllowUserToDeleteRows = False
+        Me.DataGridView2.AllowUserToResizeColumns = False
+        Me.DataGridView2.AllowUserToResizeRows = False
+        Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(30, 208)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.ReadOnly = True
+        Me.DataGridView2.RowHeadersVisible = False
+        Me.DataGridView2.Size = New System.Drawing.Size(781, 162)
+        Me.DataGridView2.TabIndex = 26
+        '
         'Registro_Medico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
@@ -479,6 +498,7 @@ Partial Class Registro_Medico
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel01477.ResumeLayout(False)
         Me.Panel01477.PerformLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -525,4 +545,5 @@ Partial Class Registro_Medico
     Friend WithEvents Panel000 As System.Windows.Forms.Panel
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
 End Class
