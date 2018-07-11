@@ -141,4 +141,39 @@
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
 
     End Sub
+
+    Private Sub Panel8_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel8.MouseDown
+        a = 1
+        Me.Opacity = 0.5
+    End Sub
+
+    Private Sub Panel8_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel8.MouseMove
+        If a = 1 Then
+
+            xc = Cursor.Position.X
+            yc = Cursor.Position.Y
+
+            Dim holax, holay As Integer
+
+            holax = xc - xco
+            holay = yc - yco
+
+            Me.Location = New Point(xf + holax, yf + holay)
+
+        End If
+
+        If a = 0 Then
+
+            xco = Cursor.Position.X
+            yco = Cursor.Position.Y
+
+        End If
+    End Sub
+
+    Private Sub Panel8_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel8.MouseUp
+        xf = Me.Location.X
+        yf = Me.Location.Y
+        a = 0
+        Me.Opacity = 1
+    End Sub
 End Class

@@ -7,11 +7,12 @@
     '///////////////////////////////////////////////////////////////////////
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
-            Consulta = "Select r.descripcion as 'Descripcion', zona as 'Zona', nro_diente as 'Numero de Diente',a.descripcion as 'Descripcion de Arancel',c.fecha as 'Fecha',hora as 'Hora', precio as 'Precio' from registro_medico r left join aranceles a on a.id_a = r.id_a left join cita c on c.id_c = r.id_c where r.id_p = '" + Str(id_p) + "'"
+            Consulta = "Select r.descripcion, zona, nro_diente, a.descripcion, c.fecha,hora , precio from registro_medico r left join aranceles a on a.id_a = r.id_a left join cita c on c.id_c = r.id_c where r.id_p = '" + Str(id_p) + "'"
             consultar()
             DataGridView1.DataSource = Tabla
             actBoca()
             actTabla()
+            actEstado()
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
@@ -118,6 +119,24 @@
             End If
         Next
     End Sub
+    Private Sub actEstado()
+        EstadoDiente.Rows.Clear()
+        EstadoDiente.ColumnCount = 5
+
+        EstadoDiente.Columns(0).HeaderText = "Descripcion"
+        EstadoDiente.Columns(1).HeaderText = "Zona"
+        EstadoDiente.Columns(2).HeaderText = "Numero de Diente"
+        EstadoDiente.Columns(3).HeaderText = "Fecha"
+        EstadoDiente.Columns(4).HeaderText = "Hora"
+
+        For x As Integer = 0 To DataGridView1.RowCount - 1
+            If Not IsDBNull(DataGridView1.Rows(x).Cells(1).Value) Then
+                EstadoDiente.Rows.Add(DataGridView1.Rows(x).Cells(0).Value, DataGridView1.Rows(x).Cells(1).Value, DataGridView1.Rows(x).Cells(2).Value, DataGridView1.Rows(x).Cells(4).Value, DataGridView1.Rows(x).Cells(5).Value)
+            End If
+        Next
+        EstadoDiente.ClearSelection()
+        EstadoDiente.AutoResizeColumns()
+    End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Dispose()
@@ -143,6 +162,7 @@
             End If
 
         Next
-
+        DataGridView2.ClearSelection()
+        DataGridView2.AutoResizeColumns()
     End Sub
 End Class

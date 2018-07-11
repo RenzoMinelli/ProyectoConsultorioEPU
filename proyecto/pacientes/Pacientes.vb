@@ -73,11 +73,16 @@
         id_p = DataGridView1.CurrentRow.Cells(0).Value
 
         If MsgBox("Seguro que dea borrar el paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
-            Consulta = "delete from paciente where id_p = '" + Str(id_p) + "';"
-            consultar()
-            MsgBox("Borrado")
-            actTabla()
-            actPanel()
+            Try
+                Consulta = "delete from paciente where id_p = '" + Str(id_p) + "';"
+                consultar()
+                MsgBox("Borrado")
+                actTabla()
+                actPanel()
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+            
         Else
             MsgBox("OK")
         End If
@@ -143,9 +148,14 @@
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
         Dim a As String = TextBox1.Text
-        Consulta = "Select * from paciente where nombre like '" + a + "%' or cedula like '" + a + "%';"
-        consultar()
-        DataGridView1.DataSource = Tabla
+        Try
+            Consulta = "Select * from paciente where nombre like '" + a + "%' or cedula like '" + a + "%';"
+            consultar()
+            DataGridView1.DataSource = Tabla
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+        
     End Sub
 
     Private Sub Label23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
