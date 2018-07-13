@@ -122,6 +122,20 @@
 
         saldo = DataGridView1.CurrentRow.Cells(7).Value
 
+        Consulta = "select p.id_p, count(*) from paciente p inner join cita c on p.id_p = c.id_p where c.realizada = 1 and p.id_p = '" + id_p.ToString + "' group by p.id_p;"
+        consultar()
+        DataGridView2.DataSource = Tabla
+
+        Dim numCitas As Integer = 0
+
+        If DataGridView2.RowCount = 1 Then
+            numCitas = DataGridView2.Rows(0).Cells(1).Value
+        End If
+
+
+
+
+
         'Mostramos en Panel
         Label4.Text = cedula
         Label5.Text = nombre
@@ -130,7 +144,7 @@
         Label8.Text = direccion
         Label9.Text = direTra
         Label10.Text = saldo
-
+        Label3.Text = numCitas
 
     End Sub
 

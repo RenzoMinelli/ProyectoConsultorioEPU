@@ -11,7 +11,7 @@
             Consulta = "select hora as 'Hora', nombre as 'Nombre', descripcion as 'Descripcion' from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + fecha + "';"
             consultar()
             DataGridView1.DataSource = Tabla
-            DataGridView1.AutoResizeColumns()
+
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
