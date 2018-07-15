@@ -24,7 +24,6 @@
             PictureBox5.Hide()
             PictureBox6.Show()
         End If
-
         Label4.ForeColor = Color.White
 
     End Sub
@@ -36,10 +35,10 @@
         formu.Dock = DockStyle.Fill
         formu.Show()
         Label1.ForeColor = Color.White
-        Label2.ForeColor = Color.Gold
-        Label3.ForeColor = Color.Gold
-        Label4.ForeColor = Color.Gold
-        Label7.ForeColor = Color.Gold
+        Label2.ForeColor = Color.RoyalBlue
+        Label3.ForeColor = Color.RoyalBlue
+        Label4.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.RoyalBlue
 
     End Sub
 
@@ -49,11 +48,11 @@
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
         formu.Show()
-        Label1.ForeColor = Color.Gold
+        Label1.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.White
-        Label3.ForeColor = Color.Gold
-        Label7.ForeColor = Color.Gold
-        Label4.ForeColor = Color.Gold
+        Label3.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.RoyalBlue
+        Label4.ForeColor = Color.RoyalBlue
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
@@ -62,10 +61,10 @@
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
         formu.Show()
-        Label1.ForeColor = Color.Gold
-        Label2.ForeColor = Color.Gold
-        Label3.ForeColor = Color.Gold
-        Label7.ForeColor = Color.Gold
+        Label1.ForeColor = Color.RoyalBlue
+        Label2.ForeColor = Color.RoyalBlue
+        Label3.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.RoyalBlue
         Label4.ForeColor = Color.White
     End Sub
 
@@ -132,10 +131,10 @@
         formu.Show()
 
         Label7.ForeColor = Color.White
-        Label1.ForeColor = Color.Gold
-        Label2.ForeColor = Color.Gold
-        Label3.ForeColor = Color.Gold
-        Label4.ForeColor = Color.Gold
+        Label1.ForeColor = Color.RoyalBlue
+        Label2.ForeColor = Color.RoyalBlue
+        Label3.ForeColor = Color.RoyalBlue
+        Label4.ForeColor = Color.RoyalBlue
     End Sub
 
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
