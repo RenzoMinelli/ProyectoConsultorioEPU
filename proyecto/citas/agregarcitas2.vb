@@ -53,4 +53,8 @@
     End Sub
 
 
+    Private Sub botonsito_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles botonsito.Click
+        Citas.Show()
+        Me.Dispose()
+    End Sub
 End Class
