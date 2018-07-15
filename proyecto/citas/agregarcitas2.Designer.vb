@@ -33,6 +33,7 @@ Partial Class agregarcitas2
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.botonsito = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -84,9 +85,9 @@ Partial Class agregarcitas2
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(89, 448)
+        Me.Button1.Location = New System.Drawing.Point(267, 448)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(288, 80)
+        Me.Button1.Size = New System.Drawing.Size(239, 80)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Guardar cita"
         Me.Button1.UseVisualStyleBackColor = True
@@ -137,11 +138,22 @@ Partial Class agregarcitas2
         Me.Label6.TabIndex = 12
         Me.Label6.Text = "ningun paciente seleccionado"
         '
+        'botonsito
+        '
+        Me.botonsito.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.botonsito.Location = New System.Drawing.Point(-1, 448)
+        Me.botonsito.Name = "botonsito"
+        Me.botonsito.Size = New System.Drawing.Size(231, 79)
+        Me.botonsito.TabIndex = 13
+        Me.botonsito.Text = "Regresar"
+        Me.botonsito.UseVisualStyleBackColor = True
+        '
         'agregarcitas2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.Controls.Add(Me.botonsito)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.DateTimePicker1)
@@ -172,4 +184,5 @@ Partial Class agregarcitas2
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents botonsito As System.Windows.Forms.Button
 End Class
