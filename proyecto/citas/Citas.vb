@@ -58,4 +58,20 @@
     End Sub
 
 
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        If MsgBox("Seguro que dea borrar el paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+            Try
+                Consulta = "update citas set realizada=1 where id_p =" + id_p + ";"
+                consultar()
+                MsgBox("Borrado")
+ 
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+
+        Else
+            MsgBox("Cita Modificada")
+        End If
+
+    End Sub
 End Class

@@ -84,7 +84,7 @@
             End Try
             
         Else
-            MsgBox("OK")
+            MsgBox("Paciente Conservado")
         End If
     End Sub
     Public Sub actPanel()
