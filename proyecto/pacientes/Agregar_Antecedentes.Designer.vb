@@ -157,11 +157,14 @@ Partial Class Agregar_Antecedentes
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.Location = New System.Drawing.Point(584, 439)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(148, 62)
+        Me.Button1.Size = New System.Drawing.Size(107, 62)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "Atrás"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Agregar_Antecedentes

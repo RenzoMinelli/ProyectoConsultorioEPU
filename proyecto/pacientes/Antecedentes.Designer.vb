@@ -348,11 +348,14 @@ Partial Class Antecedentes
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.Location = New System.Drawing.Point(590, 521)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(144, 58)
+        Me.Button1.Size = New System.Drawing.Size(117, 58)
         Me.Button1.TabIndex = 53
         Me.Button1.Text = "Atrás"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox1

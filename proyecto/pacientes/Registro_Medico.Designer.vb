@@ -103,6 +103,7 @@ Partial Class Registro_Medico
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel17.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.Panel12.SuspendLayout()
@@ -783,11 +784,14 @@ Partial Class Registro_Medico
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.Location = New System.Drawing.Point(437, 512)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(137, 71)
         Me.Button1.TabIndex = 24
         Me.Button1.Text = "Atrás"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Panel01477
@@ -927,11 +931,21 @@ Partial Class Registro_Medico
         Me.Label38.TabIndex = 30
         Me.Label38.Text = "Registro de Estado de Dientes:"
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(859, 230)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 31
+        Me.Button2.Text = "Beta"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Registro_Medico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label38)
         Me.Controls.Add(Me.Label37)
         Me.Controls.Add(Me.Label36)
@@ -1130,4 +1144,5 @@ Partial Class Registro_Medico
     Friend WithEvents Label36 As System.Windows.Forms.Label
     Friend WithEvents Label37 As System.Windows.Forms.Label
     Friend WithEvents Label38 As System.Windows.Forms.Label
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

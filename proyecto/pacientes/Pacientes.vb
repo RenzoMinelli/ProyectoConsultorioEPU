@@ -28,7 +28,6 @@
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
         actPanel()
-
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -72,7 +71,7 @@
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         id_p = DataGridView1.CurrentRow.Cells(0).Value
 
-        If MsgBox("Seguro que dea borrar el paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+        If MsgBox("Seguro que desea borrar el paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
             Try
                 Consulta = "delete from paciente where id_p = '" + Str(id_p) + "';"
                 consultar()
@@ -82,7 +81,7 @@
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
-            
+
         Else
             MsgBox("Paciente Conservado")
         End If

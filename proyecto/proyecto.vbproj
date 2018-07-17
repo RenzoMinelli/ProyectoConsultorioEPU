@@ -141,6 +141,12 @@
     <Compile Include="pacientes\Crear_Cita.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="pacientes\dientes.Designer.vb">
+      <DependentUpon>dientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pacientes\dientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="pacientes\Modificar_Antecedentes.Designer.vb">
       <DependentUpon>Modificar_Antecedentes.vb</DependentUpon>
     </Compile>
@@ -215,6 +221,9 @@
     <EmbeddedResource Include="pacientes\Crear_Cita.resx">
       <DependentUpon>Crear_Cita.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pacientes\dientes.resx">
+      <DependentUpon>dientes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pacientes\Modificar_Antecedentes.resx">
       <DependentUpon>Modificar_Antecedentes.vb</DependentUpon>
     </EmbeddedResource>
@@ -259,6 +268,9 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\circled-left-2%281%29.png" />
+    <None Include="Resources\Dientes.png" />
+    <None Include="Resources\Dientes2.jpg" />
     <None Include="Resources\fac159a300a5cd5efbd3c544cb37d3b0%281%29.png" />
     <None Include="Resources\epu2.png" />
     <None Include="Resources\epu1.png" />

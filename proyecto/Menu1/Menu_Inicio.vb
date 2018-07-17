@@ -138,7 +138,16 @@
     End Sub
 
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
-
+        formu.Dispose()
+        formu = Pacientes
+        formu.MdiParent = Me
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+        Label1.ForeColor = Color.White
+        Label2.ForeColor = Color.RoyalBlue
+        Label3.ForeColor = Color.RoyalBlue
+        Label4.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.RoyalBlue
     End Sub
 
     Private Sub Panel8_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel8.MouseDown
@@ -174,5 +183,63 @@
         yf = Me.Location.Y
         a = 0
         Me.Opacity = 1
+    End Sub
+
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
+        formu.Dispose()
+        formu = Aranceles
+        formu.MdiParent = Me
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+        Label1.ForeColor = Color.RoyalBlue
+        Label2.ForeColor = Color.White
+        Label3.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.RoyalBlue
+        Label4.ForeColor = Color.RoyalBlue
+    End Sub
+
+    
+    Private Sub Panel10_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel10.Click
+        formu.Dispose()
+        formu = Pacientes
+        formu.MdiParent = Me
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+        Label1.ForeColor = Color.White
+        Label2.ForeColor = Color.RoyalBlue
+        Label3.ForeColor = Color.RoyalBlue
+        Label4.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub Panel9_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel9.Click
+        formu.Dispose()
+        formu = Citas
+        formu.MdiParent = Me
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+        Label1.ForeColor = Color.RoyalBlue
+        Label2.ForeColor = Color.RoyalBlue
+        Label3.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.RoyalBlue
+        Label4.ForeColor = Color.White
+    End Sub
+
+ 
+    Private Sub Panel15_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel15.Click
+        formu.Dispose()
+        formu = Aranceles
+        formu.MdiParent = Me
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+        Label1.ForeColor = Color.RoyalBlue
+        Label2.ForeColor = Color.White
+        Label3.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.RoyalBlue
+        Label4.ForeColor = Color.RoyalBlue
     End Sub
 End Class

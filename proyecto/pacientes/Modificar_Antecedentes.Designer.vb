@@ -40,11 +40,14 @@ Partial Class Modificar_Antecedentes
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.X
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.Location = New System.Drawing.Point(412, 462)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(148, 62)
         Me.Button1.TabIndex = 23
         Me.Button1.Text = "Cancelar"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox1
@@ -168,11 +171,14 @@ Partial Class Modificar_Antecedentes
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button2.Location = New System.Drawing.Point(795, 462)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(148, 62)
+        Me.Button2.Size = New System.Drawing.Size(139, 62)
         Me.Button2.TabIndex = 24
         Me.Button2.Text = "Guardar"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Modificar_Antecedentes

@@ -145,21 +145,27 @@ Partial Class Modificar_Paciente
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.Location = New System.Drawing.Point(593, 458)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(149, 60)
         Me.Button1.TabIndex = 12
         Me.Button1.Text = "Guardar"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.X
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button2.Location = New System.Drawing.Point(72, 458)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(148, 60)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "Cancelar"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
