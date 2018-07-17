@@ -1,10 +1,7 @@
 ﻿Public Class Pacientes
     '--------------------------------------------------------------------------------------------
     '- Renzo no te olvides que hay que agregar una forma de visualizar las citas para cada paciente
-    '- Y una forma de marcar como realizada la cita anteriormente creada
-    '-
-    '-
-    '--------------------------------------------------------------------------------------------
+
 
 
     Dim formu As New Form

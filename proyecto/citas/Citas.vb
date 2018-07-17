@@ -1,11 +1,18 @@
 ﻿Public Class Citas
+    ' Dim a As Icon
+    ' a = My.Resources.rambocursor
+    ' Me.Cursor = New Cursor(a.Handle)
     Dim cita As String
     Dim formu As New Form
     Dim fecha As String
+    Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
+        Button2.Visible = True
+
+    End Sub
+
     Private Sub Citas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        ' Dim a As Icon
-        ' a = My.Resources.rambocursor
-        ' Me.Cursor = New Cursor(a.Handle)
+        Button2.Visible = False
+
         fecha = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
         Try
             Consulta = "select hora as 'Hora', nombre as 'Nombre', descripcion as 'Descripcion' from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + fecha + "';"
@@ -27,7 +34,7 @@
         Pacientes.Show()
     End Sub
 
-   
+
 
     Private Sub SaveFileDialog3_FileOk(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs)
 
@@ -59,12 +66,12 @@
 
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        If MsgBox("Seguro que dea borrar el paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+        If MsgBox("Desea marcar la cita como concluida?", MsgBoxStyle.YesNo) = vbYes Then
             Try
                 Consulta = "update citas set realizada=1 where id_p =" + id_p + ";"
                 consultar()
                 MsgBox("Borrado")
- 
+
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
@@ -74,4 +81,6 @@
         End If
 
     End Sub
+
+
 End Class

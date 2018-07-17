@@ -28,6 +28,7 @@ Partial Class Citas
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -51,9 +52,9 @@ Partial Class Citas
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(551, 506)
+        Me.Button1.Location = New System.Drawing.Point(601, 506)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(308, 83)
+        Me.Button1.Size = New System.Drawing.Size(248, 83)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "agregar cita"
         Me.Button1.UseVisualStyleBackColor = True
@@ -87,16 +88,27 @@ Partial Class Citas
         Me.Button2.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Button2.Location = New System.Drawing.Point(18, 506)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(308, 90)
+        Me.Button2.Size = New System.Drawing.Size(248, 90)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "marcar cita como concluida"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.Button3.Location = New System.Drawing.Point(315, 506)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(228, 83)
+        Me.Button3.TabIndex = 6
+        Me.Button3.Text = "ver cita"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Citas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(889, 635)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
@@ -117,4 +129,5 @@ Partial Class Citas
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
