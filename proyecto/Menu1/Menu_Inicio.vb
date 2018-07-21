@@ -16,16 +16,26 @@
         If user = "fun" Then
 
             Panel16.Show()
+
+            formu = Aranceles
+            formu.MdiParent = Me
+            formu.Dock = DockStyle.Fill
+            formu.Show()
+
+            Label2.ForeColor = Color.White
+
         ElseIf user = "den" Then
 
             Panel16.Hide()
 
-        End If
-        formu = Citas
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+            formu = Citas
+            formu.MdiParent = Me
+            formu.Dock = DockStyle.Fill
+            formu.Show()
 
+            Label4.ForeColor = Color.White
+
+        End If
 
         veriCon()
         If conex = True Then
@@ -35,7 +45,7 @@
             PictureBox5.Hide()
             PictureBox6.Show()
         End If
-        Label4.ForeColor = Color.White
+
 
     End Sub
 
@@ -251,6 +261,34 @@
         Label2.ForeColor = Color.White
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
+        Label4.ForeColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub Panel13_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel13.Paint
+        formu.Dispose()
+        formu = finanzas
+        formu.MdiParent = Me
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+
+        Label7.ForeColor = Color.White
+        Label1.ForeColor = Color.RoyalBlue
+        Label2.ForeColor = Color.RoyalBlue
+        Label3.ForeColor = Color.RoyalBlue
+        Label4.ForeColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub Panel6_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel6.Paint
+        formu.Dispose()
+        formu = finanzas
+        formu.MdiParent = Me
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+
+        Label7.ForeColor = Color.White
+        Label1.ForeColor = Color.RoyalBlue
+        Label2.ForeColor = Color.RoyalBlue
+        Label3.ForeColor = Color.RoyalBlue
         Label4.ForeColor = Color.RoyalBlue
     End Sub
 End Class
