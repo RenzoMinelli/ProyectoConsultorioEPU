@@ -12,6 +12,7 @@ Module Module1
     Public conex As Boolean
     Public nombre As String
     Public cedula As String
+    Public telefono As String
     Public direccion As String
     Public enviado As String
     Public direTra As String

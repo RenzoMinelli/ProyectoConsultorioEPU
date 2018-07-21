@@ -42,6 +42,7 @@
         enviado = ""
         direccion = ""
         direTra = ""
+        telefono = ""
         saldo = 0
 
 
@@ -56,6 +57,7 @@
             DataGridView1.Columns(5).Visible = False
             DataGridView1.Columns(6).Visible = False
             DataGridView1.Columns(7).Visible = False
+            DataGridView1.Columns(8).Visible = False
             DataGridView1.Columns(1).HeaderText = "Cédula"
             DataGridView1.Columns(3).HeaderText = "Nombre"
             DataGridView1.ClearSelection()
@@ -101,22 +103,23 @@
         cedula = DataGridView1.CurrentRow.Cells(1).Value
         nombre = DataGridView1.CurrentRow.Cells(3).Value
         nac = DataGridView1.CurrentRow.Cells(2).Value
+        telefono = DataGridView1.CurrentRow.Cells(4).Value
 
-        If IsDBNull(DataGridView1.CurrentRow.Cells(4).Value) Then
+        If IsDBNull(DataGridView1.CurrentRow.Cells(5).Value) Then
             enviado = "No definido"
         Else
-            enviado = DataGridView1.CurrentRow.Cells(4).Value
+            enviado = DataGridView1.CurrentRow.Cells(5).Value
         End If
 
-        direccion = DataGridView1.CurrentRow.Cells(5).Value
+        direccion = DataGridView1.CurrentRow.Cells(6).Value
 
-        If IsDBNull(DataGridView1.CurrentRow.Cells(6).Value) Then
+        If IsDBNull(DataGridView1.CurrentRow.Cells(7).Value) Then
             direTra = "No definido"
         Else
-            direTra = DataGridView1.CurrentRow.Cells(6).Value
+            direTra = DataGridView1.CurrentRow.Cells(7).Value
         End If
 
-        saldo = DataGridView1.CurrentRow.Cells(7).Value
+        saldo = DataGridView1.CurrentRow.Cells(8).Value
 
         Consulta = "select p.id_p, count(*) from paciente p inner join cita c on p.id_p = c.id_p where c.realizada = 1 and p.id_p = '" + id_p.ToString + "' group by p.id_p;"
         consultar()
@@ -139,8 +142,9 @@
         Label7.Text = enviado
         Label8.Text = direccion
         Label9.Text = direTra
-        Label10.Text = saldo
-        Label3.Text = numCitas
+        Label10.Text = numCitas
+        Label3.Text = "$" + saldo.ToString
+        Label19.Text = telefono
 
     End Sub
 
@@ -223,6 +227,13 @@
                 saldo -= pago
                 Try
                     Consulta = "update paciente set saldo = '" + saldo.ToString + "' where id_p = '" + id_p.ToString + "';"
+                    consultar()
+
+                    Dim fecha As Date = Now.ToShortDateString
+                    Dim nfecha = fecha.ToString("yyyy-MM-dd")
+
+                    Consulta = "insert into recibo (fecha, pago, id_p) values ('" + nfecha + "', '" + pago.ToString + "', '" + id_p.ToString + "');"
+                    MsgBox(nfecha + " " + pago.ToString + " " + id_p.ToString)
                     consultar()
 
                     MsgBox("Información actualizada", MsgBoxStyle.Information)
