@@ -233,7 +233,7 @@
                     Dim nfecha = fecha.ToString("yyyy-MM-dd")
 
                     Consulta = "insert into recibo (fecha, pago, id_p) values ('" + nfecha + "', '" + pago.ToString + "', '" + id_p.ToString + "');"
-                    MsgBox(nfecha + " " + pago.ToString + " " + id_p.ToString)
+
                     consultar()
 
                     MsgBox("Información actualizada", MsgBoxStyle.Information)

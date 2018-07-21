@@ -27,6 +27,7 @@
         Dim ver4 As Integer = 0
         Dim ver5 As Integer = 0
         Dim ver6 As Integer = 0
+        Dim ver7 As Integer = 0
 
         If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox4.Text <> "" Then
 
@@ -53,6 +54,11 @@
             If nac <> nac2 Then
                 ver6 = 1
             End If
+            If telefonot.Text <> telefono Then
+                ver7 = 1
+                telefono = telefonot.Text
+
+            End If
 
             nac = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
             Try
@@ -72,7 +78,7 @@
                         Consulta = "UPDATE paciente SET enviado_por = '" + enviado + "' WHERE id_p = " + Str(id_p) + ";"
                         consultar()
                     End If
-                    
+
                 End If
                 If ver4 = 1 Then
                     Consulta = "UPDATE paciente SET direccion_particular = '" + direccion + "' WHERE id_p = " + Str(id_p) + ";"
@@ -86,13 +92,16 @@
                         Consulta = "UPDATE paciente SET direccion_trabajo = '" + direTra + "' WHERE id_p = " + Str(id_p) + ";"
                         consultar()
                     End If
-                    
+
                 End If
                 If ver6 = 1 Then
                     Consulta = "UPDATE paciente SET fecha_nacimiento = '" + nac + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
-
+                If ver7 = 1 Then
+                    Consulta = "UPDATE paciente SET telefono = '" + telefono + "' where id_p = '" + id_p.ToString + "';"
+                    consultar()
+                End If
                 If cambio = 1 Then
 
                     If DataGridView1.Rows(0).Cells(0).Value = Nothing Then
@@ -118,7 +127,7 @@
                 MsgBox("Error" + vbNewLine + ex.ToString)
 
             End Try
-            
+
         Else
 
             MsgBox("Complete los campos necesarios")
@@ -143,6 +152,7 @@
         TextBox3.Text = enviado
         TextBox4.Text = direccion
         TextBox5.Text = direTra
+        telefonot.Text = telefono
         MonthCalendar1.SelectionRange.Start = nac
         Label7.Text = "Fecha seleccionada " + nac
 

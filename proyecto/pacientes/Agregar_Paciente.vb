@@ -22,7 +22,7 @@
         enviado = ""
         Dim ver As Integer = 0
         Dim ver2 As Integer = 0
-        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox4.Text <> "" Then
+        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox4.Text <> "" And telefonot.Text <> "" Then
             If IsNumeric(TextBox2.Text) Then
                 If alergicos = False And diabeticos = False And cardiovasculares = False And fiebre_reumatica = False And coagulacion = False And odontologicos = False And farmacos_recibidos = False And familiares = False And tratamiento_medico = False And obs = "" Then
                     If MsgBox("No fue ingresado ningún antecedente," + vbNewLine + "¿Desea continuar de todos modos?", MsgBoxStyle.YesNo) = vbYes Then
@@ -33,7 +33,7 @@
                             ver = 1
                             enviado = TextBox3.Text
                         End If
-
+                        telefono = telefonot.Text
                         direccion = TextBox4.Text
 
                         If TextBox5.Text <> "" Then
@@ -45,13 +45,13 @@
 
 
                         If ver = 0 And ver2 = 0 Then
-                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "','" + direccion + "');"
+                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "');"
                         ElseIf ver = 0 And ver2 = 1 Then
-                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "','" + direccion + "','" + direTra + "');"
+                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefon, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "','" + direTra + "', '" + telefono + "');"
                         ElseIf ver = 1 And ver2 = 0 Then
-                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, enviado_por, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "','" + enviado + "','" + direccion + "');"
+                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "', '" + telefono + "');"
                         ElseIf ver = 1 And ver2 = 1 Then
-                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, enviado_por, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "','" + enviado + "','" + direccion + "','" + direTra + "');"
+                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "','" + direTra + "', '" + telefono + "');"
                         End If
 
 
@@ -116,7 +116,7 @@
                 MsgBox("La cédula solo debe contener números", MsgBoxStyle.Exclamation)
                 TextBox2.Clear()
             End If
-            
+
 
         Else
 

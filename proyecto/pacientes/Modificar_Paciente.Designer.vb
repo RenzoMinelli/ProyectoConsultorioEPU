@@ -39,6 +39,8 @@ Partial Class Modificar_Paciente
         Me.Label7 = New System.Windows.Forms.Label()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.telefonot = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -92,7 +94,7 @@ Partial Class Modificar_Paciente
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(26, 181)
+        Me.Label4.Location = New System.Drawing.Point(26, 237)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(234, 24)
         Me.Label4.TabIndex = 6
@@ -101,7 +103,7 @@ Partial Class Modificar_Paciente
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(276, 178)
+        Me.TextBox3.Location = New System.Drawing.Point(276, 234)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(234, 29)
         Me.TextBox3.TabIndex = 7
@@ -110,7 +112,7 @@ Partial Class Modificar_Paciente
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(26, 227)
+        Me.Label5.Location = New System.Drawing.Point(26, 283)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(169, 24)
         Me.Label5.TabIndex = 8
@@ -119,7 +121,7 @@ Partial Class Modificar_Paciente
         'TextBox4
         '
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(276, 227)
+        Me.TextBox4.Location = New System.Drawing.Point(276, 283)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(234, 29)
         Me.TextBox4.TabIndex = 9
@@ -128,7 +130,7 @@ Partial Class Modificar_Paciente
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(26, 270)
+        Me.Label6.Location = New System.Drawing.Point(26, 326)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(217, 24)
         Me.Label6.TabIndex = 10
@@ -137,7 +139,7 @@ Partial Class Modificar_Paciente
         'TextBox5
         '
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(276, 265)
+        Me.TextBox5.Location = New System.Drawing.Point(276, 321)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(234, 29)
         Me.TextBox5.TabIndex = 11
@@ -171,7 +173,7 @@ Partial Class Modificar_Paciente
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(39, 315)
+        Me.Button3.Location = New System.Drawing.Point(39, 371)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(471, 37)
         Me.Button3.TabIndex = 14
@@ -205,11 +207,31 @@ Partial Class Modificar_Paciente
         Me.DataGridView1.TabIndex = 17
         Me.DataGridView1.Visible = False
         '
+        'telefonot
+        '
+        Me.telefonot.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.telefonot.Location = New System.Drawing.Point(276, 184)
+        Me.telefonot.Name = "telefonot"
+        Me.telefonot.Size = New System.Drawing.Size(234, 29)
+        Me.telefonot.TabIndex = 21
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(26, 184)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(85, 24)
+        Me.Label8.TabIndex = 20
+        Me.Label8.Text = "Teléfono"
+        '
         'Modificar_Paciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.Controls.Add(Me.telefonot)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MonthCalendar1)
         Me.Controls.Add(Me.Label7)
@@ -253,4 +275,6 @@ Partial Class Modificar_Paciente
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents telefonot As System.Windows.Forms.TextBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class
