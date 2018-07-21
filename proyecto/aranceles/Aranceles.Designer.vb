@@ -44,7 +44,7 @@ Partial Class Aranceles
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(753, 421)
+        Me.DataGridView1.Size = New System.Drawing.Size(714, 421)
         Me.DataGridView1.TabIndex = 0
         '
         'Timer1
@@ -56,7 +56,7 @@ Partial Class Aranceles
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel8.Location = New System.Drawing.Point(12, 47)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(804, 451)
+        Me.Panel8.Size = New System.Drawing.Size(765, 451)
         Me.Panel8.TabIndex = 6
         '
         'Button3
