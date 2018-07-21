@@ -264,7 +264,7 @@
         Label4.ForeColor = Color.RoyalBlue
     End Sub
 
-    Private Sub Panel13_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel13.Paint
+    Private Sub Panel13_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel13.Click
         formu.Dispose()
         formu = finanzas
         formu.MdiParent = Me
@@ -278,17 +278,5 @@
         Label4.ForeColor = Color.RoyalBlue
     End Sub
 
-    Private Sub Panel6_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel6.Paint
-        formu.Dispose()
-        formu = finanzas
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
-
-        Label7.ForeColor = Color.White
-        Label1.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.RoyalBlue
-        Label3.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.RoyalBlue
-    End Sub
+   
 End Class
