@@ -163,11 +163,5 @@
         DataGridView2.AutoResizeColumns()
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Hide()
-        formu = dientes
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
-    End Sub
+    
 End Class
