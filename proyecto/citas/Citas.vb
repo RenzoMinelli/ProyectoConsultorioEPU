@@ -5,14 +5,11 @@
     Dim cita As String
     Dim formu As New Form
     Dim fecha As String
-    Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
-        Button2.Visible = True
 
-    End Sub
+
 
     Private Sub Citas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Button2.Visible = False
-
         fecha = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
         Try
             Consulta = "select hora as 'Hora', nombre as 'Nombre', descripcion as 'Descripcion' from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + fecha + "';"
@@ -83,4 +80,11 @@
     End Sub
 
 
+    Private Sub DataGridView1_CellMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles DataGridView1.CellMouseClick
+        Button2.Visible = True
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+    End Sub
 End Class
