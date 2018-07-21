@@ -1,6 +1,6 @@
 ﻿Public Class Menu_Inicio
     Dim formu As New Form
-
+    Dim user As String
     Dim a As Integer = 0
     Dim xco, yco As Integer
     Dim xc, yc As Integer
@@ -10,6 +10,17 @@
     Private Sub Menu_Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         xf = Me.Location.X
         yf = Me.Location.Y
+
+
+        user = Login.user
+        If user = "fun" Then
+
+            Panel16.Show()
+        ElseIf user = "den" Then
+
+            Panel16.Hide()
+
+        End If
         formu = Citas
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -111,7 +122,7 @@
     End Sub
 
     Private Sub PictureBox4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
-        Me.Dispose()
+        Login.Dispose()
     End Sub
 
     Private Sub PictureBox2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
