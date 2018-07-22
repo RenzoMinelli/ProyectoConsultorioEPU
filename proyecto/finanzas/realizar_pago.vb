@@ -6,10 +6,30 @@
         DataGridView1.DataSource = Tabla
         DataGridView1.ClearSelection()
         DataGridView1.Columns(0).Visible = False
-        Label2.Text = id
+        Button1.Hide()
     End Sub
 
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         id = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells(0).Value
+
+        Button1.Show()
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+        Dim monto As String
+        'Dim saldo As String
+        monto = InputBox("ingrese")
+        
+
+        Consulta = "update paciente set saldo = '" & monto & "' where id_p = '" & Str(id) & ";"
+        consultar()
+
+        Consulta = "select id_p , nombre , cedula , saldo from paciente"
+        consultar()
+        DataGridView1.DataSource = Tabla
+        DataGridView1.ClearSelection()
+        DataGridView1.Columns(0).Visible = False
+
     End Sub
 End Class
