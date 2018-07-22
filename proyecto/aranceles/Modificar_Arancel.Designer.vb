@@ -36,7 +36,7 @@ Partial Class Modificar_Arancel
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(261, 332)
+        Me.Button1.Location = New System.Drawing.Point(264, 208)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -46,7 +46,7 @@ Partial Class Modificar_Arancel
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(365, 369)
+        Me.DataGridView1.Location = New System.Drawing.Point(247, 15)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(16, 18)
         Me.DataGridView1.TabIndex = 1
@@ -54,14 +54,14 @@ Partial Class Modificar_Arancel
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(108, 70)
+        Me.TextBox1.Location = New System.Drawing.Point(111, 39)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(167, 20)
         Me.TextBox1.TabIndex = 2
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(108, 195)
+        Me.TextBox2.Location = New System.Drawing.Point(111, 164)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(167, 20)
         Me.TextBox2.TabIndex = 3
@@ -70,7 +70,7 @@ Partial Class Modificar_Arancel
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"lab", "odo"})
-        Me.ComboBox1.Location = New System.Drawing.Point(108, 133)
+        Me.ComboBox1.Location = New System.Drawing.Point(111, 102)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(167, 21)
         Me.ComboBox1.TabIndex = 4
@@ -78,7 +78,7 @@ Partial Class Modificar_Arancel
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 70)
+        Me.Label1.Location = New System.Drawing.Point(25, 39)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 5
@@ -87,7 +87,7 @@ Partial Class Modificar_Arancel
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(22, 141)
+        Me.Label2.Location = New System.Drawing.Point(25, 110)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(24, 13)
         Me.Label2.TabIndex = 6
@@ -96,7 +96,7 @@ Partial Class Modificar_Arancel
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(22, 202)
+        Me.Label3.Location = New System.Drawing.Point(25, 171)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(34, 13)
         Me.Label3.TabIndex = 7
@@ -104,18 +104,18 @@ Partial Class Modificar_Arancel
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(35, 332)
+        Me.Button2.Location = New System.Drawing.Point(38, 208)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Atras"
+        Me.Button2.Text = "Cerrar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Modificar_Arancel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(382, 386)
+        Me.ClientSize = New System.Drawing.Size(370, 248)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -125,6 +125,7 @@ Partial Class Modificar_Arancel
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Modificar_Arancel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"

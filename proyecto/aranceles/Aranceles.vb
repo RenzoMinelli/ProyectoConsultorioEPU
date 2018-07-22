@@ -45,7 +45,7 @@
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Modificar_Arancel.Show()
-        Me.Hide()
+
     End Sub
 
 
