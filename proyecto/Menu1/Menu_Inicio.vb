@@ -279,4 +279,16 @@
     End Sub
 
    
+    Private Sub PictureBox7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox7.Click
+        formu.Dispose()
+        formu = finanzas
+        formu.MdiParent = Me
+        formu.Dock = DockStyle.Fill
+        formu.Show()
+        Label1.ForeColor = Color.RoyalBlue
+        Label2.ForeColor = Color.RoyalBlue
+        Label3.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.White
+        Label4.ForeColor = Color.RoyalBlue
+    End Sub
 End Class

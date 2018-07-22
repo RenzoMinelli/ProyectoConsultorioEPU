@@ -64,7 +64,7 @@ Partial Class Aranceles
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.edit_file
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(693, 514)
+        Me.Button3.Location = New System.Drawing.Point(668, 504)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(109, 48)
         Me.Button3.TabIndex = 3
@@ -77,11 +77,11 @@ Partial Class Aranceles
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.delete
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(327, 514)
+        Me.Button2.Location = New System.Drawing.Point(308, 504)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(124, 54)
         Me.Button2.TabIndex = 2
-        Me.Button2.Text = "eliminar"
+        Me.Button2.Text = "  eliminar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -89,11 +89,11 @@ Partial Class Aranceles
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources._56238
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(22, 514)
+        Me.Button1.Location = New System.Drawing.Point(12, 504)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(107, 54)
+        Me.Button1.Size = New System.Drawing.Size(119, 54)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "  agregar"
+        Me.Button1.Text = "  Agregar"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
