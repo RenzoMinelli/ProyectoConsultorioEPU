@@ -50,11 +50,12 @@
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Me.Hide()
-        formu = Agregar_Arancel
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        'Me.Hide()
+        'formu = Agregar_Arancel
+        'formu.MdiParent = Menu_Inicio
+        'formu.Dock = DockStyle.Fill
+        'formu.Show()
+        Agregar_Arancel.Show()
 
     End Sub
 

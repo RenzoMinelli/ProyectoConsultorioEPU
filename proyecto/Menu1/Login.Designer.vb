@@ -44,7 +44,7 @@ Partial Class Login
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(432, 92)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Dentista"
+        Me.Button1.Text = "Odontologo"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
