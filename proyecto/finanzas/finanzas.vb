@@ -8,12 +8,11 @@
         fecha = Now.ToShortDateString
 
         fechad = DateSerial(Year(fecha), Month(fecha), 1)
+        desde.Value = fechad
 
         fechah = DateSerial(Year(fecha), Month(fecha) + 1, 0)
+        hasta.Value = fechah
 
-       
-        hasta.Text = fechah
-        desde.Text = fechad
 
         
         actTabla()

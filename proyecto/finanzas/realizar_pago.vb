@@ -21,7 +21,7 @@
         'Dim saldo As String
         monto = InputBox("ingrese")
         
-
+        'Mateo el saldo no se tiene que actulizar a lo que se paga :v tenes que restarle al saldo lo que se paga :vvv
         Consulta = "update paciente set saldo = '" & monto & "' where id_p = '" & Str(id) & ";"
         consultar()
 
