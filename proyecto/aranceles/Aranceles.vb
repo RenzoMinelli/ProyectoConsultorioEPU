@@ -4,23 +4,28 @@
 
     Private Sub Aranceles_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
         Me.Size = New System.Drawing.Size(880, 580)
-        Consulta = "select * from aranceles"
-        consultar()
-        DataGridView1.DataSource = Tabla
-        DataGridView1.ClearSelection()
-        Button2.Hide()
-        Button3.Hide()
-        ' Label2.ForeColor = Color.Gold
-        DataGridView1.Columns(0).Visible = False
-        '   Me.WindowState = FormWindowState.Maximized
+        Try
+            Consulta = "select * from aranceles"
+            consultar()
+            DataGridView1.DataSource = Tabla
+            DataGridView1.ClearSelection()
+            Button2.Hide()
+            Button3.Hide()
+            ' Label2.ForeColor = Color.Gold
+            DataGridView1.Columns(0).Visible = False
+            '   Me.WindowState = FormWindowState.Maximized
 
-        DataGridView1.Columns(0).Width = 300
+            DataGridView1.Columns(0).Width = 300
 
-        DataGridView1.Columns(1).Width = 300
+            DataGridView1.Columns(1).Width = 300
 
-        DataGridView1.Columns(2).Width = 310
+            DataGridView1.Columns(2).Width = 310
 
-        DataGridView1.DefaultCellStyle.Font = New Font("Microsoft Sans Serif", 15)
+            DataGridView1.DefaultCellStyle.Font = New Font("Microsoft Sans Serif", 15)
+        Catch ex As Exception
+
+        End Try
+        
 
 
 
