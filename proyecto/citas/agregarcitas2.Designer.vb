@@ -30,11 +30,14 @@ Partial Class agregarcitas2
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.botonsito = New System.Windows.Forms.Button()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -115,14 +118,6 @@ Partial Class agregarcitas2
         Me.TextBox1.Size = New System.Drawing.Size(384, 174)
         Me.TextBox1.TabIndex = 4
         '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.DateTimePicker1.Location = New System.Drawing.Point(664, 260)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 10
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -153,15 +148,34 @@ Partial Class agregarcitas2
         Me.botonsito.Text = "Regresar"
         Me.botonsito.UseVisualStyleBackColor = True
         '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(664, 260)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {24, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(122, 33)
+        Me.NumericUpDown1.TabIndex = 14
+        '
+        'NumericUpDown2
+        '
+        Me.NumericUpDown2.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.NumericUpDown2.Location = New System.Drawing.Point(792, 260)
+        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.Size = New System.Drawing.Size(120, 33)
+        Me.NumericUpDown2.TabIndex = 15
+        '
         'agregarcitas2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.Controls.Add(Me.NumericUpDown2)
+        Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.botonsito)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MonthCalendar1)
@@ -174,6 +188,8 @@ Partial Class agregarcitas2
         Me.Name = "agregarcitas2"
         Me.Text = "agregarcitas2"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -186,8 +202,9 @@ Partial Class agregarcitas2
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents botonsito As System.Windows.Forms.Button
+    Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown2 As System.Windows.Forms.NumericUpDown
 End Class
