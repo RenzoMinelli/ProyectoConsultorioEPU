@@ -18,7 +18,7 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         inputboxcasero.Show()
         
-<<<<<<< HEAD
+
         'Mateo el saldo no se tiene que actulizar a lo que se paga :v tenes que restarle al saldo lo que se paga :vvv
         Consulta = "update paciente set saldo =- '" & monto & "' where id_p = '" & Str(id) & ";"
         consultar()
@@ -29,7 +29,6 @@
         DataGridView1.ClearSelection()
         DataGridView1.Columns(0).Visible = False
 
-=======
->>>>>>> ccb92e139b3a0bcd7b6ba612d9521ef82194cf9b
+
     End Sub
 End Class
