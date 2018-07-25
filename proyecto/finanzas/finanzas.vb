@@ -2,6 +2,7 @@
     Dim fecha As String
     Dim fechad As Date
     Dim fechah As Date
+    Dim formu As New Form
 
     Private Sub finanzas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -57,7 +58,11 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        realizar_pago.Show()
+        Me.Hide()
+        formu = realizar_pago
+        formu.MdiParent = Menu_Inicio
+        formu.Dock = DockStyle.Fill
+        formu.Show()
 
 
     End Sub
