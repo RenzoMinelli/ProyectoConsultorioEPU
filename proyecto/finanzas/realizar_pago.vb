@@ -18,7 +18,7 @@
         DataGridView1.DefaultCellStyle.Font = New Font("Microsoft Sans Serif", 15)
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub DataGridView1_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
 
         id = DataGridView1.CurrentRow.Cells(0).Value
         Button1.Show()

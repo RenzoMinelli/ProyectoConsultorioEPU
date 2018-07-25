@@ -62,6 +62,7 @@ Partial Class inputboxcasero
         Me.Controls.Add(Me.TextBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "inputboxcasero"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "inputboxcasero"
         Me.ResumeLayout(False)
         Me.PerformLayout()
