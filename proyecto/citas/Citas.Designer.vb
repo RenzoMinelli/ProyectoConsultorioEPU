@@ -80,13 +80,14 @@ Partial Class Citas
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(534, 311)
         Me.DataGridView1.TabIndex = 4
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.Button2.Location = New System.Drawing.Point(18, 506)
+        Me.Button2.Location = New System.Drawing.Point(303, 502)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(248, 90)
         Me.Button2.TabIndex = 5
@@ -96,7 +97,7 @@ Partial Class Citas
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.Button3.Location = New System.Drawing.Point(315, 506)
+        Me.Button3.Location = New System.Drawing.Point(18, 506)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(228, 83)
         Me.Button3.TabIndex = 6
