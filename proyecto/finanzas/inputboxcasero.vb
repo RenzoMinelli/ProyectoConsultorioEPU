@@ -14,6 +14,15 @@
         realizar_pago.DataGridView1.ClearSelection()
         realizar_pago.DataGridView1.Columns(0).Visible = False
 
+        Dim fecha As Date = Now.ToShortDateString
+        Dim nfecha = fecha.ToString("yyyy-MM-dd")
+
+        Consulta = "insert into recibo (fecha, pago, id_p) values ('" + nfecha + "', '" + monto + "', '" + Str(realizar_pago.id) + "');"
+
+        consultar()
+
+        Me.Dispose()
+
     End Sub
 
     Private Sub inputboxcasero_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
