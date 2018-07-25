@@ -76,6 +76,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="atribuciones\atribuciones.Designer.vb">
+      <DependentUpon>atribuciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="atribuciones\atribuciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="citas\agregarcitas2.Designer.vb">
       <DependentUpon>agregarcitas2.vb</DependentUpon>
     </Compile>
@@ -209,6 +215,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="atribuciones\atribuciones.resx">
+      <DependentUpon>atribuciones.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="citas\agregarcitas2.resx">
       <DependentUpon>agregarcitas2.vb</DependentUpon>
     </EmbeddedResource>

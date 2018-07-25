@@ -33,6 +33,7 @@ Partial Class Menu_Inicio
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -59,6 +60,7 @@ Partial Class Menu_Inicio
         Me.Panel10.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel9.SuspendLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel12.SuspendLayout()
         Me.Panel13.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -156,11 +158,21 @@ Partial Class Menu_Inicio
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.Silver
+        Me.Panel9.Controls.Add(Me.PictureBox8)
         Me.Panel9.Controls.Add(Me.Label4)
         Me.Panel9.Location = New System.Drawing.Point(13, 93)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(161, 32)
         Me.Panel9.TabIndex = 21
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.WindowsApplication1.My.Resources.Resources.notebook
+        Me.PictureBox8.Location = New System.Drawing.Point(6, 0)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(35, 39)
+        Me.PictureBox8.TabIndex = 25
+        Me.PictureBox8.TabStop = False
         '
         'Label4
         '
@@ -374,6 +386,7 @@ Partial Class Menu_Inicio
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
         Me.Panel13.ResumeLayout(False)
@@ -417,4 +430,5 @@ Partial Class Menu_Inicio
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
 End Class
