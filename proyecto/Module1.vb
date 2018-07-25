@@ -2,7 +2,9 @@
 Imports System.Data.OleDb
 Imports MySql.Data.MySqlClient
 Module Module1
-    Dim ubicacion As String = "server=localhost; user id=root ; password='';database = consultorio_odontologico"
+    Public user As String
+    Public pass As String
+    Dim ubicacion As String = "server=localhost; user id= root  ; password='';database = consultorio_odontologico"
 
     Public Conexion As MySqlDataAdapter
     Public Tabla As DataTable
@@ -43,7 +45,7 @@ Module Module1
             'MsgBox(ex.ToString)
             conex = False
         End Try
-        
+
     End Sub
 
     Public Sub veriCon()

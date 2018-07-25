@@ -1,14 +1,15 @@
 ﻿Public Class Login
-    Public user As String = ""
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        user = "den"
+        user = "odontologo"
+        pass = "odontologo"
         Me.Hide()
         Menu_Inicio.Show()
 
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        user = "fun"
+        user = "funcionario"
+        pass = "funcionario"
         Me.Hide()
         Menu_Inicio.Show()
 

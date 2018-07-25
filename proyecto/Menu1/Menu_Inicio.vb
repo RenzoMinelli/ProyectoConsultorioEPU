@@ -1,6 +1,6 @@
 ﻿Public Class Menu_Inicio
     Dim formu As New Form
-    Dim user As String
+
     Dim a As Integer = 0
     Dim xco, yco As Integer
     Dim xc, yc As Integer
@@ -12,8 +12,7 @@
         yf = Me.Location.Y
 
 
-        user = Login.user
-        If user = "fun" Then
+        If user = "funcionario" Then
 
             Panel16.Show()
 
@@ -24,7 +23,7 @@
 
             Label2.ForeColor = Color.White
 
-        ElseIf user = "den" Then
+        ElseIf user = "odontologo" Then
 
             Panel16.Hide()
 
