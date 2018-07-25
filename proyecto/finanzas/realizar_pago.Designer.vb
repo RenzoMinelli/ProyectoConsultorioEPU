@@ -25,7 +25,6 @@ Partial Class realizar_pago
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,7 +40,7 @@ Partial Class realizar_pago
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(308, 229)
+        Me.DataGridView1.Size = New System.Drawing.Size(855, 275)
         Me.DataGridView1.TabIndex = 0
         '
         'Label1
@@ -55,31 +54,22 @@ Partial Class realizar_pago
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(33, 349)
+        Me.Button1.Location = New System.Drawing.Point(63, 423)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(97, 23)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Ingresar pago"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(235, 349)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Label2"
-        '
         'realizar_pago
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(512, 384)
-        Me.Controls.Add(Me.Label2)
+        Me.ClientSize = New System.Drawing.Size(1040, 607)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "realizar_pago"
         Me.Text = "realizar_pago"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -90,5 +80,4 @@ Partial Class realizar_pago
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class
