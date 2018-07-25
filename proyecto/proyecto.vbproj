@@ -94,6 +94,12 @@
     <Compile Include="finanzas\finanzas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="finanzas\inputboxcasero.Designer.vb">
+      <DependentUpon>inputboxcasero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="finanzas\inputboxcasero.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="finanzas\realizar_pago.Designer.vb">
       <DependentUpon>realizar_pago.vb</DependentUpon>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="finanzas\finanzas.resx">
       <DependentUpon>finanzas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finanzas\inputboxcasero.resx">
+      <DependentUpon>inputboxcasero.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="finanzas\realizar_pago.resx">
       <DependentUpon>realizar_pago.vb</DependentUpon>
