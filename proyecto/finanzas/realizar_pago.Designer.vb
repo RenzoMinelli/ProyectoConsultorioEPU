@@ -35,28 +35,30 @@ Partial Class realizar_pago
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(54, 97)
+        Me.DataGridView1.Location = New System.Drawing.Point(64, 96)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(855, 275)
+        Me.DataGridView1.Size = New System.Drawing.Size(918, 307)
         Me.DataGridView1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(30, 29)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(321, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(182, 13)
+        Me.Label1.Size = New System.Drawing.Size(372, 25)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Elija el paciente que realizara el pago"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(63, 423)
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(796, 427)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(97, 23)
+        Me.Button1.Size = New System.Drawing.Size(154, 33)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Ingresar pago"
         Me.Button1.UseVisualStyleBackColor = True

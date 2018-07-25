@@ -7,6 +7,15 @@
         DataGridView1.ClearSelection()
         DataGridView1.Columns(0).Visible = False
         Button1.Hide()
+        DataGridView1.Columns(0).Width = 300
+
+        DataGridView1.Columns(1).Width = 300
+
+        DataGridView1.Columns(2).Width = 310
+
+        DataGridView1.Columns(3).Width = 310
+
+        DataGridView1.DefaultCellStyle.Font = New Font("Microsoft Sans Serif", 15)
     End Sub
 
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
