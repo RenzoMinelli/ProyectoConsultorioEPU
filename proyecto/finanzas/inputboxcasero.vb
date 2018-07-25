@@ -5,7 +5,7 @@
 
 
 
-        Consulta = "update paciente set saldo =- '" & monto & "' where id_p = '" & Str(realizar_pago.id) & "';"
+        Consulta = "update paciente set saldo = saldo- '" & monto & "' where id_p = '" & Str(realizar_pago.id) & "';"
         consultar()
 
         Consulta = "select id_p , nombre , cedula , saldo from paciente"
