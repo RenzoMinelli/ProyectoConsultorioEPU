@@ -1,7 +1,7 @@
 ﻿Public Class realizar_pago
     Public id As Integer
     Private Sub realizar_pago_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Consulta = "select id_p , nombre , cedula , saldo from paciente"
+        Consulta = "select id_p , nombre , cedula , saldo from paciente;"
         consultar()
         DataGridView1.DataSource = Tabla
         DataGridView1.ClearSelection()
@@ -11,7 +11,7 @@
 
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
-        id = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells(0).Value
+        id = DataGridView1.CurrentRow.Cells(0).Value
         Button1.Show()
     End Sub
 
