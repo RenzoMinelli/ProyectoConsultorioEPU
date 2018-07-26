@@ -1,7 +1,7 @@
 ﻿Public Class Login
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        user = "root"
-        pass = ""
+        user = "odontologo"
+        pass = "odontologo"
         Me.Hide()
         Menu_Inicio.Show()
 

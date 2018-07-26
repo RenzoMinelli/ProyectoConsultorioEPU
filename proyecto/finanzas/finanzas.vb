@@ -28,7 +28,7 @@
     Private Sub hasta_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles hasta.ValueChanged
         actTabla()
     End Sub
-    Private Sub actTabla()
+    Public Sub actTabla()
 
         Try
             fechad = desde.Text
