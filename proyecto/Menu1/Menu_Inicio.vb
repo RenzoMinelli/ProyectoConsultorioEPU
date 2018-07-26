@@ -23,7 +23,7 @@
 
             Label2.ForeColor = Color.White
 
-        ElseIf user = "odontologo" Then
+        ElseIf user = "odontologo" Or user = "root" Then
 
             Panel16.Hide()
 

@@ -22,6 +22,7 @@
         enviado = ""
         Dim ver As Integer = 0
         Dim ver2 As Integer = 0
+
         If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox4.Text <> "" And telefonot.Text <> "" Then
             If IsNumeric(TextBox2.Text) Then
                 If verCed(TextBox2.Text) = True Then
@@ -44,25 +45,33 @@
 
                             nac = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
 
+                            Try
+                                If ver = 0 And ver2 = 0 Then
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "');"
 
-                            If ver = 0 And ver2 = 0 Then
-                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "');"
-                            ElseIf ver = 0 And ver2 = 1 Then
-                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefon, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "','" + direTra + "', '" + telefono + "');"
-                            ElseIf ver = 1 And ver2 = 0 Then
-                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "', '" + telefono + "');"
-                            ElseIf ver = 1 And ver2 = 1 Then
-                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "','" + direTra + "', '" + telefono + "');"
-                            End If
+                                ElseIf ver = 0 And ver2 = 1 Then
+
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "','" + direTra + "');"
+                                ElseIf ver = 1 And ver2 = 0 Then
+
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "');"
+                                ElseIf ver = 1 And ver2 = 1 Then
+
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "','" + direTra + "');"
+                                End If
 
 
-                            consultar()
+                                consultar()
 
-                            MsgBox("Agregado con Exito")
+                                MsgBox("Agregado con Exito")
 
-                            Me.Dispose()
-                            Pacientes.Show()
-                            Pacientes.actTabla()
+                                Me.Dispose()
+                                Pacientes.Show()
+                                Pacientes.actTabla()
+                            Catch ex As Exception
+                                MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
+                            End Try
+                            
 
                         End If
                     Else
@@ -72,7 +81,7 @@
                             ver = 1
                             enviado = TextBox3.Text
                         End If
-
+                        telefono = telefonot.Text
                         direccion = TextBox4.Text
 
                         If TextBox5.Text <> "" Then
@@ -83,18 +92,30 @@
                         nac = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
 
 
-                        If ver = 0 And ver2 = 0 Then
-                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "','" + direccion + "');"
-                        ElseIf ver = 0 And ver2 = 1 Then
-                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "','" + direccion + "','" + direTra + "');"
-                        ElseIf ver = 1 And ver2 = 0 Then
-                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, enviado_por, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "','" + enviado + "','" + direccion + "');"
-                        ElseIf ver = 1 And ver2 = 1 Then
-                            Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, enviado_por, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "','" + enviado + "','" + direccion + "','" + direTra + "');"
-                        End If
+                        Try
+                            If ver = 0 And ver2 = 0 Then
+                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "');"
+
+                            ElseIf ver = 0 And ver2 = 1 Then
+
+                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "','" + direTra + "');"
+                            ElseIf ver = 1 And ver2 = 0 Then
+
+                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "');"
+                            ElseIf ver = 1 And ver2 = 1 Then
+
+                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "','" + direTra + "');"
+                            End If
 
 
-                        consultar()
+                            consultar()
+
+
+
+                           
+                        Catch ex As Exception
+                            MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
+                        End Try
 
                         Consulta = "select id_p from paciente;"
                         consultar()
