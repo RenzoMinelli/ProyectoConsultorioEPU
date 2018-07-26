@@ -154,11 +154,20 @@
   <data name="Dientes2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dientes2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Dientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="users_21945" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users_21945.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Users-Edit-User-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Users-Edit-User-icon (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="64979" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\64979.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="777d48d425c5f93a54d01a413639fd83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\777d48d425c5f93a54d01a413639fd83.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rambocursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rambocursor.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +181,8 @@
   <data name="cancel_exit_cross_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_exit_cross_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="104901(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\104901(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_509774" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_509774.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,11 +205,11 @@
   <data name="add-user_icon-icons (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add-user_icon-icons (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_509774(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_509774(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="777d48d425c5f93a54d01a413639fd83" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\777d48d425c5f93a54d01a413639fd83.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="104901(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\104901(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maximize-window(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximize-window(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,10 +226,7 @@
   <data name="56238" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\56238.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_509774" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_509774.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="img_509774(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_509774(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="20803" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20803.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

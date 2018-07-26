@@ -1,7 +1,7 @@
 ﻿Public Class finanzas
     Dim fecha As String
-    Dim fechad As Date
-    Dim fechah As Date
+    Public fechad As Date
+    Public fechah As Date
     Dim formu As New Form
 
     Private Sub finanzas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

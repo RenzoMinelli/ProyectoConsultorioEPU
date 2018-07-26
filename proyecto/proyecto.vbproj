@@ -343,6 +343,8 @@
     <None Include="Resources\777d48d425c5f93a54d01a413639fd83 %281%29.jpg" />
     <None Include="Resources\777d48d425c5f93a54d01a413639fd83.jpg" />
     <None Include="Resources\104901%281%29.png" />
+    <None Include="Resources\64979.png" />
+    <None Include="Resources\20803.png" />
     <Content Include="Resources\cancel_exit_cross_close.png" />
     <None Include="Resources\índice.png" />
     <None Include="Resources\minimize-window.png" />

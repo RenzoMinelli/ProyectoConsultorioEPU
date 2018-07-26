@@ -54,6 +54,7 @@ Partial Class Menu_Inicio
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,6 +72,7 @@ Partial Class Menu_Inicio
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -248,6 +250,7 @@ Partial Class Menu_Inicio
         'Panel12
         '
         Me.Panel12.BackColor = System.Drawing.Color.Silver
+        Me.Panel12.Controls.Add(Me.PictureBox10)
         Me.Panel12.Controls.Add(Me.Label5)
         Me.Panel12.Location = New System.Drawing.Point(13, 237)
         Me.Panel12.Name = "Panel12"
@@ -259,11 +262,11 @@ Partial Class Menu_Inicio
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
         Me.Label5.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label5.Location = New System.Drawing.Point(9, 7)
+        Me.Label5.Location = New System.Drawing.Point(39, 2)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(154, 25)
+        Me.Label5.Size = New System.Drawing.Size(92, 25)
         Me.Label5.TabIndex = 20
-        Me.Label5.Text = "Gráficas (prox)"
+        Me.Label5.Text = "Gráficas"
         '
         'Panel13
         '
@@ -277,7 +280,7 @@ Partial Class Menu_Inicio
         '
         'PictureBox7
         '
-        Me.PictureBox7.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
+        Me.PictureBox7.Image = Global.WindowsApplication1.My.Resources.Resources._64979
         Me.PictureBox7.Location = New System.Drawing.Point(7, 2)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(27, 32)
@@ -375,6 +378,15 @@ Partial Class Menu_Inicio
         Me.PictureBox5.TabIndex = 0
         Me.PictureBox5.TabStop = False
         '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.WindowsApplication1.My.Resources.Resources._20803
+        Me.PictureBox10.Location = New System.Drawing.Point(6, 2)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox10.TabIndex = 20
+        Me.PictureBox10.TabStop = False
+        '
         'Menu_Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -411,6 +423,7 @@ Partial Class Menu_Inicio
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -445,4 +458,5 @@ Partial Class Menu_Inicio
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
 End Class
