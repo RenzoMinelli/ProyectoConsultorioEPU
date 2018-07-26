@@ -304,6 +304,10 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\img_509774%281%29.png" />
+    <None Include="Resources\img_509774.png" />
+    <None Include="Resources\maximize-window%281%29.png" />
+    <None Include="Resources\media%281%29.png" />
     <None Include="Resources\circled-left-2%281%29.png" />
     <None Include="Resources\Dientes.png" />
     <None Include="Resources\Dientes2.jpg" />

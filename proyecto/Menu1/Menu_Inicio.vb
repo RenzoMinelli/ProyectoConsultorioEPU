@@ -5,6 +5,8 @@
     Dim xco, yco As Integer
     Dim xc, yc As Integer
 
+    Dim con As Integer = 0
+
 
 
     Private Sub Menu_Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -97,6 +99,8 @@
     End Sub
 
     Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
+        
+        
         a = 1
         Me.Opacity = 0.5
     End Sub
@@ -286,5 +290,25 @@
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.White
         Label4.ForeColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub PictureBox9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox9.Click
+        If con = 1 Then
+            Me.WindowState = FormWindowState.Normal
+            PictureBox9.Image = My.Resources.maximize_window_1_
+            PictureBox2.Location = New Point(PictureBox2.Location.X - 700, PictureBox2.Location.Y)
+            PictureBox4.Location = New Point(PictureBox4.Location.X - 700, PictureBox4.Location.Y)
+            PictureBox9.Location = New Point(PictureBox9.Location.X - 700, PictureBox9.Location.Y)
+            con = 0
+        Else
+            Me.WindowState = FormWindowState.Maximized
+            PictureBox9.Image = My.Resources.img_509774_1_
+            PictureBox2.Location = New Point(PictureBox2.Location.X + 700, PictureBox2.Location.Y)
+            PictureBox4.Location = New Point(PictureBox4.Location.X + 700, PictureBox4.Location.Y)
+            PictureBox9.Location = New Point(PictureBox9.Location.X + 700, PictureBox9.Location.Y)
+            con = 1
+
+        End If
+        
     End Sub
 End Class

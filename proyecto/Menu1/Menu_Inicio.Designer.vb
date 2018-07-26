@@ -25,6 +25,7 @@ Partial Class Menu_Inicio
         Me.components = New System.ComponentModel.Container()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel11 = New System.Windows.Forms.Panel()
@@ -54,6 +55,7 @@ Partial Class Menu_Inicio
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel11.SuspendLayout()
@@ -78,6 +80,7 @@ Partial Class Menu_Inicio
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel2.Controls.Add(Me.PictureBox9)
         Me.Panel2.Controls.Add(Me.PictureBox4)
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -86,9 +89,18 @@ Partial Class Menu_Inicio
         Me.Panel2.Size = New System.Drawing.Size(1040, 38)
         Me.Panel2.TabIndex = 7
         '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = Global.WindowsApplication1.My.Resources.Resources.maximize_window_1_
+        Me.PictureBox9.Location = New System.Drawing.Point(967, 6)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(28, 29)
+        Me.PictureBox9.TabIndex = 19
+        Me.PictureBox9.TabStop = False
+        '
         'PictureBox4
         '
-        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.índice
+        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.media_1_
         Me.PictureBox4.Location = New System.Drawing.Point(1001, 6)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(27, 32)
@@ -98,7 +110,7 @@ Partial Class Menu_Inicio
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox2.Location = New System.Drawing.Point(967, 6)
+        Me.PictureBox2.Location = New System.Drawing.Point(930, 6)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(28, 32)
         Me.PictureBox2.TabIndex = 17
@@ -374,9 +386,10 @@ Partial Class Menu_Inicio
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.IsMdiContainer = True
         Me.Name = "Menu_Inicio"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Menu_Inicio"
         Me.Panel2.ResumeLayout(False)
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel11.ResumeLayout(False)
@@ -431,4 +444,5 @@ Partial Class Menu_Inicio
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
 End Class
