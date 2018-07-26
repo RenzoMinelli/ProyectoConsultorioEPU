@@ -100,13 +100,15 @@
 
     Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
         
-        
-        a = 1
-        Me.Opacity = 0.5
+        If con = 0 Then
+            a = 1
+            Me.Opacity = 0.5
+        End If
+       
     End Sub
     Private Sub Panel3_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseMove
 
-        If a = 1 Then
+        If a = 1 And con = 0 Then
 
             xc = Cursor.Position.X
             yc = Cursor.Position.Y
@@ -128,10 +130,13 @@
         End If
     End Sub
     Private Sub Panel3_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseUp
-        xf = Me.Location.X
-        yf = Me.Location.Y
-        a = 0
-        Me.Opacity = 1
+        If con = 0 Then
+            xf = Me.Location.X
+            yf = Me.Location.Y
+            a = 0
+            Me.Opacity = 1
+        End If
+        
     End Sub
 
     Private Sub PictureBox4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
