@@ -33,7 +33,7 @@ Partial Class InputPago
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(29, 33)
+        Me.Label1.Location = New System.Drawing.Point(173, 68)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(77, 25)
         Me.Label1.TabIndex = 0
@@ -42,7 +42,7 @@ Partial Class InputPago
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(278, 160)
+        Me.TextBox1.Location = New System.Drawing.Point(422, 195)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(311, 29)
         Me.TextBox1.TabIndex = 1
@@ -50,7 +50,7 @@ Partial Class InputPago
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(34, 376)
+        Me.Button1.Location = New System.Drawing.Point(178, 411)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(118, 62)
         Me.Button1.TabIndex = 2
@@ -60,7 +60,7 @@ Partial Class InputPago
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(542, 376)
+        Me.Button2.Location = New System.Drawing.Point(686, 411)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(133, 62)
         Me.Button2.TabIndex = 3
@@ -71,7 +71,7 @@ Partial Class InputPago
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(29, 162)
+        Me.Label2.Location = New System.Drawing.Point(173, 197)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(226, 25)
         Me.Label2.TabIndex = 4

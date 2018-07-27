@@ -6,22 +6,12 @@
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Dim pago As String = ""
-        Do
-            pago = TextBox1.Text
-            If Not IsNumeric(pago) Then
-                If pago = "" Then
-                    MsgBox("Acción cancelada", MsgBoxStyle.Information)
-                    pago = "cancel"
-                Else
-                    MsgBox("Ingrese un número", MsgBoxStyle.Exclamation)
-                    pago = "g"
-                End If
+        Dim pago As String = TextBox1.Text
 
-            End If
-        Loop While pago = "g"
+        If Not IsNumeric(pago) Then
 
-        If Not pago = "cancel" Then
+            MsgBox("Ingrese un número", MsgBoxStyle.Exclamation)
+        Else
             If MsgBox("¿Confirma que el paciente " + nombre + " depositó $" + pago + "?", MsgBoxStyle.YesNo) = vbYes Then
                 saldo -= pago
                 Try
@@ -44,11 +34,8 @@
                 Catch ex As Exception
                     MsgBox("Error")
                 End Try
-
-
-            Else
-                MsgBox("Acción cancelada", MsgBoxStyle.Information)
             End If
+            
         End If
     End Sub
 

@@ -43,6 +43,7 @@ Partial Class Menu_Inicio
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
@@ -54,7 +55,6 @@ Partial Class Menu_Inicio
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,6 +65,7 @@ Partial Class Menu_Inicio
         Me.Panel9.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel12.SuspendLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel13.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel15.SuspendLayout()
@@ -72,7 +73,6 @@ Partial Class Menu_Inicio
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -257,6 +257,15 @@ Partial Class Menu_Inicio
         Me.Panel12.Size = New System.Drawing.Size(161, 32)
         Me.Panel12.TabIndex = 22
         '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.WindowsApplication1.My.Resources.Resources._20803
+        Me.PictureBox10.Location = New System.Drawing.Point(6, 2)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(27, 32)
+        Me.PictureBox10.TabIndex = 20
+        Me.PictureBox10.TabStop = False
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -378,15 +387,6 @@ Partial Class Menu_Inicio
         Me.PictureBox5.TabIndex = 0
         Me.PictureBox5.TabStop = False
         '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = Global.WindowsApplication1.My.Resources.Resources._20803
-        Me.PictureBox10.Location = New System.Drawing.Point(6, 2)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox10.TabIndex = 20
-        Me.PictureBox10.TabStop = False
-        '
         'Menu_Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -398,7 +398,7 @@ Partial Class Menu_Inicio
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.IsMdiContainer = True
         Me.Name = "Menu_Inicio"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Inicio"
         Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -414,6 +414,7 @@ Partial Class Menu_Inicio
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel13.ResumeLayout(False)
         Me.Panel13.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -423,7 +424,6 @@ Partial Class Menu_Inicio
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
