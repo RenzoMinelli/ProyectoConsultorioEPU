@@ -63,11 +63,11 @@
 
                                 consultar()
 
-                                MsgBox("Agregado con Exito")
+                                MsgBox("Agregado con Exito", MsgBoxStyle.Information)
 
                                 Me.Dispose()
                                 Pacientes.Show()
-                                Pacientes.actTabla()
+                                Pacientes.actTabla(1)
                             Catch ex As Exception
                                 MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
                             End Try
@@ -132,7 +132,7 @@
 
                         Me.Dispose()
                         Pacientes.Show()
-                        Pacientes.actTabla()
+                        Pacientes.actTabla(1)
                     End If
                 Else
                     MsgBox("Cédula no válida", MsgBoxStyle.Exclamation)

@@ -27,7 +27,7 @@
 
                     MsgBox("Información actualizada", MsgBoxStyle.Information)
 
-                    Pacientes.actTabla()
+                    Pacientes.actTabla(1)
                     Pacientes.actPanel()
                     Me.Dispose()
                     Pacientes.Show()

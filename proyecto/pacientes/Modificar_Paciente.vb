@@ -118,7 +118,7 @@
                 MsgBox("Guardado con Exito")
 
                 Pacientes.Show()
-                Pacientes.actTabla()
+                Pacientes.actTabla(1)
                 Pacientes.actPanel()
                 Me.Dispose()
 

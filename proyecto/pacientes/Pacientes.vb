@@ -2,7 +2,7 @@
     '--------------------------------------------------------------------------------------------
     '- Renzo no te olvides que hay que agregar una forma de visualizar las citas para cada paciente
 
-
+    Dim ver As Integer = 0
 
     Dim formu As New Form
 
@@ -19,7 +19,7 @@
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         actPos()
-        actTabla()
+        actTabla(1)
 
     End Sub
 
@@ -34,7 +34,8 @@
         formu.Dock = DockStyle.Fill
         formu.Show()
     End Sub
-    Public Sub actTabla()
+    Public Sub actTabla(ByVal estado As String)
+
         cedula = ""
         nombre = ""
         id_p = 0
@@ -47,7 +48,7 @@
 
 
         Try
-            Consulta = "SELECT * FROM paciente"
+            Consulta = "SELECT * FROM paciente where estado = '" + estado + "';"
             consultar()
 
             DataGridView1.DataSource = Tabla
@@ -58,32 +59,74 @@
             DataGridView1.Columns(6).Visible = False
             DataGridView1.Columns(7).Visible = False
             DataGridView1.Columns(8).Visible = False
+            DataGridView1.Columns(9).Visible = False
             DataGridView1.Columns(1).HeaderText = "Cédula"
             DataGridView1.Columns(3).HeaderText = "Nombre"
             DataGridView1.ClearSelection()
+     
+
         Catch ex As Exception
-            Button1.Hide()
+            MsgBox("Error al obtener los pacientes", MsgBoxStyle.Exclamation)
         End Try
+
+        Panel2.Visible = True
+        Label17.Visible = True
+        Button3.Visible = False
+        Button2.Visible = False
+        Button4.Visible = False
+        Button5.Visible = False
+        Button7.Visible = False
 
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         id_p = DataGridView1.CurrentRow.Cells(0).Value
+        If ver = 0 Then
 
-        If MsgBox("Seguro que desea borrar el paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
-            Try
-                Consulta = "delete from paciente where id_p = '" + Str(id_p) + "';"
-                consultar()
-                MsgBox("Borrado")
-                actTabla()
-                actPanel()
-            Catch ex As Exception
-                MsgBox(ex.ToString)
-            End Try
+            If MsgBox("¿Seguro que desea volver inactivo al paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+                Try
+                    Consulta = "update paciente set estado = 0 where id_p = '" + Str(id_p) + "';"
+                    consultar()
+                    MsgBox("Actualizado", MsgBoxStyle.Information)
+                    actTabla(1)
+                    Panel2.Visible = True
+                    Label17.Visible = True
+                    Button3.Visible = False
+                    Button4.Visible = False
+                    Button2.Visible = False
+                    Button5.Visible = False
+                    Button7.Visible = False
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+
+            Else
+                MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
+            End If
 
         Else
-            MsgBox("Paciente Conservado")
+            If MsgBox("¿Seguro que desea volver activo al paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+                Try
+                    Consulta = "update paciente set estado = 1 where id_p = '" + Str(id_p) + "';"
+                    consultar()
+                    MsgBox("Actualizado", MsgBoxStyle.Information)
+                    actTabla(0)
+                    Panel2.Visible = True
+                    Label17.Visible = True
+                    Button3.Visible = False
+                    Button4.Visible = False
+                    Button2.Visible = False
+                    Button5.Visible = False
+                    Button7.Visible = False
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+
+            Else
+                MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
+            End If
         End If
+        
     End Sub
     Public Sub actPanel()
 
@@ -218,4 +261,20 @@
     End Sub
 
 
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+        If ver = 0 Then
+            actTabla(0)
+            Button3.Text = "Volver Activo"
+            Button8.Text = "Mostrar Pacientes Activos"
+            ver = 1
+
+
+        Else
+            actTabla(1)
+            Button8.Text = "Mostrar Pacientes Inactivos"
+            ver = 0
+            Button3.Text = "Volver Inactivo"
+        End If
+        
+    End Sub
 End Class
