@@ -264,7 +264,7 @@
     Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
         If ver = 0 Then
             actTabla(0)
-            Button3.Text = "Volver Activo"
+            Button3.Text = "Volver " + vbNewLine + "Activo"
             Button8.Text = "Mostrar Pacientes Activos"
             ver = 1
 
