@@ -2,7 +2,8 @@
     '--------------------------------------------------------------------------------------------
     '- Renzo no te olvides que hay que agregar una forma de visualizar las citas para cada paciente
 
-    Dim ver As Integer = 0
+    Dim ver As Integer = 1
+    Dim ver2 As Integer = 1
 
     Dim formu As New Form
 
@@ -81,7 +82,7 @@
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         id_p = DataGridView1.CurrentRow.Cells(0).Value
-        If ver = 0 Then
+        If ver = 1 Then
 
             If MsgBox("¿Seguro que desea volver inactivo al paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
                 Try
@@ -174,6 +175,11 @@
             numCitas = DataGridView2.Rows(0).Cells(1).Value
         End If
 
+        If DataGridView1.CurrentRow.Cells(9).Value = True Then
+            Label21.Text = "Activo"
+        Else
+            Label21.Text = "Inactivo"
+        End If
 
 
 
@@ -204,18 +210,29 @@
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+
         Dim a As String = TextBox1.Text
-        Try
-            Consulta = "Select * from paciente where nombre like '" + a + "%' or cedula like '" + a + "%';"
-            consultar()
-            DataGridView1.DataSource = Tabla
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-        End Try
-        
+        If a = "" Then
+            actTabla(ver)
+
+        Else
+            Try
+
+                Consulta = "Select * from paciente where estado = '" + ver.ToString + "' and (nombre like '" + a + "%' or cedula like '" + a + "%' );"
+
+                consultar()
+                DataGridView1.DataSource = Tabla
+
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+        End If
+
+
+
     End Sub
 
-    Private Sub Label23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+   Private Sub Label23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Dispose()
         Citas.Show()
     End Sub
@@ -262,19 +279,27 @@
 
 
     Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
-        If ver = 0 Then
+
+        
+
+        If ver = 1 Then
+
             actTabla(0)
-            Button3.Text = "Volver " + vbNewLine + "Activo"
             Button8.Text = "Mostrar Pacientes Activos"
-            ver = 1
-
-
+            Button3.Text = "Volver" + vbNewLine + " Activo"
+            ver = 0
         Else
             actTabla(1)
+            Button3.Text = "Volver " + vbNewLine + "Inactivo"
             Button8.Text = "Mostrar Pacientes Inactivos"
-            ver = 0
-            Button3.Text = "Volver Inactivo"
+            ver = 1
         End If
+
         
+
+    End Sub
+
+    Private Sub Label20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label20.Click
+
     End Sub
 End Class

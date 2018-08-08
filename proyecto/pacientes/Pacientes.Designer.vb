@@ -22,8 +22,8 @@ Partial Class Pacientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -57,6 +57,8 @@ Partial Class Pacientes
         Me.Button7 = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,6 +68,8 @@ Partial Class Pacientes
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Panel1.Controls.Add(Me.Label21)
+        Me.Panel1.Controls.Add(Me.Label20)
         Me.Panel1.Controls.Add(Me.Label19)
         Me.Panel1.Controls.Add(Me.Label18)
         Me.Panel1.Controls.Add(Me.Button6)
@@ -87,16 +91,16 @@ Partial Class Pacientes
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel1.ForeColor = System.Drawing.Color.Black
-        Me.Panel1.Location = New System.Drawing.Point(572, 70)
+        Me.Panel1.Location = New System.Drawing.Point(572, 22)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(444, 381)
+        Me.Panel1.Size = New System.Drawing.Size(444, 453)
         Me.Panel1.TabIndex = 3
         '
         'Label19
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(211, 111)
+        Me.Label19.Location = New System.Drawing.Point(224, 151)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(76, 24)
         Me.Label19.TabIndex = 19
@@ -106,7 +110,7 @@ Partial Class Pacientes
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(4, 111)
+        Me.Label18.Location = New System.Drawing.Point(17, 151)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(90, 24)
         Me.Label18.TabIndex = 18
@@ -115,9 +119,9 @@ Partial Class Pacientes
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(8, 335)
+        Me.Button6.Location = New System.Drawing.Point(8, 385)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(433, 36)
+        Me.Button6.Size = New System.Drawing.Size(423, 54)
         Me.Button6.TabIndex = 15
         Me.Button6.Text = "Mostrar Antecedentes"
         Me.Button6.UseVisualStyleBackColor = True
@@ -126,7 +130,7 @@ Partial Class Pacientes
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(4, 147)
+        Me.Label13.Location = New System.Drawing.Point(17, 187)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(117, 24)
         Me.Label13.TabIndex = 11
@@ -136,7 +140,7 @@ Partial Class Pacientes
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(4, 8)
+        Me.Label2.Location = New System.Drawing.Point(17, 48)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(84, 24)
         Me.Label2.TabIndex = 1
@@ -146,7 +150,7 @@ Partial Class Pacientes
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(4, 293)
+        Me.Label16.Location = New System.Drawing.Point(17, 333)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(154, 24)
         Me.Label16.TabIndex = 14
@@ -156,7 +160,7 @@ Partial Class Pacientes
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(211, 258)
+        Me.Label10.Location = New System.Drawing.Point(224, 298)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(76, 24)
         Me.Label10.TabIndex = 7
@@ -166,7 +170,7 @@ Partial Class Pacientes
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(4, 41)
+        Me.Label11.Location = New System.Drawing.Point(17, 81)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(75, 24)
         Me.Label11.TabIndex = 9
@@ -176,7 +180,7 @@ Partial Class Pacientes
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(211, 147)
+        Me.Label7.Location = New System.Drawing.Point(224, 187)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(66, 24)
         Me.Label7.TabIndex = 4
@@ -186,7 +190,7 @@ Partial Class Pacientes
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(211, 41)
+        Me.Label4.Location = New System.Drawing.Point(224, 81)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(66, 24)
         Me.Label4.TabIndex = 1
@@ -196,7 +200,7 @@ Partial Class Pacientes
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(4, 74)
+        Me.Label12.Location = New System.Drawing.Point(17, 114)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(169, 24)
         Me.Label12.TabIndex = 10
@@ -206,7 +210,7 @@ Partial Class Pacientes
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(211, 74)
+        Me.Label6.Location = New System.Drawing.Point(224, 114)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(66, 24)
         Me.Label6.TabIndex = 3
@@ -216,7 +220,7 @@ Partial Class Pacientes
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(4, 184)
+        Me.Label14.Location = New System.Drawing.Point(17, 224)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(177, 24)
         Me.Label14.TabIndex = 12
@@ -226,7 +230,7 @@ Partial Class Pacientes
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(211, 220)
+        Me.Label9.Location = New System.Drawing.Point(224, 260)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(66, 24)
         Me.Label9.TabIndex = 6
@@ -236,7 +240,7 @@ Partial Class Pacientes
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(211, 183)
+        Me.Label8.Location = New System.Drawing.Point(224, 223)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(66, 24)
         Me.Label8.TabIndex = 5
@@ -246,7 +250,7 @@ Partial Class Pacientes
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(211, 8)
+        Me.Label5.Location = New System.Drawing.Point(224, 48)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(66, 24)
         Me.Label5.TabIndex = 2
@@ -256,7 +260,7 @@ Partial Class Pacientes
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(4, 222)
+        Me.Label15.Location = New System.Drawing.Point(17, 262)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(191, 24)
         Me.Label15.TabIndex = 13
@@ -266,7 +270,7 @@ Partial Class Pacientes
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(211, 293)
+        Me.Label3.Location = New System.Drawing.Point(224, 333)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 24)
         Me.Label3.TabIndex = 17
@@ -276,7 +280,7 @@ Partial Class Pacientes
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(4, 257)
+        Me.Label1.Location = New System.Drawing.Point(17, 297)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(169, 24)
         Me.Label1.TabIndex = 16
@@ -288,9 +292,9 @@ Partial Class Pacientes
         Me.Panel2.Controls.Add(Me.Label17)
         Me.Panel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel2.ForeColor = System.Drawing.Color.Black
-        Me.Panel2.Location = New System.Drawing.Point(572, 70)
+        Me.Panel2.Location = New System.Drawing.Point(572, 22)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(444, 381)
+        Me.Panel2.Size = New System.Drawing.Size(444, 453)
         Me.Panel2.TabIndex = 6
         '
         'Label17
@@ -327,7 +331,7 @@ Partial Class Pacientes
         Me.Button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button5.Image = Global.WindowsApplication1.My.Resources.Resources._104901_1_
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.Location = New System.Drawing.Point(496, 503)
+        Me.Button5.Location = New System.Drawing.Point(496, 532)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(128, 63)
         Me.Button5.TabIndex = 16
@@ -342,7 +346,7 @@ Partial Class Pacientes
         Me.Button4.ForeColor = System.Drawing.Color.Black
         Me.Button4.Image = Global.WindowsApplication1.My.Resources.Resources._42954__1_
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(663, 503)
+        Me.Button4.Location = New System.Drawing.Point(663, 532)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(130, 63)
         Me.Button4.TabIndex = 9
@@ -357,11 +361,11 @@ Partial Class Pacientes
         Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources._675024_delete_512x512_1_
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(335, 503)
+        Me.Button3.Location = New System.Drawing.Point(335, 532)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(135, 63)
+        Me.Button3.Size = New System.Drawing.Size(131, 63)
         Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Volver " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Activo"
+        Me.Button3.Text = "Volver Inactivo"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button3.UseVisualStyleBackColor = True
         Me.Button3.Visible = False
@@ -372,7 +376,7 @@ Partial Class Pacientes
         Me.Button2.ForeColor = System.Drawing.Color.Black
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(178, 503)
+        Me.Button2.Location = New System.Drawing.Point(178, 532)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(136, 63)
         Me.Button2.TabIndex = 7
@@ -387,7 +391,7 @@ Partial Class Pacientes
         Me.Button1.ForeColor = System.Drawing.Color.Black
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.add_user_icon_icons__2_
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(17, 503)
+        Me.Button1.Location = New System.Drawing.Point(17, 532)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(139, 63)
         Me.Button1.TabIndex = 0
@@ -402,30 +406,30 @@ Partial Class Pacientes
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle18
         Me.DataGridView1.Location = New System.Drawing.Point(17, 70)
         Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(488, 381)
+        Me.DataGridView1.Size = New System.Drawing.Size(488, 348)
         Me.DataGridView1.TabIndex = 17
         '
         'Button7
@@ -434,7 +438,7 @@ Partial Class Pacientes
         Me.Button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button7.Image = Global.WindowsApplication1.My.Resources.Resources.fac159a300a5cd5efbd3c544cb37d3b0_1_
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.Location = New System.Drawing.Point(830, 503)
+        Me.Button7.Location = New System.Drawing.Point(830, 532)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(128, 63)
         Me.Button7.TabIndex = 18
@@ -462,12 +466,32 @@ Partial Class Pacientes
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ForeColor = System.Drawing.Color.Black
         Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.Location = New System.Drawing.Point(572, 22)
+        Me.Button8.Location = New System.Drawing.Point(17, 434)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(444, 29)
+        Me.Button8.Size = New System.Drawing.Size(488, 41)
         Me.Button8.TabIndex = 20
         Me.Button8.Text = "Mostrar Pacientes Inactivos"
         Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(17, 15)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(73, 24)
+        Me.Label20.TabIndex = 20
+        Me.Label20.Text = "Estado:"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(224, 15)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(76, 24)
+        Me.Label21.TabIndex = 21
+        Me.Label21.Text = "Label21"
         '
         'Pacientes
         '
@@ -535,5 +559,7 @@ Partial Class Pacientes
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
 
 End Class
