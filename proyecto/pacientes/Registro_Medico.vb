@@ -10,6 +10,7 @@
             actTabla()
             actEstado()
         Catch ex As Exception
+
             MsgBox(ex.ToString)
         End Try
        
@@ -17,101 +18,252 @@
 
     Private Sub actBoca()
         Dim zona As String = ""
+
         For x As Integer = 0 To DataGridView1.RowCount - 1
 
             If Not IsDBNull(DataGridView1.Rows(x).Cells(1).Value) Then
                 Select Case DataGridView1.Rows(x).Cells(1).Value
 
-                    Case "nor-oeste"
+                    Case "arriba-derecha"
                         zona = "1"
-                    Case "nor-este"
+                    Case "arriba-izquierda"
                         zona = "2"
-                    Case "sur-oeste"
+                    Case "abajo-derecha"
                         zona = "3"
-                    Case "sur-este"
+                    Case "abajo-izquierda"
                         zona = "4"
 
                 End Select
 
                 zona += DataGridView1.Rows(x).Cells(2).Value.ToString
 
-                Dim panel As New Panel
-
-                If DataGridView1.Rows(x).Cells(0).Value = "malo" Then
-                    panel.BackColor = Color.Red
-                ElseIf DataGridView1.Rows(x).Cells(0).Value = "precaucion" Then
-                    panel.BackColor = Color.Yellow
-                Else
-                    panel.BackColor = Color.White
-                End If
-
                 Select Case zona
                     Case "11"
-                        Panel11.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbad1.Image = My.Resources._1a
+                            Case "precaucion"
+                                pbad1.Image = My.Resources._1aa
+                            Case "ausente"
+                                pbad1.Image = My.Resources._1na
+                        End Select
                     Case "12"
-                        Panel12.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbad2.Image = My.Resources._2a
+                            Case "precaucion"
+                                pbad2.Image = My.Resources._2aa
+                            Case "ausente"
+                                pbad2.Image = My.Resources._2na
+                        End Select
                     Case "13"
-                        Panel13.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbad3.Image = My.Resources._3a
+                            Case "precaucion"
+                                pbad3.Image = My.Resources._3aa
+                            Case "ausente"
+                                pbad3.Image = My.Resources._3na
+                        End Select
                     Case "14"
-                        Panel14.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbad4.Image = My.Resources._4a
+                            Case "precaucion"
+                                pbad4.Image = My.Resources._4aa
+                            Case "ausente"
+                                pbad4.Image = My.Resources._4na
+                        End Select
                     Case "15"
-                        Panel15.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbad5.Image = My.Resources._5a
+                            Case "precaucion"
+                                pbad5.Image = My.Resources._5aa
+                            Case "ausente"
+                                pbad5.Image = My.Resources._5na
+                        End Select
                     Case "16"
-                        Panel16.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbad6.Image = My.Resources._6a
+                            Case "precaucion"
+                                pbad6.Image = My.Resources._6aa
+                            Case "ausente"
+                                pbad6.Image = My.Resources._6na
+                        End Select
                     Case "17"
-                        Panel17.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbad7.Image = My.Resources._7a
+                            Case "precaucion"
+                                pbad7.Image = My.Resources._7aa
+                            Case "ausente"
+                                pbad7.Image = My.Resources._7na
+                        End Select
                     Case "18"
-                        Panel18.BackColor = panel.BackColor
-                    Case "21"
-                        Panel21.BackColor = panel.BackColor
-                    Case "22"
-                        Panel22.BackColor = panel.BackColor
-                    Case "23"
-                        Panel23.BackColor = panel.BackColor
-                    Case "24"
-                        Panel24.BackColor = panel.BackColor
-                    Case "25"
-                        Panel25.BackColor = panel.BackColor
-                    Case "26"
-                        Panel26.BackColor = panel.BackColor
-                    Case "27"
-                        Panel27.BackColor = panel.BackColor
-                    Case "28"
-                        Panel28.BackColor = panel.BackColor
-                    Case "31"
-                        Panel31.BackColor = panel.BackColor
-                    Case "32"
-                        Panel32.BackColor = panel.BackColor
-                    Case "33"
-                        Panel33.BackColor = panel.BackColor
-                    Case "34"
-                        Panel34.BackColor = panel.BackColor
-                    Case "35"
-                        Panel35.BackColor = panel.BackColor
-                    Case "36"
-                        Panel36.BackColor = panel.BackColor
-                    Case "37"
-                        Panel37.BackColor = panel.BackColor
-                    Case "38"
-                        Panel38.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbad8.Image = My.Resources._8a
+                            Case "precaucion"
+                                pbad8.Image = My.Resources._8aa
+                            Case "ausente"
+                                pbad8.Image = My.Resources._8na
+                        End Select
                     Case "41"
-                        Panel41.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbd1.Image = My.Resources._1b
+                            Case "precaucion"
+                                pbbd1.Image = My.Resources._1ab
+                            Case "ausente"
+                                pbbd1.Image = My.Resources._1nb
+                        End Select
                     Case "42"
-                        Panel42.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbd2.Image = My.Resources._2b
+                            Case "precaucion"
+                                pbbd2.Image = My.Resources._2ab
+                            Case "ausente"
+                                pbbd2.Image = My.Resources._2nb
+                        End Select
                     Case "43"
-                        Panel43.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbd3.Image = My.Resources._3b
+                            Case "precaucion"
+                                pbbd3.Image = My.Resources._3ab
+                            Case "ausente"
+                                pbbd3.Image = My.Resources._3nb
+                        End Select
                     Case "44"
-                        Panel44.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbd4.Image = My.Resources._4b
+                            Case "precaucion"
+                                pbbd4.Image = My.Resources._4ab
+                            Case "ausente"
+                                pbbd4.Image = My.Resources._4nb
+                        End Select
                     Case "45"
-                        Panel45.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbd5.Image = My.Resources._5b
+                            Case "precaucion"
+                                pbbd5.Image = My.Resources._5ab
+                            Case "ausente"
+                                pbbd5.Image = My.Resources._5nb
+                        End Select
                     Case "46"
-                        Panel46.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbd6.Image = My.Resources._6b
+                            Case "precaucion"
+                                pbbd6.Image = My.Resources._6ab
+                            Case "ausente"
+                                pbbd6.Image = My.Resources._6nb
+                        End Select
                     Case "47"
-                        Panel47.BackColor = panel.BackColor
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbd7.Image = My.Resources._7b
+                            Case "precaucion"
+                                pbbd7.Image = My.Resources._7ab
+                            Case "ausente"
+                                pbbd7.Image = My.Resources._7nb
+                        End Select
                     Case "48"
-                        Panel48.BackColor = panel.BackColor
-
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbd8.Image = My.Resources._8b
+                            Case "precaucion"
+                                pbbd8.Image = My.Resources._8ab
+                            Case "ausente"
+                                pbbd8.Image = My.Resources._8nb
+                        End Select
                 End Select
+
+
+                'pb1.Image = My.Resources.AD1
+
+                ''Dim panel As New Panel
+                ''agsdfasdfasdfasdfsfd
+                'If DataGridView1.Rows(x).Cells(0).Value = "malo" Then
+                '    panel.BackColor = Color.Red
+                'ElseIf DataGridView1.Rows(x).Cells(0).Value = "precaucion" Then
+                '    panel.BackColor = Color.Yellow
+                'Else
+                '    panel.BackColor = Color.White
+                'End If
+
+                'Select Case zona
+                '    Case "11"
+                '        Panel11.BackColor = panel.BackColor
+                '    Case "12"
+                '        Panel12.BackColor = panel.BackColor
+                '    Case "13"
+                '        Panel13.BackColor = panel.BackColor
+                '    Case "14"
+                '        Panel14.BackColor = panel.BackColor
+                '    Case "15"
+                '        Panel15.BackColor = panel.BackColor
+                '    Case "16"
+                '        Panel16.BackColor = panel.BackColor
+                '    Case "17"
+                '        Panel17.BackColor = panel.BackColor
+                '    Case "18"
+                '        Panel18.BackColor = panel.BackColor
+                '    Case "21"
+                '        Panel21.BackColor = panel.BackColor
+                '    Case "22"
+                '        Panel22.BackColor = panel.BackColor
+                '    Case "23"
+                '        Panel23.BackColor = panel.BackColor
+                '    Case "24"
+                '        Panel24.BackColor = panel.BackColor
+                '    Case "25"
+                '        Panel25.BackColor = panel.BackColor
+                '    Case "26"
+                '        Panel26.BackColor = panel.BackColor
+                '    Case "27"
+                '        Panel27.BackColor = panel.BackColor
+                '    Case "28"
+                '        Panel28.BackColor = panel.BackColor
+                '    Case "31"
+                '        Panel31.BackColor = panel.BackColor
+                '    Case "32"
+                '        Panel32.BackColor = panel.BackColor
+                '    Case "33"
+                '        Panel33.BackColor = panel.BackColor
+                '    Case "34"
+                '        Panel34.BackColor = panel.BackColor
+                '    Case "35"
+                '        Panel35.BackColor = panel.BackColor
+                '    Case "36"
+                '        Panel36.BackColor = panel.BackColor
+                '    Case "37"
+                '        Panel37.BackColor = panel.BackColor
+                '    Case "38"
+                '        Panel38.BackColor = panel.BackColor
+                '    Case "41"
+                '        Panel41.BackColor = panel.BackColor
+                '    Case "42"
+                '        Panel42.BackColor = panel.BackColor
+                '    Case "43"
+                '        Panel43.BackColor = panel.BackColor
+                '    Case "44"
+                '        Panel44.BackColor = panel.BackColor
+                '    Case "45"
+                '        Panel45.BackColor = panel.BackColor
+                '    Case "46"
+                '        Panel46.BackColor = panel.BackColor
+                '    Case "47"
+                '        Panel47.BackColor = panel.BackColor
+                '    Case "48"
+                '        Panel48.BackColor = panel.BackColor
+
+                'End Select
             End If
         Next
     End Sub
@@ -164,4 +316,16 @@
     End Sub
 
     
+
+    Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbd8.Click
+
+    End Sub
+
+    Private Sub Label17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Panel2_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
 End Class
