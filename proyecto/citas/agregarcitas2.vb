@@ -3,6 +3,7 @@
     Dim fc As String
     Dim nombre As String
     Dim min As String
+    Dim 
 
 
     'Mira este video para ver como hacer,  porque funciona pero no esta bien, sale el calendario otra vez en el datetimepicker
@@ -35,6 +36,11 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Consulta = "select fecha from citas"
+        consultar()
+        If fc = Consulta Then
+
+        End If
         If id_p <> vbNull Then
 
             Try
