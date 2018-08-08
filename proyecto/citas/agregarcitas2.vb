@@ -3,7 +3,7 @@
     Dim fc As String
     Dim nombre As String
     Dim min As String
-    Dim 
+
 
 
     'Mira este video para ver como hacer,  porque funciona pero no esta bien, sale el calendario otra vez en el datetimepicker
