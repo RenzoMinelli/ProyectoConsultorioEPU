@@ -60,7 +60,7 @@
                 MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
             Else
                 Try
-                    Consulta = "Select nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
+                    Consulta = "Insert into cita (id_p, fecha, hora, realizada, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "', 0, '" + descr + "'); "
                     consultar()
                     MsgBox("Registrado", MsgBoxStyle.Information)
                     Me.Dispose()

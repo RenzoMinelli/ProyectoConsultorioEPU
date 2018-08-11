@@ -58,7 +58,7 @@
     Public Sub actualizador()
         fecha = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
         Try
-            Consulta = "select hora as 'Hora', nombre as 'Nombre', descripcion as 'Descripcion' from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + fecha + "';"
+            Consulta = "select date_format(hora, '%H:%i') as 'Hora', nombre as 'Nombre', descripcion as 'Descripcion' from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + fecha + "';"
             consultar()
             DataGridView1.DataSource = Tabla
 
