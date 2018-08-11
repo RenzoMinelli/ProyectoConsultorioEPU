@@ -1,7 +1,5 @@
 ﻿Public Class Pacientes
-    '--------------------------------------------------------------------------------------------
-    '- Renzo no te olvides que hay que agregar una forma de visualizar las citas para cada paciente
-
+   
     Dim ver As Integer = 1
     Dim ver2 As Integer = 1
 
@@ -202,11 +200,13 @@
     
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+
         Me.Hide()
         formu = Crear_Cita
         formu.MdiParent = Menu_Inicio
         formu.Dock = DockStyle.Fill
         formu.Show()
+
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
@@ -232,7 +232,7 @@
 
     End Sub
 
-   Private Sub Label23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub Label23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Dispose()
         Citas.Show()
     End Sub

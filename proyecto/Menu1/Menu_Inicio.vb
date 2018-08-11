@@ -51,7 +51,7 @@
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = Pacientes
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -65,7 +65,7 @@
     End Sub
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = Aranceles
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -78,7 +78,7 @@
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = Citas
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -150,7 +150,7 @@
 
    
     Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label7.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = finanzas
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -164,7 +164,7 @@
     End Sub
 
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = Pacientes
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -216,7 +216,7 @@
     End Sub
 
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = Aranceles
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -230,7 +230,7 @@
 
     
     Private Sub Panel10_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel10.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = Pacientes
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -243,7 +243,7 @@
     End Sub
 
     Private Sub Panel9_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel9.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = Citas
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -257,7 +257,7 @@
 
  
     Private Sub Panel15_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel15.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = Aranceles
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -270,7 +270,7 @@
     End Sub
 
     Private Sub Panel13_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel13.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = finanzas
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -285,7 +285,7 @@
 
    
     Private Sub PictureBox7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox7.Click
-        formu.Dispose()
+        Me.ActiveMdiChild.Dispose()
         formu = finanzas
         formu.MdiParent = Me
         formu.Dock = DockStyle.Fill
@@ -316,4 +316,5 @@
         End If
         
     End Sub
+
 End Class
