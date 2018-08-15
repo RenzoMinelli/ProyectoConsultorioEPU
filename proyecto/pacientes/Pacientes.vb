@@ -19,6 +19,8 @@
         'Cuando carga el formulario Paciente, se actualiza el dgbPacientes con los pacientes activos
         actTabla(1)
 
+        txbBusqueda.ForeColor = Color.Gray
+        txbBusqueda.Text = "Buscar"
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarDatos.Click
@@ -101,48 +103,63 @@
                     'Si no hay excepciones, que notifique que el cambio ha sido realizado
                     MsgBox("Actualizado", MsgBoxStyle.Information)
 
-                    'Actualizamos la tabla mostranso solo los pacientes activos
+                    'Actualizamos la tabla mostrando solo los pacientes activos
                     actTabla(1)
 
-
-                   
                 Catch ex As Exception
-                    MsgBox(ex.ToString)
+
+                    'En el caso que de algun error que se muestre un alerta
+                    MsgBox("Error al cambiar es estado del paciente", MsgBoxStyle.Exclamation)
+
                 End Try
 
             Else
+
+                'En el caso de poner que no, que se muestre un aviso de que no se ha modificado nada
                 MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
+
             End If
 
-        Else
+        Else 'Si el estado del paciente es inactivo
+
+            'Consultamos si desea realmente volverlo activo
             If MsgBox("¿Seguro que desea volver activo al paciente con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+
+                'Si es así, intentamos actualizar la informacion del paciente en la base de datos cambiando el campo estado
                 Try
                     Consulta = "update paciente set estado = 1 where id_p = '" + Str(id_p) + "';"
                     consultar()
+
+                    'Si no hay excepciones, que notifique que el cambio ha sido realizado
                     MsgBox("Actualizado", MsgBoxStyle.Information)
+
+                    'Actualizamos la tabla mostrando solo los pacientes inactivos
                     actTabla(0)
-                    pnlTapa.Visible = True
-                    lblCartel.Visible = True
-                    btnCambiarEstado.Visible = False
-                    btnRegistrarCita.Visible = False
-                    btnModificarDatos.Visible = False
-                    btnRegistroMedico.Visible = False
-                    btnRealizarPago.Visible = False
+
                 Catch ex As Exception
-                    MsgBox(ex.ToString)
+
+                    'En el caso que de algun error que se muestre un alerta
+                    MsgBox("Error al cambiar es estado del paciente", MsgBoxStyle.Exclamation)
+
                 End Try
 
             Else
+
+                'En el caso de poner que no, que se muestre un aviso de que no se ha modificado nada
                 MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
+
             End If
+
         End If
 
     End Sub
     Public Sub actPanel()
 
-        'Hacemos invisible el panel y el label y visible los botones
+        'Hacemos invisible el panel y el label 
         pnlTapa.Hide()
         lblCartel.Hide()
+
+        'Hacemos visible los botones
         btnModificarDatos.Show()
         btnCambiarEstado.Show()
         btnRegistrarCita.Show()
@@ -151,7 +168,7 @@
         btnRealizarPago.Show()
 
 
-        'Guardamos en Variables
+        'Guardamos en las variables los datos acordes
         id_p = dgbPacientes.CurrentRow.Cells(0).Value
         cedula = dgbPacientes.CurrentRow.Cells(1).Value
         nombre = dgbPacientes.CurrentRow.Cells(3).Value
@@ -186,8 +203,10 @@
 
         If dgbPacientes.CurrentRow.Cells(9).Value = True Then
             lblEstado.Text = "Activo"
+            lblEstado.ForeColor = Color.Green
         Else
             lblEstado.Text = "Inactivo"
+            lblEstado.ForeColor = Color.Red
         End If
 
 
@@ -207,6 +226,7 @@
     End Sub
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRegistrarCita.Click
 
+        'Al presionar el boton btnRegistrarCita, se oculta el formulario actual, se guarda el formulario Crear_Cita en el frmContenedor y se muestra
         Me.Hide()
         frmContenedor = Crear_Cita
         frmContenedor.MdiParent = Menu_Inicio
@@ -217,95 +237,169 @@
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
 
-        Dim a As String = txbBusqueda.Text
-        If a = "" Then
+        'Cuando el contenido de txbBusqueda cambia, guardamos lo ingresado en la variable busqueda
+        Dim busqueda As String = txbBusqueda.Text
+
+        'Si el txbBusqueda es igual a 'Buscar' y es de color Gris
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
+
+            'Que actualice el dgbPaciente simplemente
             actTabla(EstadoPacientes)
 
-        Else
+        Else 'Si no
+
+            'Intentamos obtener los pacientes que cumplan con las condición
             Try
 
-                Consulta = "Select * from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + a + "%' or cedula like '" + a + "%' );"
+                Consulta = "Select * from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + busqueda + "%' or cedula like '" + busqueda + "%' );"
 
                 consultar()
                 dgbPacientes.DataSource = Tabla
 
             Catch ex As Exception
-                MsgBox(ex.ToString)
+
+                'Si se genera una excepción que se muestre una alerta
+                MsgBox("Error al buscar los pacientes", MsgBoxStyle.Exclamation)
+
             End Try
+
         End If
 
-
-
-    End Sub
-
-    Private Sub Label23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Dispose()
-        Citas.Show()
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRegistroMedico.Click
+
+        'Al presionar el boton btnRegistroMedico, se oculta el formulario actual, se guarda el formulario Registro_Medico en el frmContenedor y se muestra
         Me.Hide()
         frmContenedor = Registro_Medico
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
+
     End Sub
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMostrarAntecedentes.Click
-        Me.Hide()
-        frmContenedor = Antecedentes
-        frmContenedor.MdiParent = Menu_Inicio
-        frmContenedor.Dock = DockStyle.Fill
-        frmContenedor.Show()
-    End Sub
 
-    Private Sub Label3_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        'Al presionar el boton btnMostrarAntecedentes, se oculta el formulario actual, se guarda el formulario Antecedentes en el frmContenedor y se muestra
         Me.Hide()
         frmContenedor = Antecedentes
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
+
     End Sub
 
     Private Sub DataGridView1_CellClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgbPacientes.CellClick
+
+        'Cuando un campo del dgvPacientes es seleccionado, el valor de la columna 0 de la fila la cual contiene el campo seleccionado es guardado en id_p
         id_p = dgbPacientes.CurrentRow.Cells(0).Value
+
+        'Luego actualizamos el Panel
         actPanel()
+
     End Sub
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRealizarPago.Click
+
+        'Al presionar el boton btnRealizarPago, se oculta el formulario actual, se guarda el formulario InputPago en el frmContenedor y se muestra
         frmContenedor = InputPago
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
-
-
-
     End Sub
 
 
-    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPacInact.Click
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCambiarPacientes.Click
 
-
-
+        'Si el estado de los pacientes que se mostraba antes del click era activo
         If EstadoPacientes = 1 Then
 
+            'Actualizamos la tabla con pacientes inactivos
             actTabla(0)
-            btnPacInact.Text = "Mostrar Pacientes Activos"
+
+            'Cambiamos lo que dice el boton btnCambiarPacientes y el boton btnCambiarEstado para que sea acorde
+            btnCambiarPacientes.Text = "Mostrar Pacientes Activos"
             btnCambiarEstado.Text = "Volver" + vbNewLine + " Activo"
+
+            'Indicamos que los pacientes mostrados son inactivos
             EstadoPacientes = 0
-        Else
+
+        Else 'Si el estado de los pacientes que se mostraba antes del click era inactivo
+
+            'Actualizamos la tabla con pacientes activos
             actTabla(1)
+
+            'Cambiamos lo que dice el boton btnCambiarPacientes y el boton btnCambiarEstado para que sea acorde
             btnCambiarEstado.Text = "Volver " + vbNewLine + "Inactivo"
-            btnPacInact.Text = "Mostrar Pacientes Inactivos"
+            btnCambiarPacientes.Text = "Mostrar Pacientes Inactivos"
+
+            'Indicamos que los pacientes mostrados son activos
             EstadoPacientes = 1
+
         End If
 
+    End Sub
+    Private Sub txbBusqueda_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.Click
 
+        'Si el contenido de txbBusqueda es Buscar y de color gris
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
+
+            'El cursos se ubique al inicio
+            Me.txbBusqueda.SelectionStart = 0
+
+        End If
 
     End Sub
 
-    Private Sub Label20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label20.Click
+    Private Sub txbBusqueda_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.GotFocus
+
+        'Si el contenido de txbBusqueda es Buscar y de color gris
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
+
+            'El cursos se ubique al inicio
+            txbBusqueda.SelectionStart = 0
+
+        End If
 
     End Sub
+
+    Private Sub txbBusqueda_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txbBusqueda.KeyDown
+
+        'Si el contenido de txbBusqueda es Buscar, de color gris y la tecla presionada no es 
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray And Not e.KeyCode = Keys.Back Then
+
+            'Borrar el contenido del txbBusqueda y volver el color negro
+            txbBusqueda.Text = ""
+            txbBusqueda.ForeColor = Color.Black
+
+
+            'Si txbBusqueda solo tiene una letra y la tecla presionada fue borrar, 
+        ElseIf e.KeyCode = Keys.Back And txbBusqueda.Text.Length = 1 Then
+
+            'Introduzco el texto 'Buscar' al txbBusqueda de color Gris
+            txbBusqueda.Text = "Buscar"
+            txbBusqueda.ForeColor = Color.Gray
+            actTabla(EstadoPacientes)
+
+            'Si la tecla presionada es borrar y todo el texto esta seleccionado
+        ElseIf e.KeyCode = Keys.Back And txbBusqueda.SelectedText = txbBusqueda.Text Then
+
+            'Introduzco el texto 'Buscar' al txbBusqueda de color Gris
+            txbBusqueda.Text = "Buscar"
+            txbBusqueda.ForeColor = Color.Gray
+            actTabla(EstadoPacientes)
+
+        End If
+    End Sub
+
+    Private Sub txbBusqueda_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.LostFocus
+        If txbBusqueda.Text.Length = 0 Or (txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray) Then
+            txbBusqueda.ForeColor = Color.Gray
+            txbBusqueda.Text = "Buscar"
+            actTabla(EstadoPacientes)
+        End If
+    End Sub
+
+
 End Class

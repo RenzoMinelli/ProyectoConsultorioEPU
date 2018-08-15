@@ -1,6 +1,6 @@
 ﻿Public Class Registro_Medico
     Dim formu As New Form
-    
+
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
             Consulta = "Select r.descripcion, zona, nro_diente, a.descripcion, c.fecha,hora , precio from registro_medico r left join aranceles a on a.id_a = r.id_a left join cita c on c.id_c = r.id_c where r.id_p = '" + Str(id_p) + "'"
@@ -13,7 +13,7 @@
 
             MsgBox(ex.ToString)
         End Try
-       
+
     End Sub
 
     Private Sub actBoca()
@@ -475,7 +475,7 @@
         DataGridView2.AutoResizeColumns()
     End Sub
 
-    
+
 
     Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbd8.Click
 
