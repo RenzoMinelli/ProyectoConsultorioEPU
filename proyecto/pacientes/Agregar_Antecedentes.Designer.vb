@@ -22,168 +22,168 @@ Partial Class Agregar_Antecedentes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.chbxAlergicos = New System.Windows.Forms.CheckBox()
+        Me.chbxDiabeticos = New System.Windows.Forms.CheckBox()
+        Me.chbxCardiovasculares = New System.Windows.Forms.CheckBox()
+        Me.chbxFiebreReumatica = New System.Windows.Forms.CheckBox()
+        Me.chbxCoagulacion = New System.Windows.Forms.CheckBox()
+        Me.chbxOdontologicos = New System.Windows.Forms.CheckBox()
+        Me.chbxFarmacosRecibidos = New System.Windows.Forms.CheckBox()
+        Me.chbxFamiliares = New System.Windows.Forms.CheckBox()
+        Me.chbxTratamientoMedico = New System.Windows.Forms.CheckBox()
+        Me.lblObservaciones = New System.Windows.Forms.Label()
+        Me.txbObservaciones = New System.Windows.Forms.TextBox()
+        Me.btnAtras = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'CheckBox1
+        'chbxAlergicos
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(85, 40)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(108, 28)
-        Me.CheckBox1.TabIndex = 0
-        Me.CheckBox1.Text = "Alérgicos"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.chbxAlergicos.AutoSize = True
+        Me.chbxAlergicos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxAlergicos.Location = New System.Drawing.Point(85, 40)
+        Me.chbxAlergicos.Name = "chbxAlergicos"
+        Me.chbxAlergicos.Size = New System.Drawing.Size(108, 28)
+        Me.chbxAlergicos.TabIndex = 0
+        Me.chbxAlergicos.Text = "Alérgicos"
+        Me.chbxAlergicos.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'chbxDiabeticos
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.Location = New System.Drawing.Point(85, 91)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(116, 28)
-        Me.CheckBox2.TabIndex = 1
-        Me.CheckBox2.Text = "Diabéticos"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.chbxDiabeticos.AutoSize = True
+        Me.chbxDiabeticos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxDiabeticos.Location = New System.Drawing.Point(85, 91)
+        Me.chbxDiabeticos.Name = "chbxDiabeticos"
+        Me.chbxDiabeticos.Size = New System.Drawing.Size(116, 28)
+        Me.chbxDiabeticos.TabIndex = 1
+        Me.chbxDiabeticos.Text = "Diabéticos"
+        Me.chbxDiabeticos.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'chbxCardiovasculares
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox3.Location = New System.Drawing.Point(85, 142)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(173, 28)
-        Me.CheckBox3.TabIndex = 2
-        Me.CheckBox3.Text = "Cardiovasculares"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.chbxCardiovasculares.AutoSize = True
+        Me.chbxCardiovasculares.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxCardiovasculares.Location = New System.Drawing.Point(85, 142)
+        Me.chbxCardiovasculares.Name = "chbxCardiovasculares"
+        Me.chbxCardiovasculares.Size = New System.Drawing.Size(173, 28)
+        Me.chbxCardiovasculares.TabIndex = 2
+        Me.chbxCardiovasculares.Text = "Cardiovasculares"
+        Me.chbxCardiovasculares.UseVisualStyleBackColor = True
         '
-        'CheckBox4
+        'chbxFiebreReumatica
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox4.Location = New System.Drawing.Point(85, 193)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(178, 28)
-        Me.CheckBox4.TabIndex = 3
-        Me.CheckBox4.Text = "Fiebre Reumática"
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.chbxFiebreReumatica.AutoSize = True
+        Me.chbxFiebreReumatica.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxFiebreReumatica.Location = New System.Drawing.Point(85, 193)
+        Me.chbxFiebreReumatica.Name = "chbxFiebreReumatica"
+        Me.chbxFiebreReumatica.Size = New System.Drawing.Size(178, 28)
+        Me.chbxFiebreReumatica.TabIndex = 3
+        Me.chbxFiebreReumatica.Text = "Fiebre Reumática"
+        Me.chbxFiebreReumatica.UseVisualStyleBackColor = True
         '
-        'CheckBox5
+        'chbxCoagulacion
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox5.Location = New System.Drawing.Point(85, 245)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(135, 28)
-        Me.CheckBox5.TabIndex = 4
-        Me.CheckBox5.Text = "Coagulación"
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.chbxCoagulacion.AutoSize = True
+        Me.chbxCoagulacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxCoagulacion.Location = New System.Drawing.Point(85, 245)
+        Me.chbxCoagulacion.Name = "chbxCoagulacion"
+        Me.chbxCoagulacion.Size = New System.Drawing.Size(135, 28)
+        Me.chbxCoagulacion.TabIndex = 4
+        Me.chbxCoagulacion.Text = "Coagulación"
+        Me.chbxCoagulacion.UseVisualStyleBackColor = True
         '
-        'CheckBox6
+        'chbxOdontologicos
         '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox6.Location = New System.Drawing.Point(85, 296)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(152, 28)
-        Me.CheckBox6.TabIndex = 5
-        Me.CheckBox6.Text = "Odontológicos"
-        Me.CheckBox6.UseVisualStyleBackColor = True
+        Me.chbxOdontologicos.AutoSize = True
+        Me.chbxOdontologicos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxOdontologicos.Location = New System.Drawing.Point(85, 296)
+        Me.chbxOdontologicos.Name = "chbxOdontologicos"
+        Me.chbxOdontologicos.Size = New System.Drawing.Size(152, 28)
+        Me.chbxOdontologicos.TabIndex = 5
+        Me.chbxOdontologicos.Text = "Odontológicos"
+        Me.chbxOdontologicos.UseVisualStyleBackColor = True
         '
-        'CheckBox7
+        'chbxFarmacosRecibidos
         '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox7.Location = New System.Drawing.Point(85, 343)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(202, 28)
-        Me.CheckBox7.TabIndex = 6
-        Me.CheckBox7.Text = "Fármacos Recibidos"
-        Me.CheckBox7.UseVisualStyleBackColor = True
+        Me.chbxFarmacosRecibidos.AutoSize = True
+        Me.chbxFarmacosRecibidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxFarmacosRecibidos.Location = New System.Drawing.Point(85, 343)
+        Me.chbxFarmacosRecibidos.Name = "chbxFarmacosRecibidos"
+        Me.chbxFarmacosRecibidos.Size = New System.Drawing.Size(202, 28)
+        Me.chbxFarmacosRecibidos.TabIndex = 6
+        Me.chbxFarmacosRecibidos.Text = "Fármacos Recibidos"
+        Me.chbxFarmacosRecibidos.UseVisualStyleBackColor = True
         '
-        'CheckBox8
+        'chbxFamiliares
         '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox8.Location = New System.Drawing.Point(85, 396)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(115, 28)
-        Me.CheckBox8.TabIndex = 7
-        Me.CheckBox8.Text = "Familiares"
-        Me.CheckBox8.UseVisualStyleBackColor = True
+        Me.chbxFamiliares.AutoSize = True
+        Me.chbxFamiliares.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxFamiliares.Location = New System.Drawing.Point(85, 396)
+        Me.chbxFamiliares.Name = "chbxFamiliares"
+        Me.chbxFamiliares.Size = New System.Drawing.Size(115, 28)
+        Me.chbxFamiliares.TabIndex = 7
+        Me.chbxFamiliares.Text = "Familiares"
+        Me.chbxFamiliares.UseVisualStyleBackColor = True
         '
-        'CheckBox9
+        'chbxTratamientoMedico
         '
-        Me.CheckBox9.AutoSize = True
-        Me.CheckBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox9.Location = New System.Drawing.Point(85, 447)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(214, 28)
-        Me.CheckBox9.TabIndex = 8
-        Me.CheckBox9.Text = "Tratamientos Médicos"
-        Me.CheckBox9.UseVisualStyleBackColor = True
+        Me.chbxTratamientoMedico.AutoSize = True
+        Me.chbxTratamientoMedico.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxTratamientoMedico.Location = New System.Drawing.Point(85, 447)
+        Me.chbxTratamientoMedico.Name = "chbxTratamientoMedico"
+        Me.chbxTratamientoMedico.Size = New System.Drawing.Size(214, 28)
+        Me.chbxTratamientoMedico.TabIndex = 8
+        Me.chbxTratamientoMedico.Text = "Tratamientos Médicos"
+        Me.chbxTratamientoMedico.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lblObservaciones
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(388, 44)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(142, 24)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Observaciones:"
+        Me.lblObservaciones.AutoSize = True
+        Me.lblObservaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblObservaciones.Location = New System.Drawing.Point(388, 44)
+        Me.lblObservaciones.Name = "lblObservaciones"
+        Me.lblObservaciones.Size = New System.Drawing.Size(142, 24)
+        Me.lblObservaciones.TabIndex = 9
+        Me.lblObservaciones.Text = "Observaciones:"
         '
-        'TextBox1
+        'txbObservaciones
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(392, 82)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(580, 172)
-        Me.TextBox1.TabIndex = 10
+        Me.txbObservaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbObservaciones.Location = New System.Drawing.Point(392, 82)
+        Me.txbObservaciones.Multiline = True
+        Me.txbObservaciones.Name = "txbObservaciones"
+        Me.txbObservaciones.Size = New System.Drawing.Size(580, 172)
+        Me.txbObservaciones.TabIndex = 10
         '
-        'Button1
+        'btnAtras
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(584, 439)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(107, 62)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Atrás"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAtras.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAtras.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
+        Me.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAtras.Location = New System.Drawing.Point(584, 439)
+        Me.btnAtras.Name = "btnAtras"
+        Me.btnAtras.Size = New System.Drawing.Size(107, 62)
+        Me.btnAtras.TabIndex = 11
+        Me.btnAtras.Text = "Atrás"
+        Me.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAtras.UseVisualStyleBackColor = True
         '
         'Agregar_Antecedentes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.CheckBox9)
-        Me.Controls.Add(Me.CheckBox8)
-        Me.Controls.Add(Me.CheckBox7)
-        Me.Controls.Add(Me.CheckBox6)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.btnAtras)
+        Me.Controls.Add(Me.txbObservaciones)
+        Me.Controls.Add(Me.lblObservaciones)
+        Me.Controls.Add(Me.chbxTratamientoMedico)
+        Me.Controls.Add(Me.chbxFamiliares)
+        Me.Controls.Add(Me.chbxFarmacosRecibidos)
+        Me.Controls.Add(Me.chbxOdontologicos)
+        Me.Controls.Add(Me.chbxCoagulacion)
+        Me.Controls.Add(Me.chbxFiebreReumatica)
+        Me.Controls.Add(Me.chbxCardiovasculares)
+        Me.Controls.Add(Me.chbxDiabeticos)
+        Me.Controls.Add(Me.chbxAlergicos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Agregar_Antecedentes"
         Me.Text = "Agregar_Antecedentes"
@@ -191,16 +191,16 @@ Partial Class Agregar_Antecedentes
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox9 As System.Windows.Forms.CheckBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents chbxAlergicos As System.Windows.Forms.CheckBox
+    Friend WithEvents chbxDiabeticos As System.Windows.Forms.CheckBox
+    Friend WithEvents chbxCardiovasculares As System.Windows.Forms.CheckBox
+    Friend WithEvents chbxFiebreReumatica As System.Windows.Forms.CheckBox
+    Friend WithEvents chbxCoagulacion As System.Windows.Forms.CheckBox
+    Friend WithEvents chbxOdontologicos As System.Windows.Forms.CheckBox
+    Friend WithEvents chbxFarmacosRecibidos As System.Windows.Forms.CheckBox
+    Friend WithEvents chbxFamiliares As System.Windows.Forms.CheckBox
+    Friend WithEvents chbxTratamientoMedico As System.Windows.Forms.CheckBox
+    Friend WithEvents lblObservaciones As System.Windows.Forms.Label
+    Friend WithEvents txbObservaciones As System.Windows.Forms.TextBox
+    Friend WithEvents btnAtras As System.Windows.Forms.Button
 End Class

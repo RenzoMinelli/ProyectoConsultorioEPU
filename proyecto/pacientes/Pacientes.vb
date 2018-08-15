@@ -1,40 +1,39 @@
 ﻿Public Class Pacientes
-   
-    Dim ver As Integer = 1
-    Dim ver2 As Integer = 1
 
-    Dim formu As New Form
+    'EstadoPacientes es una variable utilizada para verificar si se muetran los pacientes activos o inactivos
+    Dim EstadoPacientes As Integer = 1
 
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarPaciente.Click
 
-
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        'Al presionar el boton btnAgregarPaciente, se oculta el formulario actual, se guarda el formulario Agregar_Paciente en el frmContenedor y se muestra
         Me.Hide()
-        formu = Agregar_Paciente
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Agregar_Paciente
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        actPos()
+        'Cuando carga el formulario Paciente, se actualiza el dgbPacientes con los pacientes activos
         actTabla(1)
 
     End Sub
 
-    Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
-        actPanel()
-    End Sub
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarDatos.Click
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        'Al presionar el boton btnModificarDatos, se oculta el formulario actual, se guarda el formulario Modificar_Paciente en el frmContenedor y se muestra
         Me.Hide()
-        formu = Modificar_Paciente
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Modificar_Paciente
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+
     End Sub
     Public Sub actTabla(ByVal estado As String)
 
+        'Al iniciarse el método, lo primero que hace es borrar el contenido de las variables
         cedula = ""
         nombre = ""
         id_p = 0
@@ -45,56 +44,68 @@
         telefono = ""
         saldo = 0
 
-
+        'Luego intenta obtener todos los datos de los pacientes con el estado según le indicamos en la base de datos
         Try
             Consulta = "SELECT * FROM paciente where estado = '" + estado + "';"
             consultar()
 
-            DataGridView1.DataSource = Tabla
-            DataGridView1.Columns(0).Visible = False
-            DataGridView1.Columns(2).Visible = False
-            DataGridView1.Columns(4).Visible = False
-            DataGridView1.Columns(5).Visible = False
-            DataGridView1.Columns(6).Visible = False
-            DataGridView1.Columns(7).Visible = False
-            DataGridView1.Columns(8).Visible = False
-            DataGridView1.Columns(9).Visible = False
-            DataGridView1.Columns(1).HeaderText = "Cédula"
-            DataGridView1.Columns(3).HeaderText = "Nombre"
-            DataGridView1.ClearSelection()
-     
+            'Ocultamos todas las columnas que no nos interesa que el usuario visualice
+            dgbPacientes.DataSource = Tabla
+            dgbPacientes.Columns(0).Visible = False
+            dgbPacientes.Columns(2).Visible = False
+            dgbPacientes.Columns(4).Visible = False
+            dgbPacientes.Columns(5).Visible = False
+            dgbPacientes.Columns(6).Visible = False
+            dgbPacientes.Columns(7).Visible = False
+            dgbPacientes.Columns(8).Visible = False
+            dgbPacientes.Columns(9).Visible = False
+
+            'Cambiamos los encabezados de las columnas restantes por estetica y practicidad
+            dgbPacientes.Columns(1).HeaderText = "Cédula"
+            dgbPacientes.Columns(3).HeaderText = "Nombre"
 
         Catch ex As Exception
+
+            'Si es que se encuentra un error, que se muestre una alerta
             MsgBox("Error al obtener los pacientes", MsgBoxStyle.Exclamation)
+
         End Try
 
-        Panel2.Visible = True
-        Label17.Visible = True
-        Button3.Visible = False
-        Button2.Visible = False
-        Button4.Visible = False
-        Button5.Visible = False
-        Button7.Visible = False
+        'Ocultamos los botones que requieren que un usuario este seleccionado y subrimos la informacion personal con el panel pnlTapa
+        pnlTapa.Visible = True
+        lblCartel.Visible = True
+        btnCambiarEstado.Visible = False
+        btnModificarDatos.Visible = False
+        btnRegistrarCita.Visible = False
+        btnRegistroMedico.Visible = False
+        btnRealizarPago.Visible = False
 
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        id_p = DataGridView1.CurrentRow.Cells(0).Value
-        If ver = 1 Then
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCambiarEstado.Click
 
-            If MsgBox("¿Seguro que desea volver inactivo al paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+        'Al precionar el boton btnCambiarEstado, obtenemos la id del paciente previamente seleccionado
+        id_p = dgbPacientes.CurrentRow.Cells(0).Value
+
+        'Si el estado del paciente es activo
+        If EstadoPacientes = 1 Then
+
+            'Consultar si desea realmente volverlo inactivo
+            If MsgBox("¿Seguro que desea volver inactivo al paciente con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+
+                'Si es así, intentamos actualizar la informacion del paciente en la base de datos cambiando el campo estado
                 Try
                     Consulta = "update paciente set estado = 0 where id_p = '" + Str(id_p) + "';"
                     consultar()
+
+                    'Si no hay excepciones, que notifique que el cambio ha sido realizado
                     MsgBox("Actualizado", MsgBoxStyle.Information)
+
+                    'Actualizamos la tabla mostranso solo los pacientes activos
                     actTabla(1)
-                    Panel2.Visible = True
-                    Label17.Visible = True
-                    Button3.Visible = False
-                    Button4.Visible = False
-                    Button2.Visible = False
-                    Button5.Visible = False
-                    Button7.Visible = False
+
+
+                   
                 Catch ex As Exception
                     MsgBox(ex.ToString)
                 End Try
@@ -104,19 +115,19 @@
             End If
 
         Else
-            If MsgBox("¿Seguro que desea volver activo al paciente con la cedula " + DataGridView1.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+            If MsgBox("¿Seguro que desea volver activo al paciente con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
                 Try
                     Consulta = "update paciente set estado = 1 where id_p = '" + Str(id_p) + "';"
                     consultar()
                     MsgBox("Actualizado", MsgBoxStyle.Information)
                     actTabla(0)
-                    Panel2.Visible = True
-                    Label17.Visible = True
-                    Button3.Visible = False
-                    Button4.Visible = False
-                    Button2.Visible = False
-                    Button5.Visible = False
-                    Button7.Visible = False
+                    pnlTapa.Visible = True
+                    lblCartel.Visible = True
+                    btnCambiarEstado.Visible = False
+                    btnRegistrarCita.Visible = False
+                    btnModificarDatos.Visible = False
+                    btnRegistroMedico.Visible = False
+                    btnRealizarPago.Visible = False
                 Catch ex As Exception
                     MsgBox(ex.ToString)
                 End Try
@@ -125,103 +136,98 @@
                 MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
             End If
         End If
-        
+
     End Sub
     Public Sub actPanel()
 
         'Hacemos invisible el panel y el label y visible los botones
-        Panel2.Hide()
-        Label17.Hide()
-        Button2.Show()
-        Button3.Show()
-        Button4.Show()
-        Button6.Show()
-        Button5.Show()
-        Button7.Show()
+        pnlTapa.Hide()
+        lblCartel.Hide()
+        btnModificarDatos.Show()
+        btnCambiarEstado.Show()
+        btnRegistrarCita.Show()
+        btnMostrarAntecedentes.Show()
+        btnRegistroMedico.Show()
+        btnRealizarPago.Show()
 
 
         'Guardamos en Variables
-        id_p = DataGridView1.CurrentRow.Cells(0).Value
-        cedula = DataGridView1.CurrentRow.Cells(1).Value
-        nombre = DataGridView1.CurrentRow.Cells(3).Value
-        nac = DataGridView1.CurrentRow.Cells(2).Value
-        telefono = DataGridView1.CurrentRow.Cells(4).Value
+        id_p = dgbPacientes.CurrentRow.Cells(0).Value
+        cedula = dgbPacientes.CurrentRow.Cells(1).Value
+        nombre = dgbPacientes.CurrentRow.Cells(3).Value
+        nac = dgbPacientes.CurrentRow.Cells(2).Value
+        telefono = dgbPacientes.CurrentRow.Cells(4).Value
 
-        If IsDBNull(DataGridView1.CurrentRow.Cells(5).Value) Then
+        If IsDBNull(dgbPacientes.CurrentRow.Cells(5).Value) Then
             enviado = "No definido"
         Else
-            enviado = DataGridView1.CurrentRow.Cells(5).Value
+            enviado = dgbPacientes.CurrentRow.Cells(5).Value
         End If
 
-        direccion = DataGridView1.CurrentRow.Cells(6).Value
+        direccion = dgbPacientes.CurrentRow.Cells(6).Value
 
-        If IsDBNull(DataGridView1.CurrentRow.Cells(7).Value) Then
+        If IsDBNull(dgbPacientes.CurrentRow.Cells(7).Value) Then
             direTra = "No definido"
         Else
-            direTra = DataGridView1.CurrentRow.Cells(7).Value
+            direTra = dgbPacientes.CurrentRow.Cells(7).Value
         End If
 
-        saldo = DataGridView1.CurrentRow.Cells(8).Value
+        saldo = dgbPacientes.CurrentRow.Cells(8).Value
 
         Consulta = "select p.id_p, count(*) from paciente p inner join cita c on p.id_p = c.id_p where c.realizada = 1 and p.id_p = '" + id_p.ToString + "' group by p.id_p;"
         consultar()
-        DataGridView2.DataSource = Tabla
+        dgbFiltro.DataSource = Tabla
 
         Dim numCitas As Integer = 0
 
-        If DataGridView2.RowCount = 1 Then
-            numCitas = DataGridView2.Rows(0).Cells(1).Value
+        If dgbFiltro.RowCount = 1 Then
+            numCitas = dgbFiltro.Rows(0).Cells(1).Value
         End If
 
-        If DataGridView1.CurrentRow.Cells(9).Value = True Then
-            Label21.Text = "Activo"
+        If dgbPacientes.CurrentRow.Cells(9).Value = True Then
+            lblEstado.Text = "Activo"
         Else
-            Label21.Text = "Inactivo"
+            lblEstado.Text = "Inactivo"
         End If
 
 
 
 
         'Mostramos en Panel
-        Label4.Text = cedula
-        Label5.Text = nombre
-        Label6.Text = nac
-        Label7.Text = enviado
-        Label8.Text = direccion
-        Label9.Text = direTra
-        Label10.Text = numCitas
-        Label3.Text = "$" + saldo.ToString
-        Label19.Text = telefono
+        lblCedula.Text = cedula
+        lblNombre.Text = nombre
+        lblFechaNacimiento.Text = nac
+        lblEnviadoPor.Text = enviado
+        lblDireccionParticular.Text = direccion
+        lblDireccionTrabajo.Text = direTra
+        lblNumeroCitasAtendidas.Text = numCitas
+        lblSaldoPendiente.Text = "$" + saldo.ToString
+        lblTelefono.Text = telefono
 
     End Sub
-
-  
-
-    
-
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRegistrarCita.Click
 
         Me.Hide()
-        formu = Crear_Cita
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Crear_Cita
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
 
-        Dim a As String = TextBox1.Text
+        Dim a As String = txbBusqueda.Text
         If a = "" Then
-            actTabla(ver)
+            actTabla(EstadoPacientes)
 
         Else
             Try
 
-                Consulta = "Select * from paciente where estado = '" + ver.ToString + "' and (nombre like '" + a + "%' or cedula like '" + a + "%' );"
+                Consulta = "Select * from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + a + "%' or cedula like '" + a + "%' );"
 
                 consultar()
-                DataGridView1.DataSource = Tabla
+                dgbPacientes.DataSource = Tabla
 
             Catch ex As Exception
                 MsgBox(ex.ToString)
@@ -237,65 +243,65 @@
         Citas.Show()
     End Sub
 
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRegistroMedico.Click
         Me.Hide()
-        formu = Registro_Medico
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Registro_Medico
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
     End Sub
 
-    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMostrarAntecedentes.Click
         Me.Hide()
-        formu = Antecedentes
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Antecedentes
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
     End Sub
 
     Private Sub Label3_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Hide()
-        formu = Antecedentes
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Antecedentes
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
     End Sub
 
-    Private Sub DataGridView1_CellClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        id_p = DataGridView1.CurrentRow.Cells(0).Value
+    Private Sub DataGridView1_CellClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgbPacientes.CellClick
+        id_p = dgbPacientes.CurrentRow.Cells(0).Value
         actPanel()
     End Sub
 
-    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
-        formu = InputPago
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
-        
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRealizarPago.Click
+        frmContenedor = InputPago
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+
 
 
 
     End Sub
 
 
-    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPacInact.Click
 
-        
 
-        If ver = 1 Then
+
+        If EstadoPacientes = 1 Then
 
             actTabla(0)
-            Button8.Text = "Mostrar Pacientes Activos"
-            Button3.Text = "Volver" + vbNewLine + " Activo"
-            ver = 0
+            btnPacInact.Text = "Mostrar Pacientes Activos"
+            btnCambiarEstado.Text = "Volver" + vbNewLine + " Activo"
+            EstadoPacientes = 0
         Else
             actTabla(1)
-            Button3.Text = "Volver " + vbNewLine + "Inactivo"
-            Button8.Text = "Mostrar Pacientes Inactivos"
-            ver = 1
+            btnCambiarEstado.Text = "Volver " + vbNewLine + "Inactivo"
+            btnPacInact.Text = "Mostrar Pacientes Inactivos"
+            EstadoPacientes = 1
         End If
 
-        
+
 
     End Sub
 

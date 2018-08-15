@@ -1,7 +1,7 @@
 ﻿Public Class Agregar_Paciente
 
 
-    Dim formu As New Form
+
 
     '/////////////////////////Cosas Para Los Antecedentes/////////////////////////////////
     Public alergicos As Boolean
@@ -13,37 +13,37 @@
     Public farmacos_recibidos As Boolean
     Public familiares As Boolean
     Public tratamiento_medico As Boolean
-    Public obs As String
+    Public observaciones As String
     '///////////////////////////////////////////////////////////////////////////////////
 
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
         direTra = ""
         enviado = ""
         Dim ver As Integer = 0
         Dim ver2 As Integer = 0
 
-        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox4.Text <> "" And telefonot.Text <> "" Then
-            If IsNumeric(TextBox2.Text) Then
-                If verCed(TextBox2.Text) = True Then
-                    If alergicos = False And diabeticos = False And cardiovasculares = False And fiebre_reumatica = False And coagulacion = False And odontologicos = False And farmacos_recibidos = False And familiares = False And tratamiento_medico = False And obs = "" Then
+        If txbNombre.Text <> "" And txbCedula.Text <> "" And txbDireccionPersonal.Text <> "" And txbTelefono.Text <> "" Then
+            If IsNumeric(txbCedula.Text) Then
+                If verificarCedula(txbCedula.Text) = True Then
+                    If alergicos = False And diabeticos = False And cardiovasculares = False And fiebre_reumatica = False And coagulacion = False And odontologicos = False And farmacos_recibidos = False And familiares = False And tratamiento_medico = False And observaciones = "" Then
                         If MsgBox("No fue ingresado ningún antecedente," + vbNewLine + "¿Desea continuar de todos modos?", MsgBoxStyle.YesNo) = vbYes Then
 
-                            nombre = TextBox1.Text
-                            cedula = TextBox2.Text
-                            If TextBox3.Text <> "" Then
+                            nombre = txbNombre.Text
+                            cedula = txbCedula.Text
+                            If txbEnviadoPor.Text <> "" Then
                                 ver = 1
-                                enviado = TextBox3.Text
+                                enviado = txbEnviadoPor.Text
                             End If
-                            telefono = telefonot.Text
-                            direccion = TextBox4.Text
+                            telefono = txbTelefono.Text
+                            direccion = txbDireccionPersonal.Text
 
-                            If TextBox5.Text <> "" Then
-                                direTra = TextBox5.Text
+                            If txbDireccionTrabajo.Text <> "" Then
+                                direTra = txbDireccionTrabajo.Text
                                 ver2 = 1
                             End If
 
-                            nac = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
+                            nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
 
                             Try
                                 If ver = 0 And ver2 = 0 Then
@@ -71,25 +71,25 @@
                             Catch ex As Exception
                                 MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
                             End Try
-                            
+
 
                         End If
                     Else
-                        nombre = TextBox1.Text
-                        cedula = TextBox2.Text
-                        If TextBox3.Text <> "" Then
+                        nombre = txbNombre.Text
+                        cedula = txbCedula.Text
+                        If txbEnviadoPor.Text <> "" Then
                             ver = 1
-                            enviado = TextBox3.Text
+                            enviado = txbEnviadoPor.Text
                         End If
-                        telefono = telefonot.Text
-                        direccion = TextBox4.Text
+                        telefono = txbTelefono.Text
+                        direccion = txbDireccionPersonal.Text
 
-                        If TextBox5.Text <> "" Then
-                            direTra = TextBox5.Text
+                        If txbDireccionTrabajo.Text <> "" Then
+                            direTra = txbDireccionTrabajo.Text
                             ver2 = 1
                         End If
 
-                        nac = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
+                        nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
 
 
                         Try
@@ -112,7 +112,7 @@
 
 
 
-                           
+
                         Catch ex As Exception
                             MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
                         End Try
@@ -124,11 +124,11 @@
                         id_p = DataGridView1.Rows(DataGridView1.RowCount - 1).Cells(0).Value
 
 
-                        Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "','" + alergicos.GetHashCode.ToString + "','" + diabeticos.GetHashCode.ToString + "','" + cardiovasculares.GetHashCode.ToString + "','" + fiebre_reumatica.GetHashCode.ToString + "','" + coagulacion.GetHashCode.ToString + "','" + odontologicos.GetHashCode.ToString + "','" + farmacos_recibidos.GetHashCode.ToString + "','" + familiares.GetHashCode.ToString + "','" + tratamiento_medico.GetHashCode.ToString + "','" + obs + "');"
+                        Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "','" + alergicos.GetHashCode.ToString + "','" + diabeticos.GetHashCode.ToString + "','" + cardiovasculares.GetHashCode.ToString + "','" + fiebre_reumatica.GetHashCode.ToString + "','" + coagulacion.GetHashCode.ToString + "','" + odontologicos.GetHashCode.ToString + "','" + farmacos_recibidos.GetHashCode.ToString + "','" + familiares.GetHashCode.ToString + "','" + tratamiento_medico.GetHashCode.ToString + "','" + observaciones + "');"
                         consultar()
 
 
-                        MsgBox("Agregado con Exito")
+                        MsgBox("Agregado con Exito", MsgBoxStyle.Information)
 
                         Me.Dispose()
                         Pacientes.Show()
@@ -140,7 +140,7 @@
 
             Else
                 MsgBox("La cédula solo debe contener números", MsgBoxStyle.Exclamation)
-                TextBox2.Clear()
+                txbCedula.Clear()
             End If
 
 
@@ -153,31 +153,31 @@
 
     End Sub
 
-    Private Sub MonthCalendar1_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar1.DateChanged
-        Dim nac As String = MonthCalendar1.SelectionRange.Start
-        Label7.Text = "Fecha seleccionada " + nac
+    Private Sub MonthCalendar1_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles mcFechaNacimiento.DateChanged
+        Dim nac As String = mcFechaNacimiento.SelectionRange.Start
+        lblFechaSeleccionada.Text = "Fecha seleccionada " + nac
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         actPos()
         Me.Size = New System.Drawing.Size(880, 580)
-        Dim nac As String = MonthCalendar1.SelectionRange.Start
-        Label7.Text = "Fecha seleccionada " + nac
+        Dim nac As String = mcFechaNacimiento.SelectionRange.Start
+        lblFechaSeleccionada.Text = "Fecha seleccionada " + nac
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Dispose()
         Pacientes.Show()
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarAntecedentes.Click
         Me.Hide()
-        formu = Agregar_Antecedentes
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Agregar_Antecedentes
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
     End Sub
-    Private Function verCed(ByVal cedula As String)
+    Private Function verificarCedula(ByVal cedula As String)
         Try
             Dim num(7) As Char
             Dim suma As Integer
@@ -211,7 +211,7 @@
         Catch ex As Exception
             Return False
         End Try
-       
+
     End Function
 
 End Class

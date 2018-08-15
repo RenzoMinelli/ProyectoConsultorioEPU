@@ -1,5 +1,5 @@
 ﻿Public Class Menu_Inicio
-    Dim formu As New Form
+
 
     Dim a As Integer = 0
     Dim xco, yco As Integer
@@ -18,10 +18,10 @@
 
             Panel16.Show()
 
-            formu = Aranceles
-            formu.MdiParent = Me
-            formu.Dock = DockStyle.Fill
-            formu.Show()
+            frmContenedor = Aranceles
+            frmContenedor.MdiParent = Me
+            frmContenedor.Dock = DockStyle.Fill
+            frmContenedor.Show()
 
             Label2.ForeColor = Color.White
 
@@ -29,10 +29,10 @@
 
             Panel16.Hide()
 
-            formu = Citas
-            formu.MdiParent = Me
-            formu.Dock = DockStyle.Fill
-            formu.Show()
+            frmContenedor = Citas
+            frmContenedor.MdiParent = Me
+            frmContenedor.Dock = DockStyle.Fill
+            frmContenedor.Show()
 
             Label4.ForeColor = Color.White
 
@@ -52,10 +52,10 @@
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
         Me.ActiveMdiChild.Dispose()
-        formu = Pacientes
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Pacientes
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
         Label1.ForeColor = Color.White
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
@@ -66,10 +66,10 @@
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
         Me.ActiveMdiChild.Dispose()
-        formu = Aranceles
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Aranceles
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
         Label1.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.White
         Label3.ForeColor = Color.RoyalBlue
@@ -79,10 +79,10 @@
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
         Me.ActiveMdiChild.Dispose()
-        formu = Citas
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Citas
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
         Label1.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
@@ -99,12 +99,12 @@
     End Sub
 
     Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
-        
+
         If con = 0 Then
             a = 1
             Me.Opacity = 0.5
         End If
-       
+
     End Sub
     Private Sub Panel3_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseMove
 
@@ -136,7 +136,7 @@
             a = 0
             Me.Opacity = 1
         End If
-        
+
     End Sub
 
     Private Sub PictureBox4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
@@ -148,13 +148,13 @@
     End Sub
 
 
-   
+
     Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label7.Click
         Me.ActiveMdiChild.Dispose()
-        formu = finanzas
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = finanzas
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
 
         Label7.ForeColor = Color.White
         Label1.ForeColor = Color.RoyalBlue
@@ -165,10 +165,10 @@
 
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
         Me.ActiveMdiChild.Dispose()
-        formu = Pacientes
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Pacientes
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
         Label1.ForeColor = Color.White
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
@@ -217,10 +217,10 @@
 
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
         Me.ActiveMdiChild.Dispose()
-        formu = Aranceles
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Aranceles
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
         Label1.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.White
         Label3.ForeColor = Color.RoyalBlue
@@ -228,13 +228,13 @@
         Label4.ForeColor = Color.RoyalBlue
     End Sub
 
-    
+
     Private Sub Panel10_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel10.Click
         Me.ActiveMdiChild.Dispose()
-        formu = Pacientes
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Pacientes
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
         Label1.ForeColor = Color.White
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
@@ -244,10 +244,10 @@
 
     Private Sub Panel9_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel9.Click
         Me.ActiveMdiChild.Dispose()
-        formu = Citas
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Citas
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
         Label1.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
@@ -255,13 +255,13 @@
         Label4.ForeColor = Color.White
     End Sub
 
- 
+
     Private Sub Panel15_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel15.Click
         Me.ActiveMdiChild.Dispose()
-        formu = Aranceles
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Aranceles
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
         Label1.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.White
         Label3.ForeColor = Color.RoyalBlue
@@ -271,10 +271,10 @@
 
     Private Sub Panel13_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel13.Click
         Me.ActiveMdiChild.Dispose()
-        formu = finanzas
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = finanzas
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
 
         Label7.ForeColor = Color.White
         Label1.ForeColor = Color.RoyalBlue
@@ -283,13 +283,13 @@
         Label4.ForeColor = Color.RoyalBlue
     End Sub
 
-   
+
     Private Sub PictureBox7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox7.Click
         Me.ActiveMdiChild.Dispose()
-        formu = finanzas
-        formu.MdiParent = Me
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = finanzas
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
         Label1.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue

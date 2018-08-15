@@ -2,11 +2,11 @@
 
 
     Private Sub InputPago_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Label1.Text = "El salgo pendiente del paciente " + nombre + " es de $" + saldo.ToString + vbNewLine + "¿Cuánto depositará?"
+        lblDatosPaciente.Text = "El salgo pendiente del paciente " + nombre + " es de $" + saldo.ToString + vbNewLine + "¿Cuánto depositará?"
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Dim pago As String = TextBox1.Text
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinuar.Click
+        Dim pago As String = txbMonto.Text
 
         If Not IsNumeric(pago) Then
 
@@ -35,11 +35,11 @@
                     MsgBox("Error")
                 End Try
             End If
-            
+
         End If
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Dispose()
         Pacientes.Show()
     End Sub

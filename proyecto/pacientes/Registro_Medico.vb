@@ -1,5 +1,5 @@
 ﻿Public Class Registro_Medico
-    Dim formu As New Form
+
     
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try

@@ -22,35 +22,35 @@ Partial Class Agregar_Paciente
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txbNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txbCedula = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txbEnviadoPor = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txbDireccionPersonal = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
+        Me.txbDireccionTrabajo = New System.Windows.Forms.TextBox()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.btnAgregarAntecedentes = New System.Windows.Forms.Button()
+        Me.lblFechaSeleccionada = New System.Windows.Forms.Label()
+        Me.mcFechaNacimiento = New System.Windows.Forms.MonthCalendar()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.telefonot = New System.Windows.Forms.TextBox()
+        Me.txbTelefono = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txbNombre
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(249, 62)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(227, 29)
-        Me.TextBox1.TabIndex = 0
+        Me.txbNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbNombre.Location = New System.Drawing.Point(249, 62)
+        Me.txbNombre.Name = "txbNombre"
+        Me.txbNombre.Size = New System.Drawing.Size(227, 29)
+        Me.txbNombre.TabIndex = 0
         '
         'Label1
         '
@@ -72,13 +72,13 @@ Partial Class Agregar_Paciente
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Cédula"
         '
-        'TextBox2
+        'txbCedula
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(249, 106)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(227, 29)
-        Me.TextBox2.TabIndex = 3
+        Me.txbCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbCedula.Location = New System.Drawing.Point(249, 106)
+        Me.txbCedula.Name = "txbCedula"
+        Me.txbCedula.Size = New System.Drawing.Size(227, 29)
+        Me.txbCedula.TabIndex = 3
         '
         'Label3
         '
@@ -100,13 +100,13 @@ Partial Class Agregar_Paciente
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Por quien fue enviado (op)"
         '
-        'TextBox3
+        'txbEnviadoPor
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(249, 213)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(227, 29)
-        Me.TextBox3.TabIndex = 7
+        Me.txbEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbEnviadoPor.Location = New System.Drawing.Point(249, 213)
+        Me.txbEnviadoPor.Name = "txbEnviadoPor"
+        Me.txbEnviadoPor.Size = New System.Drawing.Size(227, 29)
+        Me.txbEnviadoPor.TabIndex = 7
         '
         'Label5
         '
@@ -118,13 +118,13 @@ Partial Class Agregar_Paciente
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Direccion Personal"
         '
-        'TextBox4
+        'txbDireccionPersonal
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(249, 264)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(227, 29)
-        Me.TextBox4.TabIndex = 9
+        Me.txbDireccionPersonal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbDireccionPersonal.Location = New System.Drawing.Point(249, 264)
+        Me.txbDireccionPersonal.Name = "txbDireccionPersonal"
+        Me.txbDireccionPersonal.Size = New System.Drawing.Size(227, 29)
+        Me.txbDireccionPersonal.TabIndex = 9
         '
         'Label6
         '
@@ -136,67 +136,67 @@ Partial Class Agregar_Paciente
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Direccion de trabajo (op)"
         '
-        'TextBox5
+        'txbDireccionTrabajo
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(249, 302)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(227, 29)
-        Me.TextBox5.TabIndex = 11
+        Me.txbDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbDireccionTrabajo.Location = New System.Drawing.Point(249, 302)
+        Me.txbDireccionTrabajo.Name = "txbDireccionTrabajo"
+        Me.txbDireccionTrabajo.Size = New System.Drawing.Size(227, 29)
+        Me.txbDireccionTrabajo.TabIndex = 11
         '
-        'Button1
+        'btnAgregar
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(672, 467)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(128, 54)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Agregar"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
+        Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAgregar.Location = New System.Drawing.Point(672, 467)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(128, 54)
+        Me.btnAgregar.TabIndex = 12
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAgregar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnCancelar
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.X
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(85, 467)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(144, 54)
-        Me.Button2.TabIndex = 13
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.Image = Global.WindowsApplication1.My.Resources.Resources.X
+        Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCancelar.Location = New System.Drawing.Point(85, 467)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(144, 54)
+        Me.btnCancelar.TabIndex = 13
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnCancelar.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnAgregarAntecedentes
         '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(16, 344)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(460, 42)
-        Me.Button3.TabIndex = 14
-        Me.Button3.Text = "Agregar Antecedentes"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnAgregarAntecedentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregarAntecedentes.Location = New System.Drawing.Point(16, 344)
+        Me.btnAgregarAntecedentes.Name = "btnAgregarAntecedentes"
+        Me.btnAgregarAntecedentes.Size = New System.Drawing.Size(460, 42)
+        Me.btnAgregarAntecedentes.TabIndex = 14
+        Me.btnAgregarAntecedentes.Text = "Agregar Antecedentes"
+        Me.btnAgregarAntecedentes.UseVisualStyleBackColor = True
         '
-        'Label7
+        'lblFechaSeleccionada
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(669, 289)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(186, 24)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Fecha seleccionada:"
+        Me.lblFechaSeleccionada.AutoSize = True
+        Me.lblFechaSeleccionada.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaSeleccionada.Location = New System.Drawing.Point(669, 289)
+        Me.lblFechaSeleccionada.Name = "lblFechaSeleccionada"
+        Me.lblFechaSeleccionada.Size = New System.Drawing.Size(186, 24)
+        Me.lblFechaSeleccionada.TabIndex = 15
+        Me.lblFechaSeleccionada.Text = "Fecha seleccionada:"
         '
-        'MonthCalendar1
+        'mcFechaNacimiento
         '
-        Me.MonthCalendar1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MonthCalendar1.Location = New System.Drawing.Point(672, 118)
-        Me.MonthCalendar1.MaxSelectionCount = 1
-        Me.MonthCalendar1.Name = "MonthCalendar1"
-        Me.MonthCalendar1.TabIndex = 16
+        Me.mcFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mcFechaNacimiento.Location = New System.Drawing.Point(672, 118)
+        Me.mcFechaNacimiento.MaxSelectionCount = 1
+        Me.mcFechaNacimiento.Name = "mcFechaNacimiento"
+        Me.mcFechaNacimiento.TabIndex = 16
         '
         'DataGridView1
         '
@@ -212,13 +212,13 @@ Partial Class Agregar_Paciente
         Me.DataGridView1.TabIndex = 17
         Me.DataGridView1.Visible = False
         '
-        'telefonot
+        'txbTelefono
         '
-        Me.telefonot.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.telefonot.Location = New System.Drawing.Point(249, 160)
-        Me.telefonot.Name = "telefonot"
-        Me.telefonot.Size = New System.Drawing.Size(227, 29)
-        Me.telefonot.TabIndex = 19
+        Me.txbTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbTelefono.Location = New System.Drawing.Point(249, 160)
+        Me.txbTelefono.Name = "txbTelefono"
+        Me.txbTelefono.Size = New System.Drawing.Size(227, 29)
+        Me.txbTelefono.TabIndex = 19
         '
         'Label8
         '
@@ -235,25 +235,25 @@ Partial Class Agregar_Paciente
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
-        Me.Controls.Add(Me.telefonot)
+        Me.Controls.Add(Me.txbTelefono)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.MonthCalendar1)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.mcFechaNacimiento)
+        Me.Controls.Add(Me.lblFechaSeleccionada)
+        Me.Controls.Add(Me.btnAgregarAntecedentes)
+        Me.Controls.Add(Me.btnCancelar)
+        Me.Controls.Add(Me.btnAgregar)
+        Me.Controls.Add(Me.txbDireccionTrabajo)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txbDireccionPersonal)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txbEnviadoPor)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txbCedula)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txbNombre)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Agregar_Paciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -263,23 +263,23 @@ Partial Class Agregar_Paciente
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txbNombre As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txbCedula As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txbEnviadoPor As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txbDireccionPersonal As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
+    Friend WithEvents txbDireccionTrabajo As System.Windows.Forms.TextBox
+    Friend WithEvents btnAgregar As System.Windows.Forms.Button
+    Friend WithEvents btnCancelar As System.Windows.Forms.Button
+    Friend WithEvents btnAgregarAntecedentes As System.Windows.Forms.Button
+    Friend WithEvents lblFechaSeleccionada As System.Windows.Forms.Label
+    Friend WithEvents mcFechaNacimiento As System.Windows.Forms.MonthCalendar
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents telefonot As System.Windows.Forms.TextBox
+    Friend WithEvents txbTelefono As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class
