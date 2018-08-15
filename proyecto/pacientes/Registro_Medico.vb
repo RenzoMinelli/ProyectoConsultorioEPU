@@ -1,5 +1,5 @@
 ﻿Public Class Registro_Medico
-
+    Dim formu As New Form
     
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
@@ -192,6 +192,82 @@
 
 
                         ''abajo derecha
+
+                    Case "31"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbi1.Image = My.Resources._1b
+                            Case "precaucion"
+                                pbbi1.Image = My.Resources._1ab
+                            Case "ausente"
+                                pbbi1.Image = My.Resources._1na
+                        End Select
+
+                    Case "32"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbi2.Image = My.Resources._2b
+                            Case "precaucion"
+                                pbbi2.Image = My.Resources._2ab
+                            Case "ausente"
+                                pbbi2.Image = My.Resources._2na
+                        End Select
+                    Case "33"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbi3.Image = My.Resources._3b
+                            Case "precaucion"
+                                pbbi3.Image = My.Resources._3ab
+                            Case "ausente"
+                                pbbi3.Image = My.Resources._3na
+                        End Select
+                    Case "34"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbi4.Image = My.Resources._4b
+                            Case "precaucion"
+                                pbbi4.Image = My.Resources._4ab
+                            Case "ausente"
+                                pbbi4.Image = My.Resources._4na
+                        End Select
+                    Case "35"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbi5.Image = My.Resources._5b
+                            Case "precaucion"
+                                pbbi5.Image = My.Resources._5ab
+                            Case "ausente"
+                                pbbi5.Image = My.Resources._5na
+                        End Select
+                    Case "36"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbi6.Image = My.Resources._6b
+                            Case "precaucion"
+                                pbbi6.Image = My.Resources._6ab
+                            Case "ausente"
+                                pbbi6.Image = My.Resources._6na
+                        End Select
+                    Case "37"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbi7.Image = My.Resources._7b
+                            Case "precaucion"
+                                pbbi7.Image = My.Resources._7ab
+                            Case "ausente"
+                                pbbi7.Image = My.Resources._7na
+                        End Select
+                    Case "38"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbbi8.Image = My.Resources._8b
+                            Case "precaucion"
+                                pbbi8.Image = My.Resources._8ab
+                            Case "ausente"
+                                pbbi8.Image = My.Resources._8na
+                        End Select
+
+                        ''abajo izquierda
 
 
                     Case "41"
@@ -422,6 +498,26 @@
     End Sub
 
     Private Sub pbad1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbad1.Click
+
+    End Sub
+
+    Private Sub pbad7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbad7.Click
+
+    End Sub
+
+    Private Sub pbbi6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbi6.Click
+
+    End Sub
+
+    Private Sub pbbi7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbi7.Click
+
+    End Sub
+
+    Private Sub pbbi8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbi8.Click
+
+    End Sub
+
+    Private Sub pbbd6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbd6.Click
 
     End Sub
 End Class

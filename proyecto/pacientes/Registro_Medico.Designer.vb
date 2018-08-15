@@ -22,7 +22,7 @@ Partial Class Registro_Medico
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel55 = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -56,14 +56,22 @@ Partial Class Registro_Medico
         Me.pbbd5 = New System.Windows.Forms.PictureBox()
         Me.pbai1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.pbai2 = New System.Windows.Forms.PictureBox()
-        Me.pbai3 = New System.Windows.Forms.PictureBox()
-        Me.pbai4 = New System.Windows.Forms.PictureBox()
-        Me.pbai5 = New System.Windows.Forms.PictureBox()
-        Me.pbai6 = New System.Windows.Forms.PictureBox()
-        Me.pbai7 = New System.Windows.Forms.PictureBox()
         Me.pbai8 = New System.Windows.Forms.PictureBox()
+        Me.pbai7 = New System.Windows.Forms.PictureBox()
+        Me.pbai6 = New System.Windows.Forms.PictureBox()
+        Me.pbai5 = New System.Windows.Forms.PictureBox()
+        Me.pbai4 = New System.Windows.Forms.PictureBox()
+        Me.pbai3 = New System.Windows.Forms.PictureBox()
+        Me.pbai2 = New System.Windows.Forms.PictureBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.pbbi1 = New System.Windows.Forms.PictureBox()
+        Me.pbbi2 = New System.Windows.Forms.PictureBox()
+        Me.pbbi3 = New System.Windows.Forms.PictureBox()
+        Me.pbbi4 = New System.Windows.Forms.PictureBox()
+        Me.pbbi5 = New System.Windows.Forms.PictureBox()
+        Me.pbbi6 = New System.Windows.Forms.PictureBox()
+        Me.pbbi7 = New System.Windows.Forms.PictureBox()
+        Me.pbbi8 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,13 +94,21 @@ Partial Class Registro_Medico
         CType(Me.pbbd5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbai1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.pbai2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbai8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbai7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbai6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbai5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbai4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbai3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbai2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbbi1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbbi2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbbi3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbbi4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbbi5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbbi6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbbi7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbbi8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel55
@@ -205,15 +221,15 @@ Partial Class Registro_Medico
         Me.DataGridView2.AllowUserToResizeRows = False
         Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.NullValue = "-NADA-"
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle6.NullValue = "-NADA-"
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridView2.Location = New System.Drawing.Point(16, 356)
         Me.DataGridView2.MultiSelect = False
         Me.DataGridView2.Name = "DataGridView2"
@@ -271,7 +287,7 @@ Partial Class Registro_Medico
         'pbad1
         '
         Me.pbad1.Image = Global.WindowsApplication1.My.Resources.Resources.AD1
-        Me.pbad1.Location = New System.Drawing.Point(473, 36)
+        Me.pbad1.Location = New System.Drawing.Point(410, 15)
         Me.pbad1.Name = "pbad1"
         Me.pbad1.Size = New System.Drawing.Size(24, 66)
         Me.pbad1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -281,9 +297,9 @@ Partial Class Registro_Medico
         'pbad2
         '
         Me.pbad2.Image = Global.WindowsApplication1.My.Resources.Resources.AD2
-        Me.pbad2.Location = New System.Drawing.Point(373, 6)
+        Me.pbad2.Location = New System.Drawing.Point(375, 15)
         Me.pbad2.Name = "pbad2"
-        Me.pbad2.Size = New System.Drawing.Size(33, 66)
+        Me.pbad2.Size = New System.Drawing.Size(29, 66)
         Me.pbad2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbad2.TabIndex = 32
         Me.pbad2.TabStop = False
@@ -291,9 +307,9 @@ Partial Class Registro_Medico
         'pbad3
         '
         Me.pbad3.Image = Global.WindowsApplication1.My.Resources.Resources.AD3
-        Me.pbad3.Location = New System.Drawing.Point(331, 6)
+        Me.pbad3.Location = New System.Drawing.Point(340, 15)
         Me.pbad3.Name = "pbad3"
-        Me.pbad3.Size = New System.Drawing.Size(36, 66)
+        Me.pbad3.Size = New System.Drawing.Size(29, 66)
         Me.pbad3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbad3.TabIndex = 33
         Me.pbad3.TabStop = False
@@ -301,7 +317,7 @@ Partial Class Registro_Medico
         'pbad4
         '
         Me.pbad4.Image = Global.WindowsApplication1.My.Resources.Resources.AD4
-        Me.pbad4.Location = New System.Drawing.Point(295, 6)
+        Me.pbad4.Location = New System.Drawing.Point(304, 14)
         Me.pbad4.Name = "pbad4"
         Me.pbad4.Size = New System.Drawing.Size(30, 67)
         Me.pbad4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -311,9 +327,9 @@ Partial Class Registro_Medico
         'pbad5
         '
         Me.pbad5.Image = Global.WindowsApplication1.My.Resources.Resources.AD5
-        Me.pbad5.Location = New System.Drawing.Point(250, 1)
+        Me.pbad5.Location = New System.Drawing.Point(269, 15)
         Me.pbad5.Name = "pbad5"
-        Me.pbad5.Size = New System.Drawing.Size(39, 72)
+        Me.pbad5.Size = New System.Drawing.Size(29, 66)
         Me.pbad5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbad5.TabIndex = 35
         Me.pbad5.TabStop = False
@@ -321,9 +337,9 @@ Partial Class Registro_Medico
         'pbad6
         '
         Me.pbad6.Image = Global.WindowsApplication1.My.Resources.Resources.AD6
-        Me.pbad6.Location = New System.Drawing.Point(202, 1)
+        Me.pbad6.Location = New System.Drawing.Point(224, 14)
         Me.pbad6.Name = "pbad6"
-        Me.pbad6.Size = New System.Drawing.Size(42, 72)
+        Me.pbad6.Size = New System.Drawing.Size(39, 67)
         Me.pbad6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbad6.TabIndex = 36
         Me.pbad6.TabStop = False
@@ -331,9 +347,9 @@ Partial Class Registro_Medico
         'pbad7
         '
         Me.pbad7.Image = Global.WindowsApplication1.My.Resources.Resources.AD7
-        Me.pbad7.Location = New System.Drawing.Point(157, 1)
+        Me.pbad7.Location = New System.Drawing.Point(179, 14)
         Me.pbad7.Name = "pbad7"
-        Me.pbad7.Size = New System.Drawing.Size(39, 72)
+        Me.pbad7.Size = New System.Drawing.Size(39, 67)
         Me.pbad7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbad7.TabIndex = 37
         Me.pbad7.TabStop = False
@@ -341,7 +357,7 @@ Partial Class Registro_Medico
         'pbad8
         '
         Me.pbad8.Image = Global.WindowsApplication1.My.Resources.Resources.AD8
-        Me.pbad8.Location = New System.Drawing.Point(112, 6)
+        Me.pbad8.Location = New System.Drawing.Point(134, 14)
         Me.pbad8.Name = "pbad8"
         Me.pbad8.Size = New System.Drawing.Size(39, 67)
         Me.pbad8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -352,9 +368,9 @@ Partial Class Registro_Medico
         '
         Me.pbbd1.ErrorImage = Global.WindowsApplication1.My.Resources.Resources.BD1
         Me.pbbd1.Image = Global.WindowsApplication1.My.Resources.Resources.BD1
-        Me.pbbd1.Location = New System.Drawing.Point(462, 151)
+        Me.pbbd1.Location = New System.Drawing.Point(405, 111)
         Me.pbbd1.Name = "pbbd1"
-        Me.pbbd1.Size = New System.Drawing.Size(24, 65)
+        Me.pbbd1.Size = New System.Drawing.Size(29, 66)
         Me.pbbd1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbbd1.TabIndex = 39
         Me.pbbd1.TabStop = False
@@ -362,9 +378,9 @@ Partial Class Registro_Medico
         'pbbd2
         '
         Me.pbbd2.Image = Global.WindowsApplication1.My.Resources.Resources.BD2
-        Me.pbbd2.Location = New System.Drawing.Point(423, 151)
+        Me.pbbd2.Location = New System.Drawing.Point(366, 111)
         Me.pbbd2.Name = "pbbd2"
-        Me.pbbd2.Size = New System.Drawing.Size(33, 65)
+        Me.pbbd2.Size = New System.Drawing.Size(29, 66)
         Me.pbbd2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbbd2.TabIndex = 40
         Me.pbbd2.TabStop = False
@@ -372,9 +388,9 @@ Partial Class Registro_Medico
         'pbbd3
         '
         Me.pbbd3.Image = Global.WindowsApplication1.My.Resources.Resources.BD3
-        Me.pbbd3.Location = New System.Drawing.Point(381, 151)
+        Me.pbbd3.Location = New System.Drawing.Point(331, 111)
         Me.pbbd3.Name = "pbbd3"
-        Me.pbbd3.Size = New System.Drawing.Size(36, 65)
+        Me.pbbd3.Size = New System.Drawing.Size(29, 66)
         Me.pbbd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbbd3.TabIndex = 41
         Me.pbbd3.TabStop = False
@@ -382,9 +398,9 @@ Partial Class Registro_Medico
         'pbbd4
         '
         Me.pbbd4.Image = Global.WindowsApplication1.My.Resources.Resources.BD4
-        Me.pbbd4.Location = New System.Drawing.Point(345, 151)
+        Me.pbbd4.Location = New System.Drawing.Point(295, 111)
         Me.pbbd4.Name = "pbbd4"
-        Me.pbbd4.Size = New System.Drawing.Size(30, 74)
+        Me.pbbd4.Size = New System.Drawing.Size(29, 67)
         Me.pbbd4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbbd4.TabIndex = 42
         Me.pbbd4.TabStop = False
@@ -392,9 +408,9 @@ Partial Class Registro_Medico
         'pbbd8
         '
         Me.pbbd8.Image = Global.WindowsApplication1.My.Resources.Resources.BD8
-        Me.pbbd8.Location = New System.Drawing.Point(154, 151)
+        Me.pbbd8.Location = New System.Drawing.Point(125, 111)
         Me.pbbd8.Name = "pbbd8"
-        Me.pbbd8.Size = New System.Drawing.Size(39, 65)
+        Me.pbbd8.Size = New System.Drawing.Size(39, 67)
         Me.pbbd8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbbd8.TabIndex = 43
         Me.pbbd8.TabStop = False
@@ -402,9 +418,9 @@ Partial Class Registro_Medico
         'pbbd7
         '
         Me.pbbd7.Image = Global.WindowsApplication1.My.Resources.Resources.BD7
-        Me.pbbd7.Location = New System.Drawing.Point(199, 151)
+        Me.pbbd7.Location = New System.Drawing.Point(170, 111)
         Me.pbbd7.Name = "pbbd7"
-        Me.pbbd7.Size = New System.Drawing.Size(41, 65)
+        Me.pbbd7.Size = New System.Drawing.Size(39, 67)
         Me.pbbd7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbbd7.TabIndex = 44
         Me.pbbd7.TabStop = False
@@ -412,9 +428,9 @@ Partial Class Registro_Medico
         'pbbd6
         '
         Me.pbbd6.Image = Global.WindowsApplication1.My.Resources.Resources.BD6
-        Me.pbbd6.Location = New System.Drawing.Point(246, 151)
+        Me.pbbd6.Location = New System.Drawing.Point(215, 111)
         Me.pbbd6.Name = "pbbd6"
-        Me.pbbd6.Size = New System.Drawing.Size(48, 65)
+        Me.pbbd6.Size = New System.Drawing.Size(39, 67)
         Me.pbbd6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbbd6.TabIndex = 45
         Me.pbbd6.TabStop = False
@@ -422,9 +438,9 @@ Partial Class Registro_Medico
         'pbbd5
         '
         Me.pbbd5.Image = Global.WindowsApplication1.My.Resources.Resources.BD5
-        Me.pbbd5.Location = New System.Drawing.Point(300, 151)
+        Me.pbbd5.Location = New System.Drawing.Point(260, 111)
         Me.pbbd5.Name = "pbbd5"
-        Me.pbbd5.Size = New System.Drawing.Size(39, 65)
+        Me.pbbd5.Size = New System.Drawing.Size(29, 66)
         Me.pbbd5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbbd5.TabIndex = 46
         Me.pbbd5.TabStop = False
@@ -432,9 +448,9 @@ Partial Class Registro_Medico
         'pbai1
         '
         Me.pbai1.Image = Global.WindowsApplication1.My.Resources.Resources.AI1
-        Me.pbai1.Location = New System.Drawing.Point(526, 36)
+        Me.pbai1.Location = New System.Drawing.Point(463, 15)
         Me.pbai1.Name = "pbai1"
-        Me.pbai1.Size = New System.Drawing.Size(29, 66)
+        Me.pbai1.Size = New System.Drawing.Size(26, 66)
         Me.pbai1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbai1.TabIndex = 47
         Me.pbai1.TabStop = False
@@ -442,7 +458,25 @@ Partial Class Registro_Medico
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Controls.Add(Me.pbbi8)
+        Me.Panel2.Controls.Add(Me.pbbd8)
+        Me.Panel2.Controls.Add(Me.pbbd7)
+        Me.Panel2.Controls.Add(Me.pbbd6)
+        Me.Panel2.Controls.Add(Me.pbbd5)
+        Me.Panel2.Controls.Add(Me.pbai1)
+        Me.Panel2.Controls.Add(Me.pbbi7)
+        Me.Panel2.Controls.Add(Me.pbbi6)
+        Me.Panel2.Controls.Add(Me.pbbi5)
+        Me.Panel2.Controls.Add(Me.pbbi4)
+        Me.Panel2.Controls.Add(Me.pbbi3)
+        Me.Panel2.Controls.Add(Me.pbad1)
+        Me.Panel2.Controls.Add(Me.pbbd4)
+        Me.Panel2.Controls.Add(Me.pbbi2)
+        Me.Panel2.Controls.Add(Me.pbbd3)
+        Me.Panel2.Controls.Add(Me.pbbi1)
+        Me.Panel2.Controls.Add(Me.pbbd2)
         Me.Panel2.Controls.Add(Me.pbai8)
+        Me.Panel2.Controls.Add(Me.pbbd1)
         Me.Panel2.Controls.Add(Me.pbai7)
         Me.Panel2.Controls.Add(Me.pbai6)
         Me.Panel2.Controls.Add(Me.pbai5)
@@ -461,6 +495,76 @@ Partial Class Registro_Medico
         Me.Panel2.Size = New System.Drawing.Size(922, 195)
         Me.Panel2.TabIndex = 48
         '
+        'pbai8
+        '
+        Me.pbai8.Image = Global.WindowsApplication1.My.Resources.Resources.AI8
+        Me.pbai8.Location = New System.Drawing.Point(726, 15)
+        Me.pbai8.Name = "pbai8"
+        Me.pbai8.Size = New System.Drawing.Size(39, 67)
+        Me.pbai8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbai8.TabIndex = 54
+        Me.pbai8.TabStop = False
+        '
+        'pbai7
+        '
+        Me.pbai7.Image = Global.WindowsApplication1.My.Resources.Resources.AI7
+        Me.pbai7.Location = New System.Drawing.Point(681, 14)
+        Me.pbai7.Name = "pbai7"
+        Me.pbai7.Size = New System.Drawing.Size(39, 67)
+        Me.pbai7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbai7.TabIndex = 53
+        Me.pbai7.TabStop = False
+        '
+        'pbai6
+        '
+        Me.pbai6.Image = Global.WindowsApplication1.My.Resources.Resources.AI6
+        Me.pbai6.Location = New System.Drawing.Point(636, 14)
+        Me.pbai6.Name = "pbai6"
+        Me.pbai6.Size = New System.Drawing.Size(39, 67)
+        Me.pbai6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbai6.TabIndex = 52
+        Me.pbai6.TabStop = False
+        '
+        'pbai5
+        '
+        Me.pbai5.Image = Global.WindowsApplication1.My.Resources.Resources.AI5
+        Me.pbai5.Location = New System.Drawing.Point(601, 15)
+        Me.pbai5.Name = "pbai5"
+        Me.pbai5.Size = New System.Drawing.Size(29, 66)
+        Me.pbai5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbai5.TabIndex = 51
+        Me.pbai5.TabStop = False
+        '
+        'pbai4
+        '
+        Me.pbai4.Image = Global.WindowsApplication1.My.Resources.Resources.AI4
+        Me.pbai4.Location = New System.Drawing.Point(565, 14)
+        Me.pbai4.Name = "pbai4"
+        Me.pbai4.Size = New System.Drawing.Size(30, 67)
+        Me.pbai4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbai4.TabIndex = 50
+        Me.pbai4.TabStop = False
+        '
+        'pbai3
+        '
+        Me.pbai3.Image = Global.WindowsApplication1.My.Resources.Resources.AI3
+        Me.pbai3.Location = New System.Drawing.Point(530, 15)
+        Me.pbai3.Name = "pbai3"
+        Me.pbai3.Size = New System.Drawing.Size(29, 66)
+        Me.pbai3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbai3.TabIndex = 49
+        Me.pbai3.TabStop = False
+        '
+        'pbai2
+        '
+        Me.pbai2.Image = Global.WindowsApplication1.My.Resources.Resources.AI2
+        Me.pbai2.Location = New System.Drawing.Point(495, 15)
+        Me.pbai2.Name = "pbai2"
+        Me.pbai2.Size = New System.Drawing.Size(29, 66)
+        Me.pbai2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbai2.TabIndex = 48
+        Me.pbai2.TabStop = False
+        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
@@ -469,75 +573,85 @@ Partial Class Registro_Medico
         Me.Panel3.Size = New System.Drawing.Size(922, 18)
         Me.Panel3.TabIndex = 21
         '
-        'pbai2
+        'pbbi1
         '
-        Me.pbai2.Image = Global.WindowsApplication1.My.Resources.Resources.AI2
-        Me.pbai2.Location = New System.Drawing.Point(498, 6)
-        Me.pbai2.Name = "pbai2"
-        Me.pbai2.Size = New System.Drawing.Size(29, 66)
-        Me.pbai2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai2.TabIndex = 48
-        Me.pbai2.TabStop = False
+        Me.pbbi1.Image = Global.WindowsApplication1.My.Resources.Resources.BI1
+        Me.pbbi1.Location = New System.Drawing.Point(463, 111)
+        Me.pbbi1.Name = "pbbi1"
+        Me.pbbi1.Size = New System.Drawing.Size(29, 66)
+        Me.pbbi1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbbi1.TabIndex = 55
+        Me.pbbi1.TabStop = False
         '
-        'pbai3
+        'pbbi2
         '
-        Me.pbai3.Image = Global.WindowsApplication1.My.Resources.Resources.AI3
-        Me.pbai3.Location = New System.Drawing.Point(533, 6)
-        Me.pbai3.Name = "pbai3"
-        Me.pbai3.Size = New System.Drawing.Size(29, 66)
-        Me.pbai3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai3.TabIndex = 49
-        Me.pbai3.TabStop = False
+        Me.pbbi2.Image = Global.WindowsApplication1.My.Resources.Resources.BI2
+        Me.pbbi2.Location = New System.Drawing.Point(498, 111)
+        Me.pbbi2.Name = "pbbi2"
+        Me.pbbi2.Size = New System.Drawing.Size(29, 66)
+        Me.pbbi2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbbi2.TabIndex = 56
+        Me.pbbi2.TabStop = False
         '
-        'pbai4
+        'pbbi3
         '
-        Me.pbai4.Image = Global.WindowsApplication1.My.Resources.Resources.AI4
-        Me.pbai4.Location = New System.Drawing.Point(568, 6)
-        Me.pbai4.Name = "pbai4"
-        Me.pbai4.Size = New System.Drawing.Size(29, 66)
-        Me.pbai4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai4.TabIndex = 50
-        Me.pbai4.TabStop = False
+        Me.pbbi3.Image = Global.WindowsApplication1.My.Resources.Resources.BI3
+        Me.pbbi3.Location = New System.Drawing.Point(533, 111)
+        Me.pbbi3.Name = "pbbi3"
+        Me.pbbi3.Size = New System.Drawing.Size(29, 66)
+        Me.pbbi3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbbi3.TabIndex = 57
+        Me.pbbi3.TabStop = False
         '
-        'pbai5
+        'pbbi4
         '
-        Me.pbai5.Image = Global.WindowsApplication1.My.Resources.Resources.AI5
-        Me.pbai5.Location = New System.Drawing.Point(603, 5)
-        Me.pbai5.Name = "pbai5"
-        Me.pbai5.Size = New System.Drawing.Size(29, 66)
-        Me.pbai5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai5.TabIndex = 51
-        Me.pbai5.TabStop = False
+        Me.pbbi4.Image = Global.WindowsApplication1.My.Resources.Resources.BI4
+        Me.pbbi4.Location = New System.Drawing.Point(568, 111)
+        Me.pbbi4.Name = "pbbi4"
+        Me.pbbi4.Size = New System.Drawing.Size(29, 67)
+        Me.pbbi4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbbi4.TabIndex = 58
+        Me.pbbi4.TabStop = False
         '
-        'pbai6
+        'pbbi5
         '
-        Me.pbai6.Image = Global.WindowsApplication1.My.Resources.Resources.AI6
-        Me.pbai6.Location = New System.Drawing.Point(638, 6)
-        Me.pbai6.Name = "pbai6"
-        Me.pbai6.Size = New System.Drawing.Size(29, 66)
-        Me.pbai6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai6.TabIndex = 52
-        Me.pbai6.TabStop = False
+        Me.pbbi5.Image = Global.WindowsApplication1.My.Resources.Resources.BI5
+        Me.pbbi5.Location = New System.Drawing.Point(603, 111)
+        Me.pbbi5.Name = "pbbi5"
+        Me.pbbi5.Size = New System.Drawing.Size(29, 66)
+        Me.pbbi5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbbi5.TabIndex = 59
+        Me.pbbi5.TabStop = False
         '
-        'pbai7
+        'pbbi6
         '
-        Me.pbai7.Image = Global.WindowsApplication1.My.Resources.Resources.AI7
-        Me.pbai7.Location = New System.Drawing.Point(673, 7)
-        Me.pbai7.Name = "pbai7"
-        Me.pbai7.Size = New System.Drawing.Size(29, 66)
-        Me.pbai7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai7.TabIndex = 53
-        Me.pbai7.TabStop = False
+        Me.pbbi6.Image = Global.WindowsApplication1.My.Resources.Resources.BI6
+        Me.pbbi6.Location = New System.Drawing.Point(638, 111)
+        Me.pbbi6.Name = "pbbi6"
+        Me.pbbi6.Size = New System.Drawing.Size(39, 67)
+        Me.pbbi6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbbi6.TabIndex = 60
+        Me.pbbi6.TabStop = False
         '
-        'pbai8
+        'pbbi7
         '
-        Me.pbai8.Image = Global.WindowsApplication1.My.Resources.Resources.AI8
-        Me.pbai8.Location = New System.Drawing.Point(711, 5)
-        Me.pbai8.Name = "pbai8"
-        Me.pbai8.Size = New System.Drawing.Size(29, 66)
-        Me.pbai8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai8.TabIndex = 54
-        Me.pbai8.TabStop = False
+        Me.pbbi7.Image = Global.WindowsApplication1.My.Resources.Resources.BI7
+        Me.pbbi7.Location = New System.Drawing.Point(683, 111)
+        Me.pbbi7.Name = "pbbi7"
+        Me.pbbi7.Size = New System.Drawing.Size(39, 67)
+        Me.pbbi7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbbi7.TabIndex = 61
+        Me.pbbi7.TabStop = False
+        '
+        'pbbi8
+        '
+        Me.pbbi8.Image = Global.WindowsApplication1.My.Resources.Resources.BI8
+        Me.pbbi8.Location = New System.Drawing.Point(728, 111)
+        Me.pbbi8.Name = "pbbi8"
+        Me.pbbi8.Size = New System.Drawing.Size(39, 67)
+        Me.pbbi8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbbi8.TabIndex = 62
+        Me.pbbi8.TabStop = False
         '
         'Registro_Medico
         '
@@ -545,16 +659,6 @@ Partial Class Registro_Medico
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.pbai1)
-        Me.Controls.Add(Me.pbbd5)
-        Me.Controls.Add(Me.pbbd6)
-        Me.Controls.Add(Me.pbbd7)
-        Me.Controls.Add(Me.pbbd8)
-        Me.Controls.Add(Me.pbbd4)
-        Me.Controls.Add(Me.pbbd3)
-        Me.Controls.Add(Me.pbbd2)
-        Me.Controls.Add(Me.pbbd1)
-        Me.Controls.Add(Me.pbad1)
         Me.Controls.Add(Me.Label38)
         Me.Controls.Add(Me.Label37)
         Me.Controls.Add(Me.Label36)
@@ -591,13 +695,21 @@ Partial Class Registro_Medico
         CType(Me.pbbd5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbai1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.pbai2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbai8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbai7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbai6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbai5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbai4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbai3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbai2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbbi1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbbi2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbbi3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbbi4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbbi5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbbi6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbbi7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbbi8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -643,4 +755,12 @@ Partial Class Registro_Medico
     Friend WithEvents pbai4 As System.Windows.Forms.PictureBox
     Friend WithEvents pbai3 As System.Windows.Forms.PictureBox
     Friend WithEvents pbai2 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbbi8 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbbi7 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbbi6 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbbi5 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbbi4 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbbi3 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbbi2 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbbi1 As System.Windows.Forms.PictureBox
 End Class
