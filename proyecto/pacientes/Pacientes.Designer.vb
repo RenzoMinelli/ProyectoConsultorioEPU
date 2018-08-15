@@ -22,72 +22,73 @@ Partial Class Pacientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label19 = New System.Windows.Forms.Label()
+        Me.lblEstado = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.lblTelefono = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnMostrarAntecedentes = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lblNumeroCitasAtendidas = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblEnviadoPor = New System.Windows.Forms.Label()
+        Me.lblCedula = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblFechaNacimiento = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblDireccionTrabajo = New System.Windows.Forms.Label()
+        Me.lblDireccionParticular = New System.Windows.Forms.Label()
+        Me.lblNombre = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblSaldoPendiente = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.pnlTapa = New System.Windows.Forms.Panel()
+        Me.lblCartel = New System.Windows.Forms.Label()
+        Me.txbBusqueda = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
+        Me.btnRegistroMedico = New System.Windows.Forms.Button()
+        Me.btnRegistrarCita = New System.Windows.Forms.Button()
+        Me.btnCambiarEstado = New System.Windows.Forms.Button()
+        Me.btnModificarDatos = New System.Windows.Forms.Button()
+        Me.btnIngresarPaciente = New System.Windows.Forms.Button()
+        Me.dgbPacientes = New System.Windows.Forms.DataGridView()
+        Me.btnRealizarPago = New System.Windows.Forms.Button()
+        Me.dgbFiltro = New System.Windows.Forms.DataGridView()
+        Me.btnPacInact = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlTapa.SuspendLayout()
+        CType(Me.dgbPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgbFiltro, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Panel1.Controls.Add(Me.Label21)
+        Me.Panel1.Controls.Add(Me.pnlTapa)
+        Me.Panel1.Controls.Add(Me.lblEstado)
         Me.Panel1.Controls.Add(Me.Label20)
-        Me.Panel1.Controls.Add(Me.Label19)
+        Me.Panel1.Controls.Add(Me.lblTelefono)
         Me.Panel1.Controls.Add(Me.Label18)
-        Me.Panel1.Controls.Add(Me.Button6)
+        Me.Panel1.Controls.Add(Me.btnMostrarAntecedentes)
         Me.Panel1.Controls.Add(Me.Label13)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label16)
-        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Controls.Add(Me.lblNumeroCitasAtendidas)
         Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.lblEnviadoPor)
+        Me.Panel1.Controls.Add(Me.lblCedula)
         Me.Panel1.Controls.Add(Me.Label12)
-        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.lblFechaNacimiento)
         Me.Panel1.Controls.Add(Me.Label14)
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.lblDireccionTrabajo)
+        Me.Panel1.Controls.Add(Me.lblDireccionParticular)
+        Me.Panel1.Controls.Add(Me.lblNombre)
         Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.lblSaldoPendiente)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel1.ForeColor = System.Drawing.Color.Black
@@ -96,15 +97,35 @@ Partial Class Pacientes
         Me.Panel1.Size = New System.Drawing.Size(444, 453)
         Me.Panel1.TabIndex = 3
         '
-        'Label19
+        'lblEstado
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(224, 151)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(76, 24)
-        Me.Label19.TabIndex = 19
-        Me.Label19.Text = "Label19"
+        Me.lblEstado.AutoSize = True
+        Me.lblEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstado.Location = New System.Drawing.Point(224, 15)
+        Me.lblEstado.Name = "lblEstado"
+        Me.lblEstado.Size = New System.Drawing.Size(76, 24)
+        Me.lblEstado.TabIndex = 21
+        Me.lblEstado.Text = "Label21"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(17, 15)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(73, 24)
+        Me.Label20.TabIndex = 20
+        Me.Label20.Text = "Estado:"
+        '
+        'lblTelefono
+        '
+        Me.lblTelefono.AutoSize = True
+        Me.lblTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTelefono.Location = New System.Drawing.Point(224, 151)
+        Me.lblTelefono.Name = "lblTelefono"
+        Me.lblTelefono.Size = New System.Drawing.Size(76, 24)
+        Me.lblTelefono.TabIndex = 19
+        Me.lblTelefono.Text = "Label19"
         '
         'Label18
         '
@@ -116,15 +137,15 @@ Partial Class Pacientes
         Me.Label18.TabIndex = 18
         Me.Label18.Text = "Teléfono:"
         '
-        'Button6
+        'btnMostrarAntecedentes
         '
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(8, 385)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(423, 54)
-        Me.Button6.TabIndex = 15
-        Me.Button6.Text = "Mostrar Antecedentes"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnMostrarAntecedentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMostrarAntecedentes.Location = New System.Drawing.Point(8, 385)
+        Me.btnMostrarAntecedentes.Name = "btnMostrarAntecedentes"
+        Me.btnMostrarAntecedentes.Size = New System.Drawing.Size(423, 54)
+        Me.btnMostrarAntecedentes.TabIndex = 15
+        Me.btnMostrarAntecedentes.Text = "Mostrar Antecedentes"
+        Me.btnMostrarAntecedentes.UseVisualStyleBackColor = True
         '
         'Label13
         '
@@ -156,15 +177,15 @@ Partial Class Pacientes
         Me.Label16.TabIndex = 14
         Me.Label16.Text = "Saldo Pendiente:"
         '
-        'Label10
+        'lblNumeroCitasAtendidas
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(224, 298)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(76, 24)
-        Me.Label10.TabIndex = 7
-        Me.Label10.Text = "Label10"
+        Me.lblNumeroCitasAtendidas.AutoSize = True
+        Me.lblNumeroCitasAtendidas.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumeroCitasAtendidas.Location = New System.Drawing.Point(224, 298)
+        Me.lblNumeroCitasAtendidas.Name = "lblNumeroCitasAtendidas"
+        Me.lblNumeroCitasAtendidas.Size = New System.Drawing.Size(76, 24)
+        Me.lblNumeroCitasAtendidas.TabIndex = 7
+        Me.lblNumeroCitasAtendidas.Text = "Label10"
         '
         'Label11
         '
@@ -176,25 +197,25 @@ Partial Class Pacientes
         Me.Label11.TabIndex = 9
         Me.Label11.Text = "Cédula:"
         '
-        'Label7
+        'lblEnviadoPor
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(224, 187)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(66, 24)
-        Me.Label7.TabIndex = 4
-        Me.Label7.Text = "Label7"
+        Me.lblEnviadoPor.AutoSize = True
+        Me.lblEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEnviadoPor.Location = New System.Drawing.Point(224, 187)
+        Me.lblEnviadoPor.Name = "lblEnviadoPor"
+        Me.lblEnviadoPor.Size = New System.Drawing.Size(66, 24)
+        Me.lblEnviadoPor.TabIndex = 4
+        Me.lblEnviadoPor.Text = "Label7"
         '
-        'Label4
+        'lblCedula
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(224, 81)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(66, 24)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Label4"
+        Me.lblCedula.AutoSize = True
+        Me.lblCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCedula.Location = New System.Drawing.Point(224, 81)
+        Me.lblCedula.Name = "lblCedula"
+        Me.lblCedula.Size = New System.Drawing.Size(66, 24)
+        Me.lblCedula.TabIndex = 1
+        Me.lblCedula.Text = "Label4"
         '
         'Label12
         '
@@ -206,15 +227,15 @@ Partial Class Pacientes
         Me.Label12.TabIndex = 10
         Me.Label12.Text = "Fecha Nacimiento:"
         '
-        'Label6
+        'lblFechaNacimiento
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(224, 114)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(66, 24)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "Label6"
+        Me.lblFechaNacimiento.AutoSize = True
+        Me.lblFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaNacimiento.Location = New System.Drawing.Point(224, 114)
+        Me.lblFechaNacimiento.Name = "lblFechaNacimiento"
+        Me.lblFechaNacimiento.Size = New System.Drawing.Size(66, 24)
+        Me.lblFechaNacimiento.TabIndex = 3
+        Me.lblFechaNacimiento.Text = "Label6"
         '
         'Label14
         '
@@ -226,35 +247,35 @@ Partial Class Pacientes
         Me.Label14.TabIndex = 12
         Me.Label14.Text = "Direccion Particular:"
         '
-        'Label9
+        'lblDireccionTrabajo
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(224, 260)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(66, 24)
-        Me.Label9.TabIndex = 6
-        Me.Label9.Text = "Label9"
+        Me.lblDireccionTrabajo.AutoSize = True
+        Me.lblDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDireccionTrabajo.Location = New System.Drawing.Point(224, 260)
+        Me.lblDireccionTrabajo.Name = "lblDireccionTrabajo"
+        Me.lblDireccionTrabajo.Size = New System.Drawing.Size(66, 24)
+        Me.lblDireccionTrabajo.TabIndex = 6
+        Me.lblDireccionTrabajo.Text = "Label9"
         '
-        'Label8
+        'lblDireccionParticular
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(224, 223)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(66, 24)
-        Me.Label8.TabIndex = 5
-        Me.Label8.Text = "Label8"
+        Me.lblDireccionParticular.AutoSize = True
+        Me.lblDireccionParticular.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDireccionParticular.Location = New System.Drawing.Point(224, 223)
+        Me.lblDireccionParticular.Name = "lblDireccionParticular"
+        Me.lblDireccionParticular.Size = New System.Drawing.Size(66, 24)
+        Me.lblDireccionParticular.TabIndex = 5
+        Me.lblDireccionParticular.Text = "Label8"
         '
-        'Label5
+        'lblNombre
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(224, 48)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(66, 24)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Label5"
+        Me.lblNombre.AutoSize = True
+        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.Location = New System.Drawing.Point(224, 48)
+        Me.lblNombre.Name = "lblNombre"
+        Me.lblNombre.Size = New System.Drawing.Size(66, 24)
+        Me.lblNombre.TabIndex = 2
+        Me.lblNombre.Text = "Label5"
         '
         'Label15
         '
@@ -266,15 +287,15 @@ Partial Class Pacientes
         Me.Label15.TabIndex = 13
         Me.Label15.Text = "Direccion de Trabajo:"
         '
-        'Label3
+        'lblSaldoPendiente
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(224, 333)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(66, 24)
-        Me.Label3.TabIndex = 17
-        Me.Label3.Text = "Label3"
+        Me.lblSaldoPendiente.AutoSize = True
+        Me.lblSaldoPendiente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSaldoPendiente.Location = New System.Drawing.Point(224, 333)
+        Me.lblSaldoPendiente.Name = "lblSaldoPendiente"
+        Me.lblSaldoPendiente.Size = New System.Drawing.Size(66, 24)
+        Me.lblSaldoPendiente.TabIndex = 17
+        Me.lblSaldoPendiente.Text = "Label3"
         '
         'Label1
         '
@@ -286,33 +307,33 @@ Partial Class Pacientes
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "N° Citas Atendidas:"
         '
-        'Panel2
+        'pnlTapa
         '
-        Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Panel2.Controls.Add(Me.Label17)
-        Me.Panel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel2.ForeColor = System.Drawing.Color.Black
-        Me.Panel2.Location = New System.Drawing.Point(572, 22)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(444, 453)
-        Me.Panel2.TabIndex = 6
+        Me.pnlTapa.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.pnlTapa.Controls.Add(Me.lblCartel)
+        Me.pnlTapa.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTapa.ForeColor = System.Drawing.Color.Black
+        Me.pnlTapa.Location = New System.Drawing.Point(0, 0)
+        Me.pnlTapa.Name = "pnlTapa"
+        Me.pnlTapa.Size = New System.Drawing.Size(444, 453)
+        Me.pnlTapa.TabIndex = 6
         '
-        'Label17
+        'lblCartel
         '
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(84, 147)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(282, 125)
-        Me.Label17.TabIndex = 0
-        Me.Label17.Text = "SELECCIONE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "UN PACIENTE"
+        Me.lblCartel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCartel.Location = New System.Drawing.Point(84, 147)
+        Me.lblCartel.Name = "lblCartel"
+        Me.lblCartel.Size = New System.Drawing.Size(282, 125)
+        Me.lblCartel.TabIndex = 0
+        Me.lblCartel.Text = "SELECCIONE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "UN PACIENTE"
         '
-        'TextBox1
+        'txbBusqueda
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(133, 22)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(372, 29)
-        Me.TextBox1.TabIndex = 13
+        Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbBusqueda.Location = New System.Drawing.Point(133, 22)
+        Me.txbBusqueda.Name = "txbBusqueda"
+        Me.txbBusqueda.Size = New System.Drawing.Size(372, 29)
+        Me.txbBusqueda.TabIndex = 13
         '
         'Label22
         '
@@ -325,173 +346,153 @@ Partial Class Pacientes
         Me.Label22.TabIndex = 15
         Me.Label22.Text = "Busqueda:"
         '
-        'Button5
+        'btnRegistroMedico
         '
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button5.Image = Global.WindowsApplication1.My.Resources.Resources._104901_1_
-        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.Location = New System.Drawing.Point(496, 532)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(128, 63)
-        Me.Button5.TabIndex = 16
-        Me.Button5.Text = "Registro Médico"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button5.UseVisualStyleBackColor = True
-        Me.Button5.Visible = False
+        Me.btnRegistroMedico.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistroMedico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnRegistroMedico.Image = Global.WindowsApplication1.My.Resources.Resources._104901_1_
+        Me.btnRegistroMedico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRegistroMedico.Location = New System.Drawing.Point(496, 532)
+        Me.btnRegistroMedico.Name = "btnRegistroMedico"
+        Me.btnRegistroMedico.Size = New System.Drawing.Size(128, 63)
+        Me.btnRegistroMedico.TabIndex = 16
+        Me.btnRegistroMedico.Text = "Registro Médico"
+        Me.btnRegistroMedico.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnRegistroMedico.UseVisualStyleBackColor = True
+        Me.btnRegistroMedico.Visible = False
         '
-        'Button4
+        'btnRegistrarCita
         '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.Black
-        Me.Button4.Image = Global.WindowsApplication1.My.Resources.Resources._42954__1_
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(663, 532)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(130, 63)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "Registrar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cita"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button4.UseVisualStyleBackColor = True
-        Me.Button4.Visible = False
+        Me.btnRegistrarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrarCita.ForeColor = System.Drawing.Color.Black
+        Me.btnRegistrarCita.Image = Global.WindowsApplication1.My.Resources.Resources._42954__1_
+        Me.btnRegistrarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRegistrarCita.Location = New System.Drawing.Point(663, 532)
+        Me.btnRegistrarCita.Name = "btnRegistrarCita"
+        Me.btnRegistrarCita.Size = New System.Drawing.Size(130, 63)
+        Me.btnRegistrarCita.TabIndex = 9
+        Me.btnRegistrarCita.Text = "Registrar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cita"
+        Me.btnRegistrarCita.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnRegistrarCita.UseVisualStyleBackColor = True
+        Me.btnRegistrarCita.Visible = False
         '
-        'Button3
+        'btnCambiarEstado
         '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources._675024_delete_512x512_1_
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(335, 532)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(131, 63)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Volver Inactivo"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button3.UseVisualStyleBackColor = True
-        Me.Button3.Visible = False
+        Me.btnCambiarEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCambiarEstado.ForeColor = System.Drawing.Color.Black
+        Me.btnCambiarEstado.Image = Global.WindowsApplication1.My.Resources.Resources._675024_delete_512x512_1_
+        Me.btnCambiarEstado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCambiarEstado.Location = New System.Drawing.Point(335, 532)
+        Me.btnCambiarEstado.Name = "btnCambiarEstado"
+        Me.btnCambiarEstado.Size = New System.Drawing.Size(131, 63)
+        Me.btnCambiarEstado.TabIndex = 8
+        Me.btnCambiarEstado.Text = "Volver Inactivo"
+        Me.btnCambiarEstado.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnCambiarEstado.UseVisualStyleBackColor = True
+        Me.btnCambiarEstado.Visible = False
         '
-        'Button2
+        'btnModificarDatos
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(178, 532)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(136, 63)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Modificar Datos"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.UseVisualStyleBackColor = True
-        Me.Button2.Visible = False
+        Me.btnModificarDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificarDatos.ForeColor = System.Drawing.Color.Black
+        Me.btnModificarDatos.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
+        Me.btnModificarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnModificarDatos.Location = New System.Drawing.Point(178, 532)
+        Me.btnModificarDatos.Name = "btnModificarDatos"
+        Me.btnModificarDatos.Size = New System.Drawing.Size(136, 63)
+        Me.btnModificarDatos.TabIndex = 7
+        Me.btnModificarDatos.Text = "Modificar Datos"
+        Me.btnModificarDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnModificarDatos.UseVisualStyleBackColor = True
+        Me.btnModificarDatos.Visible = False
         '
-        'Button1
+        'btnIngresarPaciente
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.add_user_icon_icons__2_
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(17, 532)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(139, 63)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Ingresar Paciente"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnIngresarPaciente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIngresarPaciente.ForeColor = System.Drawing.Color.Black
+        Me.btnIngresarPaciente.Image = Global.WindowsApplication1.My.Resources.Resources.add_user_icon_icons__2_
+        Me.btnIngresarPaciente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnIngresarPaciente.Location = New System.Drawing.Point(17, 532)
+        Me.btnIngresarPaciente.Name = "btnIngresarPaciente"
+        Me.btnIngresarPaciente.Size = New System.Drawing.Size(139, 63)
+        Me.btnIngresarPaciente.TabIndex = 0
+        Me.btnIngresarPaciente.Text = "Ingresar Paciente"
+        Me.btnIngresarPaciente.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnIngresarPaciente.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'dgbPacientes
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AllowUserToResizeColumns = False
-        Me.DataGridView1.AllowUserToResizeRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle17.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle18.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle18
-        Me.DataGridView1.Location = New System.Drawing.Point(17, 70)
-        Me.DataGridView1.MultiSelect = False
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(488, 348)
-        Me.DataGridView1.TabIndex = 17
+        Me.dgbPacientes.AllowUserToAddRows = False
+        Me.dgbPacientes.AllowUserToDeleteRows = False
+        Me.dgbPacientes.AllowUserToResizeColumns = False
+        Me.dgbPacientes.AllowUserToResizeRows = False
+        Me.dgbPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgbPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgbPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgbPacientes.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgbPacientes.Location = New System.Drawing.Point(17, 70)
+        Me.dgbPacientes.MultiSelect = False
+        Me.dgbPacientes.Name = "dgbPacientes"
+        Me.dgbPacientes.ReadOnly = True
+        Me.dgbPacientes.RowHeadersVisible = False
+        Me.dgbPacientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgbPacientes.Size = New System.Drawing.Size(488, 348)
+        Me.dgbPacientes.TabIndex = 17
         '
-        'Button7
+        'btnRealizarPago
         '
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button7.Image = Global.WindowsApplication1.My.Resources.Resources.fac159a300a5cd5efbd3c544cb37d3b0_1_
-        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.Location = New System.Drawing.Point(830, 532)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(128, 63)
-        Me.Button7.TabIndex = 18
-        Me.Button7.Text = "Realizar Pago"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button7.UseVisualStyleBackColor = True
-        Me.Button7.Visible = False
+        Me.btnRealizarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRealizarPago.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnRealizarPago.Image = Global.WindowsApplication1.My.Resources.Resources.fac159a300a5cd5efbd3c544cb37d3b0_1_
+        Me.btnRealizarPago.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRealizarPago.Location = New System.Drawing.Point(830, 532)
+        Me.btnRealizarPago.Name = "btnRealizarPago"
+        Me.btnRealizarPago.Size = New System.Drawing.Size(128, 63)
+        Me.btnRealizarPago.TabIndex = 18
+        Me.btnRealizarPago.Text = "Realizar Pago"
+        Me.btnRealizarPago.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnRealizarPago.UseVisualStyleBackColor = True
+        Me.btnRealizarPago.Visible = False
         '
-        'DataGridView2
+        'dgbFiltro
         '
-        Me.DataGridView2.AllowUserToAddRows = False
-        Me.DataGridView2.AllowUserToDeleteRows = False
-        Me.DataGridView2.AllowUserToResizeColumns = False
-        Me.DataGridView2.AllowUserToResizeRows = False
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(991, 573)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.ReadOnly = True
-        Me.DataGridView2.Size = New System.Drawing.Size(25, 22)
-        Me.DataGridView2.TabIndex = 19
-        Me.DataGridView2.Visible = False
+        Me.dgbFiltro.AllowUserToAddRows = False
+        Me.dgbFiltro.AllowUserToDeleteRows = False
+        Me.dgbFiltro.AllowUserToResizeColumns = False
+        Me.dgbFiltro.AllowUserToResizeRows = False
+        Me.dgbFiltro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgbFiltro.Location = New System.Drawing.Point(991, 573)
+        Me.dgbFiltro.Name = "dgbFiltro"
+        Me.dgbFiltro.ReadOnly = True
+        Me.dgbFiltro.Size = New System.Drawing.Size(25, 22)
+        Me.dgbFiltro.TabIndex = 19
+        Me.dgbFiltro.Visible = False
         '
-        'Button8
+        'btnPacInact
         '
-        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.Black
-        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.Location = New System.Drawing.Point(17, 434)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(488, 41)
-        Me.Button8.TabIndex = 20
-        Me.Button8.Text = "Mostrar Pacientes Inactivos"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(17, 15)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(73, 24)
-        Me.Label20.TabIndex = 20
-        Me.Label20.Text = "Estado:"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(224, 15)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(76, 24)
-        Me.Label21.TabIndex = 21
-        Me.Label21.Text = "Label21"
+        Me.btnPacInact.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPacInact.ForeColor = System.Drawing.Color.Black
+        Me.btnPacInact.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPacInact.Location = New System.Drawing.Point(17, 434)
+        Me.btnPacInact.Name = "btnPacInact"
+        Me.btnPacInact.Size = New System.Drawing.Size(488, 41)
+        Me.btnPacInact.TabIndex = 20
+        Me.btnPacInact.Text = "Mostrar Pacientes Inactivos"
+        Me.btnPacInact.UseVisualStyleBackColor = True
         '
         'Pacientes
         '
@@ -499,19 +500,18 @@ Partial Class Pacientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1040, 607)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.DataGridView2)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.btnPacInact)
+        Me.Controls.Add(Me.dgbFiltro)
+        Me.Controls.Add(Me.btnRealizarPago)
+        Me.Controls.Add(Me.dgbPacientes)
+        Me.Controls.Add(Me.btnRegistroMedico)
         Me.Controls.Add(Me.Label22)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.txbBusqueda)
+        Me.Controls.Add(Me.btnRegistrarCita)
+        Me.Controls.Add(Me.btnCambiarEstado)
+        Me.Controls.Add(Me.btnModificarDatos)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnIngresarPaciente)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -519,14 +519,14 @@ Partial Class Pacientes
         Me.Text = "Form1"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlTapa.ResumeLayout(False)
+        CType(Me.dgbPacientes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgbFiltro, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnIngresarPaciente As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
@@ -534,32 +534,32 @@ Partial Class Pacientes
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents lblNumeroCitasAtendidas As System.Windows.Forms.Label
+    Friend WithEvents lblDireccionTrabajo As System.Windows.Forms.Label
+    Friend WithEvents lblDireccionParticular As System.Windows.Forms.Label
+    Friend WithEvents lblEnviadoPor As System.Windows.Forms.Label
+    Friend WithEvents lblFechaNacimiento As System.Windows.Forms.Label
+    Friend WithEvents lblNombre As System.Windows.Forms.Label
+    Friend WithEvents lblCedula As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents lblCartel As System.Windows.Forms.Label
+    Friend WithEvents pnlTapa As System.Windows.Forms.Panel
+    Friend WithEvents btnModificarDatos As System.Windows.Forms.Button
+    Friend WithEvents btnCambiarEstado As System.Windows.Forms.Button
+    Friend WithEvents btnRegistrarCita As System.Windows.Forms.Button
+    Friend WithEvents txbBusqueda As System.Windows.Forms.TextBox
     Friend WithEvents Label22 As System.Windows.Forms.Label
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents btnRegistroMedico As System.Windows.Forms.Button
+    Friend WithEvents btnMostrarAntecedentes As System.Windows.Forms.Button
+    Friend WithEvents dgbPacientes As System.Windows.Forms.DataGridView
+    Friend WithEvents btnRealizarPago As System.Windows.Forms.Button
+    Friend WithEvents lblSaldoPendiente As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
-    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents dgbFiltro As System.Windows.Forms.DataGridView
+    Friend WithEvents lblTelefono As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents btnPacInact As System.Windows.Forms.Button
     Friend WithEvents Label20 As System.Windows.Forms.Label
-    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents lblEstado As System.Windows.Forms.Label
 
 End Class

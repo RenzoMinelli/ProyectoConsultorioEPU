@@ -5,19 +5,19 @@
     Dim descr As String
 
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Pacientes.Show()
         Me.Dispose()
     End Sub
 
     Private Sub Crear_Cita_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        fecha = DateTimePicker1.Value.ToString("yyyy-MM-dd")
-        hora = DateTimePicker1.Value.ToString("HH:mm:ss")
+        fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
+        hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
 
         Consulta = "Select nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
         consultar()
-        DataGridView1.DataSource = Tabla
-        
+        dgbCitasEnLaFecha.DataSource = Tabla
+
 
     End Sub
 
@@ -30,8 +30,8 @@
         Menu_Inicio.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        descr = TextBox1.Text
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCrear.Click
+        descr = txbAnotaciones.Text
         If descr = "" Then
             MsgBox("Complete las indicaciones", MsgBoxStyle.Exclamation)
         Else
@@ -39,9 +39,9 @@
             Dim control As Integer = 0
             Dim hora2 As TimeSpan = (Convert.ToDateTime(hora)).TimeOfDay
 
-            For x = 0 To DataGridView1.RowCount - 1
+            For x = 0 To dgbCitasEnLaFecha.RowCount - 1
 
-                Dim HoraAux As TimeSpan = DataGridView1.Rows(x).Cells(2).Value
+                Dim HoraAux As TimeSpan = dgbCitasEnLaFecha.Rows(x).Cells(2).Value
 
                 Dim HoraAuxFinal As New TimeSpan(0, 40, 0)
                 HoraAuxFinal = HoraAux + HoraAuxFinal
@@ -73,17 +73,17 @@
 
 
         End If
-        
+
 
     End Sub
 
 
-    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DateTimePicker1.ValueChanged
-        fecha = DateTimePicker1.Value.ToString("yyyy-MM-dd")
-        hora = DateTimePicker1.Value.ToString("HH:mm:ss")
+    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpFechaSeleccionada.ValueChanged
+        fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
+        hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
 
         Consulta = "Select nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
         consultar()
-        DataGridView1.DataSource = Tabla
+        dgbCitasEnLaFecha.DataSource = Tabla
     End Sub
 End Class

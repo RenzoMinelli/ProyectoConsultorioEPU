@@ -4,7 +4,7 @@
     'Me.Cursor = New Cursor(a.Handle)
 
     Dim cita As String
-    Dim formu As New Form
+    Dim frmContenedor As New Form
     Dim fecha As String
 
 
@@ -37,10 +37,10 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Hide()
-        formu = agregarcitas2
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = agregarcitas2
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
     End Sub
 
 

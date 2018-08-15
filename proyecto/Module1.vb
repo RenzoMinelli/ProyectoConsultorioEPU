@@ -22,7 +22,7 @@ Module Module1
     Public saldo As Integer
     Public id_p As Integer
 
-
+    Public frmContenedor As New Form
 
     '////////////////Posicionamiento///////////////////////////
     Public xf, yf As Integer

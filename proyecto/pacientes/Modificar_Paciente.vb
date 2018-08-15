@@ -1,7 +1,7 @@
 ﻿Public Class Modificar_Paciente
 
     Dim nac2 As String
-    Dim formu As New Form
+
 
     '/////////////////////////Antecedentes//////////////////////////
     Public alergicos As Boolean
@@ -13,13 +13,13 @@
     Public farmacos_recibidos As Boolean
     Public familiares As Boolean
     Public tratamiento_medico As Boolean
-    Public obs As String
+    Public observaciones As String
 
     Public cambio As Integer
     '/////////////////////////////////////////////////////////////
 
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
 
         Dim ver As Integer = 0
         Dim ver2 As Integer = 0
@@ -29,38 +29,38 @@
         Dim ver6 As Integer = 0
         Dim ver7 As Integer = 0
 
-        If TextBox1.Text <> "" And TextBox2.Text <> "" And TextBox4.Text <> "" Then
+        If txbNombre.Text <> "" And txbCedula.Text <> "" And txbDireccionPersonal.Text <> "" Then
 
-            If TextBox1.Text <> nombre Then
+            If txbNombre.Text <> nombre Then
                 ver = 1
-                nombre = TextBox1.Text
+                nombre = txbNombre.Text
             End If
-            If TextBox2.Text <> cedula Then
+            If txbCedula.Text <> cedula Then
                 ver2 = 1
-                cedula = TextBox2.Text
+                cedula = txbCedula.Text
             End If
-            If TextBox3.Text <> enviado Then
+            If txbEnviadoPor.Text <> enviado Then
                 ver3 = 1
-                enviado = TextBox3.Text
+                enviado = txbEnviadoPor.Text
             End If
-            If TextBox4.Text <> direccion Then
+            If txbDireccionPersonal.Text <> direccion Then
                 ver4 = 1
-                direccion = TextBox4.Text
+                direccion = txbDireccionPersonal.Text
             End If
-            If TextBox5.Text <> direTra Then
+            If txbDireccionTrabajo.Text <> direTra Then
                 ver5 = 1
-                direTra = TextBox5.Text
+                direTra = txbDireccionTrabajo.Text
             End If
             If nac <> nac2 Then
                 ver6 = 1
             End If
-            If telefonot.Text <> telefono Then
+            If txbTelefono.Text <> telefono Then
                 ver7 = 1
-                telefono = telefonot.Text
+                telefono = txbTelefono.Text
 
             End If
 
-            nac = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
+            nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
             Try
                 If ver = 1 Then
                     Consulta = "UPDATE paciente SET nombre = '" + nombre + "' WHERE id_p = " + Str(id_p) + ";"
@@ -105,11 +105,11 @@
                 If cambio = 1 Then
 
                     If DataGridView1.Rows(0).Cells(0).Value = Nothing Then
-                        Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "', '" + alergicos.GetHashCode.ToString + "', '" + diabeticos.GetHashCode.ToString + "', '" + cardiovasculares.GetHashCode.ToString + "', '" + fiebre_reumatica.GetHashCode.ToString + "', '" + coagulacion.GetHashCode.ToString + "', '" + odontologicos.GetHashCode.ToString + "', '" + farmacos_recibidos.GetHashCode.ToString + "', '" + familiares.GetHashCode.ToString + "', '" + tratamiento_medico.GetHashCode.ToString + "', '" + obs + "');"
+                        Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "', '" + alergicos.GetHashCode.ToString + "', '" + diabeticos.GetHashCode.ToString + "', '" + cardiovasculares.GetHashCode.ToString + "', '" + fiebre_reumatica.GetHashCode.ToString + "', '" + coagulacion.GetHashCode.ToString + "', '" + odontologicos.GetHashCode.ToString + "', '" + farmacos_recibidos.GetHashCode.ToString + "', '" + familiares.GetHashCode.ToString + "', '" + tratamiento_medico.GetHashCode.ToString + "', '" + observaciones + "');"
                         consultar()
                     Else
 
-                        Consulta = "UPDATE antecedentes SET alergicos = '" + alergicos.GetHashCode.ToString + "', diabeticos = '" + diabeticos.GetHashCode.ToString + "', cardiovasculares = '" + cardiovasculares.GetHashCode.ToString + "', fiebre_reumatica = '" + fiebre_reumatica.GetHashCode.ToString + "', coagulacion = '" + coagulacion.GetHashCode.ToString + "', odontologicos = '" + odontologicos.GetHashCode.ToString + "', farmacos_recibidos = '" + farmacos_recibidos.GetHashCode.ToString + "', familiares = '" + familiares.GetHashCode.ToString + "', tratamientos_medicos = '" + tratamiento_medico.GetHashCode.ToString + "', observaciones = '" + obs + "' WHERE id_p = '" + Str(id_p) + "';"
+                        Consulta = "UPDATE antecedentes SET alergicos = '" + alergicos.GetHashCode.ToString + "', diabeticos = '" + diabeticos.GetHashCode.ToString + "', cardiovasculares = '" + cardiovasculares.GetHashCode.ToString + "', fiebre_reumatica = '" + fiebre_reumatica.GetHashCode.ToString + "', coagulacion = '" + coagulacion.GetHashCode.ToString + "', odontologicos = '" + odontologicos.GetHashCode.ToString + "', farmacos_recibidos = '" + farmacos_recibidos.GetHashCode.ToString + "', familiares = '" + familiares.GetHashCode.ToString + "', tratamientos_medicos = '" + tratamiento_medico.GetHashCode.ToString + "', observaciones = '" + observaciones + "' WHERE id_p = '" + Str(id_p) + "';"
                         consultar()
                     End If
 
@@ -137,9 +137,9 @@
 
     End Sub
 
-    Private Sub MonthCalendar1_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar1.DateChanged
-        nac2 = MonthCalendar1.SelectionRange.Start
-        Label7.Text = "Fecha seleccionada " + nac2
+    Private Sub MonthCalendar1_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles mcFechaNacimiento.DateChanged
+        nac2 = mcFechaNacimiento.SelectionRange.Start
+        lblFechaSeleccionada.Text = "Fecha seleccionada " + nac2
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -147,14 +147,14 @@
         actPos()
         Me.Size = New System.Drawing.Size(880, 580)
 
-        TextBox1.Text = nombre
-        TextBox2.Text = cedula
-        TextBox3.Text = enviado
-        TextBox4.Text = direccion
-        TextBox5.Text = direTra
-        telefonot.Text = telefono
-        MonthCalendar1.SelectionRange.Start = nac
-        Label7.Text = "Fecha seleccionada " + nac
+        txbNombre.Text = nombre
+        txbCedula.Text = cedula
+        txbEnviadoPor.Text = enviado
+        txbDireccionPersonal.Text = direccion
+        txbDireccionTrabajo.Text = direTra
+        txbTelefono.Text = telefono
+        mcFechaNacimiento.SelectionRange.Start = nac
+        lblFechaSeleccionada.Text = "Fecha seleccionada " + nac
 
         'Antecedentes
         Consulta = "SELECT * FROM antecedentes where id_p = '" + Str(id_p) + "';"
@@ -170,21 +170,21 @@
         farmacos_recibidos = DataGridView1.Rows(0).Cells(7).Value
         familiares = DataGridView1.Rows(0).Cells(8).Value
         tratamiento_medico = DataGridView1.Rows(0).Cells(9).Value
-        obs = DataGridView1.Rows(0).Cells(10).Value
+        observaciones = DataGridView1.Rows(0).Cells(10).Value
 
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Dispose()
         Pacientes.Show()
     End Sub
 
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarAntecedentes.Click
         Me.Hide()
-        formu = Modificar_Antecedentes
-        formu.MdiParent = Menu_Inicio
-        formu.Dock = DockStyle.Fill
-        formu.Show()
+        frmContenedor = Modificar_Antecedentes
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
     End Sub
 End Class

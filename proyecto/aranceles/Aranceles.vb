@@ -1,6 +1,6 @@
 ﻿Public Class Aranceles
     Public id As Integer
-    Dim formu As New Form
+    Dim frmContenedor As New Form
 
     Private Sub Aranceles_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
         Me.Size = New System.Drawing.Size(880, 580)
@@ -25,7 +25,7 @@
         Catch ex As Exception
 
         End Try
-        
+
 
 
 
@@ -56,10 +56,10 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         'Me.Hide()
-        'formu = Agregar_Arancel
-        'formu.MdiParent = Menu_Inicio
-        'formu.Dock = DockStyle.Fill
-        'formu.Show()
+        'frmContenedor = Agregar_Arancel
+        'frmContenedor.MdiParent = Menu_Inicio
+        'frmContenedor.Dock = DockStyle.Fill
+        'frmContenedor.Show()
         Agregar_Arancel.Show()
 
     End Sub
