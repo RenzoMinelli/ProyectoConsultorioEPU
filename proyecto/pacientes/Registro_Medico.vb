@@ -110,6 +110,90 @@
                             Case "ausente"
                                 pbad8.Image = My.Resources._8na
                         End Select
+
+
+                        ''arriba izquierda
+
+
+
+                    Case "21"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbai1.Image = My.Resources._1a
+                            Case "precaucion"
+                                pbai1.Image = My.Resources._1aa
+                            Case "ausente"
+                                pbai1.Image = My.Resources._1na
+                        End Select
+                    Case "22"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbai2.Image = My.Resources._2a
+                            Case "precaucion"
+                                pbai2.Image = My.Resources._2aa
+                            Case "ausente"
+                                pbai2.Image = My.Resources._2na
+                        End Select
+                    Case "23"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbai3.Image = My.Resources._3a
+                            Case "precaucion"
+                                pbai3.Image = My.Resources._3aa
+                            Case "ausente"
+                                pbai3.Image = My.Resources._3a
+                        End Select
+                    Case "24"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbai4.Image = My.Resources._4a
+                            Case "precaucion"
+                                pbai4.Image = My.Resources._4aa
+                            Case "ausente"
+                                pbai4.Image = My.Resources._4na
+                        End Select
+                    Case "25"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbai5.Image = My.Resources._5a
+                            Case "precaucion"
+                                pbai5.Image = My.Resources._5aa
+                            Case "ausente"
+                                pbai5.Image = My.Resources._5na
+                        End Select
+                    Case "26"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbai6.Image = My.Resources._6a
+                            Case "precaucion"
+                                pbai6.Image = My.Resources._6aa
+                            Case "ausente"
+                                pbai6.Image = My.Resources._6na
+                        End Select
+                    Case "27"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbai7.Image = My.Resources._7a
+                            Case "precaucion"
+                                pbai7.Image = My.Resources._7aa
+                            Case "ausente"
+                                pbai7.Image = My.Resources._7na
+                        End Select
+                    Case "28"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "malo"
+                                pbai8.Image = My.Resources._8a
+                            Case "precaucion"
+                                pbai8.Image = My.Resources._8aa
+                            Case "ausente"
+                                pbai8.Image = My.Resources._8na
+                        End Select
+
+
+
+                        ''abajo derecha
+
+
                     Case "41"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
                             Case "malo"
@@ -326,6 +410,18 @@
     End Sub
 
     Private Sub Panel2_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub pbad6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbad6.Click
+
+    End Sub
+
+    Private Sub pbbd1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbd1.Click
+
+    End Sub
+
+    Private Sub pbad1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbad1.Click
 
     End Sub
 End Class
