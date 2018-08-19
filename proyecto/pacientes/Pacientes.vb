@@ -93,7 +93,7 @@
         If EstadoPacientes = 1 Then
 
             'Consultar si desea realmente volverlo inactivo
-            If MsgBox("¿Seguro que desea volver inactivo al paciente con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+            If MsgBox("¿Seguro que desea volver inactivo al paciente " + dgbPacientes.CurrentRow.Cells(3).Value + " con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
 
                 'Si es así, intentamos actualizar la informacion del paciente en la base de datos cambiando el campo estado
                 Try
