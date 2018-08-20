@@ -7,7 +7,7 @@
 
         'Al presionar el boton btnAgregarPaciente, se oculta el formulario actual, se guarda el formulario Agregar_Paciente en el frmContenedor y se muestra
         Me.Hide()
-        frmContenedor = Agregar_Paciente
+        frmContenedor = Ingresar_Paciente
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()

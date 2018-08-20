@@ -1,4 +1,4 @@
-﻿Public Class Agregar_Paciente
+﻿Public Class Ingresar_Paciente
 
 
 
