@@ -475,49 +475,8 @@
         DataGridView2.AutoResizeColumns()
     End Sub
 
-
-
-    Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbd8.Click
-
-    End Sub
-
-    Private Sub Label17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Panel2_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel2.Paint
-
-    End Sub
-
-    Private Sub pbad6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbad6.Click
-
-    End Sub
-
-    Private Sub pbbd1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbd1.Click
-
-    End Sub
-
-    Private Sub pbad1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbad1.Click
-
-    End Sub
-
     Private Sub pbad7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbad7.Click
 
-    End Sub
-
-    Private Sub pbbi6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbi6.Click
-
-    End Sub
-
-    Private Sub pbbi7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbi7.Click
-
-    End Sub
-
-    Private Sub pbbi8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbi8.Click
-
-    End Sub
-
-    Private Sub pbbd6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbd6.Click
 
     End Sub
 End Class

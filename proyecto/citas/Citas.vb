@@ -2,7 +2,8 @@
     'Dim a As Icon
     ' a = My.Resources.rambocursor
     'Me.Cursor = New Cursor(a.Handle)
-
+    Public idcita As Integer
+    Public idpaciente As Integer
     Dim cita As String
     Dim frmContenedor As New Form
     Dim fecha As String
