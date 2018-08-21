@@ -68,6 +68,7 @@ Partial Class marcar_cita
         Me.Panel0000 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel000 = New System.Windows.Forms.Panel()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel2.SuspendLayout()
         CType(Me.pbDiente38, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDiente48, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,6 +103,7 @@ Partial Class marcar_cita
         CType(Me.pbDiente17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDiente16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'bttoningrdientes
@@ -586,11 +588,25 @@ Partial Class marcar_cita
         Me.Panel000.Size = New System.Drawing.Size(42, 26)
         Me.Panel000.TabIndex = 0
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToResizeColumns = False
+        Me.DataGridView1.AllowUserToResizeRows = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(54, 408)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(791, 64)
+        Me.DataGridView1.TabIndex = 54
+        '
         'marcar_cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(873, 596)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label37)
@@ -635,6 +651,7 @@ Partial Class marcar_cita
         CType(Me.pbDiente16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel01477.ResumeLayout(False)
         Me.Panel01477.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -685,4 +702,5 @@ Partial Class marcar_cita
     Friend WithEvents Panel0000 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Panel000 As System.Windows.Forms.Panel
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
 End Class

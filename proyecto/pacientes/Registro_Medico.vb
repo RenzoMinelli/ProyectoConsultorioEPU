@@ -24,9 +24,9 @@
             If Not IsDBNull(DataGridView1.Rows(x).Cells(1).Value) Then
                 Select Case DataGridView1.Rows(x).Cells(1).Value
 
-                    Case "arriba-derecha"
-                        zona = "1"
                     Case "arriba-izquierda"
+                        zona = "1"
+                    Case "arriba-derecha"
                         zona = "2"
                     Case "abajo-derecha"
                         zona = "3"

@@ -65,9 +65,9 @@
     Dim diente47 As Integer = 0
     Dim diente48 As Integer = 0
     Dim zona1 As String = "arriba-izquierda"
-    Dim zona2 As String = "ariba-derecha"
-    Dim zona3 As String = "abajo-izquierda"
-    Dim zona4 As String = "abajo-derecha"
+    Dim zona2 As String = "arriba-derecha"
+    Dim zona3 As String = "abajo-derecha"
+    Dim zona4 As String = "abajo-izquierda"
     Dim diente11f As String
     Dim diente12f As String
     Dim diente13f As String
@@ -100,6 +100,7 @@
     Dim diente46f As String
     Dim diente47f As String
     Dim diente48f As String
+
 
 
     Private Sub imgdiente1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbDiente18.Click
@@ -1036,4 +1037,351 @@
 
     
 
+    Private Sub marcar_cita_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim zona As String = ""
+        Try
+            Consulta = "Select descripcion, zona, nro_diente from registro_medico where id_p = '" + Str(id_p) + "';"
+            consultar()
+            DataGridView1.DataSource = Tabla
+
+            For x As Integer = 0 To DataGridView1.RowCount - 1
+                zona = ""
+                If Not IsDBNull(DataGridView1.Rows(x).Cells(1).Value) Then
+
+                    Select Case DataGridView1.Rows(x).Cells(1).Value
+
+                        Case "arriba-izquierda"
+                            zona = "1"
+                        Case "arriba-derecha"
+                            zona = "2"
+                        Case "abajo-derecha"
+                            zona = "3"
+                        Case "abajo-izquierda"
+                            zona = "4"
+
+                    End Select
+
+                    zona += DataGridView1.Rows(x).Cells(2).Value.ToString
+
+
+
+                    Select Case zona
+                        Case "11"
+
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente11.Image = My.Resources._1a
+                                Case "precaucion"
+                                    pbDiente11.Image = My.Resources._1aa
+                                Case "ausente"
+                                    pbDiente11.Image = My.Resources._1na
+                                Case "normal"
+                                    pbDiente11.Image = My.Resources._1b
+                            End Select
+                        Case "12"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente12.Image = My.Resources._2a
+                                Case "precaucion"
+                                    pbDiente12.Image = My.Resources._2aa
+                                Case "ausente"
+                                    pbDiente12.Image = My.Resources._2na
+                            End Select
+                        Case "13"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente13.Image = My.Resources._3a
+                                Case "precaucion"
+                                    pbDiente13.Image = My.Resources._3aa
+                                Case "ausente"
+                                    pbDiente13.Image = My.Resources._3na
+                            End Select
+                        Case "14"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente14.Image = My.Resources._4a
+                                Case "precaucion"
+                                    pbDiente14.Image = My.Resources._4aa
+                                Case "ausente"
+                                    pbDiente14.Image = My.Resources._4na
+                            End Select
+                        Case "15"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente15.Image = My.Resources._5a
+                                Case "precaucion"
+                                    pbDiente15.Image = My.Resources._5aa
+                                Case "ausente"
+                                    pbDiente15.Image = My.Resources._5na
+                            End Select
+                        Case "16"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente16.Image = My.Resources._6a
+                                Case "precaucion"
+                                    pbDiente16.Image = My.Resources._6aa
+                                Case "ausente"
+                                    pbDiente16.Image = My.Resources._6na
+                            End Select
+                        Case "17"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente17.Image = My.Resources._7a
+                                Case "precaucion"
+                                    pbDiente17.Image = My.Resources._7aa
+                                Case "ausente"
+                                    pbDiente17.Image = My.Resources._7na
+                            End Select
+                        Case "18"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente18.Image = My.Resources._8a
+                                Case "precaucion"
+                                    pbDiente18.Image = My.Resources._8aa
+                                Case "ausente"
+                                    pbDiente18.Image = My.Resources._8na
+                            End Select
+
+
+                            ''arriba izquierda
+
+
+
+                        Case "21"
+
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente21.Image = My.Resources._1a
+                                Case "precaucion"
+                                    pbDiente21.Image = My.Resources._1aa
+                                Case "ausente"
+                                    pbDiente21.Image = My.Resources._1na
+                            End Select
+                        Case "22"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente22.Image = My.Resources._2a
+                                Case "precaucion"
+                                    pbDiente22.Image = My.Resources._2aa
+                                Case "ausente"
+                                    pbDiente22.Image = My.Resources._2na
+                            End Select
+                        Case "23"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente23.Image = My.Resources._3a
+                                Case "precaucion"
+                                    pbDiente23.Image = My.Resources._3aa
+                                Case "ausente"
+                                    pbDiente23.Image = My.Resources._3a
+                            End Select
+                        Case "24"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente24.Image = My.Resources._4a
+                                Case "precaucion"
+                                    pbDiente24.Image = My.Resources._4aa
+                                Case "ausente"
+                                    pbDiente24.Image = My.Resources._4na
+                            End Select
+                        Case "25"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente25.Image = My.Resources._5a
+                                Case "precaucion"
+                                    pbDiente25.Image = My.Resources._5aa
+                                Case "ausente"
+                                    pbDiente25.Image = My.Resources._5na
+                            End Select
+                        Case "26"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente26.Image = My.Resources._6a
+                                Case "precaucion"
+                                    pbDiente26.Image = My.Resources._6aa
+                                Case "ausente"
+                                    pbDiente26.Image = My.Resources._6na
+                            End Select
+                        Case "27"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente27.Image = My.Resources._7a
+                                Case "precaucion"
+                                    pbDiente27.Image = My.Resources._7aa
+                                Case "ausente"
+                                    pbDiente27.Image = My.Resources._7na
+                            End Select
+                        Case "28"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente28.Image = My.Resources._8a
+                                Case "precaucion"
+                                    pbDiente28.Image = My.Resources._8aa
+                                Case "ausente"
+                                    pbDiente28.Image = My.Resources._8na
+                            End Select
+
+
+
+                            ''abajo derecha
+
+                        Case "31"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente31.Image = My.Resources._1b
+                                Case "precaucion"
+                                    pbDiente31.Image = My.Resources._1ab
+                                Case "ausente"
+                                    pbDiente31.Image = My.Resources._1na
+                            End Select
+
+                        Case "32"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente32.Image = My.Resources._2b
+                                Case "precaucion"
+                                    pbDiente32.Image = My.Resources._2ab
+                                Case "ausente"
+                                    pbDiente32.Image = My.Resources._2na
+                            End Select
+                        Case "33"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente33.Image = My.Resources._3b
+                                Case "precaucion"
+                                    pbDiente33.Image = My.Resources._3ab
+                                Case "ausente"
+                                    pbDiente33.Image = My.Resources._3na
+                            End Select
+                        Case "34"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente34.Image = My.Resources._4b
+                                Case "precaucion"
+                                    pbDiente34.Image = My.Resources._4ab
+                                Case "ausente"
+                                    pbDiente34.Image = My.Resources._4na
+                            End Select
+                        Case "35"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente35.Image = My.Resources._5b
+                                Case "precaucion"
+                                    pbDiente35.Image = My.Resources._5ab
+                                Case "ausente"
+                                    pbDiente35.Image = My.Resources._5na
+                            End Select
+                        Case "36"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente36.Image = My.Resources._6b
+                                Case "precaucion"
+                                    pbDiente36.Image = My.Resources._6ab
+                                Case "ausente"
+                                    pbDiente36.Image = My.Resources._6na
+                            End Select
+                        Case "37"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente37.Image = My.Resources._7b
+                                Case "precaucion"
+                                    pbDiente37.Image = My.Resources._7ab
+                                Case "ausente"
+                                    pbDiente37.Image = My.Resources._7na
+                            End Select
+                        Case "38"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente38.Image = My.Resources._8b
+                                Case "precaucion"
+                                    pbDiente38.Image = My.Resources._8ab
+                                Case "ausente"
+                                    pbDiente38.Image = My.Resources._8na
+                            End Select
+
+                            ''abajo izquierda
+
+
+                        Case "41"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente41.Image = My.Resources._1b
+                                Case "precaucion"
+                                    pbDiente41.Image = My.Resources._1ab
+                                Case "ausente"
+                                    pbDiente41.Image = My.Resources._1nb
+                            End Select
+                        Case "42"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente42.Image = My.Resources._2b
+                                Case "precaucion"
+                                    pbDiente42.Image = My.Resources._2ab
+                                Case "ausente"
+                                    pbDiente42.Image = My.Resources._2nb
+                            End Select
+                        Case "43"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente43.Image = My.Resources._3b
+                                Case "precaucion"
+                                    pbDiente43.Image = My.Resources._3ab
+                                Case "ausente"
+                                    pbDiente43.Image = My.Resources._3nb
+                            End Select
+                        Case "44"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente44.Image = My.Resources._4b
+                                Case "precaucion"
+                                    pbDiente44.Image = My.Resources._4ab
+                                Case "ausente"
+                                    pbDiente44.Image = My.Resources._4nb
+                            End Select
+                        Case "45"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente45.Image = My.Resources._5b
+                                Case "precaucion"
+                                    pbDiente45.Image = My.Resources._5ab
+                                Case "ausente"
+                                    pbDiente45.Image = My.Resources._5nb
+                            End Select
+                        Case "46"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente46.Image = My.Resources._6b
+                                Case "precaucion"
+                                    pbDiente46.Image = My.Resources._6ab
+                                Case "ausente"
+                                    pbDiente46.Image = My.Resources._6nb
+                            End Select
+                        Case "47"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente47.Image = My.Resources._7b
+                                Case "precaucion"
+                                    pbDiente47.Image = My.Resources._7ab
+                                Case "ausente"
+                                    pbDiente47.Image = My.Resources._7nb
+                            End Select
+                        Case "48"
+                            Select Case DataGridView1.Rows(x).Cells(0).Value
+                                Case "alerta"
+                                    pbDiente48.Image = My.Resources._8b
+                                Case "precaucion"
+                                    pbDiente48.Image = My.Resources._8ab
+                                Case "ausente"
+                                    pbDiente48.Image = My.Resources._8nb
+                            End Select
+                    End Select
+
+                End If
+            Next
+
+        Catch ex As Exception
+            MsgBox("Error al cargar el estado de los dientes", MsgBoxStyle.Exclamation)
+        End Try
+       
+    End Sub
 End Class
