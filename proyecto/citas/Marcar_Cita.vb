@@ -324,7 +324,7 @@
     Private Sub imgdiente10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbDiente22.Click
         diente22 = diente22 + 1
         cambiador22 = True
-        Select Case diente21
+        Select Case diente22
             Case 0
                 pbDiente22.Image = My.Resources.AI2
                 diente22f = "normal"
