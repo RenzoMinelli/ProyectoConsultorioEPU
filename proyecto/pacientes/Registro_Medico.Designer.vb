@@ -74,7 +74,6 @@ Partial Class Registro_Medico
         Me.pbai3 = New System.Windows.Forms.PictureBox()
         Me.pbai2 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -675,20 +674,11 @@ Partial Class Registro_Medico
         Me.Panel3.Size = New System.Drawing.Size(684, 18)
         Me.Panel3.TabIndex = 21
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(351, 413)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 49
-        '
         'Registro_Medico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label38)
         Me.Controls.Add(Me.Label37)
@@ -796,5 +786,4 @@ Partial Class Registro_Medico
     Friend WithEvents pbbi1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class

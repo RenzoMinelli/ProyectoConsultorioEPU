@@ -908,7 +908,7 @@
             consultar()
         End If
         If cambiador8 = True Then
-            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c) values ('" + id_p.ToString + "','" + diente8f + "','" + zona1 + "', '8', '" + Citas.idcita + "');")
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c) values ('" + id_p.ToString + "','" + diente8f + "','" + zona1 + "', '8', '" + Citas.idcita.ToString + "');")
             consultar()
         End If
 
