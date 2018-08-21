@@ -83,6 +83,12 @@
         btnRegistroMedico.Visible = False
         btnRealizarPago.Visible = False
 
+        If estado = 0 Then
+            btnIngresarPaciente.Visible = False
+        Else
+            btnIngresarPaciente.Visible = True
+        End If
+
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCambiarEstado.Click

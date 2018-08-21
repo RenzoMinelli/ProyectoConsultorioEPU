@@ -22,7 +22,7 @@ Partial Class Registro_Medico
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel55 = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -169,7 +169,7 @@ Partial Class Registro_Medico
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(497, 24)
+        Me.Label1.Location = New System.Drawing.Point(525, 24)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(76, 24)
         Me.Label1.TabIndex = 6
@@ -178,7 +178,7 @@ Partial Class Registro_Medico
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Black
-        Me.Panel4.Location = New System.Drawing.Point(445, 19)
+        Me.Panel4.Location = New System.Drawing.Point(473, 19)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(42, 28)
         Me.Panel4.TabIndex = 5
@@ -186,7 +186,7 @@ Partial Class Registro_Medico
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(366, 23)
+        Me.Label4.Location = New System.Drawing.Point(394, 23)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 24)
         Me.Label4.TabIndex = 4
@@ -195,7 +195,7 @@ Partial Class Registro_Medico
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Location = New System.Drawing.Point(314, 18)
+        Me.Panel1.Location = New System.Drawing.Point(342, 18)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(42, 28)
         Me.Panel1.TabIndex = 3
@@ -203,7 +203,7 @@ Partial Class Registro_Medico
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(194, 22)
+        Me.Label3.Location = New System.Drawing.Point(222, 22)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(106, 24)
         Me.Label3.TabIndex = 3
@@ -212,7 +212,7 @@ Partial Class Registro_Medico
         'Panel0000
         '
         Me.Panel0000.BackColor = System.Drawing.Color.Yellow
-        Me.Panel0000.Location = New System.Drawing.Point(143, 18)
+        Me.Panel0000.Location = New System.Drawing.Point(171, 18)
         Me.Panel0000.Name = "Panel0000"
         Me.Panel0000.Size = New System.Drawing.Size(42, 28)
         Me.Panel0000.TabIndex = 2
@@ -220,7 +220,7 @@ Partial Class Registro_Medico
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(70, 18)
+        Me.Label2.Location = New System.Drawing.Point(98, 18)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(51, 24)
         Me.Label2.TabIndex = 1
@@ -229,7 +229,7 @@ Partial Class Registro_Medico
         'Panel000
         '
         Me.Panel000.BackColor = System.Drawing.Color.Red
-        Me.Panel000.Location = New System.Drawing.Point(22, 18)
+        Me.Panel000.Location = New System.Drawing.Point(50, 18)
         Me.Panel000.Name = "Panel000"
         Me.Panel000.Size = New System.Drawing.Size(42, 26)
         Me.Panel000.TabIndex = 0
@@ -242,15 +242,15 @@ Partial Class Registro_Medico
         Me.DataGridView2.AllowUserToResizeRows = False
         Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle1.NullValue = "-NADA-"
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.NullValue = "-NADA-"
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView2.Location = New System.Drawing.Point(16, 356)
         Me.DataGridView2.MultiSelect = False
         Me.DataGridView2.Name = "DataGridView2"
