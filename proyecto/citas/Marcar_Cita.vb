@@ -955,7 +955,7 @@
 
 
         If cambiador17 = True Then
-            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente17f + "','" + zona3 + "','diente 3-1','','" + Citas.idcita + "','');")
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c) values ('" + id_p.ToString + "','" + diente17f + "','" + zona3 + "', '1', '" + Citas.idcita + "');")
             consultar()
         End If
         If cambiador18 = True Then

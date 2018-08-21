@@ -19,6 +19,7 @@
         'Cuando carga el formulario Paciente, se actualiza el dgbPacientes con los pacientes activos
         actTabla(1)
 
+        'Establezco como debe cargar el txbBusqueda
         txbBusqueda.ForeColor = Color.Gray
         txbBusqueda.Text = "Buscar"
     End Sub

@@ -6,7 +6,7 @@
     Public fechita As String
 
     Dim cita As String
-    Dim frmContenedor As New Form
+
     Dim fecha As String
 
 
@@ -50,7 +50,10 @@
 
         fechita = fecha
         Me.Hide()
-        marcar_cita.Show()
+        frmContenedor = marcar_cita
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
 
     End Sub
 
