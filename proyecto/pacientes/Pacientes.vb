@@ -50,9 +50,9 @@
         Try
             Consulta = "SELECT * FROM paciente where estado = '" + estado + "';"
             consultar()
+            dgbPacientes.DataSource = Tabla
 
             'Ocultamos todas las columnas que no nos interesa que el usuario visualice
-            dgbPacientes.DataSource = Tabla
             dgbPacientes.Columns(0).Visible = False
             dgbPacientes.Columns(2).Visible = False
             dgbPacientes.Columns(4).Visible = False

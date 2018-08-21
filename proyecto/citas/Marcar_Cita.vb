@@ -818,7 +818,7 @@
     Private Sub bttoningrdientes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bttoningrdientes.Click
         ' zona1 arriba-izquierda(diente 1 a 8):
         If cambiador1 = True Then
-            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + Citas.idpaciente + "','" + diente1f + "','" + zona1 + "','diente 1-1','','" + id_c + "','');")
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p.ToString + "','" + diente1f + "','" + zona1 + "','diente 1-1','','" + id_c + "','');")
             consultar()
         End If
 
@@ -830,8 +830,7 @@
         Me.Dispose()
     End Sub
 
-    Private Sub marcar_cita_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    End Sub
+    
 
     Private Sub marcar_cita_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 

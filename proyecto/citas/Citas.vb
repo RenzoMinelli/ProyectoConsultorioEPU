@@ -4,7 +4,7 @@
     'Me.Cursor = New Cursor(a.Handle)
     Public idcita As Integer
     Public fechita As String
-    Public idpaciente As Integer
+
     Dim cita As String
     Dim frmContenedor As New Form
     Dim fecha As String
@@ -47,7 +47,7 @@
 
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        idpaciente = id_p
+
         fechita = fecha
         Me.Hide()
         marcar_cita.Show()
@@ -57,14 +57,21 @@
 
     Private Sub DataGridView1_CellMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles DataGridView1.CellMouseClick
         Button2.Visible = True
+        'Aca le asigno el valor a idPaciente y de idCita cuando se hace click en la tabla
+        idcita = DataGridView1.CurrentRow.Cells(3).Value
+        'Mira que id_p es una variable global que se usa en todo el programa, no es necesario crear otra xd
+        id_p = DataGridView1.CurrentRow.Cells(4).Value
     End Sub
 
     Public Sub actualizador()
         fecha = MonthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")
         Try
-            Consulta = "select date_format(hora, '%H:%i') as 'Hora', nombre as 'Nombre', descripcion as 'Descripcion' from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + fecha + "';"
+            'Agregue 2 columnas, id_c y id_p para poder acceder a la id de estas al hacer click en la tabla
+            Consulta = "select date_format(hora, '%H:%i') as 'Hora', nombre as 'Nombre', descripcion as 'Descripcion', id_c, p.id_p from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + fecha + "';"
             consultar()
             DataGridView1.DataSource = Tabla
+            'Oculto las columnas que tienen el id de cita y de paciente
+            DataGridView1.Columns(3).Visible = False
             DataGridView1.Columns(4).Visible = False
         Catch ex As Exception
             MsgBox(ex.ToString)
