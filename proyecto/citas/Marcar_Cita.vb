@@ -372,6 +372,12 @@
 
 
     Private Sub imgdientenor4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbDiente24.Click
+        ''''''''''''''''''''''
+        ''''''''''''''''''''''
+        '''''''''''''''''''''' LA IMAGEN AI4N DEBERIA SER NEGRA PERO ES LA ROJA POR LO CUAL ESTAN INVERTIDAS
+        ''''''''''''''''''''''
+        ''''''''''''''''''''''
+        ''''''''''''''''''''''
         diente24 = diente24 + 1
         cambiador24 = True
         Select Case diente24
@@ -382,10 +388,10 @@
                 pbDiente24.Image = My.Resources.AI4a
                 diente24f = "precaucion"
             Case 2
-                pbDiente24.Image = My.Resources.AI4r
+                pbDiente24.Image = My.Resources.AI4n
                 diente24f = "alerta"
             Case 3
-                pbDiente24.Image = My.Resources.AI4n
+                pbDiente24.Image = My.Resources.AI4r
                 diente24f = "ausente"
             Case 4
                 pbDiente24.Image = My.Resources.AI4
