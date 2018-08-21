@@ -82,16 +82,16 @@
     <Compile Include="atribuciones\atribuciones.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\agregarcitas2.Designer.vb">
-      <DependentUpon>agregarcitas2.vb</DependentUpon>
+    <Compile Include="citas\Agregar_Cita.Designer.vb">
+      <DependentUpon>Agregar_Cita.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\agregarcitas2.vb">
+    <Compile Include="citas\Agregar_Cita.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\marcar cita.Designer.vb">
-      <DependentUpon>marcar cita.vb</DependentUpon>
+    <Compile Include="citas\Marcar_Cita.Designer.vb">
+      <DependentUpon>Marcar_Cita.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\marcar cita.vb">
+    <Compile Include="citas\Marcar_Cita.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="finanzas\finanzas.Designer.vb">
@@ -196,10 +196,10 @@
       <DependentUpon>Pacientes.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\Agregar_Paciente.Designer.vb">
-      <DependentUpon>Agregar_Paciente.vb</DependentUpon>
+    <Compile Include="pacientes\Ingresar_Paciente.Designer.vb">
+      <DependentUpon>Ingresar_Paciente.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\Agregar_Paciente.vb">
+    <Compile Include="pacientes\Ingresar_Paciente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -224,11 +224,11 @@
     <EmbeddedResource Include="atribuciones\atribuciones.resx">
       <DependentUpon>atribuciones.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\agregarcitas2.resx">
-      <DependentUpon>agregarcitas2.vb</DependentUpon>
+    <EmbeddedResource Include="citas\Agregar_Cita.resx">
+      <DependentUpon>Agregar_Cita.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\marcar cita.resx">
-      <DependentUpon>marcar cita.vb</DependentUpon>
+    <EmbeddedResource Include="citas\Marcar_Cita.resx">
+      <DependentUpon>Marcar_Cita.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="finanzas\finanzas.resx">
       <DependentUpon>finanzas.vb</DependentUpon>
@@ -278,8 +278,8 @@
     <EmbeddedResource Include="pacientes\Pacientes.resx">
       <DependentUpon>Pacientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\Agregar_Paciente.resx">
-      <DependentUpon>Agregar_Paciente.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\Ingresar_Paciente.resx">
+      <DependentUpon>Ingresar_Paciente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

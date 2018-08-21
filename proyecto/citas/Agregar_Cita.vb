@@ -1,4 +1,4 @@
-﻿Public Class agregarcitas2
+﻿Public Class Agregar_Cita
     Dim h As String
     Dim fc As String
     Dim nombre As String
