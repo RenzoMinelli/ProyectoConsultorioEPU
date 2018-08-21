@@ -22,6 +22,7 @@ Partial Class marcar_cita
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.bttoningrdientes = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label37 = New System.Windows.Forms.Label()
@@ -59,10 +60,16 @@ Partial Class marcar_cita
         Me.imgdiente4 = New System.Windows.Forms.PictureBox()
         Me.imgdiente2 = New System.Windows.Forms.PictureBox()
         Me.imgdiente3 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel01477 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel0000 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel000 = New System.Windows.Forms.Panel()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel2.SuspendLayout()
         CType(Me.imgdiente31, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgdiente16, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,6 +103,8 @@ Partial Class marcar_cita
         CType(Me.imgdiente4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgdiente2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgdiente3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel01477.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'bttoningrdientes
@@ -111,7 +120,7 @@ Partial Class marcar_cita
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel3.Location = New System.Drawing.Point(67, 144)
+        Me.Panel3.Location = New System.Drawing.Point(87, 139)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(684, 18)
         Me.Panel3.TabIndex = 50
@@ -120,7 +129,7 @@ Partial Class marcar_cita
         '
         Me.Label37.AutoSize = True
         Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(330, 36)
+        Me.Label37.Location = New System.Drawing.Point(350, 31)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(168, 24)
         Me.Label37.TabIndex = 51
@@ -129,7 +138,7 @@ Partial Class marcar_cita
         'Panel55
         '
         Me.Panel55.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel55.Location = New System.Drawing.Point(401, 60)
+        Me.Panel55.Location = New System.Drawing.Point(421, 55)
         Me.Panel55.Name = "Panel55"
         Me.Panel55.Size = New System.Drawing.Size(17, 192)
         Me.Panel55.TabIndex = 49
@@ -169,7 +178,7 @@ Partial Class marcar_cita
         Me.Panel2.Controls.Add(Me.imgdiente4)
         Me.Panel2.Controls.Add(Me.imgdiente2)
         Me.Panel2.Controls.Add(Me.imgdiente3)
-        Me.Panel2.Location = New System.Drawing.Point(67, 57)
+        Me.Panel2.Location = New System.Drawing.Point(87, 52)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(684, 195)
         Me.Panel2.TabIndex = 52
@@ -495,55 +504,124 @@ Partial Class marcar_cita
         Me.imgdiente3.TabIndex = 36
         Me.imgdiente3.TabStop = False
         '
-        'Label2
+        'Panel01477
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(62, 13)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(104, 25)
-        Me.Label2.TabIndex = 53
-        Me.Label2.Text = "noroeste"
+        Me.Panel01477.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Panel01477.Controls.Add(Me.Label1)
+        Me.Panel01477.Controls.Add(Me.Panel4)
+        Me.Panel01477.Controls.Add(Me.Label4)
+        Me.Panel01477.Controls.Add(Me.Panel1)
+        Me.Panel01477.Controls.Add(Me.Label3)
+        Me.Panel01477.Controls.Add(Me.Panel0000)
+        Me.Panel01477.Controls.Add(Me.Label2)
+        Me.Panel01477.Controls.Add(Me.Panel000)
+        Me.Panel01477.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel01477.Location = New System.Drawing.Point(87, 300)
+        Me.Panel01477.Name = "Panel01477"
+        Me.Panel01477.Size = New System.Drawing.Size(684, 71)
+        Me.Panel01477.TabIndex = 53
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(710, 13)
+        Me.Label1.Location = New System.Drawing.Point(497, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(91, 25)
-        Me.Label1.TabIndex = 54
-        Me.Label1.Text = "noreste"
+        Me.Label1.Size = New System.Drawing.Size(76, 24)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Faltante"
         '
-        'Label3
+        'Panel4
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(65, 317)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(103, 25)
-        Me.Label3.TabIndex = 55
-        Me.Label3.Text = "suroeste"
+        Me.Panel4.BackColor = System.Drawing.Color.Black
+        Me.Panel4.Location = New System.Drawing.Point(445, 19)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(42, 28)
+        Me.Panel4.TabIndex = 5
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(710, 317)
+        Me.Label4.Location = New System.Drawing.Point(366, 23)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(90, 25)
-        Me.Label4.TabIndex = 56
-        Me.Label4.Text = "sureste"
+        Me.Label4.Size = New System.Drawing.Size(71, 24)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Normal"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Location = New System.Drawing.Point(314, 18)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(42, 28)
+        Me.Panel1.TabIndex = 3
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(194, 22)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(106, 24)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Precaucion"
+        '
+        'Panel0000
+        '
+        Me.Panel0000.BackColor = System.Drawing.Color.Yellow
+        Me.Panel0000.Location = New System.Drawing.Point(143, 18)
+        Me.Panel0000.Name = "Panel0000"
+        Me.Panel0000.Size = New System.Drawing.Size(42, 28)
+        Me.Panel0000.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(70, 18)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(51, 24)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Malo"
+        '
+        'Panel000
+        '
+        Me.Panel000.BackColor = System.Drawing.Color.Red
+        Me.Panel000.Location = New System.Drawing.Point(22, 18)
+        Me.Panel000.Name = "Panel000"
+        Me.Panel000.Size = New System.Drawing.Size(42, 26)
+        Me.Panel000.TabIndex = 0
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToOrderColumns = True
+        Me.DataGridView1.AllowUserToResizeColumns = False
+        Me.DataGridView1.AllowUserToResizeRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView1.Size = New System.Drawing.Size(10, 10)
+        Me.DataGridView1.TabIndex = 54
+        Me.DataGridView1.Visible = False
         '
         'marcar_cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(873, 596)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label37)
         Me.Controls.Add(Me.Panel55)
@@ -585,6 +663,9 @@ Partial Class marcar_cita
         CType(Me.imgdiente4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgdiente2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgdiente3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel01477.ResumeLayout(False)
+        Me.Panel01477.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -626,8 +707,14 @@ Partial Class marcar_cita
     Friend WithEvents imgdiente4 As System.Windows.Forms.PictureBox
     Friend WithEvents imgdiente2 As System.Windows.Forms.PictureBox
     Friend WithEvents imgdiente3 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Panel01477 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Panel0000 As System.Windows.Forms.Panel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Panel000 As System.Windows.Forms.Panel
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
 End Class

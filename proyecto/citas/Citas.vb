@@ -3,6 +3,7 @@
     ' a = My.Resources.rambocursor
     'Me.Cursor = New Cursor(a.Handle)
     Public idcita As Integer
+    Public fechita As String
     Public idpaciente As Integer
     Dim cita As String
     Dim frmContenedor As New Form
@@ -46,6 +47,8 @@
 
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        idpaciente = id_p
+        fechita = fecha
         Me.Hide()
         marcar_cita.Show()
 
@@ -62,9 +65,11 @@
             Consulta = "select date_format(hora, '%H:%i') as 'Hora', nombre as 'Nombre', descripcion as 'Descripcion' from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + fecha + "';"
             consultar()
             DataGridView1.DataSource = Tabla
-
+            DataGridView1.Columns(4).Visible = False
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
     End Sub
+
+
 End Class
