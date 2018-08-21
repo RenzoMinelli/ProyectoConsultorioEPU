@@ -21,7 +21,6 @@
 
             DataGridView1.Columns(2).Width = 310
 
-            DataGridView1.DefaultCellStyle.Font = New Font("Microsoft Sans Serif", 15)
         Catch ex As Exception
 
         End Try
