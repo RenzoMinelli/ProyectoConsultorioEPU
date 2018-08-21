@@ -130,6 +130,7 @@
 
     Private Sub imgdiente2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente2.Click
         diente2 = diente2 + 1
+        cambiador2 = True
         Select Case diente2
             Case 0
                 imgdiente2.Image = My.Resources.AD71
@@ -147,11 +148,13 @@
                 imgdiente2.Image = My.Resources.AD71
                 diente2f = "blanco"
                 diente2 = 0
+                cambiador2 = False
         End Select
     End Sub
 
     Private Sub imgdiente3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente3.Click
         diente3 = diente3 + 1
+        cambiador3 = True
         Select Case diente3
             Case 0
                 imgdiente3.Image = My.Resources.AD6
@@ -169,11 +172,13 @@
                 imgdiente3.Image = My.Resources.AD6
                 diente3f = "blanco"
                 diente3 = 0
+                cambiador3 = False
         End Select
     End Sub
 
     Private Sub imgdiente4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente4.Click
         diente4 = diente4 + 1
+        cambiador4 = True
         Select Case diente4
             Case 0
                 imgdiente4.Image = My.Resources.AD5
@@ -191,11 +196,13 @@
                 imgdiente4.Image = My.Resources.AD5
                 diente4 = 0
                 diente4f = "blanco"
+                cambiador4 = False
         End Select
     End Sub
 
     Private Sub imgdiente5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente5.Click
         diente5 = diente5 + 1
+        cambiador5 = True
         Select Case diente5
             Case 0
                 imgdiente5.Image = My.Resources.AD4
@@ -213,11 +220,13 @@
                 imgdiente5.Image = My.Resources.AD4
                 diente5 = 0
                 diente5f = "blanco"
+                cambiador5 = False
         End Select
     End Sub
 
     Private Sub imgdiente6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente6.Click
         diente6 = diente6 + 1
+        cambiador6 = True
         Select Case diente6
             Case 0
                 imgdiente6.Image = My.Resources.AD3
@@ -236,11 +245,13 @@
                 imgdiente6.Image = My.Resources.AD3
                 diente6 = 0
                 diente6f = "blanco"
+                cambiador6 = False
         End Select
     End Sub
 
     Private Sub imgdiente7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente7.Click
         diente7 = diente7 + 1
+        cambiador7 = True
         Select Case diente7
             Case 0
                 imgdiente7.Image = My.Resources.AD2
@@ -258,11 +269,13 @@
                 imgdiente7.Image = My.Resources.AD2
                 diente7 = 0
                 diente7f = "blanco"
+                cambiador7 = False
         End Select
     End Sub
 
     Private Sub imgdiente8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente8.Click
         diente8 = diente8 + 1
+        cambiador8 = True
         Select Case diente8
             Case 0
                 imgdiente8.Image = My.Resources.AD1
@@ -280,11 +293,13 @@
                 imgdiente8.Image = My.Resources.AD1
                 diente8 = 0
                 diente8f = "blanco"
+                cambiador8 = False
         End Select
     End Sub
 
     Private Sub imgdiente9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente9.Click
         diente9 = diente9 + 1
+        cambiador9 = True
         Select Case diente9
             Case 0
                 imgdiente9.Image = My.Resources.AI1
@@ -302,11 +317,13 @@
                 imgdiente9.Image = My.Resources.AI1
                 diente9 = 0
                 diente9f = "blanco"
+                cambiador9 = False
         End Select
     End Sub
 
     Private Sub imgdiente10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente10.Click
         diente10 = diente10 + 1
+        cambiador10 = True
         Select Case diente10
             Case 0
                 imgdiente10.Image = My.Resources.AI2
@@ -324,12 +341,14 @@
                 imgdiente10.Image = My.Resources.AI2
                 diente10 = 0
                 diente10f = "blanco"
+                cambiador10 = False
         End Select
 
     End Sub
 
     Private Sub imgdiente11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente11.Click
         diente11 = diente11 + 1
+        cambiador11 = True
         Select Case diente11
             Case 0
                 imgdiente11.Image = My.Resources.AI3
@@ -347,12 +366,14 @@
                 imgdiente11.Image = My.Resources.AI3
                 diente11 = 0
                 diente11f = "blanco"
+                cambiador11 = False
         End Select
     End Sub
 
 
     Private Sub imgdientenor4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdientenor4.Click
         diente12 = diente12 + 1
+        cambiador12 = True
         Select Case diente12
             Case 0
                 imgdientenor4.Image = My.Resources.AI4
@@ -370,11 +391,13 @@
                 imgdientenor4.Image = My.Resources.AI4
                 diente12 = 0
                 diente12f = "blanco"
+                cambiador12 = False
         End Select
     End Sub
 
     Private Sub imgdiente12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente12.Click
         diente13 = diente13 + 1
+        cambiador13 = True
         Select Case diente13
             Case 0
                 imgdiente12.Image = My.Resources.AI5
@@ -392,11 +415,13 @@
                 imgdiente12.Image = My.Resources.AI5
                 diente13 = 0
                 diente13f = "blanco"
+                cambiador13 = False
         End Select
     End Sub
 
     Private Sub imgdiente13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente13.Click
         diente14 = diente14 + 1
+        cambiador14 = True
         Select Case diente14
             Case 0
                 imgdiente13.Image = My.Resources.AI6
@@ -414,11 +439,13 @@
                 imgdiente13.Image = My.Resources.AI6
                 diente14 = 0
                 diente14f = "blanco"
+                cambiador14 = False
         End Select
     End Sub
 
     Private Sub imgdiente14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente14.Click
         diente15 = diente15 + 1
+        cambiador15 = True
         Select Case diente15
             Case 0
                 imgdiente14.Image = My.Resources.AI7
@@ -436,11 +463,13 @@
                 imgdiente14.Image = My.Resources.AI7
                 diente15 = 0
                 diente15f = "blanco"
+                cambiador15 = False
         End Select
     End Sub
 
     Private Sub imgdiente15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente15.Click
         diente16 = diente16 + 1
+        cambiador16 = True
         Select Case diente16
             Case 0
                 imgdiente15.Image = My.Resources.AI8
@@ -458,11 +487,13 @@
                 imgdiente15.Image = My.Resources.AI8
                 diente16 = 0
                 diente16f = "blanco"
+                cambiador16 = False
         End Select
     End Sub
 
     Private Sub imgdiente16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente16.Click
         diente17 = diente17 + 1
+        cambiador17 = True
         Select Case diente17
             Case 0
                 imgdiente16.Image = My.Resources.BD8
@@ -480,11 +511,13 @@
                 imgdiente16.Image = My.Resources.BD8
                 diente17 = 0
                 diente17f = "blanco"
+                cambiador17 = False
         End Select
     End Sub
 
     Private Sub imgdiente17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente17.Click
         diente18 = diente18 + 1
+        cambiador18 = True
         Select Case diente18
             Case 0
                 imgdiente17.Image = My.Resources.BD7
@@ -502,11 +535,13 @@
                 imgdiente17.Image = My.Resources.BD7
                 diente18 = 0
                 diente18f = "blanco"
+                cambiador18 = False
         End Select
     End Sub
 
     Private Sub imgdiente18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente18.Click
         diente19 = diente19 + 1
+        cambiador19 = True
         Select Case diente19
             Case 0
                 imgdiente18.Image = My.Resources.BD6
@@ -524,11 +559,13 @@
                 imgdiente18.Image = My.Resources.BD6
                 diente19 = 0
                 diente19f = "blanco"
+                cambiador19 = False
         End Select
     End Sub
 
     Private Sub imgdiente19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente19.Click
         diente20 = diente20 + 1
+        cambiador20 = True
         Select Case diente20
             Case 0
                 imgdiente19.Image = My.Resources.BD5
@@ -546,11 +583,13 @@
                 imgdiente19.Image = My.Resources.BD5
                 diente20 = 0
                 diente20f = "blanco"
+                cambiador20 = False
         End Select
     End Sub
 
     Private Sub imgdiente20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente20.Click
         diente21 = diente21 + 1
+        cambiador21 = True
         Select Case diente21
             Case 0
                 imgdiente20.Image = My.Resources.BD4
@@ -568,12 +607,14 @@
                 imgdiente20.Image = My.Resources.BD4
                 diente21 = 0
                 diente21f = "blanco"
+                cambiador21 = False
         End Select
     End Sub
 
 
     Private Sub imgdiente21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente21.Click
         diente22 = diente22 + 1
+        cambiador22 = True
         Select Case diente22
             Case 0
                 imgdiente21.Image = My.Resources.BD3
@@ -591,11 +632,13 @@
                 imgdiente21.Image = My.Resources.BD3
                 diente22 = 0
                 diente22f = "blanco"
+                cambiador22 = False
         End Select
     End Sub
 
     Private Sub imgdiente22_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente22.Click
         diente23 = diente23 + 1
+        cambiador23 = True
         Select Case diente23
             Case 0
                 imgdiente22.Image = My.Resources.BD2
@@ -613,11 +656,13 @@
                 imgdiente22.Image = My.Resources.BD2
                 diente23 = 0
                 diente23f = "blanco"
+                cambiador23 = False
         End Select
     End Sub
 
     Private Sub imgdiente23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente23.Click
         diente24 = diente24 + 1
+        cambiador24 = True
         Select Case diente24
             Case 0
                 imgdiente23.Image = My.Resources.BD1
@@ -635,11 +680,13 @@
                 imgdiente23.Image = My.Resources.BD1
                 diente24 = 0
                 diente24f = "blanco"
+                cambiador24 = False
         End Select
     End Sub
 
     Private Sub imgdiente24_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente24.Click
         diente25 = diente25 + 1
+        cambiador25 = True
         Select Case diente25
             Case 0
                 imgdiente24.Image = My.Resources.BI1
@@ -657,11 +704,13 @@
                 imgdiente24.Image = My.Resources.BD4
                 diente25 = 0
                 diente25f = "blanco"
+                cambiador25 = False
         End Select
     End Sub
 
     Private Sub imgdiente25_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente25.Click
         diente26 = diente26 + 1
+        cambiador26 = True
         Select Case diente26
             Case 0
                 imgdiente25.Image = My.Resources.BI2
@@ -679,11 +728,13 @@
                 imgdiente25.Image = My.Resources.BI2
                 diente26 = 0
                 diente26f = "blanco"
+                cambiador26 = False
         End Select
     End Sub
 
     Private Sub imgdiente26_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente26.Click
         diente27 = diente27 + 1
+        cambiador27 = True
         Select Case diente27
             Case 0
                 imgdiente26.Image = My.Resources.BI3
@@ -701,11 +752,13 @@
                 imgdiente26.Image = My.Resources.BI3
                 diente27 = 0
                 diente27f = "blanco"
+                cambiador27 = False
         End Select
     End Sub
 
     Private Sub imgdiente27_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente27.Click
         diente28 = diente28 + 1
+        cambiador28 = True
         Select Case diente28
             Case 0
                 imgdiente27.Image = My.Resources.BI4
@@ -723,11 +776,13 @@
                 imgdiente27.Image = My.Resources.BI4
                 diente28 = 0
                 diente28f = "blanco"
+                cambiador28 = False
         End Select
     End Sub
 
     Private Sub imgdiente28_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente28.Click
         diente29 = diente29 + 1
+        cambiador29 = True
         Select Case diente29
             Case 0
                 imgdiente28.Image = My.Resources.BI5
@@ -745,11 +800,13 @@
                 imgdiente28.Image = My.Resources.BI5
                 diente29 = 0
                 diente29f = "blanco"
+                cambiador29 = False
         End Select
     End Sub
 
     Private Sub imgdiente29_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente29.Click
         diente30 = diente30 + 1
+        cambiador30 = True
         Select Case diente30
             Case 0
                 imgdiente29.Image = My.Resources.BI6
@@ -767,11 +824,13 @@
                 imgdiente29.Image = My.Resources.BI6
                 diente30 = 0
                 diente30f = "blanco"
+                cambiador30 = False
         End Select
     End Sub
 
     Private Sub imgdiente30_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente30.Click
         diente31 = diente31 + 1
+        cambiador31 = True
         Select Case diente31
             Case 0
                 imgdiente30.Image = My.Resources.BI7
@@ -789,11 +848,13 @@
                 imgdiente30.Image = My.Resources.BI7
                 diente31 = 0
                 diente31f = "blanco"
+                cambiador31 = False
         End Select
     End Sub
 
     Private Sub imgdiente31_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgdiente31.Click
         diente32 = diente32 + 1
+        cambiador32 = True
         Select Case diente32
             Case 0
                 imgdiente31.Image = My.Resources.BI8
@@ -811,6 +872,7 @@
                 imgdiente31.Image = My.Resources.BI8
                 diente32 = 0
                 diente31f = "blanco"
+                cambiador32 = False
         End Select
     End Sub
 
@@ -818,13 +880,150 @@
     Private Sub bttoningrdientes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bttoningrdientes.Click
         ' zona1 arriba-izquierda(diente 1 a 8):
         If cambiador1 = True Then
-            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p.ToString + "','" + diente1f + "','" + zona1 + "','diente 1-1','','" + id_c + "','');")
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente1f + "','" + zona1 + "','diente 1-1','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador2 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente2f + "','" + zona1 + "','diente 1-2','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador3 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente3f + "','" + zona1 + "','diente 1-3','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador4 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente4f + "','" + zona1 + "','diente 1-4','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador5 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente5f + "','" + zona1 + "','diente 1-5','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador6 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente6f + "','" + zona1 + "','diente 1-6','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador7 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente7f + "','" + zona1 + "','diente 1-7','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador8 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente8f + "','" + zona1 + "','diente 1-8','','" + Citas.idcita + "','');")
             consultar()
         End If
 
+
         ' zona 2 arriba-derecha(diente 9 a 15)
+
+
+        If cambiador9 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente9f + "','" + zona2 + "','diente 2-1','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador10 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente10f + "','" + zona2 + "','diente 2-2','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador11 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente11f + "','" + zona2 + "','diente 2-3','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador12 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente12f + "','" + zona2 + "','diente 2-4','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador13 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente13f + "','" + zona2 + "','diente 2-5','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador14 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente14f + "','" + zona2 + "','diente 2-6','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador15 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente15f + "','" + zona2 + "','diente 2-7','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador16 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente16f + "','" + zona2 + "','diente 2-8','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+
+
         ' zona 3 abajo-izquierda(diente 16 a 23)
-        ' zona 4 abajo-derecha(diente 17 a 31)
+
+
+
+        If cambiador17 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente17f + "','" + zona3 + "','diente 3-1','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador18 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente18f + "','" + zona3 + "','diente 3-2','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador19 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente19f + "','" + zona3 + "','diente 3-3','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador20 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente20f + "','" + zona3 + "','diente 3-4','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador21 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente21f + "','" + zona3 + "','diente 3-5','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador22 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente22f + "','" + zona3 + "','diente 3-6','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador23 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente23f + "','" + zona3 + "','diente 3-7','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador24 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente23f + "','" + zona3 + "','diente 3-8','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+
+
+        ' zona 4 abajo-derecha(diente 23 a 31)
+
+
+        If cambiador25 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente23f + "','" + zona4 + "','diente 4-1','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador26 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente23f + "','" + zona4 + "','diente 4-2','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador27 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente23f + "','" + zona4 + "','diente 4-3','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador28 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente23f + "','" + zona4 + "','diente 4-4','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador29 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente23f + "','" + zona4 + "','diente 4-5','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador30 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente23f + "','" + zona4 + "','diente 4-6','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador31 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente23f + "','" + zona4 + "','diente 4-7','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+        If cambiador32 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,precio,id_c,id_a) values ('" + id_p + "','" + diente23f + "','" + zona4 + "','diente 4-8','','" + Citas.idcita + "','');")
+            consultar()
+        End If
+
         ' cambio de ventana
         Citas.Show()
         Me.Dispose()
