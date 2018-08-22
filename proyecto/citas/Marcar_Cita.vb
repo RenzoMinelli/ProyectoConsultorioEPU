@@ -340,7 +340,7 @@
                 diente22f = "ausente"
             Case 4
                 pbDiente22.Image = My.Resources.AI2
-                diente21 = 0
+                diente22 = 0
                 diente22f = "normal"
 
         End Select
@@ -668,7 +668,7 @@
     End Sub
 
     Private Sub imgdiente23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbDiente41.Click
-        MsgBox("click")
+
         diente41 = diente41 + 1
         cambiador41 = True
         Select Case diente41
@@ -697,23 +697,24 @@
         cambiador31 = True
         Select Case diente31
             Case 0
-                pbDiente31.Image = My.Resources.BI1
+                pbDiente31.Image = My.Resources.Diente1AbajoIzquierdaBlanco
                 diente31f = "normal"
             Case 1
-                pbDiente31.Image = My.Resources.Diente4AbajoIzquierdaAmarillo
+                pbDiente31.Image = My.Resources.Diente1AbajoIzquierdaAmarillo
                 diente31f = "precaucion"
             Case 2
-                pbDiente31.Image = My.Resources.Diente4AbajoIzquierdaRojo
+                pbDiente31.Image = My.Resources.Diente1AbajoIzquierdaRojo
                 diente31f = "alerta"
             Case 3
-                pbDiente31.Image = My.Resources.Diente4AbajoIzquierdaNegro
+                pbDiente31.Image = My.Resources.Diente1AbajoIzquierdaNegro
                 diente31f = "ausente"
             Case 4
-                pbDiente31.Image = My.Resources.Diente4AbajoIzquierdaBlanco
+                pbDiente31.Image = My.Resources.Diente1AbajoIzquierdaBlanco
                 diente31 = 0
                 diente31f = "normal"
 
         End Select
+        pbDiente31.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
     End Sub
 
     Private Sub imgdiente25_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbDiente32.Click
@@ -980,6 +981,7 @@
         End If
         If cambiador35 = True Then
             Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c) values ('" + id_p.ToString + "','" + diente35f + "','" + zona3 + "', '5', '" + Citas.idcita.ToString + "');")
+            consultar()
         End If
         If cambiador36 = True Then
             Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c) values ('" + id_p.ToString + "','" + diente36f + "','" + zona3 + "', '6', '" + Citas.idcita.ToString + "');")
@@ -1073,106 +1075,155 @@
                                 Case "alerta"
                                     pbDiente11.Image = My.Resources.Diente1ArribaIzquierdaRojo
                                     diente11 = 2
-                                    diente11f = "alerta"
+
                                 Case "precaucion"
                                     pbDiente11.Image = My.Resources.Diente1ArribaIzquierdaAmarillo
                                     diente11 = 1
-                                    diente11f = "alerta"
+
                                 Case "ausente"
                                     pbDiente11.Image = My.Resources.Diente1ArribaIzquierdaNegro
                                     diente11 = 3
-                                    diente11f = "ausente"
+
                                 Case Else
                                     pbDiente11.Image = My.Resources.Diente1ArribaIzquierdaBlanco
                                     diente11 = 0
-                                    diente11f = "normal"
+
                             End Select
+
+                            diente11f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "12"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente12.Image = My.Resources.Diente2ArribaIzquierdaRojo
-                                    diente11 = 2
-                                    diente11f = "alerta"
+                                    diente12 = 2
+
                                 Case "precaucion"
                                     pbDiente12.Image = My.Resources.Diente2ArribaIzquierdaAmarillo
-                                    diente11 = 1
-                                    diente11f = "precaucion"
+                                    diente12 = 1
+
                                 Case "ausente"
                                     pbDiente12.Image = My.Resources.Diente2ArribaIzquierdaNegro
-                                    diente11 = 3
-                                    diente11f = "ausente"
+                                    diente12 = 3
+
                                 Case Else
                                     pbDiente11.Image = My.Resources.Diente2ArribaIzquierdaBlanco
-                                    diente11 = 0
-                                    diente11f = "normal"
+                                    diente12 = 0
 
                             End Select
+
+                            diente12f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "13"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente13.Image = My.Resources.Diente3ArribaIzquierdaRojo
+                                    diente13 = 2
                                 Case "precaucion"
                                     pbDiente13.Image = My.Resources.Diente3ArribaIzquierdaAmarillo
+                                    diente13 = 1
+
                                 Case "ausente"
                                     pbDiente13.Image = My.Resources.Diente3ArribaIzquierdaNegro
+                                    diente13 = 3
+
                                 Case Else
-                                    pbDiente11.Image = My.Resources.Diente3ArribaIzquierdaBlanco
+                                    pbDiente13.Image = My.Resources.Diente3ArribaIzquierdaBlanco
+                                    diente13 = 0
+
                             End Select
+
+                            diente13f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "14"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente14.Image = My.Resources.Diente4ArribaIzquierdaRojo
+                                    diente14 = 2
                                 Case "precaucion"
                                     pbDiente14.Image = My.Resources.Diente4ArribaIzquierdaAmarillo
+                                    diente14 = 1
                                 Case "ausente"
                                     pbDiente14.Image = My.Resources.Diente4ArribaIzquierdaNegro
+                                    diente14 = 3
                                 Case Else
-                                    pbDiente11.Image = My.Resources.Diente4ArribaIzquierdaBlanco
+                                    pbDiente14.Image = My.Resources.Diente4ArribaIzquierdaBlanco
+                                    diente14 = 0
                             End Select
+
+                            diente14f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "15"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente15.Image = My.Resources.Diente5ArribaIzquierdaRojo
+                                    diente15 = 2
                                 Case "precaucion"
                                     pbDiente15.Image = My.Resources.Diente5ArribaIzquierdaAmarillo
+                                    diente15 = 1
                                 Case "ausente"
                                     pbDiente15.Image = My.Resources.Diente5ArribaIzquierdaNegro
+                                    diente15 = 3
                                 Case Else
                                     pbDiente11.Image = My.Resources.Diente5ArribaIzquierdaBlanco
+                                    diente15 = 0
                             End Select
+
+                            diente15f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "16"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente16.Image = My.Resources.Diente6ArribaIzquierdaRojo
+                                    diente16 = 2
                                 Case "precaucion"
                                     pbDiente16.Image = My.Resources.Diente6ArribaIzquierdaAmarillo
+                                    diente16 = 1
                                 Case "ausente"
                                     pbDiente16.Image = My.Resources.Diente6ArribaIzquierdaNegro
+                                    diente16 = 3
                                 Case Else
-                                    pbDiente11.Image = My.Resources.Diente6ArribaIzquierdaBlanco
+                                    pbDiente16.Image = My.Resources.Diente6ArribaIzquierdaBlanco
+                                    diente16 = 0
                             End Select
+
+                            diente16f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "17"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente17.Image = My.Resources.Diente7ArribaIzquierdaRojo
+                                    diente17 = 2
                                 Case "precaucion"
                                     pbDiente17.Image = My.Resources.Diente7ArribaIzquierdaAmarillo
+                                    diente17 = 1
                                 Case "ausente"
                                     pbDiente17.Image = My.Resources.Diente7ArribaIzquierdaNegro
+                                    diente17 = 3
                                 Case Else
                                     pbDiente11.Image = My.Resources.Diente7ArribaIzquierdaBlanco
+                                    diente17 = 0
                             End Select
+
+                            diente17f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "18"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente18.Image = My.Resources.Diente8ArribaIzquierdaRojo
+                                    diente18 = 2
                                 Case "precaucion"
                                     pbDiente18.Image = My.Resources.Diente8ArribaIzquierdaAmarillo
+                                    diente18 = 1
                                 Case "ausente"
                                     pbDiente18.Image = My.Resources.Diente8ArribaIzquierdaNegro
+                                    diente18 = 3
                                 Case Else
                                     pbDiente11.Image = My.Resources.Diente8ArribaIzquierdaBlanco
+                                    diente18 = 0
                             End Select
+
+                            diente18f = DataGridView1.Rows(x).Cells(0).Value
 
 
                             ''arriba izquierda
@@ -1184,28 +1235,38 @@
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente21.Image = My.Resources.Diente1ArribaIzquierdaRojo
+                                    diente21 = 2
                                 Case "precaucion"
                                     pbDiente21.Image = My.Resources.Diente1ArribaIzquierdaAmarillo
+                                    diente21 = 1
                                 Case "ausente"
                                     pbDiente21.Image = My.Resources.Diente1ArribaIzquierdaNegro
+                                    diente21 = 3
                                 Case Else
                                     pbDiente21.Image = My.Resources.Diente1ArribaIzquierdaBlanco
+                                    diente21 = 0
                             End Select
 
+                            diente21f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente21.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "22"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente22.Image = My.Resources.Diente2ArribaIzquierdaRojo
+                                    diente22 = 2
                                 Case "precaucion"
                                     pbDiente22.Image = My.Resources.Diente2ArribaIzquierdaAmarillo
+                                    diente22 = 1
                                 Case "ausente"
                                     pbDiente22.Image = My.Resources.Diente2ArribaIzquierdaNegro
+                                    diente22 = 3
                                 Case Else
                                     pbDiente22.Image = My.Resources.Diente2ArribaIzquierdaBlanco
+                                    diente22 = 0
                             End Select
 
+                            diente22f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente22.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "23"
@@ -1213,28 +1274,38 @@
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente23.Image = My.Resources.Diente3ArribaIzquierdaRojo
+                                    diente23 = 2
                                 Case "precaucion"
                                     pbDiente23.Image = My.Resources.Diente3ArribaIzquierdaAmarillo
+                                    diente23 = 1
                                 Case "ausente"
-                                    pbDiente23.Image = My.Resources.Diente3ArribaIzquierdaRojo
+                                    pbDiente23.Image = My.Resources.Diente3ArribaIzquierdaNegro
+                                    diente23 = 3
                                 Case Else
                                     pbDiente23.Image = My.Resources.Diente3ArribaIzquierdaBlanco
                             End Select
 
+                            diente23f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente23.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "24"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente24.Image = My.Resources.Diente4ArribaIzquierdaRojo
+                                    diente24 = 2
                                 Case "precaucion"
                                     pbDiente24.Image = My.Resources.Diente4ArribaIzquierdaAmarillo
+                                    diente24 = 1
                                 Case "ausente"
+
                                     pbDiente24.Image = My.Resources.Diente4ArribaIzquierdaNegro
+                                    diente24 = 3
                                 Case Else
                                     pbDiente24.Image = My.Resources.Diente4ArribaIzquierdaBlanco
+                                    diente24 = 0
                             End Select
 
+                            diente24f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente24.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "25"
@@ -1242,14 +1313,19 @@
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente25.Image = My.Resources.Diente5ArribaIzquierdaRojo
+                                    diente25 = 2
                                 Case "precaucion"
                                     pbDiente25.Image = My.Resources.Diente5ArribaIzquierdaAmarillo
+                                    diente25 = 1
                                 Case "ausente"
                                     pbDiente25.Image = My.Resources.Diente5ArribaIzquierdaNegro
+                                    diente25 = 3
                                 Case Else
                                     pbDiente25.Image = My.Resources.Diente5ArribaIzquierdaBlanco
+                                    diente25 = 0
                             End Select
 
+                            diente25f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente25.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "26"
@@ -1258,14 +1334,19 @@
 
                                 Case "alerta"
                                     pbDiente26.Image = My.Resources.Diente6ArribaIzquierdaRojo
+                                    diente26 = 2
                                 Case "precaucion"
                                     pbDiente26.Image = My.Resources.Diente6ArribaIzquierdaAmarillo
+                                    diente26 = 1
                                 Case "ausente"
                                     pbDiente26.Image = My.Resources.Diente6ArribaIzquierdaNegro
+                                    diente26 = 3
                                 Case Else
                                     pbDiente26.Image = My.Resources.Diente6ArribaIzquierdaBlanco
+                                    diente26 = 0
                             End Select
 
+                            diente26f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente26.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "27"
@@ -1274,28 +1355,39 @@
 
                                 Case "alerta"
                                     pbDiente27.Image = My.Resources.Diente7ArribaIzquierdaRojo
+                                    diente27 = 2
                                 Case "precaucion"
                                     pbDiente27.Image = My.Resources.Diente7ArribaIzquierdaAmarillo
+                                    diente27 = 1
                                 Case "ausente"
                                     pbDiente27.Image = My.Resources.Diente7ArribaIzquierdaNegro
+                                    diente27 = 3
                                 Case Else
                                     pbDiente27.Image = My.Resources.Diente7ArribaIzquierdaBlanco
+                                    diente27 = 0
 
                             End Select
 
+                            diente27f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente27.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "28"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente28.Image = My.Resources.Diente8ArribaIzquierdaRojo
+                                    diente28 = 2
                                 Case "precaucion"
                                     pbDiente28.Image = My.Resources.Diente8ArribaIzquierdaAmarillo
+                                    diente28 = 1
                                 Case "ausente"
                                     pbDiente28.Image = My.Resources.Diente8ArribaIzquierdaNegro
+                                    diente28 = 3
                                 Case Else
                                     pbDiente28.Image = My.Resources.Diente8ArribaIzquierdaBlanco
+                                    diente28 = 0
                             End Select
+
+                            diente28f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente28.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
 
@@ -1305,111 +1397,151 @@
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente31.Image = My.Resources.Diente1AbajoIzquierdaRojo
+                                    diente31 = 2
                                 Case "precaucion"
                                     pbDiente31.Image = My.Resources.Diente1AbajoIzquierdaAmarillo
+                                    diente31 = 1
                                 Case "ausente"
                                     pbDiente31.Image = My.Resources.Diente1AbajoIzquierdaNegro
+                                    diente31 = 3
                                 Case Else
                                     pbDiente31.Image = My.Resources.Diente1AbajoIzquierdaBlanco
+                                    diente31 = 0
                             End Select
 
+                            diente31f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente31.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
                         Case "32"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente32.Image = My.Resources.Diente2AbajoIzquierdaRojo
+                                    diente32 = 2
                                 Case "precaucion"
                                     pbDiente32.Image = My.Resources.Diente2AbajoIzquierdaAmarillo
+                                    diente32 = 1
                                 Case "ausente"
                                     pbDiente32.Image = My.Resources.Diente2AbajoIzquierdaNegro
+                                    diente32 = 3
                                 Case Else
                                     pbDiente32.Image = My.Resources.Diente2AbajoIzquierdaBlanco
+                                    diente32 = 0
                             End Select
 
+                            diente32f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente32.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "33"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente33.Image = My.Resources.Diente3AbajoIzquierdaRojo
+                                    diente33 = 2
                                 Case "precaucion"
                                     pbDiente33.Image = My.Resources.Diente3AbajoIzquierdaAmarillo
+                                    diente33 = 1
                                 Case "ausente"
                                     pbDiente33.Image = My.Resources.Diente3AbajoIzquierdaNegro
+                                    diente33 = 3
                                 Case Else
                                     pbDiente33.Image = My.Resources.Diente3AbajoIzquierdaBlanco
+                                    diente33 = 0
                             End Select
 
+                            diente33f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente33.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "34"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente34.Image = My.Resources.Diente4AbajoIzquierdaRojo
+                                    diente34 = 2
                                 Case "precaucion"
                                     pbDiente34.Image = My.Resources.Diente4AbajoIzquierdaAmarillo
+                                    diente34 = 1
                                 Case "ausente"
                                     pbDiente34.Image = My.Resources.Diente4AbajoIzquierdaNegro
+                                    diente34 = 3
                                 Case Else
                                     pbDiente34.Image = My.Resources.Diente4AbajoIzquierdaBlanco
+                                    diente34 = 0
                             End Select
 
+                            diente34f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente34.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "35"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente35.Image = My.Resources.Diente5AbajoIzquierdaRojo
+                                    diente35 = 2
                                 Case "precaucion"
                                     pbDiente35.Image = My.Resources.Diente5AbajoIzquierdaAmarillo
+                                    diente35 = 1
                                 Case "ausente"
                                     pbDiente35.Image = My.Resources.Diente5AbajoIzquierdaNegro
+                                    diente35 = 3
                                 Case Else
                                     pbDiente35.Image = My.Resources.Diente5AbajoIzquierdaBlanco
+                                    diente35 = 0
                             End Select
 
+                            diente35f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente35.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "36"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente36.Image = My.Resources.Diente6AbajoIzquierdaRojo
+                                    diente36 = 2
                                 Case "precaucion"
                                     pbDiente36.Image = My.Resources.Diente6AbajoIzquierdaAmarillo
+                                    diente36 = 1
                                 Case "ausente"
                                     pbDiente36.Image = My.Resources.Diente6AbajoIzquierdaNegro
+                                    diente36 = 3
                                 Case Else
                                     pbDiente36.Image = My.Resources.Diente6AbajoIzquierdaBlanco
+                                    diente36 = 0
                             End Select
 
+                            diente36f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente36.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "37"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente37.Image = My.Resources.Diente7AbajoIzquierdaRojo
+                                    diente37 = 2
                                 Case "precaucion"
                                     pbDiente37.Image = My.Resources.Diente7AbajoIzquierdaAmarillo
+                                    diente37 = 1
                                 Case "ausente"
                                     pbDiente37.Image = My.Resources.Diente7AbajoIzquierdaNegro
+                                    diente37 = 3
                                 Case Else
                                     pbDiente37.Image = My.Resources.Diente7AbajoIzquierdaBlanco
+                                    diente37 = 0
                             End Select
 
+                            diente37f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente37.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                         Case "38"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente38.Image = My.Resources.Diente8AbajoIzquierdaRojo
+                                    diente38 = 2
                                 Case "precaucion"
                                     pbDiente38.Image = My.Resources.Diente8AbajoIzquierdaAmarillo
+                                    diente38 = 1
                                 Case "ausente"
                                     pbDiente38.Image = My.Resources.Diente8AbajoIzquierdaNegro
+                                    diente38 = 3
                                 Case Else
                                     pbDiente38.Image = My.Resources.Diente8AbajoIzquierdaBlanco
+                                    diente38 = 0
                             End Select
 
+                            diente38f = DataGridView1.Rows(x).Cells(0).Value
                             pbDiente38.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
 
                             ''abajo izquierda
@@ -1419,90 +1551,146 @@
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente41.Image = My.Resources.Diente1AbajoIzquierdaRojo
+                                    diente41 = 2
                                 Case "precaucion"
                                     pbDiente41.Image = My.Resources.Diente1AbajoIzquierdaAmarillo
+                                    diente41 = 1
                                 Case "ausente"
                                     pbDiente41.Image = My.Resources.Diente1AbajoIzquierdaNegro
+                                    diente41 = 3
                                 Case Else
                                     pbDiente41.Image = My.Resources.Diente1AbajoIzquierdaBlanco
+                                    diente41 = 0
                             End Select
+
+                            diente41f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "42"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente42.Image = My.Resources.Diente2AbajoIzquierdaRojo
+                                    diente42 = 2
                                 Case "precaucion"
                                     pbDiente42.Image = My.Resources.Diente2AbajoIzquierdaAmarillo
+                                    diente42 = 1
                                 Case "ausente"
                                     pbDiente42.Image = My.Resources.Diente2AbajoIzquierdaNegro
+                                    diente42 = 3
                                 Case Else
                                     pbDiente42.Image = My.Resources.Diente2AbajoIzquierdaBlanco
+                                    diente42 = 0
                             End Select
+
+                            diente42f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "43"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente43.Image = My.Resources.Diente3AbajoIzquierdaRojo
+                                    diente43 = 2
                                 Case "precaucion"
                                     pbDiente43.Image = My.Resources.Diente3AbajoIzquierdaAmarillo
+                                    diente43 = 1
                                 Case "ausente"
                                     pbDiente43.Image = My.Resources.Diente3AbajoIzquierdaNegro
+                                    diente43 = 3
                                 Case Else
                                     pbDiente43.Image = My.Resources.Diente3ArribaIzquierdaBlanco
+                                    diente43 = 0
                             End Select
+
+                            diente43f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "44"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente44.Image = My.Resources.Diente4AbajoIzquierdaRojo
+                                    diente44 = 2
                                 Case "precaucion"
                                     pbDiente44.Image = My.Resources.Diente4AbajoIzquierdaAmarillo
+                                    diente44 = 1
                                 Case "ausente"
                                     pbDiente44.Image = My.Resources.Diente4AbajoIzquierdaNegro
+                                    diente44 = 3
                                 Case Else
                                     pbDiente44.Image = My.Resources.Diente4AbajoIzquierdaBlanco
+                                    diente44 = 0
                             End Select
+
+                            diente44f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "45"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente45.Image = My.Resources.Diente5AbajoIzquierdaRojo
+                                    diente45 = 2
                                 Case "precaucion"
                                     pbDiente45.Image = My.Resources.Diente5AbajoIzquierdaAmarillo
+                                    diente45 = 1
                                 Case "ausente"
                                     pbDiente45.Image = My.Resources.Diente5AbajoIzquierdaNegro
+                                    diente45 = 3
                                 Case Else
                                     pbDiente45.Image = My.Resources.Diente5AbajoIzquierdaBlanco
+                                    diente45 = 0
                             End Select
+
+                            diente45f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "46"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente46.Image = My.Resources.Diente6AbajoIzquierdaRojo
+                                    diente46 = 2
                                 Case "precaucion"
                                     pbDiente46.Image = My.Resources.Diente6AbajoIzquierdaAmarillo
+                                    diente46 = 1
                                 Case "ausente"
                                     pbDiente46.Image = My.Resources.Diente6AbajoIzquierdaNegro
+                                    diente46 = 3
                                 Case Else
                                     pbDiente46.Image = My.Resources.Diente6AbajoIzquierdaBlanco
+                                    diente46 = 0
                             End Select
+
+                            diente46f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "47"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente47.Image = My.Resources.Diente7AbajoIzquierdaRojo
+                                    diente47 = 2
                                 Case "precaucion"
                                     pbDiente47.Image = My.Resources.Diente7AbajoIzquierdaAmarillo
+                                    diente47 = 1
                                 Case "ausente"
                                     pbDiente47.Image = My.Resources.Diente7AbajoIzquierdaNegro
+                                    diente47 = 3
                                 Case Else
                                     pbDiente47.Image = My.Resources.Diente7AbajoIzquierdaBlanco
+                                    diente47 = 0
                             End Select
+
+                            diente47f = DataGridView1.Rows(x).Cells(0).Value
+
                         Case "48"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente48.Image = My.Resources.Diente8AbajoIzquierdaRojo
+                                    diente48 = 2
                                 Case "precaucion"
                                     pbDiente48.Image = My.Resources.Diente8AbajoIzquierdaAmarillo
+                                    diente48 = 1
                                 Case "ausente"
                                     pbDiente48.Image = My.Resources.Diente8AbajoIzquierdaNegro
+                                    diente48 = 3
                                 Case Else
                                     pbDiente48.Image = My.Resources.Diente8AbajoIzquierdaBlanco
+                                    diente48 = 0
                             End Select
+
+                            diente48f = DataGridView1.Rows(x).Cells(0).Value
+
                     End Select
 
                 End If
