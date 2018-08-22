@@ -2,7 +2,7 @@
 
 
     Private Sub InputPago_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        lblDatosPaciente.Text = "El salgo pendiente del paciente " + nombre + " es de $" + saldo.ToString + vbNewLine + "¿Cuánto depositará?"
+        lblDatosPaciente.Text = "El saldo pendiente del paciente " + nombre + " es de $" + saldo.ToString + vbNewLine + "¿Cuánto depositará?"
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinuar.Click

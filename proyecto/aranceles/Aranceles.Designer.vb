@@ -86,7 +86,7 @@ Partial Class Aranceles
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(109, 48)
         Me.Button3.TabIndex = 3
-        Me.Button3.Text = "editar"
+        Me.Button3.Text = "Editar"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -99,7 +99,7 @@ Partial Class Aranceles
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(124, 54)
         Me.Button2.TabIndex = 2
-        Me.Button2.Text = "  eliminar"
+        Me.Button2.Text = "   Eliminar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1

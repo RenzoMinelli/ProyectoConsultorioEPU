@@ -52,7 +52,7 @@ Partial Class realizar_pago
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(372, 25)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Elija el paciente que realizara el pago"
+        Me.Label1.Text = "Elija el paciente que realizará el pago"
         '
         'Button1
         '

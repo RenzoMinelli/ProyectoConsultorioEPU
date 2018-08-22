@@ -25,6 +25,7 @@
 
         If txbNombre.Text <> "" And txbCedula.Text <> "" And txbDireccionPersonal.Text <> "" And txbTelefono.Text <> "" Then
             If IsNumeric(txbCedula.Text) Then
+
                 If verificarCedula(txbCedula.Text) = True Then
                     If alergicos = False And diabeticos = False And cardiovasculares = False And fiebre_reumatica = False And coagulacion = False And odontologicos = False And farmacos_recibidos = False And familiares = False And tratamiento_medico = False And observaciones = "" Then
                         If MsgBox("No fue ingresado ningún antecedente," + vbNewLine + "¿Desea continuar de todos modos?", MsgBoxStyle.YesNo) = vbYes Then
@@ -146,7 +147,7 @@
 
         Else
 
-            MsgBox("complete los campos necesarios", MsgBoxStyle.Exclamation)
+            MsgBox("Complete los campos necesarios", MsgBoxStyle.Exclamation)
 
         End If
 
@@ -179,31 +180,27 @@
     End Sub
     Private Function verificarCedula(ByVal cedula As String)
         Try
-            Dim num(7) As Char
+            Dim cedulaChar(7) As Char
             Dim suma As Integer
-            Dim suma1 As Integer
             Dim calculo() As Integer = {2, 9, 8, 7, 6, 3, 4}
 
-            num = cedula.ToCharArray()
+            cedulaChar = cedula.ToCharArray()
 
             For i = 0 To 6
-                Dim num1 As Integer = Val(num(i))
+                Dim num1 As Integer = Val(cedulaChar(i))
                 suma = (num1 * calculo(i)) + suma
             Next
 
-            num = suma.ToString.ToCharArray
+            cedulaChar = cedula.ToCharArray()
 
-            ReDim Preserve num(1)
-            suma1 = Convert.ToInt32(num) + 1
-            num = suma1.ToString.ToCharArray
-            ReDim Preserve num(2)
-            num(2) = "0"
+            Dim liResto As Integer = 10 - (suma Mod 10)
 
-            suma1 = Convert.ToInt32(num)
-            suma = suma1 - suma
-            num = cedula.ToCharArray()
+            If liResto = 10 Then
+                liResto = 0
+            End If
 
-            If Str(suma) = Val(num(7)) Then
+
+            If liResto = Val(cedulaChar(7)) Then
                 Return True
             Else
                 Return False
@@ -214,4 +211,7 @@
 
     End Function
 
+  
+    
+   
 End Class

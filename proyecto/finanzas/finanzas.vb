@@ -17,7 +17,7 @@
         Catch ex As Exception
             MsgBox("Error al cargar pacientes", MsgBoxStyle.Exclamation)
         End Try
-       
+
 
         fechad = DateSerial(Year(fecha), Month(fecha), 1)
         desde.Value = fechad
@@ -102,7 +102,7 @@
 
             End Try
         End If
-        
+
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
