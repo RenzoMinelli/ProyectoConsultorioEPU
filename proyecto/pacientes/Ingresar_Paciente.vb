@@ -26,10 +26,63 @@
         If txbNombre.Text <> "" And txbCedula.Text <> "" And txbDireccionPersonal.Text <> "" And txbTelefono.Text <> "" Then
             If IsNumeric(txbCedula.Text) Then
 
-                If verificarCedula(txbCedula.Text) = True Then
-                    If alergicos = False And diabeticos = False And cardiovasculares = False And fiebre_reumatica = False And coagulacion = False And odontologicos = False And farmacos_recibidos = False And familiares = False And tratamiento_medico = False And observaciones = "" Then
-                        If MsgBox("No fue ingresado ningún antecedente," + vbNewLine + "¿Desea continuar de todos modos?", MsgBoxStyle.YesNo) = vbYes Then
+                Consulta = "select * from paciente where cedula = '" + txbCedula.Text + "';"
+                consultar()
+                dgbPacientesCedulas.DataSource = Tabla
 
+                If Not dgbPacientesCedulas.RowCount = 0 Then
+                    MsgBox("Ya existe usuario con esa cedula", MsgBoxStyle.Exclamation)
+                Else
+                    If verificarCedula(txbCedula.Text) = True Then
+                        If alergicos = False And diabeticos = False And cardiovasculares = False And fiebre_reumatica = False And coagulacion = False And odontologicos = False And farmacos_recibidos = False And familiares = False And tratamiento_medico = False And observaciones = "" Then
+                            If MsgBox("No fue ingresado ningún antecedente," + vbNewLine + "¿Desea continuar de todos modos?", MsgBoxStyle.YesNo) = vbYes Then
+
+                                nombre = txbNombre.Text
+                                cedula = txbCedula.Text
+                                If txbEnviadoPor.Text <> "" Then
+                                    ver = 1
+                                    enviado = txbEnviadoPor.Text
+                                End If
+                                telefono = txbTelefono.Text
+                                direccion = txbDireccionPersonal.Text
+
+                                If txbDireccionTrabajo.Text <> "" Then
+                                    direTra = txbDireccionTrabajo.Text
+                                    ver2 = 1
+                                End If
+
+                                nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
+
+                                Try
+                                    If ver = 0 And ver2 = 0 Then
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "');"
+
+                                    ElseIf ver = 0 And ver2 = 1 Then
+
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "','" + direTra + "');"
+                                    ElseIf ver = 1 And ver2 = 0 Then
+
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "');"
+                                    ElseIf ver = 1 And ver2 = 1 Then
+
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "','" + direTra + "');"
+                                    End If
+
+
+                                    consultar()
+
+                                    MsgBox("Agregado con Exito", MsgBoxStyle.Information)
+
+                                    Me.Dispose()
+                                    Pacientes.Show()
+                                    Pacientes.actTabla(1)
+                                Catch ex As Exception
+                                    MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
+                                End Try
+
+
+                            End If
+                        Else
                             nombre = txbNombre.Text
                             cedula = txbCedula.Text
                             If txbEnviadoPor.Text <> "" Then
@@ -45,6 +98,7 @@
                             End If
 
                             nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
+
 
                             Try
                                 If ver = 0 And ver2 = 0 Then
@@ -64,80 +118,40 @@
 
                                 consultar()
 
+
+
+
+                            Catch ex As Exception
+                                MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
+                            End Try
+
+                            Try
+                                Consulta = "select id_p from paciente;"
+                                consultar()
+
+                                dgbPacientesId.DataSource = Tabla
+                                id_p = dgbPacientesId.Rows(dgbPacientesId.RowCount - 1).Cells(0).Value
+
+
+                                Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "','" + alergicos.GetHashCode.ToString + "','" + diabeticos.GetHashCode.ToString + "','" + cardiovasculares.GetHashCode.ToString + "','" + fiebre_reumatica.GetHashCode.ToString + "','" + coagulacion.GetHashCode.ToString + "','" + odontologicos.GetHashCode.ToString + "','" + farmacos_recibidos.GetHashCode.ToString + "','" + familiares.GetHashCode.ToString + "','" + tratamiento_medico.GetHashCode.ToString + "','" + observaciones + "');"
+                                consultar()
+
+
                                 MsgBox("Agregado con Exito", MsgBoxStyle.Information)
 
                                 Me.Dispose()
                                 Pacientes.Show()
                                 Pacientes.actTabla(1)
                             Catch ex As Exception
-                                MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
+                                MsgBox("Error al ingresar antecedentes", MsgBoxStyle.Exclamation)
                             End Try
-
 
                         End If
                     Else
-                        nombre = txbNombre.Text
-                        cedula = txbCedula.Text
-                        If txbEnviadoPor.Text <> "" Then
-                            ver = 1
-                            enviado = txbEnviadoPor.Text
-                        End If
-                        telefono = txbTelefono.Text
-                        direccion = txbDireccionPersonal.Text
-
-                        If txbDireccionTrabajo.Text <> "" Then
-                            direTra = txbDireccionTrabajo.Text
-                            ver2 = 1
-                        End If
-
-                        nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
-
-
-                        Try
-                            If ver = 0 And ver2 = 0 Then
-                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "');"
-
-                            ElseIf ver = 0 And ver2 = 1 Then
-
-                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "','" + direTra + "');"
-                            ElseIf ver = 1 And ver2 = 0 Then
-
-                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "');"
-                            ElseIf ver = 1 And ver2 = 1 Then
-
-                                Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "','" + direTra + "');"
-                            End If
-
-
-                            consultar()
-
-
-
-
-                        Catch ex As Exception
-                            MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
-                        End Try
-
-                        Consulta = "select id_p from paciente;"
-                        consultar()
-
-                        DataGridView1.DataSource = Tabla
-                        id_p = DataGridView1.Rows(DataGridView1.RowCount - 1).Cells(0).Value
-
-
-                        Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "','" + alergicos.GetHashCode.ToString + "','" + diabeticos.GetHashCode.ToString + "','" + cardiovasculares.GetHashCode.ToString + "','" + fiebre_reumatica.GetHashCode.ToString + "','" + coagulacion.GetHashCode.ToString + "','" + odontologicos.GetHashCode.ToString + "','" + farmacos_recibidos.GetHashCode.ToString + "','" + familiares.GetHashCode.ToString + "','" + tratamiento_medico.GetHashCode.ToString + "','" + observaciones + "');"
-                        consultar()
-
-
-                        MsgBox("Agregado con Exito", MsgBoxStyle.Information)
-
-                        Me.Dispose()
-                        Pacientes.Show()
-                        Pacientes.actTabla(1)
+                        MsgBox("Cédula no válida", MsgBoxStyle.Exclamation)
                     End If
-                Else
-                    MsgBox("Cédula no válida", MsgBoxStyle.Exclamation)
                 End If
+               
 
             Else
                 MsgBox("La cédula solo debe contener números", MsgBoxStyle.Exclamation)
@@ -179,7 +193,10 @@
         frmContenedor.Show()
     End Sub
     Private Function verificarCedula(ByVal cedula As String)
+
+
         Try
+
             Dim cedulaChar(7) As Char
             Dim suma As Integer
             Dim calculo() As Integer = {2, 9, 8, 7, 6, 3, 4}
@@ -208,7 +225,6 @@
         Catch ex As Exception
             Return False
         End Try
-
     End Function
 
   
