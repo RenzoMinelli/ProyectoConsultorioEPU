@@ -40,77 +40,77 @@ Partial Class Registro_Medico
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
-        Me.pbad1 = New System.Windows.Forms.PictureBox()
-        Me.pbad2 = New System.Windows.Forms.PictureBox()
-        Me.pbad3 = New System.Windows.Forms.PictureBox()
-        Me.pbad4 = New System.Windows.Forms.PictureBox()
-        Me.pbad5 = New System.Windows.Forms.PictureBox()
-        Me.pbad6 = New System.Windows.Forms.PictureBox()
-        Me.pbad7 = New System.Windows.Forms.PictureBox()
-        Me.pbad8 = New System.Windows.Forms.PictureBox()
-        Me.pbbd1 = New System.Windows.Forms.PictureBox()
-        Me.pbbd2 = New System.Windows.Forms.PictureBox()
-        Me.pbbd3 = New System.Windows.Forms.PictureBox()
-        Me.pbbd4 = New System.Windows.Forms.PictureBox()
-        Me.pbbd8 = New System.Windows.Forms.PictureBox()
-        Me.pbbd7 = New System.Windows.Forms.PictureBox()
-        Me.pbbd6 = New System.Windows.Forms.PictureBox()
-        Me.pbbd5 = New System.Windows.Forms.PictureBox()
-        Me.pbai1 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente11 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente12 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente13 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente14 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente15 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente16 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente17 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente18 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente41 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente42 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente43 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente44 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente48 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente47 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente46 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente45 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente21 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.pbbi8 = New System.Windows.Forms.PictureBox()
-        Me.pbbi7 = New System.Windows.Forms.PictureBox()
-        Me.pbbi6 = New System.Windows.Forms.PictureBox()
-        Me.pbbi5 = New System.Windows.Forms.PictureBox()
-        Me.pbbi4 = New System.Windows.Forms.PictureBox()
-        Me.pbbi3 = New System.Windows.Forms.PictureBox()
-        Me.pbbi2 = New System.Windows.Forms.PictureBox()
-        Me.pbbi1 = New System.Windows.Forms.PictureBox()
-        Me.pbai8 = New System.Windows.Forms.PictureBox()
-        Me.pbai7 = New System.Windows.Forms.PictureBox()
-        Me.pbai6 = New System.Windows.Forms.PictureBox()
-        Me.pbai5 = New System.Windows.Forms.PictureBox()
-        Me.pbai4 = New System.Windows.Forms.PictureBox()
-        Me.pbai3 = New System.Windows.Forms.PictureBox()
-        Me.pbai2 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente38 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente37 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente36 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente35 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente34 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente33 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente32 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente31 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente28 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente27 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente26 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente25 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente24 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente23 = New System.Windows.Forms.PictureBox()
+        Me.pbDiente22 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstadoDiente, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbad1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbad2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbad3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbad4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbad5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbad6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbad7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbad8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbd1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbd2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbd3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbd4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbd8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbd7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbd6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbd5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente41, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente42, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente43, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente44, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente48, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente47, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente46, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente45, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.pbbi8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbi7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbi6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbi5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbi4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbi3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbi2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbbi1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbai2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente38, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente37, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDiente22, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel55
@@ -289,7 +289,7 @@ Partial Class Registro_Medico
         '
         Me.Label37.AutoSize = True
         Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(432, 9)
+        Me.Label37.Location = New System.Drawing.Point(432, 5)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(168, 24)
         Me.Label37.TabIndex = 29
@@ -305,366 +305,366 @@ Partial Class Registro_Medico
         Me.Label38.TabIndex = 30
         Me.Label38.Text = "Registro de Estado de Dientes:"
         '
-        'pbad1
+        'pbDiente11
         '
-        Me.pbad1.Image = Global.WindowsApplication1.My.Resources.Resources.AD1
-        Me.pbad1.Location = New System.Drawing.Point(304, 18)
-        Me.pbad1.Name = "pbad1"
-        Me.pbad1.Size = New System.Drawing.Size(24, 66)
-        Me.pbad1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbad1.TabIndex = 31
-        Me.pbad1.TabStop = False
+        Me.pbDiente11.Image = Global.WindowsApplication1.My.Resources.Resources.Diente1ArribaIzquierdaBlanco
+        Me.pbDiente11.Location = New System.Drawing.Point(304, 18)
+        Me.pbDiente11.Name = "pbDiente11"
+        Me.pbDiente11.Size = New System.Drawing.Size(24, 66)
+        Me.pbDiente11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente11.TabIndex = 31
+        Me.pbDiente11.TabStop = False
         '
-        'pbad2
+        'pbDiente12
         '
-        Me.pbad2.Image = Global.WindowsApplication1.My.Resources.Resources.AD2
-        Me.pbad2.Location = New System.Drawing.Point(269, 18)
-        Me.pbad2.Name = "pbad2"
-        Me.pbad2.Size = New System.Drawing.Size(29, 66)
-        Me.pbad2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbad2.TabIndex = 32
-        Me.pbad2.TabStop = False
+        Me.pbDiente12.Image = Global.WindowsApplication1.My.Resources.Resources.Diente2ArribaIzquierdaBlanco
+        Me.pbDiente12.Location = New System.Drawing.Point(269, 18)
+        Me.pbDiente12.Name = "pbDiente12"
+        Me.pbDiente12.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente12.TabIndex = 32
+        Me.pbDiente12.TabStop = False
         '
-        'pbad3
+        'pbDiente13
         '
-        Me.pbad3.Image = Global.WindowsApplication1.My.Resources.Resources.AD3
-        Me.pbad3.Location = New System.Drawing.Point(234, 18)
-        Me.pbad3.Name = "pbad3"
-        Me.pbad3.Size = New System.Drawing.Size(29, 66)
-        Me.pbad3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbad3.TabIndex = 33
-        Me.pbad3.TabStop = False
+        Me.pbDiente13.Image = Global.WindowsApplication1.My.Resources.Resources.Diente3ArribaIzquierdaBlanco
+        Me.pbDiente13.Location = New System.Drawing.Point(234, 18)
+        Me.pbDiente13.Name = "pbDiente13"
+        Me.pbDiente13.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente13.TabIndex = 33
+        Me.pbDiente13.TabStop = False
         '
-        'pbad4
+        'pbDiente14
         '
-        Me.pbad4.Image = Global.WindowsApplication1.My.Resources.Resources.AD4
-        Me.pbad4.Location = New System.Drawing.Point(198, 17)
-        Me.pbad4.Name = "pbad4"
-        Me.pbad4.Size = New System.Drawing.Size(30, 67)
-        Me.pbad4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbad4.TabIndex = 34
-        Me.pbad4.TabStop = False
+        Me.pbDiente14.Image = Global.WindowsApplication1.My.Resources.Resources.Diente4ArribaIzquierdaBlanco
+        Me.pbDiente14.Location = New System.Drawing.Point(198, 17)
+        Me.pbDiente14.Name = "pbDiente14"
+        Me.pbDiente14.Size = New System.Drawing.Size(30, 67)
+        Me.pbDiente14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente14.TabIndex = 34
+        Me.pbDiente14.TabStop = False
         '
-        'pbad5
+        'pbDiente15
         '
-        Me.pbad5.Image = Global.WindowsApplication1.My.Resources.Resources.AD5
-        Me.pbad5.Location = New System.Drawing.Point(163, 18)
-        Me.pbad5.Name = "pbad5"
-        Me.pbad5.Size = New System.Drawing.Size(29, 66)
-        Me.pbad5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbad5.TabIndex = 35
-        Me.pbad5.TabStop = False
+        Me.pbDiente15.Image = Global.WindowsApplication1.My.Resources.Resources.Diente5ArribaIzquierdaBlanco
+        Me.pbDiente15.Location = New System.Drawing.Point(163, 18)
+        Me.pbDiente15.Name = "pbDiente15"
+        Me.pbDiente15.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente15.TabIndex = 35
+        Me.pbDiente15.TabStop = False
         '
-        'pbad6
+        'pbDiente16
         '
-        Me.pbad6.Image = Global.WindowsApplication1.My.Resources.Resources.AD6
-        Me.pbad6.Location = New System.Drawing.Point(118, 17)
-        Me.pbad6.Name = "pbad6"
-        Me.pbad6.Size = New System.Drawing.Size(39, 67)
-        Me.pbad6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbad6.TabIndex = 36
-        Me.pbad6.TabStop = False
+        Me.pbDiente16.Image = Global.WindowsApplication1.My.Resources.Resources.Diente6ArribaIzquierdaBlanco
+        Me.pbDiente16.Location = New System.Drawing.Point(118, 17)
+        Me.pbDiente16.Name = "pbDiente16"
+        Me.pbDiente16.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente16.TabIndex = 36
+        Me.pbDiente16.TabStop = False
         '
-        'pbad7
+        'pbDiente17
         '
-        Me.pbad7.Image = Global.WindowsApplication1.My.Resources.Resources.AD7
-        Me.pbad7.Location = New System.Drawing.Point(73, 17)
-        Me.pbad7.Name = "pbad7"
-        Me.pbad7.Size = New System.Drawing.Size(39, 67)
-        Me.pbad7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbad7.TabIndex = 37
-        Me.pbad7.TabStop = False
+        Me.pbDiente17.Image = Global.WindowsApplication1.My.Resources.Resources.Diente7ArribaIzquierdaBlanco
+        Me.pbDiente17.Location = New System.Drawing.Point(73, 17)
+        Me.pbDiente17.Name = "pbDiente17"
+        Me.pbDiente17.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente17.TabIndex = 37
+        Me.pbDiente17.TabStop = False
         '
-        'pbad8
+        'pbDiente18
         '
-        Me.pbad8.Image = Global.WindowsApplication1.My.Resources.Resources.AD8
-        Me.pbad8.Location = New System.Drawing.Point(28, 17)
-        Me.pbad8.Name = "pbad8"
-        Me.pbad8.Size = New System.Drawing.Size(39, 67)
-        Me.pbad8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbad8.TabIndex = 38
-        Me.pbad8.TabStop = False
+        Me.pbDiente18.Image = Global.WindowsApplication1.My.Resources.Resources.Diente8ArribaIzquierdaBlanco
+        Me.pbDiente18.Location = New System.Drawing.Point(28, 17)
+        Me.pbDiente18.Name = "pbDiente18"
+        Me.pbDiente18.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente18.TabIndex = 38
+        Me.pbDiente18.TabStop = False
         '
-        'pbbd1
+        'pbDiente41
         '
-        Me.pbbd1.ErrorImage = Global.WindowsApplication1.My.Resources.Resources.BD1
-        Me.pbbd1.Image = Global.WindowsApplication1.My.Resources.Resources.BD1
-        Me.pbbd1.Location = New System.Drawing.Point(299, 114)
-        Me.pbbd1.Name = "pbbd1"
-        Me.pbbd1.Size = New System.Drawing.Size(29, 66)
-        Me.pbbd1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbd1.TabIndex = 39
-        Me.pbbd1.TabStop = False
+        Me.pbDiente41.ErrorImage = Global.WindowsApplication1.My.Resources.Resources.Diente1AbajoIzquierdaBlanco
+        Me.pbDiente41.Image = Global.WindowsApplication1.My.Resources.Resources.Diente1AbajoIzquierdaBlanco
+        Me.pbDiente41.Location = New System.Drawing.Point(299, 114)
+        Me.pbDiente41.Name = "pbDiente41"
+        Me.pbDiente41.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente41.TabIndex = 39
+        Me.pbDiente41.TabStop = False
         '
-        'pbbd2
+        'pbDiente42
         '
-        Me.pbbd2.Image = Global.WindowsApplication1.My.Resources.Resources.BD2
-        Me.pbbd2.Location = New System.Drawing.Point(260, 114)
-        Me.pbbd2.Name = "pbbd2"
-        Me.pbbd2.Size = New System.Drawing.Size(29, 66)
-        Me.pbbd2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbd2.TabIndex = 40
-        Me.pbbd2.TabStop = False
+        Me.pbDiente42.Image = Global.WindowsApplication1.My.Resources.Resources.Diente2AbajoIzquierdaBlanco
+        Me.pbDiente42.Location = New System.Drawing.Point(260, 114)
+        Me.pbDiente42.Name = "pbDiente42"
+        Me.pbDiente42.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente42.TabIndex = 40
+        Me.pbDiente42.TabStop = False
         '
-        'pbbd3
+        'pbDiente43
         '
-        Me.pbbd3.Image = Global.WindowsApplication1.My.Resources.Resources.BD3
-        Me.pbbd3.Location = New System.Drawing.Point(225, 114)
-        Me.pbbd3.Name = "pbbd3"
-        Me.pbbd3.Size = New System.Drawing.Size(29, 66)
-        Me.pbbd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbd3.TabIndex = 41
-        Me.pbbd3.TabStop = False
+        Me.pbDiente43.Image = Global.WindowsApplication1.My.Resources.Resources.Diente3AbajoIzquierdaBlanco
+        Me.pbDiente43.Location = New System.Drawing.Point(225, 114)
+        Me.pbDiente43.Name = "pbDiente43"
+        Me.pbDiente43.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente43.TabIndex = 41
+        Me.pbDiente43.TabStop = False
         '
-        'pbbd4
+        'pbDiente44
         '
-        Me.pbbd4.Image = Global.WindowsApplication1.My.Resources.Resources.BD4
-        Me.pbbd4.Location = New System.Drawing.Point(189, 114)
-        Me.pbbd4.Name = "pbbd4"
-        Me.pbbd4.Size = New System.Drawing.Size(29, 67)
-        Me.pbbd4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbd4.TabIndex = 42
-        Me.pbbd4.TabStop = False
+        Me.pbDiente44.Image = Global.WindowsApplication1.My.Resources.Resources.Diente4AbajoIzquierdaBlanco
+        Me.pbDiente44.Location = New System.Drawing.Point(189, 114)
+        Me.pbDiente44.Name = "pbDiente44"
+        Me.pbDiente44.Size = New System.Drawing.Size(29, 67)
+        Me.pbDiente44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente44.TabIndex = 42
+        Me.pbDiente44.TabStop = False
         '
-        'pbbd8
+        'pbDiente48
         '
-        Me.pbbd8.Image = Global.WindowsApplication1.My.Resources.Resources.BD8
-        Me.pbbd8.Location = New System.Drawing.Point(19, 114)
-        Me.pbbd8.Name = "pbbd8"
-        Me.pbbd8.Size = New System.Drawing.Size(39, 67)
-        Me.pbbd8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbd8.TabIndex = 43
-        Me.pbbd8.TabStop = False
+        Me.pbDiente48.Image = Global.WindowsApplication1.My.Resources.Resources.Diente8AbajoIzquierdaBlanco
+        Me.pbDiente48.Location = New System.Drawing.Point(19, 114)
+        Me.pbDiente48.Name = "pbDiente48"
+        Me.pbDiente48.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente48.TabIndex = 43
+        Me.pbDiente48.TabStop = False
         '
-        'pbbd7
+        'pbDiente47
         '
-        Me.pbbd7.Image = Global.WindowsApplication1.My.Resources.Resources.BD7
-        Me.pbbd7.Location = New System.Drawing.Point(64, 114)
-        Me.pbbd7.Name = "pbbd7"
-        Me.pbbd7.Size = New System.Drawing.Size(39, 67)
-        Me.pbbd7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbd7.TabIndex = 44
-        Me.pbbd7.TabStop = False
+        Me.pbDiente47.Image = Global.WindowsApplication1.My.Resources.Resources.Diente7AbajoIzquierdaBlanco
+        Me.pbDiente47.Location = New System.Drawing.Point(64, 114)
+        Me.pbDiente47.Name = "pbDiente47"
+        Me.pbDiente47.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente47.TabIndex = 44
+        Me.pbDiente47.TabStop = False
         '
-        'pbbd6
+        'pbDiente46
         '
-        Me.pbbd6.Image = Global.WindowsApplication1.My.Resources.Resources.BD6
-        Me.pbbd6.Location = New System.Drawing.Point(109, 114)
-        Me.pbbd6.Name = "pbbd6"
-        Me.pbbd6.Size = New System.Drawing.Size(39, 67)
-        Me.pbbd6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbd6.TabIndex = 45
-        Me.pbbd6.TabStop = False
+        Me.pbDiente46.Image = Global.WindowsApplication1.My.Resources.Resources.Diente6AbajoIzquierdaBlanco
+        Me.pbDiente46.Location = New System.Drawing.Point(109, 114)
+        Me.pbDiente46.Name = "pbDiente46"
+        Me.pbDiente46.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente46.TabIndex = 45
+        Me.pbDiente46.TabStop = False
         '
-        'pbbd5
+        'pbDiente45
         '
-        Me.pbbd5.Image = Global.WindowsApplication1.My.Resources.Resources.BD5
-        Me.pbbd5.Location = New System.Drawing.Point(154, 114)
-        Me.pbbd5.Name = "pbbd5"
-        Me.pbbd5.Size = New System.Drawing.Size(29, 66)
-        Me.pbbd5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbd5.TabIndex = 46
-        Me.pbbd5.TabStop = False
+        Me.pbDiente45.Image = Global.WindowsApplication1.My.Resources.Resources.Diente5AbajoIzquierdaBlanco
+        Me.pbDiente45.Location = New System.Drawing.Point(154, 114)
+        Me.pbDiente45.Name = "pbDiente45"
+        Me.pbDiente45.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente45.TabIndex = 46
+        Me.pbDiente45.TabStop = False
         '
-        'pbai1
+        'pbDiente21
         '
-        Me.pbai1.Image = Global.WindowsApplication1.My.Resources.Resources.AI1
-        Me.pbai1.Location = New System.Drawing.Point(357, 18)
-        Me.pbai1.Name = "pbai1"
-        Me.pbai1.Size = New System.Drawing.Size(26, 66)
-        Me.pbai1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai1.TabIndex = 47
-        Me.pbai1.TabStop = False
+        Me.pbDiente21.Image = Global.WindowsApplication1.My.Resources.Resources.AI1
+        Me.pbDiente21.Location = New System.Drawing.Point(357, 18)
+        Me.pbDiente21.Name = "pbDiente21"
+        Me.pbDiente21.Size = New System.Drawing.Size(26, 66)
+        Me.pbDiente21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente21.TabIndex = 47
+        Me.pbDiente21.TabStop = False
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.pbbi8)
-        Me.Panel2.Controls.Add(Me.pbbd8)
-        Me.Panel2.Controls.Add(Me.pbbd7)
-        Me.Panel2.Controls.Add(Me.pbbd6)
-        Me.Panel2.Controls.Add(Me.pbbd5)
-        Me.Panel2.Controls.Add(Me.pbai1)
-        Me.Panel2.Controls.Add(Me.pbbi7)
-        Me.Panel2.Controls.Add(Me.pbbi6)
-        Me.Panel2.Controls.Add(Me.pbbi5)
-        Me.Panel2.Controls.Add(Me.pbbi4)
-        Me.Panel2.Controls.Add(Me.pbbi3)
-        Me.Panel2.Controls.Add(Me.pbad1)
-        Me.Panel2.Controls.Add(Me.pbbd4)
-        Me.Panel2.Controls.Add(Me.pbbi2)
-        Me.Panel2.Controls.Add(Me.pbbd3)
-        Me.Panel2.Controls.Add(Me.pbbi1)
-        Me.Panel2.Controls.Add(Me.pbbd2)
-        Me.Panel2.Controls.Add(Me.pbai8)
-        Me.Panel2.Controls.Add(Me.pbbd1)
-        Me.Panel2.Controls.Add(Me.pbai7)
-        Me.Panel2.Controls.Add(Me.pbai6)
-        Me.Panel2.Controls.Add(Me.pbai5)
-        Me.Panel2.Controls.Add(Me.pbai4)
-        Me.Panel2.Controls.Add(Me.pbai3)
-        Me.Panel2.Controls.Add(Me.pbai2)
-        Me.Panel2.Controls.Add(Me.pbad3)
-        Me.Panel2.Controls.Add(Me.pbad2)
-        Me.Panel2.Controls.Add(Me.pbad4)
-        Me.Panel2.Controls.Add(Me.pbad8)
-        Me.Panel2.Controls.Add(Me.pbad5)
-        Me.Panel2.Controls.Add(Me.pbad7)
-        Me.Panel2.Controls.Add(Me.pbad6)
+        Me.Panel2.Controls.Add(Me.pbDiente38)
+        Me.Panel2.Controls.Add(Me.pbDiente48)
+        Me.Panel2.Controls.Add(Me.pbDiente47)
+        Me.Panel2.Controls.Add(Me.pbDiente46)
+        Me.Panel2.Controls.Add(Me.pbDiente45)
+        Me.Panel2.Controls.Add(Me.pbDiente21)
+        Me.Panel2.Controls.Add(Me.pbDiente37)
+        Me.Panel2.Controls.Add(Me.pbDiente36)
+        Me.Panel2.Controls.Add(Me.pbDiente35)
+        Me.Panel2.Controls.Add(Me.pbDiente34)
+        Me.Panel2.Controls.Add(Me.pbDiente33)
+        Me.Panel2.Controls.Add(Me.pbDiente11)
+        Me.Panel2.Controls.Add(Me.pbDiente44)
+        Me.Panel2.Controls.Add(Me.pbDiente32)
+        Me.Panel2.Controls.Add(Me.pbDiente43)
+        Me.Panel2.Controls.Add(Me.pbDiente31)
+        Me.Panel2.Controls.Add(Me.pbDiente42)
+        Me.Panel2.Controls.Add(Me.pbDiente28)
+        Me.Panel2.Controls.Add(Me.pbDiente41)
+        Me.Panel2.Controls.Add(Me.pbDiente27)
+        Me.Panel2.Controls.Add(Me.pbDiente26)
+        Me.Panel2.Controls.Add(Me.pbDiente25)
+        Me.Panel2.Controls.Add(Me.pbDiente24)
+        Me.Panel2.Controls.Add(Me.pbDiente23)
+        Me.Panel2.Controls.Add(Me.pbDiente22)
+        Me.Panel2.Controls.Add(Me.pbDiente13)
+        Me.Panel2.Controls.Add(Me.pbDiente12)
+        Me.Panel2.Controls.Add(Me.pbDiente14)
+        Me.Panel2.Controls.Add(Me.pbDiente18)
+        Me.Panel2.Controls.Add(Me.pbDiente15)
+        Me.Panel2.Controls.Add(Me.pbDiente17)
+        Me.Panel2.Controls.Add(Me.pbDiente16)
         Me.Panel2.Location = New System.Drawing.Point(169, 30)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(684, 195)
         Me.Panel2.TabIndex = 48
         '
-        'pbbi8
+        'pbDiente38
         '
-        Me.pbbi8.Image = Global.WindowsApplication1.My.Resources.Resources.BI8
-        Me.pbbi8.Location = New System.Drawing.Point(622, 114)
-        Me.pbbi8.Name = "pbbi8"
-        Me.pbbi8.Size = New System.Drawing.Size(39, 67)
-        Me.pbbi8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbi8.TabIndex = 62
-        Me.pbbi8.TabStop = False
+        Me.pbDiente38.Image = Global.WindowsApplication1.My.Resources.Resources.BI8
+        Me.pbDiente38.Location = New System.Drawing.Point(622, 114)
+        Me.pbDiente38.Name = "pbDiente38"
+        Me.pbDiente38.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente38.TabIndex = 62
+        Me.pbDiente38.TabStop = False
         '
-        'pbbi7
+        'pbDiente37
         '
-        Me.pbbi7.Image = Global.WindowsApplication1.My.Resources.Resources.BI7
-        Me.pbbi7.Location = New System.Drawing.Point(577, 114)
-        Me.pbbi7.Name = "pbbi7"
-        Me.pbbi7.Size = New System.Drawing.Size(39, 67)
-        Me.pbbi7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbi7.TabIndex = 61
-        Me.pbbi7.TabStop = False
+        Me.pbDiente37.Image = Global.WindowsApplication1.My.Resources.Resources.BI7
+        Me.pbDiente37.Location = New System.Drawing.Point(577, 114)
+        Me.pbDiente37.Name = "pbDiente37"
+        Me.pbDiente37.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente37.TabIndex = 61
+        Me.pbDiente37.TabStop = False
         '
-        'pbbi6
+        'pbDiente36
         '
-        Me.pbbi6.Image = Global.WindowsApplication1.My.Resources.Resources.BI6
-        Me.pbbi6.Location = New System.Drawing.Point(532, 114)
-        Me.pbbi6.Name = "pbbi6"
-        Me.pbbi6.Size = New System.Drawing.Size(39, 67)
-        Me.pbbi6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbi6.TabIndex = 60
-        Me.pbbi6.TabStop = False
+        Me.pbDiente36.Image = Global.WindowsApplication1.My.Resources.Resources.BI6
+        Me.pbDiente36.Location = New System.Drawing.Point(532, 114)
+        Me.pbDiente36.Name = "pbDiente36"
+        Me.pbDiente36.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente36.TabIndex = 60
+        Me.pbDiente36.TabStop = False
         '
-        'pbbi5
+        'pbDiente35
         '
-        Me.pbbi5.Image = Global.WindowsApplication1.My.Resources.Resources.BI5
-        Me.pbbi5.Location = New System.Drawing.Point(497, 114)
-        Me.pbbi5.Name = "pbbi5"
-        Me.pbbi5.Size = New System.Drawing.Size(29, 66)
-        Me.pbbi5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbi5.TabIndex = 59
-        Me.pbbi5.TabStop = False
+        Me.pbDiente35.Image = Global.WindowsApplication1.My.Resources.Resources.BI5
+        Me.pbDiente35.Location = New System.Drawing.Point(497, 114)
+        Me.pbDiente35.Name = "pbDiente35"
+        Me.pbDiente35.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente35.TabIndex = 59
+        Me.pbDiente35.TabStop = False
         '
-        'pbbi4
+        'pbDiente34
         '
-        Me.pbbi4.Image = Global.WindowsApplication1.My.Resources.Resources.BI4
-        Me.pbbi4.Location = New System.Drawing.Point(462, 114)
-        Me.pbbi4.Name = "pbbi4"
-        Me.pbbi4.Size = New System.Drawing.Size(29, 67)
-        Me.pbbi4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbi4.TabIndex = 58
-        Me.pbbi4.TabStop = False
+        Me.pbDiente34.Image = Global.WindowsApplication1.My.Resources.Resources.BI4
+        Me.pbDiente34.Location = New System.Drawing.Point(462, 114)
+        Me.pbDiente34.Name = "pbDiente34"
+        Me.pbDiente34.Size = New System.Drawing.Size(29, 67)
+        Me.pbDiente34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente34.TabIndex = 58
+        Me.pbDiente34.TabStop = False
         '
-        'pbbi3
+        'pbDiente33
         '
-        Me.pbbi3.Image = Global.WindowsApplication1.My.Resources.Resources.BI3
-        Me.pbbi3.Location = New System.Drawing.Point(427, 114)
-        Me.pbbi3.Name = "pbbi3"
-        Me.pbbi3.Size = New System.Drawing.Size(29, 66)
-        Me.pbbi3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbi3.TabIndex = 57
-        Me.pbbi3.TabStop = False
+        Me.pbDiente33.Image = Global.WindowsApplication1.My.Resources.Resources.BI3
+        Me.pbDiente33.Location = New System.Drawing.Point(427, 114)
+        Me.pbDiente33.Name = "pbDiente33"
+        Me.pbDiente33.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente33.TabIndex = 57
+        Me.pbDiente33.TabStop = False
         '
-        'pbbi2
+        'pbDiente32
         '
-        Me.pbbi2.Image = Global.WindowsApplication1.My.Resources.Resources.BI2
-        Me.pbbi2.Location = New System.Drawing.Point(392, 114)
-        Me.pbbi2.Name = "pbbi2"
-        Me.pbbi2.Size = New System.Drawing.Size(29, 66)
-        Me.pbbi2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbi2.TabIndex = 56
-        Me.pbbi2.TabStop = False
+        Me.pbDiente32.Image = Global.WindowsApplication1.My.Resources.Resources.BI2
+        Me.pbDiente32.Location = New System.Drawing.Point(392, 114)
+        Me.pbDiente32.Name = "pbDiente32"
+        Me.pbDiente32.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente32.TabIndex = 56
+        Me.pbDiente32.TabStop = False
         '
-        'pbbi1
+        'pbDiente31
         '
-        Me.pbbi1.Image = Global.WindowsApplication1.My.Resources.Resources.BI1
-        Me.pbbi1.Location = New System.Drawing.Point(357, 114)
-        Me.pbbi1.Name = "pbbi1"
-        Me.pbbi1.Size = New System.Drawing.Size(29, 66)
-        Me.pbbi1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbbi1.TabIndex = 55
-        Me.pbbi1.TabStop = False
+        Me.pbDiente31.Image = Global.WindowsApplication1.My.Resources.Resources.BI1
+        Me.pbDiente31.Location = New System.Drawing.Point(357, 114)
+        Me.pbDiente31.Name = "pbDiente31"
+        Me.pbDiente31.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente31.TabIndex = 55
+        Me.pbDiente31.TabStop = False
         '
-        'pbai8
+        'pbDiente28
         '
-        Me.pbai8.Image = Global.WindowsApplication1.My.Resources.Resources.AI8
-        Me.pbai8.Location = New System.Drawing.Point(620, 18)
-        Me.pbai8.Name = "pbai8"
-        Me.pbai8.Size = New System.Drawing.Size(39, 67)
-        Me.pbai8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai8.TabIndex = 54
-        Me.pbai8.TabStop = False
+        Me.pbDiente28.Image = Global.WindowsApplication1.My.Resources.Resources.AI8
+        Me.pbDiente28.Location = New System.Drawing.Point(620, 18)
+        Me.pbDiente28.Name = "pbDiente28"
+        Me.pbDiente28.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente28.TabIndex = 54
+        Me.pbDiente28.TabStop = False
         '
-        'pbai7
+        'pbDiente27
         '
-        Me.pbai7.Image = Global.WindowsApplication1.My.Resources.Resources.AI7
-        Me.pbai7.Location = New System.Drawing.Point(575, 17)
-        Me.pbai7.Name = "pbai7"
-        Me.pbai7.Size = New System.Drawing.Size(39, 67)
-        Me.pbai7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai7.TabIndex = 53
-        Me.pbai7.TabStop = False
+        Me.pbDiente27.Image = Global.WindowsApplication1.My.Resources.Resources.AI7
+        Me.pbDiente27.Location = New System.Drawing.Point(575, 17)
+        Me.pbDiente27.Name = "pbDiente27"
+        Me.pbDiente27.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente27.TabIndex = 53
+        Me.pbDiente27.TabStop = False
         '
-        'pbai6
+        'pbDiente26
         '
-        Me.pbai6.Image = Global.WindowsApplication1.My.Resources.Resources.AI6
-        Me.pbai6.Location = New System.Drawing.Point(530, 17)
-        Me.pbai6.Name = "pbai6"
-        Me.pbai6.Size = New System.Drawing.Size(39, 67)
-        Me.pbai6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai6.TabIndex = 52
-        Me.pbai6.TabStop = False
+        Me.pbDiente26.Image = Global.WindowsApplication1.My.Resources.Resources.AI6
+        Me.pbDiente26.Location = New System.Drawing.Point(530, 17)
+        Me.pbDiente26.Name = "pbDiente26"
+        Me.pbDiente26.Size = New System.Drawing.Size(39, 67)
+        Me.pbDiente26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente26.TabIndex = 52
+        Me.pbDiente26.TabStop = False
         '
-        'pbai5
+        'pbDiente25
         '
-        Me.pbai5.Image = Global.WindowsApplication1.My.Resources.Resources.AI5
-        Me.pbai5.Location = New System.Drawing.Point(495, 18)
-        Me.pbai5.Name = "pbai5"
-        Me.pbai5.Size = New System.Drawing.Size(29, 66)
-        Me.pbai5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai5.TabIndex = 51
-        Me.pbai5.TabStop = False
+        Me.pbDiente25.Image = Global.WindowsApplication1.My.Resources.Resources.AI5
+        Me.pbDiente25.Location = New System.Drawing.Point(495, 18)
+        Me.pbDiente25.Name = "pbDiente25"
+        Me.pbDiente25.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente25.TabIndex = 51
+        Me.pbDiente25.TabStop = False
         '
-        'pbai4
+        'pbDiente24
         '
-        Me.pbai4.Image = Global.WindowsApplication1.My.Resources.Resources.AI4
-        Me.pbai4.Location = New System.Drawing.Point(459, 17)
-        Me.pbai4.Name = "pbai4"
-        Me.pbai4.Size = New System.Drawing.Size(30, 67)
-        Me.pbai4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai4.TabIndex = 50
-        Me.pbai4.TabStop = False
+        Me.pbDiente24.Image = Global.WindowsApplication1.My.Resources.Resources.AI4
+        Me.pbDiente24.Location = New System.Drawing.Point(459, 17)
+        Me.pbDiente24.Name = "pbDiente24"
+        Me.pbDiente24.Size = New System.Drawing.Size(30, 67)
+        Me.pbDiente24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente24.TabIndex = 50
+        Me.pbDiente24.TabStop = False
         '
-        'pbai3
+        'pbDiente23
         '
-        Me.pbai3.Image = Global.WindowsApplication1.My.Resources.Resources.AI3
-        Me.pbai3.Location = New System.Drawing.Point(424, 18)
-        Me.pbai3.Name = "pbai3"
-        Me.pbai3.Size = New System.Drawing.Size(29, 66)
-        Me.pbai3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai3.TabIndex = 49
-        Me.pbai3.TabStop = False
+        Me.pbDiente23.Image = Global.WindowsApplication1.My.Resources.Resources.AI3
+        Me.pbDiente23.Location = New System.Drawing.Point(424, 18)
+        Me.pbDiente23.Name = "pbDiente23"
+        Me.pbDiente23.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente23.TabIndex = 49
+        Me.pbDiente23.TabStop = False
         '
-        'pbai2
+        'pbDiente22
         '
-        Me.pbai2.Image = Global.WindowsApplication1.My.Resources.Resources.AI2
-        Me.pbai2.Location = New System.Drawing.Point(389, 18)
-        Me.pbai2.Name = "pbai2"
-        Me.pbai2.Size = New System.Drawing.Size(29, 66)
-        Me.pbai2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbai2.TabIndex = 48
-        Me.pbai2.TabStop = False
+        Me.pbDiente22.Image = Global.WindowsApplication1.My.Resources.Resources.AI2
+        Me.pbDiente22.Location = New System.Drawing.Point(389, 18)
+        Me.pbDiente22.Name = "pbDiente22"
+        Me.pbDiente22.Size = New System.Drawing.Size(29, 66)
+        Me.pbDiente22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDiente22.TabIndex = 48
+        Me.pbDiente22.TabStop = False
         '
         'Panel3
         '
@@ -698,39 +698,39 @@ Partial Class Registro_Medico
         Me.Panel01477.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EstadoDiente, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbad1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbad2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbad3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbad4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbad5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbad6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbad7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbad8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbd1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbd2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbd3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbd4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbd8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbd7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbd6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbd5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente41, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente42, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente43, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente44, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente48, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente47, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente46, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente45, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente21, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.pbbi8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbi7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbi6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbi5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbi4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbi3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbi2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbbi1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbai2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente38, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente37, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente36, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente35, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente33, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente32, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDiente22, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -750,40 +750,40 @@ Partial Class Registro_Medico
     Friend WithEvents Label36 As System.Windows.Forms.Label
     Friend WithEvents Label37 As System.Windows.Forms.Label
     Friend WithEvents Label38 As System.Windows.Forms.Label
-    Friend WithEvents pbad1 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbad2 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbad3 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbad4 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbad5 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbad6 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbad7 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbad8 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbd1 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbd2 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbd3 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbd4 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbd8 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbd7 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbd6 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbd5 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbai1 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente11 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente12 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente13 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente14 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente15 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente16 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente17 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente18 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente41 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente42 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente43 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente44 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente48 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente47 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente46 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente45 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente21 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents pbai8 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbai7 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbai6 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbai5 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbai4 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbai3 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbai2 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbi8 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbi7 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbi6 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbi5 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbi4 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbi3 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbi2 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbbi1 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente28 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente27 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente26 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente25 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente24 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente23 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente22 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente38 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente37 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente36 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente35 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente34 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente33 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente32 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDiente31 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
 End Class
