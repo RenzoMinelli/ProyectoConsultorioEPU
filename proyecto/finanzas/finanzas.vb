@@ -5,8 +5,19 @@
     Dim frmContenedor As New Form
 
     Private Sub finanzas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Try
+            Consulta = "select nombre, cedula from paciente;"
+            consultar()
+            dgbPacientes.DataSource = Tabla
 
-        fecha = Now.ToShortDateString
+            For x = 0 To dgbPacientes.RowCount - 1
+                ComboBox1.Items.Add(dgbPacientes.Rows(x).Cells(0).Value + " " + dgbPacientes.Rows(x).Cells(1).Value)
+            Next
+            fecha = Now.ToShortDateString
+        Catch ex As Exception
+            MsgBox("Error al cargar pacientes", MsgBoxStyle.Exclamation)
+        End Try
+       
 
         fechad = DateSerial(Year(fecha), Month(fecha), 1)
         desde.Value = fechad
@@ -15,46 +26,83 @@
         hasta.Value = fechah
 
 
-
-        actTabla()
+        ComboBox1.SelectedItem = "Todos"
+        actTabla(ComboBox1.SelectedItem)
 
     End Sub
 
 
     Private Sub desde_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles desde.ValueChanged
-        actTabla()
+        actTabla(ComboBox1.SelectedItem)
     End Sub
 
     Private Sub hasta_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles hasta.ValueChanged
-        actTabla()
+        actTabla(ComboBox1.SelectedItem)
     End Sub
-    Public Sub actTabla()
+    Public Sub actTabla(ByVal nombrePaciente As String)
 
-        Try
-            fechad = desde.Text
-            fechah = hasta.Text
-            Consulta = "select fecha as 'Fecha de Pago', pago as 'Cantidad Depositada ($)'  ,cedula as 'Cedula', nombre as 'Nombre' from recibo r inner join paciente p on p.id_p = r.id_p where fecha <= '" + fechah.ToString("yyyy-MM-dd") + "' and fecha >= '" + fechad.ToString("yyyy-MM-dd") + "';"
-            consultar()
+        If nombrePaciente = "Todos" Then
+            Try
+                fechad = desde.Text
+                fechah = hasta.Text
+                Consulta = "select fecha as 'Fecha de Pago', pago as 'Cantidad Depositada ($)'  ,cedula as 'Cedula', nombre as 'Nombre' from recibo r inner join paciente p on p.id_p = r.id_p where fecha <= '" + fechah.ToString("yyyy-MM-dd") + "' and fecha >= '" + fechad.ToString("yyyy-MM-dd") + "';"
+                consultar()
 
-            DataGridView1.DataSource = Tabla
+                dgbPagos.DataSource = Tabla
 
-            Dim suma As Integer = 0
-            If Not IsDBNull(DataGridView1.Rows(0).Cells(0).Value) Then
-                For x As Integer = 0 To DataGridView1.RowCount - 1
+                Dim suma As Integer = 0
+                If Not IsDBNull(dgbPagos.Rows(0).Cells(0).Value) Then
 
-                    suma += DataGridView1.Rows(x).Cells(1).Value
+                    Label4.Text = ""
+                    For x As Integer = 0 To dgbPagos.RowCount - 1
 
-                Next
-            End If
+                        suma += dgbPagos.Rows(x).Cells(1).Value
 
-            monto.Text = "$"
-            monto.Text += suma.ToString
+                    Next
+                End If
 
-        Catch ex As Exception
+                monto.Text = "$"
+                monto.Text += suma.ToString
 
-            Label4.Text = "No hay pagos en esas fechas"
+            Catch ex As Exception
 
-        End Try
+                Label4.Text = "No hay pagos en esas fechas"
+
+            End Try
+        ElseIf nombrePaciente = " " Then
+            ComboBox1.SelectedItem = "Todos"
+            actTabla("Todos")
+        Else
+            Try
+                Dim cedula As String = nombrePaciente.Substring(nombrePaciente.Length - 8, 8)
+
+                fechad = desde.Text
+                fechah = hasta.Text
+                Consulta = "select fecha as 'Fecha de Pago', pago as 'Cantidad Depositada ($)'  ,cedula as 'Cedula', nombre as 'Nombre' from recibo r inner join paciente p on p.id_p = r.id_p where fecha <= '" + fechah.ToString("yyyy-MM-dd") + "' and fecha >= '" + fechad.ToString("yyyy-MM-dd") + "' and cedula = '" + cedula + "';"
+                consultar()
+
+                dgbPagos.DataSource = Tabla
+
+                Dim suma As Integer = 0
+                If Not IsDBNull(dgbPagos.Rows(0).Cells(0).Value) Then
+
+                    Label4.Text = ""
+                    For x As Integer = 0 To dgbPagos.RowCount - 1
+
+                        suma += dgbPagos.Rows(x).Cells(1).Value
+
+                    Next
+                End If
+
+                monto.Text = "$"
+                monto.Text += suma.ToString
+            Catch ex As Exception
+
+                Label4.Text = "No hay pagos en esas fechas"
+
+            End Try
+        End If
+        
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -64,6 +112,11 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedValueChanged
+        actTabla(ComboBox1.SelectedItem)
 
     End Sub
 End Class
