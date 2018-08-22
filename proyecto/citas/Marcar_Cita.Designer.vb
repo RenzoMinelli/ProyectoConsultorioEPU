@@ -128,7 +128,7 @@ Partial Class marcar_cita
         '
         Me.Label37.AutoSize = True
         Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(350, 31)
+        Me.Label37.Location = New System.Drawing.Point(350, 28)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(168, 24)
         Me.Label37.TabIndex = 51

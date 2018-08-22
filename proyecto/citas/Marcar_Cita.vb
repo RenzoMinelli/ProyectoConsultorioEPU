@@ -668,6 +668,7 @@
     End Sub
 
     Private Sub imgdiente23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbDiente41.Click
+        MsgBox("click")
         diente41 = diente41 + 1
         cambiador41 = True
         Select Case diente41
@@ -1040,9 +1041,10 @@
     Private Sub marcar_cita_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim zona As String = ""
         Try
-            Consulta = "Select descripcion, zona, nro_diente from registro_medico where id_p = '" + Str(id_p) + "';"
+            Consulta = "Select r.descripcion, zona, nro_diente, fecha from registro_medico r left join cita c on c.id_c = r.id_c where r.id_p = '" + Str(id_p) + "';"
             consultar()
             DataGridView1.DataSource = Tabla
+            DataGridView1.Sort(DataGridView1.Columns(3), System.ComponentModel.ListSortDirection.Ascending)
 
             For x As Integer = 0 To DataGridView1.RowCount - 1
                 zona = ""
@@ -1070,23 +1072,39 @@
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente11.Image = My.Resources.Diente1ArribaIzquierdaRojo
+                                    diente11 = 2
+                                    diente11f = "alerta"
                                 Case "precaucion"
                                     pbDiente11.Image = My.Resources.Diente1ArribaIzquierdaAmarillo
+                                    diente11 = 1
+                                    diente11f = "alerta"
                                 Case "ausente"
                                     pbDiente11.Image = My.Resources.Diente1ArribaIzquierdaNegro
+                                    diente11 = 3
+                                    diente11f = "ausente"
                                 Case Else
                                     pbDiente11.Image = My.Resources.Diente1ArribaIzquierdaBlanco
+                                    diente11 = 0
+                                    diente11f = "normal"
                             End Select
                         Case "12"
                             Select Case DataGridView1.Rows(x).Cells(0).Value
                                 Case "alerta"
                                     pbDiente12.Image = My.Resources.Diente2ArribaIzquierdaRojo
+                                    diente11 = 2
+                                    diente11f = "alerta"
                                 Case "precaucion"
                                     pbDiente12.Image = My.Resources.Diente2ArribaIzquierdaAmarillo
+                                    diente11 = 1
+                                    diente11f = "precaucion"
                                 Case "ausente"
                                     pbDiente12.Image = My.Resources.Diente2ArribaIzquierdaNegro
+                                    diente11 = 3
+                                    diente11f = "ausente"
                                 Case Else
                                     pbDiente11.Image = My.Resources.Diente2ArribaIzquierdaBlanco
+                                    diente11 = 0
+                                    diente11f = "normal"
 
                             End Select
                         Case "13"
