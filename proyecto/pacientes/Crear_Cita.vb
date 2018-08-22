@@ -19,6 +19,7 @@
         dgbCitasEnLaFecha.DataSource = Tabla
 
 
+
     End Sub
 
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -85,5 +86,25 @@
         Consulta = "Select nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
         consultar()
         dgbCitasEnLaFecha.DataSource = Tabla
+    End Sub
+
+    Private Sub dgbCitasEnLaFecha_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgbCitasEnLaFecha.CellClick
+        dgbCitasEnLaFecha.ClearSelection()
+    End Sub
+
+    Private Sub dgbCitasEnLaFecha_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgbCitasEnLaFecha.Click
+      dgbCitasEnLaFecha.ClearSelection()
+    End Sub
+
+    Private Sub dgbCitasEnLaFecha_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgbCitasEnLaFecha.MouseClick
+        dgbCitasEnLaFecha.ClearSelection()
+    End Sub
+
+    Private Sub dgbCitasEnLaFecha_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgbCitasEnLaFecha.MouseDown
+        dgbCitasEnLaFecha.ClearSelection()
+    End Sub
+
+    Private Sub dgbCitasEnLaFecha_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgbCitasEnLaFecha.MouseEnter
+        dgbCitasEnLaFecha.ClearSelection()
     End Sub
 End Class

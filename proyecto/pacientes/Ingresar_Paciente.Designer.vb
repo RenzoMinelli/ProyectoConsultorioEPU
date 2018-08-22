@@ -78,7 +78,7 @@ Partial Class Ingresar_Paciente
         Me.txbCedula.Location = New System.Drawing.Point(249, 106)
         Me.txbCedula.Name = "txbCedula"
         Me.txbCedula.Size = New System.Drawing.Size(227, 29)
-        Me.txbCedula.TabIndex = 3
+        Me.txbCedula.TabIndex = 1
         '
         'Label3
         '
@@ -106,7 +106,7 @@ Partial Class Ingresar_Paciente
         Me.txbEnviadoPor.Location = New System.Drawing.Point(249, 213)
         Me.txbEnviadoPor.Name = "txbEnviadoPor"
         Me.txbEnviadoPor.Size = New System.Drawing.Size(227, 29)
-        Me.txbEnviadoPor.TabIndex = 7
+        Me.txbEnviadoPor.TabIndex = 3
         '
         'Label5
         '
@@ -124,7 +124,7 @@ Partial Class Ingresar_Paciente
         Me.txbDireccionPersonal.Location = New System.Drawing.Point(249, 264)
         Me.txbDireccionPersonal.Name = "txbDireccionPersonal"
         Me.txbDireccionPersonal.Size = New System.Drawing.Size(227, 29)
-        Me.txbDireccionPersonal.TabIndex = 9
+        Me.txbDireccionPersonal.TabIndex = 4
         '
         'Label6
         '
@@ -142,7 +142,7 @@ Partial Class Ingresar_Paciente
         Me.txbDireccionTrabajo.Location = New System.Drawing.Point(249, 302)
         Me.txbDireccionTrabajo.Name = "txbDireccionTrabajo"
         Me.txbDireccionTrabajo.Size = New System.Drawing.Size(227, 29)
-        Me.txbDireccionTrabajo.TabIndex = 11
+        Me.txbDireccionTrabajo.TabIndex = 5
         '
         'btnAgregar
         '
@@ -152,7 +152,7 @@ Partial Class Ingresar_Paciente
         Me.btnAgregar.Location = New System.Drawing.Point(672, 467)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(128, 54)
-        Me.btnAgregar.TabIndex = 12
+        Me.btnAgregar.TabIndex = 8
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnAgregar.UseVisualStyleBackColor = True
@@ -165,7 +165,7 @@ Partial Class Ingresar_Paciente
         Me.btnCancelar.Location = New System.Drawing.Point(85, 467)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(144, 54)
-        Me.btnCancelar.TabIndex = 13
+        Me.btnCancelar.TabIndex = 9
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnCancelar.UseVisualStyleBackColor = True
@@ -176,7 +176,7 @@ Partial Class Ingresar_Paciente
         Me.btnAgregarAntecedentes.Location = New System.Drawing.Point(16, 344)
         Me.btnAgregarAntecedentes.Name = "btnAgregarAntecedentes"
         Me.btnAgregarAntecedentes.Size = New System.Drawing.Size(460, 42)
-        Me.btnAgregarAntecedentes.TabIndex = 14
+        Me.btnAgregarAntecedentes.TabIndex = 7
         Me.btnAgregarAntecedentes.Text = "Agregar Antecedentes"
         Me.btnAgregarAntecedentes.UseVisualStyleBackColor = True
         '
@@ -196,7 +196,7 @@ Partial Class Ingresar_Paciente
         Me.mcFechaNacimiento.Location = New System.Drawing.Point(672, 118)
         Me.mcFechaNacimiento.MaxSelectionCount = 1
         Me.mcFechaNacimiento.Name = "mcFechaNacimiento"
-        Me.mcFechaNacimiento.TabIndex = 16
+        Me.mcFechaNacimiento.TabIndex = 6
         '
         'DataGridView1
         '
@@ -218,7 +218,7 @@ Partial Class Ingresar_Paciente
         Me.txbTelefono.Location = New System.Drawing.Point(249, 160)
         Me.txbTelefono.Name = "txbTelefono"
         Me.txbTelefono.Size = New System.Drawing.Size(227, 29)
-        Me.txbTelefono.TabIndex = 19
+        Me.txbTelefono.TabIndex = 2
         '
         'Label8
         '
@@ -230,7 +230,7 @@ Partial Class Ingresar_Paciente
         Me.Label8.TabIndex = 18
         Me.Label8.Text = "Teléfono"
         '
-        'Agregar_Paciente
+        'Ingresar_Paciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -255,7 +255,7 @@ Partial Class Ingresar_Paciente
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txbNombre)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Agregar_Paciente"
+        Me.Name = "Ingresar_Paciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

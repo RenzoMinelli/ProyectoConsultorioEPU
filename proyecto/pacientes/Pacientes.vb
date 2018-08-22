@@ -240,6 +240,7 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
+        Crear_Cita.dgbCitasEnLaFecha.ClearSelection()
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged

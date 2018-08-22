@@ -124,11 +124,12 @@ Partial Class Crear_Cita
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgbCitasEnLaFecha.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgbCitasEnLaFecha.Location = New System.Drawing.Point(552, 103)
+        Me.dgbCitasEnLaFecha.Location = New System.Drawing.Point(501, 103)
         Me.dgbCitasEnLaFecha.Name = "dgbCitasEnLaFecha"
         Me.dgbCitasEnLaFecha.ReadOnly = True
         Me.dgbCitasEnLaFecha.RowHeadersVisible = False
-        Me.dgbCitasEnLaFecha.Size = New System.Drawing.Size(412, 213)
+        Me.dgbCitasEnLaFecha.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgbCitasEnLaFecha.Size = New System.Drawing.Size(501, 213)
         Me.dgbCitasEnLaFecha.TabIndex = 18
         '
         'lblCitasEnLaFceha
@@ -145,7 +146,7 @@ Partial Class Crear_Cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.ClientSize = New System.Drawing.Size(1030, 607)
         Me.Controls.Add(Me.lblCitasEnLaFceha)
         Me.Controls.Add(Me.dgbCitasEnLaFecha)
         Me.Controls.Add(Me.lblAnotaciones)

@@ -78,7 +78,7 @@ Partial Class Modificar_Paciente
         Me.txbCedula.Location = New System.Drawing.Point(276, 135)
         Me.txbCedula.Name = "txbCedula"
         Me.txbCedula.Size = New System.Drawing.Size(234, 29)
-        Me.txbCedula.TabIndex = 3
+        Me.txbCedula.TabIndex = 1
         '
         'lblFechaNacimiento
         '
@@ -106,7 +106,7 @@ Partial Class Modificar_Paciente
         Me.txbEnviadoPor.Location = New System.Drawing.Point(276, 234)
         Me.txbEnviadoPor.Name = "txbEnviadoPor"
         Me.txbEnviadoPor.Size = New System.Drawing.Size(234, 29)
-        Me.txbEnviadoPor.TabIndex = 7
+        Me.txbEnviadoPor.TabIndex = 3
         '
         'lblDireccionPersonal
         '
@@ -124,7 +124,7 @@ Partial Class Modificar_Paciente
         Me.txbDireccionPersonal.Location = New System.Drawing.Point(276, 283)
         Me.txbDireccionPersonal.Name = "txbDireccionPersonal"
         Me.txbDireccionPersonal.Size = New System.Drawing.Size(234, 29)
-        Me.txbDireccionPersonal.TabIndex = 9
+        Me.txbDireccionPersonal.TabIndex = 4
         '
         'lblDireccionTrabajo
         '
@@ -142,7 +142,7 @@ Partial Class Modificar_Paciente
         Me.txbDireccionTrabajo.Location = New System.Drawing.Point(276, 321)
         Me.txbDireccionTrabajo.Name = "txbDireccionTrabajo"
         Me.txbDireccionTrabajo.Size = New System.Drawing.Size(234, 29)
-        Me.txbDireccionTrabajo.TabIndex = 11
+        Me.txbDireccionTrabajo.TabIndex = 5
         '
         'btnGuardar
         '
@@ -152,7 +152,7 @@ Partial Class Modificar_Paciente
         Me.btnGuardar.Location = New System.Drawing.Point(593, 458)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(149, 60)
-        Me.btnGuardar.TabIndex = 12
+        Me.btnGuardar.TabIndex = 8
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnGuardar.UseVisualStyleBackColor = True
@@ -165,7 +165,7 @@ Partial Class Modificar_Paciente
         Me.btnCancelar.Location = New System.Drawing.Point(72, 458)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(148, 60)
-        Me.btnCancelar.TabIndex = 13
+        Me.btnCancelar.TabIndex = 9
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnCancelar.UseVisualStyleBackColor = True
@@ -176,7 +176,7 @@ Partial Class Modificar_Paciente
         Me.btnModificarAntecedentes.Location = New System.Drawing.Point(39, 371)
         Me.btnModificarAntecedentes.Name = "btnModificarAntecedentes"
         Me.btnModificarAntecedentes.Size = New System.Drawing.Size(471, 37)
-        Me.btnModificarAntecedentes.TabIndex = 14
+        Me.btnModificarAntecedentes.TabIndex = 7
         Me.btnModificarAntecedentes.Text = "Modificar Antecedentes"
         Me.btnModificarAntecedentes.UseVisualStyleBackColor = True
         '
@@ -196,7 +196,7 @@ Partial Class Modificar_Paciente
         Me.mcFechaNacimiento.Location = New System.Drawing.Point(690, 116)
         Me.mcFechaNacimiento.MaxSelectionCount = 1
         Me.mcFechaNacimiento.Name = "mcFechaNacimiento"
-        Me.mcFechaNacimiento.TabIndex = 16
+        Me.mcFechaNacimiento.TabIndex = 6
         '
         'DataGridView1
         '
@@ -213,7 +213,7 @@ Partial Class Modificar_Paciente
         Me.txbTelefono.Location = New System.Drawing.Point(276, 184)
         Me.txbTelefono.Name = "txbTelefono"
         Me.txbTelefono.Size = New System.Drawing.Size(234, 29)
-        Me.txbTelefono.TabIndex = 21
+        Me.txbTelefono.TabIndex = 2
         '
         'lblTelefono
         '
