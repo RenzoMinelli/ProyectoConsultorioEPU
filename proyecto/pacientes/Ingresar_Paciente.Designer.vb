@@ -49,7 +49,7 @@ Partial Class Ingresar_Paciente
         'txbNombre
         '
         Me.txbNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbNombre.Location = New System.Drawing.Point(249, 62)
+        Me.txbNombre.Location = New System.Drawing.Point(278, 62)
         Me.txbNombre.Name = "txbNombre"
         Me.txbNombre.Size = New System.Drawing.Size(227, 29)
         Me.txbNombre.TabIndex = 0
@@ -70,14 +70,14 @@ Partial Class Ingresar_Paciente
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(12, 106)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(70, 24)
+        Me.Label2.Size = New System.Drawing.Size(266, 24)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Cédula"
+        Me.Label2.Text = "Cédula (sin puntos ni guiones)"
         '
         'txbCedula
         '
         Me.txbCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbCedula.Location = New System.Drawing.Point(249, 106)
+        Me.txbCedula.Location = New System.Drawing.Point(278, 106)
         Me.txbCedula.Name = "txbCedula"
         Me.txbCedula.Size = New System.Drawing.Size(227, 29)
         Me.txbCedula.TabIndex = 1
@@ -105,7 +105,7 @@ Partial Class Ingresar_Paciente
         'txbEnviadoPor
         '
         Me.txbEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbEnviadoPor.Location = New System.Drawing.Point(249, 213)
+        Me.txbEnviadoPor.Location = New System.Drawing.Point(278, 213)
         Me.txbEnviadoPor.Name = "txbEnviadoPor"
         Me.txbEnviadoPor.Size = New System.Drawing.Size(227, 29)
         Me.txbEnviadoPor.TabIndex = 3
@@ -123,7 +123,7 @@ Partial Class Ingresar_Paciente
         'txbDireccionPersonal
         '
         Me.txbDireccionPersonal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbDireccionPersonal.Location = New System.Drawing.Point(249, 264)
+        Me.txbDireccionPersonal.Location = New System.Drawing.Point(278, 259)
         Me.txbDireccionPersonal.Name = "txbDireccionPersonal"
         Me.txbDireccionPersonal.Size = New System.Drawing.Size(227, 29)
         Me.txbDireccionPersonal.TabIndex = 4
@@ -141,7 +141,7 @@ Partial Class Ingresar_Paciente
         'txbDireccionTrabajo
         '
         Me.txbDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbDireccionTrabajo.Location = New System.Drawing.Point(249, 302)
+        Me.txbDireccionTrabajo.Location = New System.Drawing.Point(278, 302)
         Me.txbDireccionTrabajo.Name = "txbDireccionTrabajo"
         Me.txbDireccionTrabajo.Size = New System.Drawing.Size(227, 29)
         Me.txbDireccionTrabajo.TabIndex = 5
@@ -151,7 +151,7 @@ Partial Class Ingresar_Paciente
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAgregar.Location = New System.Drawing.Point(672, 467)
+        Me.btnAgregar.Location = New System.Drawing.Point(743, 467)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(128, 54)
         Me.btnAgregar.TabIndex = 8
@@ -175,7 +175,7 @@ Partial Class Ingresar_Paciente
         'btnAgregarAntecedentes
         '
         Me.btnAgregarAntecedentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarAntecedentes.Location = New System.Drawing.Point(16, 344)
+        Me.btnAgregarAntecedentes.Location = New System.Drawing.Point(12, 374)
         Me.btnAgregarAntecedentes.Name = "btnAgregarAntecedentes"
         Me.btnAgregarAntecedentes.Size = New System.Drawing.Size(460, 42)
         Me.btnAgregarAntecedentes.TabIndex = 7
@@ -195,7 +195,7 @@ Partial Class Ingresar_Paciente
         'mcFechaNacimiento
         '
         Me.mcFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mcFechaNacimiento.Location = New System.Drawing.Point(672, 118)
+        Me.mcFechaNacimiento.Location = New System.Drawing.Point(687, 106)
         Me.mcFechaNacimiento.MaxSelectionCount = 1
         Me.mcFechaNacimiento.Name = "mcFechaNacimiento"
         Me.mcFechaNacimiento.TabIndex = 6
@@ -217,7 +217,7 @@ Partial Class Ingresar_Paciente
         'txbTelefono
         '
         Me.txbTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbTelefono.Location = New System.Drawing.Point(249, 160)
+        Me.txbTelefono.Location = New System.Drawing.Point(278, 160)
         Me.txbTelefono.Name = "txbTelefono"
         Me.txbTelefono.Size = New System.Drawing.Size(227, 29)
         Me.txbTelefono.TabIndex = 2
