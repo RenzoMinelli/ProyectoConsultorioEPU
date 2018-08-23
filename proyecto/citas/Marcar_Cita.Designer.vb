@@ -600,6 +600,7 @@ Partial Class marcar_cita
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(791, 64)
         Me.DataGridView1.TabIndex = 54
+        Me.DataGridView1.Visible = False
         '
         'marcar_cita
         '

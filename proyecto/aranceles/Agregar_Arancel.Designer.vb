@@ -51,6 +51,7 @@ Partial Class Agregar_Arancel
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"lab", "odo"})
         Me.ComboBox1.Location = New System.Drawing.Point(122, 64)

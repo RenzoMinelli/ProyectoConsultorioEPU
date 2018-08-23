@@ -348,7 +348,6 @@ Partial Class Menu_Inicio
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.LightGray
-        Me.Panel1.Controls.Add(Me.PictureBox6)
         Me.Panel1.Controls.Add(Me.PictureBox5)
         Me.Panel1.Controls.Add(Me.Panel16)
         Me.Panel1.Controls.Add(Me.Panel15)
@@ -363,6 +362,7 @@ Partial Class Menu_Inicio
         Me.Panel1.Controls.Add(Me.Panel9)
         Me.Panel1.Controls.Add(Me.Panel10)
         Me.Panel1.Controls.Add(Me.Panel11)
+        Me.Panel1.Controls.Add(Me.PictureBox6)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
@@ -372,7 +372,7 @@ Partial Class Menu_Inicio
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
-        Me.PictureBox6.Location = New System.Drawing.Point(126, 630)
+        Me.PictureBox6.Location = New System.Drawing.Point(71, 621)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(43, 32)
         Me.PictureBox6.TabIndex = 15
@@ -381,7 +381,7 @@ Partial Class Menu_Inicio
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources._70002
-        Me.PictureBox5.Location = New System.Drawing.Point(126, 630)
+        Me.PictureBox5.Location = New System.Drawing.Point(71, 621)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(43, 32)
         Me.PictureBox5.TabIndex = 0
