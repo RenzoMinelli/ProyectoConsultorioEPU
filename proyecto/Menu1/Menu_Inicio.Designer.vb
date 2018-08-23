@@ -30,15 +30,15 @@ Partial Class Menu_Inicio
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.pnlPacientes = New System.Windows.Forms.Panel()
+        Me.pbPacientes = New System.Windows.Forms.PictureBox()
+        Me.lblPacientes = New System.Windows.Forms.Label()
+        Me.pnlCitas = New System.Windows.Forms.Panel()
+        Me.pbCitas = New System.Windows.Forms.PictureBox()
+        Me.lblCitas = New System.Windows.Forms.Label()
+        Me.pnlPacientes2 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.pnlCitas2 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
@@ -51,19 +51,18 @@ Partial Class Menu_Inicio
         Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel16 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel11.SuspendLayout()
-        Me.Panel10.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel9.SuspendLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlPacientes.SuspendLayout()
+        CType(Me.pbPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlCitas.SuspendLayout()
+        CType(Me.pbCitas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel12.SuspendLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel13.SuspendLayout()
@@ -71,8 +70,8 @@ Partial Class Menu_Inicio
         Me.Panel15.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -139,73 +138,73 @@ Partial Class Menu_Inicio
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "00:00:00"
         '
-        'Panel10
+        'pnlPacientes
         '
-        Me.Panel10.BackColor = System.Drawing.Color.Silver
-        Me.Panel10.Controls.Add(Me.PictureBox3)
-        Me.Panel10.Controls.Add(Me.Label1)
-        Me.Panel10.Location = New System.Drawing.Point(13, 129)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(161, 32)
-        Me.Panel10.TabIndex = 22
+        Me.pnlPacientes.BackColor = System.Drawing.Color.Silver
+        Me.pnlPacientes.Controls.Add(Me.pbPacientes)
+        Me.pnlPacientes.Controls.Add(Me.lblPacientes)
+        Me.pnlPacientes.Location = New System.Drawing.Point(13, 129)
+        Me.pnlPacientes.Name = "pnlPacientes"
+        Me.pnlPacientes.Size = New System.Drawing.Size(161, 32)
+        Me.pnlPacientes.TabIndex = 22
         '
-        'PictureBox3
+        'pbPacientes
         '
-        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources._25437
-        Me.PictureBox3.Location = New System.Drawing.Point(6, 2)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox3.TabIndex = 13
-        Me.PictureBox3.TabStop = False
+        Me.pbPacientes.Image = Global.WindowsApplication1.My.Resources.Resources._25437
+        Me.pbPacientes.Location = New System.Drawing.Point(6, 2)
+        Me.pbPacientes.Name = "pbPacientes"
+        Me.pbPacientes.Size = New System.Drawing.Size(27, 32)
+        Me.pbPacientes.TabIndex = 13
+        Me.pbPacientes.TabStop = False
         '
-        'Label1
+        'lblPacientes
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label1.Location = New System.Drawing.Point(40, 7)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 25)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Pacientes"
+        Me.lblPacientes.AutoSize = True
+        Me.lblPacientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPacientes.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.lblPacientes.Location = New System.Drawing.Point(40, 7)
+        Me.lblPacientes.Name = "lblPacientes"
+        Me.lblPacientes.Size = New System.Drawing.Size(107, 25)
+        Me.lblPacientes.TabIndex = 9
+        Me.lblPacientes.Text = "Pacientes"
         '
-        'Panel9
+        'pnlCitas
         '
-        Me.Panel9.BackColor = System.Drawing.Color.Silver
-        Me.Panel9.Controls.Add(Me.PictureBox8)
-        Me.Panel9.Controls.Add(Me.Label4)
-        Me.Panel9.Location = New System.Drawing.Point(13, 93)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(161, 32)
-        Me.Panel9.TabIndex = 21
+        Me.pnlCitas.BackColor = System.Drawing.Color.Silver
+        Me.pnlCitas.Controls.Add(Me.pbCitas)
+        Me.pnlCitas.Controls.Add(Me.lblCitas)
+        Me.pnlCitas.Location = New System.Drawing.Point(13, 93)
+        Me.pnlCitas.Name = "pnlCitas"
+        Me.pnlCitas.Size = New System.Drawing.Size(161, 32)
+        Me.pnlCitas.TabIndex = 21
         '
-        'PictureBox8
+        'pbCitas
         '
-        Me.PictureBox8.Image = Global.WindowsApplication1.My.Resources.Resources.notebook
-        Me.PictureBox8.Location = New System.Drawing.Point(6, 0)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(35, 39)
-        Me.PictureBox8.TabIndex = 25
-        Me.PictureBox8.TabStop = False
+        Me.pbCitas.Image = Global.WindowsApplication1.My.Resources.Resources.notebook
+        Me.pbCitas.Location = New System.Drawing.Point(6, 0)
+        Me.pbCitas.Name = "pbCitas"
+        Me.pbCitas.Size = New System.Drawing.Size(35, 39)
+        Me.pbCitas.TabIndex = 25
+        Me.pbCitas.TabStop = False
         '
-        'Label4
+        'lblCitas
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
-        Me.Label4.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label4.Location = New System.Drawing.Point(40, 7)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(61, 25)
-        Me.Label4.TabIndex = 16
-        Me.Label4.Text = "Citas"
+        Me.lblCitas.AutoSize = True
+        Me.lblCitas.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
+        Me.lblCitas.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.lblCitas.Location = New System.Drawing.Point(40, 7)
+        Me.lblCitas.Name = "lblCitas"
+        Me.lblCitas.Size = New System.Drawing.Size(61, 25)
+        Me.lblCitas.TabIndex = 16
+        Me.lblCitas.Text = "Citas"
         '
-        'Panel3
+        'pnlPacientes2
         '
-        Me.Panel3.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel3.Location = New System.Drawing.Point(3, 129)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(10, 32)
-        Me.Panel3.TabIndex = 6
+        Me.pnlPacientes2.BackColor = System.Drawing.Color.RoyalBlue
+        Me.pnlPacientes2.Location = New System.Drawing.Point(3, 129)
+        Me.pnlPacientes2.Name = "pnlPacientes2"
+        Me.pnlPacientes2.Size = New System.Drawing.Size(10, 32)
+        Me.pnlPacientes2.TabIndex = 6
         '
         'Panel4
         '
@@ -215,13 +214,13 @@ Partial Class Menu_Inicio
         Me.Panel4.Size = New System.Drawing.Size(10, 32)
         Me.Panel4.TabIndex = 7
         '
-        'Panel5
+        'pnlCitas2
         '
-        Me.Panel5.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel5.Location = New System.Drawing.Point(3, 93)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(10, 32)
-        Me.Panel5.TabIndex = 7
+        Me.pnlCitas2.BackColor = System.Drawing.Color.RoyalBlue
+        Me.pnlCitas2.Location = New System.Drawing.Point(3, 93)
+        Me.pnlCitas2.Name = "pnlCitas2"
+        Me.pnlCitas2.Size = New System.Drawing.Size(10, 32)
+        Me.pnlCitas2.TabIndex = 7
         '
         'Panel6
         '
@@ -337,30 +336,21 @@ Partial Class Menu_Inicio
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         '
-        'Panel16
-        '
-        Me.Panel16.BackColor = System.Drawing.Color.LightGray
-        Me.Panel16.Location = New System.Drawing.Point(0, 53)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(176, 110)
-        Me.Panel16.TabIndex = 25
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.LightGray
         Me.Panel1.Controls.Add(Me.PictureBox5)
-        Me.Panel1.Controls.Add(Me.Panel16)
         Me.Panel1.Controls.Add(Me.Panel15)
         Me.Panel1.Controls.Add(Me.Panel13)
         Me.Panel1.Controls.Add(Me.Panel12)
         Me.Panel1.Controls.Add(Me.Panel8)
         Me.Panel1.Controls.Add(Me.Panel7)
         Me.Panel1.Controls.Add(Me.Panel6)
-        Me.Panel1.Controls.Add(Me.Panel5)
+        Me.Panel1.Controls.Add(Me.pnlCitas2)
         Me.Panel1.Controls.Add(Me.Panel4)
-        Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Controls.Add(Me.Panel9)
-        Me.Panel1.Controls.Add(Me.Panel10)
+        Me.Panel1.Controls.Add(Me.pnlPacientes2)
+        Me.Panel1.Controls.Add(Me.pnlCitas)
+        Me.Panel1.Controls.Add(Me.pnlPacientes)
         Me.Panel1.Controls.Add(Me.Panel11)
         Me.Panel1.Controls.Add(Me.PictureBox6)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
@@ -368,15 +358,6 @@ Partial Class Menu_Inicio
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(174, 665)
         Me.Panel1.TabIndex = 5
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
-        Me.PictureBox6.Location = New System.Drawing.Point(71, 621)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(43, 32)
-        Me.PictureBox6.TabIndex = 15
-        Me.PictureBox6.TabStop = False
         '
         'PictureBox5
         '
@@ -386,6 +367,15 @@ Partial Class Menu_Inicio
         Me.PictureBox5.Size = New System.Drawing.Size(43, 32)
         Me.PictureBox5.TabIndex = 0
         Me.PictureBox5.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
+        Me.PictureBox6.Location = New System.Drawing.Point(71, 621)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(43, 32)
+        Me.PictureBox6.TabIndex = 15
+        Me.PictureBox6.TabStop = False
         '
         'Menu_Inicio
         '
@@ -406,12 +396,12 @@ Partial Class Menu_Inicio
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
-        Me.Panel10.ResumeLayout(False)
-        Me.Panel10.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel9.PerformLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlPacientes.ResumeLayout(False)
+        Me.pnlPacientes.PerformLayout()
+        CType(Me.pbPacientes, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlCitas.ResumeLayout(False)
+        Me.pnlCitas.PerformLayout()
+        CType(Me.pbCitas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
@@ -422,8 +412,8 @@ Partial Class Menu_Inicio
         Me.Panel15.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -433,14 +423,14 @@ Partial Class Menu_Inicio
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel11 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Panel10 As System.Windows.Forms.Panel
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Panel9 As System.Windows.Forms.Panel
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents pnlPacientes As System.Windows.Forms.Panel
+    Friend WithEvents pbPacientes As System.Windows.Forms.PictureBox
+    Friend WithEvents lblPacientes As System.Windows.Forms.Label
+    Friend WithEvents pnlCitas As System.Windows.Forms.Panel
+    Friend WithEvents lblCitas As System.Windows.Forms.Label
+    Friend WithEvents pnlPacientes2 As System.Windows.Forms.Panel
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
-    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents pnlCitas2 As System.Windows.Forms.Panel
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
@@ -450,13 +440,12 @@ Partial Class Menu_Inicio
     Friend WithEvents Panel15 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel16 As System.Windows.Forms.Panel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbCitas As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
 End Class

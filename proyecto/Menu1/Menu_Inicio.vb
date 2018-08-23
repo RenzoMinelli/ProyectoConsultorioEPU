@@ -16,7 +16,14 @@
 
         If user = "funcionario" Then
 
-            Panel16.Show()
+            lblCitas.Hide()
+            lblPacientes.Hide()
+            pbCitas.Hide()
+            pbPacientes.Hide()
+            pnlCitas.Hide()
+            pnlPacientes.Hide()
+            pnlPacientes2.Hide()
+            pnlCitas2.Hide()
 
             frmContenedor = Aranceles
             frmContenedor.MdiParent = Me
@@ -27,14 +34,14 @@
 
         ElseIf user = "odontologo" Or user = "root" Then
 
-            Panel16.Hide()
+
 
             frmContenedor = Citas
             frmContenedor.MdiParent = Me
             frmContenedor.Dock = DockStyle.Fill
             frmContenedor.Show()
 
-            Label4.ForeColor = Color.White
+            lblCitas.ForeColor = Color.White
 
         End If
 
@@ -50,17 +57,18 @@
 
     End Sub
 
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblPacientes.Click
         Me.ActiveMdiChild.Dispose()
         frmContenedor = Pacientes
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        Label1.ForeColor = Color.White
+        lblPacientes.ForeColor = Color.White
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
+        Pacientes.dgbPacientes.ClearSelection()
 
     End Sub
 
@@ -70,24 +78,27 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        Label1.ForeColor = Color.RoyalBlue
+        lblPacientes.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.White
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
+        Aranceles.DataGridView1.ClearSelection()
     End Sub
 
-    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCitas.Click
         Me.ActiveMdiChild.Dispose()
         frmContenedor = Citas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        Label1.ForeColor = Color.RoyalBlue
+        lblPacientes.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.White
+        lblCitas.ForeColor = Color.White
+        Citas.DataGridView1.ClearSelection()
+
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
@@ -157,23 +168,25 @@
         frmContenedor.Show()
 
         Label7.ForeColor = Color.White
-        Label1.ForeColor = Color.RoyalBlue
+        lblPacientes.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
+
     End Sub
 
-    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
+    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPacientes.Click
         Me.ActiveMdiChild.Dispose()
         frmContenedor = Pacientes
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        Label1.ForeColor = Color.White
+        lblPacientes.ForeColor = Color.White
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
+        Pacientes.dgbPacientes.ClearSelection()
     End Sub
 
     Private Sub Panel8_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel8.MouseDown
@@ -221,38 +234,38 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        Label1.ForeColor = Color.RoyalBlue
+        lblPacientes.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.White
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
 
-    Private Sub Panel10_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel10.Click
+    Private Sub Panel10_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlPacientes.Click
         Me.ActiveMdiChild.Dispose()
         frmContenedor = Pacientes
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        Label1.ForeColor = Color.White
+        lblPacientes.ForeColor = Color.White
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
     End Sub
 
-    Private Sub Panel9_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel9.Click
+    Private Sub Panel9_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlCitas.Click
         Me.ActiveMdiChild.Dispose()
         frmContenedor = Citas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        Label1.ForeColor = Color.RoyalBlue
+        lblPacientes.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.White
+        lblCitas.ForeColor = Color.White
     End Sub
 
 
@@ -262,11 +275,11 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        Label1.ForeColor = Color.RoyalBlue
+        lblPacientes.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.White
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
     Private Sub Panel13_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel13.Click
@@ -277,10 +290,10 @@
         frmContenedor.Show()
 
         Label7.ForeColor = Color.White
-        Label1.ForeColor = Color.RoyalBlue
+        lblPacientes.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
-        Label4.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
 
@@ -290,11 +303,11 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        Label1.ForeColor = Color.RoyalBlue
+        lblPacientes.ForeColor = Color.RoyalBlue
         Label2.ForeColor = Color.RoyalBlue
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.White
-        Label4.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
     Private Sub PictureBox9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox9.Click
@@ -314,7 +327,20 @@
             con = 1
 
         End If
-        
+
     End Sub
 
+    Private Sub PictureBox8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCitas.Click
+        Me.ActiveMdiChild.Dispose()
+        frmContenedor = Citas
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+        lblPacientes.ForeColor = Color.RoyalBlue
+        Label2.ForeColor = Color.RoyalBlue
+        Label3.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.White
+        Citas.DataGridView1.ClearSelection()
+    End Sub
 End Class
