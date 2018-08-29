@@ -25,8 +25,6 @@ Partial Class Pacientes
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.pnlTapa = New System.Windows.Forms.Panel()
-        Me.lblCartel = New System.Windows.Forms.Label()
         Me.lblEstado = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.lblTelefono = New System.Windows.Forms.Label()
@@ -48,6 +46,8 @@ Partial Class Pacientes
         Me.Label15 = New System.Windows.Forms.Label()
         Me.lblSaldoPendiente = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.pnlTapa = New System.Windows.Forms.Panel()
+        Me.lblCartel = New System.Windows.Forms.Label()
         Me.txbBusqueda = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.btnRegistroMedico = New System.Windows.Forms.Button()
@@ -93,28 +93,8 @@ Partial Class Pacientes
         Me.Panel1.ForeColor = System.Drawing.Color.Black
         Me.Panel1.Location = New System.Drawing.Point(602, 22)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(540, 453)
+        Me.Panel1.Size = New System.Drawing.Size(472, 453)
         Me.Panel1.TabIndex = 3
-        '
-        'pnlTapa
-        '
-        Me.pnlTapa.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.pnlTapa.Controls.Add(Me.lblCartel)
-        Me.pnlTapa.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTapa.ForeColor = System.Drawing.Color.Black
-        Me.pnlTapa.Location = New System.Drawing.Point(602, 22)
-        Me.pnlTapa.Name = "pnlTapa"
-        Me.pnlTapa.Size = New System.Drawing.Size(540, 453)
-        Me.pnlTapa.TabIndex = 6
-        '
-        'lblCartel
-        '
-        Me.lblCartel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCartel.Location = New System.Drawing.Point(84, 147)
-        Me.lblCartel.Name = "lblCartel"
-        Me.lblCartel.Size = New System.Drawing.Size(282, 125)
-        Me.lblCartel.TabIndex = 0
-        Me.lblCartel.Text = "SELECCIONE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "UN PACIENTE"
         '
         'lblEstado
         '
@@ -161,7 +141,7 @@ Partial Class Pacientes
         Me.btnMostrarAntecedentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMostrarAntecedentes.Location = New System.Drawing.Point(8, 385)
         Me.btnMostrarAntecedentes.Name = "btnMostrarAntecedentes"
-        Me.btnMostrarAntecedentes.Size = New System.Drawing.Size(514, 54)
+        Me.btnMostrarAntecedentes.Size = New System.Drawing.Size(461, 54)
         Me.btnMostrarAntecedentes.TabIndex = 15
         Me.btnMostrarAntecedentes.Text = "Mostrar Antecedentes"
         Me.btnMostrarAntecedentes.UseVisualStyleBackColor = True
@@ -326,6 +306,26 @@ Partial Class Pacientes
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "N° Citas Atendidas:"
         '
+        'pnlTapa
+        '
+        Me.pnlTapa.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.pnlTapa.Controls.Add(Me.lblCartel)
+        Me.pnlTapa.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTapa.ForeColor = System.Drawing.Color.Black
+        Me.pnlTapa.Location = New System.Drawing.Point(602, 22)
+        Me.pnlTapa.Name = "pnlTapa"
+        Me.pnlTapa.Size = New System.Drawing.Size(472, 453)
+        Me.pnlTapa.TabIndex = 6
+        '
+        'lblCartel
+        '
+        Me.lblCartel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCartel.Location = New System.Drawing.Point(84, 147)
+        Me.lblCartel.Name = "lblCartel"
+        Me.lblCartel.Size = New System.Drawing.Size(282, 125)
+        Me.lblCartel.TabIndex = 0
+        Me.lblCartel.Text = "SELECCIONE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "UN PACIENTE"
+        '
         'txbBusqueda
         '
         Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -351,7 +351,7 @@ Partial Class Pacientes
         Me.btnRegistroMedico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnRegistroMedico.Image = Global.WindowsApplication1.My.Resources.Resources._104901_1_
         Me.btnRegistroMedico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRegistroMedico.Location = New System.Drawing.Point(580, 532)
+        Me.btnRegistroMedico.Location = New System.Drawing.Point(17, 631)
         Me.btnRegistroMedico.Name = "btnRegistroMedico"
         Me.btnRegistroMedico.Size = New System.Drawing.Size(178, 75)
         Me.btnRegistroMedico.TabIndex = 16
@@ -366,9 +366,9 @@ Partial Class Pacientes
         Me.btnRegistrarCita.ForeColor = System.Drawing.Color.Black
         Me.btnRegistrarCita.Image = Global.WindowsApplication1.My.Resources.Resources._42954__1_
         Me.btnRegistrarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRegistrarCita.Location = New System.Drawing.Point(778, 532)
+        Me.btnRegistrarCita.Location = New System.Drawing.Point(491, 631)
         Me.btnRegistrarCita.Name = "btnRegistrarCita"
-        Me.btnRegistrarCita.Size = New System.Drawing.Size(179, 75)
+        Me.btnRegistrarCita.Size = New System.Drawing.Size(171, 75)
         Me.btnRegistrarCita.TabIndex = 9
         Me.btnRegistrarCita.Text = "Registrar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cita"
         Me.btnRegistrarCita.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -381,7 +381,7 @@ Partial Class Pacientes
         Me.btnCambiarEstado.ForeColor = System.Drawing.Color.Black
         Me.btnCambiarEstado.Image = Global.WindowsApplication1.My.Resources.Resources._675024_delete_512x512_1_
         Me.btnCambiarEstado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCambiarEstado.Location = New System.Drawing.Point(389, 532)
+        Me.btnCambiarEstado.Location = New System.Drawing.Point(899, 522)
         Me.btnCambiarEstado.Name = "btnCambiarEstado"
         Me.btnCambiarEstado.Size = New System.Drawing.Size(172, 75)
         Me.btnCambiarEstado.TabIndex = 8
@@ -396,7 +396,7 @@ Partial Class Pacientes
         Me.btnModificarDatos.ForeColor = System.Drawing.Color.Black
         Me.btnModificarDatos.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
         Me.btnModificarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModificarDatos.Location = New System.Drawing.Point(212, 532)
+        Me.btnModificarDatos.Location = New System.Drawing.Point(491, 522)
         Me.btnModificarDatos.Name = "btnModificarDatos"
         Me.btnModificarDatos.Size = New System.Drawing.Size(171, 75)
         Me.btnModificarDatos.TabIndex = 7
@@ -411,7 +411,7 @@ Partial Class Pacientes
         Me.btnIngresarPaciente.ForeColor = System.Drawing.Color.Black
         Me.btnIngresarPaciente.Image = Global.WindowsApplication1.My.Resources.Resources.add_user_icon_icons__2_
         Me.btnIngresarPaciente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIngresarPaciente.Location = New System.Drawing.Point(17, 532)
+        Me.btnIngresarPaciente.Location = New System.Drawing.Point(17, 522)
         Me.btnIngresarPaciente.Name = "btnIngresarPaciente"
         Me.btnIngresarPaciente.Size = New System.Drawing.Size(178, 75)
         Me.btnIngresarPaciente.TabIndex = 0
@@ -459,7 +459,7 @@ Partial Class Pacientes
         Me.btnRealizarPago.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnRealizarPago.Image = Global.WindowsApplication1.My.Resources.Resources.fac159a300a5cd5efbd3c544cb37d3b0_1_
         Me.btnRealizarPago.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRealizarPago.Location = New System.Drawing.Point(973, 532)
+        Me.btnRealizarPago.Location = New System.Drawing.Point(899, 631)
         Me.btnRealizarPago.Name = "btnRealizarPago"
         Me.btnRealizarPago.Size = New System.Drawing.Size(169, 75)
         Me.btnRealizarPago.TabIndex = 18
@@ -499,7 +499,7 @@ Partial Class Pacientes
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1347, 750)
+        Me.ClientSize = New System.Drawing.Size(1300, 750)
         Me.Controls.Add(Me.pnlTapa)
         Me.Controls.Add(Me.btnCambiarPacientes)
         Me.Controls.Add(Me.dgbFiltro)

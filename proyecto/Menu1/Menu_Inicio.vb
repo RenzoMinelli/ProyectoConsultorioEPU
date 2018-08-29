@@ -7,17 +7,25 @@
 
     Dim con As Integer = 0
 
-   
+    Dim screenWidth As Integer = Screen.PrimaryScreen.Bounds.Width
+    Dim screenHeight As Integer = Screen.PrimaryScreen.Bounds.Height
 
-   
-   
+
+
+
+
     Private Sub Menu_Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Me.PerformAutoScale()
-        
-        Me.WindowState = FormWindowState.Maximized
-        PictureBox9.Image = My.Resources.img_509774_1_
+
        
+        Me.PerformAutoScale()
+
+        Me.WindowState = FormWindowState.Maximized
+        pbMaximizar.Image = My.Resources.img_509774_1_
+        pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
+        pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
+        pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
+
         con = 1
 
 
@@ -117,11 +125,11 @@
         Label3.Text = Date.Now.ToLongTimeString
     End Sub
 
-    Private Sub Panel2_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseClick
+    Private Sub Panel2_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlBarraSuperior.MouseClick
 
     End Sub
 
-    Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
+    Private Sub Panel3_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlBarraSuperior.MouseDown
 
         If con = 0 Then
             a = 1
@@ -129,7 +137,7 @@
         End If
 
     End Sub
-    Private Sub Panel3_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseMove
+    Private Sub Panel3_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlBarraSuperior.MouseMove
 
         If a = 1 And con = 0 Then
 
@@ -152,7 +160,7 @@
 
         End If
     End Sub
-    Private Sub Panel3_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseUp
+    Private Sub Panel3_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlBarraSuperior.MouseUp
         If con = 0 Then
             xf = Me.Location.X
             yf = Me.Location.Y
@@ -162,11 +170,11 @@
 
     End Sub
 
-    Private Sub PictureBox4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
+    Private Sub PictureBox4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCerrar.Click
         Login.Dispose()
     End Sub
 
-    Private Sub PictureBox2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbMinimizar.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
@@ -322,23 +330,27 @@
         lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
-    Private Sub PictureBox9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox9.Click
+    Private Sub PictureBox9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbMaximizar.Click
         If con = 1 Then
-            Me.WindowState = FormWindowState.Normal
-            PictureBox9.Image = My.Resources.maximize_window_1_
-            PictureBox2.Location = New Point(PictureBox2.Location.X - 510, PictureBox2.Location.Y)
-            PictureBox4.Location = New Point(PictureBox4.Location.X - 510, PictureBox4.Location.Y)
-            PictureBox9.Location = New Point(PictureBox9.Location.X - 510, PictureBox9.Location.Y)
-            con = 0
 
             Me.Width = 1400
             Me.Height = 700
+
+            Me.WindowState = FormWindowState.Normal
+            pbMaximizar.Image = My.Resources.maximize_window_1_
+            pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
+            pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
+            pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
+            con = 0
+
+            Me.Location = New Point((screenWidth / 2) - (Me.Width / 2), (screenHeight / 2) - (Me.Height / 2))
+
         Else
             Me.WindowState = FormWindowState.Maximized
-            PictureBox9.Image = My.Resources.img_509774_1_
-            PictureBox2.Location = New Point(PictureBox2.Location.X + 510, PictureBox2.Location.Y)
-            PictureBox4.Location = New Point(PictureBox4.Location.X + 510, PictureBox4.Location.Y)
-            PictureBox9.Location = New Point(PictureBox9.Location.X + 510, PictureBox9.Location.Y)
+            pbMaximizar.Image = My.Resources.img_509774_1_
+            pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
+            pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
+            pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
             con = 1
 
 

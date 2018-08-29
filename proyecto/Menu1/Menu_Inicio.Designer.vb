@@ -24,10 +24,10 @@ Partial Class Menu_Inicio
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.pnlBarraSuperior = New System.Windows.Forms.Panel()
+        Me.pbMaximizar = New System.Windows.Forms.PictureBox()
+        Me.pbCerrar = New System.Windows.Forms.PictureBox()
+        Me.pbMinimizar = New System.Windows.Forms.PictureBox()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.pnlPacientes = New System.Windows.Forms.Panel()
@@ -51,13 +51,13 @@ Partial Class Menu_Inicio
         Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlMenu = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlBarraSuperior.SuspendLayout()
+        CType(Me.pbMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel11.SuspendLayout()
         Me.pnlPacientes.SuspendLayout()
         CType(Me.pbPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,7 +69,7 @@ Partial Class Menu_Inicio
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel15.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        Me.pnlMenu.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -78,44 +78,44 @@ Partial Class Menu_Inicio
         '
         Me.Timer1.Enabled = True
         '
-        'Panel2
+        'pnlBarraSuperior
         '
-        Me.Panel2.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel2.Controls.Add(Me.PictureBox9)
-        Me.Panel2.Controls.Add(Me.PictureBox4)
-        Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(174, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(669, 38)
-        Me.Panel2.TabIndex = 7
+        Me.pnlBarraSuperior.BackColor = System.Drawing.Color.RoyalBlue
+        Me.pnlBarraSuperior.Controls.Add(Me.pbMaximizar)
+        Me.pnlBarraSuperior.Controls.Add(Me.pbCerrar)
+        Me.pnlBarraSuperior.Controls.Add(Me.pbMinimizar)
+        Me.pnlBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlBarraSuperior.Location = New System.Drawing.Point(174, 0)
+        Me.pnlBarraSuperior.Name = "pnlBarraSuperior"
+        Me.pnlBarraSuperior.Size = New System.Drawing.Size(669, 38)
+        Me.pnlBarraSuperior.TabIndex = 7
         '
-        'PictureBox9
+        'pbMaximizar
         '
-        Me.PictureBox9.Image = Global.WindowsApplication1.My.Resources.Resources.maximize_window_1_
-        Me.PictureBox9.Location = New System.Drawing.Point(574, 3)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(28, 29)
-        Me.PictureBox9.TabIndex = 19
-        Me.PictureBox9.TabStop = False
+        Me.pbMaximizar.Image = Global.WindowsApplication1.My.Resources.Resources.maximize_window_1_
+        Me.pbMaximizar.Location = New System.Drawing.Point(574, 3)
+        Me.pbMaximizar.Name = "pbMaximizar"
+        Me.pbMaximizar.Size = New System.Drawing.Size(28, 29)
+        Me.pbMaximizar.TabIndex = 19
+        Me.pbMaximizar.TabStop = False
         '
-        'PictureBox4
+        'pbCerrar
         '
-        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.media_1_
-        Me.PictureBox4.Location = New System.Drawing.Point(608, 3)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox4.TabIndex = 18
-        Me.PictureBox4.TabStop = False
+        Me.pbCerrar.Image = Global.WindowsApplication1.My.Resources.Resources.media_1_
+        Me.pbCerrar.Location = New System.Drawing.Point(608, 3)
+        Me.pbCerrar.Name = "pbCerrar"
+        Me.pbCerrar.Size = New System.Drawing.Size(27, 32)
+        Me.pbCerrar.TabIndex = 18
+        Me.pbCerrar.TabStop = False
         '
-        'PictureBox2
+        'pbMinimizar
         '
-        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox2.Location = New System.Drawing.Point(537, 3)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(28, 32)
-        Me.PictureBox2.TabIndex = 17
-        Me.PictureBox2.TabStop = False
+        Me.pbMinimizar.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
+        Me.pbMinimizar.Location = New System.Drawing.Point(537, 3)
+        Me.pbMinimizar.Name = "pbMinimizar"
+        Me.pbMinimizar.Size = New System.Drawing.Size(28, 32)
+        Me.pbMinimizar.TabIndex = 17
+        Me.pbMinimizar.TabStop = False
         '
         'Panel11
         '
@@ -336,28 +336,28 @@ Partial Class Menu_Inicio
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         '
-        'Panel1
+        'pnlMenu
         '
-        Me.Panel1.BackColor = System.Drawing.Color.LightGray
-        Me.Panel1.Controls.Add(Me.PictureBox5)
-        Me.Panel1.Controls.Add(Me.Panel15)
-        Me.Panel1.Controls.Add(Me.Panel13)
-        Me.Panel1.Controls.Add(Me.Panel12)
-        Me.Panel1.Controls.Add(Me.Panel8)
-        Me.Panel1.Controls.Add(Me.Panel7)
-        Me.Panel1.Controls.Add(Me.Panel6)
-        Me.Panel1.Controls.Add(Me.pnlCitas2)
-        Me.Panel1.Controls.Add(Me.Panel4)
-        Me.Panel1.Controls.Add(Me.pnlPacientes2)
-        Me.Panel1.Controls.Add(Me.pnlCitas)
-        Me.Panel1.Controls.Add(Me.pnlPacientes)
-        Me.Panel1.Controls.Add(Me.Panel11)
-        Me.Panel1.Controls.Add(Me.PictureBox6)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(174, 665)
-        Me.Panel1.TabIndex = 5
+        Me.pnlMenu.BackColor = System.Drawing.Color.LightGray
+        Me.pnlMenu.Controls.Add(Me.PictureBox5)
+        Me.pnlMenu.Controls.Add(Me.Panel15)
+        Me.pnlMenu.Controls.Add(Me.Panel13)
+        Me.pnlMenu.Controls.Add(Me.Panel12)
+        Me.pnlMenu.Controls.Add(Me.Panel8)
+        Me.pnlMenu.Controls.Add(Me.Panel7)
+        Me.pnlMenu.Controls.Add(Me.Panel6)
+        Me.pnlMenu.Controls.Add(Me.pnlCitas2)
+        Me.pnlMenu.Controls.Add(Me.Panel4)
+        Me.pnlMenu.Controls.Add(Me.pnlPacientes2)
+        Me.pnlMenu.Controls.Add(Me.pnlCitas)
+        Me.pnlMenu.Controls.Add(Me.pnlPacientes)
+        Me.pnlMenu.Controls.Add(Me.Panel11)
+        Me.pnlMenu.Controls.Add(Me.PictureBox6)
+        Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
+        Me.pnlMenu.Location = New System.Drawing.Point(0, 0)
+        Me.pnlMenu.Name = "pnlMenu"
+        Me.pnlMenu.Size = New System.Drawing.Size(174, 665)
+        Me.pnlMenu.TabIndex = 5
         '
         'PictureBox5
         '
@@ -383,17 +383,17 @@ Partial Class Menu_Inicio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
         Me.ClientSize = New System.Drawing.Size(843, 665)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlBarraSuperior)
+        Me.Controls.Add(Me.pnlMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.IsMdiContainer = True
         Me.Name = "Menu_Inicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Inicio"
-        Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlBarraSuperior.ResumeLayout(False)
+        CType(Me.pbMaximizar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
         Me.pnlPacientes.ResumeLayout(False)
@@ -411,16 +411,16 @@ Partial Class Menu_Inicio
         Me.Panel15.ResumeLayout(False)
         Me.Panel15.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
+        Me.pnlMenu.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents pnlBarraSuperior As System.Windows.Forms.Panel
+    Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
+    Friend WithEvents pbMinimizar As System.Windows.Forms.PictureBox
     Friend WithEvents Panel11 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents pnlPacientes As System.Windows.Forms.Panel
@@ -440,12 +440,12 @@ Partial Class Menu_Inicio
     Friend WithEvents Panel15 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents pnlMenu As System.Windows.Forms.Panel
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents pbCitas As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbMaximizar As System.Windows.Forms.PictureBox
 End Class
