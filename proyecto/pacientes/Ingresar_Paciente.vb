@@ -18,8 +18,8 @@
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
-        direTra = ""
-        enviado = ""
+        Pacientes.direTra = ""
+        Pacientes.enviado = ""
         Dim ver As Integer = 0
         Dim ver2 As Integer = 0
 
@@ -37,35 +37,35 @@
                         If alergicos = False And diabeticos = False And cardiovasculares = False And fiebre_reumatica = False And coagulacion = False And odontologicos = False And farmacos_recibidos = False And familiares = False And tratamiento_medico = False And observaciones = "" Then
                             If MsgBox("No fue ingresado ningún antecedente," + vbNewLine + "¿Desea continuar de todos modos?", MsgBoxStyle.YesNo) = vbYes Then
 
-                                nombre = txbNombre.Text
-                                cedula = txbCedula.Text
+                                Pacientes.nombre = txbNombre.Text
+                                Pacientes.cedula = txbCedula.Text
                                 If txbEnviadoPor.Text <> "" Then
                                     ver = 1
-                                    enviado = txbEnviadoPor.Text
+                                    Pacientes.enviado = txbEnviadoPor.Text
                                 End If
-                                telefono = txbTelefono.Text
-                                direccion = txbDireccionPersonal.Text
+                                Pacientes.telefono = txbTelefono.Text
+                                Pacientes.direccion = txbDireccionPersonal.Text
 
                                 If txbDireccionTrabajo.Text <> "" Then
-                                    direTra = txbDireccionTrabajo.Text
+                                    Pacientes.direTra = txbDireccionTrabajo.Text
                                     ver2 = 1
                                 End If
 
-                                nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
+                                Pacientes.nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
 
                                 Try
                                     If ver = 0 And ver2 = 0 Then
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "');"
 
                                     ElseIf ver = 0 And ver2 = 1 Then
 
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "','" + direTra + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
                                     ElseIf ver = 1 And ver2 = 0 Then
 
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "');"
                                     ElseIf ver = 1 And ver2 = 1 Then
 
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "','" + direTra + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
                                     End If
 
 
@@ -83,36 +83,36 @@
 
                             End If
                         Else
-                            nombre = txbNombre.Text
-                            cedula = txbCedula.Text
+                            Pacientes.nombre = txbNombre.Text
+                            Pacientes.cedula = txbCedula.Text
                             If txbEnviadoPor.Text <> "" Then
                                 ver = 1
-                                enviado = txbEnviadoPor.Text
+                                Pacientes.enviado = txbEnviadoPor.Text
                             End If
-                            telefono = txbTelefono.Text
-                            direccion = txbDireccionPersonal.Text
+                            Pacientes.telefono = txbTelefono.Text
+                            Pacientes.direccion = txbDireccionPersonal.Text
 
                             If txbDireccionTrabajo.Text <> "" Then
-                                direTra = txbDireccionTrabajo.Text
+                                Pacientes.direTra = txbDireccionTrabajo.Text
                                 ver2 = 1
                             End If
 
-                            nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
+                            Pacientes.nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
 
 
                             Try
                                 If ver = 0 And ver2 = 0 Then
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "');"
 
                                 ElseIf ver = 0 And ver2 = 1 Then
 
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + direccion + "','" + direTra + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
                                 ElseIf ver = 1 And ver2 = 0 Then
 
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "');"
                                 ElseIf ver = 1 And ver2 = 1 Then
 
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + cedula + "','" + nac + "','" + nombre + "', '" + telefono + "','" + enviado + "','" + direccion + "','" + direTra + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
                                 End If
 
 
@@ -174,8 +174,7 @@
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        actPos()
-        Me.Size = New System.Drawing.Size(880, 580)
+
         Dim nac As String = mcFechaNacimiento.SelectionRange.Start
         lblFechaSeleccionada.Text = "Fecha seleccionada " + nac
     End Sub

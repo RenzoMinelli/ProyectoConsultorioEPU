@@ -7,9 +7,23 @@
 
     Dim con As Integer = 0
 
+   
 
-
+   
+   
     Private Sub Menu_Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        Me.PerformAutoScale()
+        
+        Me.WindowState = FormWindowState.Maximized
+        PictureBox9.Image = My.Resources.img_509774_1_
+        PictureBox2.Location = New Point(PictureBox2.Location.X + 700, PictureBox2.Location.Y)
+        PictureBox4.Location = New Point(PictureBox4.Location.X + 700, PictureBox4.Location.Y)
+        PictureBox9.Location = New Point(PictureBox9.Location.X + 700, PictureBox9.Location.Y)
+        con = 1
+
+        Me.Bounds = Screen.GetBounds(Me)
+
         xf = Me.Location.X
         yf = Me.Location.Y
 
@@ -318,6 +332,9 @@
             PictureBox4.Location = New Point(PictureBox4.Location.X - 700, PictureBox4.Location.Y)
             PictureBox9.Location = New Point(PictureBox9.Location.X - 700, PictureBox9.Location.Y)
             con = 0
+
+            Me.Width = 1400
+            Me.Height = 700
         Else
             Me.WindowState = FormWindowState.Maximized
             PictureBox9.Image = My.Resources.img_509774_1_
@@ -326,8 +343,9 @@
             PictureBox9.Location = New Point(PictureBox9.Location.X + 700, PictureBox9.Location.Y)
             con = 1
 
-        End If
 
+        End If
+        actPos()
     End Sub
 
     Private Sub PictureBox8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCitas.Click
@@ -343,4 +361,5 @@
         lblCitas.ForeColor = Color.White
         Citas.DataGridView1.ClearSelection()
     End Sub
+
 End Class

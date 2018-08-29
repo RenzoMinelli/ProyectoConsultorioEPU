@@ -31,75 +31,75 @@
 
         If txbNombre.Text <> "" And txbCedula.Text <> "" And txbDireccionPersonal.Text <> "" Then
 
-            If txbNombre.Text <> nombre Then
+            If txbNombre.Text <> Pacientes.nombre Then
                 ver = 1
-                nombre = txbNombre.Text
+                Pacientes.nombre = txbNombre.Text
             End If
-            If txbCedula.Text <> cedula Then
+            If txbCedula.Text <> Pacientes.cedula Then
                 ver2 = 1
-                cedula = txbCedula.Text
+                Pacientes.cedula = txbCedula.Text
             End If
-            If txbEnviadoPor.Text <> enviado Then
+            If txbEnviadoPor.Text <> Pacientes.enviado Then
                 ver3 = 1
-                enviado = txbEnviadoPor.Text
+                Pacientes.enviado = txbEnviadoPor.Text
             End If
-            If txbDireccionPersonal.Text <> direccion Then
+            If txbDireccionPersonal.Text <> Pacientes.direccion Then
                 ver4 = 1
-                direccion = txbDireccionPersonal.Text
+                Pacientes.direccion = txbDireccionPersonal.Text
             End If
-            If txbDireccionTrabajo.Text <> direTra Then
+            If txbDireccionTrabajo.Text <> Pacientes.direTra Then
                 ver5 = 1
-                direTra = txbDireccionTrabajo.Text
+                Pacientes.direTra = txbDireccionTrabajo.Text
             End If
-            If nac <> nac2 Then
+            If Pacientes.nac <> nac2 Then
                 ver6 = 1
             End If
-            If txbTelefono.Text <> telefono Then
+            If txbTelefono.Text <> Pacientes.telefono Then
                 ver7 = 1
-                telefono = txbTelefono.Text
+                Pacientes.telefono = txbTelefono.Text
 
             End If
 
-            nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
+            Pacientes.nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
             Try
                 If ver = 1 Then
-                    Consulta = "UPDATE paciente SET nombre = '" + nombre + "' WHERE id_p = " + Str(id_p) + ";"
+                    Consulta = "UPDATE paciente SET nombre = '" + Pacientes.nombre + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
                 If ver2 = 1 Then
-                    Consulta = "UPDATE paciente SET cedula = '" + cedula + "' WHERE id_p = " + Str(id_p) + ";"
+                    Consulta = "UPDATE paciente SET cedula = '" + Pacientes.cedula + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
                 If ver3 = 1 Then
-                    If enviado = "" Then
+                    If Pacientes.enviado = "" Then
                         Consulta = "UPDATE paciente SET enviado_por = null WHERE id_p = " + Str(id_p) + ";"
                         consultar()
                     Else
-                        Consulta = "UPDATE paciente SET enviado_por = '" + enviado + "' WHERE id_p = " + Str(id_p) + ";"
+                        Consulta = "UPDATE paciente SET enviado_por = '" + Pacientes.enviado + "' WHERE id_p = " + Str(id_p) + ";"
                         consultar()
                     End If
 
                 End If
                 If ver4 = 1 Then
-                    Consulta = "UPDATE paciente SET direccion_particular = '" + direccion + "' WHERE id_p = " + Str(id_p) + ";"
+                    Consulta = "UPDATE paciente SET direccion_particular = '" + Pacientes.direccion + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
                 If ver5 = 1 Then
-                    If direTra = "" Then
+                    If Pacientes.direTra = "" Then
                         Consulta = "UPDATE paciente SET direccion_trabajo = null WHERE id_p = " + Str(id_p) + ";"
                         consultar()
                     Else
-                        Consulta = "UPDATE paciente SET direccion_trabajo = '" + direTra + "' WHERE id_p = " + Str(id_p) + ";"
+                        Consulta = "UPDATE paciente SET direccion_trabajo = '" + Pacientes.direTra + "' WHERE id_p = " + Str(id_p) + ";"
                         consultar()
                     End If
 
                 End If
                 If ver6 = 1 Then
-                    Consulta = "UPDATE paciente SET fecha_nacimiento = '" + nac + "' WHERE id_p = " + Str(id_p) + ";"
+                    Consulta = "UPDATE paciente SET fecha_nacimiento = '" + Pacientes.nac + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
                 If ver7 = 1 Then
-                    Consulta = "UPDATE paciente SET telefono = '" + telefono + "' where id_p = '" + id_p.ToString + "';"
+                    Consulta = "UPDATE paciente SET telefono = '" + Pacientes.telefono + "' where id_p = '" + id_p.ToString + "';"
                     consultar()
                 End If
                 If cambio = 1 Then
@@ -144,17 +144,17 @@
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        actPos()
+
         Me.Size = New System.Drawing.Size(880, 580)
 
-        txbNombre.Text = nombre
-        txbCedula.Text = cedula
-        txbEnviadoPor.Text = enviado
-        txbDireccionPersonal.Text = direccion
-        txbDireccionTrabajo.Text = direTra
-        txbTelefono.Text = telefono
-        mcFechaNacimiento.SelectionRange.Start = nac
-        lblFechaSeleccionada.Text = "Fecha seleccionada " + nac
+        txbNombre.Text = Pacientes.nombre
+        txbCedula.Text = Pacientes.cedula
+        txbEnviadoPor.Text = Pacientes.enviado
+        txbDireccionPersonal.Text = Pacientes.direccion
+        txbDireccionTrabajo.Text = Pacientes.direTra
+        txbTelefono.Text = Pacientes.telefono
+        mcFechaNacimiento.SelectionRange.Start = Pacientes.nac
+        lblFechaSeleccionada.Text = "Fecha seleccionada " + Pacientes.nac
 
         'Antecedentes
         Consulta = "SELECT * FROM antecedentes where id_p = '" + Str(id_p) + "';"

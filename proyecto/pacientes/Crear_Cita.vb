@@ -93,7 +93,7 @@
     End Sub
 
     Private Sub dgbCitasEnLaFecha_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgbCitasEnLaFecha.Click
-      dgbCitasEnLaFecha.ClearSelection()
+        dgbCitasEnLaFecha.ClearSelection()
     End Sub
 
     Private Sub dgbCitasEnLaFecha_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgbCitasEnLaFecha.MouseClick

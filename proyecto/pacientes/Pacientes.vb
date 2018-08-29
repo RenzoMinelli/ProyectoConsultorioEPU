@@ -3,6 +3,18 @@
     'EstadoPacientes es una variable utilizada para verificar si se muetran los pacientes activos o inactivos
     Dim EstadoPacientes As Integer = 1
 
+    Public nombre As String
+    Public apellido As String
+    Public cedula As String
+    Public telefono As String
+    Public direccion As String
+    Public enviado As String
+    Public direTra As String
+    Public nac As String
+    Public saldo As Integer
+
+    
+
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarPaciente.Click
 
         'Al presionar el boton btnAgregarPaciente, se oculta el formulario actual, se guarda el formulario Agregar_Paciente en el frmContenedor y se muestra
@@ -15,6 +27,7 @@
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.PerformAutoScale()
 
         'Cuando carga el formulario Paciente, se actualiza el dgbPacientes con los pacientes activos
         actTabla(1)
@@ -22,8 +35,10 @@
         'Establezco como debe cargar el txbBusqueda
         txbBusqueda.ForeColor = Color.Gray
         txbBusqueda.Text = "Buscar"
+
     End Sub
 
+   
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarDatos.Click
 
         'Al presionar el boton btnModificarDatos, se oculta el formulario actual, se guarda el formulario Modificar_Paciente en el frmContenedor y se muestra
@@ -49,23 +64,24 @@
 
         'Luego intenta obtener todos los datos de los pacientes con el estado según le indicamos en la base de datos
         Try
-            Consulta = "SELECT * FROM paciente where estado = '" + estado + "';"
+            Consulta = "SELECT id_p, cedula, fecha_nacimiento, upper(apellido) as 'nombre', upper(nombre) as 'apellido', telefono, upper(enviado_por) as 'enviado_por', upper(direccion_particular) as 'direccion_particular', upper(direccion_trabajo) as 'direccion_trabajo', saldo, estado  FROM paciente where estado = '" + estado + "';"
             consultar()
             dgbPacientes.DataSource = Tabla
 
             'Ocultamos todas las columnas que no nos interesa que el usuario visualice
             dgbPacientes.Columns(0).Visible = False
             dgbPacientes.Columns(2).Visible = False
-            dgbPacientes.Columns(4).Visible = False
             dgbPacientes.Columns(5).Visible = False
             dgbPacientes.Columns(6).Visible = False
             dgbPacientes.Columns(7).Visible = False
             dgbPacientes.Columns(8).Visible = False
             dgbPacientes.Columns(9).Visible = False
+            dgbPacientes.Columns(10).Visible = False
 
             'Cambiamos los encabezados de las columnas restantes por estetica y practicidad
             dgbPacientes.Columns(1).HeaderText = "Cédula"
-            dgbPacientes.Columns(3).HeaderText = "Nombre"
+            dgbPacientes.Columns(3).HeaderText = "Apellido"
+            dgbPacientes.Columns(4).HeaderText = "Nombre"
 
         Catch ex As Exception
 
@@ -179,24 +195,25 @@
         id_p = dgbPacientes.CurrentRow.Cells(0).Value
         cedula = dgbPacientes.CurrentRow.Cells(1).Value
         nombre = dgbPacientes.CurrentRow.Cells(3).Value
+        apellido = dgbPacientes.CurrentRow.Cells(4).Value
         nac = dgbPacientes.CurrentRow.Cells(2).Value
-        telefono = dgbPacientes.CurrentRow.Cells(4).Value
+        telefono = dgbPacientes.CurrentRow.Cells(5).Value
 
-        If IsDBNull(dgbPacientes.CurrentRow.Cells(5).Value) Then
-            enviado = "No definido"
+        If IsDBNull(dgbPacientes.CurrentRow.Cells(6).Value) Then
+            enviado = "NO DEFINIDO"
         Else
-            enviado = dgbPacientes.CurrentRow.Cells(5).Value
+            enviado = dgbPacientes.CurrentRow.Cells(6).Value
         End If
 
-        direccion = dgbPacientes.CurrentRow.Cells(6).Value
+        direccion = dgbPacientes.CurrentRow.Cells(7).Value
 
-        If IsDBNull(dgbPacientes.CurrentRow.Cells(7).Value) Then
-            direTra = "No definido"
+        If IsDBNull(dgbPacientes.CurrentRow.Cells(8).Value) Then
+            direTra = "NO DEFINIDO"
         Else
-            direTra = dgbPacientes.CurrentRow.Cells(7).Value
+            direTra = dgbPacientes.CurrentRow.Cells(8).Value
         End If
 
-        saldo = dgbPacientes.CurrentRow.Cells(8).Value
+        saldo = dgbPacientes.CurrentRow.Cells(9).Value
 
         Consulta = "select p.id_p, count(*) from paciente p inner join cita c on p.id_p = c.id_p where c.realizada = 1 and p.id_p = '" + id_p.ToString + "' group by p.id_p;"
         consultar()
@@ -208,7 +225,7 @@
             numCitas = dgbFiltro.Rows(0).Cells(1).Value
         End If
 
-        If dgbPacientes.CurrentRow.Cells(9).Value = True Then
+        If dgbPacientes.CurrentRow.Cells(10).Value = True Then
             lblEstado.Text = "Activo"
             lblEstado.ForeColor = Color.Green
         Else
@@ -221,7 +238,7 @@
 
         'Mostramos en Panel
         lblCedula.Text = cedula
-        lblNombre.Text = nombre
+        lblNombre.Text = apellido + " " + nombre
         lblFechaNacimiento.Text = nac
         lblEnviadoPor.Text = enviado
         lblDireccionParticular.Text = direccion
@@ -259,7 +276,7 @@
             'Intentamos obtener los pacientes que cumplan con las condición
             Try
 
-                Consulta = "Select * from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + busqueda + "%' or cedula like '" + busqueda + "%' );"
+                Consulta = "Select id_p, cedula, fecha_nacimiento, upper(apellido) as 'nombre', upper(nombre) as 'apellido', telefono, upper(enviado_por) as 'enviado_por', upper(direccion_particular) as 'direccion_particular', upper(direccion_trabajo) as 'direccion_trabajo', saldo, estado from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + busqueda + "%' or cedula like '" + busqueda + "%' or apellido like '" + busqueda + "%' );"
 
                 consultar()
                 dgbPacientes.DataSource = Tabla
