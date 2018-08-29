@@ -38,10 +38,12 @@ Partial Class Modificar_Paciente
         Me.btnModificarAntecedentes = New System.Windows.Forms.Button()
         Me.lblFechaSeleccionada = New System.Windows.Forms.Label()
         Me.mcFechaNacimiento = New System.Windows.Forms.MonthCalendar()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgbAntecedentes = New System.Windows.Forms.DataGridView()
         Me.txbTelefono = New System.Windows.Forms.TextBox()
         Me.lblTelefono = New System.Windows.Forms.Label()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lblApellido = New System.Windows.Forms.Label()
+        Me.txbApellido = New System.Windows.Forms.TextBox()
+        CType(Me.dgbAntecedentes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txbNombre
@@ -58,15 +60,15 @@ Partial Class Modificar_Paciente
         Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombre.Location = New System.Drawing.Point(26, 91)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(165, 24)
+        Me.lblNombre.Size = New System.Drawing.Size(79, 24)
         Me.lblNombre.TabIndex = 1
-        Me.lblNombre.Text = "Nombre Completo"
+        Me.lblNombre.Text = "Nombre"
         '
         'lblCedula
         '
         Me.lblCedula.AutoSize = True
         Me.lblCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCedula.Location = New System.Drawing.Point(26, 135)
+        Me.lblCedula.Location = New System.Drawing.Point(26, 47)
         Me.lblCedula.Name = "lblCedula"
         Me.lblCedula.Size = New System.Drawing.Size(70, 24)
         Me.lblCedula.TabIndex = 2
@@ -75,7 +77,7 @@ Partial Class Modificar_Paciente
         'txbCedula
         '
         Me.txbCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbCedula.Location = New System.Drawing.Point(276, 135)
+        Me.txbCedula.Location = New System.Drawing.Point(276, 47)
         Me.txbCedula.Name = "txbCedula"
         Me.txbCedula.Size = New System.Drawing.Size(234, 29)
         Me.txbCedula.TabIndex = 1
@@ -198,14 +200,14 @@ Partial Class Modificar_Paciente
         Me.mcFechaNacimiento.Name = "mcFechaNacimiento"
         Me.mcFechaNacimiento.TabIndex = 6
         '
-        'DataGridView1
+        'dgbAntecedentes
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(999, 12)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(29, 34)
-        Me.DataGridView1.TabIndex = 17
-        Me.DataGridView1.Visible = False
+        Me.dgbAntecedentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgbAntecedentes.Location = New System.Drawing.Point(999, 12)
+        Me.dgbAntecedentes.Name = "dgbAntecedentes"
+        Me.dgbAntecedentes.Size = New System.Drawing.Size(29, 34)
+        Me.dgbAntecedentes.TabIndex = 17
+        Me.dgbAntecedentes.Visible = False
         '
         'txbTelefono
         '
@@ -225,14 +227,34 @@ Partial Class Modificar_Paciente
         Me.lblTelefono.TabIndex = 20
         Me.lblTelefono.Text = "Teléfono"
         '
+        'lblApellido
+        '
+        Me.lblApellido.AutoSize = True
+        Me.lblApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblApellido.Location = New System.Drawing.Point(26, 138)
+        Me.lblApellido.Name = "lblApellido"
+        Me.lblApellido.Size = New System.Drawing.Size(79, 24)
+        Me.lblApellido.TabIndex = 22
+        Me.lblApellido.Text = "Apellido"
+        '
+        'txbApellido
+        '
+        Me.txbApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbApellido.Location = New System.Drawing.Point(276, 138)
+        Me.txbApellido.Name = "txbApellido"
+        Me.txbApellido.Size = New System.Drawing.Size(234, 29)
+        Me.txbApellido.TabIndex = 21
+        '
         'Modificar_Paciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.Controls.Add(Me.lblApellido)
+        Me.Controls.Add(Me.txbApellido)
         Me.Controls.Add(Me.txbTelefono)
         Me.Controls.Add(Me.lblTelefono)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgbAntecedentes)
         Me.Controls.Add(Me.mcFechaNacimiento)
         Me.Controls.Add(Me.lblFechaSeleccionada)
         Me.Controls.Add(Me.btnModificarAntecedentes)
@@ -253,7 +275,7 @@ Partial Class Modificar_Paciente
         Me.Name = "Modificar_Paciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgbAntecedentes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -274,7 +296,9 @@ Partial Class Modificar_Paciente
     Friend WithEvents btnModificarAntecedentes As System.Windows.Forms.Button
     Friend WithEvents lblFechaSeleccionada As System.Windows.Forms.Label
     Friend WithEvents mcFechaNacimiento As System.Windows.Forms.MonthCalendar
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents dgbAntecedentes As System.Windows.Forms.DataGridView
     Friend WithEvents txbTelefono As System.Windows.Forms.TextBox
     Friend WithEvents lblTelefono As System.Windows.Forms.Label
+    Friend WithEvents lblApellido As System.Windows.Forms.Label
+    Friend WithEvents txbApellido As System.Windows.Forms.TextBox
 End Class

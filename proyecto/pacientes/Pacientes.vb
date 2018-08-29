@@ -13,6 +13,7 @@
     Public nac As String
     Public saldo As Integer
 
+    Dim resp As Integer
     
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarPaciente.Click
@@ -83,6 +84,8 @@
             dgbPacientes.Columns(3).HeaderText = "Apellido"
             dgbPacientes.Columns(4).HeaderText = "Nombre"
 
+            'Lo ordenamos según el apellido
+            dgbPacientes.Sort(dgbPacientes.Columns(3), System.ComponentModel.ListSortDirection.Ascending)
         Catch ex As Exception
 
             'Si es que se encuentra un error, que se muestre una alerta
@@ -116,7 +119,10 @@
         If EstadoPacientes = 1 Then
 
             'Consultar si desea realmente volverlo inactivo
-            If MsgBox("¿Seguro que desea volver inactivo al paciente " + dgbPacientes.CurrentRow.Cells(3).Value + " con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+            MuestraMsgBoxVersatil("¿Seguro que desea volver inactivo al paciente " + dgbPacientes.CurrentRow.Cells(3).Value + " con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?")
+
+
+            If resp = 1 Then
 
                 'Si es así, intentamos actualizar la informacion del paciente en la base de datos cambiando el campo estado
                 Try
@@ -146,7 +152,8 @@
         Else 'Si el estado del paciente es inactivo
 
             'Consultamos si desea realmente volverlo activo
-            If MsgBox("¿Seguro que desea volver activo al paciente con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?", MsgBoxStyle.YesNo) = vbYes Then
+            MuestraMsgBoxVersatil("¿Seguro que desea volver activo al paciente " + dgbPacientes.CurrentRow.Cells(3).Value + " con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?")
+            If resp = 1 Then
 
                 'Si es así, intentamos actualizar la informacion del paciente en la base de datos cambiando el campo estado
                 Try
@@ -425,6 +432,20 @@
             actTabla(EstadoPacientes)
         End If
     End Sub
+    Public Sub MuestraMsgBoxVersatil(ByVal texto As String)
 
+        Dim msgbv As New MsgBoxVersatil()
+
+        msgbv.lblTexto.Text = texto
+
+        'Determinar si el formulario esta listopara seguir
+        If msgbv.ShowDialog(Me) = System.Windows.Forms.DialogResult.OK Then
+            'Obtener la respuesta ingresada
+            resp = msgbv.respuesta
+        Else
+            resp = 0
+        End If
+        msgbv.Dispose()
+    End Sub
 
 End Class

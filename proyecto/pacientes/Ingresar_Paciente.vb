@@ -23,7 +23,7 @@
         Dim ver As Integer = 0
         Dim ver2 As Integer = 0
 
-        If txbNombre.Text <> "" And txbCedula.Text <> "" And txbDireccionPersonal.Text <> "" And txbTelefono.Text <> "" Then
+        If txbNombre.Text <> "" And txbCedula.Text <> "" And txbDireccionPersonal.Text <> "" And txbTelefono.Text <> "" And txbApellido.Text <> "" Then
             If IsNumeric(txbCedula.Text) Then
 
                 Consulta = "select * from paciente where cedula = '" + txbCedula.Text + "';"
@@ -37,17 +37,18 @@
                         If alergicos = False And diabeticos = False And cardiovasculares = False And fiebre_reumatica = False And coagulacion = False And odontologicos = False And farmacos_recibidos = False And familiares = False And tratamiento_medico = False And observaciones = "" Then
                             If MsgBox("No fue ingresado ningún antecedente," + vbNewLine + "¿Desea continuar de todos modos?", MsgBoxStyle.YesNo) = vbYes Then
 
-                                Pacientes.nombre = txbNombre.Text
+                                Pacientes.nombre = txbNombre.Text.ToUpper
+                                Pacientes.apellido = txbApellido.Text.ToUpper
                                 Pacientes.cedula = txbCedula.Text
                                 If txbEnviadoPor.Text <> "" Then
                                     ver = 1
                                     Pacientes.enviado = txbEnviadoPor.Text
                                 End If
                                 Pacientes.telefono = txbTelefono.Text
-                                Pacientes.direccion = txbDireccionPersonal.Text
+                                Pacientes.direccion = txbDireccionPersonal.Text.ToUpper
 
                                 If txbDireccionTrabajo.Text <> "" Then
-                                    Pacientes.direTra = txbDireccionTrabajo.Text
+                                    Pacientes.direTra = txbDireccionTrabajo.Text.ToUpper
                                     ver2 = 1
                                 End If
 
@@ -55,17 +56,17 @@
 
                                 Try
                                     If ver = 0 And ver2 = 0 Then
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "');"
 
                                     ElseIf ver = 0 And ver2 = 1 Then
 
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
                                     ElseIf ver = 1 And ver2 = 0 Then
 
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "');"
                                     ElseIf ver = 1 And ver2 = 1 Then
 
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
                                     End If
 
 
@@ -83,17 +84,18 @@
 
                             End If
                         Else
-                            Pacientes.nombre = txbNombre.Text
+                            Pacientes.nombre = txbNombre.Text.ToUpper
                             Pacientes.cedula = txbCedula.Text
+                            Pacientes.apellido = txbApellido.Text.ToUpper
                             If txbEnviadoPor.Text <> "" Then
                                 ver = 1
-                                Pacientes.enviado = txbEnviadoPor.Text
+                                Pacientes.enviado = txbEnviadoPor.Text.ToUpper
                             End If
                             Pacientes.telefono = txbTelefono.Text
-                            Pacientes.direccion = txbDireccionPersonal.Text
+                            Pacientes.direccion = txbDireccionPersonal.Text.ToUpper
 
                             If txbDireccionTrabajo.Text <> "" Then
-                                Pacientes.direTra = txbDireccionTrabajo.Text
+                                Pacientes.direTra = txbDireccionTrabajo.Text.ToUpper
                                 ver2 = 1
                             End If
 
@@ -102,17 +104,17 @@
 
                             Try
                                 If ver = 0 And ver2 = 0 Then
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "');"
 
                                 ElseIf ver = 0 And ver2 = 1 Then
 
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
                                 ElseIf ver = 1 And ver2 = 0 Then
 
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "');"
                                 ElseIf ver = 1 And ver2 = 1 Then
 
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
                                 End If
 
 
@@ -151,7 +153,7 @@
                         MsgBox("Cédula no válida", MsgBoxStyle.Exclamation)
                     End If
                 End If
-               
+
 
             Else
                 MsgBox("La cédula solo debe contener números", MsgBoxStyle.Exclamation)
@@ -193,41 +195,67 @@
     End Sub
     Private Function verificarCedula(ByVal cedula As String)
 
+        If cedula.Length = 8 And IsNumeric(cedula) Then
+            Try
 
-        Try
+                Dim cedulaChar(7) As Char
+                Dim suma As Integer
+                Dim calculo() As Integer = {2, 9, 8, 7, 6, 3, 4}
 
-            Dim cedulaChar(7) As Char
-            Dim suma As Integer
-            Dim calculo() As Integer = {2, 9, 8, 7, 6, 3, 4}
+                cedulaChar = cedula.ToCharArray()
 
-            cedulaChar = cedula.ToCharArray()
+                For i = 0 To 6
+                    Dim num1 As Integer = Val(cedulaChar(i))
+                    suma = (num1 * calculo(i)) + suma
+                Next
 
-            For i = 0 To 6
-                Dim num1 As Integer = Val(cedulaChar(i))
-                suma = (num1 * calculo(i)) + suma
-            Next
+                cedulaChar = cedula.ToCharArray()
 
-            cedulaChar = cedula.ToCharArray()
+                Dim liResto As Integer = 10 - (suma Mod 10)
 
-            Dim liResto As Integer = 10 - (suma Mod 10)
-
-            If liResto = 10 Then
-                liResto = 0
-            End If
+                If liResto = 10 Then
+                    liResto = 0
+                End If
 
 
-            If liResto = Val(cedulaChar(7)) Then
-                Return True
-            Else
+                If liResto = Val(cedulaChar(7)) Then
+                    Return True
+                Else
+                    Return False
+                End If
+            Catch ex As Exception
                 Return False
-            End If
-        Catch ex As Exception
+            End Try
+        Else
+
             Return False
-        End Try
+        End If
+       
     End Function
 
-  
-    
-   
+    Private Sub txbCedula_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbCedula.TextChanged
+        pbErrorCedula.Visible = True
+
+        If verificarCedula(txbCedula.Text) = False Then
+
+            pbErrorCedula.Image = My.Resources.X
+
+        ElseIf verificarCedula(txbCedula.Text) = True Then
+            pbErrorCedula.Image = My.Resources.checkmark
+        End If
+    End Sub
+
+    Private Sub pbErrorCedula_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pbErrorCedula.MouseEnter
+        'If verificarCedula(txbCedula.Text) = False Then
+
+
+        '    lblAnuncio.Location = New Point(Cursor.Position.X, Cursor.Position.Y)
+        '    lblAnuncio.Visible = True
+        '    lblAnuncio.Font = New Font("Microsoft Sans Serif", 18, FontStyle.Bold)
+        '    lblAnuncio.Text = "Cédula no válida"
+
+
+        'End If
+    End Sub
 
 End Class

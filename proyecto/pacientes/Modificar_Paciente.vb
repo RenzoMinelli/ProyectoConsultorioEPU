@@ -28,6 +28,7 @@
         Dim ver5 As Integer = 0
         Dim ver6 As Integer = 0
         Dim ver7 As Integer = 0
+        Dim ver8 As Integer = 0
 
         If txbNombre.Text <> "" And txbCedula.Text <> "" And txbDireccionPersonal.Text <> "" Then
 
@@ -59,8 +60,13 @@
                 Pacientes.telefono = txbTelefono.Text
 
             End If
+            If txbApellido.Text <> Pacientes.apellido Then
+                ver8 = 1
+                Pacientes.apellido = txbApellido.Text
+            End If
 
             Pacientes.nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
+
             Try
                 If ver = 1 Then
                     Consulta = "UPDATE paciente SET nombre = '" + Pacientes.nombre + "' WHERE id_p = " + Str(id_p) + ";"
@@ -102,9 +108,13 @@
                     Consulta = "UPDATE paciente SET telefono = '" + Pacientes.telefono + "' where id_p = '" + id_p.ToString + "';"
                     consultar()
                 End If
+                If ver8 = 1 Then
+                    Consulta = "UPDATE paciente SET apellido = '" + Pacientes.apellido + "' where id_p = '" + id_p.ToString + "';"
+                    consultar()
+                End If
                 If cambio = 1 Then
 
-                    If DataGridView1.Rows(0).Cells(0).Value = Nothing Then
+                    If dgbAntecedentes.Rows(0).Cells(0).Value = Nothing Then
                         Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "', '" + alergicos.GetHashCode.ToString + "', '" + diabeticos.GetHashCode.ToString + "', '" + cardiovasculares.GetHashCode.ToString + "', '" + fiebre_reumatica.GetHashCode.ToString + "', '" + coagulacion.GetHashCode.ToString + "', '" + odontologicos.GetHashCode.ToString + "', '" + farmacos_recibidos.GetHashCode.ToString + "', '" + familiares.GetHashCode.ToString + "', '" + tratamiento_medico.GetHashCode.ToString + "', '" + observaciones + "');"
                         consultar()
                     Else
@@ -145,8 +155,8 @@
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 
-        Me.Size = New System.Drawing.Size(880, 580)
 
+        txbApellido.Text = Pacientes.apellido
         txbNombre.Text = Pacientes.nombre
         txbCedula.Text = Pacientes.cedula
         txbEnviadoPor.Text = Pacientes.enviado
@@ -159,18 +169,18 @@
         'Antecedentes
         Consulta = "SELECT * FROM antecedentes where id_p = '" + Str(id_p) + "';"
         consultar()
-        DataGridView1.DataSource = Tabla
+        dgbAntecedentes.DataSource = Tabla
 
-        alergicos = DataGridView1.Rows(0).Cells(1).Value
-        diabeticos = DataGridView1.Rows(0).Cells(2).Value
-        cardiovasculares = DataGridView1.Rows(0).Cells(3).Value
-        fiebre_reumatica = DataGridView1.Rows(0).Cells(4).Value
-        coagulacion = DataGridView1.Rows(0).Cells(5).Value
-        odontologicos = DataGridView1.Rows(0).Cells(6).Value
-        farmacos_recibidos = DataGridView1.Rows(0).Cells(7).Value
-        familiares = DataGridView1.Rows(0).Cells(8).Value
-        tratamiento_medico = DataGridView1.Rows(0).Cells(9).Value
-        observaciones = DataGridView1.Rows(0).Cells(10).Value
+        alergicos = dgbAntecedentes.Rows(0).Cells(1).Value
+        diabeticos = dgbAntecedentes.Rows(0).Cells(2).Value
+        cardiovasculares = dgbAntecedentes.Rows(0).Cells(3).Value
+        fiebre_reumatica = dgbAntecedentes.Rows(0).Cells(4).Value
+        coagulacion = dgbAntecedentes.Rows(0).Cells(5).Value
+        odontologicos = dgbAntecedentes.Rows(0).Cells(6).Value
+        farmacos_recibidos = dgbAntecedentes.Rows(0).Cells(7).Value
+        familiares = dgbAntecedentes.Rows(0).Cells(8).Value
+        tratamiento_medico = dgbAntecedentes.Rows(0).Cells(9).Value
+        observaciones = dgbAntecedentes.Rows(0).Cells(10).Value
 
     End Sub
 

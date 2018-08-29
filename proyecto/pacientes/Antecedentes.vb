@@ -3,20 +3,20 @@
     Private Sub Antecedentes2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Consulta = "select * from antecedentes where id_p = '" + Str(id_p) + "';"
         consultar()
-        tablita.DataSource = Tabla
+        dgbAntecedentes.DataSource = Tabla
 
-        If tablita.Rows(0).Cells(0).Value <> Nothing Then
+        If dgbAntecedentes.Rows(0).Cells(0).Value <> Nothing Then
 
-            Dim alergicos As Boolean = tablita.Rows(0).Cells(1).Value
-            Dim diabeticos As Boolean = tablita.Rows(0).Cells(2).Value
-            Dim cardiovasculares As Boolean = tablita.Rows(0).Cells(3).Value
-            Dim fiebre_reumatica As Boolean = tablita.Rows(0).Cells(4).Value
-            Dim coagulacion As Boolean = tablita.Rows(0).Cells(5).Value
-            Dim odontologicos As Boolean = tablita.Rows(0).Cells(6).Value
-            Dim farmacos_recibidos As Boolean = tablita.Rows(0).Cells(7).Value
-            Dim familiares As Boolean = tablita.Rows(0).Cells(8).Value
-            Dim tratamiento_medico As Boolean = tablita.Rows(0).Cells(9).Value
-            Dim obs As String = tablita.Rows(0).Cells(10).Value
+            Dim alergicos As Boolean = dgbAntecedentes.Rows(0).Cells(1).Value
+            Dim diabeticos As Boolean = dgbAntecedentes.Rows(0).Cells(2).Value
+            Dim cardiovasculares As Boolean = dgbAntecedentes.Rows(0).Cells(3).Value
+            Dim fiebre_reumatica As Boolean = dgbAntecedentes.Rows(0).Cells(4).Value
+            Dim coagulacion As Boolean = dgbAntecedentes.Rows(0).Cells(5).Value
+            Dim odontologicos As Boolean = dgbAntecedentes.Rows(0).Cells(6).Value
+            Dim farmacos_recibidos As Boolean = dgbAntecedentes.Rows(0).Cells(7).Value
+            Dim familiares As Boolean = dgbAntecedentes.Rows(0).Cells(8).Value
+            Dim tratamiento_medico As Boolean = dgbAntecedentes.Rows(0).Cells(9).Value
+            Dim obs As String = dgbAntecedentes.Rows(0).Cells(10).Value
 
             TextBox1.Text = obs
 

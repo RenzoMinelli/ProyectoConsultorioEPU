@@ -17,12 +17,10 @@
         
         Me.WindowState = FormWindowState.Maximized
         PictureBox9.Image = My.Resources.img_509774_1_
-        PictureBox2.Location = New Point(PictureBox2.Location.X + 700, PictureBox2.Location.Y)
-        PictureBox4.Location = New Point(PictureBox4.Location.X + 700, PictureBox4.Location.Y)
-        PictureBox9.Location = New Point(PictureBox9.Location.X + 700, PictureBox9.Location.Y)
+       
         con = 1
 
-        Me.Bounds = Screen.GetBounds(Me)
+
 
         xf = Me.Location.X
         yf = Me.Location.Y
@@ -328,9 +326,9 @@
         If con = 1 Then
             Me.WindowState = FormWindowState.Normal
             PictureBox9.Image = My.Resources.maximize_window_1_
-            PictureBox2.Location = New Point(PictureBox2.Location.X - 700, PictureBox2.Location.Y)
-            PictureBox4.Location = New Point(PictureBox4.Location.X - 700, PictureBox4.Location.Y)
-            PictureBox9.Location = New Point(PictureBox9.Location.X - 700, PictureBox9.Location.Y)
+            PictureBox2.Location = New Point(PictureBox2.Location.X - 510, PictureBox2.Location.Y)
+            PictureBox4.Location = New Point(PictureBox4.Location.X - 510, PictureBox4.Location.Y)
+            PictureBox9.Location = New Point(PictureBox9.Location.X - 510, PictureBox9.Location.Y)
             con = 0
 
             Me.Width = 1400
@@ -338,9 +336,9 @@
         Else
             Me.WindowState = FormWindowState.Maximized
             PictureBox9.Image = My.Resources.img_509774_1_
-            PictureBox2.Location = New Point(PictureBox2.Location.X + 700, PictureBox2.Location.Y)
-            PictureBox4.Location = New Point(PictureBox4.Location.X + 700, PictureBox4.Location.Y)
-            PictureBox9.Location = New Point(PictureBox9.Location.X + 700, PictureBox9.Location.Y)
+            PictureBox2.Location = New Point(PictureBox2.Location.X + 510, PictureBox2.Location.Y)
+            PictureBox4.Location = New Point(PictureBox4.Location.X + 510, PictureBox4.Location.Y)
+            PictureBox9.Location = New Point(PictureBox9.Location.X + 510, PictureBox9.Location.Y)
             con = 1
 
 
