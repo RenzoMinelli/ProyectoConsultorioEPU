@@ -41,6 +41,11 @@
         consultar()
         dgbconfirmar.DataSource = Tabla
         confirmador = dgbconfirmar.Rows(dgbcontraseña.CurrentRow.Index).Cells(0).Value
+
+        If IsDBNull(dgbcontraseña.Rows(0).Cells(0).Value) Then
+
+        End If
+
         If confirmador = 0 Then
             Me.Hide()
             ingreso_contraseña.Show()

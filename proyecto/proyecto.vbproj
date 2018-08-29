@@ -82,14 +82,9 @@
     <Compile Include="atribuciones\atribuciones.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\agregarcitas2.Designer.vb">
-      <DependentUpon>agregarcitas2.vb</DependentUpon>
+    <Compile Include="citas\Agregar_Cita.Designer.vb">
+      <DependentUpon>Agregar_Cita.vb</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="citas\agregarcitas2.vb" />
-    <Compile Include="citas\marcar cita.Designer.vb">
-      <DependentUpon>marcar cita.vb</DependentUpon>
-=======
     <Compile Include="citas\Agregar_Cita.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -98,9 +93,7 @@
     </Compile>
     <Compile Include="citas\IngresarEstadoDientes.vb">
       <SubType>Form</SubType>
->>>>>>> e77f751a95043abde57a4e924143f6a68f17a95b
     </Compile>
-    <Compile Include="citas\marcar cita.vb" />
     <Compile Include="finanzas\finanzas.Designer.vb">
       <DependentUpon>finanzas.vb</DependentUpon>
     </Compile>
@@ -215,10 +208,12 @@
       <DependentUpon>Pacientes.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\Agregar_Paciente.Designer.vb">
-      <DependentUpon>Agregar_Paciente.vb</DependentUpon>
+    <Compile Include="pacientes\Ingresar_Paciente.Designer.vb">
+      <DependentUpon>Ingresar_Paciente.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\Agregar_Paciente.vb" />
+    <Compile Include="pacientes\Ingresar_Paciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -241,16 +236,11 @@
     <EmbeddedResource Include="atribuciones\atribuciones.resx">
       <DependentUpon>atribuciones.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\agregarcitas2.resx">
-      <DependentUpon>agregarcitas2.vb</DependentUpon>
+    <EmbeddedResource Include="citas\Agregar_Cita.resx">
+      <DependentUpon>Agregar_Cita.vb</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="citas\marcar cita.resx">
-      <DependentUpon>marcar cita.vb</DependentUpon>
-=======
     <EmbeddedResource Include="citas\IngresarEstadoDientes.resx">
       <DependentUpon>IngresarEstadoDientes.vb</DependentUpon>
->>>>>>> e77f751a95043abde57a4e924143f6a68f17a95b
     </EmbeddedResource>
     <EmbeddedResource Include="finanzas\finanzas.resx">
       <DependentUpon>finanzas.vb</DependentUpon>
@@ -306,8 +296,8 @@
     <EmbeddedResource Include="pacientes\Pacientes.resx">
       <DependentUpon>Pacientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\Agregar_Paciente.resx">
-      <DependentUpon>Agregar_Paciente.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\Ingresar_Paciente.resx">
+      <DependentUpon>Ingresar_Paciente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -464,6 +454,51 @@
     <None Include="Resources\BI6.jpg" />
     <None Include="Resources\BI7.jpg" />
     <None Include="Resources\BI8.jpg" />
+    <None Include="Resources\AI1a.jpg" />
+    <None Include="Resources\AI1r.jpg" />
+    <None Include="Resources\AI1n.jpg" />
+    <None Include="Resources\AI2n.jpg" />
+    <None Include="Resources\AI2r.jpg" />
+    <None Include="Resources\AI2a.jpg" />
+    <None Include="Resources\AI3a.jpg" />
+    <None Include="Resources\AI3n.jpg" />
+    <None Include="Resources\AI3r.jpg" />
+    <None Include="Resources\AI4a.jpg" />
+    <None Include="Resources\AI4n.jpg" />
+    <None Include="Resources\AI4r.jpg" />
+    <None Include="Resources\AI5a.jpg" />
+    <None Include="Resources\AI5n.jpg" />
+    <None Include="Resources\AI5r.jpg" />
+    <None Include="Resources\AI6a.jpg" />
+    <None Include="Resources\AI6n.jpg" />
+    <None Include="Resources\AI6r.jpg" />
+    <None Include="Resources\AI7a.jpg" />
+    <None Include="Resources\AI7n.jpg" />
+    <None Include="Resources\AI7r.jpg" />
+    <None Include="Resources\AI8a.jpg" />
+    <None Include="Resources\AI8n.jpg" />
+    <None Include="Resources\AI8r.jpg" />
+    <None Include="Resources\BI2a.jpg" />
+    <None Include="Resources\BI2n.jpg" />
+    <None Include="Resources\BI2r.jpg" />
+    <None Include="Resources\BI3a.jpg" />
+    <None Include="Resources\BI3n.jpg" />
+    <None Include="Resources\BI3r.jpg" />
+    <None Include="Resources\BI4a.jpg" />
+    <None Include="Resources\BI4n.jpg" />
+    <None Include="Resources\BI4r.jpg" />
+    <None Include="Resources\BI5a.jpg" />
+    <None Include="Resources\BI5n.jpg" />
+    <None Include="Resources\BI5r.jpg" />
+    <None Include="Resources\BI6a.jpg" />
+    <None Include="Resources\BI6n.jpg" />
+    <None Include="Resources\BI6r.jpg" />
+    <None Include="Resources\BI7a.jpg" />
+    <None Include="Resources\BI7n.jpg" />
+    <None Include="Resources\BI7r.jpg" />
+    <None Include="Resources\BI8a.jpg" />
+    <None Include="Resources\BI8n.jpg" />
+    <None Include="Resources\BI8r.jpg" />
     <Content Include="Resources\cancel_exit_cross_close.png" />
     <None Include="Resources\índice.png" />
     <None Include="Resources\minimize-window.png" />
