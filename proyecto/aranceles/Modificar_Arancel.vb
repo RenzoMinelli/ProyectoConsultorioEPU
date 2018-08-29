@@ -17,7 +17,7 @@
 
         Dim descripcion As String = ""
         Dim costo As Integer = 0
-        Dim ref As String = ""
+
 
         Consulta = "select descripcion from aranceles where id_a = '" + Str(id) + "';"
         consultar()
@@ -32,7 +32,7 @@
         Consulta = "select ref from aranceles where id_a = '" + Str(id) + "';"
         consultar()
         DataGridView1.DataSource = Tabla
-        ref = DataGridView1.Rows(0).Cells(0).Value
+
 
         TextBox1.Text = descripcion
 
