@@ -87,13 +87,13 @@ Partial Class Menu_Inicio
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(174, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1737, 38)
+        Me.Panel2.Size = New System.Drawing.Size(669, 38)
         Me.Panel2.TabIndex = 7
         '
         'PictureBox9
         '
         Me.PictureBox9.Image = Global.WindowsApplication1.My.Resources.Resources.maximize_window_1_
-        Me.PictureBox9.Location = New System.Drawing.Point(1669, 6)
+        Me.PictureBox9.Location = New System.Drawing.Point(574, 3)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(28, 29)
         Me.PictureBox9.TabIndex = 19
@@ -102,7 +102,7 @@ Partial Class Menu_Inicio
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.media_1_
-        Me.PictureBox4.Location = New System.Drawing.Point(1703, 6)
+        Me.PictureBox4.Location = New System.Drawing.Point(608, 3)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(27, 32)
         Me.PictureBox4.TabIndex = 18
@@ -111,7 +111,7 @@ Partial Class Menu_Inicio
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.PictureBox2.Location = New System.Drawing.Point(1632, 6)
+        Me.PictureBox2.Location = New System.Drawing.Point(537, 3)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(28, 32)
         Me.PictureBox2.TabIndex = 17
@@ -382,7 +382,7 @@ Partial Class Menu_Inicio
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(1911, 665)
+        Me.ClientSize = New System.Drawing.Size(843, 665)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
