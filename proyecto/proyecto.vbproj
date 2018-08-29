@@ -88,10 +88,10 @@
     <Compile Include="citas\Agregar_Cita.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\Marcar_Cita.Designer.vb">
-      <DependentUpon>Marcar_Cita.vb</DependentUpon>
+    <Compile Include="citas\IngresarEstadoDientes.Designer.vb">
+      <DependentUpon>IngresarEstadoDientes.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\Marcar_Cita.vb">
+    <Compile Include="citas\IngresarEstadoDientes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="finanzas\finanzas.Designer.vb">
@@ -233,8 +233,8 @@
     <EmbeddedResource Include="citas\Agregar_Cita.resx">
       <DependentUpon>Agregar_Cita.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\Marcar_Cita.resx">
-      <DependentUpon>Marcar_Cita.vb</DependentUpon>
+    <EmbeddedResource Include="citas\IngresarEstadoDientes.resx">
+      <DependentUpon>IngresarEstadoDientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="finanzas\finanzas.resx">
       <DependentUpon>finanzas.vb</DependentUpon>

@@ -1,4 +1,4 @@
-﻿Public Class marcar_cita
+﻿Public Class IngresarEstadoDientes
     Dim id_c As Integer
     Dim cambiador11 As Boolean = False
     Dim cambiador12 As Boolean = False
@@ -1033,9 +1033,11 @@
             consultar()
         End If
 
-
-        Citas.Show()
-        Me.Dispose()
+        frmContenedor.Dispose()
+        frmContenedor = Citas
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Show()
     End Sub
 
 
@@ -1699,6 +1701,6 @@
         Catch ex As Exception
             MsgBox("Error al cargar el estado de los dientes", MsgBoxStyle.Exclamation)
         End Try
-       
+
     End Sub
 End Class

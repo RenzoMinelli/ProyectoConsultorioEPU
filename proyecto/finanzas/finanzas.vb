@@ -25,6 +25,9 @@
         fechah = DateSerial(Year(fecha), Month(fecha) + 1, 0)
         hasta.Value = fechah
 
+        'Establezco como debe cargar el txbBusqueda
+        txbBusqueda.ForeColor = Color.Gray
+        txbBusqueda.Text = "Buscar"
 
         ComboBox1.SelectedItem = "Todos"
         actTabla(ComboBox1.SelectedItem)
@@ -118,5 +121,35 @@
     Private Sub ComboBox1_SelectedValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedValueChanged
         actTabla(ComboBox1.SelectedItem)
 
+    End Sub
+
+    Private Sub txbBusqueda_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
+        'Cuando el contenido de txbBusqueda cambia, guardamos lo ingresado en la variable busqueda
+        Dim busqueda As String = txbBusqueda.Text
+
+        'Si el txbBusqueda es igual a 'Buscar' y es de color Gris
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
+
+            'Que actualice el dgbPaciente simplemente
+            ' actTabla(EstadoPacientes)
+
+        Else 'Si no
+
+            'Intentamos obtener los pacientes que cumplan con las condición
+            Try
+
+                'Consulta = "Select id_p, cedula, fecha_nacimiento, upper(apellido) as 'nombre', upper(nombre) as 'apellido', telefono, upper(enviado_por) as 'enviado_por', upper(direccion_particular) as 'direccion_particular', upper(direccion_trabajo) as 'direccion_trabajo', saldo, estado from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + busqueda + "%' or cedula like '" + busqueda + "%' or apellido like '" + busqueda + "%' );"
+
+                ' consultar()
+                dgbPacientes.DataSource = Tabla
+
+            Catch ex As Exception
+
+                'Si se genera una excepción que se muestre una alerta
+                MsgBox("Error al buscar los pacientes", MsgBoxStyle.Exclamation)
+
+            End Try
+
+        End If
     End Sub
 End Class

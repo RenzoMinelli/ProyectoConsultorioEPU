@@ -50,7 +50,7 @@
 
         fechita = fecha
         Me.Hide()
-        frmContenedor = marcar_cita
+        frmContenedor = IngresarEstadoDientes
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()

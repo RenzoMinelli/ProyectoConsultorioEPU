@@ -48,110 +48,110 @@ Partial Class Modificar_Paciente
         '
         'txbNombre
         '
-        Me.txbNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbNombre.Location = New System.Drawing.Point(276, 91)
+        Me.txbNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbNombre.Location = New System.Drawing.Point(325, 91)
         Me.txbNombre.Name = "txbNombre"
-        Me.txbNombre.Size = New System.Drawing.Size(234, 29)
+        Me.txbNombre.Size = New System.Drawing.Size(234, 35)
         Me.txbNombre.TabIndex = 0
         '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombre.Location = New System.Drawing.Point(26, 91)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(79, 24)
+        Me.lblNombre.Size = New System.Drawing.Size(101, 29)
         Me.lblNombre.TabIndex = 1
         Me.lblNombre.Text = "Nombre"
         '
         'lblCedula
         '
         Me.lblCedula.AutoSize = True
-        Me.lblCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCedula.Location = New System.Drawing.Point(26, 47)
         Me.lblCedula.Name = "lblCedula"
-        Me.lblCedula.Size = New System.Drawing.Size(70, 24)
+        Me.lblCedula.Size = New System.Drawing.Size(90, 29)
         Me.lblCedula.TabIndex = 2
         Me.lblCedula.Text = "Cédula"
         '
         'txbCedula
         '
-        Me.txbCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbCedula.Location = New System.Drawing.Point(276, 47)
+        Me.txbCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbCedula.Location = New System.Drawing.Point(325, 47)
         Me.txbCedula.Name = "txbCedula"
-        Me.txbCedula.Size = New System.Drawing.Size(234, 29)
+        Me.txbCedula.Size = New System.Drawing.Size(234, 35)
         Me.txbCedula.TabIndex = 1
         '
         'lblFechaNacimiento
         '
         Me.lblFechaNacimiento.AutoSize = True
-        Me.lblFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaNacimiento.Location = New System.Drawing.Point(761, 91)
+        Me.lblFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaNacimiento.Location = New System.Drawing.Point(706, 81)
         Me.lblFechaNacimiento.Name = "lblFechaNacimiento"
-        Me.lblFechaNacimiento.Size = New System.Drawing.Size(164, 24)
+        Me.lblFechaNacimiento.Size = New System.Drawing.Size(208, 29)
         Me.lblFechaNacimiento.TabIndex = 4
         Me.lblFechaNacimiento.Text = "Fecha Nacimiento"
         '
         'lblEnviadoPor
         '
         Me.lblEnviadoPor.AutoSize = True
-        Me.lblEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEnviadoPor.Location = New System.Drawing.Point(26, 237)
         Me.lblEnviadoPor.Name = "lblEnviadoPor"
-        Me.lblEnviadoPor.Size = New System.Drawing.Size(234, 24)
+        Me.lblEnviadoPor.Size = New System.Drawing.Size(297, 29)
         Me.lblEnviadoPor.TabIndex = 6
         Me.lblEnviadoPor.Text = "Por quien fue enviado (op)"
         '
         'txbEnviadoPor
         '
-        Me.txbEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbEnviadoPor.Location = New System.Drawing.Point(276, 234)
+        Me.txbEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbEnviadoPor.Location = New System.Drawing.Point(325, 234)
         Me.txbEnviadoPor.Name = "txbEnviadoPor"
-        Me.txbEnviadoPor.Size = New System.Drawing.Size(234, 29)
+        Me.txbEnviadoPor.Size = New System.Drawing.Size(234, 35)
         Me.txbEnviadoPor.TabIndex = 3
         '
         'lblDireccionPersonal
         '
         Me.lblDireccionPersonal.AutoSize = True
-        Me.lblDireccionPersonal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDireccionPersonal.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDireccionPersonal.Location = New System.Drawing.Point(26, 283)
         Me.lblDireccionPersonal.Name = "lblDireccionPersonal"
-        Me.lblDireccionPersonal.Size = New System.Drawing.Size(169, 24)
+        Me.lblDireccionPersonal.Size = New System.Drawing.Size(217, 29)
         Me.lblDireccionPersonal.TabIndex = 8
         Me.lblDireccionPersonal.Text = "Direccion Personal"
         '
         'txbDireccionPersonal
         '
-        Me.txbDireccionPersonal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbDireccionPersonal.Location = New System.Drawing.Point(276, 283)
+        Me.txbDireccionPersonal.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbDireccionPersonal.Location = New System.Drawing.Point(325, 283)
         Me.txbDireccionPersonal.Name = "txbDireccionPersonal"
-        Me.txbDireccionPersonal.Size = New System.Drawing.Size(234, 29)
+        Me.txbDireccionPersonal.Size = New System.Drawing.Size(234, 35)
         Me.txbDireccionPersonal.TabIndex = 4
         '
         'lblDireccionTrabajo
         '
         Me.lblDireccionTrabajo.AutoSize = True
-        Me.lblDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDireccionTrabajo.Location = New System.Drawing.Point(26, 326)
         Me.lblDireccionTrabajo.Name = "lblDireccionTrabajo"
-        Me.lblDireccionTrabajo.Size = New System.Drawing.Size(217, 24)
+        Me.lblDireccionTrabajo.Size = New System.Drawing.Size(279, 29)
         Me.lblDireccionTrabajo.TabIndex = 10
         Me.lblDireccionTrabajo.Text = "Direccion de trabajo (op)"
         '
         'txbDireccionTrabajo
         '
-        Me.txbDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbDireccionTrabajo.Location = New System.Drawing.Point(276, 321)
+        Me.txbDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbDireccionTrabajo.Location = New System.Drawing.Point(325, 321)
         Me.txbDireccionTrabajo.Name = "txbDireccionTrabajo"
-        Me.txbDireccionTrabajo.Size = New System.Drawing.Size(234, 29)
+        Me.txbDireccionTrabajo.Size = New System.Drawing.Size(234, 35)
         Me.txbDireccionTrabajo.TabIndex = 5
         '
         'btnGuardar
         '
-        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(593, 458)
+        Me.btnGuardar.Location = New System.Drawing.Point(743, 479)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(149, 60)
         Me.btnGuardar.TabIndex = 8
@@ -161,10 +161,10 @@ Partial Class Modificar_Paciente
         '
         'btnCancelar
         '
-        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.Image = Global.WindowsApplication1.My.Resources.Resources.X
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCancelar.Location = New System.Drawing.Point(72, 458)
+        Me.btnCancelar.Location = New System.Drawing.Point(147, 479)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(148, 60)
         Me.btnCancelar.TabIndex = 9
@@ -174,10 +174,10 @@ Partial Class Modificar_Paciente
         '
         'btnModificarAntecedentes
         '
-        Me.btnModificarAntecedentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificarAntecedentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarAntecedentes.Location = New System.Drawing.Point(39, 371)
         Me.btnModificarAntecedentes.Name = "btnModificarAntecedentes"
-        Me.btnModificarAntecedentes.Size = New System.Drawing.Size(471, 37)
+        Me.btnModificarAntecedentes.Size = New System.Drawing.Size(520, 53)
         Me.btnModificarAntecedentes.TabIndex = 7
         Me.btnModificarAntecedentes.Text = "Modificar Antecedentes"
         Me.btnModificarAntecedentes.UseVisualStyleBackColor = True
@@ -185,17 +185,17 @@ Partial Class Modificar_Paciente
         'lblFechaSeleccionada
         '
         Me.lblFechaSeleccionada.AutoSize = True
-        Me.lblFechaSeleccionada.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaSeleccionada.Location = New System.Drawing.Point(687, 287)
+        Me.lblFechaSeleccionada.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaSeleccionada.Location = New System.Drawing.Point(621, 290)
         Me.lblFechaSeleccionada.Name = "lblFechaSeleccionada"
-        Me.lblFechaSeleccionada.Size = New System.Drawing.Size(186, 24)
+        Me.lblFechaSeleccionada.Size = New System.Drawing.Size(235, 29)
         Me.lblFechaSeleccionada.TabIndex = 15
         Me.lblFechaSeleccionada.Text = "Fecha seleccionada:"
         '
         'mcFechaNacimiento
         '
-        Me.mcFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mcFechaNacimiento.Location = New System.Drawing.Point(690, 116)
+        Me.mcFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mcFechaNacimiento.Location = New System.Drawing.Point(682, 119)
         Me.mcFechaNacimiento.MaxSelectionCount = 1
         Me.mcFechaNacimiento.Name = "mcFechaNacimiento"
         Me.mcFechaNacimiento.TabIndex = 6
@@ -211,38 +211,38 @@ Partial Class Modificar_Paciente
         '
         'txbTelefono
         '
-        Me.txbTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbTelefono.Location = New System.Drawing.Point(276, 184)
+        Me.txbTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbTelefono.Location = New System.Drawing.Point(325, 184)
         Me.txbTelefono.Name = "txbTelefono"
-        Me.txbTelefono.Size = New System.Drawing.Size(234, 29)
+        Me.txbTelefono.Size = New System.Drawing.Size(234, 35)
         Me.txbTelefono.TabIndex = 2
         '
         'lblTelefono
         '
         Me.lblTelefono.AutoSize = True
-        Me.lblTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTelefono.Location = New System.Drawing.Point(26, 184)
         Me.lblTelefono.Name = "lblTelefono"
-        Me.lblTelefono.Size = New System.Drawing.Size(85, 24)
+        Me.lblTelefono.Size = New System.Drawing.Size(110, 29)
         Me.lblTelefono.TabIndex = 20
         Me.lblTelefono.Text = "Teléfono"
         '
         'lblApellido
         '
         Me.lblApellido.AutoSize = True
-        Me.lblApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblApellido.Location = New System.Drawing.Point(26, 138)
         Me.lblApellido.Name = "lblApellido"
-        Me.lblApellido.Size = New System.Drawing.Size(79, 24)
+        Me.lblApellido.Size = New System.Drawing.Size(102, 29)
         Me.lblApellido.TabIndex = 22
         Me.lblApellido.Text = "Apellido"
         '
         'txbApellido
         '
-        Me.txbApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbApellido.Location = New System.Drawing.Point(276, 138)
+        Me.txbApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbApellido.Location = New System.Drawing.Point(325, 138)
         Me.txbApellido.Name = "txbApellido"
-        Me.txbApellido.Size = New System.Drawing.Size(234, 29)
+        Me.txbApellido.Size = New System.Drawing.Size(234, 35)
         Me.txbApellido.TabIndex = 21
         '
         'Modificar_Paciente

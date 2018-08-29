@@ -39,10 +39,8 @@ Partial Class Registro_Medico
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel000 = New System.Windows.Forms.Panel()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.EstadoDiente = New System.Windows.Forms.DataGridView()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
         Me.pbDiente11 = New System.Windows.Forms.PictureBox()
         Me.pbDiente12 = New System.Windows.Forms.PictureBox()
         Me.pbDiente13 = New System.Windows.Forms.PictureBox()
@@ -77,10 +75,10 @@ Partial Class Registro_Medico
         Me.pbDiente23 = New System.Windows.Forms.PictureBox()
         Me.pbDiente22 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.EstadoDiente = New System.Windows.Forms.DataGridView()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EstadoDiente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDiente11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDiente12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDiente13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,6 +112,7 @@ Partial Class Registro_Medico
         CType(Me.pbDiente24, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDiente23, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDiente22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EstadoDiente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel55
@@ -144,7 +143,7 @@ Partial Class Registro_Medico
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(443, 524)
+        Me.Button1.Location = New System.Drawing.Point(450, 604)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(137, 71)
         Me.Button1.TabIndex = 24
@@ -263,46 +262,13 @@ Partial Class Registro_Medico
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView2.Location = New System.Drawing.Point(16, 356)
+        Me.DataGridView2.Location = New System.Drawing.Point(12, 375)
         Me.DataGridView2.MultiSelect = False
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.ReadOnly = True
         Me.DataGridView2.RowHeadersVisible = False
-        Me.DataGridView2.Size = New System.Drawing.Size(470, 162)
+        Me.DataGridView2.Size = New System.Drawing.Size(1124, 162)
         Me.DataGridView2.TabIndex = 26
-        '
-        'EstadoDiente
-        '
-        Me.EstadoDiente.AllowUserToAddRows = False
-        Me.EstadoDiente.AllowUserToDeleteRows = False
-        Me.EstadoDiente.AllowUserToResizeColumns = False
-        Me.EstadoDiente.AllowUserToResizeRows = False
-        Me.EstadoDiente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.EstadoDiente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.EstadoDiente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.EstadoDiente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.EstadoDiente.DefaultCellStyle = DataGridViewCellStyle4
-        Me.EstadoDiente.Location = New System.Drawing.Point(538, 356)
-        Me.EstadoDiente.MultiSelect = False
-        Me.EstadoDiente.Name = "EstadoDiente"
-        Me.EstadoDiente.ReadOnly = True
-        Me.EstadoDiente.RowHeadersVisible = False
-        Me.EstadoDiente.Size = New System.Drawing.Size(491, 162)
-        Me.EstadoDiente.TabIndex = 27
         '
         'Label36
         '
@@ -323,16 +289,6 @@ Partial Class Registro_Medico
         Me.Label37.Size = New System.Drawing.Size(168, 24)
         Me.Label37.TabIndex = 29
         Me.Label37.Text = "Estado de Dientes:"
-        '
-        'Label38
-        '
-        Me.Label38.AutoSize = True
-        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(534, 329)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(269, 24)
-        Me.Label38.TabIndex = 30
-        Me.Label38.Text = "Registro de Estado de Dientes:"
         '
         'pbDiente11
         '
@@ -703,13 +659,45 @@ Partial Class Registro_Medico
         Me.Panel3.Size = New System.Drawing.Size(684, 18)
         Me.Panel3.TabIndex = 21
         '
+        'EstadoDiente
+        '
+        Me.EstadoDiente.AllowUserToAddRows = False
+        Me.EstadoDiente.AllowUserToDeleteRows = False
+        Me.EstadoDiente.AllowUserToResizeColumns = False
+        Me.EstadoDiente.AllowUserToResizeRows = False
+        Me.EstadoDiente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.EstadoDiente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.EstadoDiente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.EstadoDiente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.EstadoDiente.DefaultCellStyle = DataGridViewCellStyle4
+        Me.EstadoDiente.Location = New System.Drawing.Point(16, 12)
+        Me.EstadoDiente.MultiSelect = False
+        Me.EstadoDiente.Name = "EstadoDiente"
+        Me.EstadoDiente.ReadOnly = True
+        Me.EstadoDiente.RowHeadersVisible = False
+        Me.EstadoDiente.Size = New System.Drawing.Size(17, 17)
+        Me.EstadoDiente.TabIndex = 27
+        '
         'Registro_Medico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.ClientSize = New System.Drawing.Size(1184, 725)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Label38)
         Me.Controls.Add(Me.Label37)
         Me.Controls.Add(Me.Label36)
         Me.Controls.Add(Me.EstadoDiente)
@@ -726,7 +714,6 @@ Partial Class Registro_Medico
         Me.Panel01477.ResumeLayout(False)
         Me.Panel01477.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EstadoDiente, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbDiente11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbDiente12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbDiente13, System.ComponentModel.ISupportInitialize).EndInit()
@@ -760,6 +747,7 @@ Partial Class Registro_Medico
         CType(Me.pbDiente24, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbDiente23, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbDiente22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EstadoDiente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -775,10 +763,8 @@ Partial Class Registro_Medico
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
-    Friend WithEvents EstadoDiente As System.Windows.Forms.DataGridView
     Friend WithEvents Label36 As System.Windows.Forms.Label
     Friend WithEvents Label37 As System.Windows.Forms.Label
-    Friend WithEvents Label38 As System.Windows.Forms.Label
     Friend WithEvents pbDiente11 As System.Windows.Forms.PictureBox
     Friend WithEvents pbDiente12 As System.Windows.Forms.PictureBox
     Friend WithEvents pbDiente13 As System.Windows.Forms.PictureBox
@@ -815,4 +801,5 @@ Partial Class Registro_Medico
     Friend WithEvents pbDiente31 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents EstadoDiente As System.Windows.Forms.DataGridView
 End Class

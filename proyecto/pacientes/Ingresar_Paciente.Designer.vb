@@ -46,6 +46,8 @@ Partial Class Ingresar_Paciente
         Me.txbApellido = New System.Windows.Forms.TextBox()
         Me.pbErrorCedula = New System.Windows.Forms.PictureBox()
         Me.lblAnuncio = New System.Windows.Forms.Label()
+        Me.btnAgregarEstadoDientes = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.dgbPacientesId, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgbPacientesCedulas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbErrorCedula, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,7 +93,7 @@ Partial Class Ingresar_Paciente
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(706, 78)
+        Me.Label3.Location = New System.Drawing.Point(726, 43)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(208, 29)
         Me.Label3.TabIndex = 4
@@ -156,7 +158,7 @@ Partial Class Ingresar_Paciente
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAgregar.Location = New System.Drawing.Point(743, 467)
+        Me.btnAgregar.Location = New System.Drawing.Point(495, 657)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(146, 63)
         Me.btnAgregar.TabIndex = 9
@@ -169,7 +171,7 @@ Partial Class Ingresar_Paciente
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.Image = Global.WindowsApplication1.My.Resources.Resources.X
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCancelar.Location = New System.Drawing.Point(85, 467)
+        Me.btnCancelar.Location = New System.Drawing.Point(83, 657)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(157, 63)
         Me.btnCancelar.TabIndex = 10
@@ -180,7 +182,7 @@ Partial Class Ingresar_Paciente
         'btnAgregarAntecedentes
         '
         Me.btnAgregarAntecedentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarAntecedentes.Location = New System.Drawing.Point(12, 366)
+        Me.btnAgregarAntecedentes.Location = New System.Drawing.Point(13, 454)
         Me.btnAgregarAntecedentes.Name = "btnAgregarAntecedentes"
         Me.btnAgregarAntecedentes.Size = New System.Drawing.Size(596, 50)
         Me.btnAgregarAntecedentes.TabIndex = 8
@@ -191,7 +193,7 @@ Partial Class Ingresar_Paciente
         '
         Me.lblFechaSeleccionada.AutoSize = True
         Me.lblFechaSeleccionada.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaSeleccionada.Location = New System.Drawing.Point(660, 299)
+        Me.lblFechaSeleccionada.Location = New System.Drawing.Point(680, 264)
         Me.lblFechaSeleccionada.Name = "lblFechaSeleccionada"
         Me.lblFechaSeleccionada.Size = New System.Drawing.Size(211, 25)
         Me.lblFechaSeleccionada.TabIndex = 15
@@ -200,7 +202,7 @@ Partial Class Ingresar_Paciente
         'mcFechaNacimiento
         '
         Me.mcFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mcFechaNacimiento.Location = New System.Drawing.Point(687, 116)
+        Me.mcFechaNacimiento.Location = New System.Drawing.Point(707, 81)
         Me.mcFechaNacimiento.MaxSelectionCount = 1
         Me.mcFechaNacimiento.Name = "mcFechaNacimiento"
         Me.mcFechaNacimiento.TabIndex = 7
@@ -212,7 +214,7 @@ Partial Class Ingresar_Paciente
         Me.dgbPacientesId.AllowUserToResizeColumns = False
         Me.dgbPacientesId.AllowUserToResizeRows = False
         Me.dgbPacientesId.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbPacientesId.Location = New System.Drawing.Point(947, 4)
+        Me.dgbPacientesId.Location = New System.Drawing.Point(993, 4)
         Me.dgbPacientesId.Name = "dgbPacientesId"
         Me.dgbPacientesId.ReadOnly = True
         Me.dgbPacientesId.Size = New System.Drawing.Size(35, 33)
@@ -244,7 +246,7 @@ Partial Class Ingresar_Paciente
         Me.dgbPacientesCedulas.AllowUserToResizeColumns = False
         Me.dgbPacientesCedulas.AllowUserToResizeRows = False
         Me.dgbPacientesCedulas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbPacientesCedulas.Location = New System.Drawing.Point(876, 22)
+        Me.dgbPacientesCedulas.Location = New System.Drawing.Point(974, 12)
         Me.dgbPacientesCedulas.Name = "dgbPacientesCedulas"
         Me.dgbPacientesCedulas.ReadOnly = True
         Me.dgbPacientesCedulas.Size = New System.Drawing.Size(13, 15)
@@ -289,11 +291,35 @@ Partial Class Ingresar_Paciente
         Me.lblAnuncio.Text = "Label1"
         Me.lblAnuncio.Visible = False
         '
+        'btnAgregarEstadoDientes
+        '
+        Me.btnAgregarEstadoDientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregarEstadoDientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAgregarEstadoDientes.Location = New System.Drawing.Point(718, 454)
+        Me.btnAgregarEstadoDientes.Name = "btnAgregarEstadoDientes"
+        Me.btnAgregarEstadoDientes.Size = New System.Drawing.Size(439, 50)
+        Me.btnAgregarEstadoDientes.TabIndex = 24
+        Me.btnAgregarEstadoDientes.Text = "Ingresar Estado de Dientes"
+        Me.btnAgregarEstadoDientes.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(736, 387)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(421, 50)
+        Me.Label1.TabIndex = 25
+        Me.Label1.Text = "El estado de los dientes puede ingresarse " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "posteriormente en la primer cita"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Ingresar_Paciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.ClientSize = New System.Drawing.Size(1330, 777)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnAgregarEstadoDientes)
         Me.Controls.Add(Me.lblAnuncio)
         Me.Controls.Add(Me.pbErrorCedula)
         Me.Controls.Add(Me.txbApellido)
@@ -353,4 +379,6 @@ Partial Class Ingresar_Paciente
     Friend WithEvents txbApellido As System.Windows.Forms.TextBox
     Friend WithEvents pbErrorCedula As System.Windows.Forms.PictureBox
     Friend WithEvents lblAnuncio As System.Windows.Forms.Label
+    Friend WithEvents btnAgregarEstadoDientes As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
