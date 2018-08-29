@@ -4,17 +4,21 @@
         Dim nombre As String = TextBox1.Text
 
         Dim costo As String = TextBox2.Text
+        Try
+            Consulta = "insert into aranceles (descripcion, costo,estado) values ('" + nombre + "','" + costo + "',1);"
+            consultar()
 
-        Consulta = "insert into aranceles (descripcion, costo, ref) values ('" + nombre + "','" + costo + "');"
-        consultar()
+            'actualizo la tabla
 
-        'actualizo la tabla
+            Consulta = "select * from aranceles"
+            consultar()
+            Aranceles.DataGridView1.DataSource = Tabla
+            Me.Dispose()
+            Aranceles.Show()
+        Catch ex As Exception
+            MsgBox("Error al agregar un arancel", MsgBoxStyle.Exclamation)
+        End Try
 
-        Consulta = "select * from aranceles"
-        consultar()
-        Aranceles.DataGridView1.DataSource = Tabla
-        Me.Dispose()
-        Aranceles.Show()
 
     End Sub
 
