@@ -24,10 +24,16 @@ Partial Class Login
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnfuncionario = New System.Windows.Forms.Button()
+        Me.btnodontologo = New System.Windows.Forms.Button()
+        Me.lblingrusuario = New System.Windows.Forms.Label()
+        Me.txtcontraseña = New System.Windows.Forms.TextBox()
+        Me.lblcontraseña = New System.Windows.Forms.Label()
+        Me.btningresar = New System.Windows.Forms.Button()
+        Me.dgbcontraseña = New System.Windows.Forms.DataGridView()
+        Me.dgbconfirmar = New System.Windows.Forms.DataGridView()
+        CType(Me.dgbcontraseña, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgbconfirmar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -40,65 +46,112 @@ Partial Class Login
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Seleccione un Usuario:"
         '
-        'Button2
+        'btnfuncionario
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(33, 391)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(432, 92)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Funcionario"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnfuncionario.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnfuncionario.Location = New System.Drawing.Point(33, 279)
+        Me.btnfuncionario.Name = "btnfuncionario"
+        Me.btnfuncionario.Size = New System.Drawing.Size(231, 84)
+        Me.btnfuncionario.TabIndex = 2
+        Me.btnfuncionario.Text = "Funcionario"
+        Me.btnfuncionario.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnodontologo
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(44, 211)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(432, 92)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Odontologo"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnodontologo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnodontologo.Location = New System.Drawing.Point(33, 168)
+        Me.btnodontologo.Name = "btnodontologo"
+        Me.btnodontologo.Size = New System.Drawing.Size(231, 79)
+        Me.btnodontologo.TabIndex = 1
+        Me.btnodontologo.Text = "Odontologo"
+        Me.btnodontologo.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'lblingrusuario
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(246, 118)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(169, 21)
-        Me.ComboBox1.TabIndex = 3
+        Me.lblingrusuario.AutoSize = True
+        Me.lblingrusuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblingrusuario.Location = New System.Drawing.Point(28, 112)
+        Me.lblingrusuario.Name = "lblingrusuario"
+        Me.lblingrusuario.Size = New System.Drawing.Size(236, 29)
+        Me.lblingrusuario.TabIndex = 4
+        Me.lblingrusuario.Text = "ingrese un usuario:"
         '
-        'Label2
+        'txtcontraseña
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(68, 125)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(96, 13)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "ingrese un usuario:"
+        Me.txtcontraseña.Location = New System.Drawing.Point(296, 259)
+        Me.txtcontraseña.Name = "txtcontraseña"
+        Me.txtcontraseña.Size = New System.Drawing.Size(154, 20)
+        Me.txtcontraseña.TabIndex = 5
+        '
+        'lblcontraseña
+        '
+        Me.lblcontraseña.AutoSize = True
+        Me.lblcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcontraseña.Location = New System.Drawing.Point(28, 250)
+        Me.lblcontraseña.Name = "lblcontraseña"
+        Me.lblcontraseña.Size = New System.Drawing.Size(248, 29)
+        Me.lblcontraseña.TabIndex = 6
+        Me.lblcontraseña.Text = "Ingrese Contraseña:"
+        '
+        'btningresar
+        '
+        Me.btningresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btningresar.Location = New System.Drawing.Point(33, 498)
+        Me.btningresar.Name = "btningresar"
+        Me.btningresar.Size = New System.Drawing.Size(434, 89)
+        Me.btningresar.TabIndex = 7
+        Me.btningresar.Text = "ingresar"
+        Me.btningresar.UseVisualStyleBackColor = True
+        '
+        'dgbcontraseña
+        '
+        Me.dgbcontraseña.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgbcontraseña.Location = New System.Drawing.Point(552, 12)
+        Me.dgbcontraseña.Name = "dgbcontraseña"
+        Me.dgbcontraseña.Size = New System.Drawing.Size(10, 11)
+        Me.dgbcontraseña.TabIndex = 8
+        Me.dgbcontraseña.Visible = False
+        '
+        'dgbconfirmar
+        '
+        Me.dgbconfirmar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgbconfirmar.Location = New System.Drawing.Point(552, 29)
+        Me.dgbconfirmar.Name = "dgbconfirmar"
+        Me.dgbconfirmar.Size = New System.Drawing.Size(10, 10)
+        Me.dgbconfirmar.TabIndex = 9
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(574, 638)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.dgbconfirmar)
+        Me.Controls.Add(Me.dgbcontraseña)
+        Me.Controls.Add(Me.btningresar)
+        Me.Controls.Add(Me.lblcontraseña)
+        Me.Controls.Add(Me.txtcontraseña)
+        Me.Controls.Add(Me.lblingrusuario)
+        Me.Controls.Add(Me.btnfuncionario)
+        Me.Controls.Add(Me.btnodontologo)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
+        CType(Me.dgbcontraseña, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgbconfirmar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents btnfuncionario As System.Windows.Forms.Button
+    Friend WithEvents btnodontologo As System.Windows.Forms.Button
+    Friend WithEvents lblingrusuario As System.Windows.Forms.Label
+    Friend WithEvents txtcontraseña As System.Windows.Forms.TextBox
+    Friend WithEvents lblcontraseña As System.Windows.Forms.Label
+    Friend WithEvents btningresar As System.Windows.Forms.Button
+    Friend WithEvents dgbcontraseña As System.Windows.Forms.DataGridView
+    Friend WithEvents dgbconfirmar As System.Windows.Forms.DataGridView
 End Class
