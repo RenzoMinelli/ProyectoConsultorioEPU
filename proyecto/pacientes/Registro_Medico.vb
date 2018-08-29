@@ -1,6 +1,6 @@
 ﻿Public Class Registro_Medico
     Dim formu As New Form
-    
+
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
             Consulta = "Select r.descripcion, zona, nro_diente, a.descripcion, c.fecha,hora , precio from registro_medico r left join aranceles a on a.id_a = r.id_a left join cita c on c.id_c = r.id_c where r.id_p = '" + Str(id_p) + "'"
@@ -13,7 +13,7 @@
 
             MsgBox(ex.ToString)
         End Try
-       
+
     End Sub
 
     Private Sub actBoca()
@@ -40,7 +40,7 @@
                 Select Case zona
                     Case "11"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbad1.Image = My.Resources._1a
                             Case "precaucion"
                                 pbad1.Image = My.Resources._1aa
@@ -51,7 +51,7 @@
                         End Select
                     Case "12"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbad2.Image = My.Resources._2a
                             Case "precaucion"
                                 pbad2.Image = My.Resources._2aa
@@ -62,7 +62,7 @@
                         End Select
                     Case "13"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbad3.Image = My.Resources._3a
                             Case "precaucion"
                                 pbad3.Image = My.Resources._3aa
@@ -73,7 +73,7 @@
                         End Select
                     Case "14"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbad4.Image = My.Resources._4a
                             Case "precaucion"
                                 pbad4.Image = My.Resources._4aa
@@ -84,7 +84,7 @@
                         End Select
                     Case "15"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbad5.Image = My.Resources._5a
                             Case "precaucion"
                                 pbad5.Image = My.Resources._5aa
@@ -95,7 +95,7 @@
                         End Select
                     Case "16"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbad6.Image = My.Resources._6a
                             Case "precaucion"
                                 pbad6.Image = My.Resources._6aa
@@ -106,7 +106,7 @@
                         End Select
                     Case "17"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbad7.Image = My.Resources._7a
                             Case "precaucion"
                                 pbad7.Image = My.Resources._7aa
@@ -117,7 +117,7 @@
                         End Select
                     Case "18"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbad8.Image = My.Resources._8a
                             Case "precaucion"
                                 pbad8.Image = My.Resources._8aa
@@ -134,7 +134,7 @@
 
                     Case "21"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbai1.Image = My.Resources._1a
                             Case "precaucion"
                                 pbai1.Image = My.Resources._1aa
@@ -145,7 +145,7 @@
                         End Select
                     Case "22"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbai2.Image = My.Resources._2a
                             Case "precaucion"
                                 pbai2.Image = My.Resources._2aa
@@ -156,7 +156,7 @@
                         End Select
                     Case "23"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbai3.Image = My.Resources._3a
                             Case "precaucion"
                                 pbai3.Image = My.Resources._3aa
@@ -167,7 +167,7 @@
                         End Select
                     Case "24"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbai4.Image = My.Resources._4a
                             Case "precaucion"
                                 pbai4.Image = My.Resources._4aa
@@ -178,7 +178,7 @@
                         End Select
                     Case "25"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbai5.Image = My.Resources._5a
                             Case "precaucion"
                                 pbai5.Image = My.Resources._5aa
@@ -189,7 +189,7 @@
                         End Select
                     Case "26"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbai6.Image = My.Resources._6a
                             Case "precaucion"
                                 pbai6.Image = My.Resources._6aa
@@ -200,7 +200,7 @@
                         End Select
                     Case "27"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbai7.Image = My.Resources._7a
                             Case "precaucion"
                                 pbai7.Image = My.Resources._7aa
@@ -211,7 +211,7 @@
                         End Select
                     Case "28"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbai8.Image = My.Resources._8a
                             Case "precaucion"
                                 pbai8.Image = My.Resources._8aa
@@ -227,7 +227,7 @@
 
                     Case "31"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbi1.Image = My.Resources._1b
                             Case "precaucion"
                                 pbbi1.Image = My.Resources._1ab
@@ -239,7 +239,7 @@
 
                     Case "32"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbi2.Image = My.Resources._2b
                             Case "precaucion"
                                 pbbi2.Image = My.Resources._2ab
@@ -250,7 +250,7 @@
                         End Select
                     Case "33"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbi3.Image = My.Resources._3b
                             Case "precaucion"
                                 pbbi3.Image = My.Resources._3ab
@@ -261,7 +261,7 @@
                         End Select
                     Case "34"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbi4.Image = My.Resources._4b
                             Case "precaucion"
                                 pbbi4.Image = My.Resources._4ab
@@ -272,7 +272,7 @@
                         End Select
                     Case "35"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbi5.Image = My.Resources._5b
                             Case "precaucion"
                                 pbbi5.Image = My.Resources._5ab
@@ -283,7 +283,7 @@
                         End Select
                     Case "36"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbi6.Image = My.Resources._6b
                             Case "precaucion"
                                 pbbi6.Image = My.Resources._6ab
@@ -294,7 +294,7 @@
                         End Select
                     Case "37"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbi7.Image = My.Resources._7b
                             Case "precaucion"
                                 pbbi7.Image = My.Resources._7ab
@@ -305,7 +305,7 @@
                         End Select
                     Case "38"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbi8.Image = My.Resources._8b
                             Case "precaucion"
                                 pbbi8.Image = My.Resources._8ab
@@ -320,7 +320,7 @@
 
                     Case "41"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbd1.Image = My.Resources._1b
                             Case "precaucion"
                                 pbbd1.Image = My.Resources._1ab
@@ -331,7 +331,7 @@
                         End Select
                     Case "42"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbd2.Image = My.Resources._2b
                             Case "precaucion"
                                 pbbd2.Image = My.Resources._2ab
@@ -342,7 +342,7 @@
                         End Select
                     Case "43"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbd3.Image = My.Resources._3b
                             Case "precaucion"
                                 pbbd3.Image = My.Resources._3ab
@@ -353,12 +353,13 @@
                         End Select
                     Case "44"
                         Select Case DataGridView1.Rows(x).Cells(0).Value
-                            Case "malo"
+                            Case "alerta"
                                 pbbd4.Image = My.Resources._4b
                             Case "precaucion"
                                 pbbd4.Image = My.Resources._4ab
                             Case "ausente"
                                 pbbd4.Image = My.Resources._4nb
+<<<<<<< HEAD
                             Case "normal"
                                 pbbi4.Image = My.Resources.BD4
                         End Select
@@ -489,6 +490,47 @@
                         '        Panel48.BackColor = panel.BackColor
 
                         'End Select
+=======
+                        End Select
+                    Case "45"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "alerta"
+                                pbbd5.Image = My.Resources._5b
+                            Case "precaucion"
+                                pbbd5.Image = My.Resources._5ab
+                            Case "ausente"
+                                pbbd5.Image = My.Resources._5nb
+                        End Select
+                    Case "46"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "alerta"
+                                pbbd6.Image = My.Resources._6b
+                            Case "precaucion"
+                                pbbd6.Image = My.Resources._6ab
+                            Case "ausente"
+                                pbbd6.Image = My.Resources._6nb
+                        End Select
+                    Case "47"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "alerta"
+                                pbbd7.Image = My.Resources._7b
+                            Case "precaucion"
+                                pbbd7.Image = My.Resources._7ab
+                            Case "ausente"
+                                pbbd7.Image = My.Resources._7nb
+                        End Select
+                    Case "48"
+                        Select Case DataGridView1.Rows(x).Cells(0).Value
+                            Case "alerta"
+                                pbbd8.Image = My.Resources._8b
+                            Case "precaucion"
+                                pbbd8.Image = My.Resources._8ab
+                            Case "ausente"
+                                pbbd8.Image = My.Resources._8nb
+                        End Select
+                End Select
+
+>>>>>>> 085945730d089fcba482d096d6ac6b5422bd0117
             End If
         Next
     End Sub
@@ -540,25 +582,8 @@
         DataGridView2.AutoResizeColumns()
     End Sub
 
-    
+    Private Sub pbad7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbad7.Click
 
-    Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbd8.Click
-
-    End Sub
-
-    Private Sub Label17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Panel2_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel2.Paint
-
-    End Sub
-
-    Private Sub pbad6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbad6.Click
-
-    End Sub
-
-    Private Sub pbbd1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbd1.Click
 
     End Sub
 
@@ -566,23 +591,13 @@
 
     End Sub
 
-    Private Sub pbad7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbad7.Click
 
-    End Sub
 
-    Private Sub pbbi6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbi6.Click
 
-    End Sub
 
-    Private Sub pbbi7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbi7.Click
-
-    End Sub
-
-    Private Sub pbbi8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbi8.Click
-
-    End Sub
-
-    Private Sub pbbd6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbbd6.Click
-
-    End Sub
 End Class
+
+
+
+
+

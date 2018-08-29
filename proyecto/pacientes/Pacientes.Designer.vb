@@ -22,9 +22,11 @@ Partial Class Pacientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlTapa = New System.Windows.Forms.Panel()
+        Me.lblCartel = New System.Windows.Forms.Label()
         Me.lblEstado = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.lblTelefono = New System.Windows.Forms.Label()
@@ -46,8 +48,6 @@ Partial Class Pacientes
         Me.Label15 = New System.Windows.Forms.Label()
         Me.lblSaldoPendiente = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.pnlTapa = New System.Windows.Forms.Panel()
-        Me.lblCartel = New System.Windows.Forms.Label()
         Me.txbBusqueda = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.btnRegistroMedico = New System.Windows.Forms.Button()
@@ -58,7 +58,7 @@ Partial Class Pacientes
         Me.dgbPacientes = New System.Windows.Forms.DataGridView()
         Me.btnRealizarPago = New System.Windows.Forms.Button()
         Me.dgbFiltro = New System.Windows.Forms.DataGridView()
-        Me.btnPacInact = New System.Windows.Forms.Button()
+        Me.btnCambiarPacientes = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.pnlTapa.SuspendLayout()
         CType(Me.dgbPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,6 +96,26 @@ Partial Class Pacientes
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(444, 453)
         Me.Panel1.TabIndex = 3
+        '
+        'pnlTapa
+        '
+        Me.pnlTapa.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.pnlTapa.Controls.Add(Me.lblCartel)
+        Me.pnlTapa.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTapa.ForeColor = System.Drawing.Color.Black
+        Me.pnlTapa.Location = New System.Drawing.Point(0, 0)
+        Me.pnlTapa.Name = "pnlTapa"
+        Me.pnlTapa.Size = New System.Drawing.Size(444, 453)
+        Me.pnlTapa.TabIndex = 6
+        '
+        'lblCartel
+        '
+        Me.lblCartel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCartel.Location = New System.Drawing.Point(84, 147)
+        Me.lblCartel.Name = "lblCartel"
+        Me.lblCartel.Size = New System.Drawing.Size(282, 125)
+        Me.lblCartel.TabIndex = 0
+        Me.lblCartel.Text = "SELECCIONE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "UN PACIENTE"
         '
         'lblEstado
         '
@@ -307,26 +327,6 @@ Partial Class Pacientes
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "N° Citas Atendidas:"
         '
-        'pnlTapa
-        '
-        Me.pnlTapa.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.pnlTapa.Controls.Add(Me.lblCartel)
-        Me.pnlTapa.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTapa.ForeColor = System.Drawing.Color.Black
-        Me.pnlTapa.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTapa.Name = "pnlTapa"
-        Me.pnlTapa.Size = New System.Drawing.Size(444, 453)
-        Me.pnlTapa.TabIndex = 6
-        '
-        'lblCartel
-        '
-        Me.lblCartel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCartel.Location = New System.Drawing.Point(84, 147)
-        Me.lblCartel.Name = "lblCartel"
-        Me.lblCartel.Size = New System.Drawing.Size(282, 125)
-        Me.lblCartel.TabIndex = 0
-        Me.lblCartel.Text = "SELECCIONE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "UN PACIENTE"
-        '
         'txbBusqueda
         '
         Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -427,23 +427,23 @@ Partial Class Pacientes
         Me.dgbPacientes.AllowUserToResizeColumns = False
         Me.dgbPacientes.AllowUserToResizeRows = False
         Me.dgbPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgbPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgbPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgbPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgbPacientes.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgbPacientes.DefaultCellStyle = DataGridViewCellStyle4
         Me.dgbPacientes.Location = New System.Drawing.Point(17, 70)
         Me.dgbPacientes.MultiSelect = False
         Me.dgbPacientes.Name = "dgbPacientes"
@@ -482,17 +482,17 @@ Partial Class Pacientes
         Me.dgbFiltro.TabIndex = 19
         Me.dgbFiltro.Visible = False
         '
-        'btnPacInact
+        'btnCambiarPacientes
         '
-        Me.btnPacInact.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPacInact.ForeColor = System.Drawing.Color.Black
-        Me.btnPacInact.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPacInact.Location = New System.Drawing.Point(17, 434)
-        Me.btnPacInact.Name = "btnPacInact"
-        Me.btnPacInact.Size = New System.Drawing.Size(488, 41)
-        Me.btnPacInact.TabIndex = 20
-        Me.btnPacInact.Text = "Mostrar Pacientes Inactivos"
-        Me.btnPacInact.UseVisualStyleBackColor = True
+        Me.btnCambiarPacientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCambiarPacientes.ForeColor = System.Drawing.Color.Black
+        Me.btnCambiarPacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCambiarPacientes.Location = New System.Drawing.Point(17, 434)
+        Me.btnCambiarPacientes.Name = "btnCambiarPacientes"
+        Me.btnCambiarPacientes.Size = New System.Drawing.Size(488, 41)
+        Me.btnCambiarPacientes.TabIndex = 20
+        Me.btnCambiarPacientes.Text = "Mostrar Pacientes Inactivos"
+        Me.btnCambiarPacientes.UseVisualStyleBackColor = True
         '
         'Pacientes
         '
@@ -500,7 +500,7 @@ Partial Class Pacientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1040, 607)
-        Me.Controls.Add(Me.btnPacInact)
+        Me.Controls.Add(Me.btnCambiarPacientes)
         Me.Controls.Add(Me.dgbFiltro)
         Me.Controls.Add(Me.btnRealizarPago)
         Me.Controls.Add(Me.dgbPacientes)
@@ -558,7 +558,7 @@ Partial Class Pacientes
     Friend WithEvents dgbFiltro As System.Windows.Forms.DataGridView
     Friend WithEvents lblTelefono As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents btnPacInact As System.Windows.Forms.Button
+    Friend WithEvents btnCambiarPacientes As System.Windows.Forms.Button
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents lblEstado As System.Windows.Forms.Label
 

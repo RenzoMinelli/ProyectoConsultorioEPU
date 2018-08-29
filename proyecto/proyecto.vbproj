@@ -85,15 +85,11 @@
     <Compile Include="citas\agregarcitas2.Designer.vb">
       <DependentUpon>agregarcitas2.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\agregarcitas2.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="citas\agregarcitas2.vb" />
     <Compile Include="citas\marcar cita.Designer.vb">
       <DependentUpon>marcar cita.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\marcar cita.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="citas\marcar cita.vb" />
     <Compile Include="finanzas\finanzas.Designer.vb">
       <DependentUpon>finanzas.vb</DependentUpon>
     </Compile>
@@ -199,9 +195,7 @@
     <Compile Include="pacientes\Agregar_Paciente.Designer.vb">
       <DependentUpon>Agregar_Paciente.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\Agregar_Paciente.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="pacientes\Agregar_Paciente.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
