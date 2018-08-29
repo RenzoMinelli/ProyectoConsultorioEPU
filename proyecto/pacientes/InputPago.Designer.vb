@@ -32,24 +32,24 @@ Partial Class InputPago
         'lblDatosPaciente
         '
         Me.lblDatosPaciente.AutoSize = True
-        Me.lblDatosPaciente.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDatosPaciente.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDatosPaciente.Location = New System.Drawing.Point(173, 68)
         Me.lblDatosPaciente.Name = "lblDatosPaciente"
-        Me.lblDatosPaciente.Size = New System.Drawing.Size(174, 25)
+        Me.lblDatosPaciente.Size = New System.Drawing.Size(195, 29)
         Me.lblDatosPaciente.TabIndex = 0
         Me.lblDatosPaciente.Text = "lblDatosPaciente"
         '
         'txbMonto
         '
-        Me.txbMonto.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbMonto.Location = New System.Drawing.Point(422, 195)
+        Me.txbMonto.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbMonto.Location = New System.Drawing.Point(430, 194)
         Me.txbMonto.Name = "txbMonto"
-        Me.txbMonto.Size = New System.Drawing.Size(311, 29)
+        Me.txbMonto.Size = New System.Drawing.Size(311, 35)
         Me.txbMonto.TabIndex = 1
         '
         'btnCancelar
         '
-        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.Location = New System.Drawing.Point(178, 411)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(118, 62)
@@ -59,7 +59,7 @@ Partial Class InputPago
         '
         'btnContinuar
         '
-        Me.btnContinuar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnContinuar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnContinuar.Location = New System.Drawing.Point(686, 411)
         Me.btnContinuar.Name = "btnContinuar"
         Me.btnContinuar.Size = New System.Drawing.Size(133, 62)
@@ -70,10 +70,10 @@ Partial Class InputPago
         'lblIngreseMonto
         '
         Me.lblIngreseMonto.AutoSize = True
-        Me.lblIngreseMonto.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIngreseMonto.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblIngreseMonto.Location = New System.Drawing.Point(173, 197)
         Me.lblIngreseMonto.Name = "lblIngreseMonto"
-        Me.lblIngreseMonto.Size = New System.Drawing.Size(226, 25)
+        Me.lblIngreseMonto.Size = New System.Drawing.Size(251, 29)
         Me.lblIngreseMonto.TabIndex = 4
         Me.lblIngreseMonto.Text = "Ingrese el Monto en $:"
         '

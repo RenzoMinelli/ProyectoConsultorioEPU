@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class marcar_cita
+Partial Class IngresarEstadoDientes
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -68,6 +68,7 @@ Partial Class marcar_cita
         Me.Panel0000 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel000 = New System.Windows.Forms.Panel()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel2.SuspendLayout()
         CType(Me.pbDiente38, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDiente48, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,6 +103,7 @@ Partial Class marcar_cita
         CType(Me.pbDiente17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDiente16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'bttoningrdientes
@@ -126,7 +128,7 @@ Partial Class marcar_cita
         '
         Me.Label37.AutoSize = True
         Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(350, 31)
+        Me.Label37.Location = New System.Drawing.Point(350, 28)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(168, 24)
         Me.Label37.TabIndex = 51
@@ -192,7 +194,7 @@ Partial Class marcar_cita
         '
         'pbDiente48
         '
-        Me.pbDiente48.Image = Global.WindowsApplication1.My.Resources.Resources.BD8
+        Me.pbDiente48.Image = Global.WindowsApplication1.My.Resources.Resources.Diente8AbajoIzquierdaBlanco
         Me.pbDiente48.Location = New System.Drawing.Point(19, 114)
         Me.pbDiente48.Name = "pbDiente48"
         Me.pbDiente48.Size = New System.Drawing.Size(39, 67)
@@ -202,7 +204,7 @@ Partial Class marcar_cita
         '
         'pbDiente47
         '
-        Me.pbDiente47.Image = Global.WindowsApplication1.My.Resources.Resources.BD7
+        Me.pbDiente47.Image = Global.WindowsApplication1.My.Resources.Resources.Diente7AbajoIzquierdaBlanco
         Me.pbDiente47.Location = New System.Drawing.Point(64, 114)
         Me.pbDiente47.Name = "pbDiente47"
         Me.pbDiente47.Size = New System.Drawing.Size(39, 67)
@@ -212,7 +214,7 @@ Partial Class marcar_cita
         '
         'pbDiente46
         '
-        Me.pbDiente46.Image = Global.WindowsApplication1.My.Resources.Resources.BD6
+        Me.pbDiente46.Image = Global.WindowsApplication1.My.Resources.Resources.Diente6AbajoIzquierdaBlanco
         Me.pbDiente46.Location = New System.Drawing.Point(109, 114)
         Me.pbDiente46.Name = "pbDiente46"
         Me.pbDiente46.Size = New System.Drawing.Size(39, 67)
@@ -222,7 +224,7 @@ Partial Class marcar_cita
         '
         'pbDiente45
         '
-        Me.pbDiente45.Image = Global.WindowsApplication1.My.Resources.Resources.BD5
+        Me.pbDiente45.Image = Global.WindowsApplication1.My.Resources.Resources.Diente5AbajoIzquierdaBlanco
         Me.pbDiente45.Location = New System.Drawing.Point(154, 114)
         Me.pbDiente45.Name = "pbDiente45"
         Me.pbDiente45.Size = New System.Drawing.Size(29, 66)
@@ -292,7 +294,7 @@ Partial Class marcar_cita
         '
         'pbDiente11
         '
-        Me.pbDiente11.Image = Global.WindowsApplication1.My.Resources.Resources.AD1
+        Me.pbDiente11.Image = Global.WindowsApplication1.My.Resources.Resources.Diente1ArribaIzquierdaBlanco
         Me.pbDiente11.Location = New System.Drawing.Point(304, 18)
         Me.pbDiente11.Name = "pbDiente11"
         Me.pbDiente11.Size = New System.Drawing.Size(24, 66)
@@ -302,7 +304,7 @@ Partial Class marcar_cita
         '
         'pbDiente44
         '
-        Me.pbDiente44.Image = Global.WindowsApplication1.My.Resources.Resources.BD4
+        Me.pbDiente44.Image = Global.WindowsApplication1.My.Resources.Resources.Diente4AbajoIzquierdaBlanco
         Me.pbDiente44.Location = New System.Drawing.Point(189, 114)
         Me.pbDiente44.Name = "pbDiente44"
         Me.pbDiente44.Size = New System.Drawing.Size(29, 67)
@@ -322,7 +324,7 @@ Partial Class marcar_cita
         '
         'pbDiente43
         '
-        Me.pbDiente43.Image = Global.WindowsApplication1.My.Resources.Resources.BD3
+        Me.pbDiente43.Image = Global.WindowsApplication1.My.Resources.Resources.Diente3AbajoIzquierdaBlanco
         Me.pbDiente43.Location = New System.Drawing.Point(225, 114)
         Me.pbDiente43.Name = "pbDiente43"
         Me.pbDiente43.Size = New System.Drawing.Size(29, 66)
@@ -342,7 +344,7 @@ Partial Class marcar_cita
         '
         'pbDiente42
         '
-        Me.pbDiente42.Image = Global.WindowsApplication1.My.Resources.Resources.BD2
+        Me.pbDiente42.Image = Global.WindowsApplication1.My.Resources.Resources.Diente2AbajoIzquierdaBlanco
         Me.pbDiente42.Location = New System.Drawing.Point(260, 114)
         Me.pbDiente42.Name = "pbDiente42"
         Me.pbDiente42.Size = New System.Drawing.Size(29, 66)
@@ -362,8 +364,8 @@ Partial Class marcar_cita
         '
         'pbDiente41
         '
-        Me.pbDiente41.ErrorImage = Global.WindowsApplication1.My.Resources.Resources.BD1
-        Me.pbDiente41.Image = Global.WindowsApplication1.My.Resources.Resources.BD1
+        Me.pbDiente41.ErrorImage = Global.WindowsApplication1.My.Resources.Resources.Diente1AbajoIzquierdaBlanco
+        Me.pbDiente41.Image = Global.WindowsApplication1.My.Resources.Resources.Diente1AbajoIzquierdaBlanco
         Me.pbDiente41.Location = New System.Drawing.Point(299, 114)
         Me.pbDiente41.Name = "pbDiente41"
         Me.pbDiente41.Size = New System.Drawing.Size(29, 66)
@@ -433,7 +435,7 @@ Partial Class marcar_cita
         '
         'pbDiente13
         '
-        Me.pbDiente13.Image = Global.WindowsApplication1.My.Resources.Resources.AD3
+        Me.pbDiente13.Image = Global.WindowsApplication1.My.Resources.Resources.Diente3ArribaIzquierdaBlanco
         Me.pbDiente13.Location = New System.Drawing.Point(234, 18)
         Me.pbDiente13.Name = "pbDiente13"
         Me.pbDiente13.Size = New System.Drawing.Size(29, 66)
@@ -443,7 +445,7 @@ Partial Class marcar_cita
         '
         'pbDiente12
         '
-        Me.pbDiente12.Image = Global.WindowsApplication1.My.Resources.Resources.AD2
+        Me.pbDiente12.Image = Global.WindowsApplication1.My.Resources.Resources.Diente2ArribaIzquierdaBlanco
         Me.pbDiente12.Location = New System.Drawing.Point(269, 18)
         Me.pbDiente12.Name = "pbDiente12"
         Me.pbDiente12.Size = New System.Drawing.Size(29, 66)
@@ -453,7 +455,7 @@ Partial Class marcar_cita
         '
         'pbDiente14
         '
-        Me.pbDiente14.Image = Global.WindowsApplication1.My.Resources.Resources.AD4
+        Me.pbDiente14.Image = Global.WindowsApplication1.My.Resources.Resources.Diente4ArribaIzquierdaBlanco
         Me.pbDiente14.Location = New System.Drawing.Point(198, 17)
         Me.pbDiente14.Name = "pbDiente14"
         Me.pbDiente14.Size = New System.Drawing.Size(30, 67)
@@ -463,7 +465,7 @@ Partial Class marcar_cita
         '
         'pbDiente18
         '
-        Me.pbDiente18.Image = Global.WindowsApplication1.My.Resources.Resources.AD8
+        Me.pbDiente18.Image = Global.WindowsApplication1.My.Resources.Resources.Diente8ArribaIzquierdaBlanco
         Me.pbDiente18.Location = New System.Drawing.Point(28, 17)
         Me.pbDiente18.Name = "pbDiente18"
         Me.pbDiente18.Size = New System.Drawing.Size(39, 67)
@@ -473,7 +475,7 @@ Partial Class marcar_cita
         '
         'pbDiente15
         '
-        Me.pbDiente15.Image = Global.WindowsApplication1.My.Resources.Resources.AD5
+        Me.pbDiente15.Image = Global.WindowsApplication1.My.Resources.Resources.Diente5ArribaIzquierdaBlanco
         Me.pbDiente15.Location = New System.Drawing.Point(163, 18)
         Me.pbDiente15.Name = "pbDiente15"
         Me.pbDiente15.Size = New System.Drawing.Size(29, 66)
@@ -483,7 +485,7 @@ Partial Class marcar_cita
         '
         'pbDiente17
         '
-        Me.pbDiente17.Image = Global.WindowsApplication1.My.Resources.Resources.AD7
+        Me.pbDiente17.Image = Global.WindowsApplication1.My.Resources.Resources.Diente7ArribaIzquierdaBlanco
         Me.pbDiente17.Location = New System.Drawing.Point(73, 17)
         Me.pbDiente17.Name = "pbDiente17"
         Me.pbDiente17.Size = New System.Drawing.Size(39, 67)
@@ -493,7 +495,7 @@ Partial Class marcar_cita
         '
         'pbDiente16
         '
-        Me.pbDiente16.Image = Global.WindowsApplication1.My.Resources.Resources.AD6
+        Me.pbDiente16.Image = Global.WindowsApplication1.My.Resources.Resources.Diente6ArribaIzquierdaBlanco
         Me.pbDiente16.Location = New System.Drawing.Point(118, 17)
         Me.pbDiente16.Name = "pbDiente16"
         Me.pbDiente16.Size = New System.Drawing.Size(39, 67)
@@ -586,11 +588,26 @@ Partial Class marcar_cita
         Me.Panel000.Size = New System.Drawing.Size(42, 26)
         Me.Panel000.TabIndex = 0
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToResizeColumns = False
+        Me.DataGridView1.AllowUserToResizeRows = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(54, 408)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(791, 64)
+        Me.DataGridView1.TabIndex = 54
+        Me.DataGridView1.Visible = False
+        '
         'marcar_cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(873, 596)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label37)
@@ -635,6 +652,7 @@ Partial Class marcar_cita
         CType(Me.pbDiente16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel01477.ResumeLayout(False)
         Me.Panel01477.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -685,4 +703,5 @@ Partial Class marcar_cita
     Friend WithEvents Panel0000 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Panel000 As System.Windows.Forms.Panel
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
 End Class

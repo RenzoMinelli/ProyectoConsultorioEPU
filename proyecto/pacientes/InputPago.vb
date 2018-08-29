@@ -2,7 +2,7 @@
 
 
     Private Sub InputPago_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        lblDatosPaciente.Text = "El salgo pendiente del paciente " + nombre + " es de $" + saldo.ToString + vbNewLine + "¿Cuánto depositará?"
+        lblDatosPaciente.Text = "El saldo pendiente del paciente " + Pacientes.nombre + " es de $" + Pacientes.saldo.ToString + vbNewLine + "¿Cuánto depositará?"
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinuar.Click
@@ -12,10 +12,10 @@
 
             MsgBox("Ingrese un número", MsgBoxStyle.Exclamation)
         Else
-            If MsgBox("¿Confirma que el paciente " + nombre + " depositó $" + pago + "?", MsgBoxStyle.YesNo) = vbYes Then
-                saldo -= pago
+            If MsgBox("¿Confirma que el paciente " + Pacientes.nombre + " depositó $" + pago + "?", MsgBoxStyle.YesNo) = vbYes Then
+                Pacientes.saldo -= pago
                 Try
-                    Consulta = "update paciente set saldo = '" + saldo.ToString + "' where id_p = '" + id_p.ToString + "';"
+                    Consulta = "update paciente set saldo = '" + Pacientes.saldo.ToString + "' where id_p = '" + id_p.ToString + "';"
                     consultar()
 
                     Dim fecha As Date = Now.ToShortDateString

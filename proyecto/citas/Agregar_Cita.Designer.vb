@@ -83,6 +83,7 @@ Partial Class Agregar_Cita
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(89, 82)
         Me.DataGridView1.Name = "DataGridView1"
@@ -167,7 +168,7 @@ Partial Class Agregar_Cita
         Me.NumericUpDown2.Size = New System.Drawing.Size(120, 33)
         Me.NumericUpDown2.TabIndex = 15
         '
-        'agregarcitas2
+        'Agregar_Cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -186,7 +187,7 @@ Partial Class Agregar_Cita
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "agregarcitas2"
+        Me.Name = "Agregar_Cita"
         Me.Text = "agregarcitas2"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()

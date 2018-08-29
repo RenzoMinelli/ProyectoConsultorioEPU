@@ -12,14 +12,7 @@ Module Module1
     Public MysqlConexion As MySqlConnection = New MySqlConnection(ubicacion)
 
     Public conex As Boolean
-    Public nombre As String
-    Public cedula As String
-    Public telefono As String
-    Public direccion As String
-    Public enviado As String
-    Public direTra As String
-    Public nac As String
-    Public saldo As Integer
+
     Public id_p As Integer
 
     Public frmContenedor As New Form
@@ -64,6 +57,9 @@ Module Module1
         End Try
 
     End Sub
+
+   
+
 End Module
 
 

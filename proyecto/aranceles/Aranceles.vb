@@ -9,8 +9,8 @@
             consultar()
             DataGridView1.DataSource = Tabla
             DataGridView1.ClearSelection()
-            Button2.Hide()
-            Button3.Hide()
+            btnEliminar.Hide()
+            btnEditar.Hide()
             ' Label2.ForeColor = Color.Gold
             DataGridView1.Columns(0).Visible = False
             '   Me.WindowState = FormWindowState.Maximized
@@ -32,28 +32,33 @@
 
 
     End Sub
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Consulta = " delete from aranceles where id_a = " + Str(id) + ""
-        consultar()
-        Consulta = "select * from aranceles"
-        consultar()
-        DataGridView1.DataSource = Tabla
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
+        Try
+            Consulta = " update aranceles set estado = 0 where id_a = " + Str(id) + ""
+            consultar()
+            Consulta = "select * from aranceles"
+            consultar()
+            DataGridView1.DataSource = Tabla
+        Catch ex As Exception
+            MsgBox("Error al Eliminar Arancel",MsgBoxStyle.Exclamation)
+        End Try
+
     End Sub
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        Button2.Show()
-        Button3.Show()
+        btnEliminar.Show()
+        btnEditar.Show()
         id = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells(0).Value
     End Sub
 
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
         Modificar_Arancel.Show()
 
     End Sub
 
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
         'Me.Hide()
         'frmContenedor = Agregar_Arancel
         'frmContenedor.MdiParent = Menu_Inicio

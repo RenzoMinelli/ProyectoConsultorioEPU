@@ -39,7 +39,7 @@ Partial Class Modificar_Antecedentes
         '
         'btnCancelar
         '
-        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.Image = Global.WindowsApplication1.My.Resources.Resources.X
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCancelar.Location = New System.Drawing.Point(412, 462)
@@ -52,7 +52,7 @@ Partial Class Modificar_Antecedentes
         '
         'txbObservaciones
         '
-        Me.txbObservaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbObservaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txbObservaciones.Location = New System.Drawing.Point(384, 115)
         Me.txbObservaciones.Multiline = True
         Me.txbObservaciones.Name = "txbObservaciones"
@@ -62,16 +62,16 @@ Partial Class Modificar_Antecedentes
         'lblObservaciones
         '
         Me.lblObservaciones.AutoSize = True
-        Me.lblObservaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblObservaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblObservaciones.Location = New System.Drawing.Point(380, 77)
         Me.lblObservaciones.Name = "lblObservaciones"
-        Me.lblObservaciones.Size = New System.Drawing.Size(142, 24)
+        Me.lblObservaciones.Size = New System.Drawing.Size(181, 29)
         Me.lblObservaciones.TabIndex = 21
         Me.lblObservaciones.Text = "Observaciones:"
         '
         'btnGuardar
         '
-        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnGuardar.Location = New System.Drawing.Point(795, 462)
@@ -85,10 +85,10 @@ Partial Class Modificar_Antecedentes
         'chbxAlergicos
         '
         Me.chbxAlergicos.AutoSize = True
-        Me.chbxAlergicos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxAlergicos.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbxAlergicos.Location = New System.Drawing.Point(77, 73)
         Me.chbxAlergicos.Name = "chbxAlergicos"
-        Me.chbxAlergicos.Size = New System.Drawing.Size(108, 28)
+        Me.chbxAlergicos.Size = New System.Drawing.Size(133, 33)
         Me.chbxAlergicos.TabIndex = 12
         Me.chbxAlergicos.Text = "Alérgicos"
         Me.chbxAlergicos.UseVisualStyleBackColor = True
@@ -96,10 +96,10 @@ Partial Class Modificar_Antecedentes
         'chbxDiabeticos
         '
         Me.chbxDiabeticos.AutoSize = True
-        Me.chbxDiabeticos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxDiabeticos.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbxDiabeticos.Location = New System.Drawing.Point(77, 124)
         Me.chbxDiabeticos.Name = "chbxDiabeticos"
-        Me.chbxDiabeticos.Size = New System.Drawing.Size(116, 28)
+        Me.chbxDiabeticos.Size = New System.Drawing.Size(146, 33)
         Me.chbxDiabeticos.TabIndex = 13
         Me.chbxDiabeticos.Text = "Diabéticos"
         Me.chbxDiabeticos.UseVisualStyleBackColor = True
@@ -107,10 +107,10 @@ Partial Class Modificar_Antecedentes
         'chbxCardiovasculares
         '
         Me.chbxCardiovasculares.AutoSize = True
-        Me.chbxCardiovasculares.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxCardiovasculares.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbxCardiovasculares.Location = New System.Drawing.Point(77, 175)
         Me.chbxCardiovasculares.Name = "chbxCardiovasculares"
-        Me.chbxCardiovasculares.Size = New System.Drawing.Size(173, 28)
+        Me.chbxCardiovasculares.Size = New System.Drawing.Size(218, 33)
         Me.chbxCardiovasculares.TabIndex = 14
         Me.chbxCardiovasculares.Text = "Cardiovasculares"
         Me.chbxCardiovasculares.UseVisualStyleBackColor = True
@@ -118,10 +118,10 @@ Partial Class Modificar_Antecedentes
         'chbxFiebreReumatica
         '
         Me.chbxFiebreReumatica.AutoSize = True
-        Me.chbxFiebreReumatica.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxFiebreReumatica.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbxFiebreReumatica.Location = New System.Drawing.Point(77, 226)
         Me.chbxFiebreReumatica.Name = "chbxFiebreReumatica"
-        Me.chbxFiebreReumatica.Size = New System.Drawing.Size(178, 28)
+        Me.chbxFiebreReumatica.Size = New System.Drawing.Size(223, 33)
         Me.chbxFiebreReumatica.TabIndex = 15
         Me.chbxFiebreReumatica.Text = "Fiebre Reumática"
         Me.chbxFiebreReumatica.UseVisualStyleBackColor = True
@@ -129,10 +129,10 @@ Partial Class Modificar_Antecedentes
         'chbxCoagulacion
         '
         Me.chbxCoagulacion.AutoSize = True
-        Me.chbxCoagulacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxCoagulacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbxCoagulacion.Location = New System.Drawing.Point(77, 278)
         Me.chbxCoagulacion.Name = "chbxCoagulacion"
-        Me.chbxCoagulacion.Size = New System.Drawing.Size(135, 28)
+        Me.chbxCoagulacion.Size = New System.Drawing.Size(167, 33)
         Me.chbxCoagulacion.TabIndex = 16
         Me.chbxCoagulacion.Text = "Coagulación"
         Me.chbxCoagulacion.UseVisualStyleBackColor = True
@@ -140,10 +140,10 @@ Partial Class Modificar_Antecedentes
         'chbxOdontologicos
         '
         Me.chbxOdontologicos.AutoSize = True
-        Me.chbxOdontologicos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxOdontologicos.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbxOdontologicos.Location = New System.Drawing.Point(77, 329)
         Me.chbxOdontologicos.Name = "chbxOdontologicos"
-        Me.chbxOdontologicos.Size = New System.Drawing.Size(152, 28)
+        Me.chbxOdontologicos.Size = New System.Drawing.Size(190, 33)
         Me.chbxOdontologicos.TabIndex = 17
         Me.chbxOdontologicos.Text = "Odontológicos"
         Me.chbxOdontologicos.UseVisualStyleBackColor = True
@@ -151,10 +151,10 @@ Partial Class Modificar_Antecedentes
         'chbxFarmacosRecibidos
         '
         Me.chbxFarmacosRecibidos.AutoSize = True
-        Me.chbxFarmacosRecibidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxFarmacosRecibidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbxFarmacosRecibidos.Location = New System.Drawing.Point(77, 376)
         Me.chbxFarmacosRecibidos.Name = "chbxFarmacosRecibidos"
-        Me.chbxFarmacosRecibidos.Size = New System.Drawing.Size(202, 28)
+        Me.chbxFarmacosRecibidos.Size = New System.Drawing.Size(254, 33)
         Me.chbxFarmacosRecibidos.TabIndex = 18
         Me.chbxFarmacosRecibidos.Text = "Fármacos Recibidos"
         Me.chbxFarmacosRecibidos.UseVisualStyleBackColor = True
@@ -162,10 +162,10 @@ Partial Class Modificar_Antecedentes
         'chbxFamiliares
         '
         Me.chbxFamiliares.AutoSize = True
-        Me.chbxFamiliares.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxFamiliares.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbxFamiliares.Location = New System.Drawing.Point(77, 429)
         Me.chbxFamiliares.Name = "chbxFamiliares"
-        Me.chbxFamiliares.Size = New System.Drawing.Size(115, 28)
+        Me.chbxFamiliares.Size = New System.Drawing.Size(145, 33)
         Me.chbxFamiliares.TabIndex = 19
         Me.chbxFamiliares.Text = "Familiares"
         Me.chbxFamiliares.UseVisualStyleBackColor = True
@@ -173,10 +173,10 @@ Partial Class Modificar_Antecedentes
         'chbxTratamientosMedicos
         '
         Me.chbxTratamientosMedicos.AutoSize = True
-        Me.chbxTratamientosMedicos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chbxTratamientosMedicos.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbxTratamientosMedicos.Location = New System.Drawing.Point(77, 480)
         Me.chbxTratamientosMedicos.Name = "chbxTratamientosMedicos"
-        Me.chbxTratamientosMedicos.Size = New System.Drawing.Size(214, 28)
+        Me.chbxTratamientosMedicos.Size = New System.Drawing.Size(271, 33)
         Me.chbxTratamientosMedicos.TabIndex = 20
         Me.chbxTratamientosMedicos.Text = "Tratamientos Médicos"
         Me.chbxTratamientosMedicos.UseVisualStyleBackColor = True

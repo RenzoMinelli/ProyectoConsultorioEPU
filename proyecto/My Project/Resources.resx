@@ -130,25 +130,19 @@
   <data name="maximize-window(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximize-window(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente1AbajoIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BD11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BD11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="f7d19e11011fb8ddfe0d533909dc8ace-icono-de-lupa-para-acampar-by-vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\f7d19e11011fb8ddfe0d533909dc8ace-icono-de-lupa-para-acampar-by-vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente7ArribaIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AD7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="money-bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money-bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD51" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AD51.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BD4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente4AbajoIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BD4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI3r" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -163,11 +157,8 @@
   <data name="BI4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2na" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente2ArribaIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2na.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AD11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AD11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI7a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI7a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,13 +172,13 @@
   <data name="BI6a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI6a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente1ArribaIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1nb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente1AbajoIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1nb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente5ArribaIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AD5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -196,22 +187,22 @@
   <data name="epu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\epu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6nb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente6AbajoIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6nb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="8a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente8ArribaIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4nb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente4AbajoIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4nb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BD3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente3AbajoIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BD3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente7ArribaIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="70002" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -220,19 +211,19 @@
   <data name="índice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\índice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3na" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente3ArribaIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3na.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="25437" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\25437.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1na" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente1ArribaIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1na.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7nb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente7AbajoIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7nb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5nb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente5AbajoIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5nb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI3n" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -241,28 +232,25 @@
   <data name="AI7n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI7n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente6ArribaIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel_exit_cross_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_exit_cross_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente3AbajoIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI7r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI7r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente1AbajoIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente5AbajoIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AD4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8nb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente8AbajoIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8nb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI3a" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -277,19 +265,19 @@
   <data name="BI6r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI6r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente2ArribaIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AD2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente3AbajoIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="777d48d425c5f93a54d01a413639fd83 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\777d48d425c5f93a54d01a413639fd83 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7na" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente7ArribaIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7na.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente2ArribaIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI4a" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -298,28 +286,28 @@
   <data name="AI7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5na" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente5ArribaIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5na.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI5a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI5a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6na" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente6ArribaIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6na.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente3ArribaIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4na" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente4ArribaIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4na.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente1ArribaIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add-user_icon-icons (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add-user_icon-icons (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente4AbajoIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="epu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -328,7 +316,7 @@
   <data name="delete (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="8na" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente8ArribaIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8na.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI7a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -337,7 +325,7 @@
   <data name="AI4n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI4n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente5ArribaIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI3r1" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -358,7 +346,7 @@
   <data name="AI6r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI6r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente4ArribaIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AD41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI8a" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -373,7 +361,7 @@
   <data name="BI5r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI5r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2nb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente2AbajoIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2nb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI3r" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -388,20 +376,17 @@
   <data name="42954 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\42954 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente3ArribaIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI2r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI2r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente3ArribaIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AD3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente7AbajoIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AD71" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AD71.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -415,19 +400,19 @@
   <data name="AI4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente1ArribaIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AD1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_509774" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_509774.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="8aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente8ArribaIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI5r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI5r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente2ArribaIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="índice(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -439,7 +424,7 @@
   <data name="users_21945" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users_21945.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente2AbajoIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI7r1" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -463,13 +448,13 @@
   <data name="AI8r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI8r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente2AbajoIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI2n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI2n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BD6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente6AbajoIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BD6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI8" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -481,22 +466,19 @@
   <data name="BI6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente5AbajoIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI2r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI2r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BD2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente2AbajoIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BD2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AD31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AD31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="epu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\epu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente6AbajoIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI2a" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -505,10 +487,7 @@
   <data name="AI3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD61" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AD61.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente8AbajoIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI7n" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -526,13 +505,13 @@
   <data name="AI3n1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI3n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente8ArribaIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AD8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI4r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI4r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BD7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente7AbajoIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BD7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI5a" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -556,56 +535,50 @@
   <data name="104901(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\104901(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente6ArribaIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AD6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI7r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI7r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BD5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente5AbajoIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BD5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente6ArribaIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI6n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI6n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente4ArribaIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente4ArribaIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente7ArribaIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="8b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente8AbajoIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente1AbajoIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BD1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente5ArribaIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AD21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AD21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI1n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI1n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BD8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente8AbajoIzquierdaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BD8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BI5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AD81" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AD81.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI5n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AI5n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -619,10 +592,10 @@
   <data name="checkmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente7AbajoIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente4AbajoIzquierdaAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dientes2" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -634,10 +607,10 @@
   <data name="rambocursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rambocursor.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3nb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente3AbajoIzquierdaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3nb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Diente6AbajoIzquierdaRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI6n" type="System.Resources.ResXFileRef, System.Windows.Forms">

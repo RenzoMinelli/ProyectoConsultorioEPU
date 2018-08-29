@@ -11,7 +11,7 @@
             consultar()
 
             realizar_pago.actTabla()
-            finanzas.actTabla()
+            finanzas.actTabla("Todos")
             Dim fecha As Date = Now.ToShortDateString
             Dim nfecha = fecha.ToString("yyyy-MM-dd")
 

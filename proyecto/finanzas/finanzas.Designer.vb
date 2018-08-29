@@ -24,7 +24,7 @@ Partial Class finanzas
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgbPagos = New System.Windows.Forms.DataGridView()
         Me.desde = New System.Windows.Forms.DateTimePicker()
         Me.hasta = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -33,16 +33,23 @@ Partial Class finanzas
         Me.monto = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.dgbPacientes = New System.Windows.Forms.DataGridView()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.txbBusqueda = New System.Windows.Forms.TextBox()
+        CType(Me.dgbPagos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgbPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'dgbPagos
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AllowUserToResizeColumns = False
-        Me.DataGridView1.AllowUserToResizeRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgbPagos.AllowUserToAddRows = False
+        Me.dgbPagos.AllowUserToDeleteRows = False
+        Me.dgbPagos.AllowUserToResizeColumns = False
+        Me.dgbPagos.AllowUserToResizeRows = False
+        Me.dgbPagos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgbPagos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -50,8 +57,8 @@ Partial Class finanzas
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgbPagos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgbPagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -59,13 +66,13 @@ Partial Class finanzas
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle4
-        Me.DataGridView1.Location = New System.Drawing.Point(21, 200)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.Size = New System.Drawing.Size(1001, 204)
-        Me.DataGridView1.TabIndex = 0
+        Me.dgbPagos.DefaultCellStyle = DataGridViewCellStyle4
+        Me.dgbPagos.Location = New System.Drawing.Point(21, 200)
+        Me.dgbPagos.Name = "dgbPagos"
+        Me.dgbPagos.ReadOnly = True
+        Me.dgbPagos.RowHeadersVisible = False
+        Me.dgbPagos.Size = New System.Drawing.Size(1001, 204)
+        Me.dgbPagos.TabIndex = 0
         '
         'desde
         '
@@ -145,12 +152,65 @@ Partial Class finanzas
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "No hay pagos en esas fechas"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.Items.AddRange(New Object() {"Todos"})
+        Me.ComboBox1.Location = New System.Drawing.Point(535, 103)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(373, 32)
+        Me.ComboBox1.TabIndex = 9
+        '
+        'dgbPacientes
+        '
+        Me.dgbPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgbPacientes.Location = New System.Drawing.Point(12, 12)
+        Me.dgbPacientes.Name = "dgbPacientes"
+        Me.dgbPacientes.Size = New System.Drawing.Size(34, 25)
+        Me.dgbPacientes.TabIndex = 10
+        Me.dgbPacientes.Visible = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(590, 40)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(234, 24)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "Paciente que realizó pago:"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.ForeColor = System.Drawing.Color.Black
+        Me.Label22.Location = New System.Drawing.Point(397, 151)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(128, 29)
+        Me.Label22.TabIndex = 17
+        Me.Label22.Text = "Busqueda:"
+        '
+        'txbBusqueda
+        '
+        Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbBusqueda.Location = New System.Drawing.Point(531, 151)
+        Me.txbBusqueda.Name = "txbBusqueda"
+        Me.txbBusqueda.Size = New System.Drawing.Size(386, 35)
+        Me.txbBusqueda.TabIndex = 16
+        '
         'finanzas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1034, 541)
+        Me.Controls.Add(Me.Label22)
+        Me.Controls.Add(Me.txbBusqueda)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.dgbPacientes)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.monto)
@@ -159,15 +219,16 @@ Partial Class finanzas
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.hasta)
         Me.Controls.Add(Me.desde)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgbPagos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "finanzas"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgbPagos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgbPacientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents dgbPagos As System.Windows.Forms.DataGridView
     Friend WithEvents desde As System.Windows.Forms.DateTimePicker
     Friend WithEvents hasta As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -176,4 +237,9 @@ Partial Class finanzas
     Friend WithEvents monto As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents dgbPacientes As System.Windows.Forms.DataGridView
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents txbBusqueda As System.Windows.Forms.TextBox
 End Class

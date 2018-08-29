@@ -85,9 +85,20 @@
     <Compile Include="citas\agregarcitas2.Designer.vb">
       <DependentUpon>agregarcitas2.vb</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="citas\agregarcitas2.vb" />
     <Compile Include="citas\marcar cita.Designer.vb">
       <DependentUpon>marcar cita.vb</DependentUpon>
+=======
+    <Compile Include="citas\Agregar_Cita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="citas\IngresarEstadoDientes.Designer.vb">
+      <DependentUpon>IngresarEstadoDientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="citas\IngresarEstadoDientes.vb">
+      <SubType>Form</SubType>
+>>>>>>> e77f751a95043abde57a4e924143f6a68f17a95b
     </Compile>
     <Compile Include="citas\marcar cita.vb" />
     <Compile Include="finanzas\finanzas.Designer.vb">
@@ -106,6 +117,12 @@
       <DependentUpon>realizar_pago.vb</DependentUpon>
     </Compile>
     <Compile Include="finanzas\realizar_pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu1\ingreso_contraseña.Designer.vb">
+      <DependentUpon>ingreso_contraseña.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu1\ingreso_contraseña.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu1\Login.Designer.vb">
@@ -185,6 +202,12 @@
     <Compile Include="pacientes\Modificar_Paciente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="pacientes\MsgBoxVersatil.Designer.vb">
+      <DependentUpon>MsgBoxVersatil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pacientes\MsgBoxVersatil.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="pacientes\Pacientes.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -221,8 +244,13 @@
     <EmbeddedResource Include="citas\agregarcitas2.resx">
       <DependentUpon>agregarcitas2.vb</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="citas\marcar cita.resx">
       <DependentUpon>marcar cita.vb</DependentUpon>
+=======
+    <EmbeddedResource Include="citas\IngresarEstadoDientes.resx">
+      <DependentUpon>IngresarEstadoDientes.vb</DependentUpon>
+>>>>>>> e77f751a95043abde57a4e924143f6a68f17a95b
     </EmbeddedResource>
     <EmbeddedResource Include="finanzas\finanzas.resx">
       <DependentUpon>finanzas.vb</DependentUpon>
@@ -232,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="finanzas\realizar_pago.resx">
       <DependentUpon>realizar_pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu1\ingreso_contraseña.resx">
+      <DependentUpon>ingreso_contraseña.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu1\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -268,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\Modificar_Paciente.resx">
       <DependentUpon>Modificar_Paciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pacientes\MsgBoxVersatil.resx">
+      <DependentUpon>MsgBoxVersatil.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\Pacientes.resx">
       <DependentUpon>Pacientes.vb</DependentUpon>

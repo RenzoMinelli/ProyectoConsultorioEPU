@@ -41,7 +41,7 @@ Partial Class Antecedentes
         Me.Label9 = New System.Windows.Forms.Label()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.tablita = New System.Windows.Forms.DataGridView()
+        Me.dgbAntecedentes = New System.Windows.Forms.DataGridView()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -62,93 +62,93 @@ Partial Class Antecedentes
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.tablita, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgbAntecedentes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(91, 41)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 25)
+        Me.Label1.Size = New System.Drawing.Size(120, 29)
         Me.Label1.TabIndex = 23
         Me.Label1.Text = "Alérgicos:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(91, 213)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(187, 25)
+        Me.Label2.Size = New System.Drawing.Size(210, 29)
         Me.Label2.TabIndex = 24
         Me.Label2.Text = "Fiebre Reumática:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(91, 96)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(119, 25)
+        Me.Label3.Size = New System.Drawing.Size(133, 29)
         Me.Label3.TabIndex = 25
         Me.Label3.Text = "Diabéticos:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(91, 276)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(138, 25)
+        Me.Label4.Size = New System.Drawing.Size(154, 29)
         Me.Label4.TabIndex = 26
         Me.Label4.Text = "Coagulación:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(91, 442)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(117, 25)
+        Me.Label5.Size = New System.Drawing.Size(132, 29)
         Me.Label5.TabIndex = 27
         Me.Label5.Text = "Familiares:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(91, 157)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(185, 25)
+        Me.Label6.Size = New System.Drawing.Size(205, 29)
         Me.Label6.TabIndex = 28
         Me.Label6.Text = "Cardiovasculares:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(91, 332)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(156, 25)
+        Me.Label7.Size = New System.Drawing.Size(177, 29)
         Me.Label7.TabIndex = 29
         Me.Label7.Text = "Odontológicos:"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(91, 502)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(230, 25)
+        Me.Label8.Size = New System.Drawing.Size(258, 29)
         Me.Label8.TabIndex = 30
         Me.Label8.Text = "Tratamientos Médicos:"
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox1.Location = New System.Drawing.Point(327, 30)
+        Me.PictureBox1.Location = New System.Drawing.Point(355, 30)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox1.TabIndex = 31
@@ -157,7 +157,7 @@ Partial Class Antecedentes
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox2.Location = New System.Drawing.Point(327, 85)
+        Me.PictureBox2.Location = New System.Drawing.Point(355, 85)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox2.TabIndex = 32
@@ -166,7 +166,7 @@ Partial Class Antecedentes
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox3.Location = New System.Drawing.Point(327, 146)
+        Me.PictureBox3.Location = New System.Drawing.Point(355, 146)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox3.TabIndex = 33
@@ -175,7 +175,7 @@ Partial Class Antecedentes
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox4.Location = New System.Drawing.Point(327, 202)
+        Me.PictureBox4.Location = New System.Drawing.Point(355, 202)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox4.TabIndex = 34
@@ -184,7 +184,7 @@ Partial Class Antecedentes
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox5.Location = New System.Drawing.Point(327, 265)
+        Me.PictureBox5.Location = New System.Drawing.Point(355, 265)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox5.TabIndex = 35
@@ -193,7 +193,7 @@ Partial Class Antecedentes
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox6.Location = New System.Drawing.Point(327, 321)
+        Me.PictureBox6.Location = New System.Drawing.Point(355, 321)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox6.TabIndex = 36
@@ -202,7 +202,7 @@ Partial Class Antecedentes
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox7.Location = New System.Drawing.Point(327, 373)
+        Me.PictureBox7.Location = New System.Drawing.Point(355, 373)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox7.TabIndex = 37
@@ -211,7 +211,7 @@ Partial Class Antecedentes
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox8.Location = New System.Drawing.Point(327, 431)
+        Me.PictureBox8.Location = New System.Drawing.Point(355, 431)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox8.TabIndex = 38
@@ -220,17 +220,17 @@ Partial Class Antecedentes
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(91, 384)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(214, 25)
+        Me.Label9.Size = New System.Drawing.Size(241, 29)
         Me.Label9.TabIndex = 39
         Me.Label9.Text = "Farmacos Recibidos:"
         '
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox9.Location = New System.Drawing.Point(327, 491)
+        Me.PictureBox9.Location = New System.Drawing.Point(355, 491)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox9.TabIndex = 40
@@ -239,21 +239,21 @@ Partial Class Antecedentes
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(610, 23)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(162, 25)
+        Me.Label10.Size = New System.Drawing.Size(181, 29)
         Me.Label10.TabIndex = 41
         Me.Label10.Text = "Observaciones:"
         '
-        'tablita
+        'dgbAntecedentes
         '
-        Me.tablita.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tablita.Location = New System.Drawing.Point(795, 3)
-        Me.tablita.Name = "tablita"
-        Me.tablita.Size = New System.Drawing.Size(57, 30)
-        Me.tablita.TabIndex = 42
-        Me.tablita.Visible = False
+        Me.dgbAntecedentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgbAntecedentes.Location = New System.Drawing.Point(795, 3)
+        Me.dgbAntecedentes.Name = "dgbAntecedentes"
+        Me.dgbAntecedentes.Size = New System.Drawing.Size(57, 30)
+        Me.dgbAntecedentes.TabIndex = 42
+        Me.dgbAntecedentes.Visible = False
         '
         'Label11
         '
@@ -347,7 +347,7 @@ Partial Class Antecedentes
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.Location = New System.Drawing.Point(590, 521)
@@ -360,7 +360,7 @@ Partial Class Antecedentes
         '
         'TextBox1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(426, 70)
         Me.TextBox1.MaxLength = 132431
         Me.TextBox1.Multiline = True
@@ -385,7 +385,7 @@ Partial Class Antecedentes
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.tablita)
+        Me.Controls.Add(Me.dgbAntecedentes)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.Label9)
@@ -417,7 +417,7 @@ Partial Class Antecedentes
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.tablita, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgbAntecedentes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -441,7 +441,7 @@ Partial Class Antecedentes
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents tablita As System.Windows.Forms.DataGridView
+    Friend WithEvents dgbAntecedentes As System.Windows.Forms.DataGridView
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label

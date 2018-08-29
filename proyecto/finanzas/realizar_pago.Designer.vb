@@ -35,6 +35,7 @@ Partial Class realizar_pago
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
+        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(64, 96)
         Me.DataGridView1.Name = "DataGridView1"
@@ -52,7 +53,7 @@ Partial Class realizar_pago
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(372, 25)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Elija el paciente que realizara el pago"
+        Me.Label1.Text = "Elija el paciente que realizará el pago"
         '
         'Button1
         '
