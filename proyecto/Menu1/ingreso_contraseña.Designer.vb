@@ -28,6 +28,7 @@ Partial Class ingreso_contraseña
         Me.lblcontraseña = New System.Windows.Forms.Label()
         Me.lblrepcontraseña = New System.Windows.Forms.Label()
         Me.lblexplicacion = New System.Windows.Forms.Label()
+        Me.lblhack = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnguardar
@@ -83,13 +84,24 @@ Partial Class ingreso_contraseña
         Me.lblexplicacion.Size = New System.Drawing.Size(578, 145)
         Me.lblexplicacion.TabIndex = 5
         Me.lblexplicacion.Text = "                                 saludos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "A continuacion ingrese la contraseñ" & _
-            "a que desea " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "para el Odontologo"
+            "a que desea " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "para el "
+        '
+        'lblhack
+        '
+        Me.lblhack.AutoSize = True
+        Me.lblhack.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.lblhack.Location = New System.Drawing.Point(120, 136)
+        Me.lblhack.Name = "lblhack"
+        Me.lblhack.Size = New System.Drawing.Size(151, 29)
+        Me.lblhack.TabIndex = 6
+        Me.lblhack.Text = "Odontologo"
         '
         'ingreso_contraseña
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(615, 664)
+        Me.ClientSize = New System.Drawing.Size(615, 469)
+        Me.Controls.Add(Me.lblhack)
         Me.Controls.Add(Me.lblexplicacion)
         Me.Controls.Add(Me.lblrepcontraseña)
         Me.Controls.Add(Me.lblcontraseña)
@@ -98,6 +110,7 @@ Partial Class ingreso_contraseña
         Me.Controls.Add(Me.btnguardar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ingreso_contraseña"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ingreso_contraseña"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -109,4 +122,5 @@ Partial Class ingreso_contraseña
     Friend WithEvents lblcontraseña As System.Windows.Forms.Label
     Friend WithEvents lblrepcontraseña As System.Windows.Forms.Label
     Friend WithEvents lblexplicacion As System.Windows.Forms.Label
+    Friend WithEvents lblhack As System.Windows.Forms.Label
 End Class
