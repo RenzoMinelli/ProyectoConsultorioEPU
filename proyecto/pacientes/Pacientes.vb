@@ -13,7 +13,7 @@
     Public nac As String
     Public saldo As Integer
 
-    Dim resp As Integer
+
     
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarPaciente.Click
@@ -67,25 +67,25 @@
         Try
             Consulta = "SELECT id_p, cedula, fecha_nacimiento, upper(apellido) as 'nombre', upper(nombre) as 'apellido', telefono, upper(enviado_por) as 'enviado_por', upper(direccion_particular) as 'direccion_particular', upper(direccion_trabajo) as 'direccion_trabajo', saldo, estado  FROM paciente where estado = '" + estado + "';"
             consultar()
-            dgbPacientes.DataSource = Tabla
+            dgvPacientes.DataSource = Tabla
 
             'Ocultamos todas las columnas que no nos interesa que el usuario visualice
-            dgbPacientes.Columns(0).Visible = False
-            dgbPacientes.Columns(2).Visible = False
-            dgbPacientes.Columns(5).Visible = False
-            dgbPacientes.Columns(6).Visible = False
-            dgbPacientes.Columns(7).Visible = False
-            dgbPacientes.Columns(8).Visible = False
-            dgbPacientes.Columns(9).Visible = False
-            dgbPacientes.Columns(10).Visible = False
+            dgvPacientes.Columns(0).Visible = False
+            dgvPacientes.Columns(2).Visible = False
+            dgvPacientes.Columns(5).Visible = False
+            dgvPacientes.Columns(6).Visible = False
+            dgvPacientes.Columns(7).Visible = False
+            dgvPacientes.Columns(8).Visible = False
+            dgvPacientes.Columns(9).Visible = False
+            dgvPacientes.Columns(10).Visible = False
 
             'Cambiamos los encabezados de las columnas restantes por estetica y practicidad
-            dgbPacientes.Columns(1).HeaderText = "Cédula"
-            dgbPacientes.Columns(3).HeaderText = "Apellido"
-            dgbPacientes.Columns(4).HeaderText = "Nombre"
+            dgvPacientes.Columns(1).HeaderText = "Cédula"
+            dgvPacientes.Columns(3).HeaderText = "Apellido"
+            dgvPacientes.Columns(4).HeaderText = "Nombre"
 
             'Lo ordenamos según el apellido
-            dgbPacientes.Sort(dgbPacientes.Columns(3), System.ComponentModel.ListSortDirection.Ascending)
+            dgvPacientes.Sort(dgvPacientes.Columns(3), System.ComponentModel.ListSortDirection.Ascending)
         Catch ex As Exception
 
             'Si es que se encuentra un error, que se muestre una alerta
@@ -113,16 +113,16 @@
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCambiarEstado.Click
 
         'Al precionar el boton btnCambiarEstado, obtenemos la id del paciente previamente seleccionado
-        id_p = dgbPacientes.CurrentRow.Cells(0).Value
+        id_p = dgvPacientes.CurrentRow.Cells(0).Value
 
         'Si el estado del paciente es activo
         If EstadoPacientes = 1 Then
 
             'Consultar si desea realmente volverlo inactivo
-            MuestraMsgBoxVersatil("¿Seguro que desea volver inactivo al paciente " + dgbPacientes.CurrentRow.Cells(3).Value + " con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?")
+            MuestraMsgBoxVersatil("¿Seguro que desea volver inactivo al paciente " + dgvPacientes.CurrentRow.Cells(3).Value + " con la cedula " + dgvPacientes.CurrentRow.Cells(1).Value + "?", 0)
 
 
-            If resp = 1 Then
+            If respint = 1 Then
 
                 'Si es así, intentamos actualizar la informacion del paciente en la base de datos cambiando el campo estado
                 Try
@@ -152,8 +152,8 @@
         Else 'Si el estado del paciente es inactivo
 
             'Consultamos si desea realmente volverlo activo
-            MuestraMsgBoxVersatil("¿Seguro que desea volver activo al paciente " + dgbPacientes.CurrentRow.Cells(3).Value + " con la cedula " + dgbPacientes.CurrentRow.Cells(1).Value + "?")
-            If resp = 1 Then
+            MuestraMsgBoxVersatil("¿Seguro que desea volver activo al paciente " + dgvPacientes.CurrentRow.Cells(3).Value + " con la cedula " + dgvPacientes.CurrentRow.Cells(1).Value + "?", 0)
+            If respint = 1 Then
 
                 'Si es así, intentamos actualizar la informacion del paciente en la base de datos cambiando el campo estado
                 Try
@@ -199,40 +199,40 @@
 
 
         'Guardamos en las variables los datos acordes
-        id_p = dgbPacientes.CurrentRow.Cells(0).Value
-        cedula = dgbPacientes.CurrentRow.Cells(1).Value
-        nombre = dgbPacientes.CurrentRow.Cells(3).Value
-        apellido = dgbPacientes.CurrentRow.Cells(4).Value
-        nac = dgbPacientes.CurrentRow.Cells(2).Value
-        telefono = dgbPacientes.CurrentRow.Cells(5).Value
+        id_p = dgvPacientes.CurrentRow.Cells(0).Value
+        cedula = dgvPacientes.CurrentRow.Cells(1).Value
+        nombre = dgvPacientes.CurrentRow.Cells(3).Value
+        apellido = dgvPacientes.CurrentRow.Cells(4).Value
+        nac = dgvPacientes.CurrentRow.Cells(2).Value
+        telefono = dgvPacientes.CurrentRow.Cells(5).Value
 
-        If IsDBNull(dgbPacientes.CurrentRow.Cells(6).Value) Then
+        If IsDBNull(dgvPacientes.CurrentRow.Cells(6).Value) Then
             enviado = "NO DEFINIDO"
         Else
-            enviado = dgbPacientes.CurrentRow.Cells(6).Value
+            enviado = dgvPacientes.CurrentRow.Cells(6).Value
         End If
 
-        direccion = dgbPacientes.CurrentRow.Cells(7).Value
+        direccion = dgvPacientes.CurrentRow.Cells(7).Value
 
-        If IsDBNull(dgbPacientes.CurrentRow.Cells(8).Value) Then
+        If IsDBNull(dgvPacientes.CurrentRow.Cells(8).Value) Then
             direTra = "NO DEFINIDO"
         Else
-            direTra = dgbPacientes.CurrentRow.Cells(8).Value
+            direTra = dgvPacientes.CurrentRow.Cells(8).Value
         End If
 
-        saldo = dgbPacientes.CurrentRow.Cells(9).Value
+        saldo = dgvPacientes.CurrentRow.Cells(9).Value
 
         Consulta = "select p.id_p, count(*) from paciente p inner join cita c on p.id_p = c.id_p where c.realizada = 1 and p.id_p = '" + id_p.ToString + "' group by p.id_p;"
         consultar()
-        dgbFiltro.DataSource = Tabla
+        dgvFiltro.DataSource = Tabla
 
         Dim numCitas As Integer = 0
 
-        If dgbFiltro.RowCount = 1 Then
-            numCitas = dgbFiltro.Rows(0).Cells(1).Value
+        If dgvFiltro.RowCount = 1 Then
+            numCitas = dgvFiltro.Rows(0).Cells(1).Value
         End If
 
-        If dgbPacientes.CurrentRow.Cells(10).Value = True Then
+        If dgvPacientes.CurrentRow.Cells(10).Value = True Then
             lblEstado.Text = "Activo"
             lblEstado.ForeColor = Color.Green
         Else
@@ -286,7 +286,7 @@
                 Consulta = "Select id_p, cedula, fecha_nacimiento, upper(apellido) as 'nombre', upper(nombre) as 'apellido', telefono, upper(enviado_por) as 'enviado_por', upper(direccion_particular) as 'direccion_particular', upper(direccion_trabajo) as 'direccion_trabajo', saldo, estado from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + busqueda + "%' or cedula like '" + busqueda + "%' or apellido like '" + busqueda + "%' );"
 
                 consultar()
-                dgbPacientes.DataSource = Tabla
+                dgvPacientes.DataSource = Tabla
 
             Catch ex As Exception
 
@@ -321,10 +321,10 @@
 
     End Sub
 
-    Private Sub DataGridView1_CellClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgbPacientes.CellClick
+    Private Sub DataGridView1_CellClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvPacientes.CellClick
 
         'Cuando un campo del dgvPacientes es seleccionado, el valor de la columna 0 de la fila la cual contiene el campo seleccionado es guardado en id_p
-        id_p = dgbPacientes.CurrentRow.Cells(0).Value
+        id_p = dgvPacientes.CurrentRow.Cells(0).Value
 
         'Luego actualizamos el Panel
         actPanel()
@@ -432,20 +432,6 @@
             actTabla(EstadoPacientes)
         End If
     End Sub
-    Public Sub MuestraMsgBoxVersatil(ByVal texto As String)
-
-        Dim msgbv As New MsgBoxVersatil()
-
-        msgbv.lblTexto.Text = texto
-
-        'Determinar si el formulario esta listopara seguir
-        If msgbv.ShowDialog(Me) = System.Windows.Forms.DialogResult.OK Then
-            'Obtener la respuesta ingresada
-            resp = msgbv.respuesta
-        Else
-            resp = 0
-        End If
-        msgbv.Dispose()
-    End Sub
+    
 
 End Class

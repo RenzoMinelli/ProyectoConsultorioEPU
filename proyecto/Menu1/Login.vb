@@ -4,11 +4,17 @@
     Dim contraseñau As String
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnodontologo.Click
         contador = 1
-        Consulta = "select contrasenia from usuarios where usuario = 'odo';"
-        consultar()
-        dgbcontraseña.DataSource = Tabla
-        contraseña = dgbcontraseña.Rows(0).Cells(0).Value
-        contraseñau = txtcontraseña.Text
+        Try
+            Consulta = "select contrasenia from usuarios where usuario = 'odo';"
+            consultar()
+            dgbcontraseña.DataSource = Tabla
+
+            contraseña = dgbcontraseña.Rows(0).Cells(0).Value
+
+        Catch ex As Exception
+            contraseña = ""
+        End Try
+        
         If contraseña = Nothing Then
             Me.Hide()
             ingreso_contraseña.Show()
@@ -36,12 +42,16 @@
         txtcontraseña.Visible = True
         btnfuncionario.Visible = False
         btnodontologo.Visible = False
+        Try
+            Consulta = "select contrasenia from usuarios where usuario = 'fun';"
+            consultar()
+            dgbcontraseña.DataSource = Tabla
+            contraseña = dgbcontraseña.Rows(0).Cells(0).Value
 
-        Consulta = "select contrasenia from usuarios where usuario = 'fun';"
-        consultar()
-        dgbcontraseña.DataSource = Tabla
-        contraseña = dgbcontraseña.Rows(0).Cells(0).Value
-        contraseñau = txtcontraseña.Text
+        Catch ex As Exception
+            contraseña = ""
+        End Try
+        
         If contraseña = Nothing Then
             Me.Hide()
             ingreso_contraseña.Show()

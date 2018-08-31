@@ -64,9 +64,10 @@ Partial Class Login
         '
         'txtcontraseña
         '
+        Me.txtcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtcontraseña.Location = New System.Drawing.Point(296, 153)
         Me.txtcontraseña.Name = "txtcontraseña"
-        Me.txtcontraseña.Size = New System.Drawing.Size(154, 20)
+        Me.txtcontraseña.Size = New System.Drawing.Size(154, 35)
         Me.txtcontraseña.TabIndex = 5
         '
         'lblcontraseña

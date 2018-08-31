@@ -25,6 +25,7 @@ Partial Class MsgBoxVersatil
         Me.lblTexto = New System.Windows.Forms.Label()
         Me.btnSi = New System.Windows.Forms.Button()
         Me.btnNo = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblTexto
@@ -40,7 +41,7 @@ Partial Class MsgBoxVersatil
         'btnSi
         '
         Me.btnSi.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSi.Location = New System.Drawing.Point(68, 195)
+        Me.btnSi.Location = New System.Drawing.Point(23, 222)
         Me.btnSi.Name = "btnSi"
         Me.btnSi.Size = New System.Drawing.Size(111, 52)
         Me.btnSi.TabIndex = 1
@@ -50,12 +51,21 @@ Partial Class MsgBoxVersatil
         'btnNo
         '
         Me.btnNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNo.Location = New System.Drawing.Point(478, 195)
+        Me.btnNo.Location = New System.Drawing.Point(500, 222)
         Me.btnNo.Name = "btnNo"
         Me.btnNo.Size = New System.Drawing.Size(111, 52)
         Me.btnNo.TabIndex = 2
         Me.btnNo.Text = "No"
         Me.btnNo.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(23, 154)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(242, 35)
+        Me.TextBox1.TabIndex = 3
+        Me.TextBox1.WordWrap = False
         '
         'MsgBoxVersatil
         '
@@ -63,6 +73,7 @@ Partial Class MsgBoxVersatil
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(650, 299)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnNo)
         Me.Controls.Add(Me.btnSi)
         Me.Controls.Add(Me.lblTexto)
@@ -77,4 +88,5 @@ Partial Class MsgBoxVersatil
     Friend WithEvents lblTexto As System.Windows.Forms.Label
     Friend WithEvents btnSi As System.Windows.Forms.Button
     Friend WithEvents btnNo As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

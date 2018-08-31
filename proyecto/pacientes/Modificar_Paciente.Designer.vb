@@ -38,12 +38,12 @@ Partial Class Modificar_Paciente
         Me.btnModificarAntecedentes = New System.Windows.Forms.Button()
         Me.lblFechaSeleccionada = New System.Windows.Forms.Label()
         Me.mcFechaNacimiento = New System.Windows.Forms.MonthCalendar()
-        Me.dgbAntecedentes = New System.Windows.Forms.DataGridView()
+        Me.dgvAntecedentes = New System.Windows.Forms.DataGridView()
         Me.txbTelefono = New System.Windows.Forms.TextBox()
         Me.lblTelefono = New System.Windows.Forms.Label()
         Me.lblApellido = New System.Windows.Forms.Label()
         Me.txbApellido = New System.Windows.Forms.TextBox()
-        CType(Me.dgbAntecedentes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvAntecedentes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txbNombre
@@ -200,14 +200,14 @@ Partial Class Modificar_Paciente
         Me.mcFechaNacimiento.Name = "mcFechaNacimiento"
         Me.mcFechaNacimiento.TabIndex = 6
         '
-        'dgbAntecedentes
+        'dgvAntecedentes
         '
-        Me.dgbAntecedentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbAntecedentes.Location = New System.Drawing.Point(999, 12)
-        Me.dgbAntecedentes.Name = "dgbAntecedentes"
-        Me.dgbAntecedentes.Size = New System.Drawing.Size(29, 34)
-        Me.dgbAntecedentes.TabIndex = 17
-        Me.dgbAntecedentes.Visible = False
+        Me.dgvAntecedentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvAntecedentes.Location = New System.Drawing.Point(999, 12)
+        Me.dgvAntecedentes.Name = "dgvAntecedentes"
+        Me.dgvAntecedentes.Size = New System.Drawing.Size(29, 34)
+        Me.dgvAntecedentes.TabIndex = 17
+        Me.dgvAntecedentes.Visible = False
         '
         'txbTelefono
         '
@@ -254,7 +254,7 @@ Partial Class Modificar_Paciente
         Me.Controls.Add(Me.txbApellido)
         Me.Controls.Add(Me.txbTelefono)
         Me.Controls.Add(Me.lblTelefono)
-        Me.Controls.Add(Me.dgbAntecedentes)
+        Me.Controls.Add(Me.dgvAntecedentes)
         Me.Controls.Add(Me.mcFechaNacimiento)
         Me.Controls.Add(Me.lblFechaSeleccionada)
         Me.Controls.Add(Me.btnModificarAntecedentes)
@@ -275,7 +275,7 @@ Partial Class Modificar_Paciente
         Me.Name = "Modificar_Paciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
-        CType(Me.dgbAntecedentes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvAntecedentes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -296,7 +296,7 @@ Partial Class Modificar_Paciente
     Friend WithEvents btnModificarAntecedentes As System.Windows.Forms.Button
     Friend WithEvents lblFechaSeleccionada As System.Windows.Forms.Label
     Friend WithEvents mcFechaNacimiento As System.Windows.Forms.MonthCalendar
-    Friend WithEvents dgbAntecedentes As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvAntecedentes As System.Windows.Forms.DataGridView
     Friend WithEvents txbTelefono As System.Windows.Forms.TextBox
     Friend WithEvents lblTelefono As System.Windows.Forms.Label
     Friend WithEvents lblApellido As System.Windows.Forms.Label

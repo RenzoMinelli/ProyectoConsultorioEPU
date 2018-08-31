@@ -114,7 +114,7 @@
                 End If
                 If cambio = 1 Then
 
-                    If dgbAntecedentes.Rows(0).Cells(0).Value = Nothing Then
+                    If dgvAntecedentes.Rows(0).Cells(0).Value = Nothing Then
                         Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "', '" + alergicos.GetHashCode.ToString + "', '" + diabeticos.GetHashCode.ToString + "', '" + cardiovasculares.GetHashCode.ToString + "', '" + fiebre_reumatica.GetHashCode.ToString + "', '" + coagulacion.GetHashCode.ToString + "', '" + odontologicos.GetHashCode.ToString + "', '" + farmacos_recibidos.GetHashCode.ToString + "', '" + familiares.GetHashCode.ToString + "', '" + tratamiento_medico.GetHashCode.ToString + "', '" + observaciones + "');"
                         consultar()
                     Else
@@ -169,18 +169,18 @@
         'Antecedentes
         Consulta = "SELECT * FROM antecedentes where id_p = '" + Str(id_p) + "';"
         consultar()
-        dgbAntecedentes.DataSource = Tabla
+        dgvAntecedentes.DataSource = Tabla
 
-        alergicos = dgbAntecedentes.Rows(0).Cells(1).Value
-        diabeticos = dgbAntecedentes.Rows(0).Cells(2).Value
-        cardiovasculares = dgbAntecedentes.Rows(0).Cells(3).Value
-        fiebre_reumatica = dgbAntecedentes.Rows(0).Cells(4).Value
-        coagulacion = dgbAntecedentes.Rows(0).Cells(5).Value
-        odontologicos = dgbAntecedentes.Rows(0).Cells(6).Value
-        farmacos_recibidos = dgbAntecedentes.Rows(0).Cells(7).Value
-        familiares = dgbAntecedentes.Rows(0).Cells(8).Value
-        tratamiento_medico = dgbAntecedentes.Rows(0).Cells(9).Value
-        observaciones = dgbAntecedentes.Rows(0).Cells(10).Value
+        alergicos = dgvAntecedentes.Rows(0).Cells(1).Value
+        diabeticos = dgvAntecedentes.Rows(0).Cells(2).Value
+        cardiovasculares = dgvAntecedentes.Rows(0).Cells(3).Value
+        fiebre_reumatica = dgvAntecedentes.Rows(0).Cells(4).Value
+        coagulacion = dgvAntecedentes.Rows(0).Cells(5).Value
+        odontologicos = dgvAntecedentes.Rows(0).Cells(6).Value
+        farmacos_recibidos = dgvAntecedentes.Rows(0).Cells(7).Value
+        familiares = dgvAntecedentes.Rows(0).Cells(8).Value
+        tratamiento_medico = dgvAntecedentes.Rows(0).Cells(9).Value
+        observaciones = dgvAntecedentes.Rows(0).Cells(10).Value
 
     End Sub
 

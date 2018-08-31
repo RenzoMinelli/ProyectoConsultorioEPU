@@ -38,18 +38,18 @@ Partial Class Ingresar_Paciente
         Me.btnAgregarAntecedentes = New System.Windows.Forms.Button()
         Me.lblFechaSeleccionada = New System.Windows.Forms.Label()
         Me.mcFechaNacimiento = New System.Windows.Forms.MonthCalendar()
-        Me.dgbPacientesId = New System.Windows.Forms.DataGridView()
+        Me.dgvPacientesId = New System.Windows.Forms.DataGridView()
         Me.txbTelefono = New System.Windows.Forms.TextBox()
         Me.lblTelefono = New System.Windows.Forms.Label()
-        Me.dgbPacientesCedulas = New System.Windows.Forms.DataGridView()
+        Me.dgvPacientesCedulas = New System.Windows.Forms.DataGridView()
         Me.lblApellido = New System.Windows.Forms.Label()
         Me.txbApellido = New System.Windows.Forms.TextBox()
         Me.pbErrorCedula = New System.Windows.Forms.PictureBox()
         Me.lblAnuncio = New System.Windows.Forms.Label()
         Me.btnAgregarEstadoDientes = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.dgbPacientesId, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgbPacientesCedulas, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvPacientesId, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvPacientesCedulas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbErrorCedula, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -207,19 +207,19 @@ Partial Class Ingresar_Paciente
         Me.mcFechaNacimiento.Name = "mcFechaNacimiento"
         Me.mcFechaNacimiento.TabIndex = 7
         '
-        'dgbPacientesId
+        'dgvPacientesId
         '
-        Me.dgbPacientesId.AllowUserToAddRows = False
-        Me.dgbPacientesId.AllowUserToDeleteRows = False
-        Me.dgbPacientesId.AllowUserToResizeColumns = False
-        Me.dgbPacientesId.AllowUserToResizeRows = False
-        Me.dgbPacientesId.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbPacientesId.Location = New System.Drawing.Point(993, 4)
-        Me.dgbPacientesId.Name = "dgbPacientesId"
-        Me.dgbPacientesId.ReadOnly = True
-        Me.dgbPacientesId.Size = New System.Drawing.Size(35, 33)
-        Me.dgbPacientesId.TabIndex = 17
-        Me.dgbPacientesId.Visible = False
+        Me.dgvPacientesId.AllowUserToAddRows = False
+        Me.dgvPacientesId.AllowUserToDeleteRows = False
+        Me.dgvPacientesId.AllowUserToResizeColumns = False
+        Me.dgvPacientesId.AllowUserToResizeRows = False
+        Me.dgvPacientesId.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvPacientesId.Location = New System.Drawing.Point(993, 4)
+        Me.dgvPacientesId.Name = "dgvPacientesId"
+        Me.dgvPacientesId.ReadOnly = True
+        Me.dgvPacientesId.Size = New System.Drawing.Size(35, 33)
+        Me.dgvPacientesId.TabIndex = 17
+        Me.dgvPacientesId.Visible = False
         '
         'txbTelefono
         '
@@ -239,19 +239,19 @@ Partial Class Ingresar_Paciente
         Me.lblTelefono.TabIndex = 18
         Me.lblTelefono.Text = "Teléfono"
         '
-        'dgbPacientesCedulas
+        'dgvPacientesCedulas
         '
-        Me.dgbPacientesCedulas.AllowUserToAddRows = False
-        Me.dgbPacientesCedulas.AllowUserToDeleteRows = False
-        Me.dgbPacientesCedulas.AllowUserToResizeColumns = False
-        Me.dgbPacientesCedulas.AllowUserToResizeRows = False
-        Me.dgbPacientesCedulas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbPacientesCedulas.Location = New System.Drawing.Point(974, 12)
-        Me.dgbPacientesCedulas.Name = "dgbPacientesCedulas"
-        Me.dgbPacientesCedulas.ReadOnly = True
-        Me.dgbPacientesCedulas.Size = New System.Drawing.Size(13, 15)
-        Me.dgbPacientesCedulas.TabIndex = 19
-        Me.dgbPacientesCedulas.Visible = False
+        Me.dgvPacientesCedulas.AllowUserToAddRows = False
+        Me.dgvPacientesCedulas.AllowUserToDeleteRows = False
+        Me.dgvPacientesCedulas.AllowUserToResizeColumns = False
+        Me.dgvPacientesCedulas.AllowUserToResizeRows = False
+        Me.dgvPacientesCedulas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvPacientesCedulas.Location = New System.Drawing.Point(974, 12)
+        Me.dgvPacientesCedulas.Name = "dgvPacientesCedulas"
+        Me.dgvPacientesCedulas.ReadOnly = True
+        Me.dgvPacientesCedulas.Size = New System.Drawing.Size(13, 15)
+        Me.dgvPacientesCedulas.TabIndex = 19
+        Me.dgvPacientesCedulas.Visible = False
         '
         'lblApellido
         '
@@ -324,10 +324,10 @@ Partial Class Ingresar_Paciente
         Me.Controls.Add(Me.pbErrorCedula)
         Me.Controls.Add(Me.txbApellido)
         Me.Controls.Add(Me.lblApellido)
-        Me.Controls.Add(Me.dgbPacientesCedulas)
+        Me.Controls.Add(Me.dgvPacientesCedulas)
         Me.Controls.Add(Me.txbTelefono)
         Me.Controls.Add(Me.lblTelefono)
-        Me.Controls.Add(Me.dgbPacientesId)
+        Me.Controls.Add(Me.dgvPacientesId)
         Me.Controls.Add(Me.mcFechaNacimiento)
         Me.Controls.Add(Me.lblFechaSeleccionada)
         Me.Controls.Add(Me.btnAgregarAntecedentes)
@@ -348,8 +348,8 @@ Partial Class Ingresar_Paciente
         Me.Name = "Ingresar_Paciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
-        CType(Me.dgbPacientesId, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgbPacientesCedulas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvPacientesId, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvPacientesCedulas, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbErrorCedula, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -371,10 +371,10 @@ Partial Class Ingresar_Paciente
     Friend WithEvents btnAgregarAntecedentes As System.Windows.Forms.Button
     Friend WithEvents lblFechaSeleccionada As System.Windows.Forms.Label
     Friend WithEvents mcFechaNacimiento As System.Windows.Forms.MonthCalendar
-    Friend WithEvents dgbPacientesId As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvPacientesId As System.Windows.Forms.DataGridView
     Friend WithEvents txbTelefono As System.Windows.Forms.TextBox
     Friend WithEvents lblTelefono As System.Windows.Forms.Label
-    Friend WithEvents dgbPacientesCedulas As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvPacientesCedulas As System.Windows.Forms.DataGridView
     Friend WithEvents lblApellido As System.Windows.Forms.Label
     Friend WithEvents txbApellido As System.Windows.Forms.TextBox
     Friend WithEvents pbErrorCedula As System.Windows.Forms.PictureBox

@@ -43,16 +43,18 @@ Partial Class ingreso_contraseña
         '
         'txtcontraseña
         '
-        Me.txtcontraseña.Location = New System.Drawing.Point(359, 224)
+        Me.txtcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtcontraseña.Location = New System.Drawing.Point(359, 215)
         Me.txtcontraseña.Name = "txtcontraseña"
-        Me.txtcontraseña.Size = New System.Drawing.Size(152, 20)
+        Me.txtcontraseña.Size = New System.Drawing.Size(152, 35)
         Me.txtcontraseña.TabIndex = 1
         '
         'txtrepcontraseña
         '
-        Me.txtrepcontraseña.Location = New System.Drawing.Point(359, 304)
+        Me.txtrepcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtrepcontraseña.Location = New System.Drawing.Point(359, 295)
         Me.txtrepcontraseña.Name = "txtrepcontraseña"
-        Me.txtrepcontraseña.Size = New System.Drawing.Size(152, 20)
+        Me.txtrepcontraseña.Size = New System.Drawing.Size(152, 35)
         Me.txtrepcontraseña.TabIndex = 2
         '
         'lblcontraseña

@@ -88,7 +88,7 @@
         Label3.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
-        Pacientes.dgbPacientes.ClearSelection()
+        Pacientes.dgvPacientes.ClearSelection()
 
     End Sub
 
@@ -206,7 +206,7 @@
         Label3.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
-        Pacientes.dgbPacientes.ClearSelection()
+        Pacientes.dgvPacientes.ClearSelection()
     End Sub
 
     Private Sub Panel8_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel8.MouseDown

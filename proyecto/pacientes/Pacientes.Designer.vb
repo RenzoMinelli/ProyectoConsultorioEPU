@@ -22,8 +22,8 @@ Partial Class Pacientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblEstado = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -55,14 +55,14 @@ Partial Class Pacientes
         Me.btnCambiarEstado = New System.Windows.Forms.Button()
         Me.btnModificarDatos = New System.Windows.Forms.Button()
         Me.btnIngresarPaciente = New System.Windows.Forms.Button()
-        Me.dgbPacientes = New System.Windows.Forms.DataGridView()
+        Me.dgvPacientes = New System.Windows.Forms.DataGridView()
         Me.btnRealizarPago = New System.Windows.Forms.Button()
-        Me.dgbFiltro = New System.Windows.Forms.DataGridView()
+        Me.dgvFiltro = New System.Windows.Forms.DataGridView()
         Me.btnCambiarPacientes = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.pnlTapa.SuspendLayout()
-        CType(Me.dgbPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgbFiltro, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvFiltro, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -419,39 +419,39 @@ Partial Class Pacientes
         Me.btnIngresarPaciente.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnIngresarPaciente.UseVisualStyleBackColor = True
         '
-        'dgbPacientes
+        'dgvPacientes
         '
-        Me.dgbPacientes.AllowUserToAddRows = False
-        Me.dgbPacientes.AllowUserToDeleteRows = False
-        Me.dgbPacientes.AllowUserToResizeColumns = False
-        Me.dgbPacientes.AllowUserToResizeRows = False
-        Me.dgbPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgbPacientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgbPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.dgbPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgbPacientes.DefaultCellStyle = DataGridViewCellStyle4
-        Me.dgbPacientes.Location = New System.Drawing.Point(17, 70)
-        Me.dgbPacientes.MultiSelect = False
-        Me.dgbPacientes.Name = "dgbPacientes"
-        Me.dgbPacientes.ReadOnly = True
-        Me.dgbPacientes.RowHeadersVisible = False
-        Me.dgbPacientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgbPacientes.Size = New System.Drawing.Size(515, 348)
-        Me.dgbPacientes.TabIndex = 17
+        Me.dgvPacientes.AllowUserToAddRows = False
+        Me.dgvPacientes.AllowUserToDeleteRows = False
+        Me.dgvPacientes.AllowUserToResizeColumns = False
+        Me.dgvPacientes.AllowUserToResizeRows = False
+        Me.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvPacientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvPacientes.Location = New System.Drawing.Point(17, 70)
+        Me.dgvPacientes.MultiSelect = False
+        Me.dgvPacientes.Name = "dgvPacientes"
+        Me.dgvPacientes.ReadOnly = True
+        Me.dgvPacientes.RowHeadersVisible = False
+        Me.dgvPacientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvPacientes.Size = New System.Drawing.Size(515, 348)
+        Me.dgvPacientes.TabIndex = 17
         '
         'btnRealizarPago
         '
@@ -468,19 +468,19 @@ Partial Class Pacientes
         Me.btnRealizarPago.UseVisualStyleBackColor = True
         Me.btnRealizarPago.Visible = False
         '
-        'dgbFiltro
+        'dgvFiltro
         '
-        Me.dgbFiltro.AllowUserToAddRows = False
-        Me.dgbFiltro.AllowUserToDeleteRows = False
-        Me.dgbFiltro.AllowUserToResizeColumns = False
-        Me.dgbFiltro.AllowUserToResizeRows = False
-        Me.dgbFiltro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbFiltro.Location = New System.Drawing.Point(561, 226)
-        Me.dgbFiltro.Name = "dgbFiltro"
-        Me.dgbFiltro.ReadOnly = True
-        Me.dgbFiltro.Size = New System.Drawing.Size(25, 22)
-        Me.dgbFiltro.TabIndex = 19
-        Me.dgbFiltro.Visible = False
+        Me.dgvFiltro.AllowUserToAddRows = False
+        Me.dgvFiltro.AllowUserToDeleteRows = False
+        Me.dgvFiltro.AllowUserToResizeColumns = False
+        Me.dgvFiltro.AllowUserToResizeRows = False
+        Me.dgvFiltro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvFiltro.Location = New System.Drawing.Point(561, 226)
+        Me.dgvFiltro.Name = "dgvFiltro"
+        Me.dgvFiltro.ReadOnly = True
+        Me.dgvFiltro.Size = New System.Drawing.Size(25, 22)
+        Me.dgvFiltro.TabIndex = 19
+        Me.dgvFiltro.Visible = False
         '
         'btnCambiarPacientes
         '
@@ -502,9 +502,9 @@ Partial Class Pacientes
         Me.ClientSize = New System.Drawing.Size(1300, 750)
         Me.Controls.Add(Me.pnlTapa)
         Me.Controls.Add(Me.btnCambiarPacientes)
-        Me.Controls.Add(Me.dgbFiltro)
+        Me.Controls.Add(Me.dgvFiltro)
         Me.Controls.Add(Me.btnRealizarPago)
-        Me.Controls.Add(Me.dgbPacientes)
+        Me.Controls.Add(Me.dgvPacientes)
         Me.Controls.Add(Me.btnRegistroMedico)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.txbBusqueda)
@@ -521,8 +521,8 @@ Partial Class Pacientes
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.pnlTapa.ResumeLayout(False)
-        CType(Me.dgbPacientes, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgbFiltro, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvFiltro, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -552,11 +552,11 @@ Partial Class Pacientes
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents btnRegistroMedico As System.Windows.Forms.Button
     Friend WithEvents btnMostrarAntecedentes As System.Windows.Forms.Button
-    Friend WithEvents dgbPacientes As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvPacientes As System.Windows.Forms.DataGridView
     Friend WithEvents btnRealizarPago As System.Windows.Forms.Button
     Friend WithEvents lblSaldoPendiente As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents dgbFiltro As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvFiltro As System.Windows.Forms.DataGridView
     Friend WithEvents lblTelefono As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents btnCambiarPacientes As System.Windows.Forms.Button

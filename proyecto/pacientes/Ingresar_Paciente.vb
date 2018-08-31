@@ -28,9 +28,9 @@
 
                 Consulta = "select * from paciente where cedula = '" + txbCedula.Text + "';"
                 consultar()
-                dgbPacientesCedulas.DataSource = Tabla
+                dgvPacientesCedulas.DataSource = Tabla
 
-                If Not dgbPacientesCedulas.RowCount = 0 Then
+                If Not dgvPacientesCedulas.RowCount = 0 Then
                     MsgBox("Ya existe usuario con esa cedula", MsgBoxStyle.Exclamation)
                 Else
                     If verificarCedula(txbCedula.Text) = True Then
@@ -131,8 +131,8 @@
                                 Consulta = "select id_p from paciente;"
                                 consultar()
 
-                                dgbPacientesId.DataSource = Tabla
-                                id_p = dgbPacientesId.Rows(dgbPacientesId.RowCount - 1).Cells(0).Value
+                                dgvPacientesId.DataSource = Tabla
+                                id_p = dgvPacientesId.Rows(dgvPacientesId.RowCount - 1).Cells(0).Value
 
 
                                 Consulta = "INSERT INTO antecedentes VALUES ('" + Str(id_p) + "','" + alergicos.GetHashCode.ToString + "','" + diabeticos.GetHashCode.ToString + "','" + cardiovasculares.GetHashCode.ToString + "','" + fiebre_reumatica.GetHashCode.ToString + "','" + coagulacion.GetHashCode.ToString + "','" + odontologicos.GetHashCode.ToString + "','" + farmacos_recibidos.GetHashCode.ToString + "','" + familiares.GetHashCode.ToString + "','" + tratamiento_medico.GetHashCode.ToString + "','" + observaciones + "');"

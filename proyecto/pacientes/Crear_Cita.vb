@@ -107,4 +107,12 @@
     Private Sub dgbCitasEnLaFecha_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgbCitasEnLaFecha.MouseEnter
         dgbCitasEnLaFecha.ClearSelection()
     End Sub
+
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Hide()
+        frmContenedor = PlanTratamiento
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+    End Sub
 End Class

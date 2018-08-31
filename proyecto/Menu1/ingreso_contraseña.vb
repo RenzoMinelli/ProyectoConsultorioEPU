@@ -5,23 +5,41 @@
 
     Private Sub btnguardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnguardar.Click
         If txtcontraseña.Text <> "" And txtrepcontraseña.Text <> "" Then
+
             contraseña = txtcontraseña.Text
             repcontraseña = txtrepcontraseña.Text
             txtcontraseña.Text = ""
             txtrepcontraseña.Text = ""
+
             If contador = 0 And contraseña = repcontraseña Then
-                Consulta = "update usuarios SET contrasenia = '" + contraseña + "' where usuario = 'odo';"
-                consultar()
-                contador = contador + 1
-                lblhack.Text = "Funcionario"
+                Try
+                    Consulta = "update usuarios SET contrasenia = '" + contraseña + "' where usuario = 'odo';"
+                    consultar()
+
+                    contador = contador + 1
+                    lblhack.Text = "Funcionario"
+
+                Catch ex As Exception
+                    MsgBox("Error al guardar contraseña", MsgBoxStyle.Exclamation)
+                End Try
+                
+
             ElseIf contador = 1 And contraseña = repcontraseña Then
-                Consulta = "update usuarios SET contrasenia = '" + contraseña + "' where usuario = 'fun';"
-                consultar()
-                MsgBox("Contraseñas Registradas")
-                Me.Dispose()
-                Login.Show()
+
+                Try
+                    Consulta = "update usuarios SET contrasenia = '" + contraseña + "' where usuario = 'fun';"
+                    consultar()
+
+                    MsgBox("Contraseñas Registradas", MsgBoxStyle.Information)
+
+                    Me.Dispose()
+                    Login.Show()
+                Catch ex As Exception
+                    MsgBox("Error al guardar contraseña", MsgBoxStyle.Exclamation)
+                End Try
+               
             Else
-                MsgBox("vuelva a ingresar, las contraseñas no coinciden")
+                MsgBox("Vuelva a ingresar, las contraseñas no coinciden", MsgBoxStyle.Exclamation)
             End If
         End If
 

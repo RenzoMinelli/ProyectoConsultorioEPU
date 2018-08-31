@@ -41,7 +41,7 @@ Partial Class Antecedentes
         Me.Label9 = New System.Windows.Forms.Label()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.dgbAntecedentes = New System.Windows.Forms.DataGridView()
+        Me.dgvAntecedentes = New System.Windows.Forms.DataGridView()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -62,7 +62,7 @@ Partial Class Antecedentes
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgbAntecedentes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvAntecedentes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -246,14 +246,14 @@ Partial Class Antecedentes
         Me.Label10.TabIndex = 41
         Me.Label10.Text = "Observaciones:"
         '
-        'dgbAntecedentes
+        'dgvAntecedentes
         '
-        Me.dgbAntecedentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbAntecedentes.Location = New System.Drawing.Point(795, 3)
-        Me.dgbAntecedentes.Name = "dgbAntecedentes"
-        Me.dgbAntecedentes.Size = New System.Drawing.Size(57, 30)
-        Me.dgbAntecedentes.TabIndex = 42
-        Me.dgbAntecedentes.Visible = False
+        Me.dgvAntecedentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvAntecedentes.Location = New System.Drawing.Point(795, 3)
+        Me.dgvAntecedentes.Name = "dgvAntecedentes"
+        Me.dgvAntecedentes.Size = New System.Drawing.Size(57, 30)
+        Me.dgvAntecedentes.TabIndex = 42
+        Me.dgvAntecedentes.Visible = False
         '
         'Label11
         '
@@ -385,7 +385,7 @@ Partial Class Antecedentes
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.dgbAntecedentes)
+        Me.Controls.Add(Me.dgvAntecedentes)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.Label9)
@@ -417,7 +417,7 @@ Partial Class Antecedentes
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgbAntecedentes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvAntecedentes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -441,7 +441,7 @@ Partial Class Antecedentes
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents dgbAntecedentes As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvAntecedentes As System.Windows.Forms.DataGridView
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label

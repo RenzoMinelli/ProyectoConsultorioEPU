@@ -94,6 +94,12 @@
     <Compile Include="citas\IngresarEstadoDientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="citas\PlanTratamiento.Designer.vb">
+      <DependentUpon>PlanTratamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="citas\PlanTratamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="finanzas\finanzas.Designer.vb">
       <DependentUpon>finanzas.vb</DependentUpon>
     </Compile>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="citas\IngresarEstadoDientes.resx">
       <DependentUpon>IngresarEstadoDientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="citas\PlanTratamiento.resx">
+      <DependentUpon>PlanTratamiento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="finanzas\finanzas.resx">
       <DependentUpon>finanzas.vb</DependentUpon>

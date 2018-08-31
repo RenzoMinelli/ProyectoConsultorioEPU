@@ -1,12 +1,14 @@
 ﻿Public Class MsgBoxVersatil
-    Public respuesta As Integer = 0
+    Public respuestaInt As Integer = 0
+    Public respuestaString As String
     Private Sub btnSi_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSi.Click
-        respuesta = 1
+        respuestaInt = 1
+        respuestaString = TextBox1.Text
         DialogResult = System.Windows.Forms.DialogResult.OK
     End Sub
 
     Private Sub btnNo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNo.Click
-        respuesta = 2
+        respuestaInt = 2
         DialogResult = System.Windows.Forms.DialogResult.OK
     End Sub
 
