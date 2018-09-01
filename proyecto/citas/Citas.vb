@@ -50,7 +50,7 @@
 
         fechita = fecha
         Me.Hide()
-        frmContenedor = MarcarProximaCitaAranceles
+        frmContenedor = MarcarCitaConcluida
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -84,4 +84,15 @@
 
 
    
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Me.Hide()
+        frmContenedor = PlanTratamiento
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+    End Sub
 End Class

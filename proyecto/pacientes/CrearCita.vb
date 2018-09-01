@@ -14,7 +14,7 @@
         fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
         hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
 
-        Consulta = "Select nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
+        Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
         consultar()
         dgvCitasEnLaFecha.DataSource = Tabla
 
@@ -42,7 +42,7 @@
 
             For x = 0 To dgvCitasEnLaFecha.RowCount - 1
 
-                Dim HoraAux As TimeSpan = dgvCitasEnLaFecha.Rows(x).Cells(2).Value
+                Dim HoraAux As TimeSpan = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
 
                 Dim HoraAuxFinal As New TimeSpan(0, 40, 0)
                 HoraAuxFinal = HoraAux + HoraAuxFinal
@@ -70,22 +70,23 @@
                         consultar()
 
                         dgvAuxiliar.DataSource = Tabla
+                        dgvAuxiliar.Sort(dgvAuxiliar.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
                         Dim id_c As Integer
 
                         id_c = dgvAuxiliar.Rows(dgvAuxiliar.RowCount - 1).Cells(0).Value
 
-                        dgvAuxiliar.DataSource = PlanTratamiento.dgvArancelesSelect
-                        For x = 0 To PlanTratamiento.dgvArancelesSelect.RowCount - 1
+                        MsgBox("id_c: " + id_c.ToString)
+                        For x = 0 To MarcarProximaCitaAranceles.dgvArancelesSelect.RowCount - 1
 
                             ' MsgBox("se ejecuto el for,precio: " + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(2).Value + " id_c: " + id_c.ToString)
 
-                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + id_c.ToString + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "');"
+                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + id_c.ToString + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "');"
                             consultar()
 
                         Next
 
                         MsgBox("Registrado", MsgBoxStyle.Information)
-                        PlanTratamiento.Dispose()
+                        MarcarProximaCitaAranceles.Dispose()
                         Me.Dispose()
                         Pacientes.Show()
 
@@ -113,7 +114,7 @@
         fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
         hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
 
-        Consulta = "Select nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
+        Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
         consultar()
         dgvCitasEnLaFecha.DataSource = Tabla
     End Sub

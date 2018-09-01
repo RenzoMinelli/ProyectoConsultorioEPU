@@ -36,14 +36,10 @@ Partial Class MarcarProximaCitaAranceles
         Me.btnIngresarDesc = New System.Windows.Forms.Button()
         Me.btnModificarPrecio = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lblDescripcionE = New System.Windows.Forms.Label()
-        Me.lblPrecio = New System.Windows.Forms.Label()
-        Me.lblDescripcionG = New System.Windows.Forms.Label()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         CType(Me.dgvAranceles, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvArancelesSelect, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgvAranceles
@@ -52,7 +48,7 @@ Partial Class MarcarProximaCitaAranceles
         Me.dgvAranceles.AllowUserToDeleteRows = False
         Me.dgvAranceles.AllowUserToResizeColumns = False
         Me.dgvAranceles.AllowUserToResizeRows = False
-        Me.dgvAranceles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvAranceles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgvAranceles.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
@@ -94,7 +90,7 @@ Partial Class MarcarProximaCitaAranceles
         Me.dgvArancelesSelect.AllowUserToDeleteRows = False
         Me.dgvArancelesSelect.AllowUserToResizeColumns = False
         Me.dgvArancelesSelect.AllowUserToResizeRows = False
-        Me.dgvArancelesSelect.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvArancelesSelect.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgvArancelesSelect.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
@@ -203,53 +199,23 @@ Partial Class MarcarProximaCitaAranceles
         Me.btnEliminar.UseVisualStyleBackColor = True
         Me.btnEliminar.Visible = False
         '
-        'Panel1
+        'btnGuardar
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Panel1.Controls.Add(Me.lblDescripcionE)
-        Me.Panel1.Controls.Add(Me.lblPrecio)
-        Me.Panel1.Controls.Add(Me.lblDescripcionG)
-        Me.Panel1.Location = New System.Drawing.Point(17, 328)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(510, 265)
-        Me.Panel1.TabIndex = 13
-        '
-        'lblDescripcionE
-        '
-        Me.lblDescripcionE.AutoSize = True
-        Me.lblDescripcionE.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDescripcionE.Location = New System.Drawing.Point(3, 168)
-        Me.lblDescripcionE.Name = "lblDescripcionE"
-        Me.lblDescripcionE.Size = New System.Drawing.Size(264, 29)
-        Me.lblDescripcionE.TabIndex = 2
-        Me.lblDescripcionE.Text = "Descripción Específica:"
-        '
-        'lblPrecio
-        '
-        Me.lblPrecio.AutoSize = True
-        Me.lblPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio.Location = New System.Drawing.Point(3, 12)
-        Me.lblPrecio.Name = "lblPrecio"
-        Me.lblPrecio.Size = New System.Drawing.Size(223, 29)
-        Me.lblPrecio.TabIndex = 1
-        Me.lblPrecio.Text = "Descripción Precio:"
-        '
-        'lblDescripcionG
-        '
-        Me.lblDescripcionG.AutoSize = True
-        Me.lblDescripcionG.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDescripcionG.Location = New System.Drawing.Point(3, 58)
-        Me.lblDescripcionG.Name = "lblDescripcionG"
-        Me.lblDescripcionG.Size = New System.Drawing.Size(239, 29)
-        Me.lblDescripcionG.TabIndex = 0
-        Me.lblDescripcionG.Text = "Descripción General:"
+        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnGuardar.Location = New System.Drawing.Point(454, 469)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(166, 84)
+        Me.btnGuardar.TabIndex = 13
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'MarcarProximaCitaAranceles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1146, 624)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnIngresarDesc)
         Me.Controls.Add(Me.btnModificarPrecio)
         Me.Controls.Add(Me.btnEliminar)
@@ -264,8 +230,6 @@ Partial Class MarcarProximaCitaAranceles
         CType(Me.dgvAranceles, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvArancelesSelect, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -278,8 +242,5 @@ Partial Class MarcarProximaCitaAranceles
     Friend WithEvents btnIngresarDesc As System.Windows.Forms.Button
     Friend WithEvents btnModificarPrecio As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents lblDescripcionE As System.Windows.Forms.Label
-    Friend WithEvents lblPrecio As System.Windows.Forms.Label
-    Friend WithEvents lblDescripcionG As System.Windows.Forms.Label
+    Friend WithEvents btnGuardar As System.Windows.Forms.Button
 End Class

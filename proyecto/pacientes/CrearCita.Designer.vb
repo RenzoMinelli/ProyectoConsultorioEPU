@@ -193,7 +193,7 @@ Partial Class CrearCita
         Me.dgvAuxiliar.TabIndex = 21
         Me.dgvAuxiliar.Visible = False
         '
-        'Crear_Cita
+        'CrearCita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -209,7 +209,7 @@ Partial Class CrearCita
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnCrear)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Crear_Cita"
+        Me.Name = "CrearCita"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.dgvCitasEnLaFecha, System.ComponentModel.ISupportInitialize).EndInit()

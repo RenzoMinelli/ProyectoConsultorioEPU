@@ -594,6 +594,8 @@ Partial Class IngresarEstadoDientes
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(54, 408)
         Me.DataGridView1.Name = "DataGridView1"
@@ -602,7 +604,7 @@ Partial Class IngresarEstadoDientes
         Me.DataGridView1.TabIndex = 54
         Me.DataGridView1.Visible = False
         '
-        'marcar_cita
+        'IngresarEstadoDientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -615,7 +617,7 @@ Partial Class IngresarEstadoDientes
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.bttoningrdientes)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "marcar_cita"
+        Me.Name = "IngresarEstadoDientes"
         Me.Text = "marcar_cita"
         Me.Panel2.ResumeLayout(False)
         CType(Me.pbDiente38, System.ComponentModel.ISupportInitialize).EndInit()

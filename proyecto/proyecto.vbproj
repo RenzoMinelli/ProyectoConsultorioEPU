@@ -94,6 +94,12 @@
     <Compile Include="citas\IngresarEstadoDientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="citas\MarcarCitaConcluida.Designer.vb">
+      <DependentUpon>MarcarCitaConcluida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="citas\MarcarCitaConcluida.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="citas\MarcarProximaCitaAranceles.Designer.vb">
       <DependentUpon>MarcarProximaCitaAranceles.vb</DependentUpon>
     </Compile>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="citas\IngresarEstadoDientes.resx">
       <DependentUpon>IngresarEstadoDientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="citas\MarcarCitaConcluida.resx">
+      <DependentUpon>MarcarCitaConcluida.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="citas\MarcarProximaCitaAranceles.resx">
       <DependentUpon>MarcarProximaCitaAranceles.vb</DependentUpon>

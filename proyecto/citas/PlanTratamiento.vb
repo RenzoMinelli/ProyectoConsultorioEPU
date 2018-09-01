@@ -15,13 +15,13 @@
         Dim id_a As Integer = dgvAranceles.CurrentRow.Cells(0).Value
 
         Try
-            Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Costo' from aranceles where id_a = '" + id_a.ToString + "';"
+            Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Precio' from aranceles where id_a = '" + id_a.ToString + "';"
             consultar()
             dgvAuxiliar.DataSource = Tabla
             dgvArancelesSelect.ColumnCount = 4
             dgvArancelesSelect.Columns(0).HeaderText = "id_a"
             dgvArancelesSelect.Columns(1).HeaderText = "Descripcion"
-            dgvArancelesSelect.Columns(2).HeaderText = "Costo"
+            dgvArancelesSelect.Columns(2).HeaderText = "Precio"
             dgvArancelesSelect.Columns(3).HeaderText = "Descripcion especifica"
 
             dgvArancelesSelect.Columns(0).Visible = False
@@ -69,13 +69,23 @@
 
     Private Sub btnModificarPrecio_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarPrecio.Click
 
+        Do
+            MuestraMsgBoxVersatil("Ingrese el nuevo costo del Arancel", 1)
+            If respString = "" Or IsNumeric(respString) Then
 
-        MuestraMsgBoxVersatil("Ingrese el nuevo costo del Arancel", 1)
-        If respString = "" Then
-            dgvArancelesSelect.CurrentRow.Cells(2).Value = "0"
-        Else
-            dgvArancelesSelect.CurrentRow.Cells(2).Value = respString
-        End If
+                If respString = "" Then
+                    dgvArancelesSelect.CurrentRow.Cells(2).Value = "0"
+                    respString = "0"
+                    Exit Do
+                Else
+                    dgvArancelesSelect.CurrentRow.Cells(2).Value = respString
+                    Exit Do
+                End If
+            End If
+
+            MsgBox("Debe ingresar solo números", MsgBoxStyle.Exclamation)
+        Loop While Not IsNumeric(respString)
+
 
 
 
@@ -143,7 +153,7 @@
     Private Sub actTabla()
 
         Try
-            Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Costo' from aranceles where estado = 1"
+            Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Precio' from aranceles where estado = 1"
             consultar()
             dgvAranceles.DataSource = Tabla
 
@@ -159,7 +169,7 @@
 
     Private Sub txbBusqueda_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
         Try
-            Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Costo' from aranceles where estado = 1 and descripcion like '" + txbBusqueda.Text + "%';"
+            Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Precio' from aranceles where estado = 1 and descripcion like '" + txbBusqueda.Text + "%';"
             consultar()
             dgvAranceles.DataSource = Tabla
 
@@ -173,11 +183,23 @@
     End Sub
 
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
-        '/////////////////////////////////////////CAMBIAR/////////////////////////////////////////////
-        'Hay que cambiar para que vuelva al formulario donde se registra el estado de los dientes '///
-        Me.Hide()                                                                                 '///
-        CrearCita.Show()                                                                          '///
-        '/////////////////////////////////////////////////////////////////////////////////////////////
+       
+        Try
+            For x = 0 To dgvArancelesSelect.RowCount - 1
+
+                Consulta = "Insert into registro_medico (id_p, descripcion, precio, id_a) values ('" + TextBox1.Text + "', '" + dgvArancelesSelect.Rows(x).Cells(3).Value + "', '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "');"
+                consultar()
+
+            Next
+
+            MsgBox("Guardado con éxito", MsgBoxStyle.Exclamation)
+            Me.Dispose()
+            Citas.Show()
+        Catch ex As Exception
+
+            MsgBox("Error al crear registro de aranceles", MsgBoxStyle.Exclamation)
+
+        End Try
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarDesc.Click
