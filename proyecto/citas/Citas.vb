@@ -50,7 +50,7 @@
 
         fechita = fecha
         Me.Hide()
-        frmContenedor = IngresarEstadoDientes
+        frmContenedor = MarcarCosasCitas
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -76,13 +76,12 @@
             'Oculto las columnas que tienen el id de cita y de paciente
             DataGridView1.Columns(3).Visible = False
             DataGridView1.Columns(4).Visible = False
+            DataGridView1.Sort(DataGridView1.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
     End Sub
 
 
-    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
-    End Sub
+   
 End Class

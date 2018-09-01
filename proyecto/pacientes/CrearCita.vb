@@ -1,4 +1,4 @@
-﻿Public Class Crear_Cita
+﻿Public Class CrearCita
 
     Dim fecha As String
     Dim hora As String
@@ -74,11 +74,12 @@
 
                         id_c = dgvAuxiliar.Rows(dgvAuxiliar.RowCount - 1).Cells(0).Value
 
+                        dgvAuxiliar.DataSource = PlanTratamiento.dgvArancelesSelect
                         For x = 0 To PlanTratamiento.dgvArancelesSelect.RowCount - 1
 
-                            MsgBox("se ejecuto el for")
+                            ' MsgBox("se ejecuto el for,precio: " + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(2).Value + " id_c: " + id_c.ToString)
 
-                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(2).Value + "','" + id_c.ToString + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(0).Value + "');"
+                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + id_c.ToString + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "');"
                             consultar()
 
                         Next
@@ -91,6 +92,7 @@
                     Catch ex As Exception
 
                         MsgBox("Error al crear registro de plan, pero se creo la cita", MsgBoxStyle.Exclamation)
+                        MsgBox(ex.ToString)
                     End Try
 
 

@@ -1,4 +1,4 @@
-﻿Public Class Ingresar_Paciente
+﻿Public Class IngresarPaciente
 
 
 
@@ -188,7 +188,7 @@
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarAntecedentes.Click
         Me.Hide()
-        frmContenedor = Agregar_Antecedentes
+        frmContenedor = AgregarAntecedentes
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -230,7 +230,7 @@
 
             Return False
         End If
-       
+
     End Function
 
     Private Sub txbCedula_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbCedula.TextChanged

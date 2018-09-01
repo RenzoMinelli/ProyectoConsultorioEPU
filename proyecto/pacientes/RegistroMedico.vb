@@ -1,4 +1,4 @@
-﻿Public Class Registro_Medico
+﻿Public Class RegistroMedico
     Dim formu As New Form
 
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -465,9 +465,9 @@
         Catch ex As Exception
             MsgBox("No hay datos dientes")
         End Try
-       
+
     End Sub
-    
+
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Dispose()
@@ -499,7 +499,7 @@
 
     End Sub
 
-   
+
 
 
 

@@ -28,9 +28,8 @@
             MuestraMsgBoxVersatil("Ingrese descripcion especifica para el Arancel", 1)
             dgvArancelesSelect.Rows.Add(dgvAuxiliar.Rows(0).Cells(0).Value, dgvAuxiliar.Rows(0).Cells(1).Value, dgvAuxiliar.Rows(0).Cells(2).Value, respString)
 
-            dgvArancelesSelect.AutoResizeRows()
-            dgvArancelesSelect.AutoResizeColumn(1)
-            dgvArancelesSelect.AutoResizeColumn(2)
+
+            dgvArancelesSelect.AutoResizeColumn(1, 2)
 
         Catch ex As Exception
             MsgBox("Error al pasar los aranceles", MsgBoxStyle.Exclamation)
@@ -155,7 +154,7 @@
         Catch ex As Exception
             MsgBox("Error al cargar los aranceles", MsgBoxStyle.Exclamation)
         End Try
-        dgvAranceles.AutoResizeRows()
+
     End Sub
 
     Private Sub txbBusqueda_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
@@ -175,7 +174,7 @@
 
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         Me.Hide()
-        Crear_Cita.Show()
+        CrearCita.Show()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarDesc.Click

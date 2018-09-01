@@ -1,4 +1,4 @@
-﻿Public Class Modificar_Paciente
+﻿Public Class ModificarPaciente
 
     Dim nac2 As String
 
@@ -192,7 +192,7 @@
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarAntecedentes.Click
         Me.Hide()
-        frmContenedor = Modificar_Antecedentes
+        frmContenedor = ModificarAntecedentes
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()

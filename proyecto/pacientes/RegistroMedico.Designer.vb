@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Registro_Medico
+Partial Class RegistroMedico
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -128,6 +128,7 @@ Partial Class Registro_Medico
         Me.dgvRegistroMedico.AllowUserToResizeColumns = False
         Me.dgvRegistroMedico.AllowUserToResizeRows = False
         Me.dgvRegistroMedico.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvRegistroMedico.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -673,7 +674,7 @@ Partial Class Registro_Medico
         Me.dgvEstadoDiente.TabIndex = 27
         Me.dgvEstadoDiente.Visible = False
         '
-        'Registro_Medico
+        'RegistroMedico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -688,7 +689,7 @@ Partial Class Registro_Medico
         Me.Controls.Add(Me.Panel55)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Registro_Medico"
+        Me.Name = "RegistroMedico"
         Me.Text = "Registro_Medico"
         CType(Me.dgvRegistroMedico, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel01477.ResumeLayout(False)

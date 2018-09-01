@@ -160,11 +160,11 @@ Partial Class Menu_Inicio
         'lblPacientes
         '
         Me.lblPacientes.AutoSize = True
-        Me.lblPacientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPacientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPacientes.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblPacientes.Location = New System.Drawing.Point(40, 7)
+        Me.lblPacientes.Location = New System.Drawing.Point(39, 3)
         Me.lblPacientes.Name = "lblPacientes"
-        Me.lblPacientes.Size = New System.Drawing.Size(107, 25)
+        Me.lblPacientes.Size = New System.Drawing.Size(119, 29)
         Me.lblPacientes.TabIndex = 9
         Me.lblPacientes.Text = "Pacientes"
         '
@@ -190,11 +190,11 @@ Partial Class Menu_Inicio
         'lblCitas
         '
         Me.lblCitas.AutoSize = True
-        Me.lblCitas.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
+        Me.lblCitas.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCitas.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblCitas.Location = New System.Drawing.Point(40, 7)
+        Me.lblCitas.Location = New System.Drawing.Point(39, 3)
         Me.lblCitas.Name = "lblCitas"
-        Me.lblCitas.Size = New System.Drawing.Size(61, 25)
+        Me.lblCitas.Size = New System.Drawing.Size(67, 29)
         Me.lblCitas.TabIndex = 16
         Me.lblCitas.Text = "Citas"
         '
@@ -268,11 +268,11 @@ Partial Class Menu_Inicio
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label5.Location = New System.Drawing.Point(39, 2)
+        Me.Label5.Location = New System.Drawing.Point(39, 1)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(92, 25)
+        Me.Label5.Size = New System.Drawing.Size(101, 29)
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "Gráficas"
         '
@@ -298,11 +298,11 @@ Partial Class Menu_Inicio
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label7.Location = New System.Drawing.Point(40, 7)
+        Me.Label7.Location = New System.Drawing.Point(39, 2)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(100, 25)
+        Me.Label7.Size = New System.Drawing.Size(109, 29)
         Me.Label7.TabIndex = 19
         Me.Label7.Text = "Finanzas"
         '
@@ -319,11 +319,11 @@ Partial Class Menu_Inicio
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label2.Location = New System.Drawing.Point(40, 7)
+        Me.Label2.Location = New System.Drawing.Point(39, 3)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(108, 25)
+        Me.Label2.Size = New System.Drawing.Size(120, 29)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Aranceles"
         '

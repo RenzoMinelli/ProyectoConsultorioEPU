@@ -20,7 +20,7 @@
 
         'Al presionar el boton btnAgregarPaciente, se oculta el formulario actual, se guarda el formulario Agregar_Paciente en el frmContenedor y se muestra
         Me.Hide()
-        frmContenedor = Ingresar_Paciente
+        frmContenedor = IngresarPaciente
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -44,7 +44,7 @@
 
         'Al presionar el boton btnModificarDatos, se oculta el formulario actual, se guarda el formulario Modificar_Paciente en el frmContenedor y se muestra
         Me.Hide()
-        frmContenedor = Modificar_Paciente
+        frmContenedor = ModificarPaciente
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -259,12 +259,12 @@
 
         'Al presionar el boton btnRegistrarCita, se oculta el formulario actual, se guarda el formulario Crear_Cita en el frmContenedor y se muestra
         Me.Hide()
-        frmContenedor = Crear_Cita
+        frmContenedor = CrearCita
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
-        Crear_Cita.dgvCitasEnLaFecha.ClearSelection()
+        CrearCita.dgvCitasEnLaFecha.ClearSelection()
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
@@ -303,7 +303,7 @@
 
         'Al presionar el boton btnRegistroMedico, se oculta el formulario actual, se guarda el formulario Registro_Medico en el frmContenedor y se muestra
         Me.Hide()
-        frmContenedor = Registro_Medico
+        frmContenedor = RegistroMedico
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Crear_Cita
+Partial Class CrearCita
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -45,7 +45,7 @@ Partial Class Crear_Cita
         Me.btnCrear.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCrear.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
         Me.btnCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCrear.Location = New System.Drawing.Point(601, 442)
+        Me.btnCrear.Location = New System.Drawing.Point(864, 492)
         Me.btnCrear.Name = "btnCrear"
         Me.btnCrear.Size = New System.Drawing.Size(138, 62)
         Me.btnCrear.TabIndex = 3
@@ -58,7 +58,7 @@ Partial Class Crear_Cita
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.Image = Global.WindowsApplication1.My.Resources.Resources.X
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCancelar.Location = New System.Drawing.Point(150, 442)
+        Me.btnCancelar.Location = New System.Drawing.Point(69, 492)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(154, 62)
         Me.btnCancelar.TabIndex = 4
@@ -130,12 +130,12 @@ Partial Class Crear_Cita
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvCitasEnLaFecha.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvCitasEnLaFecha.Location = New System.Drawing.Point(501, 103)
+        Me.dgvCitasEnLaFecha.Location = New System.Drawing.Point(553, 103)
         Me.dgvCitasEnLaFecha.Name = "dgvCitasEnLaFecha"
         Me.dgvCitasEnLaFecha.ReadOnly = True
         Me.dgvCitasEnLaFecha.RowHeadersVisible = False
         Me.dgvCitasEnLaFecha.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvCitasEnLaFecha.Size = New System.Drawing.Size(501, 213)
+        Me.dgvCitasEnLaFecha.Size = New System.Drawing.Size(449, 213)
         Me.dgvCitasEnLaFecha.TabIndex = 18
         '
         'lblCitasEnLaFceha
@@ -184,13 +184,14 @@ Partial Class Crear_Cita
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvAuxiliar.DefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvAuxiliar.Location = New System.Drawing.Point(405, 12)
+        Me.dgvAuxiliar.Location = New System.Drawing.Point(938, 12)
         Me.dgvAuxiliar.Name = "dgvAuxiliar"
         Me.dgvAuxiliar.ReadOnly = True
         Me.dgvAuxiliar.RowHeadersVisible = False
         Me.dgvAuxiliar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvAuxiliar.Size = New System.Drawing.Size(576, 52)
+        Me.dgvAuxiliar.Size = New System.Drawing.Size(22, 21)
         Me.dgvAuxiliar.TabIndex = 21
+        Me.dgvAuxiliar.Visible = False
         '
         'Crear_Cita
         '
