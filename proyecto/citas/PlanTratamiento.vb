@@ -5,6 +5,8 @@
         txbBusqueda.ForeColor = Color.Gray
         txbBusqueda.Text = "Buscar"
 
+       
+
         actTabla()
     End Sub
 
@@ -16,16 +18,19 @@
             Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Costo' from aranceles where id_a = '" + id_a.ToString + "';"
             consultar()
             dgvAuxiliar.DataSource = Tabla
-            dgvArancelesSelect.ColumnCount = 3
+            dgvArancelesSelect.ColumnCount = 4
             dgvArancelesSelect.Columns(0).HeaderText = "id_a"
             dgvArancelesSelect.Columns(1).HeaderText = "Descripcion"
-            dgvArancelesSelect.Columns(2).HeaderText = "Monto"
+            dgvArancelesSelect.Columns(2).HeaderText = "Costo"
+            dgvArancelesSelect.Columns(3).HeaderText = "Descripcion especifica"
 
             dgvArancelesSelect.Columns(0).Visible = False
-
-            dgvArancelesSelect.Rows.Add(dgvAuxiliar.Rows(0).Cells(0).Value, dgvAuxiliar.Rows(0).Cells(1).Value, dgvAuxiliar.Rows(0).Cells(2).Value)
+            MuestraMsgBoxVersatil("Ingrese descripcion especifica para el Arancel", 1)
+            dgvArancelesSelect.Rows.Add(dgvAuxiliar.Rows(0).Cells(0).Value, dgvAuxiliar.Rows(0).Cells(1).Value, dgvAuxiliar.Rows(0).Cells(2).Value, respString)
 
             dgvArancelesSelect.AutoResizeRows()
+            dgvArancelesSelect.AutoResizeColumn(1)
+            dgvArancelesSelect.AutoResizeColumn(2)
 
         Catch ex As Exception
             MsgBox("Error al pasar los aranceles", MsgBoxStyle.Exclamation)
@@ -38,6 +43,8 @@
         id_Arancel = dgvArancelesSelect.CurrentRow.Cells(0).Value
         btnEliminar.Visible = True
         btnModificarPrecio.Visible = True
+        btnIngresarDesc.Visible = True
+
 
     End Sub
 
@@ -62,17 +69,17 @@
     End Sub
 
     Private Sub btnModificarPrecio_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarPrecio.Click
-        For x = 0 To dgvArancelesSelect.RowCount - 1
 
-            If dgvArancelesSelect.Rows(x).Cells(0).Value = id_Arancel Then
 
-                MuestraMsgBoxVersatil("Ingrese el nuevo monto del Arancel", 1)
-                dgvArancelesSelect.Rows(x).Cells(2).Value = respString
+        MuestraMsgBoxVersatil("Ingrese el nuevo costo del Arancel", 1)
+        If respString = "" Then
+            dgvArancelesSelect.CurrentRow.Cells(2).Value = "0"
+        Else
+            dgvArancelesSelect.CurrentRow.Cells(2).Value = respString
+        End If
 
-                Exit For
 
-            End If
-        Next
+
     End Sub
     Private Sub txbBusqueda_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.Click
 
@@ -165,4 +172,19 @@
 
         End Try
     End Sub
+
+    Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
+        Me.Hide()
+        Crear_Cita.Show()
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarDesc.Click
+        MuestraMsgBoxVersatil("Ingrese la nueva descripcion del Arancel", 1)
+
+        dgvArancelesSelect.CurrentRow.Cells(3).Value = respString
+
+    End Sub
+
+   
+  
 End Class

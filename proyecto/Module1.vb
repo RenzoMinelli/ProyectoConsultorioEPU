@@ -69,7 +69,7 @@ Module Module1
             msgbv.btnNo.Visible = True
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Sí"
-            msgbv.TextBox1.Visible = False
+            msgbv.txbRespuesta.Visible = False
             msgbv.Location = New Point(23, 222)
 
             'Determinar si el formulario esta listo para seguir
@@ -89,9 +89,10 @@ Module Module1
             msgbv.btnNo.Visible = False
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Aceptar"
-            msgbv.TextBox1.Visible = True
+            msgbv.txbRespuesta.Visible = True
             msgbv.Location = New Point(262, 208)
 
+            msgbv.txbRespuesta.Focus()
             'Determinar si el formulario esta listo para seguir
             If msgbv.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
                 'Obtener la respuesta ingresada

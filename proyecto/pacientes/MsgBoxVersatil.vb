@@ -3,7 +3,9 @@
     Public respuestaString As String
     Private Sub btnSi_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSi.Click
         respuestaInt = 1
-        respuestaString = TextBox1.Text
+        
+        respuestaString = txbRespuesta.Text
+
         DialogResult = System.Windows.Forms.DialogResult.OK
     End Sub
 
@@ -36,6 +38,13 @@
 
 
 
+        End If
+    End Sub
+
+    
+    Private Sub txbRespuesta_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txbRespuesta.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            btnSi.PerformClick()
         End If
     End Sub
 End Class

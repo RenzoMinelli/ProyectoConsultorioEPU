@@ -16,7 +16,7 @@
 
         Consulta = "Select nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
         consultar()
-        dgbCitasEnLaFecha.DataSource = Tabla
+        dgvCitasEnLaFecha.DataSource = Tabla
 
 
 
@@ -40,9 +40,9 @@
             Dim control As Integer = 0
             Dim hora2 As TimeSpan = (Convert.ToDateTime(hora)).TimeOfDay
 
-            For x = 0 To dgbCitasEnLaFecha.RowCount - 1
+            For x = 0 To dgvCitasEnLaFecha.RowCount - 1
 
-                Dim HoraAux As TimeSpan = dgbCitasEnLaFecha.Rows(x).Cells(2).Value
+                Dim HoraAux As TimeSpan = dgvCitasEnLaFecha.Rows(x).Cells(2).Value
 
                 Dim HoraAuxFinal As New TimeSpan(0, 40, 0)
                 HoraAuxFinal = HoraAux + HoraAuxFinal
@@ -63,9 +63,37 @@
                 Try
                     Consulta = "Insert into cita (id_p, fecha, hora, realizada, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "', 0, '" + descr + "'); "
                     consultar()
-                    MsgBox("Registrado", MsgBoxStyle.Information)
-                    Me.Dispose()
-                    Pacientes.Show()
+
+
+                    Try
+                        Consulta = "Select * from cita where id_p = '" + id_p.ToString + "';"
+                        consultar()
+
+                        dgvAuxiliar.DataSource = Tabla
+                        Dim id_c As Integer
+
+                        id_c = dgvAuxiliar.Rows(dgvAuxiliar.RowCount - 1).Cells(0).Value
+
+                        For x = 0 To PlanTratamiento.dgvArancelesSelect.RowCount - 1
+
+                            MsgBox("se ejecuto el for")
+
+                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(2).Value + "','" + id_c.ToString + "','" + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(0).Value + "');"
+                            consultar()
+
+                        Next
+
+                        MsgBox("Registrado", MsgBoxStyle.Information)
+                        PlanTratamiento.Dispose()
+                        Me.Dispose()
+                        Pacientes.Show()
+
+                    Catch ex As Exception
+
+                        MsgBox("Error al crear registro de plan, pero se creo la cita", MsgBoxStyle.Exclamation)
+                    End Try
+
+
                 Catch ex As Exception
                     MsgBox("Error al ingresar la cita")
                 End Try
@@ -85,27 +113,27 @@
 
         Consulta = "Select nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
         consultar()
-        dgbCitasEnLaFecha.DataSource = Tabla
+        dgvCitasEnLaFecha.DataSource = Tabla
     End Sub
 
-    Private Sub dgbCitasEnLaFecha_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgbCitasEnLaFecha.CellClick
-        dgbCitasEnLaFecha.ClearSelection()
+    Private Sub dgbCitasEnLaFecha_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvCitasEnLaFecha.CellClick
+        dgvCitasEnLaFecha.ClearSelection()
     End Sub
 
-    Private Sub dgbCitasEnLaFecha_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgbCitasEnLaFecha.Click
-        dgbCitasEnLaFecha.ClearSelection()
+    Private Sub dgbCitasEnLaFecha_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgvCitasEnLaFecha.Click
+        dgvCitasEnLaFecha.ClearSelection()
     End Sub
 
-    Private Sub dgbCitasEnLaFecha_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgbCitasEnLaFecha.MouseClick
-        dgbCitasEnLaFecha.ClearSelection()
+    Private Sub dgbCitasEnLaFecha_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgvCitasEnLaFecha.MouseClick
+        dgvCitasEnLaFecha.ClearSelection()
     End Sub
 
-    Private Sub dgbCitasEnLaFecha_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgbCitasEnLaFecha.MouseDown
-        dgbCitasEnLaFecha.ClearSelection()
+    Private Sub dgbCitasEnLaFecha_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgvCitasEnLaFecha.MouseDown
+        dgvCitasEnLaFecha.ClearSelection()
     End Sub
 
-    Private Sub dgbCitasEnLaFecha_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgbCitasEnLaFecha.MouseEnter
-        dgbCitasEnLaFecha.ClearSelection()
+    Private Sub dgbCitasEnLaFecha_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgvCitasEnLaFecha.MouseEnter
+        dgvCitasEnLaFecha.ClearSelection()
     End Sub
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click

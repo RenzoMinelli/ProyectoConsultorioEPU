@@ -25,7 +25,7 @@ Partial Class MsgBoxVersatil
         Me.lblTexto = New System.Windows.Forms.Label()
         Me.btnSi = New System.Windows.Forms.Button()
         Me.btnNo = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txbRespuesta = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblTexto
@@ -58,14 +58,14 @@ Partial Class MsgBoxVersatil
         Me.btnNo.Text = "No"
         Me.btnNo.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txbRespuesta
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(23, 154)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(242, 35)
-        Me.TextBox1.TabIndex = 3
-        Me.TextBox1.WordWrap = False
+        Me.txbRespuesta.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbRespuesta.Location = New System.Drawing.Point(119, 154)
+        Me.txbRespuesta.Name = "txbRespuesta"
+        Me.txbRespuesta.Size = New System.Drawing.Size(372, 35)
+        Me.txbRespuesta.TabIndex = 0
+        Me.txbRespuesta.WordWrap = False
         '
         'MsgBoxVersatil
         '
@@ -73,7 +73,7 @@ Partial Class MsgBoxVersatil
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(650, 299)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txbRespuesta)
         Me.Controls.Add(Me.btnNo)
         Me.Controls.Add(Me.btnSi)
         Me.Controls.Add(Me.lblTexto)
@@ -88,5 +88,5 @@ Partial Class MsgBoxVersatil
     Friend WithEvents lblTexto As System.Windows.Forms.Label
     Friend WithEvents btnSi As System.Windows.Forms.Button
     Friend WithEvents btnNo As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txbRespuesta As System.Windows.Forms.TextBox
 End Class

@@ -110,6 +110,12 @@
         End If
 
     End Sub
+
+    Private Sub txtcontraseña_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtcontraseña.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            btningresar.PerformClick()
+        End If
+    End Sub
 End Class
 
 
