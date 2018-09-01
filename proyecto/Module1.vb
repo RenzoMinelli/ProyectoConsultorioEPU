@@ -20,6 +20,9 @@ Module Module1
     Public respint As Integer
     Public respString As String
 
+    Public screenWidth As Integer = Screen.PrimaryScreen.Bounds.Width
+    Public screenHeight As Integer = Screen.PrimaryScreen.Bounds.Height
+
     '////////////////Posicionamiento///////////////////////////
     Public xf, yf As Integer
 
@@ -61,6 +64,7 @@ Module Module1
 
     End Sub
     Public Sub MuestraMsgBoxVersatil(ByVal texto As String, ByVal tipo As Integer)
+        FondoTransparente.Show()
         If tipo = 0 Then
 
             Dim msgbv As New MsgBoxVersatil()
@@ -70,7 +74,7 @@ Module Module1
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Sí"
             msgbv.txbRespuesta.Visible = False
-            msgbv.Location = New Point(23, 222)
+
 
             'Determinar si el formulario esta listo para seguir
             If msgbv.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
@@ -79,6 +83,7 @@ Module Module1
             Else
                 respint = 0
             End If
+            FondoTransparente.Dispose()
             msgbv.Dispose()
 
         ElseIf tipo = 1 Then
@@ -89,8 +94,9 @@ Module Module1
             msgbv.btnNo.Visible = False
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Aceptar"
+            msgbv.btnSi.Location = New Point(318, 283)
             msgbv.txbRespuesta.Visible = True
-            msgbv.Location = New Point(262, 208)
+
 
             msgbv.txbRespuesta.Focus()
             'Determinar si el formulario esta listo para seguir
@@ -100,10 +106,11 @@ Module Module1
             Else
                 respString = "Error"
             End If
+            FondoTransparente.Dispose()
             msgbv.Dispose()
 
         End If
-       
+
     End Sub
    
 

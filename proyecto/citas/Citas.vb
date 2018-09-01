@@ -50,7 +50,7 @@
 
         fechita = fecha
         Me.Hide()
-        frmContenedor = MarcarCosasCitas
+        frmContenedor = MarcarProximaCitaAranceles
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()

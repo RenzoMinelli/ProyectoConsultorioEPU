@@ -173,8 +173,11 @@
     End Sub
 
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
-        Me.Hide()
-        CrearCita.Show()
+        '/////////////////////////////////////////CAMBIAR/////////////////////////////////////////////
+        'Hay que cambiar para que vuelva al formulario donde se registra el estado de los dientes '///
+        Me.Hide()                                                                                 '///
+        CrearCita.Show()                                                                          '///
+        '/////////////////////////////////////////////////////////////////////////////////////////////
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarDesc.Click

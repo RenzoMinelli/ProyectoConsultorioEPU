@@ -100,7 +100,7 @@ Partial Class ModificarPaciente
         Me.lblEnviadoPor.Name = "lblEnviadoPor"
         Me.lblEnviadoPor.Size = New System.Drawing.Size(297, 29)
         Me.lblEnviadoPor.TabIndex = 6
-        Me.lblEnviadoPor.Text = "Por quien fue enviado (op)"
+        Me.lblEnviadoPor.Text = "Por quién fue enviado (op)"
         '
         'txbEnviadoPor
         '
@@ -118,7 +118,7 @@ Partial Class ModificarPaciente
         Me.lblDireccionPersonal.Name = "lblDireccionPersonal"
         Me.lblDireccionPersonal.Size = New System.Drawing.Size(217, 29)
         Me.lblDireccionPersonal.TabIndex = 8
-        Me.lblDireccionPersonal.Text = "Direccion Personal"
+        Me.lblDireccionPersonal.Text = "Dirección Personal"
         '
         'txbDireccionPersonal
         '
@@ -136,7 +136,7 @@ Partial Class ModificarPaciente
         Me.lblDireccionTrabajo.Name = "lblDireccionTrabajo"
         Me.lblDireccionTrabajo.Size = New System.Drawing.Size(279, 29)
         Me.lblDireccionTrabajo.TabIndex = 10
-        Me.lblDireccionTrabajo.Text = "Direccion de trabajo (op)"
+        Me.lblDireccionTrabajo.Text = "Dirección de trabajo (op)"
         '
         'txbDireccionTrabajo
         '
@@ -245,7 +245,7 @@ Partial Class ModificarPaciente
         Me.txbApellido.Size = New System.Drawing.Size(234, 35)
         Me.txbApellido.TabIndex = 21
         '
-        'Modificar_Paciente
+        'ModificarPaciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -272,7 +272,7 @@ Partial Class ModificarPaciente
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.txbNombre)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Modificar_Paciente"
+        Me.Name = "ModificarPaciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         CType(Me.dgvAntecedentes, System.ComponentModel.ISupportInitialize).EndInit()

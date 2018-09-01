@@ -258,7 +258,7 @@
         'End If
     End Sub
 
-    Private Sub btnAgregarEstadoDientes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarEstadoDientes.Click
+    Private Sub btnAgregarEstadoDientes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Hide()
         frmContenedor = IngresarEstadoDientes
         frmContenedor.MdiParent = Menu_Inicio

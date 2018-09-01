@@ -7,8 +7,7 @@
 
     Dim con As Integer = 0
 
-    Dim screenWidth As Integer = Screen.PrimaryScreen.Bounds.Width
-    Dim screenHeight As Integer = Screen.PrimaryScreen.Bounds.Height
+    
 
 
 
@@ -334,7 +333,7 @@
         If con = 1 Then
 
             Me.Width = 1400
-            Me.Height = 700
+            Me.Height = 800
 
             Me.WindowState = FormWindowState.Normal
             pbMaximizar.Image = My.Resources.maximize_window_1_

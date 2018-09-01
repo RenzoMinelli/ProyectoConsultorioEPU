@@ -94,10 +94,10 @@
     <Compile Include="citas\IngresarEstadoDientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\MarcarCosasCitas.Designer.vb">
-      <DependentUpon>MarcarCosasCitas.vb</DependentUpon>
+    <Compile Include="citas\MarcarProximaCitaAranceles.Designer.vb">
+      <DependentUpon>MarcarProximaCitaAranceles.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\MarcarCosasCitas.vb">
+    <Compile Include="citas\MarcarProximaCitaAranceles.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="citas\PlanTratamiento.Designer.vb">
@@ -189,6 +189,12 @@
     <Compile Include="pacientes\CrearCita.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="pacientes\FondoTransparente.Designer.vb">
+      <DependentUpon>FondoTransparente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pacientes\FondoTransparente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="pacientes\InputPago.Designer.vb">
       <DependentUpon>InputPago.vb</DependentUpon>
     </Compile>
@@ -254,8 +260,8 @@
     <EmbeddedResource Include="citas\IngresarEstadoDientes.resx">
       <DependentUpon>IngresarEstadoDientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\MarcarCosasCitas.resx">
-      <DependentUpon>MarcarCosasCitas.vb</DependentUpon>
+    <EmbeddedResource Include="citas\MarcarProximaCitaAranceles.resx">
+      <DependentUpon>MarcarProximaCitaAranceles.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="citas\PlanTratamiento.resx">
       <DependentUpon>PlanTratamiento.vb</DependentUpon>
@@ -298,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\CrearCita.resx">
       <DependentUpon>CrearCita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pacientes\FondoTransparente.resx">
+      <DependentUpon>FondoTransparente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\InputPago.resx">
       <DependentUpon>InputPago.vb</DependentUpon>

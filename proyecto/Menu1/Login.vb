@@ -19,14 +19,14 @@
             Me.Hide()
             ingreso_contraseña.Show()
             btningresar.Visible = False
-            lblcontraseña.Visible = False
+
             txtcontraseña.Visible = False
             btnfuncionario.Visible = True
             btnodontologo.Visible = True
         Else
             lblingrusuario.Text = "Ingrese Contraseña"
             btningresar.Visible = True
-            lblcontraseña.Visible = True
+
             txtcontraseña.Visible = True
             btnfuncionario.Visible = False
             btnodontologo.Visible = False
@@ -38,7 +38,7 @@
         contador = 2
 
         btningresar.Visible = True
-        lblcontraseña.Visible = True
+
         txtcontraseña.Visible = True
         btnfuncionario.Visible = False
         btnodontologo.Visible = False
@@ -56,14 +56,14 @@
             Me.Hide()
             ingreso_contraseña.Show()
             btningresar.Visible = False
-            lblcontraseña.Visible = False
+
             txtcontraseña.Visible = False
             btnfuncionario.Visible = True
             btnodontologo.Visible = True
         Else
             lblingrusuario.Text = "Ingrese Contraseña"
             btningresar.Visible = True
-            lblcontraseña.Visible = True
+
             txtcontraseña.Visible = True
             btnfuncionario.Visible = False
             btnodontologo.Visible = False
@@ -73,7 +73,7 @@
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         btningresar.Visible = False
-        lblcontraseña.Visible = False
+
         txtcontraseña.Visible = False
     End Sub
 

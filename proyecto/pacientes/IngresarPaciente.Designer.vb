@@ -45,9 +45,6 @@ Partial Class IngresarPaciente
         Me.lblApellido = New System.Windows.Forms.Label()
         Me.txbApellido = New System.Windows.Forms.TextBox()
         Me.pbErrorCedula = New System.Windows.Forms.PictureBox()
-        Me.lblAnuncio = New System.Windows.Forms.Label()
-        Me.btnAgregarEstadoDientes = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.dgvPacientesId, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvPacientesCedulas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbErrorCedula, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -107,7 +104,7 @@ Partial Class IngresarPaciente
         Me.lblEnviadoPor.Name = "lblEnviadoPor"
         Me.lblEnviadoPor.Size = New System.Drawing.Size(297, 29)
         Me.lblEnviadoPor.TabIndex = 6
-        Me.lblEnviadoPor.Text = "Por quien fue enviado (op)"
+        Me.lblEnviadoPor.Text = "Por quién fue enviado (op)"
         '
         'txbEnviadoPor
         '
@@ -125,7 +122,7 @@ Partial Class IngresarPaciente
         Me.lblDireccionPersonal.Name = "lblDireccionPersonal"
         Me.lblDireccionPersonal.Size = New System.Drawing.Size(217, 29)
         Me.lblDireccionPersonal.TabIndex = 8
-        Me.lblDireccionPersonal.Text = "Direccion Personal"
+        Me.lblDireccionPersonal.Text = "Dirección Personal"
         '
         'txbDireccionPersonal
         '
@@ -143,7 +140,7 @@ Partial Class IngresarPaciente
         Me.lblDireccionTrabajo.Name = "lblDireccionTrabajo"
         Me.lblDireccionTrabajo.Size = New System.Drawing.Size(279, 29)
         Me.lblDireccionTrabajo.TabIndex = 10
-        Me.lblDireccionTrabajo.Text = "Direccion de trabajo (op)"
+        Me.lblDireccionTrabajo.Text = "Dirección de trabajo (op)"
         '
         'txbDireccionTrabajo
         '
@@ -281,46 +278,11 @@ Partial Class IngresarPaciente
         Me.pbErrorCedula.TabStop = False
         Me.pbErrorCedula.Visible = False
         '
-        'lblAnuncio
-        '
-        Me.lblAnuncio.AutoSize = True
-        Me.lblAnuncio.Location = New System.Drawing.Point(658, 22)
-        Me.lblAnuncio.Name = "lblAnuncio"
-        Me.lblAnuncio.Size = New System.Drawing.Size(39, 13)
-        Me.lblAnuncio.TabIndex = 23
-        Me.lblAnuncio.Text = "Label1"
-        Me.lblAnuncio.Visible = False
-        '
-        'btnAgregarEstadoDientes
-        '
-        Me.btnAgregarEstadoDientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarEstadoDientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAgregarEstadoDientes.Location = New System.Drawing.Point(718, 454)
-        Me.btnAgregarEstadoDientes.Name = "btnAgregarEstadoDientes"
-        Me.btnAgregarEstadoDientes.Size = New System.Drawing.Size(439, 50)
-        Me.btnAgregarEstadoDientes.TabIndex = 24
-        Me.btnAgregarEstadoDientes.Text = "Ingresar Estado de Dientes"
-        Me.btnAgregarEstadoDientes.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(736, 387)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(421, 50)
-        Me.Label1.TabIndex = 25
-        Me.Label1.Text = "El estado de los dientes puede ingresarse " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "posteriormente en la primer cita"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Ingresar_Paciente
+        'IngresarPaciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1330, 777)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnAgregarEstadoDientes)
-        Me.Controls.Add(Me.lblAnuncio)
         Me.Controls.Add(Me.pbErrorCedula)
         Me.Controls.Add(Me.txbApellido)
         Me.Controls.Add(Me.lblApellido)
@@ -345,7 +307,7 @@ Partial Class IngresarPaciente
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.txbNombre)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Ingresar_Paciente"
+        Me.Name = "IngresarPaciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         CType(Me.dgvPacientesId, System.ComponentModel.ISupportInitialize).EndInit()
@@ -378,7 +340,4 @@ Partial Class IngresarPaciente
     Friend WithEvents lblApellido As System.Windows.Forms.Label
     Friend WithEvents txbApellido As System.Windows.Forms.TextBox
     Friend WithEvents pbErrorCedula As System.Windows.Forms.PictureBox
-    Friend WithEvents lblAnuncio As System.Windows.Forms.Label
-    Friend WithEvents btnAgregarEstadoDientes As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

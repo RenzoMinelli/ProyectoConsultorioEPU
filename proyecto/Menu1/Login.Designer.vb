@@ -26,7 +26,6 @@ Partial Class Login
         Me.btnodontologo = New System.Windows.Forms.Button()
         Me.lblingrusuario = New System.Windows.Forms.Label()
         Me.txtcontraseña = New System.Windows.Forms.TextBox()
-        Me.lblcontraseña = New System.Windows.Forms.Label()
         Me.btningresar = New System.Windows.Forms.Button()
         Me.dgbcontraseña = New System.Windows.Forms.DataGridView()
         CType(Me.dgbcontraseña, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,20 +64,10 @@ Partial Class Login
         'txtcontraseña
         '
         Me.txtcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcontraseña.Location = New System.Drawing.Point(296, 153)
+        Me.txtcontraseña.Location = New System.Drawing.Point(33, 153)
         Me.txtcontraseña.Name = "txtcontraseña"
-        Me.txtcontraseña.Size = New System.Drawing.Size(154, 35)
+        Me.txtcontraseña.Size = New System.Drawing.Size(417, 35)
         Me.txtcontraseña.TabIndex = 5
-        '
-        'lblcontraseña
-        '
-        Me.lblcontraseña.AutoSize = True
-        Me.lblcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcontraseña.Location = New System.Drawing.Point(28, 153)
-        Me.lblcontraseña.Name = "lblcontraseña"
-        Me.lblcontraseña.Size = New System.Drawing.Size(248, 29)
-        Me.lblcontraseña.TabIndex = 6
-        Me.lblcontraseña.Text = "Ingrese Contraseña:"
         '
         'btningresar
         '
@@ -106,7 +95,6 @@ Partial Class Login
         Me.ClientSize = New System.Drawing.Size(495, 381)
         Me.Controls.Add(Me.dgbcontraseña)
         Me.Controls.Add(Me.btningresar)
-        Me.Controls.Add(Me.lblcontraseña)
         Me.Controls.Add(Me.txtcontraseña)
         Me.Controls.Add(Me.lblingrusuario)
         Me.Controls.Add(Me.btnfuncionario)
@@ -124,7 +112,6 @@ Partial Class Login
     Friend WithEvents btnodontologo As System.Windows.Forms.Button
     Friend WithEvents lblingrusuario As System.Windows.Forms.Label
     Friend WithEvents txtcontraseña As System.Windows.Forms.TextBox
-    Friend WithEvents lblcontraseña As System.Windows.Forms.Label
     Friend WithEvents btningresar As System.Windows.Forms.Button
     Friend WithEvents dgbcontraseña As System.Windows.Forms.DataGridView
 End Class

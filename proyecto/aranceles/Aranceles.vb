@@ -5,7 +5,7 @@
     Private Sub Aranceles_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.Load
         Me.Size = New System.Drawing.Size(880, 580)
         Try
-            Consulta = "select * from aranceles"
+            Consulta = "select * from aranceles where estado = 1"
             consultar()
             DataGridView1.DataSource = Tabla
             DataGridView1.ClearSelection()
