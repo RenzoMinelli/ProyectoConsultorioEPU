@@ -51,7 +51,7 @@
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.8.8\Assemblies\v4.0\MySql.Data.dll</HintPath>
+      <HintPath>MySQL Connector Net 6.8.8\Assemblies\v4.0\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -219,10 +219,10 @@
     <Compile Include="pacientes\ModificarPaciente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\MsgBoxVersatil.Designer.vb">
+    <Compile Include="MsgBoxVersatil.Designer.vb">
       <DependentUpon>MsgBoxVersatil.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\MsgBoxVersatil.vb">
+    <Compile Include="MsgBoxVersatil.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="pacientes\Pacientes.vb">
@@ -326,7 +326,7 @@
     <EmbeddedResource Include="pacientes\ModificarPaciente.resx">
       <DependentUpon>ModificarPaciente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\MsgBoxVersatil.resx">
+    <EmbeddedResource Include="MsgBoxVersatil.resx">
       <DependentUpon>MsgBoxVersatil.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\Pacientes.resx">

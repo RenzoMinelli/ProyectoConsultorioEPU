@@ -65,7 +65,7 @@
 
         'Luego intenta obtener todos los datos de los pacientes con el estado según le indicamos en la base de datos
         Try
-            Consulta = "SELECT id_p, cedula, fecha_nacimiento, upper(apellido) as 'nombre', upper(nombre) as 'apellido', telefono, upper(enviado_por) as 'enviado_por', upper(direccion_particular) as 'direccion_particular', upper(direccion_trabajo) as 'direccion_trabajo', saldo, estado  FROM paciente where estado = '" + estado + "';"
+            Consulta = "SELECT id_p, cedula, fecha_nacimiento, concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'nombre', telefono, concat(upper(left(enviado_por,1)), lower(substring(enviado_por from 2))) as 'enviado_por', concat(upper(left(direccion_particular,1)), lower(substring(direccion_particular from 2))) as 'direccion_particular', concat(upper(left(direccion_trabajo,1)), lower(substring(direccion_trabajo from 2))) as 'direccion_trabajo', saldo, estado  FROM paciente where estado = '" + estado + "';"
             consultar()
             dgvPacientes.DataSource = Tabla
 
@@ -86,6 +86,7 @@
 
             'Lo ordenamos según el apellido
             dgvPacientes.Sort(dgvPacientes.Columns(3), System.ComponentModel.ListSortDirection.Ascending)
+
         Catch ex As Exception
 
             'Si es que se encuentra un error, que se muestre una alerta

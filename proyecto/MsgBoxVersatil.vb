@@ -6,12 +6,12 @@
     Private Sub MsgBoxVersatil_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Me.Location = New Point(screenWidth / 2 - Me.Width / 2, screenHeight / 2 - Me.Height / 2)
-        If lblTexto.Text.Length > 45 Then
+        If lblTexto.Text.Length > 50 Then
 
             Dim parte1 As String = ""
             Dim parte2 As String = ""
 
-            For x = 45 To lblTexto.Text.Length - 1
+            For x = 50 To lblTexto.Text.Length - 1
 
                 If lblTexto.Text(x) = " " Then
 
@@ -26,10 +26,8 @@
 
             Next
 
-
-
-
         End If
+
     End Sub
 
     

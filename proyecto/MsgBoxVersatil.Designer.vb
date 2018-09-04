@@ -32,7 +32,7 @@ Partial Class MsgBoxVersatil
         '
         Me.lblTexto.AutoSize = True
         Me.lblTexto.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTexto.Location = New System.Drawing.Point(87, 70)
+        Me.lblTexto.Location = New System.Drawing.Point(50, 49)
         Me.lblTexto.Name = "lblTexto"
         Me.lblTexto.Size = New System.Drawing.Size(185, 29)
         Me.lblTexto.TabIndex = 4
@@ -41,7 +41,7 @@ Partial Class MsgBoxVersatil
         'txbRespuesta
         '
         Me.txbRespuesta.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbRespuesta.Location = New System.Drawing.Point(177, 186)
+        Me.txbRespuesta.Location = New System.Drawing.Point(124, 188)
         Me.txbRespuesta.Name = "txbRespuesta"
         Me.txbRespuesta.Size = New System.Drawing.Size(372, 35)
         Me.txbRespuesta.TabIndex = 3
@@ -50,7 +50,7 @@ Partial Class MsgBoxVersatil
         'btnSi
         '
         Me.btnSi.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSi.Location = New System.Drawing.Point(92, 283)
+        Me.btnSi.Location = New System.Drawing.Point(55, 272)
         Me.btnSi.Name = "btnSi"
         Me.btnSi.Size = New System.Drawing.Size(111, 52)
         Me.btnSi.TabIndex = 5
@@ -60,7 +60,7 @@ Partial Class MsgBoxVersatil
         'btnNo
         '
         Me.btnNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNo.Location = New System.Drawing.Point(592, 283)
+        Me.btnNo.Location = New System.Drawing.Point(502, 272)
         Me.btnNo.Name = "btnNo"
         Me.btnNo.Size = New System.Drawing.Size(111, 52)
         Me.btnNo.TabIndex = 6
@@ -71,8 +71,8 @@ Partial Class MsgBoxVersatil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.ClientSize = New System.Drawing.Size(822, 405)
+        Me.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.ClientSize = New System.Drawing.Size(676, 348)
         Me.Controls.Add(Me.lblTexto)
         Me.Controls.Add(Me.txbRespuesta)
         Me.Controls.Add(Me.btnSi)
