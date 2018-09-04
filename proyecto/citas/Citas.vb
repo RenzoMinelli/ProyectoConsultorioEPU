@@ -15,11 +15,10 @@
     Private Sub Citas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         factual = Now.ToString("DayOfTheWeek")
 
+        Consulta = "selct * from citas"
+        consultar()
+        dgvauxiliar.DataSource = Tabla
 
-        '' Consulta = "selct * from citas"
-        ''consultar()
-        ''dgvLunes.DataSource = Tabla
-        '' for en cada linea
         ' for indice =0 to dgvAuxiliar.rowcount - 1
         'dim dia as Date = dgvAuxiliar.rows(indice).columns(5).value
 
