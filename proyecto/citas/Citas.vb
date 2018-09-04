@@ -8,10 +8,24 @@
     Dim cita As String
 
     Dim fecha As String
+    Dim factual As Date
 
 
 
     Private Sub Citas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        factual = Now.ToString("DayOfTheWeek")
+
+
+        '' Consulta = "selct * from citas"
+        ''consultar()
+        ''dgvLunes.DataSource = Tabla
+        '' for en cada linea
+        ' for indice =0 to dgvAuxiliar.rowcount - 1
+        'dim dia as Date = dgvAuxiliar.rows(indice).columns(5).value
+
+        'nombretabla.columncount = 1
+        'nombretbla.row.add('')
+        'next
 
         Button2.Visible = False
         actualizador()
@@ -58,12 +72,12 @@
     End Sub
 
 
-    Private Sub DataGridView1_CellMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles DataGridView1.CellMouseClick
+    Private Sub DataGridView1_CellMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvLunes.CellMouseClick
         Button2.Visible = True
         'Aca le asigno el valor a idPaciente y de idCita cuando se hace click en la tabla
-        idcita = DataGridView1.CurrentRow.Cells(3).Value
+        idcita = dgvLunes.CurrentRow.Cells(3).Value
         'Mira que id_p es una variable global que se usa en todo el programa, no es necesario crear otra xd
-        id_p = DataGridView1.CurrentRow.Cells(4).Value
+        id_p = dgvLunes.CurrentRow.Cells(4).Value
     End Sub
 
     Public Sub actualizador()
@@ -72,11 +86,11 @@
             'Agregue 2 columnas, id_c y id_p para poder acceder a la id de estas al hacer click en la tabla
             Consulta = "select date_format(hora, '%H:%i') as 'Hora', nombre as 'Nombre', descripcion as 'Descripcion', id_c, p.id_p from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + fecha + "';"
             consultar()
-            DataGridView1.DataSource = Tabla
+            dgvLunes.DataSource = Tabla
             'Oculto las columnas que tienen el id de cita y de paciente
-            DataGridView1.Columns(3).Visible = False
-            DataGridView1.Columns(4).Visible = False
-            DataGridView1.Sort(DataGridView1.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
+            dgvLunes.Columns(3).Visible = False
+            dgvLunes.Columns(4).Visible = False
+            dgvLunes.Sort(dgvLunes.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try

@@ -117,7 +117,7 @@
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
-        Citas.DataGridView1.ClearSelection()
+        Citas.dgvLunes.ClearSelection()
 
     End Sub
 
@@ -369,7 +369,7 @@
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
-        Citas.DataGridView1.ClearSelection()
+        Citas.dgvLunes.ClearSelection()
     End Sub
 
 End Class

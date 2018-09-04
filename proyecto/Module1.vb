@@ -94,7 +94,8 @@ Module Module1
             msgbv.btnNo.Visible = False
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Aceptar"
-            msgbv.btnSi.Location = New Point(318, 283)
+            msgbv.btnSi.Location = New Point(msgbv.Width / 2 - msgbv.btnSi.Width / 2, msgbv.btnSi.Location.Y)
+            msgbv.txbRespuesta.Location = New Point(msgbv.Width / 2 - msgbv.txbRespuesta.Width / 2, msgbv.txbRespuesta.Location.Y)
             msgbv.txbRespuesta.Visible = True
 
 
