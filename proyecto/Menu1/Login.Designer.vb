@@ -25,9 +25,9 @@ Partial Class Login
         Me.btnfuncionario = New System.Windows.Forms.Button()
         Me.btnodontologo = New System.Windows.Forms.Button()
         Me.lblingrusuario = New System.Windows.Forms.Label()
-        Me.txtcontraseña = New System.Windows.Forms.TextBox()
         Me.btningresar = New System.Windows.Forms.Button()
         Me.dgbcontraseña = New System.Windows.Forms.DataGridView()
+        Me.txtcontraseña = New System.Windows.Forms.TextBox()
         CType(Me.dgbcontraseña, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,14 +61,6 @@ Partial Class Login
         Me.lblingrusuario.TabIndex = 4
         Me.lblingrusuario.Text = "ingrese un usuario:"
         '
-        'txtcontraseña
-        '
-        Me.txtcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcontraseña.Location = New System.Drawing.Point(33, 153)
-        Me.txtcontraseña.Name = "txtcontraseña"
-        Me.txtcontraseña.Size = New System.Drawing.Size(417, 35)
-        Me.txtcontraseña.TabIndex = 5
-        '
         'btningresar
         '
         Me.btningresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -87,6 +79,15 @@ Partial Class Login
         Me.dgbcontraseña.Size = New System.Drawing.Size(10, 11)
         Me.dgbcontraseña.TabIndex = 8
         Me.dgbcontraseña.Visible = False
+        '
+        'txtcontraseña
+        '
+        Me.txtcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtcontraseña.Location = New System.Drawing.Point(33, 153)
+        Me.txtcontraseña.Name = "txtcontraseña"
+        Me.txtcontraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtcontraseña.Size = New System.Drawing.Size(417, 35)
+        Me.txtcontraseña.TabIndex = 5
         '
         'Login
         '
@@ -111,7 +112,7 @@ Partial Class Login
     Friend WithEvents btnfuncionario As System.Windows.Forms.Button
     Friend WithEvents btnodontologo As System.Windows.Forms.Button
     Friend WithEvents lblingrusuario As System.Windows.Forms.Label
-    Friend WithEvents txtcontraseña As System.Windows.Forms.TextBox
     Friend WithEvents btningresar As System.Windows.Forms.Button
     Friend WithEvents dgbcontraseña As System.Windows.Forms.DataGridView
+    Friend WithEvents txtcontraseña As System.Windows.Forms.TextBox
 End Class
