@@ -1,4 +1,4 @@
-﻿Public Class RegistroMedico
+﻿Public Class frmRegistroMedico
     Dim formu As New Form
 
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -471,7 +471,7 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Dispose()
-        Pacientes.Show()
+        frmPacientes.Show()
     End Sub
 
     Private Sub actTabla()

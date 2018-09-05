@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class PlanTratamiento
+Partial Class frmPlanTratamiento
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -38,7 +38,6 @@ Partial Class PlanTratamiento
         Me.txbBusqueda = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnIngresarDesc = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.dgvAranceles, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvArancelesSelect, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,12 +68,12 @@ Partial Class PlanTratamiento
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvAranceles.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvAranceles.Location = New System.Drawing.Point(38, 128)
+        Me.dgvAranceles.Location = New System.Drawing.Point(38, 135)
         Me.dgvAranceles.Name = "dgvAranceles"
         Me.dgvAranceles.ReadOnly = True
         Me.dgvAranceles.RowHeadersVisible = False
         Me.dgvAranceles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvAranceles.Size = New System.Drawing.Size(467, 209)
+        Me.dgvAranceles.Size = New System.Drawing.Size(541, 246)
         Me.dgvAranceles.TabIndex = 0
         '
         'lblAranceles
@@ -91,7 +90,7 @@ Partial Class PlanTratamiento
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(569, 40)
+        Me.Label1.Location = New System.Drawing.Point(623, 40)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(288, 29)
         Me.Label1.TabIndex = 2
@@ -121,12 +120,12 @@ Partial Class PlanTratamiento
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvArancelesSelect.DefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvArancelesSelect.Location = New System.Drawing.Point(549, 80)
+        Me.dgvArancelesSelect.Location = New System.Drawing.Point(611, 80)
         Me.dgvArancelesSelect.Name = "dgvArancelesSelect"
         Me.dgvArancelesSelect.ReadOnly = True
         Me.dgvArancelesSelect.RowHeadersVisible = False
         Me.dgvArancelesSelect.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvArancelesSelect.Size = New System.Drawing.Size(541, 257)
+        Me.dgvArancelesSelect.Size = New System.Drawing.Size(523, 301)
         Me.dgvArancelesSelect.TabIndex = 3
         '
         'dgvAuxiliar
@@ -164,7 +163,7 @@ Partial Class PlanTratamiento
         Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.Image = Global.WindowsApplication1.My.Resources.Resources.delete
         Me.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEliminar.Location = New System.Drawing.Point(549, 376)
+        Me.btnEliminar.Location = New System.Drawing.Point(611, 424)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(130, 84)
         Me.btnEliminar.TabIndex = 5
@@ -178,7 +177,7 @@ Partial Class PlanTratamiento
         Me.btnModificarPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarPrecio.Image = Global.WindowsApplication1.My.Resources.Resources.fac159a300a5cd5efbd3c544cb37d3b0_1_
         Me.btnModificarPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModificarPrecio.Location = New System.Drawing.Point(931, 376)
+        Me.btnModificarPrecio.Location = New System.Drawing.Point(975, 425)
         Me.btnModificarPrecio.Name = "btnModificarPrecio"
         Me.btnModificarPrecio.Size = New System.Drawing.Size(159, 84)
         Me.btnModificarPrecio.TabIndex = 6
@@ -192,14 +191,14 @@ Partial Class PlanTratamiento
         Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txbBusqueda.Location = New System.Drawing.Point(38, 80)
         Me.txbBusqueda.Name = "txbBusqueda"
-        Me.txbBusqueda.Size = New System.Drawing.Size(467, 35)
+        Me.txbBusqueda.Size = New System.Drawing.Size(541, 35)
         Me.txbBusqueda.TabIndex = 7
         '
         'btnGuardar
         '
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(191, 461)
+        Me.btnGuardar.Location = New System.Drawing.Point(214, 583)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(130, 70)
         Me.btnGuardar.TabIndex = 8
@@ -210,7 +209,7 @@ Partial Class PlanTratamiento
         '
         Me.btnIngresarDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIngresarDesc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIngresarDesc.Location = New System.Drawing.Point(714, 376)
+        Me.btnIngresarDesc.Location = New System.Drawing.Point(772, 425)
         Me.btnIngresarDesc.Name = "btnIngresarDesc"
         Me.btnIngresarDesc.Size = New System.Drawing.Size(166, 84)
         Me.btnIngresarDesc.TabIndex = 9
@@ -218,19 +217,11 @@ Partial Class PlanTratamiento
         Me.btnIngresarDesc.UseVisualStyleBackColor = True
         Me.btnIngresarDesc.Visible = False
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(47, 385)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(453, 20)
-        Me.TextBox1.TabIndex = 10
-        '
-        'PlanTratamiento
+        'frmPlanTratamiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1146, 615)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(1146, 736)
         Me.Controls.Add(Me.btnIngresarDesc)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.txbBusqueda)
@@ -242,7 +233,7 @@ Partial Class PlanTratamiento
         Me.Controls.Add(Me.lblAranceles)
         Me.Controls.Add(Me.dgvAranceles)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "PlanTratamiento"
+        Me.Name = "frmPlanTratamiento"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PlanTratamiento"
         CType(Me.dgvAranceles, System.ComponentModel.ISupportInitialize).EndInit()
@@ -262,5 +253,4 @@ Partial Class PlanTratamiento
     Friend WithEvents txbBusqueda As System.Windows.Forms.TextBox
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents btnIngresarDesc As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

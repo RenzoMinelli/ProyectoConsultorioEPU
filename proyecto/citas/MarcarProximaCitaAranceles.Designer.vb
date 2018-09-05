@@ -71,7 +71,7 @@ Partial Class MarcarProximaCitaAranceles
         Me.dgvAranceles.Name = "dgvAranceles"
         Me.dgvAranceles.ReadOnly = True
         Me.dgvAranceles.RowHeadersVisible = False
-        Me.dgvAranceles.Size = New System.Drawing.Size(515, 235)
+        Me.dgvAranceles.Size = New System.Drawing.Size(515, 341)
         Me.dgvAranceles.TabIndex = 0
         '
         'lblAranceles
@@ -113,7 +113,7 @@ Partial Class MarcarProximaCitaAranceles
         Me.dgvArancelesSelect.Name = "dgvArancelesSelect"
         Me.dgvArancelesSelect.ReadOnly = True
         Me.dgvArancelesSelect.RowHeadersVisible = False
-        Me.dgvArancelesSelect.Size = New System.Drawing.Size(479, 235)
+        Me.dgvArancelesSelect.Size = New System.Drawing.Size(479, 341)
         Me.dgvArancelesSelect.TabIndex = 2
         '
         'Label1
@@ -122,9 +122,9 @@ Partial Class MarcarProximaCitaAranceles
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(547, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(344, 29)
+        Me.Label1.Size = New System.Drawing.Size(417, 29)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Aranceles realizados en la cita:"
+        Me.Label1.Text = "Aranceles que se realizarán en la cita:"
         '
         'dgvAuxiliar
         '
@@ -163,7 +163,7 @@ Partial Class MarcarProximaCitaAranceles
         '
         Me.btnIngresarDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIngresarDesc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIngresarDesc.Location = New System.Drawing.Point(700, 311)
+        Me.btnIngresarDesc.Location = New System.Drawing.Point(702, 402)
         Me.btnIngresarDesc.Name = "btnIngresarDesc"
         Me.btnIngresarDesc.Size = New System.Drawing.Size(166, 84)
         Me.btnIngresarDesc.TabIndex = 12
@@ -176,7 +176,7 @@ Partial Class MarcarProximaCitaAranceles
         Me.btnModificarPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarPrecio.Image = Global.WindowsApplication1.My.Resources.Resources.fac159a300a5cd5efbd3c544cb37d3b0_1_
         Me.btnModificarPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModificarPrecio.Location = New System.Drawing.Point(872, 311)
+        Me.btnModificarPrecio.Location = New System.Drawing.Point(874, 402)
         Me.btnModificarPrecio.Name = "btnModificarPrecio"
         Me.btnModificarPrecio.Size = New System.Drawing.Size(159, 84)
         Me.btnModificarPrecio.TabIndex = 11
@@ -190,7 +190,7 @@ Partial Class MarcarProximaCitaAranceles
         Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.Image = Global.WindowsApplication1.My.Resources.Resources.delete
         Me.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEliminar.Location = New System.Drawing.Point(550, 312)
+        Me.btnEliminar.Location = New System.Drawing.Point(552, 403)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(130, 84)
         Me.btnEliminar.TabIndex = 10
@@ -203,7 +203,7 @@ Partial Class MarcarProximaCitaAranceles
         '
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(454, 469)
+        Me.btnGuardar.Location = New System.Drawing.Point(157, 494)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(166, 84)
         Me.btnGuardar.TabIndex = 13

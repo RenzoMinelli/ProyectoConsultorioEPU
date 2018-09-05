@@ -1,8 +1,8 @@
-﻿Public Class InputPago
+﻿Public Class frmInputPago
 
 
     Private Sub InputPago_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        lblDatosPaciente.Text = "El saldo pendiente del paciente " + Pacientes.nombre + " es de $" + Pacientes.saldo.ToString + vbNewLine + "¿Cuánto depositará?"
+        lblDatosPaciente.Text = "El saldo pendiente del paciente " + frmPacientes.nombre + " es de $" + frmPacientes.saldo.ToString + vbNewLine + "¿Cuánto depositará?"
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinuar.Click
@@ -12,10 +12,10 @@
 
             MsgBox("Ingrese un número", MsgBoxStyle.Exclamation)
         Else
-            If MsgBox("¿Confirma que el paciente " + Pacientes.nombre + " depositó $" + pago + "?", MsgBoxStyle.YesNo) = vbYes Then
-                Pacientes.saldo -= pago
+            If MsgBox("¿Confirma que el paciente " + frmPacientes.nombre + " depositó $" + pago + "?", MsgBoxStyle.YesNo) = vbYes Then
+                frmPacientes.saldo -= pago
                 Try
-                    Consulta = "update paciente set saldo = '" + Pacientes.saldo.ToString + "' where id_p = '" + id_p.ToString + "';"
+                    Consulta = "update paciente set saldo = '" + frmPacientes.saldo.ToString + "' where id_p = '" + id_p.ToString + "';"
                     consultar()
 
                     Dim fecha As Date = Now.ToShortDateString
@@ -27,10 +27,10 @@
 
                     MsgBox("Información actualizada", MsgBoxStyle.Information)
 
-                    Pacientes.actTabla(1)
-                    Pacientes.actPanel()
+                    frmPacientes.actTabla(1)
+                    frmPacientes.actPanel()
                     Me.Dispose()
-                    Pacientes.Show()
+                    frmPacientes.Show()
                 Catch ex As Exception
                     MsgBox("Error")
                 End Try
@@ -41,6 +41,6 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Dispose()
-        Pacientes.Show()
+        frmPacientes.Show()
     End Sub
 End Class

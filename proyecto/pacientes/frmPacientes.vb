@@ -1,4 +1,4 @@
-﻿Public Class Pacientes
+﻿Public Class frmPacientes
 
     'EstadoPacientes es una variable utilizada para verificar si se muetran los pacientes activos o inactivos
     Dim EstadoPacientes As Integer = 1
@@ -14,13 +14,13 @@
     Public saldo As Integer
 
 
-    
+
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarPaciente.Click
 
         'Al presionar el boton btnAgregarPaciente, se oculta el formulario actual, se guarda el formulario Agregar_Paciente en el frmContenedor y se muestra
         Me.Hide()
-        frmContenedor = IngresarPaciente
+        frmContenedor = frmIngresarPaciente
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -39,12 +39,12 @@
 
     End Sub
 
-   
+
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarDatos.Click
 
         'Al presionar el boton btnModificarDatos, se oculta el formulario actual, se guarda el formulario Modificar_Paciente en el frmContenedor y se muestra
         Me.Hide()
-        frmContenedor = ModificarPaciente
+        frmContenedor = frmModificarPaciente
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -197,7 +197,7 @@
         btnMostrarAntecedentes.Show()
         btnRegistroMedico.Show()
         btnRealizarPago.Show()
-
+        btnPlanTratamiento.Show()
 
         'Guardamos en las variables los datos acordes
         id_p = dgvPacientes.CurrentRow.Cells(0).Value
@@ -260,12 +260,12 @@
 
         'Al presionar el boton btnRegistrarCita, se oculta el formulario actual, se guarda el formulario Crear_Cita en el frmContenedor y se muestra
         Me.Hide()
-        frmContenedor = CrearCita
+        frmContenedor = frmCrearCita
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
-        CrearCita.dgvCitasEnLaFecha.ClearSelection()
+        frmCrearCita.dgvCitasEnLaFecha.ClearSelection()
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
@@ -304,7 +304,7 @@
 
         'Al presionar el boton btnRegistroMedico, se oculta el formulario actual, se guarda el formulario Registro_Medico en el frmContenedor y se muestra
         Me.Hide()
-        frmContenedor = RegistroMedico
+        frmContenedor = frmRegistroMedico
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -315,7 +315,7 @@
 
         'Al presionar el boton btnMostrarAntecedentes, se oculta el formulario actual, se guarda el formulario Antecedentes en el frmContenedor y se muestra
         Me.Hide()
-        frmContenedor = Antecedentes
+        frmContenedor = frmAntecedentes
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -335,7 +335,7 @@
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRealizarPago.Click
 
         'Al presionar el boton btnRealizarPago, se oculta el formulario actual, se guarda el formulario InputPago en el frmContenedor y se muestra
-        frmContenedor = InputPago
+        frmContenedor = frmInputPago
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -433,6 +433,13 @@
             actTabla(EstadoPacientes)
         End If
     End Sub
-    
 
+
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPlanTratamiento.Click
+        Me.Hide()
+        frmContenedor = frmPlanTratamiento
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+    End Sub
 End Class

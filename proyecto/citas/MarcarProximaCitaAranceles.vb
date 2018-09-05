@@ -22,22 +22,24 @@
         id_r = dgvAranceles.CurrentRow.Cells(0).Value
 
         Try
-            Consulta = "Select r.id_p,  a.descripcion as 'Descripcion General',r.precio as 'Precio',r.descripcion as 'Descripcion Especifica' from registro_medico r inner join aranceles a on r.id_a = a.id_a where id_r = '" + id_r.ToString + "';"
+            Consulta = "Select r.id_p,  a.descripcion as 'Descripcion General',r.precio as 'Precio',r.descripcion as 'Descripcion Especifica', r.id_a from registro_medico r inner join aranceles a on r.id_a = a.id_a where id_r = '" + id_r.ToString + "';"
             consultar()
 
             dgvAuxiliar.DataSource = Tabla
 
-            dgvArancelesSelect.ColumnCount = 4
+            dgvArancelesSelect.ColumnCount = 5
             dgvArancelesSelect.Columns(0).HeaderText = "ID_P"
             dgvArancelesSelect.Columns(3).HeaderText = "Descripcion Especifica"
             dgvArancelesSelect.Columns(2).HeaderText = "Precio"
             dgvArancelesSelect.Columns(1).HeaderText = "Descripcion General"
+            dgvArancelesSelect.Columns(4).HeaderText = "ID_A"
 
             dgvArancelesSelect.Columns(0).Visible = False
+            dgvArancelesSelect.Columns(4).Visible = False
 
-            dgvArancelesSelect.Rows.Add(dgvAuxiliar.Rows(0).Cells(0).Value, dgvAuxiliar.Rows(0).Cells(1).Value, dgvAuxiliar.Rows(0).Cells(2).Value, dgvAuxiliar.Rows(0).Cells(3).Value)
+            dgvArancelesSelect.Rows.Add(dgvAuxiliar.Rows(0).Cells(0).Value, dgvAuxiliar.Rows(0).Cells(1).Value, dgvAuxiliar.Rows(0).Cells(2).Value, dgvAuxiliar.Rows(0).Cells(3).Value, dgvAuxiliar.Rows(0).Cells(4).Value)
 
-            dgvArancelesSelect.AutoResizeColumn(1, 2)
+
         Catch ex As Exception
 
             MsgBox("Error al mover arancel", MsgBoxStyle.Exclamation)
@@ -105,6 +107,6 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         Me.Hide()
-        CrearCita.Show()
+        frmCrearCita.Show()
     End Sub
 End Class

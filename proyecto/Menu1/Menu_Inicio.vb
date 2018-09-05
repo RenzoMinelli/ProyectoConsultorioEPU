@@ -78,7 +78,7 @@
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblPacientes.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = Pacientes
+        frmContenedor = frmPacientes
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -87,7 +87,7 @@
         Label3.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
-        Pacientes.dgvPacientes.ClearSelection()
+        frmPacientes.dgvPacientes.ClearSelection()
 
     End Sub
 
@@ -197,7 +197,7 @@
 
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPacientes.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = Pacientes
+        frmContenedor = frmPacientes
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -206,7 +206,7 @@
         Label3.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
-        Pacientes.dgvPacientes.ClearSelection()
+        frmPacientes.dgvPacientes.ClearSelection()
     End Sub
 
     Private Sub Panel8_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel8.MouseDown
@@ -264,7 +264,7 @@
 
     Private Sub Panel10_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlPacientes.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = Pacientes
+        frmContenedor = frmPacientes
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()

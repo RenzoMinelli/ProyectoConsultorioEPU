@@ -1,4 +1,4 @@
-﻿Public Class ModificarPaciente
+﻿Public Class frmModificarPaciente
 
     Dim nac2 As String
 
@@ -32,84 +32,84 @@
 
         If txbNombre.Text <> "" And txbCedula.Text <> "" And txbDireccionPersonal.Text <> "" Then
 
-            If txbNombre.Text <> Pacientes.nombre Then
+            If txbNombre.Text <> frmPacientes.nombre Then
                 ver = 1
-                Pacientes.nombre = txbNombre.Text
+                frmPacientes.nombre = txbNombre.Text
             End If
-            If txbCedula.Text <> Pacientes.cedula Then
+            If txbCedula.Text <> frmPacientes.cedula Then
                 ver2 = 1
-                Pacientes.cedula = txbCedula.Text
+                frmPacientes.cedula = txbCedula.Text
             End If
-            If txbEnviadoPor.Text <> Pacientes.enviado Then
+            If txbEnviadoPor.Text <> frmPacientes.enviado Then
                 ver3 = 1
-                Pacientes.enviado = txbEnviadoPor.Text
+                frmPacientes.enviado = txbEnviadoPor.Text
             End If
-            If txbDireccionPersonal.Text <> Pacientes.direccion Then
+            If txbDireccionPersonal.Text <> frmPacientes.direccion Then
                 ver4 = 1
-                Pacientes.direccion = txbDireccionPersonal.Text
+                frmPacientes.direccion = txbDireccionPersonal.Text
             End If
-            If txbDireccionTrabajo.Text <> Pacientes.direTra Then
+            If txbDireccionTrabajo.Text <> frmPacientes.direTra Then
                 ver5 = 1
-                Pacientes.direTra = txbDireccionTrabajo.Text
+                frmPacientes.direTra = txbDireccionTrabajo.Text
             End If
-            If Pacientes.nac <> nac2 Then
+            If frmPacientes.nac <> nac2 Then
                 ver6 = 1
             End If
-            If txbTelefono.Text <> Pacientes.telefono Then
+            If txbTelefono.Text <> frmPacientes.telefono Then
                 ver7 = 1
-                Pacientes.telefono = txbTelefono.Text
+                frmPacientes.telefono = txbTelefono.Text
 
             End If
-            If txbApellido.Text <> Pacientes.apellido Then
+            If txbApellido.Text <> frmPacientes.apellido Then
                 ver8 = 1
-                Pacientes.apellido = txbApellido.Text
+                frmPacientes.apellido = txbApellido.Text
             End If
 
-            Pacientes.nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
+            frmPacientes.nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
 
             Try
                 If ver = 1 Then
-                    Consulta = "UPDATE paciente SET nombre = '" + Pacientes.nombre + "' WHERE id_p = " + Str(id_p) + ";"
+                    Consulta = "UPDATE paciente SET nombre = '" + frmPacientes.nombre + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
                 If ver2 = 1 Then
-                    Consulta = "UPDATE paciente SET cedula = '" + Pacientes.cedula + "' WHERE id_p = " + Str(id_p) + ";"
+                    Consulta = "UPDATE paciente SET cedula = '" + frmPacientes.cedula + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
                 If ver3 = 1 Then
-                    If Pacientes.enviado = "" Then
+                    If frmPacientes.enviado = "" Then
                         Consulta = "UPDATE paciente SET enviado_por = null WHERE id_p = " + Str(id_p) + ";"
                         consultar()
                     Else
-                        Consulta = "UPDATE paciente SET enviado_por = '" + Pacientes.enviado + "' WHERE id_p = " + Str(id_p) + ";"
+                        Consulta = "UPDATE paciente SET enviado_por = '" + frmPacientes.enviado + "' WHERE id_p = " + Str(id_p) + ";"
                         consultar()
                     End If
 
                 End If
                 If ver4 = 1 Then
-                    Consulta = "UPDATE paciente SET direccion_particular = '" + Pacientes.direccion + "' WHERE id_p = " + Str(id_p) + ";"
+                    Consulta = "UPDATE paciente SET direccion_particular = '" + frmPacientes.direccion + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
                 If ver5 = 1 Then
-                    If Pacientes.direTra = "" Then
+                    If frmPacientes.direTra = "" Then
                         Consulta = "UPDATE paciente SET direccion_trabajo = null WHERE id_p = " + Str(id_p) + ";"
                         consultar()
                     Else
-                        Consulta = "UPDATE paciente SET direccion_trabajo = '" + Pacientes.direTra + "' WHERE id_p = " + Str(id_p) + ";"
+                        Consulta = "UPDATE paciente SET direccion_trabajo = '" + frmPacientes.direTra + "' WHERE id_p = " + Str(id_p) + ";"
                         consultar()
                     End If
 
                 End If
                 If ver6 = 1 Then
-                    Consulta = "UPDATE paciente SET fecha_nacimiento = '" + Pacientes.nac + "' WHERE id_p = " + Str(id_p) + ";"
+                    Consulta = "UPDATE paciente SET fecha_nacimiento = '" + frmPacientes.nac + "' WHERE id_p = " + Str(id_p) + ";"
                     consultar()
                 End If
                 If ver7 = 1 Then
-                    Consulta = "UPDATE paciente SET telefono = '" + Pacientes.telefono + "' where id_p = '" + id_p.ToString + "';"
+                    Consulta = "UPDATE paciente SET telefono = '" + frmPacientes.telefono + "' where id_p = '" + id_p.ToString + "';"
                     consultar()
                 End If
                 If ver8 = 1 Then
-                    Consulta = "UPDATE paciente SET apellido = '" + Pacientes.apellido + "' where id_p = '" + id_p.ToString + "';"
+                    Consulta = "UPDATE paciente SET apellido = '" + frmPacientes.apellido + "' where id_p = '" + id_p.ToString + "';"
                     consultar()
                 End If
                 If cambio = 1 Then
@@ -127,9 +127,9 @@
                 End If
                 MsgBox("Guardado con Exito")
 
-                Pacientes.Show()
-                Pacientes.actTabla(1)
-                Pacientes.actPanel()
+                frmPacientes.Show()
+                frmPacientes.actTabla(1)
+                frmPacientes.actPanel()
                 Me.Dispose()
 
             Catch ex As Exception
@@ -156,15 +156,15 @@
 
 
 
-        txbApellido.Text = Pacientes.apellido
-        txbNombre.Text = Pacientes.nombre
-        txbCedula.Text = Pacientes.cedula
-        txbEnviadoPor.Text = Pacientes.enviado
-        txbDireccionPersonal.Text = Pacientes.direccion
-        txbDireccionTrabajo.Text = Pacientes.direTra
-        txbTelefono.Text = Pacientes.telefono
-        mcFechaNacimiento.SelectionRange.Start = Pacientes.nac
-        lblFechaSeleccionada.Text = "Fecha seleccionada " + Pacientes.nac
+        txbApellido.Text = frmPacientes.apellido
+        txbNombre.Text = frmPacientes.nombre
+        txbCedula.Text = frmPacientes.cedula
+        txbEnviadoPor.Text = frmPacientes.enviado
+        txbDireccionPersonal.Text = frmPacientes.direccion
+        txbDireccionTrabajo.Text = frmPacientes.direTra
+        txbTelefono.Text = frmPacientes.telefono
+        mcFechaNacimiento.SelectionRange.Start = frmPacientes.nac
+        lblFechaSeleccionada.Text = "Fecha seleccionada " + frmPacientes.nac
 
         'Antecedentes
         Consulta = "SELECT * FROM antecedentes where id_p = '" + Str(id_p) + "';"
@@ -186,13 +186,13 @@
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Dispose()
-        Pacientes.Show()
+        frmPacientes.Show()
     End Sub
 
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarAntecedentes.Click
         Me.Hide()
-        frmContenedor = ModificarAntecedentes
+        frmContenedor = frmModificarAntecedentes
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()

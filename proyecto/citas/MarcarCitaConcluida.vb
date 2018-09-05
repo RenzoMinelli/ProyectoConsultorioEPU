@@ -2,7 +2,7 @@
     Dim id_r As Integer
     Private Sub MarcarCitaConcluida_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
-            Consulta = "Select r.id_r, r.id_p, a.descripcion as 'Descripcion General',r.precio as 'Precio',r.descripcion as 'Descripcion Especifica', r.id_a from registro_medico r inner join aranceles a on r.id_a = a.id_a where r.id_c = '" + Citas.idcita.ToString + "';"
+            Consulta = "Select r.id_r, r.id_p, a.descripcion as 'Descripcion General',r.precio as 'Precio',r.descripcion as 'Descripcion Especifica', r.id_a from registro_medico r left join aranceles a on r.id_a = a.id_a where r.id_c = '" + Citas.idcita.ToString + "';"
             consultar()
             dgvAranceles.DataSource = Tabla
 

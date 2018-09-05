@@ -13,7 +13,7 @@
 
 
     Private Sub Citas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        factual = Now.ToString("DayOfTheWeek")
+        'factual = Now.ToString("DayOfTheWeek")
 
         Consulta = "selct * from citas"
         consultar()
@@ -38,7 +38,7 @@
 
     Private Sub Label20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Dispose()
-        Pacientes.Show()
+        frmPacientes.Show()
     End Sub
 
     Private Sub SaveFileDialog3_FileOk(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs)
@@ -101,11 +101,5 @@
 
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        Me.Hide()
-        frmContenedor = PlanTratamiento
-        frmContenedor.MdiParent = Menu_Inicio
-        frmContenedor.Dock = DockStyle.Fill
-        frmContenedor.Show()
-    End Sub
+   
 End Class

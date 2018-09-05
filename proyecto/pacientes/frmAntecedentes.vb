@@ -1,4 +1,4 @@
-﻿Public Class Antecedentes
+﻿Public Class frmAntecedentes
 
     Private Sub Antecedentes2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Consulta = "select * from antecedentes where id_p = '" + Str(id_p) + "';"
@@ -83,18 +83,18 @@
         Else
 
             MsgBox("Este usuario no tiene " + vbNewLine + "antecedentes registrados", MsgBoxStyle.Exclamation)
-            Pacientes.Show()
+            frmPacientes.Show()
 
         End If
 
-        
+
 
 
     End Sub
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Pacientes.Show()
+        frmPacientes.Show()
         Me.Dispose()
     End Sub
 

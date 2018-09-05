@@ -1,4 +1,4 @@
-﻿Public Class IngresarPaciente
+﻿Public Class frmIngresarPaciente
 
 
 
@@ -18,8 +18,8 @@
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
-        Pacientes.direTra = ""
-        Pacientes.enviado = ""
+        frmPacientes.direTra = ""
+        frmPacientes.enviado = ""
         Dim ver As Integer = 0
         Dim ver2 As Integer = 0
 
@@ -37,36 +37,36 @@
                         If alergicos = False And diabeticos = False And cardiovasculares = False And fiebre_reumatica = False And coagulacion = False And odontologicos = False And farmacos_recibidos = False And familiares = False And tratamiento_medico = False And observaciones = "" Then
                             If MsgBox("No fue ingresado ningún antecedente," + vbNewLine + "¿Desea continuar de todos modos?", MsgBoxStyle.YesNo) = vbYes Then
 
-                                Pacientes.nombre = txbNombre.Text.ToUpper
-                                Pacientes.apellido = txbApellido.Text.ToUpper
-                                Pacientes.cedula = txbCedula.Text
+                                frmPacientes.nombre = txbNombre.Text.ToUpper
+                                frmPacientes.apellido = txbApellido.Text.ToUpper
+                                frmPacientes.cedula = txbCedula.Text
                                 If txbEnviadoPor.Text <> "" Then
                                     ver = 1
-                                    Pacientes.enviado = txbEnviadoPor.Text
+                                    frmPacientes.enviado = txbEnviadoPor.Text
                                 End If
-                                Pacientes.telefono = txbTelefono.Text
-                                Pacientes.direccion = txbDireccionPersonal.Text.ToUpper
+                                frmPacientes.telefono = txbTelefono.Text
+                                frmPacientes.direccion = txbDireccionPersonal.Text.ToUpper
 
                                 If txbDireccionTrabajo.Text <> "" Then
-                                    Pacientes.direTra = txbDireccionTrabajo.Text.ToUpper
+                                    frmPacientes.direTra = txbDireccionTrabajo.Text.ToUpper
                                     ver2 = 1
                                 End If
 
-                                Pacientes.nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
+                                frmPacientes.nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
 
                                 Try
                                     If ver = 0 And ver2 = 0 Then
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular) values('" + frmPacientes.cedula + "','" + frmPacientes.nac + "','" + frmPacientes.nombre + "', '" + frmPacientes.apellido + "', '" + frmPacientes.telefono + "','" + frmPacientes.direccion + "');"
 
                                     ElseIf ver = 0 And ver2 = 1 Then
 
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular, direccion_trabajo) values('" + frmPacientes.cedula + "','" + frmPacientes.nac + "','" + frmPacientes.nombre + "', '" + frmPacientes.apellido + "', '" + frmPacientes.telefono + "','" + frmPacientes.direccion + "','" + frmPacientes.direTra + "');"
                                     ElseIf ver = 1 And ver2 = 0 Then
 
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular) values('" + frmPacientes.cedula + "','" + frmPacientes.nac + "','" + frmPacientes.nombre + "', '" + frmPacientes.apellido + "', '" + frmPacientes.telefono + "','" + frmPacientes.enviado + "','" + frmPacientes.direccion + "');"
                                     ElseIf ver = 1 And ver2 = 1 Then
 
-                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
+                                        Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + frmPacientes.cedula + "','" + frmPacientes.nac + "','" + frmPacientes.nombre + "', '" + frmPacientes.apellido + "', '" + frmPacientes.telefono + "','" + frmPacientes.enviado + "','" + frmPacientes.direccion + "','" + frmPacientes.direTra + "');"
                                     End If
 
 
@@ -75,8 +75,8 @@
                                     MsgBox("Agregado con Exito", MsgBoxStyle.Information)
 
                                     Me.Dispose()
-                                    Pacientes.Show()
-                                    Pacientes.actTabla(1)
+                                    frmPacientes.Show()
+                                    frmPacientes.actTabla(1)
                                 Catch ex As Exception
                                     MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
                                 End Try
@@ -84,37 +84,37 @@
 
                             End If
                         Else
-                            Pacientes.nombre = txbNombre.Text.ToUpper
-                            Pacientes.cedula = txbCedula.Text
-                            Pacientes.apellido = txbApellido.Text.ToUpper
+                            frmPacientes.nombre = txbNombre.Text.ToUpper
+                            frmPacientes.cedula = txbCedula.Text
+                            frmPacientes.apellido = txbApellido.Text.ToUpper
                             If txbEnviadoPor.Text <> "" Then
                                 ver = 1
-                                Pacientes.enviado = txbEnviadoPor.Text.ToUpper
+                                frmPacientes.enviado = txbEnviadoPor.Text.ToUpper
                             End If
-                            Pacientes.telefono = txbTelefono.Text
-                            Pacientes.direccion = txbDireccionPersonal.Text.ToUpper
+                            frmPacientes.telefono = txbTelefono.Text
+                            frmPacientes.direccion = txbDireccionPersonal.Text.ToUpper
 
                             If txbDireccionTrabajo.Text <> "" Then
-                                Pacientes.direTra = txbDireccionTrabajo.Text.ToUpper
+                                frmPacientes.direTra = txbDireccionTrabajo.Text.ToUpper
                                 ver2 = 1
                             End If
 
-                            Pacientes.nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
+                            frmPacientes.nac = mcFechaNacimiento.SelectionRange.Start.ToString("yyyy-MM-dd")
 
 
                             Try
                                 If ver = 0 And ver2 = 0 Then
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular) values('" + frmPacientes.cedula + "','" + frmPacientes.nac + "','" + frmPacientes.nombre + "', '" + frmPacientes.apellido + "', '" + frmPacientes.telefono + "','" + frmPacientes.direccion + "');"
 
                                 ElseIf ver = 0 And ver2 = 1 Then
 
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, direccion_particular, direccion_trabajo) values('" + frmPacientes.cedula + "','" + frmPacientes.nac + "','" + frmPacientes.nombre + "', '" + frmPacientes.apellido + "', '" + frmPacientes.telefono + "','" + frmPacientes.direccion + "','" + frmPacientes.direTra + "');"
                                 ElseIf ver = 1 And ver2 = 0 Then
 
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular) values('" + frmPacientes.cedula + "','" + frmPacientes.nac + "','" + frmPacientes.nombre + "', '" + frmPacientes.apellido + "', '" + frmPacientes.telefono + "','" + frmPacientes.enviado + "','" + frmPacientes.direccion + "');"
                                 ElseIf ver = 1 And ver2 = 1 Then
 
-                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + Pacientes.cedula + "','" + Pacientes.nac + "','" + Pacientes.nombre + "', '" + Pacientes.apellido + "', '" + Pacientes.telefono + "','" + Pacientes.enviado + "','" + Pacientes.direccion + "','" + Pacientes.direTra + "');"
+                                    Consulta = "INSERT INTO paciente (cedula, fecha_nacimiento, nombre, apellido, telefono, enviado_por, direccion_particular, direccion_trabajo) values('" + frmPacientes.cedula + "','" + frmPacientes.nac + "','" + frmPacientes.nombre + "', '" + frmPacientes.apellido + "', '" + frmPacientes.telefono + "','" + frmPacientes.enviado + "','" + frmPacientes.direccion + "','" + frmPacientes.direTra + "');"
                                 End If
 
 
@@ -142,8 +142,8 @@
                                 MsgBox("Agregado con Exito", MsgBoxStyle.Information)
 
                                 Me.Dispose()
-                                Pacientes.Show()
-                                Pacientes.actTabla(1)
+                                frmPacientes.Show()
+                                frmPacientes.actTabla(1)
                             Catch ex As Exception
                                 MsgBox("Error al ingresar antecedentes", MsgBoxStyle.Exclamation)
                             End Try
@@ -183,12 +183,12 @@
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Dispose()
-        Pacientes.Show()
+        frmPacientes.Show()
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarAntecedentes.Click
         Me.Hide()
-        frmContenedor = AgregarAntecedentes
+        frmContenedor = frmAgregarAntecedentes
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -223,12 +223,17 @@
                 Else
                     Return False
                 End If
+
             Catch ex As Exception
+
                 Return False
+
             End Try
+
         Else
 
             Return False
+
         End If
 
     End Function

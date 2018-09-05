@@ -1,4 +1,4 @@
-﻿Public Class CrearCita
+﻿Public Class frmCrearCita
 
     Dim fecha As String
     Dim hora As String
@@ -6,7 +6,7 @@
 
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
-        Pacientes.Show()
+        frmPacientes.Show()
         Me.Dispose()
     End Sub
 
@@ -75,12 +75,10 @@
 
                         id_c = dgvAuxiliar.Rows(dgvAuxiliar.RowCount - 1).Cells(0).Value
 
-                        MsgBox("id_c: " + id_c.ToString)
+
                         For x = 0 To MarcarProximaCitaAranceles.dgvArancelesSelect.RowCount - 1
 
-                            ' MsgBox("se ejecuto el for,precio: " + PlanTratamiento.dgvArancelesSelect.Rows(x).Cells(2).Value + " id_c: " + id_c.ToString)
-
-                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + id_c.ToString + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "');"
+                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + id_c.ToString + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "');"
                             consultar()
 
                         Next
@@ -88,7 +86,7 @@
                         MsgBox("Registrado", MsgBoxStyle.Information)
                         MarcarProximaCitaAranceles.Dispose()
                         Me.Dispose()
-                        Pacientes.Show()
+                        frmPacientes.Show()
 
                     Catch ex As Exception
 
