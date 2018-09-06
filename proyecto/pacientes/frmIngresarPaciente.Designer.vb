@@ -22,6 +22,7 @@ Partial Class frmIngresarPaciente
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.txbNombre = New System.Windows.Forms.TextBox()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.lblCedula = New System.Windows.Forms.Label()
@@ -44,10 +45,10 @@ Partial Class frmIngresarPaciente
         Me.dgvPacientesCedulas = New System.Windows.Forms.DataGridView()
         Me.lblApellido = New System.Windows.Forms.Label()
         Me.txbApellido = New System.Windows.Forms.TextBox()
-        Me.pbErrorCedula = New System.Windows.Forms.PictureBox()
+        Me.epCedula = New System.Windows.Forms.ErrorProvider(Me.components)
         CType(Me.dgvPacientesId, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvPacientesCedulas, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbErrorCedula, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.epCedula, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txbNombre
@@ -268,22 +269,15 @@ Partial Class frmIngresarPaciente
         Me.txbApellido.Size = New System.Drawing.Size(265, 35)
         Me.txbApellido.TabIndex = 2
         '
-        'pbErrorCedula
+        'epCedula
         '
-        Me.pbErrorCedula.Location = New System.Drawing.Point(615, 22)
-        Me.pbErrorCedula.Name = "pbErrorCedula"
-        Me.pbErrorCedula.Size = New System.Drawing.Size(36, 35)
-        Me.pbErrorCedula.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbErrorCedula.TabIndex = 22
-        Me.pbErrorCedula.TabStop = False
-        Me.pbErrorCedula.Visible = False
+        Me.epCedula.ContainerControl = Me
         '
-        'IngresarPaciente
+        'frmIngresarPaciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1330, 777)
-        Me.Controls.Add(Me.pbErrorCedula)
         Me.Controls.Add(Me.txbApellido)
         Me.Controls.Add(Me.lblApellido)
         Me.Controls.Add(Me.dgvPacientesCedulas)
@@ -307,12 +301,12 @@ Partial Class frmIngresarPaciente
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.txbNombre)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "IngresarPaciente"
+        Me.Name = "frmIngresarPaciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         CType(Me.dgvPacientesId, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvPacientesCedulas, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbErrorCedula, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.epCedula, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -339,5 +333,5 @@ Partial Class frmIngresarPaciente
     Friend WithEvents dgvPacientesCedulas As System.Windows.Forms.DataGridView
     Friend WithEvents lblApellido As System.Windows.Forms.Label
     Friend WithEvents txbApellido As System.Windows.Forms.TextBox
-    Friend WithEvents pbErrorCedula As System.Windows.Forms.PictureBox
+    Friend WithEvents epCedula As System.Windows.Forms.ErrorProvider
 End Class

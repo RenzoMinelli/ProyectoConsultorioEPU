@@ -10,37 +10,56 @@
             dgvAranceles.Columns(1).Visible = False
             dgvAranceles.Columns(5).Visible = False
 
+
+
         Catch ex As Exception
             MsgBox("No hay aranceles marcados", MsgBoxStyle.Exclamation)
         End Try
     End Sub
     Private Sub dgvAranceles_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvAranceles.CellDoubleClick
+
         id_r = dgvAranceles.CurrentRow.Cells(0).Value
+        Dim verificacion As Integer = 0
 
-        Try
-            Consulta = "Select r.id_p,  a.descripcion as 'Descripcion General',r.precio as 'Precio',r.descripcion as 'Descripcion Especifica',id_a from registro_medico r inner join aranceles a on r.id_a = a.id_a where id_r = '" + id_r.ToString + "';"
-            consultar()
+        For X = 0 To dgvArancelesSelect.RowCount - 1
 
-            dgvAuxiliar.DataSource = Tabla
+            If dgvArancelesSelect.Rows(X).Cells(5).Value = id_r Then
 
-            dgvArancelesSelect.ColumnCount = 5
-            dgvArancelesSelect.Columns(0).HeaderText = "ID_P"
-            dgvArancelesSelect.Columns(3).HeaderText = "Descripcion Especifica"
-            dgvArancelesSelect.Columns(2).HeaderText = "Precio"
-            dgvArancelesSelect.Columns(1).HeaderText = "Descripcion General"
-            dgvArancelesSelect.Columns(4).HeaderText = "ID_A"
+                verificacion = 1
 
-            dgvArancelesSelect.Columns(0).Visible = False
-            dgvArancelesSelect.Columns(4).Visible = False
+            End If
+        Next
+        If verificacion = 0 Then
+            Try
+                Consulta = "Select  r.id_p,  a.descripcion as 'Descripcion General',r.precio as 'Precio',r.descripcion as 'Descripcion Especifica',r.id_a, id_r from registro_medico r inner join aranceles a on r.id_a = a.id_a where id_r = '" + id_r.ToString + "';"
+                consultar()
 
-            dgvArancelesSelect.Rows.Add(dgvAuxiliar.Rows(0).Cells(0).Value, dgvAuxiliar.Rows(0).Cells(1).Value, dgvAuxiliar.Rows(0).Cells(2).Value, dgvAuxiliar.Rows(0).Cells(3).Value)
+                dgvAuxiliar.DataSource = Tabla
 
-            dgvArancelesSelect.AutoResizeColumn(1, 2)
-        Catch ex As Exception
+                dgvArancelesSelect.ColumnCount = 6
+                dgvArancelesSelect.Columns(0).HeaderText = "ID_P"
+                dgvArancelesSelect.Columns(3).HeaderText = "Descripcion Especifica"
+                dgvArancelesSelect.Columns(2).HeaderText = "Precio"
+                dgvArancelesSelect.Columns(1).HeaderText = "Descripcion General"
+                dgvArancelesSelect.Columns(4).HeaderText = "ID_A"
+                dgvArancelesSelect.Columns(5).HeaderText = "ID_R"
 
-            MsgBox("Error al mover arancel", MsgBoxStyle.Exclamation)
+                dgvArancelesSelect.Columns(0).Visible = False
+                dgvArancelesSelect.Columns(4).Visible = False
+                dgvArancelesSelect.Columns(5).Visible = False
 
-        End Try
+                dgvArancelesSelect.Rows.Add(dgvAuxiliar.Rows(0).Cells(0).Value, dgvAuxiliar.Rows(0).Cells(1).Value, dgvAuxiliar.Rows(0).Cells(2).Value, dgvAuxiliar.Rows(0).Cells(3).Value, dgvAuxiliar.Rows(0).Cells(4).Value, dgvAuxiliar.Rows(0).Cells(5).Value)
+
+
+            Catch ex As Exception
+
+                MsgBox("Error al mover arancel" + ex.ToString, MsgBoxStyle.Exclamation)
+
+            End Try
+        Else
+            MsgBox("Este Arancel ya fue marcado como realizado en la cita", MsgBoxStyle.Exclamation)
+        End If
+       
 
     End Sub
 
@@ -114,6 +133,12 @@
                 Consulta = "update paciente set saldo += '" + costo.ToString + "' where id_p = '" + dgvArancelesSelect.Rows(0).Cells(0).Value.ToString + "';"
                 consultar()
 
+                Consulta = "update cita set realizada = 1 where id_c = '" + Citas.idcita.ToString + "';"
+                consultar()
+
+                MsgBox("Guardado con éxito", MsgBoxStyle.Information)
+                Me.Dispose()
+                Citas.Show()
             Catch ex As Exception
 
                 MsgBox("Error al aumentar el saldo del paciente", MsgBoxStyle.Exclamation)
@@ -123,5 +148,10 @@
         Catch ex As Exception
             MsgBox("Error al registrar los aranceles utilizados", MsgBoxStyle.Exclamation)
         End Try
+    End Sub
+
+    Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
+        Me.Dispose()
+        Citas.Show()
     End Sub
 End Class

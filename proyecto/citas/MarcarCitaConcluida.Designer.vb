@@ -37,6 +37,7 @@ Partial Class MarcarCitaConcluida
         Me.dgvArancelesSelect = New System.Windows.Forms.DataGridView()
         Me.lblAranceles = New System.Windows.Forms.Label()
         Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.btnCancelar = New System.Windows.Forms.Button()
         CType(Me.dgvAranceles, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvArancelesSelect, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -210,11 +211,23 @@ Partial Class MarcarCitaConcluida
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
+        'btnCancelar
+        '
+        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCancelar.Location = New System.Drawing.Point(44, 471)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(166, 84)
+        Me.btnCancelar.TabIndex = 21
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
+        '
         'MarcarCitaConcluida
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1008, 634)
+        Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.lblAranceles)
         Me.Controls.Add(Me.btnIngresarDesc)
@@ -243,4 +256,5 @@ Partial Class MarcarCitaConcluida
     Friend WithEvents dgvArancelesSelect As System.Windows.Forms.DataGridView
     Friend WithEvents lblAranceles As System.Windows.Forms.Label
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
+    Friend WithEvents btnCancelar As System.Windows.Forms.Button
 End Class

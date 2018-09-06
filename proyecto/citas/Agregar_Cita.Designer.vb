@@ -35,6 +35,7 @@ Partial Class Agregar_Cita
         Me.botonsito = New System.Windows.Forms.Button()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
+        Me.btnIngresarAranceles = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,7 +45,7 @@ Partial Class Agregar_Cita
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label1.Location = New System.Drawing.Point(101, 41)
+        Me.Label1.Location = New System.Drawing.Point(28, 20)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(113, 29)
         Me.Label1.TabIndex = 0
@@ -54,7 +55,7 @@ Partial Class Agregar_Cita
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label2.Location = New System.Drawing.Point(552, 41)
+        Me.Label2.Location = New System.Drawing.Point(478, 20)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(86, 29)
         Me.Label2.TabIndex = 1
@@ -64,7 +65,7 @@ Partial Class Agregar_Cita
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label3.Location = New System.Drawing.Point(558, 262)
+        Me.Label3.Location = New System.Drawing.Point(763, 76)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(71, 29)
         Me.Label3.TabIndex = 2
@@ -72,7 +73,7 @@ Partial Class Agregar_Cita
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(664, 59)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(483, 59)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 5
         '
@@ -85,17 +86,17 @@ Partial Class Agregar_Cita
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(89, 82)
+        Me.DataGridView1.Location = New System.Drawing.Point(33, 59)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.Size = New System.Drawing.Size(299, 250)
+        Me.DataGridView1.Size = New System.Drawing.Size(407, 191)
         Me.DataGridView1.TabIndex = 7
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(267, 448)
+        Me.Button1.Location = New System.Drawing.Point(777, 487)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(239, 80)
         Me.Button1.TabIndex = 8
@@ -106,7 +107,7 @@ Partial Class Agregar_Cita
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label4.Location = New System.Drawing.Point(622, 314)
+        Me.Label4.Location = New System.Drawing.Point(478, 247)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(151, 29)
         Me.Label4.TabIndex = 3
@@ -114,17 +115,17 @@ Partial Class Agregar_Cita
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(576, 353)
+        Me.TextBox1.Location = New System.Drawing.Point(483, 279)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(384, 174)
+        Me.TextBox1.Size = New System.Drawing.Size(533, 101)
         Me.TextBox1.TabIndex = 4
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(119, 339)
+        Me.Label5.Location = New System.Drawing.Point(103, 268)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(235, 25)
         Me.Label5.TabIndex = 11
@@ -134,7 +135,7 @@ Partial Class Agregar_Cita
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(101, 364)
+        Me.Label6.Location = New System.Drawing.Point(85, 293)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(298, 25)
         Me.Label6.TabIndex = 12
@@ -143,7 +144,7 @@ Partial Class Agregar_Cita
         'botonsito
         '
         Me.botonsito.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.botonsito.Location = New System.Drawing.Point(-1, 448)
+        Me.botonsito.Location = New System.Drawing.Point(33, 487)
         Me.botonsito.Name = "botonsito"
         Me.botonsito.Size = New System.Drawing.Size(231, 79)
         Me.botonsito.TabIndex = 13
@@ -153,7 +154,7 @@ Partial Class Agregar_Cita
         'NumericUpDown1
         '
         Me.NumericUpDown1.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.NumericUpDown1.Location = New System.Drawing.Point(664, 260)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(768, 135)
         Me.NumericUpDown1.Maximum = New Decimal(New Integer() {24, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(122, 33)
@@ -162,17 +163,29 @@ Partial Class Agregar_Cita
         'NumericUpDown2
         '
         Me.NumericUpDown2.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.NumericUpDown2.Location = New System.Drawing.Point(792, 260)
+        Me.NumericUpDown2.Location = New System.Drawing.Point(896, 135)
         Me.NumericUpDown2.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
         Me.NumericUpDown2.Name = "NumericUpDown2"
         Me.NumericUpDown2.Size = New System.Drawing.Size(120, 33)
         Me.NumericUpDown2.TabIndex = 15
+        '
+        'btnIngresarAranceles
+        '
+        Me.btnIngresarAranceles.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIngresarAranceles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnIngresarAranceles.Location = New System.Drawing.Point(33, 403)
+        Me.btnIngresarAranceles.Name = "btnIngresarAranceles"
+        Me.btnIngresarAranceles.Size = New System.Drawing.Size(983, 62)
+        Me.btnIngresarAranceles.TabIndex = 21
+        Me.btnIngresarAranceles.Text = "Ingresar lo que se realizará en la cita"
+        Me.btnIngresarAranceles.UseVisualStyleBackColor = True
         '
         'Agregar_Cita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.Controls.Add(Me.btnIngresarAranceles)
         Me.Controls.Add(Me.NumericUpDown2)
         Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.botonsito)
@@ -209,4 +222,5 @@ Partial Class Agregar_Cita
     Friend WithEvents botonsito As System.Windows.Forms.Button
     Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents btnIngresarAranceles As System.Windows.Forms.Button
 End Class

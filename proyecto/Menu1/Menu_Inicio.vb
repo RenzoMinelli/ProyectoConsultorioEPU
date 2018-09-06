@@ -106,8 +106,7 @@
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCitas.Click
-        ' Me.ActiveMdiChild.Dispose()
-        ActiveMdiChild.Dispose()
+        Me.ActiveMdiChild.Dispose()
         frmContenedor = Citas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill

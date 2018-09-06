@@ -84,7 +84,8 @@
                         Next
 
                         MsgBox("Registrado", MsgBoxStyle.Information)
-                        MarcarProximaCitaAranceles.Dispose()
+
+                        frmContenedor.Dispose()
                         Me.Dispose()
                         frmPacientes.Show()
 
@@ -138,10 +139,11 @@
     End Sub
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Me.Hide()
+
         frmContenedor = MarcarProximaCitaAranceles
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
+
     End Sub
 End Class

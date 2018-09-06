@@ -173,9 +173,12 @@
     Private Sub MonthCalendar1_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles mcFechaNacimiento.DateChanged
         Dim nac As String = mcFechaNacimiento.SelectionRange.Start
         lblFechaSeleccionada.Text = "Fecha seleccionada " + nac
+        epCedula.BlinkStyle = ErrorBlinkStyle.AlwaysBlink
+        epCedula.BlinkRate = 200
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        
 
         Dim nac As String = mcFechaNacimiento.SelectionRange.Start
         lblFechaSeleccionada.Text = "Fecha seleccionada " + nac
@@ -239,18 +242,20 @@
     End Function
 
     Private Sub txbCedula_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbCedula.TextChanged
-        pbErrorCedula.Visible = True
+
 
         If verificarCedula(txbCedula.Text) = False Then
 
-            pbErrorCedula.Image = My.Resources.X
+
+            epCedula.SetError(txbCedula, "No es una cedula válida")
 
         ElseIf verificarCedula(txbCedula.Text) = True Then
-            pbErrorCedula.Image = My.Resources.checkmark
+
+            epCedula.SetError(txbCedula, "")
         End If
     End Sub
 
-    Private Sub pbErrorCedula_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pbErrorCedula.MouseEnter
+    Private Sub pbErrorCedula_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs)
         'If verificarCedula(txbCedula.Text) = False Then
 
 
