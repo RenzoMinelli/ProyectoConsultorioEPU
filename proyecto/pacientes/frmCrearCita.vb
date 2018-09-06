@@ -76,9 +76,9 @@
                         id_c = dgvAuxiliar.Rows(dgvAuxiliar.RowCount - 1).Cells(0).Value
 
 
-                        For x = 0 To MarcarProximaCitaAranceles.dgvArancelesSelect.RowCount - 1
+                        For x = 0 To frmMarcarProximaCitaAranceles.dgvArancelesSelect.RowCount - 1
 
-                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + id_c.ToString + "','" + MarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "');"
+                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + frmMarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + frmMarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + id_c.ToString + "','" + frmMarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "');"
                             consultar()
 
                         Next
@@ -140,7 +140,7 @@
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
-        frmContenedor = MarcarProximaCitaAranceles
+        frmContenedor = frmMarcarProximaCitaAranceles
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()

@@ -1,8 +1,8 @@
-﻿Public Class MarcarCitaConcluida
+﻿Public Class frmMarcarCitaConcluida
     Dim id_r As Integer
     Private Sub MarcarCitaConcluida_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
-            Consulta = "Select r.id_r, r.id_p, a.descripcion as 'Descripcion General',r.precio as 'Precio',r.descripcion as 'Descripcion Especifica', r.id_a from registro_medico r left join aranceles a on r.id_a = a.id_a where r.id_c = '" + Citas.idcita.ToString + "';"
+            Consulta = "Select r.id_r, r.id_p, a.descripcion as 'Descripcion General',r.precio as 'Precio',r.descripcion as 'Descripcion Especifica', r.id_a from registro_medico r left join aranceles a on r.id_a = a.id_a where r.id_c = '" + frmCitas.idcita.ToString + "';"
             consultar()
             dgvAranceles.DataSource = Tabla
 
@@ -59,7 +59,7 @@
         Else
             MsgBox("Este Arancel ya fue marcado como realizado en la cita", MsgBoxStyle.Exclamation)
         End If
-       
+
 
     End Sub
 
@@ -124,7 +124,7 @@
         Try
             Dim costo As Integer = 0
             For x = 0 To dgvArancelesSelect.RowCount - 1
-                Consulta = "Insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(3).Value.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + Citas.idcita.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "' );"
+                Consulta = "Insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(3).Value.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + frmCitas.idcita.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "' );"
                 consultar()
                 costo += dgvArancelesSelect.Rows(x).Cells(2).Value
             Next
@@ -133,12 +133,12 @@
                 Consulta = "update paciente set saldo += '" + costo.ToString + "' where id_p = '" + dgvArancelesSelect.Rows(0).Cells(0).Value.ToString + "';"
                 consultar()
 
-                Consulta = "update cita set realizada = 1 where id_c = '" + Citas.idcita.ToString + "';"
+                Consulta = "update cita set realizada = 1 where id_c = '" + frmCitas.idcita.ToString + "';"
                 consultar()
 
                 MsgBox("Guardado con éxito", MsgBoxStyle.Information)
                 Me.Dispose()
-                Citas.Show()
+                frmCitas.Show()
             Catch ex As Exception
 
                 MsgBox("Error al aumentar el saldo del paciente", MsgBoxStyle.Exclamation)
@@ -152,6 +152,6 @@
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Dispose()
-        Citas.Show()
+        frmCitas.Show()
     End Sub
 End Class

@@ -1,4 +1,4 @@
-﻿Public Class Citas
+﻿Public Class frmCitas
     'Dim a As Icon
     ' a = My.Resources.rambocursor
     'Me.Cursor = New Cursor(a.Handle)
@@ -52,7 +52,7 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Hide()
-        frmContenedor = Agregar_Cita
+        frmContenedor = frmAgregarCita
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -63,7 +63,7 @@
 
         fechita = fecha
         Me.Hide()
-        frmContenedor = MarcarCitaConcluida
+        frmContenedor = frmMarcarCitaConcluida
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -96,10 +96,10 @@
     End Sub
 
 
-   
+
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
 
     End Sub
 
-   
+
 End Class

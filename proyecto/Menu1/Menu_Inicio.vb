@@ -55,7 +55,7 @@
 
 
 
-            frmContenedor = Citas
+            frmContenedor = frmCitas
             frmContenedor.MdiParent = Me
             frmContenedor.Dock = DockStyle.Fill
             frmContenedor.Show()
@@ -107,7 +107,7 @@
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCitas.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = Citas
+        frmContenedor = frmCitas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -116,7 +116,7 @@
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
-        Citas.dgvLunes.ClearSelection()
+        frmCitas.dgvLunes.ClearSelection()
 
     End Sub
 
@@ -276,7 +276,7 @@
 
     Private Sub Panel9_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlCitas.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = Citas
+        frmContenedor = frmCitas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -359,7 +359,7 @@
 
     Private Sub PictureBox8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCitas.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = Citas
+        frmContenedor = frmCitas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -368,7 +368,7 @@
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
-        Citas.dgvLunes.ClearSelection()
+        frmCitas.dgvLunes.ClearSelection()
     End Sub
 
 End Class

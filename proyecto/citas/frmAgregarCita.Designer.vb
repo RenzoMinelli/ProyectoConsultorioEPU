@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Agregar_Cita
+Partial Class frmAgregarCita
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.

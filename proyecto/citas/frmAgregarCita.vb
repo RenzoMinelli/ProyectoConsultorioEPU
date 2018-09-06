@@ -1,4 +1,4 @@
-﻿Public Class Agregar_Cita
+﻿Public Class frmAgregarCita
     Dim h As String
     Dim fc As String
     Dim nombre As String
@@ -60,8 +60,8 @@
 
     End Sub
     Private Sub botonsito_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles botonsito.Click
-        Citas.Show()
-        Citas.actualizador()
+        frmCitas.Show()
+        frmCitas.actualizador()
         Me.Dispose()
     End Sub
 
@@ -75,7 +75,7 @@
 
     Private Sub btnIngresarAranceles_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarAranceles.Click
 
-        frmContenedor = MarcarProximaCitaAranceles
+        frmContenedor = frmMarcarProximaCitaAranceles
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()

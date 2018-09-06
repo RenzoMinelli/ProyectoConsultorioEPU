@@ -123,32 +123,55 @@
 
     End Sub
 
-    Private Sub txbBusqueda_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
-        'Cuando el contenido de txbBusqueda cambia, guardamos lo ingresado en la variable busqueda
-        Dim busqueda As String = txbBusqueda.Text
+    Private Sub txbBusqueda_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.Click
 
-        'Si el txbBusqueda es igual a 'Buscar' y es de color Gris
+        'Si el contenido de txbBusqueda es Buscar y de color gris
         If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
 
-            'Que actualice el dgbPaciente simplemente
-            ' actTabla(EstadoPacientes)
+            'El cursos se ubique al inicio
+            Me.txbBusqueda.SelectionStart = 0
 
-        Else 'Si no
+        End If
 
-            'Intentamos obtener los pacientes que cumplan con las condición
-            Try
+    End Sub
 
-                'Consulta = "Select id_p, cedula, fecha_nacimiento, upper(apellido) as 'nombre', upper(nombre) as 'apellido', telefono, upper(enviado_por) as 'enviado_por', upper(direccion_particular) as 'direccion_particular', upper(direccion_trabajo) as 'direccion_trabajo', saldo, estado from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + busqueda + "%' or cedula like '" + busqueda + "%' or apellido like '" + busqueda + "%' );"
+    Private Sub txbBusqueda_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.GotFocus
 
-                ' consultar()
-                dgbPacientes.DataSource = Tabla
+        'Si el contenido de txbBusqueda es Buscar y de color gris
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
 
-            Catch ex As Exception
+            'El cursos se ubique al inicio
+            txbBusqueda.SelectionStart = 0
 
-                'Si se genera una excepción que se muestre una alerta
-                MsgBox("Error al buscar los pacientes", MsgBoxStyle.Exclamation)
+        End If
 
-            End Try
+    End Sub
+
+    Private Sub txbBusqueda_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txbBusqueda.KeyDown
+
+        'Si el contenido de txbBusqueda es Buscar, de color gris y la tecla presionada no es 
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray And Not e.KeyCode = Keys.Back Then
+
+            'Borrar el contenido del txbBusqueda y volver el color negro
+            txbBusqueda.Text = ""
+            txbBusqueda.ForeColor = Color.Black
+
+
+            'Si txbBusqueda solo tiene una letra y la tecla presionada fue borrar, 
+        ElseIf e.KeyCode = Keys.Back And txbBusqueda.Text.Length = 1 Then
+
+            'Introduzco el texto 'Buscar' al txbBusqueda de color Gris
+            txbBusqueda.Text = "Buscar"
+            txbBusqueda.ForeColor = Color.Gray
+            actTabla(txbBusqueda.Text)
+
+            'Si la tecla presionada es borrar y todo el texto esta seleccionado
+        ElseIf e.KeyCode = Keys.Back And txbBusqueda.SelectedText = txbBusqueda.Text Then
+
+            'Introduzco el texto 'Buscar' al txbBusqueda de color Gris
+            txbBusqueda.Text = "Buscar"
+            txbBusqueda.ForeColor = Color.Gray
+            actTabla(txbBusqueda.Text)
 
         End If
     End Sub

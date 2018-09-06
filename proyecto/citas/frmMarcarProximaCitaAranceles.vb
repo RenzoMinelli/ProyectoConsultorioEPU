@@ -1,4 +1,4 @@
-﻿Public Class MarcarProximaCitaAranceles
+﻿Public Class frmMarcarProximaCitaAranceles
     Dim id_r As Integer
     Private Sub MarcarCosasCitas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
