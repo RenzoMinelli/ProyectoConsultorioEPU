@@ -64,7 +64,7 @@ Module Module1
 
     End Sub
     Public Sub MuestraMsgBoxVersatil(ByVal texto As String, ByVal tipo As Integer)
-        FondoTransparente.Show()
+        frmFondoTransparente.Show()
         If tipo = 0 Then
 
             Dim msgbv As New MsgBoxVersatil()
@@ -83,7 +83,7 @@ Module Module1
             Else
                 respint = 0
             End If
-            FondoTransparente.Dispose()
+            frmFondoTransparente.Dispose()
             msgbv.Dispose()
 
         ElseIf tipo = 1 Then
@@ -107,7 +107,7 @@ Module Module1
             Else
                 respString = "Error"
             End If
-            FondoTransparente.Dispose()
+            frmFondoTransparente.Dispose()
             msgbv.Dispose()
 
         End If

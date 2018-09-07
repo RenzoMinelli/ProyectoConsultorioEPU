@@ -83,34 +83,34 @@
     <Compile Include="atribuciones\atribuciones.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\Agregar_Cita.Designer.vb">
-      <DependentUpon>Agregar_Cita.vb</DependentUpon>
+    <Compile Include="citas\frmAgregarCita.Designer.vb">
+      <DependentUpon>frmAgregarCita.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\Agregar_Cita.vb">
+    <Compile Include="citas\frmAgregarCita.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\IngresarEstadoDientes.Designer.vb">
-      <DependentUpon>IngresarEstadoDientes.vb</DependentUpon>
+    <Compile Include="citas\frmIngresarEstadoDientes.Designer.vb">
+      <DependentUpon>frmIngresarEstadoDientes.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\IngresarEstadoDientes.vb">
+    <Compile Include="citas\frmIngresarEstadoDientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\MarcarCitaConcluida.Designer.vb">
-      <DependentUpon>MarcarCitaConcluida.vb</DependentUpon>
+    <Compile Include="citas\frmMarcarCitaConcluida.Designer.vb">
+      <DependentUpon>frmMarcarCitaConcluida.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\MarcarCitaConcluida.vb">
+    <Compile Include="citas\frmMarcarCitaConcluida.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\MarcarProximaCitaAranceles.Designer.vb">
-      <DependentUpon>MarcarProximaCitaAranceles.vb</DependentUpon>
+    <Compile Include="citas\frmMarcarProximaCitaAranceles.Designer.vb">
+      <DependentUpon>frmMarcarProximaCitaAranceles.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\MarcarProximaCitaAranceles.vb">
+    <Compile Include="citas\frmMarcarProximaCitaAranceles.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\PlanTratamiento.Designer.vb">
-      <DependentUpon>PlanTratamiento.vb</DependentUpon>
+    <Compile Include="pacientes\frmPlanTratamiento.Designer.vb">
+      <DependentUpon>frmPlanTratamiento.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\PlanTratamiento.vb">
+    <Compile Include="pacientes\frmPlanTratamiento.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="finanzas\finanzas.Designer.vb">
@@ -178,52 +178,52 @@
     <Compile Include="aranceles\Modificar_Arancel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\Citas.Designer.vb">
-      <DependentUpon>Citas.vb</DependentUpon>
+    <Compile Include="citas\frmCitas.Designer.vb">
+      <DependentUpon>frmCitas.vb</DependentUpon>
     </Compile>
-    <Compile Include="citas\Citas.vb">
+    <Compile Include="citas\frmCitas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\AgregarAntecedentes.Designer.vb">
-      <DependentUpon>AgregarAntecedentes.vb</DependentUpon>
+    <Compile Include="pacientes\frmAgregarAntecedentes.Designer.vb">
+      <DependentUpon>frmAgregarAntecedentes.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\AgregarAntecedentes.vb">
+    <Compile Include="pacientes\frmAgregarAntecedentes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\Antecedentes.Designer.vb">
-      <DependentUpon>Antecedentes.vb</DependentUpon>
+    <Compile Include="pacientes\frmAntecedentes.Designer.vb">
+      <DependentUpon>frmAntecedentes.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\Antecedentes.vb">
+    <Compile Include="pacientes\frmAntecedentes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\CrearCita.Designer.vb">
-      <DependentUpon>CrearCita.vb</DependentUpon>
+    <Compile Include="pacientes\frmCrearCita.Designer.vb">
+      <DependentUpon>frmCrearCita.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\CrearCita.vb">
+    <Compile Include="pacientes\frmCrearCita.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\FondoTransparente.Designer.vb">
-      <DependentUpon>FondoTransparente.vb</DependentUpon>
+    <Compile Include="pacientes\frmFondoTransparente.Designer.vb">
+      <DependentUpon>frmFondoTransparente.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\FondoTransparente.vb">
+    <Compile Include="pacientes\frmFondoTransparente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\InputPago.Designer.vb">
-      <DependentUpon>InputPago.vb</DependentUpon>
+    <Compile Include="pacientes\frmInputPago.Designer.vb">
+      <DependentUpon>frmInputPago.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\InputPago.vb">
+    <Compile Include="pacientes\frmInputPago.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\ModificarAntecedentes.Designer.vb">
-      <DependentUpon>ModificarAntecedentes.vb</DependentUpon>
+    <Compile Include="pacientes\frmModificarAntecedentes.Designer.vb">
+      <DependentUpon>frmModificarAntecedentes.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\ModificarAntecedentes.vb">
+    <Compile Include="pacientes\frmModificarAntecedentes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\ModificarPaciente.Designer.vb">
-      <DependentUpon>ModificarPaciente.vb</DependentUpon>
+    <Compile Include="pacientes\frmModificarPaciente.Designer.vb">
+      <DependentUpon>frmModificarPaciente.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\ModificarPaciente.vb">
+    <Compile Include="pacientes\frmModificarPaciente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MsgBoxVersatil.Designer.vb">
@@ -232,17 +232,17 @@
     <Compile Include="MsgBoxVersatil.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\Pacientes.vb">
+    <Compile Include="pacientes\frmPacientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\Pacientes.Designer.vb">
-      <DependentUpon>Pacientes.vb</DependentUpon>
+    <Compile Include="pacientes\frmPacientes.Designer.vb">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\IngresarPaciente.Designer.vb">
-      <DependentUpon>IngresarPaciente.vb</DependentUpon>
+    <Compile Include="pacientes\frmIngresarPaciente.Designer.vb">
+      <DependentUpon>frmIngresarPaciente.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\IngresarPaciente.vb">
+    <Compile Include="pacientes\frmIngresarPaciente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -256,10 +256,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="pacientes\RegistroMedico.Designer.vb">
-      <DependentUpon>RegistroMedico.vb</DependentUpon>
+    <Compile Include="pacientes\frmRegistroMedico.Designer.vb">
+      <DependentUpon>frmRegistroMedico.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\RegistroMedico.vb">
+    <Compile Include="pacientes\frmRegistroMedico.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -267,20 +267,20 @@
     <EmbeddedResource Include="atribuciones\atribuciones.resx">
       <DependentUpon>atribuciones.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\Agregar_Cita.resx">
-      <DependentUpon>Agregar_Cita.vb</DependentUpon>
+    <EmbeddedResource Include="citas\frmAgregarCita.resx">
+      <DependentUpon>frmAgregarCita.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\IngresarEstadoDientes.resx">
-      <DependentUpon>IngresarEstadoDientes.vb</DependentUpon>
+    <EmbeddedResource Include="citas\frmIngresarEstadoDientes.resx">
+      <DependentUpon>frmIngresarEstadoDientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\MarcarCitaConcluida.resx">
-      <DependentUpon>MarcarCitaConcluida.vb</DependentUpon>
+    <EmbeddedResource Include="citas\frmMarcarCitaConcluida.resx">
+      <DependentUpon>frmMarcarCitaConcluida.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\MarcarProximaCitaAranceles.resx">
-      <DependentUpon>MarcarProximaCitaAranceles.vb</DependentUpon>
+    <EmbeddedResource Include="citas\frmMarcarProximaCitaAranceles.resx">
+      <DependentUpon>frmMarcarProximaCitaAranceles.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\PlanTratamiento.resx">
-      <DependentUpon>PlanTratamiento.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmPlanTratamiento.resx">
+      <DependentUpon>frmPlanTratamiento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="finanzas\finanzas.resx">
       <DependentUpon>finanzas.vb</DependentUpon>
@@ -312,38 +312,38 @@
     <EmbeddedResource Include="aranceles\Modificar_Arancel.resx">
       <DependentUpon>Modificar_Arancel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\Citas.resx">
-      <DependentUpon>Citas.vb</DependentUpon>
+    <EmbeddedResource Include="citas\frmCitas.resx">
+      <DependentUpon>frmCitas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\AgregarAntecedentes.resx">
-      <DependentUpon>AgregarAntecedentes.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmAgregarAntecedentes.resx">
+      <DependentUpon>frmAgregarAntecedentes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\Antecedentes.resx">
-      <DependentUpon>Antecedentes.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmAntecedentes.resx">
+      <DependentUpon>frmAntecedentes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\CrearCita.resx">
-      <DependentUpon>CrearCita.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmCrearCita.resx">
+      <DependentUpon>frmCrearCita.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\FondoTransparente.resx">
-      <DependentUpon>FondoTransparente.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmFondoTransparente.resx">
+      <DependentUpon>frmFondoTransparente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\InputPago.resx">
-      <DependentUpon>InputPago.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmInputPago.resx">
+      <DependentUpon>frmInputPago.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\ModificarAntecedentes.resx">
-      <DependentUpon>ModificarAntecedentes.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmModificarAntecedentes.resx">
+      <DependentUpon>frmModificarAntecedentes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\ModificarPaciente.resx">
-      <DependentUpon>ModificarPaciente.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmModificarPaciente.resx">
+      <DependentUpon>frmModificarPaciente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MsgBoxVersatil.resx">
       <DependentUpon>MsgBoxVersatil.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\Pacientes.resx">
-      <DependentUpon>Pacientes.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmPacientes.resx">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\IngresarPaciente.resx">
-      <DependentUpon>IngresarPaciente.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmIngresarPaciente.resx">
+      <DependentUpon>frmIngresarPaciente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -351,8 +351,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\RegistroMedico.resx">
-      <DependentUpon>RegistroMedico.vb</DependentUpon>
+    <EmbeddedResource Include="pacientes\frmRegistroMedico.resx">
+      <DependentUpon>frmRegistroMedico.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
