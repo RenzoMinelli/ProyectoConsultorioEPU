@@ -61,7 +61,7 @@
     End Sub
     Private Sub botonsito_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles botonsito.Click
         frmCitas.Show()
-        frmCitas.actualizador()
+
         Me.Dispose()
     End Sub
 

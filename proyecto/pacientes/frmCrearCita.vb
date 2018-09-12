@@ -44,7 +44,7 @@
 
                 Dim HoraAux As TimeSpan = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
 
-                Dim HoraAuxFinal As New TimeSpan(0, 40, 0)
+                Dim HoraAuxFinal As New TimeSpan(0, 30, 0)
                 HoraAuxFinal = HoraAux + HoraAuxFinal
 
 

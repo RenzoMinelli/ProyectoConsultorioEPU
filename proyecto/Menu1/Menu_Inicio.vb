@@ -116,7 +116,7 @@
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
-        frmCitas.dgvLunes.ClearSelection()
+        'frmCitas.dgvLunes.ClearSelection()
 
     End Sub
 
@@ -368,7 +368,7 @@
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
-        frmCitas.dgvLunes.ClearSelection()
+        'frmCitas.dgvLunes.ClearSelection()
     End Sub
 
 End Class

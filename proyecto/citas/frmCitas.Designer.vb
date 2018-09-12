@@ -22,40 +22,29 @@ Partial Class frmCitas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.MCFecha = New System.Windows.Forms.MonthCalendar()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.dgvLunes = New System.Windows.Forms.DataGridView()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.dgvMartes = New System.Windows.Forms.DataGridView()
-        Me.dgvMiercoles = New System.Windows.Forms.DataGridView()
-        Me.dgvJueves = New System.Windows.Forms.DataGridView()
-        Me.dgvViernes = New System.Windows.Forms.DataGridView()
-        Me.dgvauxiliar = New System.Windows.Forms.DataGridView()
-        CType(Me.dgvLunes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvMartes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvMiercoles, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvJueves, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvViernes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvauxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LabelDia = New System.Windows.Forms.Label()
+        Me.seleccionado = New System.Windows.Forms.Label()
+        Me.dgvHora = New System.Windows.Forms.DataGridView()
+        Me.LBLLunes = New System.Windows.Forms.Label()
+        Me.dgvConsultaDia = New System.Windows.Forms.DataGridView()
+        CType(Me.dgvHora, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvConsultaDia, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'MonthCalendar1
+        'MCFecha
         '
-        Me.MonthCalendar1.CalendarDimensions = New System.Drawing.Size(1, 2)
-        Me.MonthCalendar1.Location = New System.Drawing.Point(6, 103)
-        Me.MonthCalendar1.Name = "MonthCalendar1"
-        Me.MonthCalendar1.TabIndex = 0
+        Me.MCFecha.CalendarDimensions = New System.Drawing.Size(1, 2)
+        Me.MCFecha.Location = New System.Drawing.Point(6, 151)
+        Me.MCFecha.Name = "MCFecha"
+        Me.MCFecha.TabIndex = 0
         '
         'Label1
         '
@@ -70,239 +59,151 @@ Partial Class frmCitas
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Button1.Location = New System.Drawing.Point(601, 506)
+        Me.Button1.Location = New System.Drawing.Point(12, 474)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(248, 83)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "agregar cita"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'dgvLunes
-        '
-        Me.dgvLunes.AllowUserToAddRows = False
-        Me.dgvLunes.AllowUserToDeleteRows = False
-        Me.dgvLunes.AllowUserToOrderColumns = True
-        Me.dgvLunes.AllowUserToResizeColumns = False
-        Me.dgvLunes.AllowUserToResizeRows = False
-        Me.dgvLunes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvLunes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle21.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvLunes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle21
-        Me.dgvLunes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle22.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvLunes.DefaultCellStyle = DataGridViewCellStyle22
-        Me.dgvLunes.Location = New System.Drawing.Point(257, 103)
-        Me.dgvLunes.Name = "dgvLunes"
-        Me.dgvLunes.ReadOnly = True
-        Me.dgvLunes.RowHeadersVisible = False
-        Me.dgvLunes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvLunes.Size = New System.Drawing.Size(134, 311)
-        Me.dgvLunes.TabIndex = 4
-        '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Button2.Location = New System.Drawing.Point(303, 502)
+        Me.Button2.Location = New System.Drawing.Point(6, 629)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(248, 90)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "Marcar cita como concluida"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'dgvMartes
+        'LabelDia
         '
-        Me.dgvMartes.AllowUserToAddRows = False
-        Me.dgvMartes.AllowUserToDeleteRows = False
-        Me.dgvMartes.AllowUserToOrderColumns = True
-        Me.dgvMartes.AllowUserToResizeColumns = False
-        Me.dgvMartes.AllowUserToResizeRows = False
-        Me.dgvMartes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvMartes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle23.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvMartes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle23
-        Me.dgvMartes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle24.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvMartes.DefaultCellStyle = DataGridViewCellStyle24
-        Me.dgvMartes.Location = New System.Drawing.Point(397, 103)
-        Me.dgvMartes.Name = "dgvMartes"
-        Me.dgvMartes.ReadOnly = True
-        Me.dgvMartes.RowHeadersVisible = False
-        Me.dgvMartes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvMartes.Size = New System.Drawing.Size(134, 311)
-        Me.dgvMartes.TabIndex = 7
+        Me.LabelDia.AutoSize = True
+        Me.LabelDia.Location = New System.Drawing.Point(720, 54)
+        Me.LabelDia.Name = "LabelDia"
+        Me.LabelDia.Size = New System.Drawing.Size(45, 13)
+        Me.LabelDia.TabIndex = 11
+        Me.LabelDia.Text = "labelDia"
         '
-        'dgvMiercoles
+        'seleccionado
         '
-        Me.dgvMiercoles.AllowUserToAddRows = False
-        Me.dgvMiercoles.AllowUserToDeleteRows = False
-        Me.dgvMiercoles.AllowUserToOrderColumns = True
-        Me.dgvMiercoles.AllowUserToResizeColumns = False
-        Me.dgvMiercoles.AllowUserToResizeRows = False
-        Me.dgvMiercoles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvMiercoles.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle25.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvMiercoles.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle25
-        Me.dgvMiercoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle26.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvMiercoles.DefaultCellStyle = DataGridViewCellStyle26
-        Me.dgvMiercoles.Location = New System.Drawing.Point(537, 103)
-        Me.dgvMiercoles.Name = "dgvMiercoles"
-        Me.dgvMiercoles.ReadOnly = True
-        Me.dgvMiercoles.RowHeadersVisible = False
-        Me.dgvMiercoles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvMiercoles.Size = New System.Drawing.Size(134, 311)
-        Me.dgvMiercoles.TabIndex = 8
+        Me.seleccionado.AutoSize = True
+        Me.seleccionado.Location = New System.Drawing.Point(535, 70)
+        Me.seleccionado.Name = "seleccionado"
+        Me.seleccionado.Size = New System.Drawing.Size(88, 13)
+        Me.seleccionado.TabIndex = 12
+        Me.seleccionado.Text = "DiaSeleccionado"
         '
-        'dgvJueves
+        'dgvHora
         '
-        Me.dgvJueves.AllowUserToAddRows = False
-        Me.dgvJueves.AllowUserToDeleteRows = False
-        Me.dgvJueves.AllowUserToOrderColumns = True
-        Me.dgvJueves.AllowUserToResizeColumns = False
-        Me.dgvJueves.AllowUserToResizeRows = False
-        Me.dgvJueves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvJueves.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle27.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvJueves.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle27
-        Me.dgvJueves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle28.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvJueves.DefaultCellStyle = DataGridViewCellStyle28
-        Me.dgvJueves.Location = New System.Drawing.Point(677, 103)
-        Me.dgvJueves.Name = "dgvJueves"
-        Me.dgvJueves.ReadOnly = True
-        Me.dgvJueves.RowHeadersVisible = False
-        Me.dgvJueves.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvJueves.Size = New System.Drawing.Size(134, 311)
-        Me.dgvJueves.TabIndex = 9
+        Me.dgvHora.AllowUserToAddRows = False
+        Me.dgvHora.AllowUserToDeleteRows = False
+        Me.dgvHora.AllowUserToOrderColumns = True
+        Me.dgvHora.AllowUserToResizeColumns = False
+        Me.dgvHora.AllowUserToResizeRows = False
+        Me.dgvHora.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvHora.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvHora.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvHora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvHora.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvHora.Location = New System.Drawing.Point(282, 151)
+        Me.dgvHora.Name = "dgvHora"
+        Me.dgvHora.ReadOnly = True
+        Me.dgvHora.RowHeadersVisible = False
+        Me.dgvHora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvHora.Size = New System.Drawing.Size(1043, 618)
+        Me.dgvHora.TabIndex = 13
         '
-        'dgvViernes
+        'LBLLunes
         '
-        Me.dgvViernes.AllowUserToAddRows = False
-        Me.dgvViernes.AllowUserToDeleteRows = False
-        Me.dgvViernes.AllowUserToOrderColumns = True
-        Me.dgvViernes.AllowUserToResizeColumns = False
-        Me.dgvViernes.AllowUserToResizeRows = False
-        Me.dgvViernes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvViernes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle29.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvViernes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle29
-        Me.dgvViernes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle30.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvViernes.DefaultCellStyle = DataGridViewCellStyle30
-        Me.dgvViernes.Location = New System.Drawing.Point(817, 103)
-        Me.dgvViernes.Name = "dgvViernes"
-        Me.dgvViernes.ReadOnly = True
-        Me.dgvViernes.RowHeadersVisible = False
-        Me.dgvViernes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvViernes.Size = New System.Drawing.Size(134, 311)
-        Me.dgvViernes.TabIndex = 10
+        Me.LBLLunes.AutoSize = True
+        Me.LBLLunes.Location = New System.Drawing.Point(444, 121)
+        Me.LBLLunes.Name = "LBLLunes"
+        Me.LBLLunes.Size = New System.Drawing.Size(36, 13)
+        Me.LBLLunes.TabIndex = 14
+        Me.LBLLunes.Text = "Lunes"
         '
-        'dgvauxiliar
+        'dgvConsultaDia
         '
-        Me.dgvauxiliar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvauxiliar.Location = New System.Drawing.Point(918, 552)
-        Me.dgvauxiliar.Name = "dgvauxiliar"
-        Me.dgvauxiliar.Size = New System.Drawing.Size(33, 37)
-        Me.dgvauxiliar.TabIndex = 11
+        Me.dgvConsultaDia.AllowUserToAddRows = False
+        Me.dgvConsultaDia.AllowUserToDeleteRows = False
+        Me.dgvConsultaDia.AllowUserToOrderColumns = True
+        Me.dgvConsultaDia.AllowUserToResizeColumns = False
+        Me.dgvConsultaDia.AllowUserToResizeRows = False
+        Me.dgvConsultaDia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvConsultaDia.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvConsultaDia.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvConsultaDia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvConsultaDia.DefaultCellStyle = DataGridViewCellStyle4
+        Me.dgvConsultaDia.Location = New System.Drawing.Point(1230, 54)
+        Me.dgvConsultaDia.Name = "dgvConsultaDia"
+        Me.dgvConsultaDia.ReadOnly = True
+        Me.dgvConsultaDia.RowHeadersVisible = False
+        Me.dgvConsultaDia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvConsultaDia.Size = New System.Drawing.Size(25, 22)
+        Me.dgvConsultaDia.TabIndex = 15
+        Me.dgvConsultaDia.Visible = False
         '
-        'Citas
+        'frmCitas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(976, 635)
-        Me.Controls.Add(Me.dgvauxiliar)
-        Me.Controls.Add(Me.dgvViernes)
-        Me.Controls.Add(Me.dgvJueves)
-        Me.Controls.Add(Me.dgvMiercoles)
-        Me.Controls.Add(Me.dgvMartes)
+        Me.ClientSize = New System.Drawing.Size(1384, 773)
+        Me.Controls.Add(Me.dgvConsultaDia)
+        Me.Controls.Add(Me.LBLLunes)
+        Me.Controls.Add(Me.dgvHora)
+        Me.Controls.Add(Me.seleccionado)
+        Me.Controls.Add(Me.LabelDia)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.dgvLunes)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.MonthCalendar1)
+        Me.Controls.Add(Me.MCFecha)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Citas"
+        Me.Name = "frmCitas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Citas"
-        CType(Me.dgvLunes, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvMartes, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvMiercoles, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvJueves, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvViernes, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvauxiliar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvHora, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvConsultaDia, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
+    Friend WithEvents MCFecha As System.Windows.Forms.MonthCalendar
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents dgvLunes As System.Windows.Forms.DataGridView
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents dgvMartes As System.Windows.Forms.DataGridView
-    Friend WithEvents dgvMiercoles As System.Windows.Forms.DataGridView
-    Friend WithEvents dgvJueves As System.Windows.Forms.DataGridView
-    Friend WithEvents dgvViernes As System.Windows.Forms.DataGridView
-    Friend WithEvents dgvauxiliar As System.Windows.Forms.DataGridView
+    Friend WithEvents LabelDia As System.Windows.Forms.Label
+    Friend WithEvents seleccionado As System.Windows.Forms.Label
+    Friend WithEvents dgvHora As System.Windows.Forms.DataGridView
+    Friend WithEvents LBLLunes As System.Windows.Forms.Label
+    Friend WithEvents dgvConsultaDia As System.Windows.Forms.DataGridView
 End Class
