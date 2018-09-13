@@ -33,7 +33,6 @@ Partial Class frmCitas
         Me.LabelDia = New System.Windows.Forms.Label()
         Me.seleccionado = New System.Windows.Forms.Label()
         Me.dgvHora = New System.Windows.Forms.DataGridView()
-        Me.LBLLunes = New System.Windows.Forms.Label()
         Me.dgvConsultaDia = New System.Windows.Forms.DataGridView()
         CType(Me.dgvHora, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvConsultaDia, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -128,15 +127,6 @@ Partial Class frmCitas
         Me.dgvHora.Size = New System.Drawing.Size(1043, 618)
         Me.dgvHora.TabIndex = 13
         '
-        'LBLLunes
-        '
-        Me.LBLLunes.AutoSize = True
-        Me.LBLLunes.Location = New System.Drawing.Point(444, 121)
-        Me.LBLLunes.Name = "LBLLunes"
-        Me.LBLLunes.Size = New System.Drawing.Size(36, 13)
-        Me.LBLLunes.TabIndex = 14
-        Me.LBLLunes.Text = "Lunes"
-        '
         'dgvConsultaDia
         '
         Me.dgvConsultaDia.AllowUserToAddRows = False
@@ -178,7 +168,6 @@ Partial Class frmCitas
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1384, 773)
         Me.Controls.Add(Me.dgvConsultaDia)
-        Me.Controls.Add(Me.LBLLunes)
         Me.Controls.Add(Me.dgvHora)
         Me.Controls.Add(Me.seleccionado)
         Me.Controls.Add(Me.LabelDia)
@@ -204,6 +193,5 @@ Partial Class frmCitas
     Friend WithEvents LabelDia As System.Windows.Forms.Label
     Friend WithEvents seleccionado As System.Windows.Forms.Label
     Friend WithEvents dgvHora As System.Windows.Forms.DataGridView
-    Friend WithEvents LBLLunes As System.Windows.Forms.Label
     Friend WithEvents dgvConsultaDia As System.Windows.Forms.DataGridView
 End Class
