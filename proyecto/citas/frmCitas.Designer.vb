@@ -40,8 +40,7 @@ Partial Class frmCitas
         '
         'MCFecha
         '
-        Me.MCFecha.CalendarDimensions = New System.Drawing.Size(1, 2)
-        Me.MCFecha.Location = New System.Drawing.Point(6, 151)
+        Me.MCFecha.Location = New System.Drawing.Point(927, 563)
         Me.MCFecha.Name = "MCFecha"
         Me.MCFecha.TabIndex = 0
         '
@@ -49,18 +48,18 @@ Partial Class frmCitas
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label1.Location = New System.Drawing.Point(14, 54)
+        Me.Label1.Location = New System.Drawing.Point(496, 638)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(350, 29)
+        Me.Label1.Size = New System.Drawing.Size(219, 58)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Ingrese el día para ver las citas:"
+        Me.Label1.Text = "Ingrese el día para " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ver las citas:"
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Button1.Location = New System.Drawing.Point(12, 474)
+        Me.Button1.Location = New System.Drawing.Point(247, 635)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(248, 83)
+        Me.Button1.Size = New System.Drawing.Size(227, 90)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "agregar cita"
         Me.Button1.UseVisualStyleBackColor = True
@@ -68,9 +67,9 @@ Partial Class frmCitas
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Button2.Location = New System.Drawing.Point(6, 629)
+        Me.Button2.Location = New System.Drawing.Point(14, 635)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(248, 90)
+        Me.Button2.Size = New System.Drawing.Size(227, 90)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "Marcar cita como concluida"
         Me.Button2.UseVisualStyleBackColor = True
@@ -78,7 +77,7 @@ Partial Class frmCitas
         'LabelDia
         '
         Me.LabelDia.AutoSize = True
-        Me.LabelDia.Location = New System.Drawing.Point(720, 54)
+        Me.LabelDia.Location = New System.Drawing.Point(733, 683)
         Me.LabelDia.Name = "LabelDia"
         Me.LabelDia.Size = New System.Drawing.Size(45, 13)
         Me.LabelDia.TabIndex = 11
@@ -87,7 +86,7 @@ Partial Class frmCitas
         'seleccionado
         '
         Me.seleccionado.AutoSize = True
-        Me.seleccionado.Location = New System.Drawing.Point(535, 70)
+        Me.seleccionado.Location = New System.Drawing.Point(733, 650)
         Me.seleccionado.Name = "seleccionado"
         Me.seleccionado.Size = New System.Drawing.Size(88, 13)
         Me.seleccionado.TabIndex = 12
@@ -111,6 +110,7 @@ Partial Class frmCitas
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvHora.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvHora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvHora.ColumnHeadersVisible = False
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -119,12 +119,12 @@ Partial Class frmCitas
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvHora.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvHora.Location = New System.Drawing.Point(282, 151)
+        Me.dgvHora.Location = New System.Drawing.Point(14, 12)
         Me.dgvHora.Name = "dgvHora"
         Me.dgvHora.ReadOnly = True
         Me.dgvHora.RowHeadersVisible = False
-        Me.dgvHora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvHora.Size = New System.Drawing.Size(1043, 618)
+        Me.dgvHora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
+        Me.dgvHora.Size = New System.Drawing.Size(1140, 605)
         Me.dgvHora.TabIndex = 13
         '
         'dgvConsultaDia
@@ -153,7 +153,7 @@ Partial Class frmCitas
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvConsultaDia.DefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvConsultaDia.Location = New System.Drawing.Point(1230, 54)
+        Me.dgvConsultaDia.Location = New System.Drawing.Point(1283, 12)
         Me.dgvConsultaDia.Name = "dgvConsultaDia"
         Me.dgvConsultaDia.ReadOnly = True
         Me.dgvConsultaDia.RowHeadersVisible = False
@@ -166,15 +166,15 @@ Partial Class frmCitas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1384, 773)
+        Me.ClientSize = New System.Drawing.Size(1384, 726)
         Me.Controls.Add(Me.dgvConsultaDia)
-        Me.Controls.Add(Me.dgvHora)
         Me.Controls.Add(Me.seleccionado)
         Me.Controls.Add(Me.LabelDia)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MCFecha)
+        Me.Controls.Add(Me.dgvHora)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmCitas"

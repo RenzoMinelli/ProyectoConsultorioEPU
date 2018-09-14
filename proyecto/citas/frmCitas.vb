@@ -57,8 +57,6 @@
             LabelDia.Text = ("" + dia)
             seleccionado.Text = ("" + DiaSeleccionado)
 
-            MsgBox(FCalendario.ToString)
-
 
 
             ''En un case se muestran los datos de la semana seleccionada por el usuario
@@ -861,7 +859,7 @@
                     End If
 
 
-                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.Add(-1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1416,7 +1414,7 @@
                     End If
 
 
-                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.addays(-1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 

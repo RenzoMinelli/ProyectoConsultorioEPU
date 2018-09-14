@@ -90,6 +90,7 @@
                 Menu_Inicio.Show()
             Else
                 MsgBox("contraseña incorrecta porfavor reintente")
+                txtcontraseña.Clear()
             End If
 
         ElseIf contador = 2 Then

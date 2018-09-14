@@ -56,6 +56,7 @@
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
+        descEsp = dgvArancelesSelect.CurrentRow.Cells(3).Value
 
         For x = 0 To dgvArancelesSelect.RowCount - 1
 
