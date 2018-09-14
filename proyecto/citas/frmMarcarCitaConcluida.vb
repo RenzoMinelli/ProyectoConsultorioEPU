@@ -125,12 +125,18 @@
             Dim costo As Integer = 0
             For x = 0 To dgvArancelesSelect.RowCount - 1
                 Consulta = "Insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(3).Value.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + frmCitas.idcita.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "' );"
-                consultar()
+                'consultar()
                 costo += dgvArancelesSelect.Rows(x).Cells(2).Value
             Next
 
             Try
-                Consulta = "update paciente set saldo += '" + costo.ToString + "' where id_p = '" + dgvArancelesSelect.Rows(0).Cells(0).Value.ToString + "';"
+                Consulta = "select saldo from paciente where id_p = '" + dgvArancelesSelect.Rows(0).Cells(0).Value.ToString + "';"
+                consultar()
+
+                Dim dgvA As New DataGridView
+                dgvA.DataSource = Tabla
+
+                Consulta = "update paciente set saldo = '" + (dgvA.Rows(0).Cells(0).Value + costo).ToString + "' where id_p = '" + dgvArancelesSelect.Rows(0).Cells(0).Value.ToString + "';"
                 consultar()
 
                 Consulta = "update cita set realizada = 1 where id_c = '" + frmCitas.idcita.ToString + "';"
@@ -141,7 +147,7 @@
                 frmCitas.Show()
             Catch ex As Exception
 
-                MsgBox("Error al aumentar el saldo del paciente", MsgBoxStyle.Exclamation)
+                MsgBox("Error al aumentar el saldo del paciente" + ex.ToString, MsgBoxStyle.Exclamation)
 
             End Try
 
@@ -153,5 +159,15 @@
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Dispose()
         frmCitas.Show()
+    End Sub
+
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+        Me.Hide()
+        frmContenedor = frmPlanTratamiento
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+
     End Sub
 End Class

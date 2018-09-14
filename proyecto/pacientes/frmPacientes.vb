@@ -197,7 +197,7 @@
         btnMostrarAntecedentes.Show()
         btnRegistroMedico.Show()
         btnRealizarPago.Show()
-        btnPlanTratamiento.Show()
+
 
         'Guardamos en las variables los datos acordes
         id_p = dgvPacientes.CurrentRow.Cells(0).Value
@@ -435,11 +435,5 @@
     End Sub
 
 
-    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPlanTratamiento.Click
-        Me.Hide()
-        frmContenedor = frmPlanTratamiento
-        frmContenedor.MdiParent = Menu_Inicio
-        frmContenedor.Dock = DockStyle.Fill
-        frmContenedor.Show()
-    End Sub
+    
 End Class

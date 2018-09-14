@@ -1,6 +1,7 @@
 ﻿Public Class frmPlanTratamiento
     Dim id_Arancel As Integer
     Dim listaID_R As New List(Of Integer)
+    Dim descEsp As String
     Dim dt As DataTable
 
     Private Sub PlanTratamiento_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -27,7 +28,7 @@
             dgvArancelesSelect.Columns(1).HeaderText = "Descripcion"
             dgvArancelesSelect.Columns(2).HeaderText = "Precio"
             dgvArancelesSelect.Columns(3).HeaderText = "Descripcion especifica"
-            dgvArancelesSelect.Columns(4).HeaderText = "id_r"
+            dgvArancelesSelect.Columns(4).HeaderText = "id_pl"
 
             dgvArancelesSelect.Columns(0).Visible = False
             dgvArancelesSelect.Columns(4).Visible = False
@@ -45,6 +46,8 @@
     Private Sub dgvArancelesSelect_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvArancelesSelect.CellClick
 
         id_Arancel = dgvArancelesSelect.CurrentRow.Cells(0).Value
+        descEsp = dgvArancelesSelect.CurrentRow.Cells(3).Value
+
         btnEliminar.Visible = True
         btnModificarPrecio.Visible = True
         btnIngresarDesc.Visible = True
@@ -56,7 +59,7 @@
 
         For x = 0 To dgvArancelesSelect.RowCount - 1
 
-            If dgvArancelesSelect.Rows(x).Cells(0).Value = id_Arancel Then
+            If dgvArancelesSelect.Rows(x).Cells(0).Value = id_Arancel And dgvArancelesSelect.Rows(x).Cells(3).Value = descEsp Then
 
                 If dgvArancelesSelect.Rows(x).Cells(4).Value <> 0 Then
 
@@ -75,6 +78,7 @@
 
             btnEliminar.Visible = False
             btnModificarPrecio.Visible = False
+            btnIngresarDesc.Visible = False
 
         End If
     End Sub
@@ -156,11 +160,13 @@
     End Sub
 
     Private Sub txbBusqueda_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.LostFocus
+
         If txbBusqueda.Text.Length = 0 Or (txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray) Then
             txbBusqueda.ForeColor = Color.Gray
             txbBusqueda.Text = "Buscar"
             actAranceles()
         End If
+
     End Sub
     Private Sub actAranceles()
 
@@ -181,7 +187,7 @@
     Private Sub actArancelesSelect()
         Try
 
-            Consulta = "select  a.id_a, a.descripcion as 'Descripcion General', a.costo as 'Precio', r.descripcion as 'Descripcion Especifica', r.id_r from registro_medico r inner join aranceles a on a.id_a = r.id_a where id_c is null and id_p = '" + id_p.ToString + "';"
+            Consulta = "select  a.id_a, a.descripcion as 'Descripcion General', a.costo as 'Precio', pl.descripcion as 'Descripcion Especifica', pl.id_pl from plan_tratamiento pl inner join aranceles a on a.id_a = pl.id_a where  id_p = '" + id_p.ToString + "';"
             consultar()
             dt = DirectCast(Tabla, DataTable)
             dgvArancelesSelect.DataSource = dt
@@ -202,6 +208,7 @@
     End Sub
 
     Private Sub txbBusqueda_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
+
         Try
             Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Precio' from aranceles where estado = 1 and descripcion like '" + txbBusqueda.Text + "%';"
             consultar()
@@ -223,13 +230,13 @@
 
                 If listaID_R.Contains(dgvArancelesSelect.Rows(x).Cells(4).Value) Then
 
-                    Consulta = "update registro_medico set descripcion = '" + dgvArancelesSelect.Rows(x).Cells(3).Value + "', set precio = '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "' where id_r = '" + dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "';"
+                    Consulta = "update plan_tratamiento set descripcion = '" + dgvArancelesSelect.Rows(x).Cells(3).Value + "', set precio = '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "' where id_pl = '" + dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "';"
                     consultar()
 
                     listaID_R.Remove(dgvArancelesSelect.Rows(x).Cells(4).Value)
                 Else
 
-                    Consulta = "Insert into registro_medico (id_p, descripcion, precio, id_a) values ('" + id_p.ToString + "', '" + dgvArancelesSelect.Rows(x).Cells(3).Value + "', '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "');"
+                    Consulta = "Insert into plan_tratamiento (id_c, descripcion, precio, id_a) values ('" + frmCitas.idcita.ToString + "', '" + dgvArancelesSelect.Rows(x).Cells(3).Value + "', '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "');"
                     consultar()
 
                 End If
