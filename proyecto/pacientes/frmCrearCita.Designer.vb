@@ -34,7 +34,6 @@ Partial Class frmCrearCita
         Me.lblAnotaciones = New System.Windows.Forms.Label()
         Me.dgvCitasEnLaFecha = New System.Windows.Forms.DataGridView()
         Me.lblCitasEnLaFceha = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.dgvAuxiliar = New System.Windows.Forms.DataGridView()
         CType(Me.dgvCitasEnLaFecha, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -148,17 +147,6 @@ Partial Class frmCrearCita
         Me.lblCitasEnLaFceha.TabIndex = 19
         Me.lblCitasEnLaFceha.Text = "Citas Agendadas ese día:"
         '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(68, 353)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(934, 62)
-        Me.Button1.TabIndex = 20
-        Me.Button1.Text = "Ingresar lo que se realizará en la cita"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'dgvAuxiliar
         '
         Me.dgvAuxiliar.AllowUserToAddRows = False
@@ -193,13 +181,12 @@ Partial Class frmCrearCita
         Me.dgvAuxiliar.TabIndex = 21
         Me.dgvAuxiliar.Visible = False
         '
-        'CrearCita
+        'frmCrearCita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1030, 607)
         Me.Controls.Add(Me.dgvAuxiliar)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblCitasEnLaFceha)
         Me.Controls.Add(Me.dgvCitasEnLaFecha)
         Me.Controls.Add(Me.lblAnotaciones)
@@ -209,7 +196,7 @@ Partial Class frmCrearCita
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnCrear)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "CrearCita"
+        Me.Name = "frmCrearCita"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.dgvCitasEnLaFecha, System.ComponentModel.ISupportInitialize).EndInit()
@@ -226,6 +213,5 @@ Partial Class frmCrearCita
     Friend WithEvents lblAnotaciones As System.Windows.Forms.Label
     Friend WithEvents dgvCitasEnLaFecha As System.Windows.Forms.DataGridView
     Friend WithEvents lblCitasEnLaFceha As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents dgvAuxiliar As System.Windows.Forms.DataGridView
 End Class

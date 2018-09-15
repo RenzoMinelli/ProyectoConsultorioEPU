@@ -61,7 +61,7 @@
                 MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
             Else
                 Try
-                    Consulta = "Insert into cita (id_p, fecha, hora, realizada, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "', 0, '" + descr + "'); "
+                    Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "', 0, '" + descr + "'); "
                     consultar()
 
 
@@ -74,14 +74,7 @@
                         Dim id_c As Integer
 
                         id_c = dgvAuxiliar.Rows(dgvAuxiliar.RowCount - 1).Cells(0).Value
-
-
-                        For x = 0 To frmMarcarProximaCitaAranceles.dgvArancelesSelect.RowCount - 1
-
-                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + frmMarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + frmMarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + id_c.ToString + "','" + frmMarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "');"
-                            consultar()
-
-                        Next
+                       
 
                         MsgBox("Registrado", MsgBoxStyle.Information)
 
@@ -138,12 +131,5 @@
         dgvCitasEnLaFecha.ClearSelection()
     End Sub
 
-    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-
-        frmContenedor = frmMarcarProximaCitaAranceles
-        frmContenedor.MdiParent = Menu_Inicio
-        frmContenedor.Dock = DockStyle.Fill
-        frmContenedor.Show()
-
-    End Sub
+   
 End Class
