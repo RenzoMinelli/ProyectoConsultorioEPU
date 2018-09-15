@@ -1,15 +1,12 @@
 ﻿Public Class frmCitas
-    'Dim a As Icon
-    ' a = My.Resources.rambocursor
-    'Me.Cursor = New Cursor(a.Handle)
+
+   
     Public idcita As Integer
+
     Public fechita, dia, FCalendario As String
     Dim DiaSeleccionado As System.DateTime
-    Dim cita As String
 
-    Dim fecha As Date
-    Dim factual As Date
-
+   
 
 
     Private Sub Citas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -51,8 +48,7 @@
             FCalendario = Weekday(DiaSeleccionado)
 
 
-            fecha = Date.Now
-            dia = Weekday(fecha)
+
 
             LabelDia.Text = ("" + dia)
             seleccionado.Text = ("" + DiaSeleccionado)
@@ -1498,7 +1494,7 @@
 
 
         Catch ex As Exception
-            MsgBox(ex.ToString)
+            MsgBox("Error al cargar citas", MsgBoxStyle.Exclamation)
         End Try
 
 
@@ -1523,36 +1519,1467 @@
     End Sub
 
     Private Sub MonthCalendar1_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MCFecha.DateChanged
+        For x = 0 To dgvHora.RowCount - 1
+            dgvHora.Rows(x).Cells(1).Value = ""
+            dgvHora.Rows(x).Cells(2).Value = ""
+            dgvHora.Rows(x).Cells(3).Value = ""
+            dgvHora.Rows(x).Cells(4).Value = ""
+            dgvHora.Rows(x).Cells(5).Value = ""
+            dgvHora.Rows(x).Cells(6).Value = ""
+        Next
+
+        Try
+            DiaSeleccionado = MCFecha.SelectionRange.Start
+            FCalendario = Weekday(DiaSeleccionado)
 
 
-        DiaSeleccionado = MCFecha.SelectionRange.Start
-        FCalendario = Weekday(DiaSeleccionado)
 
-
-        Select Case FCalendario
-            Case "2"
+            LabelDia.Text = ("" + dia)
+            seleccionado.Text = ("" + DiaSeleccionado)
 
 
 
+            ''En un case se muestran los datos de la semana seleccionada por el usuario
+            Select Case FCalendario
 
-                'dgvMartes.Rows.Add("" + DiaSeleccionado.AddDays(1))
-                'dgvMiercoles.Rows.Add("" + DiaSeleccionado.AddDays(2))
-                'dgvJueves.Rows.Add("" + DiaSeleccionado.AddDays(3))
-                'dgvViernes.Rows.Add("" + DiaSeleccionado.AddDays(4))
-                'dgvSabado.Rows.Add("" + DiaSeleccionado.AddDays(5))
+                Case "2"
 
-            Case "3"
-
-
-            Case "4"
-
-            Case "5"
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    consultar()
 
 
-            Case "6"
+                    dgvConsultaDia.DataSource = Tabla
 
 
-        End Select
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(5).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+
+                Case "3"
+
+
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+
+                Case "4"
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+                Case "5"
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+                Case "6"
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+                Case "7"
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 24
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+            End Select
+
+
+
+
+
+        Catch ex As Exception
+            MsgBox("Error al cargar citas", MsgBoxStyle.Exclamation)
+        End Try
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -1566,7 +2993,6 @@
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
-        fechita = fecha
         Me.Hide()
         frmContenedor = frmMarcarCitaConcluida
         frmContenedor.MdiParent = Menu_Inicio
@@ -1593,4 +3019,188 @@
     End Sub
 
 
+    Private Sub dgvHora_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvHora.CellClick
+
+        DiaSeleccionado = MCFecha.SelectionRange.Start
+        FCalendario = Weekday(DiaSeleccionado)
+
+        Select Case dgvHora.CurrentCell.ColumnIndex
+
+            Case 1
+
+                Select Case FCalendario
+
+                    Case "1"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "2"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "3"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "4"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "5"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "6"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                End Select
+
+            Case 2
+                Select Case FCalendario
+
+                    Case "1"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "2"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "3"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "4"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "5"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "6"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                End Select
+
+            Case 3
+                Select Case FCalendario
+
+                    Case "1"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "2"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "3"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "4"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "5"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "6"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                End Select
+            Case 4
+                Select Case FCalendario
+
+                    Case "1"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "2"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "3"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "4"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "5"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "6"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                End Select
+            Case 5
+                Select Case FCalendario
+
+                    Case "1"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "2"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "3"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "4"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "5"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "6"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                End Select
+            Case 6
+                Select Case FCalendario
+
+                    Case "1"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "2"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "3"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "4"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "5"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                    Case "6"
+                        Consulta = "select hora , p.nombre from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                        consultar()
+                        dgvConsultaDia.DataSource = Tabla
+                End Select
+
+
+        End Select
+
+
+    End Sub
 End Class

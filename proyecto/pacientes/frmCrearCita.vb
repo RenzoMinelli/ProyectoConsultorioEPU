@@ -18,7 +18,7 @@
         consultar()
         dgvCitasEnLaFecha.DataSource = Tabla
 
-
+        Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica',from "
 
     End Sub
 
@@ -61,43 +61,24 @@
                 MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
             Else
                 Try
-                    Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "', 0, '" + descr + "'); "
+
+                    Consulta = "Insert into cita (id_p, fecha, hora, descripcion, atendida) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "','" + descr + "', '0'); "
                     consultar()
 
+                    MsgBox("Cita registrada", MsgBoxStyle.Information)
 
-                    Try
-                        Consulta = "Select * from cita where id_p = '" + id_p.ToString + "';"
-                        consultar()
-
-                        dgvAuxiliar.DataSource = Tabla
-                        dgvAuxiliar.Sort(dgvAuxiliar.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
-                        Dim id_c As Integer
-
-                        id_c = dgvAuxiliar.Rows(dgvAuxiliar.RowCount - 1).Cells(0).Value
-                       
-
-                        MsgBox("Registrado", MsgBoxStyle.Information)
-
-                        frmContenedor.Dispose()
-                        Me.Dispose()
-                        frmPacientes.Show()
-
-                    Catch ex As Exception
-
-                        MsgBox("Error al crear registro de plan, pero se creo la cita", MsgBoxStyle.Exclamation)
-                        MsgBox(ex.ToString)
-                    End Try
-
+                    Me.Dispose()
+                    frmPacientes.Show()
 
                 Catch ex As Exception
-                    MsgBox("Error al ingresar la cita")
+
+                    MsgBox("Error al registar la cita", MsgBoxStyle.Exclamation)
+
                 End Try
 
             End If
 
-
         End If
-
 
     End Sub
 

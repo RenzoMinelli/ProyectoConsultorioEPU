@@ -22,6 +22,8 @@ Partial Class frmAgregarCita
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -46,7 +48,7 @@ Partial Class frmAgregarCita
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label1.Location = New System.Drawing.Point(28, 20)
+        Me.Label1.Location = New System.Drawing.Point(28, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(113, 29)
         Me.Label1.TabIndex = 0
@@ -60,8 +62,24 @@ Partial Class frmAgregarCita
         Me.dgvPacientes.AllowUserToResizeRows = False
         Me.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPacientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvPacientes.Location = New System.Drawing.Point(33, 59)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvPacientes.Location = New System.Drawing.Point(33, 44)
         Me.dgvPacientes.Name = "dgvPacientes"
         Me.dgvPacientes.ReadOnly = True
         Me.dgvPacientes.RowHeadersVisible = False
@@ -82,7 +100,7 @@ Partial Class frmAgregarCita
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label4.Location = New System.Drawing.Point(374, 30)
+        Me.Label4.Location = New System.Drawing.Point(29, 320)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(151, 29)
         Me.Label4.TabIndex = 3
@@ -90,17 +108,18 @@ Partial Class frmAgregarCita
         '
         'txbAnotaciones
         '
-        Me.txbAnotaciones.Location = New System.Drawing.Point(379, 67)
+        Me.txbAnotaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbAnotaciones.Location = New System.Drawing.Point(33, 371)
         Me.txbAnotaciones.Multiline = True
         Me.txbAnotaciones.Name = "txbAnotaciones"
-        Me.txbAnotaciones.Size = New System.Drawing.Size(281, 358)
+        Me.txbAnotaciones.Size = New System.Drawing.Size(326, 123)
         Me.txbAnotaciones.TabIndex = 4
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(29, 264)
+        Me.Label5.Location = New System.Drawing.Point(29, 238)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(235, 25)
         Me.Label5.TabIndex = 11
@@ -110,7 +129,7 @@ Partial Class frmAgregarCita
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(29, 302)
+        Me.Label6.Location = New System.Drawing.Point(29, 263)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(298, 25)
         Me.Label6.TabIndex = 12
@@ -119,7 +138,7 @@ Partial Class frmAgregarCita
         'botonsito
         '
         Me.botonsito.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.botonsito.Location = New System.Drawing.Point(33, 487)
+        Me.botonsito.Location = New System.Drawing.Point(33, 516)
         Me.botonsito.Name = "botonsito"
         Me.botonsito.Size = New System.Drawing.Size(231, 79)
         Me.botonsito.TabIndex = 13

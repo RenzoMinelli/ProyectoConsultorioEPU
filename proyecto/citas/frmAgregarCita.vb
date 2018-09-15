@@ -75,6 +75,13 @@
                     Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "', 0, '" + descr + "'); "
                     consultar()
 
+                    MsgBox("Ingresado con éxito", MsgBoxStyle.Information)
+
+                    ActiveMdiChild.Dispose()
+                    frmContenedor = frmCitas
+                    frmContenedor.MdiParent = Menu_Inicio
+                    frmContenedor.Dock = DockStyle.Fill
+                    frmContenedor.Show()
 
                 Catch ex As Exception
                     MsgBox("Error al ingresar la cita")
