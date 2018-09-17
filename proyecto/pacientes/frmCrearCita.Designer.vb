@@ -38,10 +38,10 @@ Partial Class frmCrearCita
         Me.lblCitasEnLaFceha = New System.Windows.Forms.Label()
         Me.dgvAuxiliar = New System.Windows.Forms.DataGridView()
         Me.lblPlanes = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvTratamientos = New System.Windows.Forms.DataGridView()
         CType(Me.dgvCitasEnLaFecha, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvTratamientos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnCrear
@@ -196,14 +196,14 @@ Partial Class frmCrearCita
         Me.lblPlanes.TabIndex = 22
         Me.lblPlanes.Text = "Tratamientos en curso:"
         '
-        'DataGridView1
+        'dgvTratamientos
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AllowUserToResizeColumns = False
-        Me.DataGridView1.AllowUserToResizeRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvTratamientos.AllowUserToAddRows = False
+        Me.dgvTratamientos.AllowUserToDeleteRows = False
+        Me.dgvTratamientos.AllowUserToResizeColumns = False
+        Me.dgvTratamientos.AllowUserToResizeRows = False
+        Me.dgvTratamientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvTratamientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -211,8 +211,8 @@ Partial Class frmCrearCita
         DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvTratamientos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvTratamientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -220,21 +220,21 @@ Partial Class frmCrearCita
         DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 245)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(418, 232)
-        Me.DataGridView1.TabIndex = 23
+        Me.dgvTratamientos.DefaultCellStyle = DataGridViewCellStyle6
+        Me.dgvTratamientos.Location = New System.Drawing.Point(12, 245)
+        Me.dgvTratamientos.Name = "dgvTratamientos"
+        Me.dgvTratamientos.ReadOnly = True
+        Me.dgvTratamientos.RowHeadersVisible = False
+        Me.dgvTratamientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvTratamientos.Size = New System.Drawing.Size(418, 232)
+        Me.dgvTratamientos.TabIndex = 23
         '
         'frmCrearCita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1030, 607)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvTratamientos)
         Me.Controls.Add(Me.lblPlanes)
         Me.Controls.Add(Me.dgvAuxiliar)
         Me.Controls.Add(Me.lblCitasEnLaFceha)
@@ -251,7 +251,7 @@ Partial Class frmCrearCita
         Me.Text = "Form1"
         CType(Me.dgvCitasEnLaFecha, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvTratamientos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -266,5 +266,5 @@ Partial Class frmCrearCita
     Friend WithEvents lblCitasEnLaFceha As System.Windows.Forms.Label
     Friend WithEvents dgvAuxiliar As System.Windows.Forms.DataGridView
     Friend WithEvents lblPlanes As System.Windows.Forms.Label
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvTratamientos As System.Windows.Forms.DataGridView
 End Class

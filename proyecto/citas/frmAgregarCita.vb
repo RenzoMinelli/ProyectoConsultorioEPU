@@ -37,7 +37,15 @@
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvPacientes.CellClick
         id_p = dgvPacientes.CurrentRow.Cells(1).Value
         nombre = dgvPacientes.CurrentRow.Cells(0).Value
-        Label6.Text = nombre
+
+
+        Try
+            Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "';"
+            consultar()
+            dgvTratamientos.DataSource = Tabla
+        Catch ex As Exception
+
+        End Try
     End Sub
 
    

@@ -18,8 +18,9 @@
         consultar()
         dgvCitasEnLaFecha.DataSource = Tabla
 
-        Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica',from "
-
+        Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "';"
+        consultar()
+        dgvTratamientos.DataSource = Tabla
     End Sub
 
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)

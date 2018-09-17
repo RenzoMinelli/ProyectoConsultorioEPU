@@ -38,6 +38,7 @@
     End Sub
 
     Private Sub btnNo_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNo.Click
+        respuestaString = txbRespuesta.Text
         respuestaInt = 2
         DialogResult = System.Windows.Forms.DialogResult.OK
     End Sub

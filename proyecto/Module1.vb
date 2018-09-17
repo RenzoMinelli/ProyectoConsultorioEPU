@@ -110,6 +110,32 @@ Module Module1
             frmFondoTransparente.Dispose()
             msgbv.Dispose()
 
+        ElseIf tipo = 2 Then
+
+            Dim msgbv As New MsgBoxVersatil()
+
+            msgbv.lblTexto.Text = texto
+            msgbv.btnNo.Visible = True
+            msgbv.btnSi.Visible = True
+            msgbv.btnSi.Text = "Aceptar"
+            msgbv.btnNo.Text = "Cancelar"
+            msgbv.btnSi.Location = New Point(msgbv.Width / 4 - msgbv.btnSi.Width / 2, msgbv.btnSi.Location.Y)
+            msgbv.btnSi.Location = New Point(msgbv.Width / 4 * 3 - msgbv.btnNo.Width / 2, msgbv.btnSi.Location.Y)
+            msgbv.txbRespuesta.Location = New Point(msgbv.Width / 2 - msgbv.txbRespuesta.Width / 2, msgbv.txbRespuesta.Location.Y)
+            msgbv.txbRespuesta.Visible = True
+
+
+            msgbv.txbRespuesta.Focus()
+            'Determinar si el formulario esta listo para seguir
+            If msgbv.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+                'Obtener la respuesta ingresada
+                respString = msgbv.respuestaString
+            Else
+                respString = "Error"
+            End If
+            frmFondoTransparente.Dispose()
+            msgbv.Dispose()
+
         End If
 
     End Sub

@@ -82,9 +82,9 @@ Partial Class frmPlanTratamiento
         Me.lblAranceles.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAranceles.Location = New System.Drawing.Point(33, 40)
         Me.lblAranceles.Name = "lblAranceles"
-        Me.lblAranceles.Size = New System.Drawing.Size(467, 29)
+        Me.lblAranceles.Size = New System.Drawing.Size(291, 29)
         Me.lblAranceles.TabIndex = 1
-        Me.lblAranceles.Text = "Seleccione los Aranceles que cree utilizar:"
+        Me.lblAranceles.Text = "Seleccione los Aranceles:"
         '
         'Label1
         '
