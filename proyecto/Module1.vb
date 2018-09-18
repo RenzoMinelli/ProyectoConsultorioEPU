@@ -40,28 +40,30 @@ Module Module1
             Conexion = New MySqlDataAdapter(Consulta, ubicacion)
             Tabla = New DataTable
             Conexion.Fill(Tabla)
+            MysqlConexion.Close()
+            conex = True
         Catch ex As Exception
-            'MsgBox(ex.ToString)
+
             conex = False
         End Try
 
     End Sub
 
-    Public Sub veriCon()
-        Try
+    Public Sub verificarConex()
 
-            Consulta = "select * from aranceles"
-            Conexion = New MySqlDataAdapter(Consulta, ubicacion)
-            Tabla = New DataTable
-            Conexion.Fill(Tabla)
-            conex = True
+        Select Case MysqlConexion.State
+            Case ConnectionState.Open
+                MsgBox("open")
+            Case ConnectionState.Closed
+                MsgBox("close")
+            Case ConnectionState.Connecting
+                MsgBox("connect")
+            Case ConnectionState.Fetching
+                MsgBox("fetching")
+            Case ConnectionState.Broken
+                MsgBox("broke")
 
-        Catch ex As Exception
-
-            conex = False
-
-        End Try
-
+        End Select
     End Sub
     Public Sub MuestraMsgBoxVersatil(ByVal texto As String, ByVal tipo As Integer)
         frmFondoTransparente.Show()

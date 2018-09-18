@@ -59,13 +59,15 @@
 
         End If
 
-        veriCon()
+        Consulta = "select * from cita"
+        consultar()
+
         If conex = True Then
-            PictureBox5.Show()
-            PictureBox6.Hide()
+
+            PictureBox6.Image = My.Resources._70002
         Else
-            PictureBox5.Hide()
-            PictureBox6.Show()
+
+            PictureBox6.Image = My.Resources.letterx_87521
         End If
 
 
