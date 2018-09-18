@@ -40,7 +40,7 @@ Partial Class frmCitas
         '
         'MCFecha
         '
-        Me.MCFecha.Location = New System.Drawing.Point(927, 563)
+        Me.MCFecha.Location = New System.Drawing.Point(1166, 313)
         Me.MCFecha.Name = "MCFecha"
         Me.MCFecha.TabIndex = 0
         '
@@ -48,7 +48,7 @@ Partial Class frmCitas
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label1.Location = New System.Drawing.Point(496, 638)
+        Me.Label1.Location = New System.Drawing.Point(1174, 498)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(219, 58)
         Me.Label1.TabIndex = 1
@@ -57,7 +57,7 @@ Partial Class frmCitas
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Button1.Location = New System.Drawing.Point(247, 635)
+        Me.Button1.Location = New System.Drawing.Point(1160, 189)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(227, 90)
         Me.Button1.TabIndex = 2
@@ -67,7 +67,7 @@ Partial Class frmCitas
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Button2.Location = New System.Drawing.Point(14, 635)
+        Me.Button2.Location = New System.Drawing.Point(1166, 77)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(227, 90)
         Me.Button2.TabIndex = 5
@@ -77,7 +77,7 @@ Partial Class frmCitas
         'LabelDia
         '
         Me.LabelDia.AutoSize = True
-        Me.LabelDia.Location = New System.Drawing.Point(733, 683)
+        Me.LabelDia.Location = New System.Drawing.Point(1411, 543)
         Me.LabelDia.Name = "LabelDia"
         Me.LabelDia.Size = New System.Drawing.Size(45, 13)
         Me.LabelDia.TabIndex = 11
@@ -86,7 +86,7 @@ Partial Class frmCitas
         'seleccionado
         '
         Me.seleccionado.AutoSize = True
-        Me.seleccionado.Location = New System.Drawing.Point(733, 650)
+        Me.seleccionado.Location = New System.Drawing.Point(1411, 510)
         Me.seleccionado.Name = "seleccionado"
         Me.seleccionado.Size = New System.Drawing.Size(88, 13)
         Me.seleccionado.TabIndex = 12
@@ -110,7 +110,6 @@ Partial Class frmCitas
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvHora.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvHora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvHora.ColumnHeadersVisible = False
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -124,7 +123,7 @@ Partial Class frmCitas
         Me.dgvHora.ReadOnly = True
         Me.dgvHora.RowHeadersVisible = False
         Me.dgvHora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.dgvHora.Size = New System.Drawing.Size(1140, 605)
+        Me.dgvHora.Size = New System.Drawing.Size(1140, 678)
         Me.dgvHora.TabIndex = 13
         '
         'dgvConsultaDia
@@ -166,7 +165,7 @@ Partial Class frmCitas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1384, 726)
+        Me.ClientSize = New System.Drawing.Size(1384, 756)
         Me.Controls.Add(Me.dgvConsultaDia)
         Me.Controls.Add(Me.seleccionado)
         Me.Controls.Add(Me.LabelDia)

@@ -12,26 +12,40 @@
         fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
         hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
 
-        Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
-        consultar()
-        dgvCitasEnLaFecha.DataSource = Tabla
-        
+        Try
 
-        Consulta = "Select nombre as 'Nombre',id_p from paciente;"
-        consultar()
-        dgvPacientes.DataSource = Tabla
-        dgvPacientes.Columns(1).Visible = False
+            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
+            consultar()
+            dgvCitasEnLaFecha.DataSource = Tabla
 
-        id_p = vbNull
+
+            Consulta = "Select nombre as 'Nombre',id_p from paciente;"
+            consultar()
+            dgvPacientes.DataSource = Tabla
+            dgvPacientes.Columns(1).Visible = False
+
+            id_p = vbNull
+
+        Catch ex As Exception
+
+        End Try
+       
 
     End Sub
     Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpFechaSeleccionada.ValueChanged
-        fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
-        hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
+        Try
 
-        Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
-        consultar()
-        dgvCitasEnLaFecha.DataSource = Tabla
+            fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
+            hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
+
+            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
+            consultar()
+            dgvCitasEnLaFecha.DataSource = Tabla
+
+        Catch ex As Exception
+
+        End Try
+       
     End Sub
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvPacientes.CellClick
@@ -40,7 +54,7 @@
 
 
         Try
-            Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "';"
+            Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "' and terminado = '0';"
             consultar()
             dgvTratamientos.DataSource = Tabla
         Catch ex As Exception
@@ -56,46 +70,55 @@
             MsgBox("Complete las indicaciones", MsgBoxStyle.Exclamation)
         Else
 
-            Dim control As Integer = 0
+            Dim ultimaHora As TimeSpan = (Convert.ToDateTime("20:30:00")).TimeOfDay
+            Dim primeraHora As TimeSpan = (Convert.ToDateTime("08:00:00")).TimeOfDay
             Dim hora2 As TimeSpan = (Convert.ToDateTime(hora)).TimeOfDay
 
-            For x = 0 To dgvCitasEnLaFecha.RowCount - 1
 
-                Dim HoraAux As TimeSpan = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
+            If hora2 < ultimaHora And hora2 > primeraHora Then
 
-                Dim HoraAuxFinal As New TimeSpan(0, 30, 0)
-                HoraAuxFinal = HoraAux + HoraAuxFinal
+                Dim control As Integer = 0
 
 
-                If hora2 <= HoraAuxFinal And hora2 >= HoraAux Then
+                For x = 0 To dgvCitasEnLaFecha.RowCount - 1
 
-                    control = 1
+                    Dim HoraAux As TimeSpan = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
+
+                    Dim HoraAuxFinal As New TimeSpan(0, 30, 0)
+                    HoraAuxFinal = HoraAux + HoraAuxFinal
+
+
+                    If hora2 <= HoraAuxFinal And hora2 >= HoraAux Then
+
+                        control = 1
+
+                    End If
+
+
+                Next
+
+                If control = 1 Then
+                    MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
+                Else
+                    Try
+                        Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "', 0, '" + descr + "'); "
+                        consultar()
+
+                        MsgBox("Ingresado con éxito", MsgBoxStyle.Information)
+
+                        Me.Dispose()
+                        frmCitas.Show()
+
+                    Catch ex As Exception
+                        MsgBox("Error al ingresar la cita")
+                    End Try
 
                 End If
-
-
-            Next
-
-            If control = 1 Then
-                MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
             Else
-                Try
-                    Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "', 0, '" + descr + "'); "
-                    consultar()
 
-                    MsgBox("Ingresado con éxito", MsgBoxStyle.Information)
-
-                    ActiveMdiChild.Dispose()
-                    frmContenedor = frmCitas
-                    frmContenedor.MdiParent = Menu_Inicio
-                    frmContenedor.Dock = DockStyle.Fill
-                    frmContenedor.Show()
-
-                Catch ex As Exception
-                    MsgBox("Error al ingresar la cita")
-                End Try
-
+                MsgBox("Los horarios marcados están fuera de los límites", MsgBoxStyle.Exclamation)
             End If
+            
 
 
         End If
