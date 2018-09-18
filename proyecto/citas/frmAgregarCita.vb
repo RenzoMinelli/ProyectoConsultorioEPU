@@ -11,6 +11,7 @@
 
         fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
         hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
+        id_p = 0
 
         Try
 
@@ -24,7 +25,7 @@
             dgvPacientes.DataSource = Tabla
             dgvPacientes.Columns(1).Visible = False
 
-            id_p = vbNull
+
 
         Catch ex As Exception
 
@@ -66,7 +67,7 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         descr = txbAnotaciones.Text
-        If descr = "" Then
+        If descr = "" Or id_p = 0 Then
             MsgBox("Complete las indicaciones", MsgBoxStyle.Exclamation)
         Else
 
@@ -118,7 +119,7 @@
 
                 MsgBox("Los horarios marcados están fuera de los límites", MsgBoxStyle.Exclamation)
             End If
-            
+
 
 
         End If

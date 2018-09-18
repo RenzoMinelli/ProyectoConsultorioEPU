@@ -6,14 +6,28 @@
             Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "';"
             consultar()
             dgvTratamientos.DataSource = Tabla
+
+            Consulta = "select descripcion from cita where id_c = '" + frmCitas.idcita.ToString + "';"
+            consultar()
+            dgvAuxiliar.DataSource = Tabla
+
+            txbAnotaciones.Text = dgvAuxiliar.Rows(0).Cells(0).Value
         Catch ex As Exception
 
         End Try
     End Sub
     Private Sub dgvAranceles_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvTratamientos.CellDoubleClick
 
-      
+        MuestraMsgBoxVersatil("¿Desea marcar este tratamiento como concluido?", 0)
 
+        If respint = 0 Then
+
+            MsgBox("Ningún cambio ha sido realizado", MsgBoxStyle.Information)
+
+        Else
+
+
+        End If
 
     End Sub
 
@@ -22,37 +36,24 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         Try
-            Dim costo As Integer = 0
-            ' For x = 0 To dgvAranceles.RowCount - 1
-            '  Consulta = "Insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + dgvAranceles.Rows(x).Cells(0).Value.ToString + "','" + dgvAranceles.Rows(x).Cells(3).Value.ToString + "','" + dgvAranceles.Rows(x).Cells(2).Value.ToString + "','" + frmCitas.idcita.ToString + "','" + dgvAranceles.Rows(x).Cells(4).Value.ToString + "' );"
-            'consultar()
-            ' costo += dgvAranceles.Rows(x).Cells(2).Value
-            ' Next
+           
+            If txbRealizado.Text = "" Then
 
-            Try
-                ' Consulta = "select saldo from paciente where id_p = '" + dgvAranceles.Rows(0).Cells(0).Value.ToString + "';"
-                ' consultar()
-
-                Dim dgvA As New DataGridView
-                dgvA.DataSource = Tabla
-
-                'Consulta = "update paciente set saldo = '" + (dgvA.Rows(0).Cells(0).Value + costo).ToString + "' where id_p = '" + dgvAranceles.Rows(0).Cells(0).Value.ToString + "';"
+                Consulta = "update cita set atendida = 1 where id_c = '" + frmCitas.idcita.ToString + "';"
                 consultar()
 
-                Consulta = "update cita set realizada = 1 where id_c = '" + frmCitas.idcita.ToString + "';"
+            Else
+                Consulta = "update cita set atendida = 1, set descripcion = '" + txbRealizado.Text + "' where id_c = '" + frmCitas.idcita.ToString + "';"
                 consultar()
 
-                MsgBox("Guardado con éxito", MsgBoxStyle.Information)
-                Me.Dispose()
-                frmCitas.Show()
-            Catch ex As Exception
+            End If
 
-                MsgBox("Error al aumentar el saldo del paciente" + ex.ToString, MsgBoxStyle.Exclamation)
-
-            End Try
+            MsgBox("Guardado con éxito", MsgBoxStyle.Information)
+            Me.Dispose()
+            frmCitas.Show()
 
         Catch ex As Exception
-            MsgBox("Error al registrar los aranceles utilizados", MsgBoxStyle.Exclamation)
+            MsgBox("Error al guardar la cita", MsgBoxStyle.Exclamation)
         End Try
     End Sub
 
@@ -92,6 +93,21 @@
         Loop While IsNumeric(respString) = False
 
         If respint = 1 Then
+
+            Try
+
+                Consulta = "update paciente set saldo = saldo - '" + respString + "' where id_p = '" + id_p.ToString + "';"
+                consultar()
+
+                Consulta = "insert into plan_tratamiento (id_p, id_c, descripcion, precio, terminado) values ('" + id_p.ToString + "', '" + frmCitas.idcita.ToString + "', 'Limpieza', '" + respString + "', 1);"
+                consultar()
+
+                MsgBox("Cobrado con éxito", MsgBoxStyle.Information)
+
+            Catch ex As Exception
+                MsgBox("Error al cobrar", MsgBoxStyle.Exclamation)
+            End Try
+            
 
 
         End If

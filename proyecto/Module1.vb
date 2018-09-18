@@ -73,6 +73,7 @@ Module Module1
             msgbv.btnNo.Visible = True
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Sí"
+            msgbv.btnNo.Text = "No"
             msgbv.txbRespuesta.Visible = False
 
 

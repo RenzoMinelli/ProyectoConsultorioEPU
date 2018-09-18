@@ -40,7 +40,7 @@ Partial Class frmCitas
         '
         'MCFecha
         '
-        Me.MCFecha.Location = New System.Drawing.Point(1166, 313)
+        Me.MCFecha.Location = New System.Drawing.Point(14, 702)
         Me.MCFecha.Name = "MCFecha"
         Me.MCFecha.TabIndex = 0
         '
@@ -48,7 +48,7 @@ Partial Class frmCitas
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label1.Location = New System.Drawing.Point(1174, 498)
+        Me.Label1.Location = New System.Drawing.Point(516, 702)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(219, 58)
         Me.Label1.TabIndex = 1
@@ -57,7 +57,7 @@ Partial Class frmCitas
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Button1.Location = New System.Drawing.Point(1160, 189)
+        Me.Button1.Location = New System.Drawing.Point(274, 702)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(227, 90)
         Me.Button1.TabIndex = 2
@@ -123,7 +123,7 @@ Partial Class frmCitas
         Me.dgvHora.ReadOnly = True
         Me.dgvHora.RowHeadersVisible = False
         Me.dgvHora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.dgvHora.Size = New System.Drawing.Size(1140, 678)
+        Me.dgvHora.Size = New System.Drawing.Size(1140, 661)
         Me.dgvHora.TabIndex = 13
         '
         'dgvConsultaDia
@@ -165,7 +165,7 @@ Partial Class frmCitas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1384, 756)
+        Me.ClientSize = New System.Drawing.Size(1183, 882)
         Me.Controls.Add(Me.dgvConsultaDia)
         Me.Controls.Add(Me.seleccionado)
         Me.Controls.Add(Me.LabelDia)

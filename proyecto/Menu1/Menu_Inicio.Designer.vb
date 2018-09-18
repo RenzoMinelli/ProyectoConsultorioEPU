@@ -86,13 +86,13 @@ Partial Class Menu_Inicio
         Me.pnlBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlBarraSuperior.Location = New System.Drawing.Point(174, 0)
         Me.pnlBarraSuperior.Name = "pnlBarraSuperior"
-        Me.pnlBarraSuperior.Size = New System.Drawing.Size(669, 38)
+        Me.pnlBarraSuperior.Size = New System.Drawing.Size(1164, 38)
         Me.pnlBarraSuperior.TabIndex = 7
         '
         'pbMaximizar
         '
         Me.pbMaximizar.Image = Global.WindowsApplication1.My.Resources.Resources.maximize_window_1_
-        Me.pbMaximizar.Location = New System.Drawing.Point(574, 3)
+        Me.pbMaximizar.Location = New System.Drawing.Point(1071, 6)
         Me.pbMaximizar.Name = "pbMaximizar"
         Me.pbMaximizar.Size = New System.Drawing.Size(28, 29)
         Me.pbMaximizar.TabIndex = 19
@@ -101,7 +101,7 @@ Partial Class Menu_Inicio
         'pbCerrar
         '
         Me.pbCerrar.Image = Global.WindowsApplication1.My.Resources.Resources.media_1_
-        Me.pbCerrar.Location = New System.Drawing.Point(608, 3)
+        Me.pbCerrar.Location = New System.Drawing.Point(1105, 6)
         Me.pbCerrar.Name = "pbCerrar"
         Me.pbCerrar.Size = New System.Drawing.Size(27, 32)
         Me.pbCerrar.TabIndex = 18
@@ -110,7 +110,7 @@ Partial Class Menu_Inicio
         'pbMinimizar
         '
         Me.pbMinimizar.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.pbMinimizar.Location = New System.Drawing.Point(537, 3)
+        Me.pbMinimizar.Location = New System.Drawing.Point(1034, 6)
         Me.pbMinimizar.Name = "pbMinimizar"
         Me.pbMinimizar.Size = New System.Drawing.Size(28, 32)
         Me.pbMinimizar.TabIndex = 17
@@ -346,7 +346,7 @@ Partial Class Menu_Inicio
         Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlMenu.Location = New System.Drawing.Point(0, 0)
         Me.pnlMenu.Name = "pnlMenu"
-        Me.pnlMenu.Size = New System.Drawing.Size(174, 665)
+        Me.pnlMenu.Size = New System.Drawing.Size(174, 919)
         Me.pnlMenu.TabIndex = 5
         '
         'PictureBox5
@@ -372,7 +372,7 @@ Partial Class Menu_Inicio
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(843, 665)
+        Me.ClientSize = New System.Drawing.Size(1338, 919)
         Me.Controls.Add(Me.pnlBarraSuperior)
         Me.Controls.Add(Me.pnlMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

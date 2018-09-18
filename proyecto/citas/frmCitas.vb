@@ -105,7 +105,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -142,7 +142,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -181,7 +181,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -218,7 +218,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -256,7 +256,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -293,7 +293,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -344,7 +344,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -357,7 +357,7 @@
                                     dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
                                     Exit For
 
-                              
+
                                 End If
 
                             Next
@@ -385,7 +385,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -424,7 +424,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -463,7 +463,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -502,7 +502,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -542,7 +542,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -592,7 +592,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -632,7 +632,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -673,7 +673,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -714,7 +714,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -755,7 +755,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -796,7 +796,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -843,7 +843,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -882,7 +882,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -922,7 +922,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -962,7 +962,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1002,7 +1002,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1042,7 +1042,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1089,7 +1089,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1129,7 +1129,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1169,7 +1169,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1208,7 +1208,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1247,7 +1247,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1286,7 +1286,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1333,7 +1333,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1372,7 +1372,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1411,7 +1411,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1451,7 +1451,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1491,7 +1491,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1530,7 +1530,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1630,7 +1630,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1667,7 +1667,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1704,7 +1704,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1741,7 +1741,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1779,7 +1779,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1816,7 +1816,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1867,7 +1867,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1906,7 +1906,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1945,7 +1945,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -1984,7 +1984,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2023,7 +2023,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2063,7 +2063,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2113,7 +2113,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2153,7 +2153,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2194,7 +2194,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2235,7 +2235,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2276,7 +2276,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2317,7 +2317,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2364,7 +2364,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2403,7 +2403,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2443,7 +2443,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2483,7 +2483,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2523,7 +2523,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2563,7 +2563,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2610,7 +2610,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2650,7 +2650,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2690,7 +2690,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2729,7 +2729,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2768,7 +2768,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2807,7 +2807,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2854,7 +2854,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2893,7 +2893,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2932,7 +2932,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -2972,7 +2972,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -3012,7 +3012,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -3051,7 +3051,7 @@
                             hora = dgvConsultaDia.Rows(indice).Cells(0).Value
                             nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
 
-                            For IndHoras = 0 To 24
+                            For IndHoras = 0 To 25
 
 
                                 Dim posicion As TimeSpan
@@ -3086,6 +3086,7 @@
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
+        frmAgregarCita.dgvPacientes.ClearSelection()
     End Sub
 
 

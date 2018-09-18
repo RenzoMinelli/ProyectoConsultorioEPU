@@ -125,7 +125,7 @@
 
 
                 End If
-                MsgBox("Guardado con Exito")
+                MsgBox("Guardado con Exito", MsgBoxStyle.Information)
 
                 frmPacientes.Show()
                 frmPacientes.actTabla(1)
@@ -140,7 +140,7 @@
 
         Else
 
-            MsgBox("Complete los campos necesarios")
+            MsgBox("Complete los campos necesarios", MsgBoxStyle.Exclamation)
 
         End If
 
