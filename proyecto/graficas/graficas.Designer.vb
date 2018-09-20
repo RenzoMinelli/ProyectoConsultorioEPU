@@ -22,29 +22,32 @@ Partial Class graficas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.btnprompacientes = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btningresos = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.dgbinfo = New System.Windows.Forms.DataGridView()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgbinfo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'grafica
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.grafica.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.grafica.Legends.Add(Legend1)
+        ChartArea2.Name = "ChartArea1"
+        Me.grafica.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.grafica.Legends.Add(Legend2)
         Me.grafica.Location = New System.Drawing.Point(12, 100)
         Me.grafica.Name = "grafica"
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.grafica.Series.Add(Series1)
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Me.grafica.Series.Add(Series2)
         Me.grafica.Size = New System.Drawing.Size(753, 414)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
@@ -87,11 +90,31 @@ Partial Class graficas
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "los datos mostrados son los promedios de edades de pacientes:"
         '
+        'dgbinfo
+        '
+        Me.dgbinfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgbinfo.Location = New System.Drawing.Point(0, 1)
+        Me.dgbinfo.Name = "dgbinfo"
+        Me.dgbinfo.Size = New System.Drawing.Size(10, 10)
+        Me.dgbinfo.TabIndex = 6
+        Me.dgbinfo.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(623, 34)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Label3"
+        '
         'graficas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(796, 526)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.dgbinfo)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btningresos)
         Me.Controls.Add(Me.Label1)
@@ -101,6 +124,7 @@ Partial Class graficas
         Me.Name = "graficas"
         Me.Text = "."
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgbinfo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -110,4 +134,6 @@ Partial Class graficas
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btningresos As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents dgbinfo As System.Windows.Forms.DataGridView
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

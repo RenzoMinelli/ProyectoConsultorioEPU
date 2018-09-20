@@ -368,4 +368,17 @@
         'frmCitas.dgvLunes.ClearSelection()
     End Sub
 
+    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
+        Me.ActiveMdiChild.Dispose()
+        frmContenedor = graficas
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+        lblPacientes.ForeColor = Color.RoyalBlue
+        Label2.ForeColor = Color.White
+        Label3.ForeColor = Color.RoyalBlue
+        Label7.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
+        Aranceles.DataGridView1.ClearSelection()
+    End Sub
 End Class
