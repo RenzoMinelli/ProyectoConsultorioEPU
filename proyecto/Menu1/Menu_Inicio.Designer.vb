@@ -28,7 +28,7 @@ Partial Class Menu_Inicio
         Me.pbMaximizar = New System.Windows.Forms.PictureBox()
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
         Me.pbMinimizar = New System.Windows.Forms.PictureBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblReloj = New System.Windows.Forms.Label()
         Me.pnlPacientes = New System.Windows.Forms.Panel()
         Me.pbPacientes = New System.Windows.Forms.PictureBox()
         Me.lblPacientes = New System.Windows.Forms.Label()
@@ -44,12 +44,12 @@ Partial Class Menu_Inicio
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblGraficas = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lblFinanzas = New System.Windows.Forms.Label()
         Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblAranceles = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnlMenu = New System.Windows.Forms.Panel()
         Me.pnlBarraSuperior.SuspendLayout()
@@ -114,17 +114,17 @@ Partial Class Menu_Inicio
         Me.pbMinimizar.TabIndex = 17
         Me.pbMinimizar.TabStop = False
         '
-        'Label3
+        'lblReloj
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(12, 3)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(103, 29)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "00:00:00"
+        Me.lblReloj.AutoSize = True
+        Me.lblReloj.BackColor = System.Drawing.Color.Transparent
+        Me.lblReloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReloj.ForeColor = System.Drawing.Color.White
+        Me.lblReloj.Location = New System.Drawing.Point(12, 3)
+        Me.lblReloj.Name = "lblReloj"
+        Me.lblReloj.Size = New System.Drawing.Size(103, 29)
+        Me.lblReloj.TabIndex = 9
+        Me.lblReloj.Text = "00:00:00"
         '
         'pnlPacientes
         '
@@ -230,7 +230,7 @@ Partial Class Menu_Inicio
         '
         Me.Panel8.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel8.Controls.Add(Me.PictureBox6)
-        Me.Panel8.Controls.Add(Me.Label3)
+        Me.Panel8.Controls.Add(Me.lblReloj)
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(182, 38)
@@ -249,7 +249,7 @@ Partial Class Menu_Inicio
         '
         Me.Panel12.BackColor = System.Drawing.Color.Silver
         Me.Panel12.Controls.Add(Me.PictureBox10)
-        Me.Panel12.Controls.Add(Me.Label5)
+        Me.Panel12.Controls.Add(Me.lblGraficas)
         Me.Panel12.Location = New System.Drawing.Point(13, 237)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(161, 32)
@@ -264,22 +264,22 @@ Partial Class Menu_Inicio
         Me.PictureBox10.TabIndex = 20
         Me.PictureBox10.TabStop = False
         '
-        'Label5
+        'lblGraficas
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label5.Location = New System.Drawing.Point(39, 1)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(101, 29)
-        Me.Label5.TabIndex = 20
-        Me.Label5.Text = "Gráficas"
+        Me.lblGraficas.AutoSize = True
+        Me.lblGraficas.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGraficas.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.lblGraficas.Location = New System.Drawing.Point(39, 1)
+        Me.lblGraficas.Name = "lblGraficas"
+        Me.lblGraficas.Size = New System.Drawing.Size(101, 29)
+        Me.lblGraficas.TabIndex = 20
+        Me.lblGraficas.Text = "Gráficas"
         '
         'Panel13
         '
         Me.Panel13.BackColor = System.Drawing.Color.Silver
         Me.Panel13.Controls.Add(Me.PictureBox7)
-        Me.Panel13.Controls.Add(Me.Label7)
+        Me.Panel13.Controls.Add(Me.lblFinanzas)
         Me.Panel13.Location = New System.Drawing.Point(13, 201)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(161, 32)
@@ -294,37 +294,37 @@ Partial Class Menu_Inicio
         Me.PictureBox7.TabIndex = 15
         Me.PictureBox7.TabStop = False
         '
-        'Label7
+        'lblFinanzas
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label7.Location = New System.Drawing.Point(39, 2)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(109, 29)
-        Me.Label7.TabIndex = 19
-        Me.Label7.Text = "Finanzas"
+        Me.lblFinanzas.AutoSize = True
+        Me.lblFinanzas.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFinanzas.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.lblFinanzas.Location = New System.Drawing.Point(39, 2)
+        Me.lblFinanzas.Name = "lblFinanzas"
+        Me.lblFinanzas.Size = New System.Drawing.Size(109, 29)
+        Me.lblFinanzas.TabIndex = 19
+        Me.lblFinanzas.Text = "Finanzas"
         '
         'Panel15
         '
         Me.Panel15.BackColor = System.Drawing.Color.Silver
-        Me.Panel15.Controls.Add(Me.Label2)
+        Me.Panel15.Controls.Add(Me.lblAranceles)
         Me.Panel15.Controls.Add(Me.PictureBox1)
         Me.Panel15.Location = New System.Drawing.Point(13, 165)
         Me.Panel15.Name = "Panel15"
         Me.Panel15.Size = New System.Drawing.Size(163, 32)
         Me.Panel15.TabIndex = 24
         '
-        'Label2
+        'lblAranceles
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label2.Location = New System.Drawing.Point(39, 3)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(120, 29)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Aranceles"
+        Me.lblAranceles.AutoSize = True
+        Me.lblAranceles.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAranceles.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.lblAranceles.Location = New System.Drawing.Point(39, 3)
+        Me.lblAranceles.Name = "lblAranceles"
+        Me.lblAranceles.Size = New System.Drawing.Size(120, 29)
+        Me.lblAranceles.TabIndex = 9
+        Me.lblAranceles.Text = "Aranceles"
         '
         'PictureBox1
         '
@@ -398,7 +398,7 @@ Partial Class Menu_Inicio
     Friend WithEvents pnlBarraSuperior As System.Windows.Forms.Panel
     Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
     Friend WithEvents pbMinimizar As System.Windows.Forms.PictureBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lblReloj As System.Windows.Forms.Label
     Friend WithEvents pnlPacientes As System.Windows.Forms.Panel
     Friend WithEvents pbPacientes As System.Windows.Forms.PictureBox
     Friend WithEvents lblPacientes As System.Windows.Forms.Label
@@ -412,12 +412,12 @@ Partial Class Menu_Inicio
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
     Friend WithEvents Panel12 As System.Windows.Forms.Panel
     Friend WithEvents Panel13 As System.Windows.Forms.Panel
-    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents lblFinanzas As System.Windows.Forms.Label
     Friend WithEvents Panel15 As System.Windows.Forms.Panel
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblAranceles As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents pnlMenu As System.Windows.Forms.Panel
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents lblGraficas As System.Windows.Forms.Label
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents pbCitas As System.Windows.Forms.PictureBox

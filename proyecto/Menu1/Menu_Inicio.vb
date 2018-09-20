@@ -44,7 +44,7 @@
             frmContenedor.Dock = DockStyle.Fill
             frmContenedor.Show()
 
-            Label2.ForeColor = Color.White
+            lblAranceles.ForeColor = Color.White
 
         ElseIf user = "odontologo" Or user = "root" Then
 
@@ -79,25 +79,26 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
+
         lblPacientes.ForeColor = Color.White
-        Label2.ForeColor = Color.RoyalBlue
-        Label3.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.RoyalBlue
+        lblFinanzas.ForeColor = Color.RoyalBlue
+        lblGraficas.ForeColor = Color.RoyalBlue
         frmPacientes.dgvPacientes.ClearSelection()
 
     End Sub
 
-    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblAranceles.Click
         Me.ActiveMdiChild.Dispose()
         frmContenedor = Aranceles
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
+        lblAranceles.ForeColor = Color.White
+        lblGraficas.ForeColor = Color.RoyalBlue
         lblPacientes.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.White
-        Label3.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.RoyalBlue
+        lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
         Aranceles.DataGridView1.ClearSelection()
     End Sub
@@ -109,16 +110,16 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.RoyalBlue
-        Label3.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
+        lblGraficas.ForeColor = Color.RoyalBlue
         'frmCitas.dgvLunes.ClearSelection()
 
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        Label3.Text = Date.Now.ToLongTimeString
+        lblReloj.Text = Date.Now.ToLongTimeString
     End Sub
 
     Private Sub Panel2_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlBarraSuperior.MouseClick
@@ -176,17 +177,17 @@
 
 
 
-    Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label7.Click
+    Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblFinanzas.Click
         Me.ActiveMdiChild.Dispose()
         frmContenedor = finanzas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
-        Label7.ForeColor = Color.White
+        lblFinanzas.ForeColor = Color.White
         lblPacientes.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.RoyalBlue
-        Label3.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblGraficas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
 
     End Sub
@@ -198,10 +199,10 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.White
-        Label2.ForeColor = Color.RoyalBlue
-        Label3.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblReloj.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.RoyalBlue
+        lblFinanzas.ForeColor = Color.RoyalBlue
         frmPacientes.dgvPacientes.ClearSelection()
     End Sub
 
@@ -240,7 +241,7 @@
         Me.Opacity = 1
     End Sub
 
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblReloj.Click
 
     End Sub
 
@@ -251,9 +252,9 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.White
-        Label3.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.White
+        lblReloj.ForeColor = Color.RoyalBlue
+        lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
@@ -265,10 +266,10 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.White
-        Label2.ForeColor = Color.RoyalBlue
-        Label3.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblReloj.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.RoyalBlue
+        lblFinanzas.ForeColor = Color.RoyalBlue
     End Sub
 
     Private Sub Panel9_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlCitas.Click
@@ -278,9 +279,9 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.RoyalBlue
-        Label3.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblReloj.ForeColor = Color.RoyalBlue
+        lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
     End Sub
 
@@ -292,9 +293,9 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.White
-        Label3.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.White
+        lblReloj.ForeColor = Color.RoyalBlue
+        lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
@@ -305,10 +306,10 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
-        Label7.ForeColor = Color.White
+        lblFinanzas.ForeColor = Color.White
         lblPacientes.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.RoyalBlue
-        Label3.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblReloj.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
@@ -320,9 +321,9 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.RoyalBlue
-        Label3.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.White
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblReloj.ForeColor = Color.RoyalBlue
+        lblFinanzas.ForeColor = Color.White
         lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
@@ -361,23 +362,23 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.RoyalBlue
-        Label3.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblReloj.ForeColor = Color.RoyalBlue
+        lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
         'frmCitas.dgvLunes.ClearSelection()
     End Sub
 
-    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
+    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblGraficas.Click
         Me.ActiveMdiChild.Dispose()
         frmContenedor = graficas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.RoyalBlue
-        Label2.ForeColor = Color.White
-        Label3.ForeColor = Color.RoyalBlue
-        Label7.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblGraficas.ForeColor = Color.White
+        lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
         Aranceles.DataGridView1.ClearSelection()
     End Sub
