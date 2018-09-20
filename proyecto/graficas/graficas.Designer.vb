@@ -26,13 +26,11 @@ Partial Class graficas
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.btngraficar = New System.Windows.Forms.Button()
         Me.btnprompacientes = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btningresos = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'grafica
@@ -47,24 +45,15 @@ Partial Class graficas
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
         Me.grafica.Series.Add(Series1)
-        Me.grafica.Size = New System.Drawing.Size(575, 402)
+        Me.grafica.Size = New System.Drawing.Size(753, 414)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
         '
-        'btngraficar
-        '
-        Me.btngraficar.Location = New System.Drawing.Point(599, 459)
-        Me.btngraficar.Name = "btngraficar"
-        Me.btngraficar.Size = New System.Drawing.Size(166, 55)
-        Me.btngraficar.TabIndex = 1
-        Me.btngraficar.Text = "Graficar"
-        Me.btngraficar.UseVisualStyleBackColor = True
-        '
         'btnprompacientes
         '
-        Me.btnprompacientes.Location = New System.Drawing.Point(599, 340)
+        Me.btnprompacientes.Location = New System.Drawing.Point(255, 12)
         Me.btnprompacientes.Name = "btnprompacientes"
-        Me.btnprompacientes.Size = New System.Drawing.Size(127, 35)
+        Me.btnprompacientes.Size = New System.Drawing.Size(115, 35)
         Me.btnprompacientes.TabIndex = 2
         Me.btnprompacientes.Text = "promedio edades pacientes"
         Me.btnprompacientes.UseVisualStyleBackColor = True
@@ -73,7 +62,7 @@ Partial Class graficas
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(596, 277)
+        Me.Label1.Location = New System.Drawing.Point(41, 16)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(188, 36)
         Me.Label1.TabIndex = 3
@@ -81,45 +70,44 @@ Partial Class graficas
         '
         'btningresos
         '
-        Me.btningresos.Location = New System.Drawing.Point(599, 391)
+        Me.btningresos.Location = New System.Drawing.Point(389, 12)
         Me.btningresos.Name = "btningresos"
-        Me.btningresos.Size = New System.Drawing.Size(127, 35)
+        Me.btningresos.Size = New System.Drawing.Size(114, 35)
         Me.btningresos.TabIndex = 4
         Me.btningresos.Text = "ingresos"
         Me.btningresos.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'Label2
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(743, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(41, 40)
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.Label2.Location = New System.Drawing.Point(12, 79)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(497, 18)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "los datos mostrados son los promedios de edades de pacientes:"
         '
         'graficas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(796, 526)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btningresos)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnprompacientes)
-        Me.Controls.Add(Me.btngraficar)
         Me.Controls.Add(Me.grafica)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "graficas"
         Me.Text = "."
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents grafica As System.Windows.Forms.DataVisualization.Charting.Chart
-    Friend WithEvents btngraficar As System.Windows.Forms.Button
     Friend WithEvents btnprompacientes As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btningresos As System.Windows.Forms.Button
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class
