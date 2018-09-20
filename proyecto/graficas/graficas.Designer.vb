@@ -30,10 +30,12 @@ Partial Class graficas
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btningresos = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.dgbinfo = New System.Windows.Forms.DataGridView()
+        Me.dgvInfo = New System.Windows.Forms.DataGridView()
+        Me.dgvCount = New System.Windows.Forms.DataGridView()
         Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgbinfo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvCount, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'grafica
@@ -56,7 +58,7 @@ Partial Class graficas
         '
         Me.btnprompacientes.Location = New System.Drawing.Point(255, 12)
         Me.btnprompacientes.Name = "btnprompacientes"
-        Me.btnprompacientes.Size = New System.Drawing.Size(115, 35)
+        Me.btnprompacientes.Size = New System.Drawing.Size(201, 54)
         Me.btnprompacientes.TabIndex = 2
         Me.btnprompacientes.Text = "promedio edades pacientes"
         Me.btnprompacientes.UseVisualStyleBackColor = True
@@ -73,9 +75,9 @@ Partial Class graficas
         '
         'btningresos
         '
-        Me.btningresos.Location = New System.Drawing.Point(389, 12)
+        Me.btningresos.Location = New System.Drawing.Point(477, 12)
         Me.btningresos.Name = "btningresos"
-        Me.btningresos.Size = New System.Drawing.Size(114, 35)
+        Me.btningresos.Size = New System.Drawing.Size(201, 54)
         Me.btningresos.TabIndex = 4
         Me.btningresos.Text = "ingresos"
         Me.btningresos.UseVisualStyleBackColor = True
@@ -90,22 +92,30 @@ Partial Class graficas
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "los datos mostrados son los promedios de edades de pacientes:"
         '
-        'dgbinfo
+        'dgvInfo
         '
-        Me.dgbinfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbinfo.Location = New System.Drawing.Point(0, 1)
-        Me.dgbinfo.Name = "dgbinfo"
-        Me.dgbinfo.Size = New System.Drawing.Size(10, 10)
-        Me.dgbinfo.TabIndex = 6
-        Me.dgbinfo.Visible = False
+        Me.dgvInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvInfo.Location = New System.Drawing.Point(0, 1)
+        Me.dgvInfo.Name = "dgvInfo"
+        Me.dgvInfo.Size = New System.Drawing.Size(10, 10)
+        Me.dgvInfo.TabIndex = 6
+        Me.dgvInfo.Visible = False
+        '
+        'dgvCount
+        '
+        Me.dgvCount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCount.Location = New System.Drawing.Point(0, 16)
+        Me.dgvCount.Name = "dgvCount"
+        Me.dgvCount.Size = New System.Drawing.Size(10, 10)
+        Me.dgvCount.TabIndex = 7
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(623, 34)
+        Me.Label3.Location = New System.Drawing.Point(736, 38)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 7
+        Me.Label3.TabIndex = 8
         Me.Label3.Text = "Label3"
         '
         'graficas
@@ -114,7 +124,8 @@ Partial Class graficas
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(796, 526)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.dgbinfo)
+        Me.Controls.Add(Me.dgvCount)
+        Me.Controls.Add(Me.dgvInfo)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btningresos)
         Me.Controls.Add(Me.Label1)
@@ -124,7 +135,8 @@ Partial Class graficas
         Me.Name = "graficas"
         Me.Text = "."
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgbinfo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvCount, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -134,6 +146,7 @@ Partial Class graficas
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btningresos As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents dgbinfo As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvInfo As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvCount As System.Windows.Forms.DataGridView
     Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

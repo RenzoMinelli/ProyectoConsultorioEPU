@@ -9,15 +9,34 @@
     Dim y3 As String
     Dim y4 As String
     Dim y5 As String
-    Dim fechan As Integer
-    Dim fechaa As String
+    Dim fechan As Date
+    Dim fechaa As Date
+    Dim count As Integer
+    Dim indice As Integer
+    Dim suma As Integer = 0
+    Dim diferenciaf As Integer
 
     Private Sub btnprompacientes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnprompacientes.Click
-        Consulta = "select Fecha_nacimiento from pacientes;"
+        Consulta = "select fecha_nacimiento from paciente;"
         consultar()
-        dgbinfo.DataSource = Tabla
-        fechan = dgbinfo.Rows(0).Cells(0).Value
-        fechaa = DateTime.Now.ToString
-        Label3.Text = fechaa
+        dgvInfo.DataSource = Tabla
+        count = dgvInfo.RowCount
+        For indice As Integer = 0 To count - 1
+
+            fechan = dgvInfo.Rows(indice).Cells(0).Value
+            Dim days As Long = DateDiff(DateInterval.Year, fechaa, fechan)
+            suma = suma + days
+        Next
+        suma = suma / count
+        Label3.Text = suma
+    End Sub
+
+    Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        fechaa = DateTime.Now.ToString("yyyy-MM-dd")
+    End Sub
+
+    Private Sub btningresos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btningresos.Click
+        btningresos.Visible = False
+
     End Sub
 End Class
