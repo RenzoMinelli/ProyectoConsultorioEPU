@@ -197,7 +197,7 @@
         btnMostrarAntecedentes.Show()
         btnRegistroMedico.Show()
         btnRealizarPago.Show()
-        btnPlanTratamiento.Show()
+
 
         'Guardamos en las variables los datos acordes
         id_p = dgvPacientes.CurrentRow.Cells(0).Value
@@ -284,7 +284,7 @@
             'Intentamos obtener los pacientes que cumplan con las condición
             Try
 
-                Consulta = "Select id_p, cedula, fecha_nacimiento, upper(apellido) as 'nombre', upper(nombre) as 'apellido', telefono, upper(enviado_por) as 'enviado_por', upper(direccion_particular) as 'direccion_particular', upper(direccion_trabajo) as 'direccion_trabajo', saldo, estado from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + busqueda + "%' or cedula like '" + busqueda + "%' or apellido like '" + busqueda + "%' );"
+                Consulta = "SELECT id_p, cedula, fecha_nacimiento, concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'nombre', telefono, concat(upper(left(enviado_por,1)), lower(substring(enviado_por from 2))) as 'enviado_por', concat(upper(left(direccion_particular,1)), lower(substring(direccion_particular from 2))) as 'direccion_particular', concat(upper(left(direccion_trabajo,1)), lower(substring(direccion_trabajo from 2))) as 'direccion_trabajo', saldo, estado from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + busqueda + "%' or cedula like '" + busqueda + "%' or apellido like '" + busqueda + "%' );"
 
                 consultar()
                 dgvPacientes.DataSource = Tabla
@@ -435,11 +435,5 @@
     End Sub
 
 
-    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPlanTratamiento.Click
-        Me.Hide()
-        frmContenedor = frmPlanTratamiento
-        frmContenedor.MdiParent = Menu_Inicio
-        frmContenedor.Dock = DockStyle.Fill
-        frmContenedor.Show()
-    End Sub
+    
 End Class

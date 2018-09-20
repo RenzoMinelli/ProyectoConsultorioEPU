@@ -3,6 +3,13 @@
 
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+        Try
+            Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica', terminado as 'Terminado' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "';"
+            consultar()
+            dgvTratamientos.DataSource = Tabla
+        Catch ex As Exception
+
+        End Try
 
         actBoca()
 
@@ -477,25 +484,20 @@
     Private Sub actTabla()
         Try
 
-            Consulta = "Select r.descripcion, a.descripcion, c.fecha, c.hora , precio from registro_medico r left join aranceles a on a.id_a = r.id_a left join cita c on c.id_c = r.id_c where r.id_p = '" + Str(id_p) + "';"
+            Consulta = "Select descripcion, fecha, hora, atendida from cita where id_p = '" + Str(id_p) + "';"
             consultar()
 
             dgvRegistroMedico.DataSource = Tabla
 
             dgvRegistroMedico.Columns(0).HeaderText = "Descripcion"
-            dgvRegistroMedico.Columns(1).HeaderText = "Descripcion de Arancel"
-            dgvRegistroMedico.Columns(2).HeaderText = "Fecha"
-            dgvRegistroMedico.Columns(3).HeaderText = "Hora"
-            dgvRegistroMedico.Columns(4).HeaderText = "Precio ($)"
+            dgvRegistroMedico.Columns(1).HeaderText = "Fecha"
+            dgvRegistroMedico.Columns(2).HeaderText = "Hora"
 
-            dgvRegistroMedico.Sort(dgvRegistroMedico.Columns(4), System.ComponentModel.ListSortDirection.Ascending)
-
-            dgvRegistroMedico.AutoResizeRows()
+            dgvRegistroMedico.Sort(dgvRegistroMedico.Columns(1), System.ComponentModel.ListSortDirection.Ascending)
 
         Catch ex As Exception
 
         End Try
-
 
     End Sub
 

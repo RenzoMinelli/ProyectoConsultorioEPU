@@ -18,8 +18,9 @@
         consultar()
         dgvCitasEnLaFecha.DataSource = Tabla
 
-
-
+        Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "' and terminado = '0';"
+        consultar()
+        dgvTratamientos.DataSource = Tabla
     End Sub
 
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -38,73 +39,56 @@
         Else
 
             Dim control As Integer = 0
+            Dim ultimaHora As TimeSpan = (Convert.ToDateTime("20:30:00")).TimeOfDay
+            Dim primeraHora As TimeSpan = (Convert.ToDateTime("08:00:00")).TimeOfDay
             Dim hora2 As TimeSpan = (Convert.ToDateTime(hora)).TimeOfDay
 
-            For x = 0 To dgvCitasEnLaFecha.RowCount - 1
 
-                Dim HoraAux As TimeSpan = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
+            If hora2 < ultimaHora And hora2 > primeraHora Then
 
-                Dim HoraAuxFinal As New TimeSpan(0, 40, 0)
-                HoraAuxFinal = HoraAux + HoraAuxFinal
+                For x = 0 To dgvCitasEnLaFecha.RowCount - 1
 
+                    Dim HoraAux As TimeSpan = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
 
-                If hora2 <= HoraAuxFinal And hora2 >= HoraAux Then
-
-                    control = 1
-
-                End If
+                    Dim HoraAuxFinal As New TimeSpan(0, 30, 0)
+                    HoraAuxFinal = HoraAux + HoraAuxFinal
 
 
-            Next
+                    If hora2 <= HoraAuxFinal And hora2 >= HoraAux Then
 
-            If control = 1 Then
-                MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
-            Else
-                Try
-                    Consulta = "Insert into cita (id_p, fecha, hora, realizada, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "', 0, '" + descr + "'); "
-                    consultar()
+                        control = 1
+
+                    End If
 
 
+                Next
+
+                If control = 1 Then
+                    MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
+                Else
                     Try
-                        Consulta = "Select * from cita where id_p = '" + id_p.ToString + "';"
+
+                        Consulta = "Insert into cita (id_p, fecha, hora, descripcion, atendida) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "','" + descr + "', '0'); "
                         consultar()
 
-                        dgvAuxiliar.DataSource = Tabla
-                        dgvAuxiliar.Sort(dgvAuxiliar.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
-                        Dim id_c As Integer
+                        MsgBox("Cita registrada", MsgBoxStyle.Information)
 
-                        id_c = dgvAuxiliar.Rows(dgvAuxiliar.RowCount - 1).Cells(0).Value
-
-
-                        For x = 0 To frmMarcarProximaCitaAranceles.dgvArancelesSelect.RowCount - 1
-
-                            Consulta = "insert into registro_medico (id_p, descripcion, precio, id_c, id_a) values ('" + id_p.ToString + "','" + frmMarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(3).Value + "','" + frmMarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + id_c.ToString + "','" + frmMarcarProximaCitaAranceles.dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "');"
-                            consultar()
-
-                        Next
-
-                        MsgBox("Registrado", MsgBoxStyle.Information)
-
-                        frmContenedor.Dispose()
                         Me.Dispose()
                         frmPacientes.Show()
 
                     Catch ex As Exception
 
-                        MsgBox("Error al crear registro de plan, pero se creo la cita", MsgBoxStyle.Exclamation)
-                        MsgBox(ex.ToString)
+                        MsgBox("Error al registar la cita", MsgBoxStyle.Exclamation)
+
                     End Try
 
-
-                Catch ex As Exception
-                    MsgBox("Error al ingresar la cita")
-                End Try
+                End If
 
             End If
 
+           
 
         End If
-
 
     End Sub
 
@@ -138,12 +122,5 @@
         dgvCitasEnLaFecha.ClearSelection()
     End Sub
 
-    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-
-        frmContenedor = frmMarcarProximaCitaAranceles
-        frmContenedor.MdiParent = Menu_Inicio
-        frmContenedor.Dock = DockStyle.Fill
-        frmContenedor.Show()
-
-    End Sub
+   
 End Class

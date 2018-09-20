@@ -52,7 +52,7 @@ Partial Class frmModificarPaciente
         Me.txbNombre.Location = New System.Drawing.Point(325, 91)
         Me.txbNombre.Name = "txbNombre"
         Me.txbNombre.Size = New System.Drawing.Size(234, 35)
-        Me.txbNombre.TabIndex = 0
+        Me.txbNombre.TabIndex = 1
         '
         'lblNombre
         '
@@ -80,7 +80,7 @@ Partial Class frmModificarPaciente
         Me.txbCedula.Location = New System.Drawing.Point(325, 47)
         Me.txbCedula.Name = "txbCedula"
         Me.txbCedula.Size = New System.Drawing.Size(234, 35)
-        Me.txbCedula.TabIndex = 1
+        Me.txbCedula.TabIndex = 0
         '
         'lblFechaNacimiento
         '
@@ -108,7 +108,7 @@ Partial Class frmModificarPaciente
         Me.txbEnviadoPor.Location = New System.Drawing.Point(325, 234)
         Me.txbEnviadoPor.Name = "txbEnviadoPor"
         Me.txbEnviadoPor.Size = New System.Drawing.Size(234, 35)
-        Me.txbEnviadoPor.TabIndex = 3
+        Me.txbEnviadoPor.TabIndex = 4
         '
         'lblDireccionPersonal
         '
@@ -123,10 +123,10 @@ Partial Class frmModificarPaciente
         'txbDireccionPersonal
         '
         Me.txbDireccionPersonal.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbDireccionPersonal.Location = New System.Drawing.Point(325, 283)
+        Me.txbDireccionPersonal.Location = New System.Drawing.Point(325, 277)
         Me.txbDireccionPersonal.Name = "txbDireccionPersonal"
         Me.txbDireccionPersonal.Size = New System.Drawing.Size(234, 35)
-        Me.txbDireccionPersonal.TabIndex = 4
+        Me.txbDireccionPersonal.TabIndex = 5
         '
         'lblDireccionTrabajo
         '
@@ -144,7 +144,7 @@ Partial Class frmModificarPaciente
         Me.txbDireccionTrabajo.Location = New System.Drawing.Point(325, 321)
         Me.txbDireccionTrabajo.Name = "txbDireccionTrabajo"
         Me.txbDireccionTrabajo.Size = New System.Drawing.Size(234, 35)
-        Me.txbDireccionTrabajo.TabIndex = 5
+        Me.txbDireccionTrabajo.TabIndex = 6
         '
         'btnGuardar
         '
@@ -198,7 +198,7 @@ Partial Class frmModificarPaciente
         Me.mcFechaNacimiento.Location = New System.Drawing.Point(682, 119)
         Me.mcFechaNacimiento.MaxSelectionCount = 1
         Me.mcFechaNacimiento.Name = "mcFechaNacimiento"
-        Me.mcFechaNacimiento.TabIndex = 6
+        Me.mcFechaNacimiento.TabIndex = 7
         '
         'dgvAntecedentes
         '
@@ -215,7 +215,7 @@ Partial Class frmModificarPaciente
         Me.txbTelefono.Location = New System.Drawing.Point(325, 184)
         Me.txbTelefono.Name = "txbTelefono"
         Me.txbTelefono.Size = New System.Drawing.Size(234, 35)
-        Me.txbTelefono.TabIndex = 2
+        Me.txbTelefono.TabIndex = 3
         '
         'lblTelefono
         '
@@ -243,9 +243,9 @@ Partial Class frmModificarPaciente
         Me.txbApellido.Location = New System.Drawing.Point(325, 138)
         Me.txbApellido.Name = "txbApellido"
         Me.txbApellido.Size = New System.Drawing.Size(234, 35)
-        Me.txbApellido.TabIndex = 21
+        Me.txbApellido.TabIndex = 2
         '
-        'ModificarPaciente
+        'frmModificarPaciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -272,7 +272,7 @@ Partial Class frmModificarPaciente
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.txbNombre)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "ModificarPaciente"
+        Me.Name = "frmModificarPaciente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         CType(Me.dgvAntecedentes, System.ComponentModel.ISupportInitialize).EndInit()

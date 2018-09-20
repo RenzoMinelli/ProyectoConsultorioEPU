@@ -101,16 +101,10 @@
     <Compile Include="citas\frmMarcarCitaConcluida.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="citas\frmMarcarProximaCitaAranceles.Designer.vb">
-      <DependentUpon>frmMarcarProximaCitaAranceles.vb</DependentUpon>
-    </Compile>
-    <Compile Include="citas\frmMarcarProximaCitaAranceles.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pacientes\frmPlanTratamiento.Designer.vb">
+    <Compile Include="citas\frmPlanTratamiento.Designer.vb">
       <DependentUpon>frmPlanTratamiento.vb</DependentUpon>
     </Compile>
-    <Compile Include="pacientes\frmPlanTratamiento.vb">
+    <Compile Include="citas\frmPlanTratamiento.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="finanzas\finanzas.Designer.vb">
@@ -276,10 +270,7 @@
     <EmbeddedResource Include="citas\frmMarcarCitaConcluida.resx">
       <DependentUpon>frmMarcarCitaConcluida.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="citas\frmMarcarProximaCitaAranceles.resx">
-      <DependentUpon>frmMarcarProximaCitaAranceles.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\frmPlanTratamiento.resx">
+    <EmbeddedResource Include="citas\frmPlanTratamiento.resx">
       <DependentUpon>frmPlanTratamiento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="finanzas\finanzas.resx">

@@ -22,81 +22,77 @@ Partial Class frmAgregarCita
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvPacientes = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txbAnotaciones = New System.Windows.Forms.TextBox()
         Me.botonsito = New System.Windows.Forms.Button()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.btnIngresarAranceles = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dgvAuxiliar = New System.Windows.Forms.DataGridView()
+        Me.lblCitasEnLaFceha = New System.Windows.Forms.Label()
+        Me.dgvCitasEnLaFecha = New System.Windows.Forms.DataGridView()
+        Me.dtpFechaSeleccionada = New System.Windows.Forms.DateTimePicker()
+        Me.lblFechaSeleccionada = New System.Windows.Forms.Label()
+        Me.dgvTratamientos = New System.Windows.Forms.DataGridView()
+        Me.Label2 = New System.Windows.Forms.Label()
+        CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvCitasEnLaFecha, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvTratamientos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label1.Location = New System.Drawing.Point(28, 20)
+        Me.Label1.Location = New System.Drawing.Point(12, 54)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(113, 29)
+        Me.Label1.Size = New System.Drawing.Size(284, 29)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Paciente:"
+        Me.Label1.Text = "Seleccione un Pacientes:"
         '
-        'Label2
+        'dgvPacientes
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label2.Location = New System.Drawing.Point(478, 20)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(86, 29)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Fecha:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label3.Location = New System.Drawing.Point(763, 76)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(71, 29)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Hora:"
-        '
-        'MonthCalendar1
-        '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(483, 59)
-        Me.MonthCalendar1.Name = "MonthCalendar1"
-        Me.MonthCalendar1.TabIndex = 5
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AllowUserToResizeColumns = False
-        Me.DataGridView1.AllowUserToResizeRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(33, 59)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.Size = New System.Drawing.Size(407, 191)
-        Me.DataGridView1.TabIndex = 7
+        Me.dgvPacientes.AllowUserToAddRows = False
+        Me.dgvPacientes.AllowUserToDeleteRows = False
+        Me.dgvPacientes.AllowUserToResizeColumns = False
+        Me.dgvPacientes.AllowUserToResizeRows = False
+        Me.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvPacientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvPacientes.Location = New System.Drawing.Point(12, 98)
+        Me.dgvPacientes.Name = "dgvPacientes"
+        Me.dgvPacientes.ReadOnly = True
+        Me.dgvPacientes.RowHeadersVisible = False
+        Me.dgvPacientes.Size = New System.Drawing.Size(413, 150)
+        Me.dgvPacientes.TabIndex = 7
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(777, 487)
+        Me.Button1.Location = New System.Drawing.Point(789, 515)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(239, 80)
         Me.Button1.TabIndex = 8
@@ -107,120 +103,193 @@ Partial Class frmAgregarCita
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label4.Location = New System.Drawing.Point(478, 247)
+        Me.Label4.Location = New System.Drawing.Point(466, 260)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(151, 29)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Anotaciones:"
         '
-        'TextBox1
+        'txbAnotaciones
         '
-        Me.TextBox1.Location = New System.Drawing.Point(483, 279)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(533, 101)
-        Me.TextBox1.TabIndex = 4
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(103, 268)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(235, 25)
-        Me.Label5.TabIndex = 11
-        Me.Label5.Text = "Paciente seleccionado:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(85, 293)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(298, 25)
-        Me.Label6.TabIndex = 12
-        Me.Label6.Text = "ningun paciente seleccionado"
+        Me.txbAnotaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbAnotaciones.Location = New System.Drawing.Point(470, 304)
+        Me.txbAnotaciones.Multiline = True
+        Me.txbAnotaciones.Name = "txbAnotaciones"
+        Me.txbAnotaciones.Size = New System.Drawing.Size(546, 183)
+        Me.txbAnotaciones.TabIndex = 4
         '
         'botonsito
         '
         Me.botonsito.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.botonsito.Location = New System.Drawing.Point(33, 487)
+        Me.botonsito.Location = New System.Drawing.Point(33, 516)
         Me.botonsito.Name = "botonsito"
         Me.botonsito.Size = New System.Drawing.Size(231, 79)
         Me.botonsito.TabIndex = 13
         Me.botonsito.Text = "Regresar"
         Me.botonsito.UseVisualStyleBackColor = True
         '
-        'NumericUpDown1
+        'dgvAuxiliar
         '
-        Me.NumericUpDown1.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.NumericUpDown1.Location = New System.Drawing.Point(768, 135)
-        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {24, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(122, 33)
-        Me.NumericUpDown1.TabIndex = 14
+        Me.dgvAuxiliar.AllowUserToAddRows = False
+        Me.dgvAuxiliar.AllowUserToDeleteRows = False
+        Me.dgvAuxiliar.AllowUserToResizeColumns = False
+        Me.dgvAuxiliar.AllowUserToResizeRows = False
+        Me.dgvAuxiliar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvAuxiliar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvAuxiliar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvAuxiliar.Location = New System.Drawing.Point(1007, 12)
+        Me.dgvAuxiliar.Name = "dgvAuxiliar"
+        Me.dgvAuxiliar.ReadOnly = True
+        Me.dgvAuxiliar.RowHeadersVisible = False
+        Me.dgvAuxiliar.Size = New System.Drawing.Size(21, 13)
+        Me.dgvAuxiliar.TabIndex = 22
+        Me.dgvAuxiliar.Visible = False
         '
-        'NumericUpDown2
+        'lblCitasEnLaFceha
         '
-        Me.NumericUpDown2.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.NumericUpDown2.Location = New System.Drawing.Point(896, 135)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(120, 33)
-        Me.NumericUpDown2.TabIndex = 15
+        Me.lblCitasEnLaFceha.AutoSize = True
+        Me.lblCitasEnLaFceha.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCitasEnLaFceha.Location = New System.Drawing.Point(466, 66)
+        Me.lblCitasEnLaFceha.Name = "lblCitasEnLaFceha"
+        Me.lblCitasEnLaFceha.Size = New System.Drawing.Size(286, 29)
+        Me.lblCitasEnLaFceha.TabIndex = 26
+        Me.lblCitasEnLaFceha.Text = "Citas Agendadas ese día:"
         '
-        'btnIngresarAranceles
+        'dgvCitasEnLaFecha
         '
-        Me.btnIngresarAranceles.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIngresarAranceles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIngresarAranceles.Location = New System.Drawing.Point(33, 403)
-        Me.btnIngresarAranceles.Name = "btnIngresarAranceles"
-        Me.btnIngresarAranceles.Size = New System.Drawing.Size(983, 62)
-        Me.btnIngresarAranceles.TabIndex = 21
-        Me.btnIngresarAranceles.Text = "Ingresar lo que se realizará en la cita"
-        Me.btnIngresarAranceles.UseVisualStyleBackColor = True
+        Me.dgvCitasEnLaFecha.AllowUserToAddRows = False
+        Me.dgvCitasEnLaFecha.AllowUserToDeleteRows = False
+        Me.dgvCitasEnLaFecha.AllowUserToResizeColumns = False
+        Me.dgvCitasEnLaFecha.AllowUserToResizeRows = False
+        Me.dgvCitasEnLaFecha.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvCitasEnLaFecha.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvCitasEnLaFecha.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvCitasEnLaFecha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvCitasEnLaFecha.DefaultCellStyle = DataGridViewCellStyle4
+        Me.dgvCitasEnLaFecha.Location = New System.Drawing.Point(470, 98)
+        Me.dgvCitasEnLaFecha.Name = "dgvCitasEnLaFecha"
+        Me.dgvCitasEnLaFecha.ReadOnly = True
+        Me.dgvCitasEnLaFecha.RowHeadersVisible = False
+        Me.dgvCitasEnLaFecha.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvCitasEnLaFecha.Size = New System.Drawing.Size(545, 150)
+        Me.dgvCitasEnLaFecha.TabIndex = 25
         '
-        'Agregar_Cita
+        'dtpFechaSeleccionada
+        '
+        Me.dtpFechaSeleccionada.CustomFormat = "dd/MM/yyyy        HH:mm"
+        Me.dtpFechaSeleccionada.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpFechaSeleccionada.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpFechaSeleccionada.Location = New System.Drawing.Point(529, 12)
+        Me.dtpFechaSeleccionada.Name = "dtpFechaSeleccionada"
+        Me.dtpFechaSeleccionada.Size = New System.Drawing.Size(271, 35)
+        Me.dtpFechaSeleccionada.TabIndex = 24
+        '
+        'lblFechaSeleccionada
+        '
+        Me.lblFechaSeleccionada.AutoSize = True
+        Me.lblFechaSeleccionada.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaSeleccionada.Location = New System.Drawing.Point(284, 12)
+        Me.lblFechaSeleccionada.Name = "lblFechaSeleccionada"
+        Me.lblFechaSeleccionada.Size = New System.Drawing.Size(239, 29)
+        Me.lblFechaSeleccionada.TabIndex = 23
+        Me.lblFechaSeleccionada.Text = "Fecha Seleccionada:"
+        '
+        'dgvTratamientos
+        '
+        Me.dgvTratamientos.AllowUserToAddRows = False
+        Me.dgvTratamientos.AllowUserToDeleteRows = False
+        Me.dgvTratamientos.AllowUserToResizeColumns = False
+        Me.dgvTratamientos.AllowUserToResizeRows = False
+        Me.dgvTratamientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvTratamientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvTratamientos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvTratamientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvTratamientos.DefaultCellStyle = DataGridViewCellStyle6
+        Me.dgvTratamientos.Location = New System.Drawing.Point(12, 304)
+        Me.dgvTratamientos.Name = "dgvTratamientos"
+        Me.dgvTratamientos.ReadOnly = True
+        Me.dgvTratamientos.RowHeadersVisible = False
+        Me.dgvTratamientos.Size = New System.Drawing.Size(413, 183)
+        Me.dgvTratamientos.TabIndex = 27
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
+        Me.Label2.Location = New System.Drawing.Point(7, 260)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(242, 29)
+        Me.Label2.TabIndex = 28
+        Me.Label2.Text = "Tratamientos Activos:"
+        '
+        'frmAgregarCita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
-        Me.Controls.Add(Me.btnIngresarAranceles)
-        Me.Controls.Add(Me.NumericUpDown2)
-        Me.Controls.Add(Me.NumericUpDown1)
-        Me.Controls.Add(Me.botonsito)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.MonthCalendar1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.dgvTratamientos)
+        Me.Controls.Add(Me.lblCitasEnLaFceha)
+        Me.Controls.Add(Me.dgvCitasEnLaFecha)
+        Me.Controls.Add(Me.dtpFechaSeleccionada)
+        Me.Controls.Add(Me.lblFechaSeleccionada)
+        Me.Controls.Add(Me.dgvAuxiliar)
+        Me.Controls.Add(Me.botonsito)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.dgvPacientes)
+        Me.Controls.Add(Me.txbAnotaciones)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Agregar_Cita"
+        Me.Name = "frmAgregarCita"
         Me.Text = "agregarcitas2"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvCitasEnLaFecha, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvTratamientos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvPacientes As System.Windows.Forms.DataGridView
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txbAnotaciones As System.Windows.Forms.TextBox
     Friend WithEvents botonsito As System.Windows.Forms.Button
-    Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown2 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents btnIngresarAranceles As System.Windows.Forms.Button
+    Friend WithEvents dgvAuxiliar As System.Windows.Forms.DataGridView
+    Friend WithEvents lblCitasEnLaFceha As System.Windows.Forms.Label
+    Friend WithEvents dgvCitasEnLaFecha As System.Windows.Forms.DataGridView
+    Friend WithEvents dtpFechaSeleccionada As System.Windows.Forms.DateTimePicker
+    Friend WithEvents lblFechaSeleccionada As System.Windows.Forms.Label
+    Friend WithEvents dgvTratamientos As System.Windows.Forms.DataGridView
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

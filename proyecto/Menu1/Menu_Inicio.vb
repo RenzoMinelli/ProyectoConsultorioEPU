@@ -7,25 +7,20 @@
 
     Dim con As Integer = 0
 
-    
-
-
-
-
 
     Private Sub Menu_Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 
        
-        Me.PerformAutoScale()
+        ' Me.PerformAutoScale()
 
-        Me.WindowState = FormWindowState.Maximized
-        pbMaximizar.Image = My.Resources.img_509774_1_
-        pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
-        pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
-        pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
+        ' Me.WindowState = FormWindowState.Maximized
+        'pbMaximizar.Image = My.Resources.img_509774_1_
+        'pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
+        'pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
+        'pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
 
-        con = 1
+        'con = 1
 
 
 
@@ -64,13 +59,15 @@
 
         End If
 
-        veriCon()
+        Consulta = "select * from cita"
+        consultar()
+
         If conex = True Then
-            PictureBox5.Show()
-            PictureBox6.Hide()
+
+            PictureBox6.Image = My.Resources._70002
         Else
-            PictureBox5.Hide()
-            PictureBox6.Show()
+
+            PictureBox6.Image = My.Resources.letterx_87521
         End If
 
 
@@ -116,7 +113,7 @@
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
-        frmCitas.dgvLunes.ClearSelection()
+        'frmCitas.dgvLunes.ClearSelection()
 
     End Sub
 
@@ -332,8 +329,8 @@
     Private Sub PictureBox9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbMaximizar.Click
         If con = 1 Then
 
-            Me.Width = 1400
-            Me.Height = 800
+            Me.Width = 1338
+            Me.Height = 919
 
             Me.WindowState = FormWindowState.Normal
             pbMaximizar.Image = My.Resources.maximize_window_1_
@@ -368,7 +365,7 @@
         Label3.ForeColor = Color.RoyalBlue
         Label7.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
-        frmCitas.dgvLunes.ClearSelection()
+        'frmCitas.dgvLunes.ClearSelection()
     End Sub
 
 End Class

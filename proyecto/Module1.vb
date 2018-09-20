@@ -40,28 +40,30 @@ Module Module1
             Conexion = New MySqlDataAdapter(Consulta, ubicacion)
             Tabla = New DataTable
             Conexion.Fill(Tabla)
+            MysqlConexion.Close()
+            conex = True
         Catch ex As Exception
-            'MsgBox(ex.ToString)
+
             conex = False
         End Try
 
     End Sub
 
-    Public Sub veriCon()
-        Try
+    Public Sub verificarConex()
 
-            Consulta = "select * from aranceles"
-            Conexion = New MySqlDataAdapter(Consulta, ubicacion)
-            Tabla = New DataTable
-            Conexion.Fill(Tabla)
-            conex = True
+        Select Case MysqlConexion.State
+            Case ConnectionState.Open
+                MsgBox("open")
+            Case ConnectionState.Closed
+                MsgBox("close")
+            Case ConnectionState.Connecting
+                MsgBox("connect")
+            Case ConnectionState.Fetching
+                MsgBox("fetching")
+            Case ConnectionState.Broken
+                MsgBox("broke")
 
-        Catch ex As Exception
-
-            conex = False
-
-        End Try
-
+        End Select
     End Sub
     Public Sub MuestraMsgBoxVersatil(ByVal texto As String, ByVal tipo As Integer)
         frmFondoTransparente.Show()
@@ -73,6 +75,7 @@ Module Module1
             msgbv.btnNo.Visible = True
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Sí"
+            msgbv.btnNo.Text = "No"
             msgbv.txbRespuesta.Visible = False
 
 
@@ -95,6 +98,32 @@ Module Module1
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Aceptar"
             msgbv.btnSi.Location = New Point(msgbv.Width / 2 - msgbv.btnSi.Width / 2, msgbv.btnSi.Location.Y)
+            msgbv.txbRespuesta.Location = New Point(msgbv.Width / 2 - msgbv.txbRespuesta.Width / 2, msgbv.txbRespuesta.Location.Y)
+            msgbv.txbRespuesta.Visible = True
+
+
+            msgbv.txbRespuesta.Focus()
+            'Determinar si el formulario esta listo para seguir
+            If msgbv.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+                'Obtener la respuesta ingresada
+                respString = msgbv.respuestaString
+            Else
+                respString = "Error"
+            End If
+            frmFondoTransparente.Dispose()
+            msgbv.Dispose()
+
+        ElseIf tipo = 2 Then
+
+            Dim msgbv As New MsgBoxVersatil()
+
+            msgbv.lblTexto.Text = texto
+            msgbv.btnNo.Visible = True
+            msgbv.btnSi.Visible = True
+            msgbv.btnSi.Text = "Aceptar"
+            msgbv.btnNo.Text = "Cancelar"
+            msgbv.btnSi.Location = New Point(msgbv.Width / 4 - msgbv.btnSi.Width / 2, msgbv.btnSi.Location.Y)
+            msgbv.btnSi.Location = New Point(msgbv.Width / 4 * 3 - msgbv.btnNo.Width / 2, msgbv.btnSi.Location.Y)
             msgbv.txbRespuesta.Location = New Point(msgbv.Width / 2 - msgbv.txbRespuesta.Width / 2, msgbv.txbRespuesta.Location.Y)
             msgbv.txbRespuesta.Visible = True
 

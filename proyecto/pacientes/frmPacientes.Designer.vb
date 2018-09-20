@@ -59,7 +59,6 @@ Partial Class frmPacientes
         Me.btnRealizarPago = New System.Windows.Forms.Button()
         Me.dgvFiltro = New System.Windows.Forms.DataGridView()
         Me.btnCambiarPacientes = New System.Windows.Forms.Button()
-        Me.btnPlanTratamiento = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.pnlTapa.SuspendLayout()
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -495,27 +494,12 @@ Partial Class frmPacientes
         Me.btnCambiarPacientes.Text = "Mostrar Pacientes Inactivos"
         Me.btnCambiarPacientes.UseVisualStyleBackColor = True
         '
-        'btnPlanTratamiento
-        '
-        Me.btnPlanTratamiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPlanTratamiento.ForeColor = System.Drawing.Color.Black
-        Me.btnPlanTratamiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPlanTratamiento.Location = New System.Drawing.Point(249, 631)
-        Me.btnPlanTratamiento.Name = "btnPlanTratamiento"
-        Me.btnPlanTratamiento.Size = New System.Drawing.Size(172, 75)
-        Me.btnPlanTratamiento.TabIndex = 21
-        Me.btnPlanTratamiento.Text = "Plan de tratamiento"
-        Me.btnPlanTratamiento.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnPlanTratamiento.UseVisualStyleBackColor = True
-        Me.btnPlanTratamiento.Visible = False
-        '
         'frmPacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1300, 750)
-        Me.Controls.Add(Me.btnPlanTratamiento)
         Me.Controls.Add(Me.pnlTapa)
         Me.Controls.Add(Me.btnCambiarPacientes)
         Me.Controls.Add(Me.dgvFiltro)
@@ -578,6 +562,5 @@ Partial Class frmPacientes
     Friend WithEvents btnCambiarPacientes As System.Windows.Forms.Button
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents lblEstado As System.Windows.Forms.Label
-    Friend WithEvents btnPlanTratamiento As System.Windows.Forms.Button
 
 End Class

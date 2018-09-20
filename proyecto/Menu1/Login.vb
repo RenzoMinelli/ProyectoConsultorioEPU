@@ -89,7 +89,8 @@
                 Me.Hide()
                 Menu_Inicio.Show()
             Else
-                MsgBox("contraseña incorrecta porfavor reintente")
+                MsgBox("contraseña incorrecta porfavor reintente", MsgBoxStyle.Exclamation)
+                txtcontraseña.Clear()
             End If
 
         ElseIf contador = 2 Then
@@ -103,7 +104,7 @@
 
             Else
 
-                MsgBox("contraseña incorrecta porfavor reintente")
+                MsgBox("contraseña incorrecta porfavor reintente", MsgBoxStyle.Exclamation)
 
             End If
 
