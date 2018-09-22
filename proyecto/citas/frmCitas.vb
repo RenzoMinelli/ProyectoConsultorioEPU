@@ -3149,6 +3149,7 @@
 
 
                                     dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+
                                     Exit For
                                 End If
 
@@ -3188,6 +3189,7 @@
 
 
                                     dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+
                                     Exit For
                                 End If
 

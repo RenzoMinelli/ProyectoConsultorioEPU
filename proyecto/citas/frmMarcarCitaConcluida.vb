@@ -124,4 +124,12 @@
 
         End Try
     End Sub
+
+    Private Sub btnEstado_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEstado.Click
+        Me.Hide()
+        frmContenedor = frmIngresarEstadoDientes
+        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+    End Sub
 End Class

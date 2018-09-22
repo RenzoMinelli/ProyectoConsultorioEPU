@@ -127,7 +127,7 @@ Partial Class frmCitas
         Me.dgvHora.ReadOnly = True
         Me.dgvHora.RowHeadersVisible = False
         Me.dgvHora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.dgvHora.Size = New System.Drawing.Size(1140, 654)
+        Me.dgvHora.Size = New System.Drawing.Size(1020, 654)
         Me.dgvHora.TabIndex = 13
         '
         'dgvConsultaDia

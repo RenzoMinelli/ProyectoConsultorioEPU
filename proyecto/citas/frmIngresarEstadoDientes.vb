@@ -90,48 +90,48 @@
         PnlDiente21c1.MakeTriangular(TriangleDirection.Down)
 
         '---------------------------------------------------------------------------
-        PnlDiente38c1.MakeTriangular(TriangleDirection.Down)
-        PnlDiente38c3.MakeTriangular(TriangleDirection.Up)
-        PnlDiente38c2.MakeTriangular(TriangleDirection.Left)
-        PnlDiente38c4.MakeTriangular(TriangleDirection.Right)
+        pnlDiente38c1.MakeTriangular(TriangleDirection.Down)
+        pnlDiente38c3.MakeTriangular(TriangleDirection.Up)
+        pnlDiente38c2.MakeTriangular(TriangleDirection.Left)
+        pnlDiente38c4.MakeTriangular(TriangleDirection.Right)
 
 
-        PnlDiente37c1.MakeTriangular(TriangleDirection.Down)
-        PnlDiente37c3.MakeTriangular(TriangleDirection.Up)
-        PnlDiente37c4.MakeTriangular(TriangleDirection.Right)
-        PnlDiente37c2.MakeTriangular(TriangleDirection.Left)
+        pnlDiente37c1.MakeTriangular(TriangleDirection.Down)
+        pnlDiente37c3.MakeTriangular(TriangleDirection.Up)
+        pnlDiente37c4.MakeTriangular(TriangleDirection.Right)
+        pnlDiente37c2.MakeTriangular(TriangleDirection.Left)
 
 
-        PnlDiente36c1.MakeTriangular(TriangleDirection.Down)
-        PnlDiente36c3.MakeTriangular(TriangleDirection.Up)
-        PnlDiente36c4.MakeTriangular(TriangleDirection.Right)
-        PnlDiente36c2.MakeTriangular(TriangleDirection.Left)
+        pnlDiente36c1.MakeTriangular(TriangleDirection.Down)
+        pnlDiente36c3.MakeTriangular(TriangleDirection.Up)
+        pnlDiente36c4.MakeTriangular(TriangleDirection.Right)
+        pnlDiente36c2.MakeTriangular(TriangleDirection.Left)
 
 
-        PnlDiente35c1.MakeTriangular(TriangleDirection.Down)
-        PnlDiente35c3.MakeTriangular(TriangleDirection.Up)
-        PnlDiente35c4.MakeTriangular(TriangleDirection.Right)
-        PnlDiente35c2.MakeTriangular(TriangleDirection.Left)
+        pnlDiente35c1.MakeTriangular(TriangleDirection.Down)
+        pnlDiente35c3.MakeTriangular(TriangleDirection.Up)
+        pnlDiente35c4.MakeTriangular(TriangleDirection.Right)
+        pnlDiente35c2.MakeTriangular(TriangleDirection.Left)
 
-        PnlDiente34c1.MakeTriangular(TriangleDirection.Down)
-        PnlDiente34c3.MakeTriangular(TriangleDirection.Up)
-        PnlDiente34c4.MakeTriangular(TriangleDirection.Right)
-        PnlDiente34c2.MakeTriangular(TriangleDirection.Left)
+        pnlDiente34c1.MakeTriangular(TriangleDirection.Down)
+        pnlDiente34c3.MakeTriangular(TriangleDirection.Up)
+        pnlDiente34c4.MakeTriangular(TriangleDirection.Right)
+        pnlDiente34c2.MakeTriangular(TriangleDirection.Left)
 
-        PnlDiente33c1.MakeTriangular(TriangleDirection.Down)
-        PnlDiente33c3.MakeTriangular(TriangleDirection.Up)
-        PnlDiente33c4.MakeTriangular(TriangleDirection.Right)
-        PnlDiente33c2.MakeTriangular(TriangleDirection.Left)
+        pnlDiente33c1.MakeTriangular(TriangleDirection.Down)
+        pnlDiente33c3.MakeTriangular(TriangleDirection.Up)
+        pnlDiente33c4.MakeTriangular(TriangleDirection.Right)
+        pnlDiente33c2.MakeTriangular(TriangleDirection.Left)
 
         pnlDiente32c2.MakeTriangular(TriangleDirection.Up)
-        PnlDiente32c4.MakeTriangular(TriangleDirection.Right)
-        PnlDiente32c2.MakeTriangular(TriangleDirection.Left)
+        pnlDiente32c4.MakeTriangular(TriangleDirection.Right)
+        pnlDiente32c2.MakeTriangular(TriangleDirection.Left)
         pnlDiente32c1.MakeTriangular(TriangleDirection.Down)
 
-        PnlDiente31c4.MakeTriangular(TriangleDirection.Right)
-        PnlDiente31c3.MakeTriangular(TriangleDirection.Up)
-        PnlDiente31c2.MakeTriangular(TriangleDirection.Left)
-        PnlDiente31c1.MakeTriangular(TriangleDirection.Down)
+        pnlDiente31c4.MakeTriangular(TriangleDirection.Right)
+        pnlDiente31c3.MakeTriangular(TriangleDirection.Up)
+        pnlDiente31c2.MakeTriangular(TriangleDirection.Left)
+        pnlDiente31c1.MakeTriangular(TriangleDirection.Down)
 
 
     End Sub

@@ -22,34 +22,32 @@ Partial Class graficas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.btnprompacientes = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btningresos = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.dgvInfo = New System.Windows.Forms.DataGridView()
-        Me.dgvCount = New System.Windows.Forms.DataGridView()
         Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvCount, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'grafica
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.grafica.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.grafica.Legends.Add(Legend2)
+        ChartArea1.Name = "ChartArea1"
+        Me.grafica.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.grafica.Legends.Add(Legend1)
         Me.grafica.Location = New System.Drawing.Point(12, 100)
         Me.grafica.Name = "grafica"
-        Series2.ChartArea = "ChartArea1"
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Me.grafica.Series.Add(Series2)
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.grafica.Series.Add(Series1)
         Me.grafica.Size = New System.Drawing.Size(753, 414)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
@@ -94,20 +92,17 @@ Partial Class graficas
         '
         'dgvInfo
         '
+        Me.dgvInfo.AllowUserToAddRows = False
+        Me.dgvInfo.AllowUserToDeleteRows = False
+        Me.dgvInfo.AllowUserToResizeColumns = False
+        Me.dgvInfo.AllowUserToResizeRows = False
         Me.dgvInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvInfo.Location = New System.Drawing.Point(0, 1)
         Me.dgvInfo.Name = "dgvInfo"
+        Me.dgvInfo.ReadOnly = True
         Me.dgvInfo.Size = New System.Drawing.Size(10, 10)
         Me.dgvInfo.TabIndex = 6
         Me.dgvInfo.Visible = False
-        '
-        'dgvCount
-        '
-        Me.dgvCount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvCount.Location = New System.Drawing.Point(0, 16)
-        Me.dgvCount.Name = "dgvCount"
-        Me.dgvCount.Size = New System.Drawing.Size(10, 10)
-        Me.dgvCount.TabIndex = 7
         '
         'Label3
         '
@@ -124,7 +119,6 @@ Partial Class graficas
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(796, 526)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.dgvCount)
         Me.Controls.Add(Me.dgvInfo)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btningresos)
@@ -136,7 +130,6 @@ Partial Class graficas
         Me.Text = "."
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvCount, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -147,6 +140,5 @@ Partial Class graficas
     Friend WithEvents btningresos As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents dgvInfo As System.Windows.Forms.DataGridView
-    Friend WithEvents dgvCount As System.Windows.Forms.DataGridView
     Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

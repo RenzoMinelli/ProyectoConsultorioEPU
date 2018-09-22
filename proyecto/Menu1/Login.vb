@@ -26,7 +26,7 @@
         Else
             lblingrusuario.Text = "Ingrese Contraseña"
             btningresar.Visible = True
-
+            btnAtras.Visible = True
             txtcontraseña.Visible = True
             btnfuncionario.Visible = False
             btnodontologo.Visible = False
@@ -38,6 +38,7 @@
         contador = 2
 
         btningresar.Visible = True
+        btnAtras.Visible = True
 
         txtcontraseña.Visible = True
         btnfuncionario.Visible = False
@@ -81,8 +82,9 @@
             MsgBox("No hay conexión a la base de datos", MsgBoxStyle.Exclamation)
 
         End If
-        btningresar.Visible = False
 
+        btningresar.Visible = False
+        btnAtras.Visible = False
         txtcontraseña.Visible = False
     End Sub
 
@@ -125,6 +127,14 @@
         If e.KeyCode = Keys.Enter Then
             btningresar.PerformClick()
         End If
+    End Sub
+
+    Private Sub btnAtras_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAtras.Click
+        btningresar.Visible = False
+        btnAtras.Visible = False
+        txtcontraseña.Visible = False
+        btnfuncionario.Visible = True
+        btnodontologo.Visible = True
     End Sub
 End Class
 

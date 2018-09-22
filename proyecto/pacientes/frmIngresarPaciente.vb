@@ -275,4 +275,12 @@
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
     End Sub
+
+    Private Sub txbTelefono_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbTelefono.TextChanged
+        If IsNumeric(txbTelefono.Text) Then
+            epTelefono.SetError(txbTelefono, "")
+        Else
+            epTelefono.SetError(txbTelefono, "El teléfono solo debe contener números")
+        End If
+    End Sub
 End Class

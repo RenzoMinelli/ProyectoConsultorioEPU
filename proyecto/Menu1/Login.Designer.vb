@@ -28,6 +28,7 @@ Partial Class Login
         Me.btningresar = New System.Windows.Forms.Button()
         Me.dgbcontraseña = New System.Windows.Forms.DataGridView()
         Me.txtcontraseña = New System.Windows.Forms.TextBox()
+        Me.btnAtras = New System.Windows.Forms.Button()
         CType(Me.dgbcontraseña, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -57,16 +58,16 @@ Partial Class Login
         Me.lblingrusuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblingrusuario.Location = New System.Drawing.Point(28, 26)
         Me.lblingrusuario.Name = "lblingrusuario"
-        Me.lblingrusuario.Size = New System.Drawing.Size(236, 29)
+        Me.lblingrusuario.Size = New System.Drawing.Size(279, 29)
         Me.lblingrusuario.TabIndex = 4
-        Me.lblingrusuario.Text = "ingrese un usuario:"
+        Me.lblingrusuario.Text = "Seleccione un usuario:"
         '
         'btningresar
         '
         Me.btningresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btningresar.Location = New System.Drawing.Point(33, 252)
+        Me.btningresar.Location = New System.Drawing.Point(248, 252)
         Me.btningresar.Name = "btningresar"
-        Me.btningresar.Size = New System.Drawing.Size(417, 89)
+        Me.btningresar.Size = New System.Drawing.Size(216, 89)
         Me.btningresar.TabIndex = 7
         Me.btningresar.Text = "ingresar"
         Me.btningresar.UseVisualStyleBackColor = True
@@ -89,11 +90,22 @@ Partial Class Login
         Me.txtcontraseña.Size = New System.Drawing.Size(417, 35)
         Me.txtcontraseña.TabIndex = 5
         '
+        'btnAtras
+        '
+        Me.btnAtras.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAtras.Location = New System.Drawing.Point(12, 252)
+        Me.btnAtras.Name = "btnAtras"
+        Me.btnAtras.Size = New System.Drawing.Size(216, 89)
+        Me.btnAtras.TabIndex = 9
+        Me.btnAtras.Text = "Atras"
+        Me.btnAtras.UseVisualStyleBackColor = True
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(495, 381)
+        Me.Controls.Add(Me.btnAtras)
         Me.Controls.Add(Me.dgbcontraseña)
         Me.Controls.Add(Me.btningresar)
         Me.Controls.Add(Me.txtcontraseña)
@@ -115,4 +127,5 @@ Partial Class Login
     Friend WithEvents btningresar As System.Windows.Forms.Button
     Friend WithEvents dgbcontraseña As System.Windows.Forms.DataGridView
     Friend WithEvents txtcontraseña As System.Windows.Forms.TextBox
+    Friend WithEvents btnAtras As System.Windows.Forms.Button
 End Class

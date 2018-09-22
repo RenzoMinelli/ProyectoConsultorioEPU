@@ -46,9 +46,11 @@ Partial Class frmIngresarPaciente
         Me.lblApellido = New System.Windows.Forms.Label()
         Me.txbApellido = New System.Windows.Forms.TextBox()
         Me.epCedula = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.epTelefono = New System.Windows.Forms.ErrorProvider(Me.components)
         CType(Me.dgvPacientesId, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvPacientesCedulas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.epCedula, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.epTelefono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txbNombre
@@ -103,9 +105,9 @@ Partial Class frmIngresarPaciente
         Me.lblEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEnviadoPor.Location = New System.Drawing.Point(8, 188)
         Me.lblEnviadoPor.Name = "lblEnviadoPor"
-        Me.lblEnviadoPor.Size = New System.Drawing.Size(297, 29)
+        Me.lblEnviadoPor.Size = New System.Drawing.Size(309, 29)
         Me.lblEnviadoPor.TabIndex = 6
-        Me.lblEnviadoPor.Text = "Por quién fue enviado (op)"
+        Me.lblEnviadoPor.Text = "Por quién fue enviado (opc)"
         '
         'txbEnviadoPor
         '
@@ -139,9 +141,9 @@ Partial Class frmIngresarPaciente
         Me.lblDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDireccionTrabajo.Location = New System.Drawing.Point(8, 270)
         Me.lblDireccionTrabajo.Name = "lblDireccionTrabajo"
-        Me.lblDireccionTrabajo.Size = New System.Drawing.Size(279, 29)
+        Me.lblDireccionTrabajo.Size = New System.Drawing.Size(291, 29)
         Me.lblDireccionTrabajo.TabIndex = 10
-        Me.lblDireccionTrabajo.Text = "Dirección de trabajo (op)"
+        Me.lblDireccionTrabajo.Text = "Dirección de trabajo (opc)"
         '
         'txbDireccionTrabajo
         '
@@ -273,6 +275,10 @@ Partial Class frmIngresarPaciente
         '
         Me.epCedula.ContainerControl = Me
         '
+        'epTelefono
+        '
+        Me.epTelefono.ContainerControl = Me
+        '
         'frmIngresarPaciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -307,6 +313,7 @@ Partial Class frmIngresarPaciente
         CType(Me.dgvPacientesId, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvPacientesCedulas, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.epCedula, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.epTelefono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -334,4 +341,5 @@ Partial Class frmIngresarPaciente
     Friend WithEvents lblApellido As System.Windows.Forms.Label
     Friend WithEvents txbApellido As System.Windows.Forms.TextBox
     Friend WithEvents epCedula As System.Windows.Forms.ErrorProvider
+    Friend WithEvents epTelefono As System.Windows.Forms.ErrorProvider
 End Class
