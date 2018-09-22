@@ -149,6 +149,7 @@
     <Compile Include="Menu1\Menu_Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module2.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
