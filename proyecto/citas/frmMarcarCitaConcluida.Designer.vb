@@ -115,7 +115,6 @@ Partial Class frmMarcarCitaConcluida
         Me.Button1.TabIndex = 22
         Me.Button1.Text = "Modificar Tratamientos"
         Me.Button1.UseVisualStyleBackColor = True
-        Me.Button1.Visible = False
         '
         'Label2
         '
@@ -178,6 +177,7 @@ Partial Class frmMarcarCitaConcluida
         Me.dgvAuxiliar.RowHeadersVisible = False
         Me.dgvAuxiliar.Size = New System.Drawing.Size(22, 29)
         Me.dgvAuxiliar.TabIndex = 26
+        Me.dgvAuxiliar.Visible = False
         '
         'txbRealizado
         '

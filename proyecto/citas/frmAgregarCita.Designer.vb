@@ -53,9 +53,9 @@ Partial Class frmAgregarCita
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
         Me.Label1.Location = New System.Drawing.Point(12, 54)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(284, 29)
+        Me.Label1.Size = New System.Drawing.Size(272, 29)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Seleccione un Pacientes:"
+        Me.Label1.Text = "Seleccione un Paciente:"
         '
         'dgvPacientes
         '
@@ -91,7 +91,7 @@ Partial Class frmAgregarCita
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(789, 515)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(239, 80)
@@ -120,7 +120,7 @@ Partial Class frmAgregarCita
         '
         'botonsito
         '
-        Me.botonsito.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.botonsito.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.botonsito.Location = New System.Drawing.Point(33, 516)
         Me.botonsito.Name = "botonsito"
         Me.botonsito.Size = New System.Drawing.Size(231, 79)
@@ -246,9 +246,9 @@ Partial Class frmAgregarCita
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
         Me.Label2.Location = New System.Drawing.Point(7, 260)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(242, 29)
+        Me.Label2.Size = New System.Drawing.Size(382, 29)
         Me.Label2.TabIndex = 28
-        Me.Label2.Text = "Tratamientos Activos:"
+        Me.Label2.Text = "Tratamientos Activos del Paciente:"
         '
         'frmAgregarCita
         '

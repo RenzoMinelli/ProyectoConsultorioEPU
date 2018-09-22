@@ -72,6 +72,15 @@
     End Sub
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        Consulta = "select * from paciente"
+        consultar()
+
+        If conex = False Then
+
+            MsgBox("No hay conexión a la base de datos", MsgBoxStyle.Exclamation)
+
+        End If
         btningresar.Visible = False
 
         txtcontraseña.Visible = False

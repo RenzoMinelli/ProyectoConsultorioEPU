@@ -52,7 +52,7 @@ Partial Class MsgBoxVersatil
         Me.btnSi.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSi.Location = New System.Drawing.Point(55, 272)
         Me.btnSi.Name = "btnSi"
-        Me.btnSi.Size = New System.Drawing.Size(111, 52)
+        Me.btnSi.Size = New System.Drawing.Size(126, 52)
         Me.btnSi.TabIndex = 5
         Me.btnSi.Text = "Sí"
         Me.btnSi.UseVisualStyleBackColor = True
@@ -62,7 +62,7 @@ Partial Class MsgBoxVersatil
         Me.btnNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNo.Location = New System.Drawing.Point(502, 272)
         Me.btnNo.Name = "btnNo"
-        Me.btnNo.Size = New System.Drawing.Size(111, 52)
+        Me.btnNo.Size = New System.Drawing.Size(128, 52)
         Me.btnNo.TabIndex = 6
         Me.btnNo.Text = "No"
         Me.btnNo.UseVisualStyleBackColor = True

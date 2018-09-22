@@ -3,9 +3,8 @@
     Private Sub MarcarCitaConcluida_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Try
-            Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "';"
-            consultar()
-            dgvTratamientos.DataSource = Tabla
+            
+            actPlan()
 
             Consulta = "select descripcion from cita where id_c = '" + frmCitas.idcita.ToString + "';"
             consultar()
@@ -36,14 +35,13 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         Try
-           
-            If txbRealizado.Text = "" Then
 
-                Consulta = "update cita set atendida = 1 where id_c = '" + frmCitas.idcita.ToString + "';"
-                consultar()
+            Consulta = "update cita set atendida = 1 where id_c = '" + frmCitas.idcita.ToString + "';"
+            consultar()
 
-            Else
-                Consulta = "update cita set atendida = 1, set descripcion = '" + txbRealizado.Text + "' where id_c = '" + frmCitas.idcita.ToString + "';"
+            If txbRealizado.Text <> "" Then
+
+                Consulta = "update cita set descripcion = '" + txbRealizado.Text + "' where id_c = '" + frmCitas.idcita.ToString + "';"
                 consultar()
 
             End If
@@ -79,6 +77,7 @@
 
             If respint = 2 Then
                 MsgBox("No se ha cobrado nada", MsgBoxStyle.Information)
+                respString = "0"
             Else
 
                 If Not IsNumeric(respString) Then
@@ -96,7 +95,7 @@
 
             Try
 
-                Consulta = "update paciente set saldo = saldo - '" + respString + "' where id_p = '" + id_p.ToString + "';"
+                Consulta = "update paciente set saldo = saldo + '" + respString + "' where id_p = '" + id_p.ToString + "';"
                 consultar()
 
                 Consulta = "insert into plan_tratamiento (id_p, id_c, descripcion, precio, terminado) values ('" + id_p.ToString + "', '" + frmCitas.idcita.ToString + "', 'Limpieza', '" + respString + "', 1);"
@@ -112,5 +111,17 @@
 
         End If
 
+    End Sub
+    Public Sub actPlan()
+
+        Try
+
+            Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "';"
+            consultar()
+            dgvTratamientos.DataSource = Tabla
+
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class

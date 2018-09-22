@@ -190,18 +190,19 @@
 
             Consulta = "select  a.id_a, a.descripcion as 'Descripcion General', a.costo as 'Precio', pl.descripcion as 'Descripcion Especifica', pl.id_pl from plan_tratamiento pl inner join aranceles a on a.id_a = pl.id_a where  id_p = '" + id_p.ToString + "';"
             consultar()
+
             dt = DirectCast(Tabla, DataTable)
             dgvArancelesSelect.DataSource = dt
 
-            If Not IsDBNull(dgvArancelesSelect.Rows(0).Cells(0).Value) Then
-                dgvArancelesSelect.Columns(0).Visible = False
-            End If
+
+            dgvArancelesSelect.Columns(0).Visible = False
+            dgvArancelesSelect.Columns(4).Visible = False
+
 
             For indice = 0 To dgvArancelesSelect.RowCount - 1
                 listaID_R.Add(dgvArancelesSelect.Rows(indice).Cells(4).Value)
             Next
 
-            dgvArancelesSelect.Columns(4).Visible = False
 
         Catch ex As Exception
             MsgBox("Error al obtener los aranceles previamente seleccionados", MsgBoxStyle.Exclamation)
@@ -237,7 +238,10 @@
                     listaID_R.Remove(dgvArancelesSelect.Rows(x).Cells(4).Value)
                 Else
 
-                    Consulta = "Insert into plan_tratamiento (id_c, descripcion, precio, id_a) values ('" + frmCitas.idcita.ToString + "', '" + dgvArancelesSelect.Rows(x).Cells(3).Value + "', '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "');"
+                    Consulta = "Insert into plan_tratamiento (id_p,id_a, id_c, descripcion, precio,terminado ) values ('" + id_p.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "','" + frmCitas.idcita.ToString + "', '" + dgvArancelesSelect.Rows(x).Cells(3).Value + "', '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','0');"
+                    consultar()
+
+                    Consulta = "update paciente set saldo = saldo + '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "' where id_p = '" + id_p.ToString + "';"
                     consultar()
 
                 End If
@@ -248,7 +252,8 @@
             MsgBox("Guardado con éxito", MsgBoxStyle.Information)
 
             Me.Dispose()
-            frmPacientes.Show()
+            frmMarcarCitaConcluida.actPlan()
+            frmMarcarCitaConcluida.Show()
 
         Catch ex As Exception
 

@@ -67,8 +67,10 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         descr = txbAnotaciones.Text
-        If descr = "" Or id_p = 0 Then
-            MsgBox("Complete las indicaciones", MsgBoxStyle.Exclamation)
+        If id_p = 0 Then
+            MsgBox("No seleccionó ningún paciente", MsgBoxStyle.Exclamation)
+        ElseIf descr = "" Then
+            MsgBox("Complete las anotaciones", MsgBoxStyle.Exclamation)
         Else
 
             Dim ultimaHora As TimeSpan = (Convert.ToDateTime("20:30:00")).TimeOfDay
