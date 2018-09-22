@@ -110,6 +110,7 @@
                         MsgBox("Ingresado con éxito", MsgBoxStyle.Information)
 
                         Me.Dispose()
+                        frmCitas.actCitas()
                         frmCitas.Show()
 
                     Catch ex As Exception
