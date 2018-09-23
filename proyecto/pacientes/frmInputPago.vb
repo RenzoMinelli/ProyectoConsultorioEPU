@@ -12,7 +12,8 @@
 
             MsgBox("Ingrese un número", MsgBoxStyle.Exclamation)
         Else
-            If MsgBox("¿Confirma que el paciente " + frmPacientes.nombre + " depositó $" + pago + "?", MsgBoxStyle.YesNo) = vbYes Then
+            MuestraMsgBoxVersatil("¿Confirma que el paciente " + frmPacientes.nombre + " depositó $" + pago + "?", 0)
+            If respint = 1 Then
                 frmPacientes.saldo -= pago
                 Try
                     Consulta = "update paciente set saldo = '" + frmPacientes.saldo.ToString + "' where id_p = '" + id_p.ToString + "';"
@@ -34,6 +35,8 @@
                 Catch ex As Exception
                     MsgBox("Error")
                 End Try
+            Else
+                MsgBox("Ningún cambio ha sido realizado", MsgBoxStyle.Information)
             End If
 
         End If

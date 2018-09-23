@@ -223,7 +223,7 @@
 
         saldo = dgvPacientes.CurrentRow.Cells(9).Value
 
-        Consulta = "select p.id_p, count(*) from paciente p inner join cita c on p.id_p = c.id_p where c.realizada = 1 and p.id_p = '" + id_p.ToString + "' group by p.id_p;"
+        Consulta = "select p.id_p, count(*) from paciente p inner join cita c on p.id_p = c.id_p where c.atendida = 1 and p.id_p = '" + id_p.ToString + "' group by p.id_p;"
         consultar()
         dgvFiltro.DataSource = Tabla
 
