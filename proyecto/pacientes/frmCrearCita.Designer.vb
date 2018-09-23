@@ -39,6 +39,8 @@ Partial Class frmCrearCita
         Me.dgvAuxiliar = New System.Windows.Forms.DataGridView()
         Me.lblPlanes = New System.Windows.Forms.Label()
         Me.dgvTratamientos = New System.Windows.Forms.DataGridView()
+        Me.txbDuracion = New System.Windows.Forms.TextBox()
+        Me.lblDuracion = New System.Windows.Forms.Label()
         CType(Me.dgvCitasEnLaFecha, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvTratamientos, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,7 +76,7 @@ Partial Class frmCrearCita
         '
         Me.lblFechaSeleccionada.AutoSize = True
         Me.lblFechaSeleccionada.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaSeleccionada.Location = New System.Drawing.Point(67, 61)
+        Me.lblFechaSeleccionada.Location = New System.Drawing.Point(41, 21)
         Me.lblFechaSeleccionada.Name = "lblFechaSeleccionada"
         Me.lblFechaSeleccionada.Size = New System.Drawing.Size(239, 29)
         Me.lblFechaSeleccionada.TabIndex = 13
@@ -85,7 +87,7 @@ Partial Class frmCrearCita
         Me.dtpFechaSeleccionada.CustomFormat = "dd/MM/yyyy        HH:mm"
         Me.dtpFechaSeleccionada.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpFechaSeleccionada.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpFechaSeleccionada.Location = New System.Drawing.Point(72, 110)
+        Me.dtpFechaSeleccionada.Location = New System.Drawing.Point(46, 70)
         Me.dtpFechaSeleccionada.Name = "dtpFechaSeleccionada"
         Me.dtpFechaSeleccionada.Size = New System.Drawing.Size(266, 35)
         Me.dtpFechaSeleccionada.TabIndex = 15
@@ -229,11 +231,31 @@ Partial Class frmCrearCita
         Me.dgvTratamientos.Size = New System.Drawing.Size(418, 232)
         Me.dgvTratamientos.TabIndex = 23
         '
+        'txbDuracion
+        '
+        Me.txbDuracion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbDuracion.Location = New System.Drawing.Point(244, 142)
+        Me.txbDuracion.Name = "txbDuracion"
+        Me.txbDuracion.Size = New System.Drawing.Size(36, 29)
+        Me.txbDuracion.TabIndex = 32
+        '
+        'lblDuracion
+        '
+        Me.lblDuracion.AutoSize = True
+        Me.lblDuracion.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDuracion.Location = New System.Drawing.Point(41, 141)
+        Me.lblDuracion.Name = "lblDuracion"
+        Me.lblDuracion.Size = New System.Drawing.Size(192, 29)
+        Me.lblDuracion.TabIndex = 31
+        Me.lblDuracion.Text = "Duracion de cita:"
+        '
         'frmCrearCita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1030, 607)
+        Me.Controls.Add(Me.txbDuracion)
+        Me.Controls.Add(Me.lblDuracion)
         Me.Controls.Add(Me.dgvTratamientos)
         Me.Controls.Add(Me.lblPlanes)
         Me.Controls.Add(Me.dgvAuxiliar)
@@ -267,4 +289,6 @@ Partial Class frmCrearCita
     Friend WithEvents dgvAuxiliar As System.Windows.Forms.DataGridView
     Friend WithEvents lblPlanes As System.Windows.Forms.Label
     Friend WithEvents dgvTratamientos As System.Windows.Forms.DataGridView
+    Friend WithEvents txbDuracion As System.Windows.Forms.TextBox
+    Friend WithEvents lblDuracion As System.Windows.Forms.Label
 End Class

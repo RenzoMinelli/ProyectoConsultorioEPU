@@ -30,10 +30,10 @@ Partial Class frmAgregarCita
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvPacientes = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txbAnotaciones = New System.Windows.Forms.TextBox()
-        Me.botonsito = New System.Windows.Forms.Button()
+        Me.btnRegresar = New System.Windows.Forms.Button()
         Me.dgvAuxiliar = New System.Windows.Forms.DataGridView()
         Me.lblCitasEnLaFceha = New System.Windows.Forms.Label()
         Me.dgvCitasEnLaFecha = New System.Windows.Forms.DataGridView()
@@ -41,6 +41,8 @@ Partial Class frmAgregarCita
         Me.lblFechaSeleccionada = New System.Windows.Forms.Label()
         Me.dgvTratamientos = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblDuracion = New System.Windows.Forms.Label()
+        Me.txbDuracion = New System.Windows.Forms.TextBox()
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvCitasEnLaFecha, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -89,15 +91,15 @@ Partial Class frmAgregarCita
         Me.dgvPacientes.Size = New System.Drawing.Size(413, 150)
         Me.dgvPacientes.TabIndex = 7
         '
-        'Button1
+        'btnGuardar
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(789, 515)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(239, 80)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Guardar cita"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.Location = New System.Drawing.Point(789, 515)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(239, 80)
+        Me.btnGuardar.TabIndex = 8
+        Me.btnGuardar.Text = "Guardar cita"
+        Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'Label4
         '
@@ -118,15 +120,15 @@ Partial Class frmAgregarCita
         Me.txbAnotaciones.Size = New System.Drawing.Size(546, 183)
         Me.txbAnotaciones.TabIndex = 4
         '
-        'botonsito
+        'btnRegresar
         '
-        Me.botonsito.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.botonsito.Location = New System.Drawing.Point(33, 516)
-        Me.botonsito.Name = "botonsito"
-        Me.botonsito.Size = New System.Drawing.Size(231, 79)
-        Me.botonsito.TabIndex = 13
-        Me.botonsito.Text = "Regresar"
-        Me.botonsito.UseVisualStyleBackColor = True
+        Me.btnRegresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegresar.Location = New System.Drawing.Point(33, 516)
+        Me.btnRegresar.Name = "btnRegresar"
+        Me.btnRegresar.Size = New System.Drawing.Size(231, 79)
+        Me.btnRegresar.TabIndex = 13
+        Me.btnRegresar.Text = "Regresar"
+        Me.btnRegresar.UseVisualStyleBackColor = True
         '
         'dgvAuxiliar
         '
@@ -193,7 +195,7 @@ Partial Class frmAgregarCita
         Me.dtpFechaSeleccionada.CustomFormat = "dd/MM/yyyy        HH:mm"
         Me.dtpFechaSeleccionada.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpFechaSeleccionada.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpFechaSeleccionada.Location = New System.Drawing.Point(529, 12)
+        Me.dtpFechaSeleccionada.Location = New System.Drawing.Point(252, 12)
         Me.dtpFechaSeleccionada.Name = "dtpFechaSeleccionada"
         Me.dtpFechaSeleccionada.Size = New System.Drawing.Size(271, 35)
         Me.dtpFechaSeleccionada.TabIndex = 24
@@ -202,7 +204,7 @@ Partial Class frmAgregarCita
         '
         Me.lblFechaSeleccionada.AutoSize = True
         Me.lblFechaSeleccionada.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaSeleccionada.Location = New System.Drawing.Point(284, 12)
+        Me.lblFechaSeleccionada.Location = New System.Drawing.Point(7, 12)
         Me.lblFechaSeleccionada.Name = "lblFechaSeleccionada"
         Me.lblFechaSeleccionada.Size = New System.Drawing.Size(239, 29)
         Me.lblFechaSeleccionada.TabIndex = 23
@@ -250,11 +252,31 @@ Partial Class frmAgregarCita
         Me.Label2.TabIndex = 28
         Me.Label2.Text = "Tratamientos Activos del Paciente:"
         '
+        'lblDuracion
+        '
+        Me.lblDuracion.AutoSize = True
+        Me.lblDuracion.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDuracion.Location = New System.Drawing.Point(539, 17)
+        Me.lblDuracion.Name = "lblDuracion"
+        Me.lblDuracion.Size = New System.Drawing.Size(192, 29)
+        Me.lblDuracion.TabIndex = 29
+        Me.lblDuracion.Text = "Duracion de cita:"
+        '
+        'txbDuracion
+        '
+        Me.txbDuracion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbDuracion.Location = New System.Drawing.Point(737, 18)
+        Me.txbDuracion.Name = "txbDuracion"
+        Me.txbDuracion.Size = New System.Drawing.Size(36, 29)
+        Me.txbDuracion.TabIndex = 30
+        '
         'frmAgregarCita
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.Controls.Add(Me.txbDuracion)
+        Me.Controls.Add(Me.lblDuracion)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.dgvTratamientos)
         Me.Controls.Add(Me.lblCitasEnLaFceha)
@@ -262,8 +284,8 @@ Partial Class frmAgregarCita
         Me.Controls.Add(Me.dtpFechaSeleccionada)
         Me.Controls.Add(Me.lblFechaSeleccionada)
         Me.Controls.Add(Me.dgvAuxiliar)
-        Me.Controls.Add(Me.botonsito)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnRegresar)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.dgvPacientes)
         Me.Controls.Add(Me.txbAnotaciones)
         Me.Controls.Add(Me.Label4)
@@ -281,10 +303,10 @@ Partial Class frmAgregarCita
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents dgvPacientes As System.Windows.Forms.DataGridView
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txbAnotaciones As System.Windows.Forms.TextBox
-    Friend WithEvents botonsito As System.Windows.Forms.Button
+    Friend WithEvents btnRegresar As System.Windows.Forms.Button
     Friend WithEvents dgvAuxiliar As System.Windows.Forms.DataGridView
     Friend WithEvents lblCitasEnLaFceha As System.Windows.Forms.Label
     Friend WithEvents dgvCitasEnLaFecha As System.Windows.Forms.DataGridView
@@ -292,4 +314,6 @@ Partial Class frmAgregarCita
     Friend WithEvents lblFechaSeleccionada As System.Windows.Forms.Label
     Friend WithEvents dgvTratamientos As System.Windows.Forms.DataGridView
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblDuracion As System.Windows.Forms.Label
+    Friend WithEvents txbDuracion As System.Windows.Forms.TextBox
 End Class

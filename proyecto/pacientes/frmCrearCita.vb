@@ -11,6 +11,7 @@
     End Sub
 
     Private Sub Crear_Cita_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        txbDuracion.Text = "1"
         fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
         hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
 
@@ -36,25 +37,48 @@
         descr = txbAnotaciones.Text
         If descr = "" Then
             MsgBox("Complete las indicaciones", MsgBoxStyle.Exclamation)
+
+        ElseIf txbDuracion.Text = "" Or IsNumeric(txbDuracion.Text) = False Or txbDuracion.Text = "0" Then
+
+            MsgBox("Complete la duaración de la cita", MsgBoxStyle.Exclamation)
+
         Else
 
-            Dim control As Integer = 0
             Dim ultimaHora As TimeSpan = (Convert.ToDateTime("20:30:00")).TimeOfDay
             Dim primeraHora As TimeSpan = (Convert.ToDateTime("08:00:00")).TimeOfDay
-            Dim hora2 As TimeSpan = (Convert.ToDateTime(hora)).TimeOfDay
+            Dim horaCita As TimeSpan = (Convert.ToDateTime(hora)).TimeOfDay
+            Dim horaCitaFinal As New TimeSpan
+            Dim HoraAuxFinal As New TimeSpan
+            Dim mediaHora As New TimeSpan(0, 30, 0)
+            Dim HoraAux As New TimeSpan
 
+            Dim duracion As Integer = Val(txbDuracion.Text)
 
-            If hora2 < ultimaHora And hora2 > primeraHora Then
+            If duracion = 1 Then
+
+                horaCitaFinal = horaCita + mediaHora
+
+            Else
+
+                horaCitaFinal = horaCita + mediaHora
+                For indice = 1 To Val(txbDuracion.Text) - 1
+                    horaCitaFinal += mediaHora
+                Next
+
+            End If
+
+            If horaCita < ultimaHora And horaCita > primeraHora Then
+
+                Dim control As Integer = 0
+
 
                 For x = 0 To dgvCitasEnLaFecha.RowCount - 1
 
-                    Dim HoraAux As TimeSpan = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
+                    HoraAux = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
 
-                    Dim HoraAuxFinal As New TimeSpan(0, 30, 0)
-                    HoraAuxFinal = HoraAux + HoraAuxFinal
+                    HoraAuxFinal = HoraAux + mediaHora
 
-
-                    If hora2 <= HoraAuxFinal And hora2 >= HoraAux Then
+                    If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
 
                         control = 1
 
@@ -67,26 +91,34 @@
                     MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
                 Else
                     Try
+                        For x = 1 To duracion
 
-                        Consulta = "Insert into cita (id_p, fecha, hora, descripcion, atendida) values ('" + id_p.ToString + "','" + fecha + "', '" + hora + "','" + descr + "', '0'); "
-                        consultar()
 
-                        MsgBox("Cita registrada", MsgBoxStyle.Information)
+
+                            Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + horaCita.ToString + "', 0, '" + descr + "'); "
+                            consultar()
+
+                            horaCita += mediaHora
+                        Next
+
+
+                        MsgBox("Ingresado con éxito", MsgBoxStyle.Information)
 
                         Me.Dispose()
-                        frmPacientes.Show()
+                        frmCitas.actCitas()
+                        frmCitas.Show()
 
                     Catch ex As Exception
-
-                        MsgBox("Error al registar la cita", MsgBoxStyle.Exclamation)
-
+                        MsgBox("Error al ingresar la cita" + ex.ToString, MsgBoxStyle.Exclamation)
                     End Try
 
                 End If
+            Else
 
+                MsgBox("Los horarios marcados están fuera de los límites", MsgBoxStyle.Exclamation)
             End If
 
-           
+
 
         End If
 
