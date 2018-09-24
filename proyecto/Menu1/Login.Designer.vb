@@ -112,7 +112,7 @@ Partial Class Login
         Me.Controls.Add(Me.lblingrusuario)
         Me.Controls.Add(Me.btnfuncionario)
         Me.Controls.Add(Me.btnodontologo)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"

@@ -71,7 +71,7 @@ Partial Class frmMarcarCitaConcluida
         Me.dgvTratamientos.Name = "dgvTratamientos"
         Me.dgvTratamientos.ReadOnly = True
         Me.dgvTratamientos.RowHeadersVisible = False
-        Me.dgvTratamientos.Size = New System.Drawing.Size(421, 188)
+        Me.dgvTratamientos.Size = New System.Drawing.Size(421, 384)
         Me.dgvTratamientos.TabIndex = 0
         '
         'lblAranceles
@@ -121,7 +121,7 @@ Partial Class frmMarcarCitaConcluida
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 256)
+        Me.Label2.Location = New System.Drawing.Point(448, 267)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(322, 29)
         Me.Label2.TabIndex = 23
@@ -129,7 +129,7 @@ Partial Class frmMarcarCitaConcluida
         '
         'txbAnotaciones
         '
-        Me.txbAnotaciones.Location = New System.Drawing.Point(17, 289)
+        Me.txbAnotaciones.Location = New System.Drawing.Point(453, 300)
         Me.txbAnotaciones.Multiline = True
         Me.txbAnotaciones.Name = "txbAnotaciones"
         Me.txbAnotaciones.ReadOnly = True
