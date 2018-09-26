@@ -24,6 +24,8 @@ Partial Class pnlfondo
     Private Sub InitializeComponent()
         Me.bttoningrdientes = New System.Windows.Forms.Button()
         Me.Panel01477 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel20 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -32,7 +34,6 @@ Partial Class pnlfondo
         Me.Panel0000 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel000 = New System.Windows.Forms.Panel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.pnlDiente38c1 = New System.Windows.Forms.Panel()
         Me.PnlDiente41c1 = New System.Windows.Forms.Panel()
         Me.pnlDiente38c3 = New System.Windows.Forms.Panel()
@@ -73,7 +74,7 @@ Partial Class pnlfondo
         Me.PnlDiente48c2 = New System.Windows.Forms.Panel()
         Me.pnlDiente35c2 = New System.Windows.Forms.Panel()
         Me.PnlDiente44c2 = New System.Windows.Forms.Panel()
-        Me.PnlDiente31c4 = New System.Windows.Forms.Panel()
+        Me.pnlDiente31c4 = New System.Windows.Forms.Panel()
         Me.PnlDiente48c4 = New System.Windows.Forms.Panel()
         Me.pnlDiente34c3 = New System.Windows.Forms.Panel()
         Me.PnlDiente45c3 = New System.Windows.Forms.Panel()
@@ -165,7 +166,6 @@ Partial Class pnlfondo
         Me.PnlDiente16c4 = New System.Windows.Forms.Panel()
         Me.PnlDiente18c1 = New System.Windows.Forms.Panel()
         Me.Panel01477.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'bttoningrdientes
@@ -181,6 +181,8 @@ Partial Class pnlfondo
         'Panel01477
         '
         Me.Panel01477.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Panel01477.Controls.Add(Me.Label5)
+        Me.Panel01477.Controls.Add(Me.Panel20)
         Me.Panel01477.Controls.Add(Me.Label1)
         Me.Panel01477.Controls.Add(Me.Panel4)
         Me.Panel01477.Controls.Add(Me.Label4)
@@ -190,15 +192,32 @@ Partial Class pnlfondo
         Me.Panel01477.Controls.Add(Me.Label2)
         Me.Panel01477.Controls.Add(Me.Panel000)
         Me.Panel01477.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel01477.Location = New System.Drawing.Point(87, 300)
+        Me.Panel01477.Location = New System.Drawing.Point(24, 298)
         Me.Panel01477.Name = "Panel01477"
-        Me.Panel01477.Size = New System.Drawing.Size(684, 71)
+        Me.Panel01477.Size = New System.Drawing.Size(837, 71)
         Me.Panel01477.TabIndex = 53
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(462, 22)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(79, 24)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "Moldura"
+        '
+        'Panel20
+        '
+        Me.Panel20.BackColor = System.Drawing.Color.Green
+        Me.Panel20.Location = New System.Drawing.Point(409, 21)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(42, 28)
+        Me.Panel20.TabIndex = 7
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(497, 24)
+        Me.Label1.Location = New System.Drawing.Point(735, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(76, 24)
         Me.Label1.TabIndex = 6
@@ -207,7 +226,7 @@ Partial Class pnlfondo
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Black
-        Me.Panel4.Location = New System.Drawing.Point(445, 19)
+        Me.Panel4.Location = New System.Drawing.Point(687, 19)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(42, 28)
         Me.Panel4.TabIndex = 5
@@ -215,7 +234,7 @@ Partial Class pnlfondo
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(366, 23)
+        Me.Label4.Location = New System.Drawing.Point(604, 21)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 24)
         Me.Label4.TabIndex = 4
@@ -224,7 +243,7 @@ Partial Class pnlfondo
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Location = New System.Drawing.Point(314, 18)
+        Me.Panel1.Location = New System.Drawing.Point(551, 19)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(42, 28)
         Me.Panel1.TabIndex = 3
@@ -234,9 +253,9 @@ Partial Class pnlfondo
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(194, 22)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(106, 24)
+        Me.Label3.Size = New System.Drawing.Size(188, 24)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Precaucion"
+        Me.Label3.Text = "Restauracion estetica"
         '
         'Panel0000
         '
@@ -251,9 +270,9 @@ Partial Class pnlfondo
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(70, 18)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 24)
+        Me.Label2.Size = New System.Drawing.Size(75, 24)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Malo"
+        Me.Label2.Text = "Cariado"
         '
         'Panel000
         '
@@ -262,22 +281,6 @@ Partial Class pnlfondo
         Me.Panel000.Name = "Panel000"
         Me.Panel000.Size = New System.Drawing.Size(42, 26)
         Me.Panel000.TabIndex = 0
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AllowUserToResizeColumns = False
-        Me.DataGridView1.AllowUserToResizeRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(54, 408)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(791, 64)
-        Me.DataGridView1.TabIndex = 54
-        Me.DataGridView1.Visible = False
         '
         'pnlDiente38c1
         '
@@ -599,13 +602,13 @@ Partial Class pnlfondo
         Me.PnlDiente44c2.Size = New System.Drawing.Size(18, 34)
         Me.PnlDiente44c2.TabIndex = 240
         '
-        'PnlDiente31c4
+        'pnlDiente31c4
         '
-        Me.PnlDiente31c4.BackColor = System.Drawing.Color.White
-        Me.PnlDiente31c4.Location = New System.Drawing.Point(446, 181)
-        Me.PnlDiente31c4.Name = "PnlDiente31c4"
-        Me.PnlDiente31c4.Size = New System.Drawing.Size(18, 34)
-        Me.PnlDiente31c4.TabIndex = 217
+        Me.pnlDiente31c4.BackColor = System.Drawing.Color.White
+        Me.pnlDiente31c4.Location = New System.Drawing.Point(446, 181)
+        Me.pnlDiente31c4.Name = "pnlDiente31c4"
+        Me.pnlDiente31c4.Size = New System.Drawing.Size(18, 34)
+        Me.pnlDiente31c4.TabIndex = 217
         '
         'PnlDiente48c4
         '
@@ -1138,9 +1141,9 @@ Partial Class pnlfondo
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel3.Location = New System.Drawing.Point(88, 127)
+        Me.Panel3.Location = New System.Drawing.Point(12, 127)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(684, 18)
+        Me.Panel3.Size = New System.Drawing.Size(858, 18)
         Me.Panel3.TabIndex = 144
         '
         'PnlDiente13c4
@@ -1374,7 +1377,7 @@ Partial Class pnlfondo
         Me.Controls.Add(Me.PnlDiente48c2)
         Me.Controls.Add(Me.pnlDiente35c2)
         Me.Controls.Add(Me.PnlDiente44c2)
-        Me.Controls.Add(Me.PnlDiente31c4)
+        Me.Controls.Add(Me.pnlDiente31c4)
         Me.Controls.Add(Me.PnlDiente48c4)
         Me.Controls.Add(Me.pnlDiente34c3)
         Me.Controls.Add(Me.PnlDiente45c3)
@@ -1465,7 +1468,6 @@ Partial Class pnlfondo
         Me.Controls.Add(Me.PnlDiente16c3)
         Me.Controls.Add(Me.PnlDiente16c4)
         Me.Controls.Add(Me.PnlDiente18c1)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.bttoningrdientes)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -1473,7 +1475,6 @@ Partial Class pnlfondo
         Me.Text = "marcar_cita"
         Me.Panel01477.ResumeLayout(False)
         Me.Panel01477.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1488,7 +1489,6 @@ Partial Class pnlfondo
     Friend WithEvents Panel0000 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Panel000 As System.Windows.Forms.Panel
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents pnlDiente38c1 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente41c1 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente38c3 As System.Windows.Forms.Panel
@@ -1529,7 +1529,7 @@ Partial Class pnlfondo
     Friend WithEvents PnlDiente48c2 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente35c2 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente44c2 As System.Windows.Forms.Panel
-    Friend WithEvents PnlDiente31c4 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente31c4 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente48c4 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente34c3 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente45c3 As System.Windows.Forms.Panel
@@ -1620,4 +1620,6 @@ Partial Class pnlfondo
     Friend WithEvents PnlDiente16c3 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente16c4 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente18c1 As System.Windows.Forms.Panel
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Panel20 As System.Windows.Forms.Panel
 End Class
