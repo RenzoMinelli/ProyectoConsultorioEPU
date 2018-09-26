@@ -39,10 +39,10 @@
             fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
             hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
 
-            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
+            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora', duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
             consultar()
             dgvCitasEnLaFecha.DataSource = Tabla
-
+            dgvCitasEnLaFecha.Columns(4).Visible = False
         Catch ex As Exception
 
         End Try
@@ -109,6 +109,9 @@
 
                     HoraAuxFinal = HoraAux + mediaHora
 
+                    For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(6).Value - 1
+                        HoraAuxFinal += mediaHora
+                    Next
                     If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
 
                         control = 1
@@ -122,16 +125,14 @@
                     MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
                 Else
                     Try
-                        For x = 1 To duracion
 
 
 
-                            Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + horaCita.ToString + "', 0, '" + descr + "'); "
-                            consultar()
 
-                            horaCita += mediaHora
-                        Next
-                       
+                        Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion, duracion) values ('" + id_p.ToString + "','" + fecha + "', '" + horaCita.ToString + "', 0, '" + descr + "','" + txbDuracion.Text + "'); "
+                        consultar()
+
+
 
                         MsgBox("Ingresado con éxito", MsgBoxStyle.Information)
 

@@ -418,7 +418,7 @@
                     dgvHora.Columns(5).HeaderText = "Viernes " + DiaSeleccionado.AddDays(4).ToString("dd")
                     dgvHora.Columns(6).HeaderText = "Sábado " + DiaSeleccionado.AddDays(5).ToString("dd")
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -447,8 +447,11 @@
 
                                 If hora < posicion Then
 
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        IndHoras += 1
+                                    Next
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
                                     Exit For
                                 End If
 
@@ -457,7 +460,50 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 25
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        IndHoras += 1
+                                    Next
+
+
+                                    Exit For
+
+
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -485,10 +531,11 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
-
-
                                 End If
 
                             Next
@@ -496,7 +543,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -524,44 +571,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
-                                    Exit For
-                                End If
-
-                            Next
-                        Next
-
-                    End If
-
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
-                    consultar()
-
-
-                    dgvConsultaDia.DataSource = Tabla
-
-
-                    If Not dgvConsultaDia.RowCount = 0 Then
-
-                        Dim hora As TimeSpan
-                        Dim nombre As String
-
-                        For indice = 0 To dgvConsultaDia.RowCount - 1
-
-
-                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
-                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
-
-                            For IndHoras = 0 To 25
-
-
-                                Dim posicion As TimeSpan
-
-                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
-
-                                If hora < posicion Then
-
-
-                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -571,7 +584,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -636,7 +649,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -657,7 +673,7 @@
                     dgvHora.Columns(6).HeaderText = "Sábado " + DiaSeleccionado.AddDays(4).ToString("dd")
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -687,7 +703,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
 
 
@@ -698,7 +717,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -728,7 +747,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -737,7 +759,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -767,7 +789,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -776,7 +801,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -806,7 +831,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -815,7 +843,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -845,7 +873,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -855,7 +886,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -885,7 +916,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -905,7 +939,7 @@
                     dgvHora.Columns(5).HeaderText = "Viernes " + DiaSeleccionado.AddDays(2).ToString("dd")
                     dgvHora.Columns(6).HeaderText = "Sábado " + DiaSeleccionado.AddDays(3).ToString("dd")
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -935,7 +969,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -945,7 +982,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -975,48 +1012,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
-                                    Exit For
-                                End If
-
-                            Next
-                        Next
-
-                    End If
-
-
-
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
-                    consultar()
-
-
-                    dgvConsultaDia.DataSource = Tabla
-
-
-                    If Not dgvConsultaDia.RowCount = 0 Then
-
-
-
-                        Dim hora As TimeSpan
-                        Dim nombre As String
-
-                        For indice = 0 To dgvConsultaDia.RowCount - 1
-
-
-                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
-                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
-
-                            For IndHoras = 0 To 25
-
-
-                                Dim posicion As TimeSpan
-
-                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
-
-                                If hora < posicion Then
-
-
-                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1027,7 +1026,7 @@
 
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1057,7 +1056,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1068,7 +1070,7 @@
 
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1098,7 +1100,11 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        IndHoras += 1
+                                    Next
+
                                     Exit For
                                 End If
 
@@ -1109,7 +1115,7 @@
 
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1139,7 +1145,54 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        IndHoras += 1
+                                    Next
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 25
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1156,7 +1209,7 @@
                     dgvHora.Columns(5).HeaderText = "Viernes " + DiaSeleccionado.AddDays(1).ToString("dd")
                     dgvHora.Columns(6).HeaderText = "Sábado " + DiaSeleccionado.AddDays(2).ToString("dd")
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1186,7 +1239,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1195,7 +1251,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1225,47 +1281,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
-                                    Exit For
-                                End If
-
-                            Next
-                        Next
-
-                    End If
-
-
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
-                    consultar()
-
-
-                    dgvConsultaDia.DataSource = Tabla
-
-
-                    If Not dgvConsultaDia.RowCount = 0 Then
-
-
-
-                        Dim hora As TimeSpan
-                        Dim nombre As String
-
-                        For indice = 0 To dgvConsultaDia.RowCount - 1
-
-
-                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
-                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
-
-                            For IndHoras = 0 To 25
-
-
-                                Dim posicion As TimeSpan
-
-                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
-
-                                If hora < posicion Then
-
-
-                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1275,7 +1294,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1305,7 +1324,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1315,7 +1337,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1345,7 +1367,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1355,7 +1380,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1385,7 +1410,53 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        IndHoras += 1
+                                    Next
+                                    Exit For
+                                End If
+
+                            Next
+                        Next
+
+                    End If
+
+
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                    consultar()
+
+
+                    dgvConsultaDia.DataSource = Tabla
+
+
+                    If Not dgvConsultaDia.RowCount = 0 Then
+
+
+
+                        Dim hora As TimeSpan
+                        Dim nombre As String
+
+                        For indice = 0 To dgvConsultaDia.RowCount - 1
+
+
+                            hora = dgvConsultaDia.Rows(indice).Cells(0).Value
+                            nombre = dgvConsultaDia.Rows(indice).Cells(1).Value
+
+                            For IndHoras = 0 To 25
+
+
+                                Dim posicion As TimeSpan
+
+                                posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
+
+                                If hora < posicion Then
+
+
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1402,7 +1473,7 @@
                     dgvHora.Columns(5).HeaderText = "Viernes " + DiaSeleccionado.ToString("dd")
                     dgvHora.Columns(6).HeaderText = "Sábado " + DiaSeleccionado.AddDays(1).ToString("dd")
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1432,7 +1503,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1442,7 +1516,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1472,7 +1546,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1482,7 +1559,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1512,7 +1589,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1521,7 +1601,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1551,7 +1631,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1560,7 +1643,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1590,7 +1673,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1599,7 +1685,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1629,7 +1715,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1646,7 +1735,7 @@
                     dgvHora.Columns(5).HeaderText = "Viernes " + DiaSeleccionado.AddDays(-1).ToString("dd")
                     dgvHora.Columns(6).HeaderText = "Sábado " + DiaSeleccionado.ToString("dd")
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1676,7 +1765,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        IndHoras += 1
+                                    Next
 
                                     Exit For
                                 End If
@@ -1686,7 +1778,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1716,8 +1808,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
-                                    'dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.Red
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        IndHoras += 1
+                                    Next
 
                                     Exit For
                                 End If
@@ -1727,7 +1821,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1757,7 +1851,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1767,7 +1864,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1797,7 +1894,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1807,7 +1907,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1837,7 +1937,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1846,7 +1949,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1876,7 +1979,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -1893,7 +1999,7 @@
                     dgvHora.Columns(5).HeaderText = "Viernes " + DiaSeleccionado.AddDays(-2).ToString("dd")
                     dgvHora.Columns(6).HeaderText = "Sábado " + DiaSeleccionado.AddDays(-1).ToString("dd")
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-6).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-6).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1923,7 +2029,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        IndHoras += 1
+                                    Next
 
                                     Exit For
                                 End If
@@ -1933,7 +2042,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -1963,8 +2072,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
-                                    ' dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.Red
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        IndHoras += 1
+                                    Next
 
                                     Exit For
                                 End If
@@ -1974,7 +2085,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ),duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -2004,7 +2115,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -2014,7 +2128,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -2044,7 +2158,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -2054,7 +2171,7 @@
                     End If
 
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -2084,7 +2201,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -2093,7 +2213,7 @@
 
                     End If
 
-                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ) from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                    Consulta = "select hora ,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), duracion from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
                     consultar()
 
 
@@ -2123,7 +2243,10 @@
                                 If hora < posicion Then
 
 
-                                    dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
+                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        IndHoras += 1
+                                    Next
                                     Exit For
                                 End If
 
@@ -2150,5 +2273,9 @@
 
     Private Sub MCFecha_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MCFecha.DateChanged
         actCitas()
+    End Sub
+
+    Private Sub dgvConsultaDia_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvConsultaDia.CellContentClick
+
     End Sub
 End Class
