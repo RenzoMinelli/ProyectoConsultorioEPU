@@ -44,7 +44,7 @@ Partial Class frmCitas
         '
         'MCFecha
         '
-        Me.MCFecha.Location = New System.Drawing.Point(14, 678)
+        Me.MCFecha.Location = New System.Drawing.Point(979, 12)
         Me.MCFecha.Name = "MCFecha"
         Me.MCFecha.TabIndex = 0
         '
@@ -127,7 +127,7 @@ Partial Class frmCitas
         Me.dgvHora.ReadOnly = True
         Me.dgvHora.RowHeadersVisible = False
         Me.dgvHora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.dgvHora.Size = New System.Drawing.Size(1020, 654)
+        Me.dgvHora.Size = New System.Drawing.Size(958, 654)
         Me.dgvHora.TabIndex = 13
         '
         'dgvConsultaDia
@@ -204,7 +204,7 @@ Partial Class frmCitas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1406, 846)
+        Me.ClientSize = New System.Drawing.Size(1386, 788)
         Me.Controls.Add(Me.dgvDatosCita)
         Me.Controls.Add(Me.dgvConsultaDia)
         Me.Controls.Add(Me.seleccionado)
