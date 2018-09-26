@@ -26,9 +26,7 @@ Partial Class graficas
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.btnprompacientes = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btningresos = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.dgvInfo = New System.Windows.Forms.DataGridView()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -46,20 +44,11 @@ Partial Class graficas
         Me.grafica.Name = "grafica"
         Series1.ChartArea = "ChartArea1"
         Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
+        Series1.Name = "Num pacientes"
         Me.grafica.Series.Add(Series1)
         Me.grafica.Size = New System.Drawing.Size(753, 414)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
-        '
-        'btnprompacientes
-        '
-        Me.btnprompacientes.Location = New System.Drawing.Point(255, 12)
-        Me.btnprompacientes.Name = "btnprompacientes"
-        Me.btnprompacientes.Size = New System.Drawing.Size(201, 54)
-        Me.btnprompacientes.TabIndex = 2
-        Me.btnprompacientes.Text = "promedio edades pacientes"
-        Me.btnprompacientes.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -70,15 +59,6 @@ Partial Class graficas
         Me.Label1.Size = New System.Drawing.Size(188, 36)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "seleccione informacion " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "para visualizar?"
-        '
-        'btningresos
-        '
-        Me.btningresos.Location = New System.Drawing.Point(477, 12)
-        Me.btningresos.Name = "btningresos"
-        Me.btningresos.Size = New System.Drawing.Size(201, 54)
-        Me.btningresos.TabIndex = 4
-        Me.btningresos.Text = "ingresos"
-        Me.btningresos.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -121,9 +101,7 @@ Partial Class graficas
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.dgvInfo)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.btningresos)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnprompacientes)
         Me.Controls.Add(Me.grafica)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "graficas"
@@ -135,9 +113,7 @@ Partial Class graficas
 
     End Sub
     Friend WithEvents grafica As System.Windows.Forms.DataVisualization.Charting.Chart
-    Friend WithEvents btnprompacientes As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents btningresos As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents dgvInfo As System.Windows.Forms.DataGridView
     Friend WithEvents Label3 As System.Windows.Forms.Label
