@@ -1,4 +1,4 @@
-﻿Public Class frmIngresarEstadoDientes
+﻿Public Class pnlfondo
 
     Private Sub frmIngresarEstadoDientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -270,13 +270,47 @@
     Dim cambiador41c3 As Boolean = False
     Dim cambiador41c4 As Boolean = False
 
-    Dim cambiador42 As Boolean = False
-    Dim cambiador43 As Boolean = False
-    Dim cambiador44 As Boolean = False
-    Dim cambiador45 As Boolean = False
-    Dim cambiador46 As Boolean = False
-    Dim cambiador47 As Boolean = False
-    Dim cambiador48 As Boolean = False
+    Dim cambiador42c1 As Boolean = False
+    Dim cambiador42c2 As Boolean = False
+    Dim cambiador42c3 As Boolean = False
+    Dim cambiador42c4 As Boolean = False
+
+
+    Dim cambiador43c1 As Boolean = False
+    Dim cambiador43c2 As Boolean = False
+    Dim cambiador43c3 As Boolean = False
+    Dim cambiador43c4 As Boolean = False
+
+
+    Dim cambiador44c1 As Boolean = False
+    Dim cambiador44c2 As Boolean = False
+    Dim cambiador44c3 As Boolean = False
+    Dim cambiador44c4 As Boolean = False
+
+
+    Dim cambiador45c1 As Boolean = False
+    Dim cambiador45c2 As Boolean = False
+    Dim cambiador45c3 As Boolean = False
+    Dim cambiador45c4 As Boolean = False
+
+
+    Dim cambiador46c1 As Boolean = False
+    Dim cambiador46c2 As Boolean = False
+    Dim cambiador46c3 As Boolean = False
+    Dim cambiador46c4 As Boolean = False
+
+
+    Dim cambiador47c1 As Boolean = False
+    Dim cambiador47c2 As Boolean = False
+    Dim cambiador47c3 As Boolean = False
+    Dim cambiador47c4 As Boolean = False
+
+
+
+    Dim cambiador48c1 As Boolean = False
+    Dim cambiador48c2 As Boolean = False
+    Dim cambiador48c3 As Boolean = False
+    Dim cambiador48c4 As Boolean = False
 
 
     Dim diente11c1 As Integer = 0
@@ -856,7 +890,7 @@
 
     End Sub
 
-    Private Sub PnlDiente16c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente16c3.Click
+    Private Sub PnlDiente16c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente16c4.Click
         diente16c3 = diente16c3 + 1
         cambiador16c3 = True
 
@@ -1434,7 +1468,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente11c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente11c1.Click
+    Private Sub PnlDiente11c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente11c1 = diente11c1 + 1
         cambiador11c1 = True
 
@@ -1461,7 +1495,7 @@
 
     '-----------------------------------------------------------------------------------------------------
 
-    Private Sub PnlDiente28c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente28c4.Click
+    Private Sub PnlDiente28c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
         diente28c4 = diente28c4 + 1
         cambiador28c4 = True
@@ -1486,7 +1520,7 @@
 
         End Select
     End Sub
-    Private Sub PnlDiente28c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente28c3.Click
+    Private Sub PnlDiente28c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente28c3 = diente28c3 + 1
         cambiador28c3 = True
 
@@ -1510,7 +1544,7 @@
 
         End Select
     End Sub
-    Private Sub PnlDiente28c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente28c2.Click
+    Private Sub PnlDiente28c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente28c2 = diente28c2 + 1
         cambiador28c2 = True
 
@@ -1538,7 +1572,7 @@
     End Sub
 
 
-    Private Sub PnlDiente28c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente28c1.Click
+    Private Sub PnlDiente28c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente28c1 = diente28c1 + 1
         cambiador18c1 = True
 
@@ -1564,7 +1598,7 @@
     End Sub
 
 
-    Private Sub PnlDiente27c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente27c4.Click
+    Private Sub PnlDiente27c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente27c4 = diente27c4 + 1
         cambiador27c4 = True
 
@@ -1589,7 +1623,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente27c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente17c3.Click
+    Private Sub PnlDiente27c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente27c3 = diente17c3 + 1
         cambiador27c3 = True
 
@@ -1615,7 +1649,7 @@
     End Sub
 
 
-    Private Sub PnlDiente27c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente27c2.Click
+    Private Sub PnlDiente27c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente27c2 = diente27c2 + 1
         cambiador27c2 = True
 
@@ -1642,7 +1676,7 @@
 
     End Sub
 
-    Private Sub PnlDiente27c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente27c1.Click
+    Private Sub PnlDiente27c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente27c1 = diente27c1 + 1
         cambiador17c1 = True
 
@@ -1668,7 +1702,7 @@
 
     End Sub
 
-    Private Sub PnlDiente26c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente26c4.Click
+    Private Sub PnlDiente26c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente26c4 = diente26c4 + 1
         cambiador26c4 = True
 
@@ -1695,35 +1729,11 @@
     End Sub
 
 
-    Private Sub PnlDiente26c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente26c3.Click
-        diente26c3 = diente26c3 + 1
-        cambiador26c3 = True
-
-        Select Case diente26c3
-            Case 0
-                PnlDiente26c3.BackColor = Color.White
-                diente26c3E = "normal"
-            Case 1
-                PnlDiente26c3.BackColor = Color.Yellow
-                diente26c3E = "precaucion"
-            Case 2
-                PnlDiente26c3.BackColor = Color.Red
-                diente26c3E = "alerta"
-            Case 3
-                PnlDiente26c3.BackColor = Color.Black
-                diente26c3E = "ausente"
-            Case 4
-                PnlDiente26c3.BackColor = Color.White
-                diente26c3E = "normal"
-                diente26c3 = 0
-
-        End Select
-
-    End Sub
+  
 
 
 
-    Private Sub PnlDiente26c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente16c2.Click
+    Private Sub PnlDiente26c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente26c2 = diente16c2 + 1
         cambiador26c2 = True
 
@@ -1749,7 +1759,7 @@
     End Sub
 
 
-    Private Sub PnlDiente26c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente26c1.Click
+    Private Sub PnlDiente26c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente26c1 = diente26c1 + 1
         cambiador26c1 = True
 
@@ -1776,34 +1786,11 @@
     End Sub
 
 
-    Private Sub PnlDiente25c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente25c4.Click
-        diente25c4 = diente15c4 + 1
-        cambiador25c4 = True
+    
 
-        Select Case diente25c4
-            Case 0
-                PnlDiente25c4.BackColor = Color.White
-                diente25c4E = "normal"
-            Case 1
-                PnlDiente25c4.BackColor = Color.Yellow
-                diente25c4E = "precaucion"
-            Case 2
-                PnlDiente25c4.BackColor = Color.Red
-                diente25c4E = "alerta"
-            Case 3
-                PnlDiente25c4.BackColor = Color.Black
-                diente25c4E = "ausente"
-            Case 4
-                PnlDiente25c4.BackColor = Color.White
-                diente25c4E = "normal"
-                diente25c4 = 0
+    
 
-        End Select
-
-    End Sub
-
-
-    Private Sub PnlDiente25c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente25c3.Click
+    Private Sub PnlDiente25c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente25c3 = diente25c3 + 1
         cambiador25c3 = True
 
@@ -1829,7 +1816,7 @@
     End Sub
 
 
-    Private Sub PnlDiente25c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente25c2.Click
+    Private Sub PnlDiente25c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente25c2 = diente25c2 + 1
         cambiador25c2 = True
 
@@ -1857,7 +1844,7 @@
 
 
 
-    Private Sub PnlDiente25c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente25c1.Click
+    Private Sub PnlDiente25c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente25c1 = diente25c1 + 1
         cambiador15c1 = True
 
@@ -1884,7 +1871,7 @@
     End Sub
 
 
-    Private Sub PnlDiente24c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente24c4.Click
+    Private Sub PnlDiente24c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente24c4 = diente24c4 + 1
         cambiador24c4 = True
 
@@ -1909,7 +1896,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente24c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente24c3.Click
+    Private Sub PnlDiente24c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente24c3 = diente24c3 + 1
         cambiador24c3 = True
 
@@ -1936,7 +1923,7 @@
 
 
 
-    Private Sub PnlDiente24c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente24c2.Click
+    Private Sub PnlDiente24c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente24c2 = diente24c2 + 1
         cambiador24c2 = True
 
@@ -1963,7 +1950,7 @@
     End Sub
 
 
-    Private Sub PnlDiente24c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente24c1.Click
+    Private Sub PnlDiente24c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente24c1 = diente24c1 + 1
         cambiador24c1 = True
 
@@ -1989,7 +1976,7 @@
     End Sub
 
 
-    Private Sub PnlDiente23c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente23c4.Click
+    Private Sub PnlDiente23c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente23c4 = diente23c4 + 1
         cambiador23c4 = True
 
@@ -2014,7 +2001,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente23c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente23c3.Click
+    Private Sub PnlDiente23c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente23c3 = diente23c3 + 1
         cambiador23c3 = True
 
@@ -2040,7 +2027,7 @@
     End Sub
 
 
-    Private Sub PnlDiente23c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente23c2.Click
+    Private Sub PnlDiente23c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente23c2 = diente23c2 + 1
         cambiador13c2 = True
 
@@ -2066,7 +2053,7 @@
     End Sub
 
 
-    Private Sub PnlDiente23c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente23c1.Click
+    Private Sub PnlDiente23c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente23c1 = diente23c1 + 1
         cambiador23c1 = True
 
@@ -2094,7 +2081,7 @@
 
 
 
-    Private Sub PnlDiente22c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente22c4.Click
+    Private Sub PnlDiente22c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente22c4 = diente22c4 + 1
         cambiador22c4 = True
 
@@ -2120,7 +2107,7 @@
     End Sub
 
 
-    Private Sub PnlDiente22c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente22c3.Click
+    Private Sub PnlDiente22c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente22c3 = diente22c3 + 1
         cambiador22c3 = True
 
@@ -2147,7 +2134,7 @@
 
 
 
-    Private Sub PnlDiente22c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente12c2.Click
+    Private Sub PnlDiente22c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente22c2 = diente22c2 + 1
         cambiador12c2 = True
 
@@ -2173,7 +2160,7 @@
     End Sub
 
 
-    Private Sub PnlDiente22c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente22c1.Click
+    Private Sub PnlDiente22c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente22c1 = diente22c1 + 1
         cambiador22c1 = True
 
@@ -2201,7 +2188,7 @@
 
 
 
-    Private Sub PnlDiente21c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente21c4.Click
+    Private Sub PnlDiente21c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente21c4 = diente21c4 + 1
         cambiador21c4 = True
 
@@ -2228,7 +2215,7 @@
 
 
 
-    Private Sub PnlDiente21c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente21c3.Click
+    Private Sub PnlDiente21c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente21c3 = diente21c3 + 1
         cambiador21c3 = True
 
@@ -2254,7 +2241,7 @@
     End Sub
 
 
-    Private Sub PnlDiente21c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente21c2.Click
+    Private Sub PnlDiente21c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente21c2 = diente21c2 + 1
         cambiador11c2 = True
 
@@ -2280,7 +2267,7 @@
     End Sub
 
 
-    Private Sub PnlDiente21c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente21c1.Click
+    Private Sub PnlDiente21c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         diente21c1 = diente21c1 + 1
         cambiador11c1 = True
 
@@ -2304,6 +2291,856 @@
 
         End Select
     End Sub
+
+
+
+    '------------------------------------------------------------------------------------------------
+
+    Private Sub PnlDiente48c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+
+        diente48c4 = diente48c4 + 1
+        cambiador48c4 = True
+
+        Select Case diente48c4
+            Case 0
+                PnlDiente48c4.BackColor = Color.White
+                diente48c4E = "normal"
+            Case 1
+                PnlDiente48c4.BackColor = Color.Yellow
+                diente48c4E = "precaucion"
+            Case 2
+                PnlDiente48c4.BackColor = Color.Red
+                diente48c4E = "alerta"
+            Case 3
+                PnlDiente48c4.BackColor = Color.Black
+                diente48c4E = "ausente"
+            Case 4
+                PnlDiente48c4.BackColor = Color.White
+                diente48c4E = "normal"
+                diente48c4 = 0
+
+        End Select
+    End Sub
+    Private Sub PnlDiente48c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+        diente48c3 = diente48c3 + 1
+        cambiador48c3 = True
+
+        Select Case diente48c3
+            Case 0
+                PnlDiente48c3.BackColor = Color.White
+                diente48c3E = "normal"
+            Case 1
+                PnlDiente48c3.BackColor = Color.Yellow
+                diente48c3E = "precaucion"
+            Case 2
+                PnlDiente48c3.BackColor = Color.Red
+                diente48c3E = "alerta"
+            Case 3
+                PnlDiente48c3.BackColor = Color.Black
+                diente48c3E = "ausente"
+            Case 4
+                PnlDiente48c3.BackColor = Color.White
+                diente48c3E = "normal"
+                diente48c3 = 0
+
+        End Select
+    End Sub
+    Private Sub PnlDiente48c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+        diente48c2 = diente48c2 + 1
+        cambiador28c2 = True
+
+        Select Case diente48c2
+            Case 0
+                PnlDiente48c2.BackColor = Color.White
+                diente48c2E = "normal"
+            Case 1
+                PnlDiente48c2.BackColor = Color.Yellow
+                diente48c2E = "precaucion"
+            Case 2
+                PnlDiente48c2.BackColor = Color.Red
+                diente48c2E = "alerta"
+            Case 3
+                PnlDiente48c2.BackColor = Color.Black
+                diente48c2E = "ausente"
+            Case 4
+                PnlDiente48c2.BackColor = Color.White
+                diente48c2E = "normal"
+                diente48c2 = 0
+
+        End Select
+
+
+    End Sub
+
+
+    Private Sub PnlDiente48c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+        diente48c1 = diente48c1 + 1
+        cambiador48c1 = True
+
+        Select Case diente48c1
+            Case 0
+                PnlDiente48c1.BackColor = Color.White
+                diente48c1E = "normal"
+            Case 1
+                PnlDiente48c1.BackColor = Color.Yellow
+                diente48c1E = "precaucion"
+            Case 2
+                PnlDiente48c1.BackColor = Color.Red
+                diente48c1E = "alerta"
+            Case 3
+                PnlDiente48c1.BackColor = Color.Black
+                diente48c1E = "ausente"
+            Case 4
+                PnlDiente48c1.BackColor = Color.White
+                diente48c1E = "normal"
+                diente48c1 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente47c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente47c4.Click
+        diente47c4 = diente47c4 + 1
+        cambiador47c4 = True
+
+        Select Case diente47c4
+            Case 0
+                PnlDiente47c4.BackColor = Color.White
+                diente47c4E = "normal"
+            Case 1
+                PnlDiente47c4.BackColor = Color.Yellow
+                diente47c4E = "precaucion"
+            Case 2
+                PnlDiente47c4.BackColor = Color.Red
+                diente47c4E = "alerta"
+            Case 3
+                PnlDiente47c4.BackColor = Color.Black
+                diente47c4E = "ausente"
+            Case 4
+                PnlDiente47c4.BackColor = Color.White
+                diente47c4E = "normal"
+                diente47c4 = 0
+
+        End Select
+    End Sub
+
+    Private Sub PnlDiente47c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente47c3.Click
+        diente47c3 = diente47c3 + 1
+        cambiador47c3 = True
+
+        Select Case diente47c3
+            Case 0
+                PnlDiente47c3.BackColor = Color.White
+                diente47c3E = "normal"
+            Case 1
+                PnlDiente47c3.BackColor = Color.Yellow
+                diente47c3E = "precaucion"
+            Case 2
+                PnlDiente47c3.BackColor = Color.Red
+                diente47c3E = "alerta"
+            Case 3
+                PnlDiente47c3.BackColor = Color.Black
+                diente47c3E = "ausente"
+            Case 4
+                PnlDiente47c3.BackColor = Color.White
+                diente47c3E = "normal"
+                diente47c3 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente47c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente47c2.Click
+        diente47c2 = diente47c2 + 1
+        cambiador47c2 = True
+
+        Select Case diente47c2
+            Case 0
+                PnlDiente47c2.BackColor = Color.White
+                diente47c2E = "normal"
+            Case 1
+                PnlDiente47c2.BackColor = Color.Yellow
+                diente47c2E = "precaucion"
+            Case 2
+                PnlDiente47c2.BackColor = Color.Red
+                diente47c2E = "alerta"
+            Case 3
+                PnlDiente47c2.BackColor = Color.Black
+                diente47c2E = "ausente"
+            Case 4
+                PnlDiente47c2.BackColor = Color.White
+                diente47c2E = "normal"
+                diente47c2 = 0
+
+        End Select
+
+
+    End Sub
+
+    Private Sub PnlDiente47c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente47c1.Click
+        diente47c1 = diente47c1 + 1
+        cambiador47c1 = True
+
+        Select Case diente27c1
+            Case 0
+                PnlDiente47c1.BackColor = Color.White
+                diente47c1E = "normal"
+            Case 1
+                PnlDiente47c1.BackColor = Color.Yellow
+                diente47c1E = "precaucion"
+            Case 2
+                PnlDiente47c1.BackColor = Color.Red
+                diente47c1E = "alerta"
+            Case 3
+                PnlDiente47c1.BackColor = Color.Black
+                diente47c1E = "ausente"
+            Case 4
+                PnlDiente47c1.BackColor = Color.White
+                diente47c1E = "normal"
+                diente47c1 = 0
+
+        End Select
+
+    End Sub
+
+    Private Sub PnlDiente46c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente46c4.Click
+        diente46c4 = diente26c4 + 1
+        cambiador26c4 = True
+
+        Select Case diente46c4
+            Case 0
+                PnlDiente46c4.BackColor = Color.White
+                diente46c4E = "normal"
+            Case 1
+                PnlDiente46c4.BackColor = Color.Yellow
+                diente46c4E = "precaucion"
+            Case 2
+                PnlDiente46c4.BackColor = Color.Red
+                diente46c4E = "alerta"
+            Case 3
+                PnlDiente46c4.BackColor = Color.Black
+                diente46c4E = "ausente"
+            Case 4
+                PnlDiente46c4.BackColor = Color.White
+                diente46c4E = "normal"
+                diente46c4 = 0
+
+        End Select
+
+    End Sub
+
+
+    Private Sub PnlDiente26c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente26c3.Click
+        diente46c3 = diente46c3 + 1
+        cambiador46c3 = True
+
+        Select Case diente46c3
+            Case 0
+                PnlDiente46c3.BackColor = Color.White
+                diente46c3E = "normal"
+            Case 1
+                PnlDiente46c3.BackColor = Color.Yellow
+                diente46c3E = "precaucion"
+            Case 2
+                PnlDiente46c3.BackColor = Color.Red
+                diente46c3E = "alerta"
+            Case 3
+                PnlDiente46c3.BackColor = Color.Black
+                diente46c3E = "ausente"
+            Case 4
+                PnlDiente46c3.BackColor = Color.White
+                diente46c3E = "normal"
+                diente46c3 = 0
+
+        End Select
+
+    End Sub
+
+
+
+    Private Sub PnlDiente46c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente46c2.Click
+        diente46c2 = diente46c2 + 1
+        cambiador46c2 = True
+
+        Select Case diente46c2
+            Case 0
+                PnlDiente46c2.BackColor = Color.White
+                diente46c2E = "normal"
+            Case 1
+                PnlDiente46c2.BackColor = Color.Yellow
+                diente46c2E = "precaucion"
+            Case 2
+                PnlDiente46c2.BackColor = Color.Red
+                diente46c2E = "alerta"
+            Case 3
+                PnlDiente46c2.BackColor = Color.Black
+                diente26c2E = "ausente"
+            Case 4
+                PnlDiente46c2.BackColor = Color.White
+                diente46c2E = "normal"
+                diente46c2 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente46c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente46c1.Click
+        diente46c1 = diente46c1 + 1
+        cambiador46c1 = True
+
+        Select Case diente46c1
+            Case 0
+                PnlDiente46c1.BackColor = Color.White
+                diente46c1E = "normal"
+            Case 1
+                PnlDiente46c1.BackColor = Color.Yellow
+                diente46c1E = "precaucion"
+            Case 2
+                PnlDiente46c1.BackColor = Color.Red
+                diente46c1E = "alerta"
+            Case 3
+                PnlDiente46c1.BackColor = Color.Black
+                diente46c1E = "ausente"
+            Case 4
+                PnlDiente46c1.BackColor = Color.White
+                diente46c1E = "normal"
+                diente46c1 = 0
+
+        End Select
+
+    End Sub
+
+
+    Private Sub PnlDiente25c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente45c4.Click
+        diente45c4 = diente45c4 + 1
+        cambiador45c4 = True
+
+        Select Case diente45c4
+            Case 0
+                PnlDiente45c4.BackColor = Color.White
+                diente45c4E = "normal"
+            Case 1
+                PnlDiente45c4.BackColor = Color.Yellow
+                diente45c4E = "precaucion"
+            Case 2
+                PnlDiente45c4.BackColor = Color.Red
+                diente45c4E = "alerta"
+            Case 3
+                PnlDiente45c4.BackColor = Color.Black
+                diente45c4E = "ausente"
+            Case 4
+                PnlDiente45c4.BackColor = Color.White
+                diente45c4E = "normal"
+                diente45c4 = 0
+
+        End Select
+
+    End Sub
+
+
+    Private Sub PnlDiente45c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente45c3.Click
+        diente45c3 = diente45c3 + 1
+        cambiador45c3 = True
+
+        Select Case diente45c3
+            Case 0
+                PnlDiente45c3.BackColor = Color.White
+                diente45c3E = "normal"
+            Case 1
+                PnlDiente45c3.BackColor = Color.Yellow
+                diente45c3E = "precaucion"
+            Case 2
+                PnlDiente45c3.BackColor = Color.Red
+                diente45c3E = "alerta"
+            Case 3
+                PnlDiente45c3.BackColor = Color.Black
+                diente45c3E = "ausente"
+            Case 4
+                PnlDiente45c3.BackColor = Color.White
+                diente45c3E = "normal"
+                diente45c3 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente45c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente25c2.Click
+        diente45c2 = diente45c2 + 1
+        cambiador25c2 = True
+
+        Select Case diente45c2
+            Case 0
+                PnlDiente45c2.BackColor = Color.White
+                diente45c2E = "normal"
+            Case 1
+                PnlDiente45c2.BackColor = Color.Yellow
+                diente45c2E = "precaucion"
+            Case 2
+                PnlDiente45c2.BackColor = Color.Red
+                diente45c2E = "alerta"
+            Case 3
+                PnlDiente45c2.BackColor = Color.Black
+                diente45c2E = "ausente"
+            Case 4
+                PnlDiente45c2.BackColor = Color.White
+                diente45c2E = "normal"
+                diente45c2 = 0
+
+        End Select
+    End Sub
+
+
+
+    Private Sub PnlDiente45c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente45c1.Click
+        diente45c1 = diente45c1 + 1
+        cambiador45c1 = True
+
+        Select Case diente45c1
+            Case 0
+                PnlDiente45c1.BackColor = Color.White
+                diente45c1E = "normal"
+            Case 1
+                PnlDiente45c1.BackColor = Color.Yellow
+                diente45c1E = "precaucion"
+            Case 2
+                PnlDiente25c1.BackColor = Color.Red
+                diente45c1E = "alerta"
+            Case 3
+                PnlDiente45c1.BackColor = Color.Black
+                diente45c1E = "ausente"
+            Case 4
+                PnlDiente45c1.BackColor = Color.White
+                diente45c1E = "normal"
+                diente45c1 = 0
+
+        End Select
+
+    End Sub
+
+
+    Private Sub PnlDiente44c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente44c4.Click
+        diente44c4 = diente24c4 + 1
+        cambiador44c4 = True
+
+        Select Case diente44c4
+            Case 0
+                PnlDiente44c4.BackColor = Color.White
+                diente44c4E = "normal"
+            Case 1
+                PnlDiente24c4.BackColor = Color.Yellow
+                diente44c4E = "precaucion"
+            Case 2
+                PnlDiente24c4.BackColor = Color.Red
+                diente44c4E = "alerta"
+            Case 3
+                PnlDiente24c4.BackColor = Color.Black
+                diente44c4E = "ausente"
+            Case 4
+                PnlDiente24c4.BackColor = Color.White
+                diente44c4E = "normal"
+                diente44c4 = 0
+
+        End Select
+    End Sub
+
+    Private Sub PnlDiente44c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente44c3.Click
+        diente44c3 = diente44c3 + 1
+        cambiador44c3 = True
+
+        Select Case diente44c3
+            Case 0
+                PnlDiente44c3.BackColor = Color.White
+                diente44c3E = "normal"
+            Case 1
+                PnlDiente24c3.BackColor = Color.Yellow
+                diente24c3E = "precaucion"
+            Case 2
+                PnlDiente44c3.BackColor = Color.Red
+                diente44c3E = "alerta"
+            Case 3
+                PnlDiente44c3.BackColor = Color.Black
+                diente44c3E = "ausente"
+            Case 4
+                PnlDiente44c3.BackColor = Color.White
+                diente44c3E = "normal"
+                diente44c3 = 0
+
+        End Select
+    End Sub
+
+
+
+    Private Sub PnlDiente44c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente44c2.Click
+        diente44c2 = diente24c2 + 1
+        cambiador44c2 = True
+
+        Select Case diente44c2
+            Case 0
+                PnlDiente44c2.BackColor = Color.White
+                diente24c2E = "normal"
+            Case 1
+                PnlDiente44c2.BackColor = Color.Yellow
+                diente44c2E = "precaucion"
+            Case 2
+                PnlDiente44c2.BackColor = Color.Red
+                diente44c2E = "alerta"
+            Case 3
+                PnlDiente44c2.BackColor = Color.Black
+                diente44c2E = "ausente"
+            Case 4
+                PnlDiente44c2.BackColor = Color.White
+                diente44c2E = "normal"
+                diente44c2 = 0
+
+        End Select
+
+    End Sub
+
+
+    Private Sub PnlDiente44c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente44c1.Click
+        diente44c1 = diente44c1 + 1
+        cambiador44c1 = True
+
+        Select Case diente44c1
+            Case 0
+                PnlDiente44c1.BackColor = Color.White
+                diente44c1E = "normal"
+            Case 1
+                PnlDiente44c1.BackColor = Color.Yellow
+                diente44c1E = "precaucion"
+            Case 2
+                PnlDiente44c1.BackColor = Color.Red
+                diente44c1E = "alerta"
+            Case 3
+                PnlDiente44c1.BackColor = Color.Black
+                diente44c1E = "ausente"
+            Case 4
+                PnlDiente44c1.BackColor = Color.White
+                diente44c1E = "normal"
+                diente44c1 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente43c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente43c4.Click
+        diente43c4 = diente43c4 + 1
+        cambiador43c4 = True
+
+        Select Case diente43c4
+            Case 0
+                PnlDiente43c4.BackColor = Color.White
+                diente43c4E = "normal"
+            Case 1
+                PnlDiente43c4.BackColor = Color.Yellow
+                diente43c4E = "precaucion"
+            Case 2
+                PnlDiente43c4.BackColor = Color.Red
+                diente43c4E = "alerta"
+            Case 3
+                PnlDiente43c4.BackColor = Color.Black
+                diente43c4E = "ausente"
+            Case 4
+                PnlDiente43c4.BackColor = Color.White
+                diente43c4E = "normal"
+                diente43c4 = 0
+
+        End Select
+    End Sub
+
+    Private Sub PnlDiente43c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente43c3.Click
+        diente43c3 = diente43c3 + 1
+        cambiador43c3 = True
+
+        Select Case diente43c3
+            Case 0
+                PnlDiente43c3.BackColor = Color.White
+                diente43c3E = "normal"
+            Case 1
+                PnlDiente23c3.BackColor = Color.Yellow
+                diente43c3E = "precaucion"
+            Case 2
+                PnlDiente43c3.BackColor = Color.Red
+                diente43c3E = "alerta"
+            Case 3
+                PnlDiente43c3.BackColor = Color.Black
+                diente43c3E = "ausente"
+            Case 4
+                PnlDiente43c3.BackColor = Color.White
+                diente43c3E = "normal"
+                diente43c3 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente43c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente43c2.Click
+        diente43c2 = diente43c2 + 1
+        cambiador43c2 = True
+
+        Select Case diente43c2
+            Case 0
+                PnlDiente43c2.BackColor = Color.White
+                diente43c2E = "normal"
+            Case 1
+                PnlDiente43c2.BackColor = Color.Yellow
+                diente43c2E = "precaucion"
+            Case 2
+                PnlDiente43c2.BackColor = Color.Red
+                diente43c2E = "alerta"
+            Case 3
+                PnlDiente43c2.BackColor = Color.Black
+                diente43c2E = "ausente"
+            Case 4
+                PnlDiente43c2.BackColor = Color.White
+                diente43c2E = "normal"
+                diente43c2 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente43c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente43c1.Click
+        diente43c1 = diente43c1 + 1
+        cambiador43c1 = True
+
+        Select Case diente43c1
+            Case 0
+                PnlDiente43c1.BackColor = Color.White
+                diente43c1E = "normal"
+            Case 1
+                PnlDiente43c1.BackColor = Color.Yellow
+                diente43c1E = "precaucion"
+            Case 2
+                PnlDiente43c1.BackColor = Color.Red
+                diente43c1E = "alerta"
+            Case 3
+                PnlDiente43c1.BackColor = Color.Black
+                diente43c1E = "ausente"
+            Case 4
+                PnlDiente43c1.BackColor = Color.White
+                diente43c1E = "normal"
+                diente43c1 = 0
+
+        End Select
+    End Sub
+
+
+
+
+    Private Sub PnlDiente42c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente42c4.Click
+        diente42c4 = diente22c4 + 1
+        cambiador42c4 = True
+
+        Select Case diente42c4
+            Case 0
+                PnlDiente42c4.BackColor = Color.White
+                diente42c4E = "normal"
+            Case 1
+                PnlDiente42c4.BackColor = Color.Yellow
+                diente42c4E = "precaucion"
+            Case 2
+                PnlDiente42c4.BackColor = Color.Red
+                diente42c4E = "alerta"
+            Case 3
+                PnlDiente42c4.BackColor = Color.Black
+                diente42c4E = "ausente"
+            Case 4
+                PnlDiente42c4.BackColor = Color.White
+                diente42c4E = "normal"
+                diente42c4 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente42c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente42c3.Click
+        diente22c3 = diente42c3 + 1
+        cambiador22c3 = True
+
+        Select Case diente42c3
+            Case 0
+                PnlDiente42c3.BackColor = Color.White
+                diente22c3E = "normal"
+            Case 1
+                PnlDiente42c3.BackColor = Color.Yellow
+                diente22c3E = "precaucion"
+            Case 2
+                PnlDiente42c3.BackColor = Color.Red
+                diente22c3E = "alerta"
+            Case 3
+                PnlDiente42c3.BackColor = Color.Black
+                diente22c3E = "ausente"
+            Case 4
+                PnlDiente42c3.BackColor = Color.White
+                diente22c3E = "normal"
+                diente22c3 = 0
+
+        End Select
+    End Sub
+
+
+
+    Private Sub PnlDiente42c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente42c2.Click
+        diente42c2 = diente42c2 + 1
+        cambiador12c2 = True
+
+        Select Case diente42c2
+            Case 0
+                PnlDiente42c2.BackColor = Color.White
+                diente42c2E = "normal"
+            Case 1
+                PnlDiente42c2.BackColor = Color.Yellow
+                diente42c2E = "precaucion"
+            Case 2
+                PnlDiente42c2.BackColor = Color.Red
+                diente42c2E = "alerta"
+            Case 3
+                PnlDiente22c2.BackColor = Color.Black
+                diente42c2E = "ausente"
+            Case 4
+                PnlDiente42c2.BackColor = Color.White
+                diente42c2E = "normal"
+                diente42c2 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente42c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente42c1.Click
+        diente42c1 = diente42c1 + 1
+        cambiador42c1 = True
+
+        Select Case diente42c1
+            Case 0
+                PnlDiente42c1.BackColor = Color.White
+                diente42c1E = "normal"
+            Case 1
+                PnlDiente42c1.BackColor = Color.Yellow
+                diente42c1E = "precaucion"
+            Case 2
+                PnlDiente42c1.BackColor = Color.Red
+                diente42c1E = "alerta"
+            Case 3
+                PnlDiente42c1.BackColor = Color.Black
+                diente22c1E = "ausente"
+            Case 4
+                PnlDiente42c1.BackColor = Color.White
+                diente22c1E = "normal"
+                diente22c1 = 0
+
+        End Select
+
+    End Sub
+
+
+
+    Private Sub PnlDiente41c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente41c4.Click
+        diente41c4 = diente41c4 + 1
+        cambiador41c4 = True
+
+        Select Case diente41c4
+            Case 0
+                PnlDiente41c4.BackColor = Color.White
+                diente41c4E = "normal"
+            Case 1
+                PnlDiente21c4.BackColor = Color.Yellow
+                diente41c4E = "precaucion"
+            Case 2
+                PnlDiente21c4.BackColor = Color.Red
+                diente41c4E = "alerta"
+            Case 3
+                PnlDiente21c4.BackColor = Color.Black
+                diente41c4E = "ausente"
+            Case 4
+                PnlDiente21c4.BackColor = Color.White
+                diente41c4E = "normal"
+                diente41c4 = 0
+
+        End Select
+    End Sub
+
+
+
+    Private Sub PnlDiente41c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente41c3.Click
+        diente41c3 = diente41c3 + 1
+        cambiador41c3 = True
+
+        Select Case diente41c3
+            Case 0
+                PnlDiente41c3.BackColor = Color.White
+                diente41c3E = "normal"
+            Case 1
+                PnlDiente41c3.BackColor = Color.Yellow
+                diente41c3E = "precaucion"
+            Case 2
+                PnlDiente41c3.BackColor = Color.Red
+                diente41c3E = "alerta"
+            Case 3
+                PnlDiente41c3.BackColor = Color.Black
+                diente21c3E = "ausente"
+            Case 4
+                PnlDiente41c3.BackColor = Color.White
+                diente41c3E = "normal"
+                diente41c3 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente41c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente41c2.Click
+        diente41c2 = diente41c2 + 1
+        cambiador41c2 = True
+
+        Select Case diente41c2
+            Case 0
+                PnlDiente41c2.BackColor = Color.White
+                diente41c2E = "normal"
+            Case 1
+                PnlDiente41c2.BackColor = Color.Yellow
+                diente41c2E = "precaucion"
+            Case 2
+                PnlDiente41c2.BackColor = Color.Red
+                diente41c2E = "alerta"
+            Case 3
+                PnlDiente41c2.BackColor = Color.Black
+                diente41c2E = "ausente"
+            Case 4
+                PnlDiente41c2.BackColor = Color.White
+                diente41c2E = "normal"
+                diente41c2 = 0
+
+        End Select
+    End Sub
+
+
+    Private Sub PnlDiente41c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente41c1.Click
+        diente41c1 = diente41c1 + 1
+        cambiador41c1 = True
+
+        Select Case diente21c1
+            Case 0
+                PnlDiente41c1.BackColor = Color.White
+                diente41c1E = "normal"
+            Case 1
+                PnlDiente41c1.BackColor = Color.Yellow
+                diente41c1E = "precaucion"
+            Case 2
+                PnlDiente41c1.BackColor = Color.Red
+                diente41c1E = "alerta"
+            Case 3
+                PnlDiente41c1.BackColor = Color.Black
+                diente41c1E = "ausente"
+            Case 4
+                PnlDiente11c1.BackColor = Color.White
+                diente41c1E = "normal"
+                diente41c1 = 0
+
+        End Select
+    End Sub
+
+
+
 
 
 End Class

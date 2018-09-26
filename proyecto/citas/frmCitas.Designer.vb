@@ -29,7 +29,6 @@ Partial Class frmCitas
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.MCFecha = New System.Windows.Forms.MonthCalendar()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAgregarCita = New System.Windows.Forms.Button()
         Me.btnMarcarCita = New System.Windows.Forms.Button()
         Me.LabelDia = New System.Windows.Forms.Label()
@@ -44,26 +43,16 @@ Partial Class frmCitas
         '
         'MCFecha
         '
-        Me.MCFecha.Location = New System.Drawing.Point(979, 12)
+        Me.MCFecha.Location = New System.Drawing.Point(12, 221)
         Me.MCFecha.Name = "MCFecha"
         Me.MCFecha.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.Label1.Location = New System.Drawing.Point(516, 702)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(219, 58)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Ingrese el día para " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ver las citas:"
         '
         'btnAgregarCita
         '
         Me.btnAgregarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.btnAgregarCita.Location = New System.Drawing.Point(274, 702)
+        Me.btnAgregarCita.Location = New System.Drawing.Point(12, 119)
         Me.btnAgregarCita.Name = "btnAgregarCita"
-        Me.btnAgregarCita.Size = New System.Drawing.Size(227, 90)
+        Me.btnAgregarCita.Size = New System.Drawing.Size(248, 90)
         Me.btnAgregarCita.TabIndex = 2
         Me.btnAgregarCita.Text = "agregar cita"
         Me.btnAgregarCita.UseVisualStyleBackColor = True
@@ -71,9 +60,9 @@ Partial Class frmCitas
         'btnMarcarCita
         '
         Me.btnMarcarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.btnMarcarCita.Location = New System.Drawing.Point(764, 702)
+        Me.btnMarcarCita.Location = New System.Drawing.Point(12, 12)
         Me.btnMarcarCita.Name = "btnMarcarCita"
-        Me.btnMarcarCita.Size = New System.Drawing.Size(227, 90)
+        Me.btnMarcarCita.Size = New System.Drawing.Size(248, 90)
         Me.btnMarcarCita.TabIndex = 5
         Me.btnMarcarCita.Text = "Marcar cita como concluida"
         Me.btnMarcarCita.UseVisualStyleBackColor = True
@@ -122,12 +111,12 @@ Partial Class frmCitas
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvHora.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvHora.Location = New System.Drawing.Point(14, 12)
+        Me.dgvHora.Location = New System.Drawing.Point(272, 12)
         Me.dgvHora.Name = "dgvHora"
         Me.dgvHora.ReadOnly = True
         Me.dgvHora.RowHeadersVisible = False
         Me.dgvHora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.dgvHora.Size = New System.Drawing.Size(958, 654)
+        Me.dgvHora.Size = New System.Drawing.Size(921, 654)
         Me.dgvHora.TabIndex = 13
         '
         'dgvConsultaDia
@@ -156,7 +145,7 @@ Partial Class frmCitas
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvConsultaDia.DefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvConsultaDia.Location = New System.Drawing.Point(1181, 12)
+        Me.dgvConsultaDia.Location = New System.Drawing.Point(12, 412)
         Me.dgvConsultaDia.Name = "dgvConsultaDia"
         Me.dgvConsultaDia.ReadOnly = True
         Me.dgvConsultaDia.RowHeadersVisible = False
@@ -191,12 +180,12 @@ Partial Class frmCitas
         DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvDatosCita.DefaultCellStyle = DataGridViewCellStyle6
-        Me.dgvDatosCita.Location = New System.Drawing.Point(1160, 12)
+        Me.dgvDatosCita.Location = New System.Drawing.Point(12, 395)
         Me.dgvDatosCita.Name = "dgvDatosCita"
         Me.dgvDatosCita.ReadOnly = True
         Me.dgvDatosCita.RowHeadersVisible = False
         Me.dgvDatosCita.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvDatosCita.Size = New System.Drawing.Size(15, 11)
+        Me.dgvDatosCita.Size = New System.Drawing.Size(25, 11)
         Me.dgvDatosCita.TabIndex = 16
         Me.dgvDatosCita.Visible = False
         '
@@ -211,7 +200,6 @@ Partial Class frmCitas
         Me.Controls.Add(Me.LabelDia)
         Me.Controls.Add(Me.btnMarcarCita)
         Me.Controls.Add(Me.btnAgregarCita)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MCFecha)
         Me.Controls.Add(Me.dgvHora)
         Me.Cursor = System.Windows.Forms.Cursors.Default
@@ -227,7 +215,6 @@ Partial Class frmCitas
 
     End Sub
     Friend WithEvents MCFecha As System.Windows.Forms.MonthCalendar
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnAgregarCita As System.Windows.Forms.Button
     Friend WithEvents btnMarcarCita As System.Windows.Forms.Button
     Friend WithEvents LabelDia As System.Windows.Forms.Label
