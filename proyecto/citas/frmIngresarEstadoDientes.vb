@@ -660,7 +660,7 @@
     Dim diente48c3E As String
     Dim diente48c4E As String
 
-    Private Sub PnlDiente18c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente18c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente18c4.Click
         diente18c4 = diente18c4 + 1
         cambiador18c4 = True
 
@@ -685,7 +685,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente18c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente18c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente18c3.Click
         diente18c3 = diente18c3 + 1
         cambiador18c3 = True
 
@@ -710,7 +710,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente18c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente18c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente18c2.Click
         diente18c2 = diente18c2 + 1
         cambiador18c2 = True
 
@@ -736,7 +736,7 @@
 
     End Sub
 
-    Private Sub PnlDiente18c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente18c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente18c1.Click
         diente18c1 = diente18c1 + 1
         cambiador18c1 = True
 
@@ -761,7 +761,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente17c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente17c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente17c4.Click
         diente17c4 = diente17c4 + 1
         cambiador17c4 = True
 
@@ -786,7 +786,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente17c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente17c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente17c3.Click
         diente17c3 = diente17c3 + 1
         cambiador17c3 = True
 
@@ -811,7 +811,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente17c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente17c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente17c2.Click
         diente17c2 = diente17c2 + 1
         cambiador17c2 = True
 
@@ -838,7 +838,7 @@
 
     End Sub
 
-    Private Sub PnlDiente17c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente17c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente17c1.Click
         diente17c1 = diente17c1 + 1
         cambiador17c1 = True
 
@@ -864,7 +864,7 @@
 
     End Sub
 
-    Private Sub PnlDiente16c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente16c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente16c4.Click
         diente16c4 = diente16c4 + 1
         cambiador16c4 = True
 
@@ -890,7 +890,7 @@
 
     End Sub
 
-    Private Sub PnlDiente16c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente16c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente16c4.Click
         diente16c3 = diente16c3 + 1
         cambiador16c3 = True
 
@@ -917,7 +917,7 @@
     End Sub
 
 
-    Private Sub PnlDiente16c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente16c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente16c2.Click
         diente16c2 = diente16c2 + 1
         cambiador16c2 = True
 
@@ -944,7 +944,7 @@
 
 
 
-    Private Sub PnlDiente16c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente16c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente16c1.Click
         diente16c1 = diente16c1 + 1
         cambiador16c1 = True
 
@@ -971,7 +971,7 @@
     End Sub
 
 
-    Private Sub PnlDiente15c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente15c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente15c4.Click
         diente15c4 = diente15c4 + 1
         cambiador15c4 = True
 
@@ -998,7 +998,7 @@
     End Sub
 
 
-    Private Sub PnlDiente15c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente15c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente15c3.Click
         diente15c3 = diente15c3 + 1
         cambiador15c3 = True
 
@@ -1023,7 +1023,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente15c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente15c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente15c2.Click
         diente15c2 = diente15c2 + 1
         cambiador15c2 = True
 
@@ -1048,7 +1048,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente15c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente15c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente15c1.Click
         diente15c1 = diente15c1 + 1
         cambiador15c1 = True
 
@@ -1075,7 +1075,7 @@
     End Sub
 
 
-    Private Sub PnlDiente14c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente14c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente14c4.Click
         diente14c4 = diente14c4 + 1
         cambiador14c4 = True
 
@@ -1101,7 +1101,7 @@
     End Sub
 
 
-    Private Sub PnlDiente14c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente14c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente14c3.Click
         diente14c3 = diente14c3 + 1
         cambiador14c3 = True
 
@@ -1126,7 +1126,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente14c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente14c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente14c2.Click
         diente14c2 = diente14c2 + 1
         cambiador14c2 = True
 
@@ -1154,7 +1154,7 @@
 
 
 
-    Private Sub PnlDiente14c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente14c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente14c1.Click
         diente14c1 = diente14c1 + 1
         cambiador14c1 = True
 
@@ -1182,7 +1182,7 @@
 
 
 
-    Private Sub PnlDiente13c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente13c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente13c4.Click
         diente13c4 = diente13c4 + 1
         cambiador13c4 = True
 
@@ -1207,7 +1207,7 @@
         End Select
     End Sub
 
-    Private Sub PnlDiente13c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente13c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente13c3.Click
         diente13c3 = diente13c3 + 1
         cambiador13c3 = True
 
@@ -1233,7 +1233,7 @@
     End Sub
 
 
-    Private Sub PnlDiente13c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente13c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente13c2.Click
         diente13c2 = diente13c2 + 1
         cambiador13c2 = True
 
@@ -1259,7 +1259,7 @@
     End Sub
 
 
-    Private Sub PnlDiente13c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente13c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente13c1.Click
         diente13c1 = diente13c1 + 1
         cambiador13c1 = True
 
@@ -1285,7 +1285,7 @@
     End Sub
 
 
-    Private Sub PnlDiente12c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente12c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente12c4.Click
         diente12c4 = diente12c4 + 1
         cambiador12c4 = True
 
@@ -1312,7 +1312,7 @@
 
 
 
-    Private Sub PnlDiente12c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente12c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente12c3.Click
         diente12c3 = diente12c3 + 1
         cambiador12c3 = True
 
@@ -1339,7 +1339,7 @@
 
 
 
-    Private Sub PnlDiente12c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente12c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente12c2.Click
         diente12c2 = diente12c2 + 1
         cambiador12c2 = True
 
@@ -1365,7 +1365,7 @@
     End Sub
 
 
-    Private Sub PnlDiente12c1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente12c1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente12c1.Click
         diente12c1 = diente12c1 + 1
         cambiador12c1 = True
 
@@ -1391,7 +1391,7 @@
 
     End Sub
 
-    Private Sub PnlDiente11c4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente11c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente11c4.Click
         diente11c4 = diente11c4 + 1
         cambiador11c4 = True
 
@@ -1417,7 +1417,7 @@
     End Sub
 
 
-    Private Sub PnlDiente11c3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente11c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente11c3.Click
         diente11c3 = diente11c3 + 1
         cambiador11c3 = True
 
@@ -1443,7 +1443,7 @@
     End Sub
 
 
-    Private Sub PnlDiente11c2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    Private Sub PnlDiente11c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente11c2.Click
         diente11c2 = diente11c2 + 1
         cambiador11c2 = True
 
