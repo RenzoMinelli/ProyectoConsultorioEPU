@@ -270,7 +270,7 @@
 
     Private Sub btnAgregarEstadoDientes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Hide()
-        frmContenedor = frmIngresarEstadoDientes
+        frmContenedor = pnlfondo
         frmContenedor.MdiParent = Menu_Inicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
