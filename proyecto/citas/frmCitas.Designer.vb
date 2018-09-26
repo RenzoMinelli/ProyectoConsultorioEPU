@@ -52,7 +52,7 @@ Partial Class frmCitas
         Me.btnAgregarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
         Me.btnAgregarCita.Location = New System.Drawing.Point(12, 119)
         Me.btnAgregarCita.Name = "btnAgregarCita"
-        Me.btnAgregarCita.Size = New System.Drawing.Size(248, 90)
+        Me.btnAgregarCita.Size = New System.Drawing.Size(227, 90)
         Me.btnAgregarCita.TabIndex = 2
         Me.btnAgregarCita.Text = "agregar cita"
         Me.btnAgregarCita.UseVisualStyleBackColor = True
@@ -62,7 +62,7 @@ Partial Class frmCitas
         Me.btnMarcarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
         Me.btnMarcarCita.Location = New System.Drawing.Point(12, 12)
         Me.btnMarcarCita.Name = "btnMarcarCita"
-        Me.btnMarcarCita.Size = New System.Drawing.Size(248, 90)
+        Me.btnMarcarCita.Size = New System.Drawing.Size(227, 90)
         Me.btnMarcarCita.TabIndex = 5
         Me.btnMarcarCita.Text = "Marcar cita como concluida"
         Me.btnMarcarCita.UseVisualStyleBackColor = True
@@ -111,7 +111,7 @@ Partial Class frmCitas
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvHora.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvHora.Location = New System.Drawing.Point(272, 12)
+        Me.dgvHora.Location = New System.Drawing.Point(245, 12)
         Me.dgvHora.Name = "dgvHora"
         Me.dgvHora.ReadOnly = True
         Me.dgvHora.RowHeadersVisible = False

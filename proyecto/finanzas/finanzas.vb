@@ -41,7 +41,7 @@
 
                 dgbPagos.DataSource = Tabla
 
-                Dim suma As Integer = 0
+                Dim suma As Long = 0
                 If Not IsDBNull(dgbPagos.Rows(0).Cells(0).Value) Then
 
                     Label4.Text = ""

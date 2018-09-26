@@ -135,6 +135,7 @@
         txtcontraseña.Visible = False
         btnfuncionario.Visible = True
         btnodontologo.Visible = True
+        txtcontraseña.Clear()
     End Sub
 End Class
 

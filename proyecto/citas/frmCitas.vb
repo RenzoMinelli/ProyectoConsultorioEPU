@@ -118,7 +118,24 @@
         DiaSeleccionado = MCFecha.SelectionRange.Start
         FCalendario = Weekday(DiaSeleccionado)
 
+        Dim verificar As Integer = 0
+        Dim indice As Integer = 1
+        Dim row As Integer
+        If dgvHora.CurrentCell.Value <> "" Then
+            While verificar = 0
 
+                If dgvHora.Rows(dgvHora.CurrentRow.Index - indice).Cells(dgvHora.CurrentCell.ColumnIndex).Value = dgvHora.CurrentCell.Value Then
+
+                    indice += 1
+
+                Else
+                    verificar = 1
+                    row = dgvHora.CurrentRow.Index - indice + 1
+
+                End If
+
+            End While
+        End If
 
         Select Case dgvHora.CurrentCell.ColumnIndex
 
@@ -172,9 +189,11 @@
                         consultar()
                         dgvDatosCita.DataSource = Tabla
                     Case "5"
+                        MsgBox("que")
                         Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
                         consultar()
                         dgvDatosCita.DataSource = Tabla
+                        MsgBox("no")
                     Case "6"
                         Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
                         consultar()
@@ -331,22 +350,22 @@
         If dgvDatosCita.RowCount <> 0 Then
 
 
-            For Each row As DataGridViewRow In dgvDatosCita.Rows
+            For Each row2 As DataGridViewRow In dgvDatosCita.Rows
 
 
                 Dim hora2 As TimeSpan
 
-                hora2 = TimeSpan.Parse(row.Cells(3).Value.ToString)
+                hora2 = TimeSpan.Parse(row2.Cells(3).Value.ToString)
 
                 Dim horadgv As TimeSpan
-                horadgv = TimeSpan.Parse(dgvHora.CurrentRow.Cells(0).Value.ToString)
+                horadgv = TimeSpan.Parse(dgvHora.Rows(row).Cells(0).Value.ToString)
 
                 Dim horadgv2 As TimeSpan
-                horadgv2 = TimeSpan.Parse(dgvHora.Rows(dgvHora.CurrentRow.Index + 1).Cells(0).Value.ToString)
+                horadgv2 = TimeSpan.Parse(dgvHora.Rows(dgvHora.Rows(row).Index + 1).Cells(0).Value.ToString)
 
                 If hora2 < horadgv Or hora2 >= horadgv2 Then
 
-                    dgvDatosCita.Rows.Remove(row)
+                    dgvDatosCita.Rows.Remove(row2)
 
 
                 End If
@@ -355,14 +374,9 @@
 
         End If
 
-        If dgvHora.CurrentCell.Value <> "" Then
+        If dgvHora.CurrentCell.Value <> "" And dgvHora.CurrentCell.ColumnIndex <> 0 Then
 
-            dgvDatosCita.Columns(0).Visible = False
-            dgvDatosCita.Columns(1).Visible = False
-            dgvDatosCita.Columns(2).HeaderText = "Fecha"
-            dgvDatosCita.Columns(3).HeaderText = "Hora"
-            dgvDatosCita.Columns(4).HeaderText = "Nombre"
-            dgvDatosCita.Columns(5).HeaderText = "Apellido"
+
 
             id_p = dgvDatosCita.Rows(0).Cells(1).Value
             idcita = dgvDatosCita.Rows(0).Cells(0).Value
@@ -446,6 +460,7 @@
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
                                 If hora < posicion Then
+
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
                                         dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre

@@ -78,6 +78,9 @@
 
                     HoraAuxFinal = HoraAux + mediaHora
 
+                    For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(6).Value - 1
+                        HoraAuxFinal += mediaHora
+                    Next
                     If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
 
                         control = 1
@@ -91,15 +94,10 @@
                     MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
                 Else
                     Try
-                        For x = 1 To duracion
 
 
-
-                            Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion) values ('" + id_p.ToString + "','" + fecha + "', '" + horaCita.ToString + "', 0, '" + descr + "'); "
-                            consultar()
-
-                            horaCita += mediaHora
-                        Next
+                        Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion, duracion) values ('" + id_p.ToString + "','" + fecha + "', '" + horaCita.ToString + "', 0, '" + descr + "', '" + txbDuracion.Text + "'); "
+                        consultar()
 
 
                         MsgBox("Ingresado con éxito", MsgBoxStyle.Information)
