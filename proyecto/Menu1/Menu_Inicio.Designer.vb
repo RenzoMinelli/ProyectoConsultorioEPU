@@ -84,7 +84,7 @@ Partial Class Menu_Inicio
         Me.pnlBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlBarraSuperior.Location = New System.Drawing.Point(174, 0)
         Me.pnlBarraSuperior.Name = "pnlBarraSuperior"
-        Me.pnlBarraSuperior.Size = New System.Drawing.Size(1164, 38)
+        Me.pnlBarraSuperior.Size = New System.Drawing.Size(1206, 38)
         Me.pnlBarraSuperior.TabIndex = 7
         '
         'pbMaximizar
@@ -352,7 +352,7 @@ Partial Class Menu_Inicio
         Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlMenu.Location = New System.Drawing.Point(0, 0)
         Me.pnlMenu.Name = "pnlMenu"
-        Me.pnlMenu.Size = New System.Drawing.Size(174, 919)
+        Me.pnlMenu.Size = New System.Drawing.Size(174, 731)
         Me.pnlMenu.TabIndex = 5
         '
         'Menu_Inicio
@@ -360,7 +360,7 @@ Partial Class Menu_Inicio
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(1338, 919)
+        Me.ClientSize = New System.Drawing.Size(1380, 731)
         Me.Controls.Add(Me.pnlBarraSuperior)
         Me.Controls.Add(Me.pnlMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
