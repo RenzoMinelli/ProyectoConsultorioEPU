@@ -110,285 +110,287 @@
 
 
     Private Sub dgvHora_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvHora.CellClick
+        If user = "odontologo" Or user = "root" Then
 
 
-        If dgvHora.CurrentCell.Value = "" Then
-            btnMarcarCita.Hide()
+
+            If dgvHora.CurrentCell.Value = "" Then
+                btnMarcarCita.Hide()
+            End If
+            DiaSeleccionado = MCFecha.SelectionRange.Start
+            FCalendario = Weekday(DiaSeleccionado)
+
+            Dim verificar As Integer = 0
+            Dim indice As Integer = 1
+            Dim row As Integer
+            If dgvHora.CurrentCell.Value <> "" Then
+                While verificar = 0
+
+                    If dgvHora.Rows(dgvHora.CurrentRow.Index - indice).Cells(dgvHora.CurrentCell.ColumnIndex).Value = dgvHora.CurrentCell.Value Then
+
+                        indice += 1
+
+                    Else
+                        verificar = 1
+                        row = dgvHora.CurrentRow.Index - indice + 1
+
+                    End If
+
+                End While
+            End If
+
+            Select Case dgvHora.CurrentCell.ColumnIndex
+
+                Case 1
+
+                    Select Case FCalendario
+
+                        Case "2"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "3"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "4"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "5"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "6"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "7"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "1"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-6).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                    End Select
+
+                Case 2
+                    Select Case FCalendario
+
+                        Case "2"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "3"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "4"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "5"
+
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+
+                        Case "6"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "7"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "1"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                    End Select
+
+                Case 3
+                    Select Case FCalendario
+
+                        Case "2"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "3"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "4"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "5"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "6"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "7"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "1"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                    End Select
+                Case 4
+                    Select Case FCalendario
+
+                        Case "2"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "3"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "4"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "5"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "6"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "7"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "1"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                    End Select
+                Case 5
+                    Select Case FCalendario
+
+                        Case "2"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "3"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "4"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "5"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "6"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "7"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "1"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                    End Select
+                Case 6
+                    Select Case FCalendario
+
+                        Case "2"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(5).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "3"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "4"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "5"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "6"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "7"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                        Case "1"
+                            Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
+                            consultar()
+                            dgvDatosCita.DataSource = Tabla
+                    End Select
+
+            End Select
+
+
+
+            ' MsgBox("dia act: " + FCalendario.ToString + " dia selec: " + dgvHora.CurrentCell.ColumnIndex.ToString)
+            ' viendo en que linea se selecciono ver en que hora esta
+            'en un for ver la tabla aux
+            'if comparando la hora de las citas con la hora de la cita seleccionada del (current row) y menor a la siguiente (current row.index(+1))
+
+
+            If dgvDatosCita.RowCount <> 0 Then
+
+
+                For Each row2 As DataGridViewRow In dgvDatosCita.Rows
+
+
+                    Dim hora2 As TimeSpan
+
+                    hora2 = TimeSpan.Parse(row2.Cells(3).Value.ToString)
+
+                    Dim horadgv As TimeSpan
+                    horadgv = TimeSpan.Parse(dgvHora.Rows(row).Cells(0).Value.ToString)
+
+                    Dim horadgv2 As TimeSpan
+                    horadgv2 = TimeSpan.Parse(dgvHora.Rows(dgvHora.Rows(row).Index + 1).Cells(0).Value.ToString)
+
+                    If hora2 < horadgv Or hora2 >= horadgv2 Then
+
+                        dgvDatosCita.Rows.Remove(row2)
+
+
+                    End If
+
+                Next
+
+            End If
+
+            If dgvHora.CurrentCell.Value <> "" And dgvHora.CurrentCell.ColumnIndex <> 0 Then
+
+
+
+                id_p = dgvDatosCita.Rows(0).Cells(1).Value
+                idcita = dgvDatosCita.Rows(0).Cells(0).Value
+
+                btnMarcarCita.Show()
+
+            Else
+                dgvDatosCita.DataSource = Nothing
+
+            End If
+
         End If
-        DiaSeleccionado = MCFecha.SelectionRange.Start
-        FCalendario = Weekday(DiaSeleccionado)
-
-        Dim verificar As Integer = 0
-        Dim indice As Integer = 1
-        Dim row As Integer
-        If dgvHora.CurrentCell.Value <> "" Then
-            While verificar = 0
-
-                If dgvHora.Rows(dgvHora.CurrentRow.Index - indice).Cells(dgvHora.CurrentCell.ColumnIndex).Value = dgvHora.CurrentCell.Value Then
-
-                    indice += 1
-
-                Else
-                    verificar = 1
-                    row = dgvHora.CurrentRow.Index - indice + 1
-
-                End If
-
-            End While
-        End If
-
-        Select Case dgvHora.CurrentCell.ColumnIndex
-
-            Case 1
-
-                Select Case FCalendario
-
-                    Case "2"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "3"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "4"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "5"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "6"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "7"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "1"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-6).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                End Select
-
-            Case 2
-                Select Case FCalendario
-
-                    Case "2"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "3"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "4"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "5"
-                        MsgBox("que")
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                        MsgBox("no")
-                    Case "6"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "7"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "1"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                End Select
-
-            Case 3
-                Select Case FCalendario
-
-                    Case "2"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "3"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "4"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "5"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "6"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "7"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "1"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                End Select
-            Case 4
-                Select Case FCalendario
-
-                    Case "2"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "3"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "4"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "5"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "6"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "7"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "1"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                End Select
-            Case 5
-                Select Case FCalendario
-
-                    Case "2"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "3"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "4"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "5"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "6"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "7"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "1"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                End Select
-            Case 6
-                Select Case FCalendario
-
-                    Case "2"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(5).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "3"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "4"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "5"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "6"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "7"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                    Case "1"
-                        Consulta = "select id_c, p.id_p, fecha, hora,  concat(concat(upper(left(nombre,1)), lower(substring(nombre from 2))),' ',concat(upper(left(apellido,1)), lower(substring(apellido from 2))) ), p.apellido from cita c inner join paciente p on p.id_p = c.id_p where fecha = '" + DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd") + "';"
-                        consultar()
-                        dgvDatosCita.DataSource = Tabla
-                End Select
-
-        End Select
-
-
-
-        ' MsgBox("dia act: " + FCalendario.ToString + " dia selec: " + dgvHora.CurrentCell.ColumnIndex.ToString)
-        ' viendo en que linea se selecciono ver en que hora esta
-        'en un for ver la tabla aux
-        'if comparando la hora de las citas con la hora de la cita seleccionada del (current row) y menor a la siguiente (current row.index(+1))
-
-
-        If dgvDatosCita.RowCount <> 0 Then
-
-
-            For Each row2 As DataGridViewRow In dgvDatosCita.Rows
-
-
-                Dim hora2 As TimeSpan
-
-                hora2 = TimeSpan.Parse(row2.Cells(3).Value.ToString)
-
-                Dim horadgv As TimeSpan
-                horadgv = TimeSpan.Parse(dgvHora.Rows(row).Cells(0).Value.ToString)
-
-                Dim horadgv2 As TimeSpan
-                horadgv2 = TimeSpan.Parse(dgvHora.Rows(dgvHora.Rows(row).Index + 1).Cells(0).Value.ToString)
-
-                If hora2 < horadgv Or hora2 >= horadgv2 Then
-
-                    dgvDatosCita.Rows.Remove(row2)
-
-
-                End If
-
-            Next
-
-        End If
-
-        If dgvHora.CurrentCell.Value <> "" And dgvHora.CurrentCell.ColumnIndex <> 0 Then
-
-
-
-            id_p = dgvDatosCita.Rows(0).Cells(1).Value
-            idcita = dgvDatosCita.Rows(0).Cells(0).Value
-
-            btnMarcarCita.Show()
-
-        Else
-            dgvDatosCita.DataSource = Nothing
-
-        End If
-
-
 
     End Sub
 

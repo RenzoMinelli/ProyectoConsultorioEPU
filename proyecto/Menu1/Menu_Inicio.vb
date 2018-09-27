@@ -30,14 +30,12 @@
 
         If user = "funcionario" Then
 
-            lblCitas.Hide()
+
             lblPacientes.Hide()
-            pbCitas.Hide()
             pbPacientes.Hide()
-            pnlCitas.Hide()
             pnlPacientes.Hide()
             pnlPacientes2.Hide()
-            pnlCitas2.Hide()
+
 
             frmContenedor = Aranceles
             frmContenedor.MdiParent = Me

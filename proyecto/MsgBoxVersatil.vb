@@ -13,16 +13,16 @@
 
             For x = 50 To lblTexto.Text.Length - 1
 
-                If lblTexto.Text(x) = " " Then
+                While lblTexto.Text(x) = " "
+                    x += 1
+                End While
 
-                    parte1 = lblTexto.Text.Substring(0, x)
-                    parte2 = lblTexto.Text.Substring(x, lblTexto.Text.Length - x)
+                parte1 = lblTexto.Text.Substring(0, x)
+                parte2 = lblTexto.Text.Substring(x, lblTexto.Text.Length - x)
 
-                    lblTexto.Text = parte1 + vbNewLine + parte2
+                lblTexto.Text = parte1 + vbNewLine + parte2
 
-                    Exit For
-
-                End If
+                Exit For
 
             Next
 

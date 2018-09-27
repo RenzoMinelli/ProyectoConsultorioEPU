@@ -129,6 +129,7 @@ Partial Class frmMarcarCitaConcluida
         '
         'txbAnotaciones
         '
+        Me.txbAnotaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txbAnotaciones.Location = New System.Drawing.Point(453, 300)
         Me.txbAnotaciones.Multiline = True
         Me.txbAnotaciones.Name = "txbAnotaciones"
@@ -182,6 +183,7 @@ Partial Class frmMarcarCitaConcluida
         '
         'txbRealizado
         '
+        Me.txbRealizado.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txbRealizado.Location = New System.Drawing.Point(453, 55)
         Me.txbRealizado.Multiline = True
         Me.txbRealizado.Name = "txbRealizado"

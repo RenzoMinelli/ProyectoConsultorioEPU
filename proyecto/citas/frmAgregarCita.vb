@@ -98,7 +98,7 @@
 
             End If
 
-            If horaCita < ultimaHora And horaCita > primeraHora Then
+            If horaCitaFinal < ultimaHora And horaCita > primeraHora Then
 
                 Dim control As Integer = 0
 

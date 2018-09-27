@@ -38,6 +38,7 @@ Partial Class frmPlanTratamiento
         Me.txbBusqueda = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnIngresarDesc = New System.Windows.Forms.Button()
+        Me.btnMarcar = New System.Windows.Forms.Button()
         CType(Me.dgvAranceles, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvArancelesSelect, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -90,11 +91,11 @@ Partial Class frmPlanTratamiento
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(623, 40)
+        Me.Label1.Location = New System.Drawing.Point(606, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(288, 29)
+        Me.Label1.Size = New System.Drawing.Size(258, 29)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Aranceles seleccionados:"
+        Me.Label1.Text = "Tratamientos en curso:"
         '
         'dgvArancelesSelect
         '
@@ -217,11 +218,25 @@ Partial Class frmPlanTratamiento
         Me.btnIngresarDesc.UseVisualStyleBackColor = True
         Me.btnIngresarDesc.Visible = False
         '
+        'btnMarcar
+        '
+        Me.btnMarcar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMarcar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMarcar.Location = New System.Drawing.Point(408, 424)
+        Me.btnMarcar.Name = "btnMarcar"
+        Me.btnMarcar.Size = New System.Drawing.Size(171, 84)
+        Me.btnMarcar.TabIndex = 10
+        Me.btnMarcar.Text = "Marcar como concluido"
+        Me.btnMarcar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnMarcar.UseVisualStyleBackColor = True
+        Me.btnMarcar.Visible = False
+        '
         'frmPlanTratamiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1146, 736)
+        Me.Controls.Add(Me.btnMarcar)
         Me.Controls.Add(Me.btnIngresarDesc)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.txbBusqueda)
@@ -253,4 +268,5 @@ Partial Class frmPlanTratamiento
     Friend WithEvents txbBusqueda As System.Windows.Forms.TextBox
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents btnIngresarDesc As System.Windows.Forms.Button
+    Friend WithEvents btnMarcar As System.Windows.Forms.Button
 End Class

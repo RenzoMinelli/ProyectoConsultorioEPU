@@ -51,7 +51,7 @@
         btnEliminar.Visible = True
         btnModificarPrecio.Visible = True
         btnIngresarDesc.Visible = True
-
+        btnMarcar.Visible = True
 
     End Sub
 
@@ -271,4 +271,16 @@
 
 
 
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMarcar.Click
+        MuestraMsgBoxVersatil("¿Desea marcar como concluido el tratamiento sobre " + dgvArancelesSelect.CurrentRow.Cells(3).Value + "?", 0)
+        If respint = 1 Then
+            Consulta = "update plan_tratamiento set terminado = '1' where id_pl = '" + dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString + "';"
+            consultar()
+            actArancelesSelect()
+
+            MsgBox("Actualizado", MsgBoxStyle.Information)
+        Else
+            MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
+        End If
+    End Sub
 End Class
