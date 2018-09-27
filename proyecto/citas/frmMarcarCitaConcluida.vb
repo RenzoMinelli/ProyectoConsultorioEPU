@@ -64,7 +64,7 @@
 
         Me.Hide()
         frmContenedor = frmPlanTratamiento
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
@@ -86,7 +86,7 @@
 
                 End If
 
-            
+
             End If
 
         Loop While IsNumeric(respString) = False
@@ -106,7 +106,7 @@
             Catch ex As Exception
                 MsgBox("Error al cobrar", MsgBoxStyle.Exclamation)
             End Try
-            
+
 
 
         End If
@@ -128,7 +128,7 @@
     Private Sub btnEstado_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEstado.Click
         Me.Hide()
         frmContenedor = pnlfondo
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
     End Sub

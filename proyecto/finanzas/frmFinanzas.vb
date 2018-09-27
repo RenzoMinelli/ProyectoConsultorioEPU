@@ -1,11 +1,11 @@
-﻿Public Class finanzas
+﻿Public Class frmFinanzas
     Dim fecha As Date = Now.Date
     Public fechad As Date
     Public fechah As Date
 
 
     Private Sub finanzas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
- 
+
 
         fechad = DateSerial(Year(fecha), Month(fecha), 1)
         desde.Value = fechad
@@ -97,7 +97,7 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Hide()
         frmContenedor = realizar_pago
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 

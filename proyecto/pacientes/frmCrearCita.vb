@@ -15,9 +15,10 @@
         fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
         hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
 
-        Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
+        Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora',duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
         consultar()
         dgvCitasEnLaFecha.DataSource = Tabla
+        dgvCitasEnLaFecha.Columns(4).Visible = False
 
         Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "' and terminado = '0';"
         consultar()
@@ -25,12 +26,12 @@
     End Sub
 
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Aranceles.Dispose()
+        frmAranceles.Dispose()
     End Sub
 
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.WindowState = FormWindowState.Minimized
-        Menu_Inicio.WindowState = FormWindowState.Minimized
+        frmMenuInicio.WindowState = FormWindowState.Minimized
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCrear.Click
@@ -76,9 +77,9 @@
 
                     HoraAux = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
 
-                    HoraAuxFinal = HoraAux + mediaHora
+                    HoraAuxFinal = HoraAux
 
-                    For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(6).Value - 1
+                    For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(4).Value
                         HoraAuxFinal += mediaHora
                     Next
                     If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
@@ -103,8 +104,7 @@
                         MsgBox("Ingresado con éxito", MsgBoxStyle.Information)
 
                         Me.Dispose()
-                        frmCitas.actCitas()
-                        frmCitas.Show()
+                        frmPacientes.Show()
 
                     Catch ex As Exception
                         MsgBox("Error al ingresar la cita" + ex.ToString, MsgBoxStyle.Exclamation)
@@ -127,9 +127,10 @@
         fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
         hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
 
-        Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
+        Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora', duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
         consultar()
         dgvCitasEnLaFecha.DataSource = Tabla
+        dgvCitasEnLaFecha.Columns(4).Visible = False
     End Sub
 
     Private Sub dgbCitasEnLaFecha_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvCitasEnLaFecha.CellClick

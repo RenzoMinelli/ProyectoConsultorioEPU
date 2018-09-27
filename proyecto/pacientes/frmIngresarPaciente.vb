@@ -192,7 +192,7 @@
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarAntecedentes.Click
         Me.Hide()
         frmContenedor = frmAgregarAntecedentes
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
     End Sub
@@ -271,7 +271,7 @@
     Private Sub btnAgregarEstadoDientes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Hide()
         frmContenedor = pnlfondo
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
     End Sub

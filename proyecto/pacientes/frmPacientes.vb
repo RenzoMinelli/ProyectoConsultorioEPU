@@ -21,7 +21,7 @@
         'Al presionar el boton btnAgregarPaciente, se oculta el formulario actual, se guarda el formulario Agregar_Paciente en el frmContenedor y se muestra
         Me.Hide()
         frmContenedor = frmIngresarPaciente
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
@@ -45,7 +45,7 @@
         'Al presionar el boton btnModificarDatos, se oculta el formulario actual, se guarda el formulario Modificar_Paciente en el frmContenedor y se muestra
         Me.Hide()
         frmContenedor = frmModificarPaciente
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
@@ -261,7 +261,7 @@
         'Al presionar el boton btnRegistrarCita, se oculta el formulario actual, se guarda el formulario Crear_Cita en el frmContenedor y se muestra
         Me.Hide()
         frmContenedor = frmCrearCita
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
@@ -305,7 +305,7 @@
         'Al presionar el boton btnRegistroMedico, se oculta el formulario actual, se guarda el formulario Registro_Medico en el frmContenedor y se muestra
         Me.Hide()
         frmContenedor = frmRegistroMedico
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
@@ -316,7 +316,7 @@
         'Al presionar el boton btnMostrarAntecedentes, se oculta el formulario actual, se guarda el formulario Antecedentes en el frmContenedor y se muestra
         Me.Hide()
         frmContenedor = frmAntecedentes
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
@@ -336,7 +336,7 @@
 
         'Al presionar el boton btnRealizarPago, se oculta el formulario actual, se guarda el formulario InputPago en el frmContenedor y se muestra
         frmContenedor = frmInputPago
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 

@@ -107,46 +107,46 @@
     <Compile Include="citas\frmPlanTratamiento.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="finanzas\finanzas.Designer.vb">
-      <DependentUpon>finanzas.vb</DependentUpon>
+    <Compile Include="finanzas\frmFinanzas.Designer.vb">
+      <DependentUpon>frmFinanzas.vb</DependentUpon>
     </Compile>
-    <Compile Include="finanzas\finanzas.vb">
+    <Compile Include="finanzas\frmFinanzas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="finanzas\inputboxcasero.Designer.vb">
-      <DependentUpon>inputboxcasero.vb</DependentUpon>
+    <Compile Include="finanzas\Inputboxcasero.Designer.vb">
+      <DependentUpon>Inputboxcasero.vb</DependentUpon>
     </Compile>
-    <Compile Include="finanzas\inputboxcasero.vb">
+    <Compile Include="finanzas\Inputboxcasero.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="finanzas\realizar_pago.Designer.vb">
-      <DependentUpon>realizar_pago.vb</DependentUpon>
+    <Compile Include="finanzas\Realizar_Pago.Designer.vb">
+      <DependentUpon>Realizar_Pago.vb</DependentUpon>
     </Compile>
-    <Compile Include="finanzas\realizar_pago.vb">
+    <Compile Include="finanzas\Realizar_Pago.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="graficas\graficas.Designer.vb">
-      <DependentUpon>graficas.vb</DependentUpon>
+    <Compile Include="graficas\frmGraficas.Designer.vb">
+      <DependentUpon>frmGraficas.vb</DependentUpon>
     </Compile>
-    <Compile Include="graficas\graficas.vb">
+    <Compile Include="graficas\frmGraficas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu1\ingreso_contraseña.Designer.vb">
-      <DependentUpon>ingreso_contraseña.vb</DependentUpon>
+    <Compile Include="Menu1\frmIngresoContraseña.Designer.vb">
+      <DependentUpon>frmIngresoContraseña.vb</DependentUpon>
     </Compile>
-    <Compile Include="Menu1\ingreso_contraseña.vb">
+    <Compile Include="Menu1\frmIngresoContraseña.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu1\Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
+    <Compile Include="Menu1\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Menu1\Login.vb">
+    <Compile Include="Menu1\frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu1\Menu_Inicio.Designer.vb">
-      <DependentUpon>Menu_Inicio.vb</DependentUpon>
+    <Compile Include="Menu1\frmMenuInicio.Designer.vb">
+      <DependentUpon>frmMenuInicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Menu1\Menu_Inicio.vb">
+    <Compile Include="Menu1\frmMenuInicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module2.vb" />
@@ -155,10 +155,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="aranceles\Aranceles.Designer.vb">
-      <DependentUpon>Aranceles.vb</DependentUpon>
+    <Compile Include="aranceles\frmAranceles.Designer.vb">
+      <DependentUpon>frmAranceles.vb</DependentUpon>
     </Compile>
-    <Compile Include="aranceles\Aranceles.vb">
+    <Compile Include="aranceles\frmAranceles.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="aranceles\Agregar_Arancel.Designer.vb">
@@ -274,29 +274,29 @@
     <EmbeddedResource Include="citas\frmPlanTratamiento.resx">
       <DependentUpon>frmPlanTratamiento.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="finanzas\finanzas.resx">
-      <DependentUpon>finanzas.vb</DependentUpon>
+    <EmbeddedResource Include="finanzas\frmFinanzas.resx">
+      <DependentUpon>frmFinanzas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="finanzas\inputboxcasero.resx">
-      <DependentUpon>inputboxcasero.vb</DependentUpon>
+    <EmbeddedResource Include="finanzas\Inputboxcasero.resx">
+      <DependentUpon>Inputboxcasero.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="finanzas\realizar_pago.resx">
-      <DependentUpon>realizar_pago.vb</DependentUpon>
+    <EmbeddedResource Include="finanzas\Realizar_Pago.resx">
+      <DependentUpon>Realizar_Pago.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="graficas\graficas.resx">
-      <DependentUpon>graficas.vb</DependentUpon>
+    <EmbeddedResource Include="graficas\frmGraficas.resx">
+      <DependentUpon>frmGraficas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu1\ingreso_contraseña.resx">
-      <DependentUpon>ingreso_contraseña.vb</DependentUpon>
+    <EmbeddedResource Include="Menu1\frmIngresoContraseña.resx">
+      <DependentUpon>frmIngresoContraseña.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu1\Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
+    <EmbeddedResource Include="Menu1\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu1\Menu_Inicio.resx">
-      <DependentUpon>Menu_Inicio.vb</DependentUpon>
+    <EmbeddedResource Include="Menu1\frmMenuInicio.resx">
+      <DependentUpon>frmMenuInicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="aranceles\Aranceles.resx">
-      <DependentUpon>Aranceles.vb</DependentUpon>
+    <EmbeddedResource Include="aranceles\frmAranceles.resx">
+      <DependentUpon>frmAranceles.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="aranceles\Agregar_Arancel.resx">
       <DependentUpon>Agregar_Arancel.vb</DependentUpon>

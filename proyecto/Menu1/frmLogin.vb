@@ -1,4 +1,4 @@
-﻿Public Class Login
+﻿Public Class frmLogin
     Dim contador As Integer = 0
     Dim contraseña As String
     Dim contraseñau As String
@@ -14,10 +14,10 @@
         Catch ex As Exception
             contraseña = ""
         End Try
-        
+
         If contraseña = Nothing Then
             Me.Hide()
-            ingreso_contraseña.Show()
+            frmIngresoContraseña.Show()
             btningresar.Visible = False
 
             txtcontraseña.Visible = False
@@ -52,10 +52,10 @@
         Catch ex As Exception
             contraseña = ""
         End Try
-        
+
         If contraseña = Nothing Then
             Me.Hide()
-            ingreso_contraseña.Show()
+            frmIngresoContraseña.Show()
             btningresar.Visible = False
 
             txtcontraseña.Visible = False
@@ -98,7 +98,7 @@
                 user = "odontologo"
                 pass = "odontologo"
                 Me.Hide()
-                Menu_Inicio.Show()
+                frmMenuInicio.Show()
             Else
                 MsgBox("contraseña incorrecta porfavor reintente", MsgBoxStyle.Exclamation)
                 txtcontraseña.Clear()
@@ -111,7 +111,7 @@
                 user = "funcionario"
                 pass = "funcionario"
                 Me.Hide()
-                Menu_Inicio.Show()
+                frmMenuInicio.Show()
 
             Else
 

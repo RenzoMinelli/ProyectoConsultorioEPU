@@ -1,4 +1,4 @@
-﻿Public Class Menu_Inicio
+﻿Public Class frmMenuInicio
 
 
     Dim a As Integer = 0
@@ -11,7 +11,7 @@
     Private Sub Menu_Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 
-       
+
         ' Me.PerformAutoScale()
 
         ' Me.WindowState = FormWindowState.Maximized
@@ -37,7 +37,7 @@
             pnlPacientes2.Hide()
 
 
-            frmContenedor = Aranceles
+            frmContenedor = frmAranceles
             frmContenedor.MdiParent = Me
             frmContenedor.Dock = DockStyle.Fill
             frmContenedor.Show()
@@ -89,7 +89,7 @@
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblAranceles.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = Aranceles
+        frmContenedor = frmAranceles
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -98,7 +98,7 @@
         lblPacientes.ForeColor = Color.RoyalBlue
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
-        Aranceles.DataGridView1.ClearSelection()
+        frmAranceles.DataGridView1.ClearSelection()
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCitas.Click
@@ -166,7 +166,7 @@
     End Sub
 
     Private Sub PictureBox4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCerrar.Click
-        Login.Dispose()
+        frmLogin.Dispose()
     End Sub
 
     Private Sub PictureBox2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbMinimizar.Click
@@ -177,7 +177,7 @@
 
     Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblFinanzas.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = finanzas
+        frmContenedor = frmFinanzas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -243,9 +243,9 @@
 
     End Sub
 
-    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAranceles.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = Aranceles
+        frmContenedor = frmAranceles
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -284,9 +284,9 @@
     End Sub
 
 
-    Private Sub Panel15_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel15.Click
+    Private Sub Panel15_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlAranceles.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = Aranceles
+        frmContenedor = frmAranceles
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -297,9 +297,9 @@
         lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
-    Private Sub Panel13_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel13.Click
+    Private Sub Panel13_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlFinanzas.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = finanzas
+        frmContenedor = frmFinanzas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -312,9 +312,9 @@
     End Sub
 
 
-    Private Sub PictureBox7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox7.Click
+    Private Sub PictureBox7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbFinanzas.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = finanzas
+        frmContenedor = frmFinanzas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -369,7 +369,7 @@
 
     Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblGraficas.Click
         Me.ActiveMdiChild.Dispose()
-        frmContenedor = graficas
+        frmContenedor = frmGraficas
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
@@ -378,6 +378,9 @@
         lblGraficas.ForeColor = Color.White
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
-        Aranceles.DataGridView1.ClearSelection()
+        frmAranceles.DataGridView1.ClearSelection()
     End Sub
+
+
+
 End Class

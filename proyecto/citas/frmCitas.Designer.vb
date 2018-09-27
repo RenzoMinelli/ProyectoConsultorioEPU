@@ -180,14 +180,13 @@ Partial Class frmCitas
         DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvDatosCita.DefaultCellStyle = DataGridViewCellStyle6
-        Me.dgvDatosCita.Location = New System.Drawing.Point(12, 395)
+        Me.dgvDatosCita.Location = New System.Drawing.Point(43, 412)
         Me.dgvDatosCita.Name = "dgvDatosCita"
         Me.dgvDatosCita.ReadOnly = True
         Me.dgvDatosCita.RowHeadersVisible = False
         Me.dgvDatosCita.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvDatosCita.Size = New System.Drawing.Size(25, 11)
+        Me.dgvDatosCita.Size = New System.Drawing.Size(10, 23)
         Me.dgvDatosCita.TabIndex = 16
-        Me.dgvDatosCita.Visible = False
         '
         'frmCitas
         '

@@ -15,10 +15,10 @@
 
         Try
 
-            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora' from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
+            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora',duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
             consultar()
             dgvCitasEnLaFecha.DataSource = Tabla
-
+            dgvCitasEnLaFecha.Columns(4).Visible = False
 
             Consulta = "Select nombre as 'Nombre',id_p from paciente;"
             consultar()
@@ -107,9 +107,10 @@
 
                     HoraAux = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
 
-                    HoraAuxFinal = HoraAux + mediaHora
+                    HoraAuxFinal = HoraAux
 
-                    For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(6).Value - 1
+                    For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(4).Value
+
                         HoraAuxFinal += mediaHora
                     Next
                     If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then

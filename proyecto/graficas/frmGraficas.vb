@@ -1,4 +1,4 @@
-﻿Public Class graficas
+﻿Public Class frmGraficas
     Dim intervalo1 As Integer
     Dim intervalo2 As Integer
     Dim intervalo3 As Integer
@@ -93,6 +93,13 @@
                 End If
 
             Next
+            'grafica.Series.Clear()
+            'grafica.ChartAreas.Clear()
+
+            'grafica.Series.Add("Num pacientes")
+            'grafica.ChartAreas.Add("Num pacientes")
+
+
             Me.grafica.Series("Num pacientes").Points.AddXY("0-10", intervalo1)
             Me.grafica.Series("Num pacientes").Points.AddXY("10-20", intervalo2)
             Me.grafica.Series("Num pacientes").Points.AddXY("20-30", intervalo3)
@@ -103,6 +110,9 @@
             Me.grafica.Series("Num pacientes").Points.AddXY("70-80", intervalo8)
             Me.grafica.Series("Num pacientes").Points.AddXY("80-90", intervalo9)
             Me.grafica.Series("Num pacientes").Points.AddXY("+90", intervalo10)
+
+
+
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Menu_Inicio
+Partial Class frmMenuInicio
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -36,21 +36,21 @@ Partial Class Menu_Inicio
         Me.pbCitas = New System.Windows.Forms.PictureBox()
         Me.lblCitas = New System.Windows.Forms.Label()
         Me.pnlPacientes2 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.pnlAranceles2 = New System.Windows.Forms.Panel()
         Me.pnlCitas2 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.pnlFinanzas2 = New System.Windows.Forms.Panel()
+        Me.pnlGraficas2 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.pnlGraficas = New System.Windows.Forms.Panel()
+        Me.pbGraficas = New System.Windows.Forms.PictureBox()
         Me.lblGraficas = New System.Windows.Forms.Label()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.pnlFinanzas = New System.Windows.Forms.Panel()
+        Me.pbFinanzas = New System.Windows.Forms.PictureBox()
         Me.lblFinanzas = New System.Windows.Forms.Label()
-        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.pnlAranceles = New System.Windows.Forms.Panel()
         Me.lblAranceles = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pbAranceles = New System.Windows.Forms.PictureBox()
         Me.pnlMenu = New System.Windows.Forms.Panel()
         Me.pnlBarraSuperior.SuspendLayout()
         CType(Me.pbMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,12 +62,12 @@ Partial Class Menu_Inicio
         CType(Me.pbCitas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel12.SuspendLayout()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel13.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel15.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlGraficas.SuspendLayout()
+        CType(Me.pbGraficas, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlFinanzas.SuspendLayout()
+        CType(Me.pbFinanzas, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlAranceles.SuspendLayout()
+        CType(Me.pbAranceles, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlMenu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -194,13 +194,13 @@ Partial Class Menu_Inicio
         Me.pnlPacientes2.Size = New System.Drawing.Size(10, 32)
         Me.pnlPacientes2.TabIndex = 6
         '
-        'Panel4
+        'pnlAranceles2
         '
-        Me.Panel4.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel4.Location = New System.Drawing.Point(3, 165)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(10, 32)
-        Me.Panel4.TabIndex = 7
+        Me.pnlAranceles2.BackColor = System.Drawing.Color.RoyalBlue
+        Me.pnlAranceles2.Location = New System.Drawing.Point(3, 165)
+        Me.pnlAranceles2.Name = "pnlAranceles2"
+        Me.pnlAranceles2.Size = New System.Drawing.Size(10, 32)
+        Me.pnlAranceles2.TabIndex = 7
         '
         'pnlCitas2
         '
@@ -210,21 +210,21 @@ Partial Class Menu_Inicio
         Me.pnlCitas2.Size = New System.Drawing.Size(10, 32)
         Me.pnlCitas2.TabIndex = 7
         '
-        'Panel6
+        'pnlFinanzas2
         '
-        Me.Panel6.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel6.Location = New System.Drawing.Point(3, 201)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(10, 32)
-        Me.Panel6.TabIndex = 8
+        Me.pnlFinanzas2.BackColor = System.Drawing.Color.RoyalBlue
+        Me.pnlFinanzas2.Location = New System.Drawing.Point(3, 201)
+        Me.pnlFinanzas2.Name = "pnlFinanzas2"
+        Me.pnlFinanzas2.Size = New System.Drawing.Size(10, 32)
+        Me.pnlFinanzas2.TabIndex = 8
         '
-        'Panel7
+        'pnlGraficas2
         '
-        Me.Panel7.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel7.Location = New System.Drawing.Point(3, 237)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(10, 32)
-        Me.Panel7.TabIndex = 9
+        Me.pnlGraficas2.BackColor = System.Drawing.Color.RoyalBlue
+        Me.pnlGraficas2.Location = New System.Drawing.Point(3, 237)
+        Me.pnlGraficas2.Name = "pnlGraficas2"
+        Me.pnlGraficas2.Size = New System.Drawing.Size(10, 32)
+        Me.pnlGraficas2.TabIndex = 9
         '
         'Panel8
         '
@@ -245,24 +245,24 @@ Partial Class Menu_Inicio
         Me.PictureBox6.TabIndex = 15
         Me.PictureBox6.TabStop = False
         '
-        'Panel12
+        'pnlGraficas
         '
-        Me.Panel12.BackColor = System.Drawing.Color.Silver
-        Me.Panel12.Controls.Add(Me.PictureBox10)
-        Me.Panel12.Controls.Add(Me.lblGraficas)
-        Me.Panel12.Location = New System.Drawing.Point(13, 237)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(161, 32)
-        Me.Panel12.TabIndex = 22
+        Me.pnlGraficas.BackColor = System.Drawing.Color.Silver
+        Me.pnlGraficas.Controls.Add(Me.pbGraficas)
+        Me.pnlGraficas.Controls.Add(Me.lblGraficas)
+        Me.pnlGraficas.Location = New System.Drawing.Point(13, 237)
+        Me.pnlGraficas.Name = "pnlGraficas"
+        Me.pnlGraficas.Size = New System.Drawing.Size(161, 32)
+        Me.pnlGraficas.TabIndex = 22
         '
-        'PictureBox10
+        'pbGraficas
         '
-        Me.PictureBox10.Image = Global.WindowsApplication1.My.Resources.Resources._20803
-        Me.PictureBox10.Location = New System.Drawing.Point(6, 2)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox10.TabIndex = 20
-        Me.PictureBox10.TabStop = False
+        Me.pbGraficas.Image = Global.WindowsApplication1.My.Resources.Resources._20803
+        Me.pbGraficas.Location = New System.Drawing.Point(6, 2)
+        Me.pbGraficas.Name = "pbGraficas"
+        Me.pbGraficas.Size = New System.Drawing.Size(27, 32)
+        Me.pbGraficas.TabIndex = 20
+        Me.pbGraficas.TabStop = False
         '
         'lblGraficas
         '
@@ -275,24 +275,24 @@ Partial Class Menu_Inicio
         Me.lblGraficas.TabIndex = 20
         Me.lblGraficas.Text = "Gráficas"
         '
-        'Panel13
+        'pnlFinanzas
         '
-        Me.Panel13.BackColor = System.Drawing.Color.Silver
-        Me.Panel13.Controls.Add(Me.PictureBox7)
-        Me.Panel13.Controls.Add(Me.lblFinanzas)
-        Me.Panel13.Location = New System.Drawing.Point(13, 201)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(161, 32)
-        Me.Panel13.TabIndex = 23
+        Me.pnlFinanzas.BackColor = System.Drawing.Color.Silver
+        Me.pnlFinanzas.Controls.Add(Me.pbFinanzas)
+        Me.pnlFinanzas.Controls.Add(Me.lblFinanzas)
+        Me.pnlFinanzas.Location = New System.Drawing.Point(13, 201)
+        Me.pnlFinanzas.Name = "pnlFinanzas"
+        Me.pnlFinanzas.Size = New System.Drawing.Size(161, 32)
+        Me.pnlFinanzas.TabIndex = 23
         '
-        'PictureBox7
+        'pbFinanzas
         '
-        Me.PictureBox7.Image = Global.WindowsApplication1.My.Resources.Resources._64979
-        Me.PictureBox7.Location = New System.Drawing.Point(7, 2)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox7.TabIndex = 15
-        Me.PictureBox7.TabStop = False
+        Me.pbFinanzas.Image = Global.WindowsApplication1.My.Resources.Resources._64979
+        Me.pbFinanzas.Location = New System.Drawing.Point(7, 2)
+        Me.pbFinanzas.Name = "pbFinanzas"
+        Me.pbFinanzas.Size = New System.Drawing.Size(27, 32)
+        Me.pbFinanzas.TabIndex = 15
+        Me.pbFinanzas.TabStop = False
         '
         'lblFinanzas
         '
@@ -305,15 +305,15 @@ Partial Class Menu_Inicio
         Me.lblFinanzas.TabIndex = 19
         Me.lblFinanzas.Text = "Finanzas"
         '
-        'Panel15
+        'pnlAranceles
         '
-        Me.Panel15.BackColor = System.Drawing.Color.Silver
-        Me.Panel15.Controls.Add(Me.lblAranceles)
-        Me.Panel15.Controls.Add(Me.PictureBox1)
-        Me.Panel15.Location = New System.Drawing.Point(13, 165)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(163, 32)
-        Me.Panel15.TabIndex = 24
+        Me.pnlAranceles.BackColor = System.Drawing.Color.Silver
+        Me.pnlAranceles.Controls.Add(Me.lblAranceles)
+        Me.pnlAranceles.Controls.Add(Me.pbAranceles)
+        Me.pnlAranceles.Location = New System.Drawing.Point(13, 165)
+        Me.pnlAranceles.Name = "pnlAranceles"
+        Me.pnlAranceles.Size = New System.Drawing.Size(163, 32)
+        Me.pnlAranceles.TabIndex = 24
         '
         'lblAranceles
         '
@@ -326,26 +326,26 @@ Partial Class Menu_Inicio
         Me.lblAranceles.TabIndex = 9
         Me.lblAranceles.Text = "Aranceles"
         '
-        'PictureBox1
+        'pbAranceles
         '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(27, 32)
-        Me.PictureBox1.TabIndex = 14
-        Me.PictureBox1.TabStop = False
+        Me.pbAranceles.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
+        Me.pbAranceles.Location = New System.Drawing.Point(6, 3)
+        Me.pbAranceles.Name = "pbAranceles"
+        Me.pbAranceles.Size = New System.Drawing.Size(27, 32)
+        Me.pbAranceles.TabIndex = 14
+        Me.pbAranceles.TabStop = False
         '
         'pnlMenu
         '
         Me.pnlMenu.BackColor = System.Drawing.Color.LightGray
-        Me.pnlMenu.Controls.Add(Me.Panel15)
-        Me.pnlMenu.Controls.Add(Me.Panel13)
-        Me.pnlMenu.Controls.Add(Me.Panel12)
+        Me.pnlMenu.Controls.Add(Me.pnlAranceles)
+        Me.pnlMenu.Controls.Add(Me.pnlFinanzas)
+        Me.pnlMenu.Controls.Add(Me.pnlGraficas)
         Me.pnlMenu.Controls.Add(Me.Panel8)
-        Me.pnlMenu.Controls.Add(Me.Panel7)
-        Me.pnlMenu.Controls.Add(Me.Panel6)
+        Me.pnlMenu.Controls.Add(Me.pnlGraficas2)
+        Me.pnlMenu.Controls.Add(Me.pnlFinanzas2)
         Me.pnlMenu.Controls.Add(Me.pnlCitas2)
-        Me.pnlMenu.Controls.Add(Me.Panel4)
+        Me.pnlMenu.Controls.Add(Me.pnlAranceles2)
         Me.pnlMenu.Controls.Add(Me.pnlPacientes2)
         Me.pnlMenu.Controls.Add(Me.pnlCitas)
         Me.pnlMenu.Controls.Add(Me.pnlPacientes)
@@ -381,15 +381,15 @@ Partial Class Menu_Inicio
         Me.Panel8.ResumeLayout(False)
         Me.Panel8.PerformLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel12.PerformLayout()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel13.ResumeLayout(False)
-        Me.Panel13.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel15.ResumeLayout(False)
-        Me.Panel15.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlGraficas.ResumeLayout(False)
+        Me.pnlGraficas.PerformLayout()
+        CType(Me.pbGraficas, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlFinanzas.ResumeLayout(False)
+        Me.pnlFinanzas.PerformLayout()
+        CType(Me.pbFinanzas, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlAranceles.ResumeLayout(False)
+        Me.pnlAranceles.PerformLayout()
+        CType(Me.pbAranceles, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlMenu.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -405,22 +405,22 @@ Partial Class Menu_Inicio
     Friend WithEvents pnlCitas As System.Windows.Forms.Panel
     Friend WithEvents lblCitas As System.Windows.Forms.Label
     Friend WithEvents pnlPacientes2 As System.Windows.Forms.Panel
-    Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents pnlAranceles2 As System.Windows.Forms.Panel
     Friend WithEvents pnlCitas2 As System.Windows.Forms.Panel
-    Friend WithEvents Panel6 As System.Windows.Forms.Panel
-    Friend WithEvents Panel7 As System.Windows.Forms.Panel
+    Friend WithEvents pnlFinanzas2 As System.Windows.Forms.Panel
+    Friend WithEvents pnlGraficas2 As System.Windows.Forms.Panel
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
-    Friend WithEvents Panel12 As System.Windows.Forms.Panel
-    Friend WithEvents Panel13 As System.Windows.Forms.Panel
+    Friend WithEvents pnlGraficas As System.Windows.Forms.Panel
+    Friend WithEvents pnlFinanzas As System.Windows.Forms.Panel
     Friend WithEvents lblFinanzas As System.Windows.Forms.Label
-    Friend WithEvents Panel15 As System.Windows.Forms.Panel
+    Friend WithEvents pnlAranceles As System.Windows.Forms.Panel
     Friend WithEvents lblAranceles As System.Windows.Forms.Label
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbAranceles As System.Windows.Forms.PictureBox
     Friend WithEvents pnlMenu As System.Windows.Forms.Panel
     Friend WithEvents lblGraficas As System.Windows.Forms.Label
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbFinanzas As System.Windows.Forms.PictureBox
     Friend WithEvents pbCitas As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbGraficas As System.Windows.Forms.PictureBox
     Friend WithEvents pbMaximizar As System.Windows.Forms.PictureBox
 End Class

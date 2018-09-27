@@ -1,16 +1,16 @@
 ﻿Public Class Modificar_Arancel
-    Dim id As Integer = Aranceles.id
+    Dim id As Integer = frmAranceles.id
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Consulta = "update aranceles set descripcion = '" + TextBox1.Text + "', costo = '" + TextBox2.Text + "' where id_a = " + Str(id) + ";"
         consultar()
-        Aranceles.Show()
+        frmAranceles.Show()
         Me.Dispose()
 
         Consulta = "select * from aranceles"
         consultar()
-        Aranceles.DataGridView1.DataSource = Tabla
+        frmAranceles.DataGridView1.DataSource = Tabla
         Me.Dispose()
-        Aranceles.Show()
+        frmAranceles.Show()
     End Sub
 
     Private Sub Form3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

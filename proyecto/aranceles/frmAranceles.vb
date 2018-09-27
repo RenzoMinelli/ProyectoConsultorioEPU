@@ -1,4 +1,4 @@
-﻿Public Class Aranceles
+﻿Public Class frmAranceles
     Public id As Integer
     Dim frmContenedor As New Form
 
@@ -40,7 +40,7 @@
             consultar()
             DataGridView1.DataSource = Tabla
         Catch ex As Exception
-            MsgBox("Error al Eliminar Arancel",MsgBoxStyle.Exclamation)
+            MsgBox("Error al Eliminar Arancel", MsgBoxStyle.Exclamation)
         End Try
 
     End Sub
@@ -68,5 +68,5 @@
 
     End Sub
 
-  
+
 End Class

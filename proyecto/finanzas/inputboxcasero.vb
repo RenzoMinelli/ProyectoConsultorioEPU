@@ -11,7 +11,7 @@
             consultar()
 
             realizar_pago.actTabla()
-            finanzas.actTabla("Busqueda")
+            frmFinanzas.actTabla("Busqueda")
             Dim fecha As Date = Now.ToShortDateString
             Dim nfecha = fecha.ToString("yyyy-MM-dd")
 
@@ -32,4 +32,6 @@
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Dispose()
     End Sub
+
+  
 End Class

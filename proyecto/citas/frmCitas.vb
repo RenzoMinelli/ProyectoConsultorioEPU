@@ -58,7 +58,7 @@
 
     Private Sub Label19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Dispose()
-        Aranceles.Show()
+        frmAranceles.Show()
     End Sub
 
     Private Sub Label20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -74,7 +74,7 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarCita.Click
         Me.Hide()
         frmContenedor = frmAgregarCita
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
         frmAgregarCita.dgvPacientes.ClearSelection()
@@ -85,7 +85,7 @@
 
         Me.Hide()
         frmContenedor = frmMarcarCitaConcluida
-        frmContenedor.MdiParent = Menu_Inicio
+        frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
 
@@ -117,6 +117,7 @@
             If dgvHora.CurrentCell.Value = "" Then
                 btnMarcarCita.Hide()
             End If
+
             DiaSeleccionado = MCFecha.SelectionRange.Start
             FCalendario = Weekday(DiaSeleccionado)
 
@@ -132,7 +133,7 @@
 
                     Else
                         verificar = 1
-                        row = dgvHora.CurrentRow.Index - indice + 1
+                        row = dgvHora.CurrentRow.Index - (indice - 1)
 
                     End If
 
@@ -351,24 +352,24 @@
 
             If dgvDatosCita.RowCount <> 0 Then
 
-
-                For Each row2 As DataGridViewRow In dgvDatosCita.Rows
+                Dim numero As Integer = dgvDatosCita.RowCount - 1
+                For x = numero To 0 Step -1
 
 
                     Dim hora2 As TimeSpan
 
-                    hora2 = TimeSpan.Parse(row2.Cells(3).Value.ToString)
+                    hora2 = TimeSpan.Parse(dgvDatosCita.Rows(x).Cells(3).Value.ToString)
 
                     Dim horadgv As TimeSpan
                     horadgv = TimeSpan.Parse(dgvHora.Rows(row).Cells(0).Value.ToString)
 
                     Dim horadgv2 As TimeSpan
-                    horadgv2 = TimeSpan.Parse(dgvHora.Rows(dgvHora.Rows(row).Index + 1).Cells(0).Value.ToString)
+                    horadgv2 = TimeSpan.Parse(dgvHora.Rows(row + 1).Cells(0).Value.ToString)
 
+                   
                     If hora2 < horadgv Or hora2 >= horadgv2 Then
 
-                        dgvDatosCita.Rows.Remove(row2)
-
+                        dgvDatosCita.Rows.Remove(dgvDatosCita.Rows(x))
 
                     End If
 

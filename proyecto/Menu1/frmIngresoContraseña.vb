@@ -1,4 +1,4 @@
-﻿Public Class ingreso_contraseña
+﻿Public Class frmIngresoContraseña
     Dim contraseña As String
     Dim repcontraseña As String
     Dim contador As Integer = 0
@@ -22,7 +22,7 @@
                 Catch ex As Exception
                     MsgBox("Error al guardar contraseña", MsgBoxStyle.Exclamation)
                 End Try
-                
+
 
             ElseIf contador = 1 And contraseña = repcontraseña Then
 
@@ -33,11 +33,11 @@
                     MsgBox("Contraseñas Registradas", MsgBoxStyle.Information)
 
                     Me.Dispose()
-                    Login.Show()
+                    frmLogin.Show()
                 Catch ex As Exception
                     MsgBox("Error al guardar contraseña", MsgBoxStyle.Exclamation)
                 End Try
-               
+
             Else
                 MsgBox("Vuelva a ingresar, las contraseñas no coinciden", MsgBoxStyle.Exclamation)
             End If

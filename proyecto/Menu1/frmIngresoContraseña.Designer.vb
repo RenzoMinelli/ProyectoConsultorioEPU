@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ingreso_contraseña
+Partial Class frmIngresoContraseña
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.

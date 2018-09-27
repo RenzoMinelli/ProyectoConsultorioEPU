@@ -28,8 +28,8 @@ Module Module1
 
     Public Sub actPos()
 
-        xf = Menu_Inicio.Location.X
-        yf = Menu_Inicio.Location.Y
+        xf = frmMenuInicio.Location.X
+        yf = frmMenuInicio.Location.Y
 
     End Sub
     '///////////////////////////////////////////////////////
