@@ -45,7 +45,7 @@ Partial Class frmGraficas
         Series1.Legend = "Legend1"
         Series1.Name = "Num pacientes"
         Me.grafica.Series.Add(Series1)
-        Me.grafica.Size = New System.Drawing.Size(753, 414)
+        Me.grafica.Size = New System.Drawing.Size(953, 414)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
         '
@@ -76,14 +76,14 @@ Partial Class frmGraficas
         Me.dgvInfo.AllowUserToResizeColumns = False
         Me.dgvInfo.AllowUserToResizeRows = False
         Me.dgvInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvInfo.Location = New System.Drawing.Point(0, 1)
+        Me.dgvInfo.Location = New System.Drawing.Point(12, 12)
         Me.dgvInfo.Name = "dgvInfo"
         Me.dgvInfo.ReadOnly = True
-        Me.dgvInfo.Size = New System.Drawing.Size(10, 10)
+        Me.dgvInfo.Size = New System.Drawing.Size(21, 19)
         Me.dgvInfo.TabIndex = 6
         Me.dgvInfo.Visible = False
         '
-        'graficas
+        'frmGraficas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -93,7 +93,7 @@ Partial Class frmGraficas
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.grafica)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "graficas"
+        Me.Name = "frmGraficas"
         Me.Text = "."
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).EndInit()
