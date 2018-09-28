@@ -4122,6 +4122,54 @@
             consultar()
         End If
 
+        '-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+        If cambiador15c1 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '1');")
+            consultar()
+        End If
+
+        If cambiador15c2 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '2');")
+            consultar()
+        End If
+
+
+        If cambiador15c3 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '3');")
+            consultar()
+        End If
+
+        If cambiador15c4 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '4');")
+            consultar()
+        End If
+
+        '--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        If cambiador16c1 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '1');")
+            consultar()
+        End If
+
+        If cambiador16c2 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '2');")
+            consultar()
+        End If
+
+
+        If cambiador16c3 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '3');")
+            consultar()
+        End If
+
+        If cambiador16c4 = True Then
+            Consulta = ("insert into registro_medico (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '4');")
+            consultar()
+        End If
 
 
 
