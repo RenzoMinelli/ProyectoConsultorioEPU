@@ -26,6 +26,8 @@ Partial Class MsgBoxVersatil
         Me.txbRespuesta = New System.Windows.Forms.TextBox()
         Me.btnSi = New System.Windows.Forms.Button()
         Me.btnNo = New System.Windows.Forms.Button()
+        Me.txbOpcional = New System.Windows.Forms.TextBox()
+        Me.lblOpcional = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblTexto
@@ -41,7 +43,7 @@ Partial Class MsgBoxVersatil
         'txbRespuesta
         '
         Me.txbRespuesta.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbRespuesta.Location = New System.Drawing.Point(124, 188)
+        Me.txbRespuesta.Location = New System.Drawing.Point(198, 218)
         Me.txbRespuesta.Name = "txbRespuesta"
         Me.txbRespuesta.Size = New System.Drawing.Size(372, 35)
         Me.txbRespuesta.TabIndex = 3
@@ -67,12 +69,35 @@ Partial Class MsgBoxVersatil
         Me.btnNo.Text = "No"
         Me.btnNo.UseVisualStyleBackColor = True
         '
+        'txbOpcional
+        '
+        Me.txbOpcional.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbOpcional.Location = New System.Drawing.Point(198, 147)
+        Me.txbOpcional.Name = "txbOpcional"
+        Me.txbOpcional.Size = New System.Drawing.Size(372, 35)
+        Me.txbOpcional.TabIndex = 7
+        Me.txbOpcional.Visible = False
+        Me.txbOpcional.WordWrap = False
+        '
+        'lblOpcional
+        '
+        Me.lblOpcional.AutoSize = True
+        Me.lblOpcional.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOpcional.Location = New System.Drawing.Point(12, 147)
+        Me.lblOpcional.Name = "lblOpcional"
+        Me.lblOpcional.Size = New System.Drawing.Size(185, 29)
+        Me.lblOpcional.TabIndex = 8
+        Me.lblOpcional.Text = "Texto a cambiar"
+        Me.lblOpcional.Visible = False
+        '
         'MsgBoxVersatil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(676, 348)
+        Me.Controls.Add(Me.lblOpcional)
+        Me.Controls.Add(Me.txbOpcional)
         Me.Controls.Add(Me.lblTexto)
         Me.Controls.Add(Me.txbRespuesta)
         Me.Controls.Add(Me.btnSi)
@@ -91,4 +116,6 @@ Partial Class MsgBoxVersatil
     Friend WithEvents txbRespuesta As System.Windows.Forms.TextBox
     Friend WithEvents btnSi As System.Windows.Forms.Button
     Friend WithEvents btnNo As System.Windows.Forms.Button
+    Friend WithEvents txbOpcional As System.Windows.Forms.TextBox
+    Friend WithEvents lblOpcional As System.Windows.Forms.Label
 End Class

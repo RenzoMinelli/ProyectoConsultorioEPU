@@ -127,6 +127,36 @@ Module Module1
             msgbv.txbRespuesta.Location = New Point(msgbv.Width / 2 - msgbv.txbRespuesta.Width / 2, msgbv.txbRespuesta.Location.Y)
             msgbv.txbRespuesta.Visible = True
 
+            msgbv.txbRespuesta.Focus()
+            'Determinar si el formulario esta listo para seguir
+            If msgbv.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+                'Obtener la respuesta ingresada
+                respString = msgbv.respuestaString
+                respint = msgbv.respuestaInt
+            Else
+                respString = "Error"
+                respint = 0
+            End If
+            frmFondoTransparente.Dispose()
+            msgbv.Dispose()
+
+        ElseIf tipo = 3 Then
+
+            Dim msgbv As New MsgBoxVersatil()
+
+            msgbv.lblOpcional.Visible = True
+            msgbv.lblTexto.Text = "Que realizo"
+            msgbv.lblOpcional.Text = "Monto"
+            msgbv.btnNo.Visible = True
+            msgbv.btnSi.Visible = True
+            msgbv.btnNo.Text = "Cancelar"
+            msgbv.btnSi.Text = "Aceptar"
+            msgbv.txbOpcional.Visible = True
+            msgbv.txbRespuesta.Visible = True
+            msgbv.btnSi.Location = New Point(msgbv.Width / 4 - msgbv.btnSi.Width / 2, msgbv.btnSi.Location.Y)
+            msgbv.btnNo.Location = New Point(msgbv.Width / 4 * 3 - msgbv.btnNo.Width / 2, msgbv.btnSi.Location.Y)
+            msgbv.lblOpcional.Location = New Point(198, 147)
+
 
             msgbv.txbRespuesta.Focus()
             'Determinar si el formulario esta listo para seguir

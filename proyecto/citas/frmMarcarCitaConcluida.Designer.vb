@@ -145,7 +145,7 @@ Partial Class frmMarcarCitaConcluida
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(166, 84)
         Me.Button2.TabIndex = 25
-        Me.Button2.Text = "Cobrar Limpieza"
+        Me.Button2.Text = "Cobrar Extra"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'dgvAuxiliar
