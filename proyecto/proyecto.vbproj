@@ -369,6 +369,7 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\upload-file_icon-icons.com_56026 %281%29.png" />
     <None Include="Resources\grafica1.png" />
     <None Include="Resources\grafica.png" />
     <None Include="Resources\ruedita.png" />
