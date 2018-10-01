@@ -13,6 +13,9 @@
     Public nac As String
     Public saldo As Integer
 
+    Dim rutaGuardadoFotos As String = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) + "\Imágenes VB" 'Ruta en la que se guardarán las imágenes cargadas: "Escritorio\Imágenes VB"
+
+
 
 
 
@@ -36,6 +39,13 @@
         'Establezco como debe cargar el txbBusqueda
         txbBusqueda.ForeColor = Color.Gray
         txbBusqueda.Text = "Buscar"
+
+        My.Computer.FileSystem.CreateDirectory(rutaGuardadoFotos) 'Crea la carpeta "Imágenes VB" en el escritorio si esta no existe
+
+        Dim vista As New DataGridViewImageColumn
+        vista.Name = "vista"
+        vista.ImageLayout = DataGridViewImageCellLayout.Zoom
+        dgvImagenes.Columns.Add(vista)
 
     End Sub
 
@@ -102,7 +112,7 @@
         btnRegistrarCita.Visible = False
         btnRegistroMedico.Visible = False
         btnRealizarPago.Visible = False
-
+        btnCargar.Visible = False
         If estado = 0 Then
             btnIngresarPaciente.Visible = False
         Else
@@ -197,7 +207,7 @@
         btnMostrarAntecedentes.Show()
         btnRegistroMedico.Show()
         btnRealizarPago.Show()
-
+        btnCargar.Show()
 
         'Guardamos en las variables los datos acordes
         id_p = dgvPacientes.CurrentRow.Cells(0).Value
@@ -330,6 +340,7 @@
         'Luego actualizamos el Panel
         actPanel()
 
+        cargar()
     End Sub
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRealizarPago.Click
@@ -433,7 +444,63 @@
             actTabla(EstadoPacientes)
         End If
     End Sub
+   
 
 
-    
+    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCargar.Click
+        Try
+
+            Dim dialogoCarga As New OpenFileDialog 'Crea un objeto del tipo OpenFileDialog para seleccionar archivos
+            dialogoCarga.Filter = "Imágenes|*.jpg; *.png; *.gif" 'Limita a que solo se puedan seleccionar imágenes de los tipos indicados
+            dialogoCarga.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) 'Indica en un String la ubicación en donde busca por defecto, en este caso se obtiene el escritorio
+
+            Dim rutaArchivo, nombreArchivo As String
+            Dim posicionBarra, longitudNombre As Integer
+
+            'dialogoCarga.ShowDialog() Abre una pantalla de diálogo que permite obtiener el nombre y la ruta del archivo cuando el usuario lo selecciona
+            If dialogoCarga.ShowDialog() = Windows.Forms.DialogResult.OK Then 'Solo si se ha seleccionado alguna imagen
+                rutaArchivo = dialogoCarga.FileName 'Guarda la ruta con el nombre del archivo
+
+
+
+                posicionBarra = InStrRev(rutaArchivo, "\") ' Obtiene la posición en la que se encuentra la barra invertida en el String
+                longitudNombre = rutaArchivo.Length - posicionBarra 'Obtiene la cantidad de caracteres que ocupa el nombre
+
+                nombreArchivo = rutaArchivo.Substring(posicionBarra, longitudNombre) 'Corta la parte del nombre de la ruta completa
+                Consulta = "INSERT INTO documentos (nombre, id_p) VALUES ('" + nombreArchivo + "', '" + id_p.ToString + "');"
+                consultar()
+
+                My.Computer.FileSystem.CopyFile(rutaArchivo, rutaGuardadoFotos + "\" + nombreArchivo) 'Copia imagen seleccionada en la carpeta de guardado, no sobreescribe duplicados
+                cargar()
+                MsgBox("Archivo cargado", MsgBoxStyle.Information)
+            End If
+
+        Catch ex As Exception
+            MsgBox("Error al cargar archivo", MsgBoxStyle.Exclamation)
+        End Try
+        
+
+    End Sub
+
+    Private Sub cargar()
+       
+        Dim filas As Integer
+        Dim ruta As String
+
+        Try
+            Consulta = ("SELECT  nombre, descripcion FROM documentos where id_p = '" + id_p.ToString + "'")
+            consultar()
+
+            dgvImagenes.DataSource = Tabla
+            dgvImagenes.Columns(1).Visible = False
+            filas = dgvImagenes.Rows.Count - 1
+            For i As Integer = 0 To filas
+                ruta = dgvImagenes.Rows(i).Cells(1).Value.ToString()
+                dgvImagenes.Rows(i).Cells(0).Value = System.Drawing.Image.FromFile(rutaGuardadoFotos + "\" + dgvImagenes.Rows(i).Cells(1).Value.ToString())
+                dgvImagenes.Rows(i).Height = 200
+            Next
+        Catch ex As Exception
+            MsgBox("Error al obtener las imagenes", MsgBoxStyle.Exclamation)
+        End Try
+    End Sub
 End Class

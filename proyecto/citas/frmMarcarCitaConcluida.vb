@@ -48,6 +48,7 @@
 
             MsgBox("Guardado con éxito", MsgBoxStyle.Information)
             Me.Dispose()
+            frmCitas.actCitas()
             frmCitas.Show()
 
         Catch ex As Exception
@@ -73,8 +74,8 @@
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Do
 
-            MuestraMsgBoxVersatil("Ingrese el monto a cobrar", 2)
-
+            MuestraMsgBoxVersatil("Ingrese el monto a cobrar", 3)
+           
             If respint = 2 Then
                 MsgBox("No se ha cobrado nada", MsgBoxStyle.Information)
                 respString = "0"

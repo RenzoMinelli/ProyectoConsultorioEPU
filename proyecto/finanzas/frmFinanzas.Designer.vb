@@ -59,7 +59,7 @@ Partial Class frmFinanzas
         Me.dgbPagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -179,7 +179,7 @@ Partial Class frmFinanzas
         Me.txbBusqueda.Size = New System.Drawing.Size(386, 35)
         Me.txbBusqueda.TabIndex = 16
         '
-        'finanzas
+        'frmFinanzas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -198,7 +198,7 @@ Partial Class frmFinanzas
         Me.Controls.Add(Me.desde)
         Me.Controls.Add(Me.dgbPagos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "finanzas"
+        Me.Name = "frmFinanzas"
         CType(Me.dgbPagos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgbPacientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
