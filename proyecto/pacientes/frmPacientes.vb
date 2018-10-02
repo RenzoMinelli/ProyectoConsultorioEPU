@@ -116,7 +116,7 @@
         btnRegistrarCita.Visible = False
         btnRegistroMedico.Visible = False
         btnRealizarPago.Visible = False
-
+        btnCargar.Enabled = False
 
 
         If estado = 0 Then
@@ -213,7 +213,7 @@
         btnMostrarAntecedentes.Show()
         btnRegistroMedico.Show()
         btnRealizarPago.Show()
-
+        btnCargar.Enabled = True
 
 
         'Guardamos en las variables los datos acordes
@@ -539,4 +539,6 @@
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbFlecha.Click
         tmrOpcionesExtra.Start()
     End Sub
+
+   
 End Class

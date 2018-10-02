@@ -229,7 +229,6 @@ Partial Class frmMenuInicio
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel8.Controls.Add(Me.PictureBox6)
         Me.Panel8.Controls.Add(Me.lblReloj)
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
@@ -239,7 +238,7 @@ Partial Class frmMenuInicio
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
-        Me.PictureBox6.Location = New System.Drawing.Point(128, 5)
+        Me.PictureBox6.Location = New System.Drawing.Point(67, 676)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(25, 29)
         Me.PictureBox6.TabIndex = 15
@@ -338,6 +337,7 @@ Partial Class frmMenuInicio
         'pnlMenu
         '
         Me.pnlMenu.BackColor = System.Drawing.Color.LightGray
+        Me.pnlMenu.Controls.Add(Me.PictureBox6)
         Me.pnlMenu.Controls.Add(Me.pnlAranceles)
         Me.pnlMenu.Controls.Add(Me.pnlFinanzas)
         Me.pnlMenu.Controls.Add(Me.pnlGraficas)

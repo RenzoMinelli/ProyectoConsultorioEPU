@@ -126,16 +126,23 @@
             Dim row As Integer
             If dgvHora.CurrentCell.Value <> "" Then
                 While verificar = 0
+                    If dgvHora.CurrentRow.Index - indice > 0 Then
+                        If dgvHora.Rows(dgvHora.CurrentRow.Index - indice).Cells(dgvHora.CurrentCell.ColumnIndex).Value = dgvHora.CurrentCell.Value Then
 
-                    If dgvHora.Rows(dgvHora.CurrentRow.Index - indice).Cells(dgvHora.CurrentCell.ColumnIndex).Value = dgvHora.CurrentCell.Value Then
+                            indice += 1
 
-                        indice += 1
+                        Else
+                            verificar = 1
+                            row = dgvHora.CurrentRow.Index - (indice - 1)
 
+                        End If
                     Else
+
                         verificar = 1
                         row = dgvHora.CurrentRow.Index - (indice - 1)
 
                     End If
+                    
 
                 End While
             End If
