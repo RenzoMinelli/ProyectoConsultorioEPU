@@ -155,10 +155,10 @@ Module Module1
             msgbv.txbRespuesta.Visible = True
             msgbv.btnSi.Location = New Point(msgbv.Width / 4 - msgbv.btnSi.Width / 2, msgbv.btnSi.Location.Y)
             msgbv.btnNo.Location = New Point(msgbv.Width / 4 * 3 - msgbv.btnNo.Width / 2, msgbv.btnSi.Location.Y)
-            msgbv.lblOpcional.Location = New Point(198, 147)
+            msgbv.lblOpcional.Location = New Point(7, 78)
+            msgbv.lblTexto.Location = New Point(198, 300)
 
-
-            msgbv.txbRespuesta.Focus()
+            msgbv.txbOpcional.Focus()
             'Determinar si el formulario esta listo para seguir
             If msgbv.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
                 'Obtener la respuesta ingresada
