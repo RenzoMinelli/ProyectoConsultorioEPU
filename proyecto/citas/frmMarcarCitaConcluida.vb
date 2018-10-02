@@ -80,26 +80,33 @@
                 MsgBox("No se ha cobrado nada", MsgBoxStyle.Information)
                 respString = "0"
             Else
+                If respString2 <> "" And respString <> "" Then
+                    If Not IsNumeric(respString2) Then
 
-                If Not IsNumeric(respString) Then
+                        MsgBox("El monto debe ser solo números", MsgBoxStyle.Exclamation)
+                        respString2 = ""
+                        respString = ""
 
-                    MsgBox("El monto debe ser solo números", MsgBoxStyle.Exclamation)
-
+                    End If
+                Else
+                    MsgBox("Los campos estan vacios", MsgBoxStyle.Exclamation)
+                    respString = ""
+                    respString2 = ""
                 End If
 
 
             End If
 
-        Loop While IsNumeric(respString) = False
+        Loop While IsNumeric(respString2) = False And respString = ""
 
         If respint = 1 Then
 
             Try
 
-                Consulta = "update paciente set saldo = saldo + '" + respString + "' where id_p = '" + id_p.ToString + "';"
+                Consulta = "update paciente set saldo = saldo + '" + respString2 + "' where id_p = '" + id_p.ToString + "';"
                 consultar()
 
-                Consulta = "insert into plan_tratamiento (id_p, id_c, descripcion, precio, terminado) values ('" + id_p.ToString + "', '" + frmCitas.idcita.ToString + "', 'Limpieza', '" + respString + "', 1);"
+                Consulta = "insert into plan_tratamiento (id_p, id_c, descripcion, precio, terminado) values ('" + id_p.ToString + "', '" + frmCitas.idcita.ToString + "', '" + respString + "', '" + respString + "', 1);"
                 consultar()
 
                 MsgBox("Cobrado con éxito", MsgBoxStyle.Information)

@@ -424,11 +424,6 @@
 
 
 
-            LabelDia.Text = (dia)
-            seleccionado.Text = (DiaSeleccionado)
-
-
-
             ''En un case se muestran los datos de la semana seleccionada por el usuario
             Select Case FCalendario
 
@@ -621,13 +616,14 @@
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
                                         dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
-                                        IndHoras += 1
+
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
                                             dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.LightBlue
                                         Else
                                             dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.Orange
                                         End If
+                                        IndHoras += 1
                                     Next
                                     Exit For
                                 End If
@@ -667,13 +663,15 @@
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
                                         dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
-                                        IndHoras += 1
-
+                                        
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
                                             dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.LightBlue
                                         Else
                                             dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.Orange
                                         End If
+
+                                        IndHoras += 1
+
                                     Next
 
 

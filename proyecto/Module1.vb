@@ -19,6 +19,7 @@ Module Module1
 
     Public respint As Integer
     Public respString As String
+    Public respString2 As String
 
     Public screenWidth As Integer = Screen.PrimaryScreen.Bounds.Width
     Public screenHeight As Integer = Screen.PrimaryScreen.Bounds.Height
@@ -156,18 +157,23 @@ Module Module1
             msgbv.btnSi.Location = New Point(msgbv.Width / 4 - msgbv.btnSi.Width / 2, msgbv.btnSi.Location.Y)
             msgbv.btnNo.Location = New Point(msgbv.Width / 4 * 3 - msgbv.btnNo.Width / 2, msgbv.btnSi.Location.Y)
             msgbv.lblOpcional.Location = New Point(7, 78)
-            msgbv.lblTexto.Location = New Point(198, 300)
-
+            msgbv.lblTexto.Location = New Point(7, 174)
+            msgbv.txbOpcional.Location = New Point(198, 78)
+            msgbv.txbRespuesta.Location = New Point(198, 174)
             msgbv.txbOpcional.Focus()
+
             'Determinar si el formulario esta listo para seguir
             If msgbv.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
                 'Obtener la respuesta ingresada
                 respString = msgbv.respuestaString
+                respString2 = msgbv.txbOpcional.Text
+
                 respint = msgbv.respuestaInt
             Else
                 respString = "Error"
                 respint = 0
             End If
+
             frmFondoTransparente.Dispose()
             msgbv.Dispose()
 

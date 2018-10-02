@@ -43,7 +43,7 @@ Partial Class MsgBoxVersatil
         'txbRespuesta
         '
         Me.txbRespuesta.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbRespuesta.Location = New System.Drawing.Point(198, 218)
+        Me.txbRespuesta.Location = New System.Drawing.Point(198, 174)
         Me.txbRespuesta.Name = "txbRespuesta"
         Me.txbRespuesta.Size = New System.Drawing.Size(372, 35)
         Me.txbRespuesta.TabIndex = 3
@@ -72,7 +72,7 @@ Partial Class MsgBoxVersatil
         'txbOpcional
         '
         Me.txbOpcional.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbOpcional.Location = New System.Drawing.Point(198, 147)
+        Me.txbOpcional.Location = New System.Drawing.Point(198, 78)
         Me.txbOpcional.Name = "txbOpcional"
         Me.txbOpcional.Size = New System.Drawing.Size(372, 35)
         Me.txbOpcional.TabIndex = 7
@@ -83,7 +83,7 @@ Partial Class MsgBoxVersatil
         '
         Me.lblOpcional.AutoSize = True
         Me.lblOpcional.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOpcional.Location = New System.Drawing.Point(7, 218)
+        Me.lblOpcional.Location = New System.Drawing.Point(7, 174)
         Me.lblOpcional.Name = "lblOpcional"
         Me.lblOpcional.Size = New System.Drawing.Size(185, 29)
         Me.lblOpcional.TabIndex = 8
