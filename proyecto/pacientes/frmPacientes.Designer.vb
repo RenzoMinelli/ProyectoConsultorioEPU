@@ -22,8 +22,9 @@ Partial Class frmPacientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblEstado = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -60,11 +61,16 @@ Partial Class frmPacientes
         Me.btnCambiarPacientes = New System.Windows.Forms.Button()
         Me.btnCargar = New System.Windows.Forms.Button()
         Me.dgvImagenes = New System.Windows.Forms.DataGridView()
+        Me.tmrOpcionesExtra = New System.Windows.Forms.Timer(Me.components)
+        Me.pnlOpcionesExtra = New System.Windows.Forms.Panel()
+        Me.pbFlecha = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.pnlTapa.SuspendLayout()
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvFiltro, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvImagenes, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlOpcionesExtra.SuspendLayout()
+        CType(Me.pbFlecha, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -357,7 +363,7 @@ Partial Class frmPacientes
         Me.btnRegistrarCita.ForeColor = System.Drawing.Color.Black
         Me.btnRegistrarCita.Image = Global.WindowsApplication1.My.Resources.Resources._42954__1_
         Me.btnRegistrarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRegistrarCita.Location = New System.Drawing.Point(796, 603)
+        Me.btnRegistrarCita.Location = New System.Drawing.Point(596, 603)
         Me.btnRegistrarCita.Name = "btnRegistrarCita"
         Me.btnRegistrarCita.Size = New System.Drawing.Size(171, 75)
         Me.btnRegistrarCita.TabIndex = 9
@@ -372,7 +378,7 @@ Partial Class frmPacientes
         Me.btnCambiarEstado.ForeColor = System.Drawing.Color.Black
         Me.btnCambiarEstado.Image = Global.WindowsApplication1.My.Resources.Resources._675024_delete_512x512_1_
         Me.btnCambiarEstado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCambiarEstado.Location = New System.Drawing.Point(999, 522)
+        Me.btnCambiarEstado.Location = New System.Drawing.Point(799, 522)
         Me.btnCambiarEstado.Name = "btnCambiarEstado"
         Me.btnCambiarEstado.Size = New System.Drawing.Size(172, 75)
         Me.btnCambiarEstado.TabIndex = 8
@@ -387,7 +393,7 @@ Partial Class frmPacientes
         Me.btnModificarDatos.ForeColor = System.Drawing.Color.Black
         Me.btnModificarDatos.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
         Me.btnModificarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModificarDatos.Location = New System.Drawing.Point(796, 522)
+        Me.btnModificarDatos.Location = New System.Drawing.Point(596, 522)
         Me.btnModificarDatos.Name = "btnModificarDatos"
         Me.btnModificarDatos.Size = New System.Drawing.Size(171, 75)
         Me.btnModificarDatos.TabIndex = 7
@@ -418,23 +424,23 @@ Partial Class frmPacientes
         Me.dgvPacientes.AllowUserToResizeRows = False
         Me.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPacientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle19
         Me.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle20
         Me.dgvPacientes.Location = New System.Drawing.Point(17, 70)
         Me.dgvPacientes.MultiSelect = False
         Me.dgvPacientes.Name = "dgvPacientes"
@@ -450,7 +456,7 @@ Partial Class frmPacientes
         Me.btnRealizarPago.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnRealizarPago.Image = Global.WindowsApplication1.My.Resources.Resources.fac159a300a5cd5efbd3c544cb37d3b0_1_
         Me.btnRealizarPago.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRealizarPago.Location = New System.Drawing.Point(999, 603)
+        Me.btnRealizarPago.Location = New System.Drawing.Point(799, 603)
         Me.btnRealizarPago.Name = "btnRealizarPago"
         Me.btnRealizarPago.Size = New System.Drawing.Size(169, 75)
         Me.btnRealizarPago.TabIndex = 18
@@ -491,9 +497,9 @@ Partial Class frmPacientes
         Me.btnCargar.ForeColor = System.Drawing.Color.Black
         Me.btnCargar.Image = Global.WindowsApplication1.My.Resources.Resources.upload_file_icon_icons_com_56026__1_
         Me.btnCargar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCargar.Location = New System.Drawing.Point(232, 522)
+        Me.btnCargar.Location = New System.Drawing.Point(26, 25)
         Me.btnCargar.Name = "btnCargar"
-        Me.btnCargar.Size = New System.Drawing.Size(209, 75)
+        Me.btnCargar.Size = New System.Drawing.Size(196, 75)
         Me.btnCargar.TabIndex = 21
         Me.btnCargar.Text = "Cargar Documento"
         Me.btnCargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -507,11 +513,38 @@ Partial Class frmPacientes
         Me.dgvImagenes.AllowUserToResizeColumns = False
         Me.dgvImagenes.AllowUserToResizeRows = False
         Me.dgvImagenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvImagenes.Location = New System.Drawing.Point(447, 522)
+        Me.dgvImagenes.Location = New System.Drawing.Point(551, 278)
         Me.dgvImagenes.Name = "dgvImagenes"
         Me.dgvImagenes.ReadOnly = True
-        Me.dgvImagenes.Size = New System.Drawing.Size(334, 162)
+        Me.dgvImagenes.RowHeadersVisible = False
+        Me.dgvImagenes.Size = New System.Drawing.Size(35, 33)
         Me.dgvImagenes.TabIndex = 22
+        Me.dgvImagenes.Visible = False
+        '
+        'tmrOpcionesExtra
+        '
+        Me.tmrOpcionesExtra.Interval = 25
+        '
+        'pnlOpcionesExtra
+        '
+        Me.pnlOpcionesExtra.BackColor = System.Drawing.Color.DarkCyan
+        Me.pnlOpcionesExtra.Controls.Add(Me.btnCargar)
+        Me.pnlOpcionesExtra.Controls.Add(Me.pbFlecha)
+        Me.pnlOpcionesExtra.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlOpcionesExtra.Location = New System.Drawing.Point(1051, 0)
+        Me.pnlOpcionesExtra.Name = "pnlOpcionesExtra"
+        Me.pnlOpcionesExtra.Size = New System.Drawing.Size(249, 750)
+        Me.pnlOpcionesExtra.TabIndex = 24
+        '
+        'pbFlecha
+        '
+        Me.pbFlecha.Image = Global.WindowsApplication1.My.Resources.Resources.back
+        Me.pbFlecha.Location = New System.Drawing.Point(3, 335)
+        Me.pbFlecha.Name = "pbFlecha"
+        Me.pbFlecha.Size = New System.Drawing.Size(46, 49)
+        Me.pbFlecha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbFlecha.TabIndex = 25
+        Me.pbFlecha.TabStop = False
         '
         'frmPacientes
         '
@@ -519,8 +552,8 @@ Partial Class frmPacientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1300, 750)
+        Me.Controls.Add(Me.pnlOpcionesExtra)
         Me.Controls.Add(Me.dgvImagenes)
-        Me.Controls.Add(Me.btnCargar)
         Me.Controls.Add(Me.pnlTapa)
         Me.Controls.Add(Me.btnCambiarPacientes)
         Me.Controls.Add(Me.dgvFiltro)
@@ -544,6 +577,8 @@ Partial Class frmPacientes
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvFiltro, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvImagenes, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlOpcionesExtra.ResumeLayout(False)
+        CType(Me.pbFlecha, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -584,5 +619,8 @@ Partial Class frmPacientes
     Friend WithEvents lblEstado As System.Windows.Forms.Label
     Friend WithEvents btnCargar As System.Windows.Forms.Button
     Friend WithEvents dgvImagenes As System.Windows.Forms.DataGridView
+    Friend WithEvents tmrOpcionesExtra As System.Windows.Forms.Timer
+    Friend WithEvents pnlOpcionesExtra As System.Windows.Forms.Panel
+    Friend WithEvents pbFlecha As System.Windows.Forms.PictureBox
 
 End Class

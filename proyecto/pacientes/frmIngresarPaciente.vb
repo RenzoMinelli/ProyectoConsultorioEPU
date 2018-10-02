@@ -178,7 +178,12 @@
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        
+        'Establezco como debe cargar el txbBusqueda
+        txbNombre.ForeColor = Color.Gray
+        txbNombre.Text = "Juan"
+        'Establezco como debe cargar el txbBusqueda
+        txbCedula.ForeColor = Color.Gray
+        txbCedula.Text = "12345678"
 
         Dim nac As String = mcFechaNacimiento.SelectionRange.Start
         lblFechaSeleccionada.Text = "Fecha seleccionada " + nac
@@ -281,6 +286,110 @@
             epTelefono.SetError(txbTelefono, "")
         Else
             epTelefono.SetError(txbTelefono, "El teléfono solo debe contener números")
+        End If
+    End Sub
+    Private Sub txbNombre_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbNombre.Click
+
+        'Si el contenido de txbNombre es Buscar y de color gris
+        If txbNombre.Text = "Juan" And txbNombre.ForeColor = Color.Gray Then
+
+            'El cursos se ubique al inicio
+            Me.txbNombre.SelectionStart = 0
+
+        End If
+
+    End Sub
+
+    Private Sub txbNombre_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbNombre.GotFocus
+
+        'Si el contenido de txbNombre es Buscar y de color gris
+        If txbNombre.Text = "Juan" And txbNombre.ForeColor = Color.Gray Then
+
+            'El cursos se ubique al inicio
+            txbNombre.SelectionStart = 0
+
+        End If
+
+    End Sub
+
+    Private Sub txbNombre_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txbNombre.KeyDown
+
+        'Si el contenido de txbNombre es Buscar, de color gris y la tecla presionada no es 
+        If txbNombre.Text = "Juan" And txbNombre.ForeColor = Color.Gray And Not e.KeyCode = Keys.Back Then
+
+            'Borrar el contenido del txbNombre y volver el color negro
+            txbNombre.Text = ""
+            txbNombre.ForeColor = Color.Black
+
+
+            'Si txbNombre solo tiene una letra y la tecla presionada fue borrar, 
+        ElseIf e.KeyCode = Keys.Back And txbNombre.Text.Length = 1 Then
+
+            'Introduzco el texto 'Buscar' al txbNombre de color Gris
+            txbNombre.Text = "Juan"
+            txbNombre.ForeColor = Color.Gray
+
+
+            'Si la tecla presionada es borrar y todo el texto esta seleccionado
+        ElseIf e.KeyCode = Keys.Back And txbNombre.SelectedText = txbNombre.Text Then
+
+            'Introduzco el texto 'Buscar' al txbNombre de color Gris
+            txbNombre.Text = "Juan"
+            txbNombre.ForeColor = Color.Gray
+
+
+        End If
+    End Sub
+    Private Sub txbCedula_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbCedula.Click
+
+        'Si el contenido de txbNombre es Buscar y de color gris
+        If txbNombre.Text = "12345678" And txbNombre.ForeColor = Color.Gray Then
+
+            'El cursos se ubique al inicio
+            Me.txbNombre.SelectionStart = 0
+
+        End If
+
+    End Sub
+
+    Private Sub txbCedula_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbCedula.GotFocus
+
+        'Si el contenido de txbNombre es Buscar y de color gris
+        If txbNombre.Text = "12345678" And txbNombre.ForeColor = Color.Gray Then
+
+            'El cursos se ubique al inicio
+            txbNombre.SelectionStart = 0
+
+        End If
+
+    End Sub
+
+    Private Sub txbCedula_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txbCedula.KeyDown
+
+        'Si el contenido de txbNombre es Buscar, de color gris y la tecla presionada no es 
+        If txbNombre.Text = "12345678" And txbNombre.ForeColor = Color.Gray And Not e.KeyCode = Keys.Back Then
+
+            'Borrar el contenido del txbNombre y volver el color negro
+            txbNombre.Text = ""
+            txbNombre.ForeColor = Color.Black
+
+
+            'Si txbNombre solo tiene una letra y la tecla presionada fue borrar, 
+        ElseIf e.KeyCode = Keys.Back And txbNombre.Text.Length = 1 Then
+
+            'Introduzco el texto 'Buscar' al txbNombre de color Gris
+            txbNombre.Text = "12345678"
+            txbNombre.ForeColor = Color.Gray
+
+
+            'Si la tecla presionada es borrar y todo el texto esta seleccionado
+        ElseIf e.KeyCode = Keys.Back And txbNombre.SelectedText = txbNombre.Text Then
+
+            'Introduzco el texto 'Buscar' al txbNombre de color Gris
+            txbNombre.Text = "12345678"
+            txbNombre.ForeColor = Color.Gray
+
+
         End If
     End Sub
 End Class

@@ -369,6 +369,7 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\right-arrow1.png" />
     <None Include="Resources\upload-file_icon-icons.com_56026 %281%29.png" />
     <None Include="Resources\grafica1.png" />
     <None Include="Resources\grafica.png" />
@@ -541,6 +542,8 @@
     <None Include="Resources\BI8a.jpg" />
     <None Include="Resources\BI8n.jpg" />
     <None Include="Resources\BI8r.jpg" />
+    <None Include="Resources\1600 %281%29.png" />
+    <None Include="Resources\back.png" />
     <Content Include="Resources\cancel_exit_cross_close.png" />
     <None Include="Resources\índice.png" />
     <None Include="Resources\minimize-window.png" />

@@ -13,6 +13,9 @@
     Public nac As String
     Public saldo As Integer
 
+    Dim extra As Integer = 0, cont As Integer = 0
+
+
     Dim rutaGuardadoFotos As String = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) + "\Imágenes VB" 'Ruta en la que se guardarán las imágenes cargadas: "Escritorio\Imágenes VB"
 
 
@@ -47,6 +50,7 @@
         vista.ImageLayout = DataGridViewImageCellLayout.Zoom
         dgvImagenes.Columns.Add(vista)
 
+        pnlOpcionesExtra.Width = 50
     End Sub
 
 
@@ -112,7 +116,9 @@
         btnRegistrarCita.Visible = False
         btnRegistroMedico.Visible = False
         btnRealizarPago.Visible = False
-        btnCargar.Visible = False
+
+
+
         If estado = 0 Then
             btnIngresarPaciente.Visible = False
         Else
@@ -207,7 +213,8 @@
         btnMostrarAntecedentes.Show()
         btnRegistroMedico.Show()
         btnRealizarPago.Show()
-        btnCargar.Show()
+
+
 
         'Guardamos en las variables los datos acordes
         id_p = dgvPacientes.CurrentRow.Cells(0).Value
@@ -502,5 +509,34 @@
         Catch ex As Exception
             MsgBox("Error al obtener las imagenes", MsgBoxStyle.Exclamation)
         End Try
+    End Sub
+
+    Private Sub tmrOpcionesExtra_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrOpcionesExtra.Tick
+        If extra = 0 Then
+            If cont < 20 Then
+                btnCargar.Show()
+                pnlOpcionesExtra.Width += 10
+                cont += 1
+            Else
+                tmrOpcionesExtra.Dispose()
+                extra = 1
+                pbFlecha.Image = My.Resources.right_arrow1
+
+            End If
+        Else
+            If cont > 0 Then
+                pnlOpcionesExtra.Width -= 10
+                cont -= 1
+            Else
+                tmrOpcionesExtra.Dispose()
+                extra = 0
+                pbFlecha.Image = My.Resources.back
+                btnCargar.Visible = False
+            End If
+        End If
+    End Sub
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbFlecha.Click
+        tmrOpcionesExtra.Start()
     End Sub
 End Class
