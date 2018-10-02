@@ -2,6 +2,8 @@
 
     Private Sub frmIngresarEstadoDientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+
+
         PnlDiente18c1.MakeTriangular(TriangleDirection.Down)
         PnlDiente18c3.MakeTriangular(TriangleDirection.Up)
         PnlDiente18c2.MakeTriangular(TriangleDirection.Left)
@@ -166,7 +168,7 @@
         PnlDiente43c4.MakeTriangular(TriangleDirection.Right)
         PnlDiente43c2.MakeTriangular(TriangleDirection.Left)
 
-        PnlDiente42c2.MakeTriangular(TriangleDirection.Up)
+        PnlDiente42c3.MakeTriangular(TriangleDirection.Up)
         PnlDiente42c4.MakeTriangular(TriangleDirection.Right)
         PnlDiente42c2.MakeTriangular(TriangleDirection.Left)
         PnlDiente42c1.MakeTriangular(TriangleDirection.Down)
@@ -708,6 +710,7 @@
         diente18c4 = diente18c4 + 1
         cambiador18c4 = True
 
+
         Select Case diente18c4
             Case 0
                 PnlDiente18c4.BackColor = Color.White
@@ -727,6 +730,7 @@
                 diente18c4 = 0
 
         End Select
+
     End Sub
 
     Private Sub PnlDiente18c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente18c3.Click
@@ -934,7 +938,7 @@
 
     End Sub
 
-    Private Sub PnlDiente16c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente16c4.Click
+    Private Sub PnlDiente16c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente16c3.Click
         diente16c3 = diente16c3 + 1
         cambiador16c3 = True
 
@@ -1773,18 +1777,42 @@
     End Sub
 
 
-  
+    Private Sub PnlDiente26c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente26c3.Click
+        diente26c3 = diente26c3 + 1
+        cambiador26c3 = True
+
+        Select Case diente26c3
+            Case 0
+                PnlDiente26c3.BackColor = Color.White
+                diente26c3E = "normal"
+            Case 1
+                PnlDiente26c3.BackColor = Color.Yellow
+                diente26c3E = "precaucion"
+            Case 2
+                PnlDiente26c3.BackColor = Color.Red
+                diente26c3E = "alerta"
+            Case 3
+                PnlDiente26c3.BackColor = Color.Black
+                diente26c3E = "ausente"
+            Case 4
+                PnlDiente26c3.BackColor = Color.White
+                diente26c3E = "normal"
+                diente26c3 = 0
+
+        End Select
+
+    End Sub
 
 
 
     Private Sub PnlDiente26c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente26c2.Click
-        diente26c2 = diente16c2 + 1
+        diente26c2 = diente26c2 + 1
         cambiador26c2 = True
 
         Select Case diente26c2
             Case 0
                 PnlDiente26c2.BackColor = Color.White
-                diente16c2E = "normal"
+                diente26c2E = "normal"
             Case 1
                 PnlDiente26c2.BackColor = Color.Yellow
                 diente26c2E = "precaucion"
@@ -1829,10 +1857,41 @@
 
     End Sub
 
+    Private Sub PnlDiente25c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente25c4.Click
+        diente25c4 = diente25c4 + 1
+        cambiador25c4 = True
 
-    
+        Select Case diente25c4
+            Case 0
+                PnlDiente25c4.BackColor = Color.White
+                diente25c4E = "normal"
+            Case 1
+                PnlDiente25c4.BackColor = Color.Yellow
+                diente25c4E = "precaucion"
+            Case 2
+                PnlDiente25c4.BackColor = Color.Red
+                diente25c4E = "alerta"
+            Case 3
+                PnlDiente25c4.BackColor = Color.Black
+                diente25c4E = "ausente"
+            Case 4
+                PnlDiente25c4.BackColor = Color.White
+                diente25c4E = "normal"
+                diente25c4 = 0
 
-    
+        End Select
+    End Sub
+
+
+
+
+
+
+
+
+
+
+
 
     Private Sub PnlDiente25c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente25c3.Click
         diente25c3 = diente25c3 + 1
@@ -1922,10 +1981,10 @@
         Select Case diente24c4
             Case 0
                 PnlDiente24c4.BackColor = Color.White
-                diente14c4E = "normal"
+                diente24c4E = "normal"
             Case 1
                 PnlDiente24c4.BackColor = Color.Yellow
-                diente14c4E = "precaucion"
+                diente24c4E = "precaucion"
             Case 2
                 PnlDiente24c4.BackColor = Color.Red
                 diente24c4E = "alerta"
@@ -2027,7 +2086,7 @@
         Select Case diente23c4
             Case 0
                 PnlDiente23c4.BackColor = Color.White
-                diente13c4E = "normal"
+                diente23c4E = "normal"
             Case 1
                 PnlDiente23c4.BackColor = Color.Yellow
                 diente23c4E = "precaucion"
@@ -2191,14 +2250,14 @@
                 diente22c2E = "precaucion"
             Case 2
                 PnlDiente22c2.BackColor = Color.Red
-                diente12c2E = "alerta"
+                diente22c2E = "alerta"
             Case 3
                 PnlDiente22c2.BackColor = Color.Black
-                diente12c2E = "ausente"
+                diente22c2E = "ausente"
             Case 4
                 PnlDiente22c2.BackColor = Color.White
-                diente12c2E = "normal"
-                diente12c2 = 0
+                diente22c2E = "normal"
+                diente22c2 = 0
 
         End Select
     End Sub
@@ -2326,10 +2385,10 @@
                 PnlDiente21c1.BackColor = Color.Red
                 diente21c1E = "alerta"
             Case 3
-                PnlDiente11c1.BackColor = Color.Black
+                PnlDiente21c1.BackColor = Color.Black
                 diente21c1E = "ausente"
             Case 4
-                PnlDiente11c1.BackColor = Color.White
+                PnlDiente21c1.BackColor = Color.White
                 diente21c1E = "normal"
                 diente21c1 = 0
 
@@ -2525,7 +2584,7 @@
         diente47c1 = diente47c1 + 1
         cambiador47c1 = True
 
-        Select Case diente27c1
+        Select Case diente47c1
             Case 0
                 PnlDiente47c1.BackColor = Color.White
                 diente47c1E = "normal"
@@ -2618,7 +2677,7 @@
                 diente46c2E = "alerta"
             Case 3
                 PnlDiente46c2.BackColor = Color.Black
-                diente26c2E = "ausente"
+                diente46c2E = "ausente"
             Case 4
                 PnlDiente46c2.BackColor = Color.White
                 diente46c2E = "normal"
@@ -2708,9 +2767,9 @@
     End Sub
 
 
-    Private Sub PnlDiente45c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente25c2.Click
+    Private Sub PnlDiente45c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente45c2.Click
         diente45c2 = diente45c2 + 1
-        cambiador25c2 = True
+        cambiador45c2 = True
 
         Select Case diente45c2
             Case 0
@@ -2747,7 +2806,7 @@
                 PnlDiente45c1.BackColor = Color.Yellow
                 diente45c1E = "precaucion"
             Case 2
-                PnlDiente25c1.BackColor = Color.Red
+                PnlDiente45c1.BackColor = Color.Red
                 diente45c1E = "alerta"
             Case 3
                 PnlDiente45c1.BackColor = Color.Black
@@ -2771,16 +2830,16 @@
                 PnlDiente44c4.BackColor = Color.White
                 diente44c4E = "normal"
             Case 1
-                PnlDiente24c4.BackColor = Color.Yellow
+                PnlDiente44c4.BackColor = Color.Yellow
                 diente44c4E = "precaucion"
             Case 2
-                PnlDiente24c4.BackColor = Color.Red
+                PnlDiente44c4.BackColor = Color.Red
                 diente44c4E = "alerta"
             Case 3
-                PnlDiente24c4.BackColor = Color.Black
+                PnlDiente44c4.BackColor = Color.Black
                 diente44c4E = "ausente"
             Case 4
-                PnlDiente24c4.BackColor = Color.White
+                PnlDiente44c4.BackColor = Color.White
                 diente44c4E = "normal"
                 diente44c4 = 0
 
@@ -2796,7 +2855,7 @@
                 PnlDiente44c3.BackColor = Color.White
                 diente44c3E = "normal"
             Case 1
-                PnlDiente24c3.BackColor = Color.Yellow
+                PnlDiente44c3.BackColor = Color.Yellow
                 diente24c3E = "precaucion"
             Case 2
                 PnlDiente44c3.BackColor = Color.Red
@@ -2815,13 +2874,13 @@
 
 
     Private Sub PnlDiente44c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente44c2.Click
-        diente44c2 = diente24c2 + 1
+        diente44c2 = diente44c2 + 1
         cambiador44c2 = True
 
         Select Case diente44c2
             Case 0
                 PnlDiente44c2.BackColor = Color.White
-                diente24c2E = "normal"
+                diente44c2E = "normal"
             Case 1
                 PnlDiente44c2.BackColor = Color.Yellow
                 diente44c2E = "precaucion"
@@ -2901,7 +2960,7 @@
                 PnlDiente43c3.BackColor = Color.White
                 diente43c3E = "normal"
             Case 1
-                PnlDiente23c3.BackColor = Color.Yellow
+                PnlDiente43c3.BackColor = Color.Yellow
                 diente43c3E = "precaucion"
             Case 2
                 PnlDiente43c3.BackColor = Color.Red
@@ -2973,7 +3032,7 @@
 
 
     Private Sub PnlDiente42c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente42c4.Click
-        diente42c4 = diente22c4 + 1
+        diente42c4 = diente42c4 + 1
         cambiador42c4 = True
 
         Select Case diente42c4
@@ -2999,8 +3058,8 @@
 
 
     Private Sub PnlDiente42c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente42c3.Click
-        diente22c3 = diente42c3 + 1
-        cambiador22c3 = True
+        diente42c3 = diente42c3 + 1
+        cambiador42c3 = True
 
         Select Case diente42c3
             Case 0
@@ -3027,7 +3086,7 @@
 
     Private Sub PnlDiente42c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente42c2.Click
         diente42c2 = diente42c2 + 1
-        cambiador12c2 = True
+        cambiador42c2 = True
 
         Select Case diente42c2
             Case 0
@@ -3040,7 +3099,7 @@
                 PnlDiente42c2.BackColor = Color.Red
                 diente42c2E = "alerta"
             Case 3
-                PnlDiente22c2.BackColor = Color.Black
+                PnlDiente42c2.BackColor = Color.Black
                 diente42c2E = "ausente"
             Case 4
                 PnlDiente42c2.BackColor = Color.White
@@ -3088,16 +3147,16 @@
                 PnlDiente41c4.BackColor = Color.White
                 diente41c4E = "normal"
             Case 1
-                PnlDiente21c4.BackColor = Color.Yellow
+                PnlDiente41c4.BackColor = Color.Yellow
                 diente41c4E = "precaucion"
             Case 2
-                PnlDiente21c4.BackColor = Color.Red
+                PnlDiente41c4.BackColor = Color.Red
                 diente41c4E = "alerta"
             Case 3
-                PnlDiente21c4.BackColor = Color.Black
+                PnlDiente41c4.BackColor = Color.Black
                 diente41c4E = "ausente"
             Case 4
-                PnlDiente21c4.BackColor = Color.White
+                PnlDiente41c4.BackColor = Color.White
                 diente41c4E = "normal"
                 diente41c4 = 0
 
@@ -3122,7 +3181,7 @@
                 diente41c3E = "alerta"
             Case 3
                 PnlDiente41c3.BackColor = Color.Black
-                diente21c3E = "ausente"
+                diente41c3E = "ausente"
             Case 4
                 PnlDiente41c3.BackColor = Color.White
                 diente41c3E = "normal"
@@ -3162,7 +3221,7 @@
         diente41c1 = diente41c1 + 1
         cambiador41c1 = True
 
-        Select Case diente21c1
+        Select Case diente41c1
             Case 0
                 PnlDiente41c1.BackColor = Color.White
                 diente41c1E = "normal"
@@ -3176,7 +3235,7 @@
                 PnlDiente41c1.BackColor = Color.Black
                 diente41c1E = "ausente"
             Case 4
-                PnlDiente11c1.BackColor = Color.White
+                PnlDiente41c1.BackColor = Color.White
                 diente41c1E = "normal"
                 diente41c1 = 0
 
@@ -4032,46 +4091,46 @@
 
     Private Sub bttoningrdientes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bttoningrdientes.Click
         If cambiador11c1 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente11c1E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '1');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente11c1E + "','" + zona1 + "', '1',  '1');")
             consultar()
         End If
 
         If cambiador11c2 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente11c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '2');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente11c2E + "','" + zona1 + "', '1',  '2');")
             consultar()
         End If
 
 
         If cambiador11c3 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente11c3E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '3');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente11c3E + "','" + zona1 + "', '1',  '3');")
             consultar()
         End If
 
         If cambiador11c4 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente11c4E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '4');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente11c4E + "','" + zona1 + "', '1',  '4');")
             consultar()
         End If
 
         '----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         If cambiador12c1 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '1');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '2',  '1');")
             consultar()
         End If
 
         If cambiador12c2 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '2');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '2',  '2');")
             consultar()
         End If
 
 
         If cambiador12c3 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '3');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '2',  '3');")
             consultar()
         End If
 
         If cambiador12c4 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '4');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '2',  '4');")
             consultar()
         End If
 
@@ -4079,46 +4138,46 @@
 
 
         If cambiador13c1 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente13c1E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '1');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente13c1E + "','" + zona1 + "', '3',  '1');")
             consultar()
         End If
 
         If cambiador13c2 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente13c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '2');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente13c2E + "','" + zona1 + "', '3',  '2');")
             consultar()
         End If
 
 
         If cambiador13c3 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente13c1E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '3');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente13c1E + "','" + zona1 + "', '3',  '3');")
             consultar()
         End If
 
         If cambiador13c4 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente13c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '4');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente13c2E + "','" + zona1 + "', '3',  '4');")
             consultar()
         End If
 
         '----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         If cambiador14c1 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente14c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '1');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente14c2E + "','" + zona1 + "', '4',  '1');")
             consultar()
         End If
 
         If cambiador14c2 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente14c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '2');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente14c2E + "','" + zona1 + "', '4',  '2');")
             consultar()
         End If
 
 
         If cambiador14c3 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente14c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '3');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente14c2E + "','" + zona1 + "', '4',  '3');")
             consultar()
         End If
 
         If cambiador14c4 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente14c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '4');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente14c2E + "','" + zona1 + "', '4',  '4');")
             consultar()
         End If
 
@@ -4128,48 +4187,98 @@
 
 
         If cambiador15c1 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '1');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '5',  '1');")
             consultar()
         End If
 
         If cambiador15c2 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '2');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '5',  '2');")
             consultar()
         End If
 
 
         If cambiador15c3 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '3');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '5',  '3');")
             consultar()
         End If
 
         If cambiador15c4 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '4');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente15c2E + "','" + zona1 + "', '5',  '4');")
             consultar()
         End If
 
         '--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         If cambiador16c1 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '1');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '6',  '1');")
             consultar()
         End If
 
         If cambiador16c2 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '2');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '6',  '2');")
             consultar()
         End If
 
 
         If cambiador16c3 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '3');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '6',  '3');")
             consultar()
         End If
 
         If cambiador16c4 = True Then
-            Consulta = ("insert into estado_dientes (id_p,descripcion,zona,nro_diente,id_c , cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '1', '" + frmCitas.idcita.ToString + "' , '4');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente16c2E + "','" + zona1 + "', '6',  '4');")
             consultar()
         End If
+
+
+        '-----------------------------------------------------------------------------
+
+        If cambiador17c1 = True Then
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente17c2E + "','" + zona1 + "', '7',  '1');")
+            consultar()
+        End If
+
+        If cambiador17c2 = True Then
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente17c2E + "','" + zona1 + "', '7',  '2');")
+            consultar()
+        End If
+
+
+        If cambiador17c3 = True Then
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente17c2E + "','" + zona1 + "', '7',  '3');")
+            consultar()
+        End If
+
+        If cambiador17c4 = True Then
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente17c2E + "','" + zona1 + "', '7',  '4');")
+            consultar()
+        End If
+
+        ''-----------------------------------------------------------------------------
+
+        If cambiador18c1 = True Then
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente18c2E + "','" + zona1 + "', '8',  '1');")
+            consultar()
+        End If
+
+        If cambiador18c2 = True Then
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente18c2E + "','" + zona1 + "', '8',  '2');")
+            consultar()
+        End If
+
+
+        If cambiador18c3 = True Then
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente18c2E + "','" + zona1 + "', '8',  '3');")
+            consultar()
+        End If
+
+        If cambiador18c4 = True Then
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente, cara) values ('" + id_p.ToString + "','" + diente18c2E + "','" + zona1 + "', '8',  '4');")
+            consultar()
+
+        End If
+
+
 
 
 
