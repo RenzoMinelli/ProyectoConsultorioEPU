@@ -355,7 +355,7 @@ Partial Class frmMenuInicio
         Me.pnlMenu.Size = New System.Drawing.Size(174, 731)
         Me.pnlMenu.TabIndex = 5
         '
-        'Menu_Inicio
+        'frmMenuInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -365,7 +365,7 @@ Partial Class frmMenuInicio
         Me.Controls.Add(Me.pnlMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.IsMdiContainer = True
-        Me.Name = "Menu_Inicio"
+        Me.Name = "frmMenuInicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Inicio"
         Me.pnlBarraSuperior.ResumeLayout(False)
