@@ -15,13 +15,6 @@
 
     Dim extra As Integer = 0, cont As Integer = 0
 
-
-    Dim rutaGuardadoFotos As String = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) + "\Imágenes VB" 'Ruta en la que se guardarán las imágenes cargadas: "Escritorio\Imágenes VB"
-
-
-
-
-
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarPaciente.Click
 
         'Al presionar el boton btnAgregarPaciente, se oculta el formulario actual, se guarda el formulario Agregar_Paciente en el frmContenedor y se muestra
@@ -541,4 +534,7 @@
     End Sub
 
    
+    Private Sub dgvImagenes_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvImagenes.CellContentClick
+
+    End Sub
 End Class

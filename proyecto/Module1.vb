@@ -16,6 +16,7 @@ Module Module1
     Public id_p As Integer
 
     Public frmContenedor As New Form
+    Public rutaGuardadoFotos As String = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) + "\Imágenes VB" 'Ruta en la que se guardarán las imágenes cargadas: "Escritorio\Imágenes VB"
 
     Public respint As Integer
     Public respString As String

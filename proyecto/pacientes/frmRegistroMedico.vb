@@ -15,6 +15,34 @@
 
         actTabla()
 
+        cbSeleccion.SelectedIndex = 0
+
+    End Sub
+    Private Sub cargar()
+
+        Dim vista As New DataGridViewImageColumn
+        vista.Name = "vista"
+        vista.ImageLayout = DataGridViewImageCellLayout.Zoom
+        dgvRegistroMedico.Columns.Add(vista)
+
+        Dim filas As Integer
+        Dim ruta As String
+
+        Try
+            Consulta = ("SELECT  nombre, descripcion FROM documentos where id_p = '" + id_p.ToString + "'")
+            consultar()
+
+            dgvRegistroMedico.DataSource = Tabla
+            dgvRegistroMedico.Columns(1).Visible = False
+            filas = dgvRegistroMedico.Rows.Count - 1
+            For i As Integer = 0 To filas
+                ruta = dgvRegistroMedico.Rows(i).Cells(1).Value.ToString()
+                dgvRegistroMedico.Rows(i).Cells(0).Value = System.Drawing.Image.FromFile(rutaGuardadoFotos + "\" + dgvRegistroMedico.Rows(i).Cells(1).Value.ToString())
+                dgvRegistroMedico.Rows(i).Height = 200
+            Next
+        Catch ex As Exception
+            MsgBox("Error al obtener las imagenes", MsgBoxStyle.Exclamation)
+        End Try
     End Sub
 
     Private Sub actBoca()
@@ -506,6 +534,19 @@
 
 
 
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub cbSeleccion_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbSeleccion.SelectedIndexChanged
+        If cbSeleccion.SelectedIndex = 0 Then
+            actTabla()
+        ElseIf cbSeleccion.SelectedIndex = 1 Then
+            cargar()
+
+
+        End If
+    End Sub
 End Class
 
 
