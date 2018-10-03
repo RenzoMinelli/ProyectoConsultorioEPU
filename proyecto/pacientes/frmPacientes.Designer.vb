@@ -60,7 +60,6 @@ Partial Class frmPacientes
         Me.dgvFiltro = New System.Windows.Forms.DataGridView()
         Me.btnCambiarPacientes = New System.Windows.Forms.Button()
         Me.btnCargar = New System.Windows.Forms.Button()
-        Me.dgvImagenes = New System.Windows.Forms.DataGridView()
         Me.tmrOpcionesExtra = New System.Windows.Forms.Timer(Me.components)
         Me.pnlOpcionesExtra = New System.Windows.Forms.Panel()
         Me.pbFlecha = New System.Windows.Forms.PictureBox()
@@ -68,7 +67,6 @@ Partial Class frmPacientes
         Me.pnlTapa.SuspendLayout()
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvFiltro, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvImagenes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlOpcionesExtra.SuspendLayout()
         CType(Me.pbFlecha, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -506,20 +504,6 @@ Partial Class frmPacientes
         Me.btnCargar.UseVisualStyleBackColor = True
         Me.btnCargar.Visible = False
         '
-        'dgvImagenes
-        '
-        Me.dgvImagenes.AllowUserToAddRows = False
-        Me.dgvImagenes.AllowUserToDeleteRows = False
-        Me.dgvImagenes.AllowUserToResizeColumns = False
-        Me.dgvImagenes.AllowUserToResizeRows = False
-        Me.dgvImagenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvImagenes.Location = New System.Drawing.Point(538, 355)
-        Me.dgvImagenes.Name = "dgvImagenes"
-        Me.dgvImagenes.ReadOnly = True
-        Me.dgvImagenes.RowHeadersVisible = False
-        Me.dgvImagenes.Size = New System.Drawing.Size(60, 53)
-        Me.dgvImagenes.TabIndex = 22
-        '
         'tmrOpcionesExtra
         '
         Me.tmrOpcionesExtra.Interval = 15
@@ -552,7 +536,6 @@ Partial Class frmPacientes
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1300, 750)
         Me.Controls.Add(Me.pnlOpcionesExtra)
-        Me.Controls.Add(Me.dgvImagenes)
         Me.Controls.Add(Me.pnlTapa)
         Me.Controls.Add(Me.btnCambiarPacientes)
         Me.Controls.Add(Me.dgvFiltro)
@@ -575,7 +558,6 @@ Partial Class frmPacientes
         Me.pnlTapa.ResumeLayout(False)
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvFiltro, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvImagenes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlOpcionesExtra.ResumeLayout(False)
         CType(Me.pbFlecha, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -617,7 +599,6 @@ Partial Class frmPacientes
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents lblEstado As System.Windows.Forms.Label
     Friend WithEvents btnCargar As System.Windows.Forms.Button
-    Friend WithEvents dgvImagenes As System.Windows.Forms.DataGridView
     Friend WithEvents tmrOpcionesExtra As System.Windows.Forms.Timer
     Friend WithEvents pnlOpcionesExtra As System.Windows.Forms.Panel
     Friend WithEvents pbFlecha As System.Windows.Forms.PictureBox

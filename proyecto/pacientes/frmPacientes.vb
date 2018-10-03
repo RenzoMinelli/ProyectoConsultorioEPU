@@ -38,11 +38,7 @@
 
         My.Computer.FileSystem.CreateDirectory(rutaGuardadoFotos) 'Crea la carpeta "Imágenes VB" en el escritorio si esta no existe
 
-        Dim vista As New DataGridViewImageColumn
-        vista.Name = "vista"
-        vista.ImageLayout = DataGridViewImageCellLayout.Zoom
-        dgvImagenes.Columns.Add(vista)
-
+        
         pnlOpcionesExtra.Width = 50
     End Sub
 
@@ -340,7 +336,7 @@
         'Luego actualizamos el Panel
         actPanel()
 
-        cargar()
+
     End Sub
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRealizarPago.Click
@@ -473,7 +469,7 @@
                     consultar()
 
                     My.Computer.FileSystem.CopyFile(rutaArchivo, rutaGuardadoFotos + "\" + nombreArchivo) 'Copia imagen seleccionada en la carpeta de guardado, no sobreescribe duplicados
-                    cargar()
+
                     MsgBox("Archivo cargado", MsgBoxStyle.Information)
                 End If
 
@@ -487,27 +483,7 @@
 
     End Sub
 
-    Private Sub cargar()
-       
-        Dim filas As Integer
-        Dim ruta As String
-
-        Try
-            Consulta = ("SELECT  nombre, descripcion FROM documentos where id_p = '" + id_p.ToString + "'")
-            consultar()
-
-            dgvImagenes.DataSource = Tabla
-            dgvImagenes.Columns(1).Visible = False
-            filas = dgvImagenes.Rows.Count - 1
-            For i As Integer = 0 To filas
-                ruta = dgvImagenes.Rows(i).Cells(1).Value.ToString()
-                dgvImagenes.Rows(i).Cells(0).Value = System.Drawing.Image.FromFile(rutaGuardadoFotos + "\" + dgvImagenes.Rows(i).Cells(1).Value.ToString())
-                dgvImagenes.Rows(i).Height = 200
-            Next
-        Catch ex As Exception
-            MsgBox("Error al obtener las imagenes", MsgBoxStyle.Exclamation)
-        End Try
-    End Sub
+    
 
     Private Sub tmrOpcionesExtra_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrOpcionesExtra.Tick
         If extra = 0 Then
@@ -539,7 +515,7 @@
     End Sub
 
    
-    Private Sub dgvImagenes_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvImagenes.CellContentClick
+    Private Sub dgvImagenes_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
 
     End Sub
 End Class
