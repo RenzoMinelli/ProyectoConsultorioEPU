@@ -328,7 +328,7 @@
     Private Sub PictureBox9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbMaximizar.Click
         If con = 1 Then
 
-            Me.Width = 1338
+            Me.Width = 1350
             Me.Height = 919
 
             Me.WindowState = FormWindowState.Normal
