@@ -1,4 +1,6 @@
-﻿Public Class frmRegistroMedico
+﻿
+
+Public Class frmRegistroMedico
     Dim formu As New Form
 
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -546,6 +548,10 @@
 
 
         End If
+    End Sub
+
+    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
     End Sub
 End Class
 
