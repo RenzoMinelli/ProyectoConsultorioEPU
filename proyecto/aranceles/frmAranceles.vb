@@ -9,20 +9,21 @@
             consultar()
             DataGridView1.DataSource = Tabla
             DataGridView1.ClearSelection()
+
             btnEliminar.Hide()
             btnEditar.Hide()
-            ' Label2.ForeColor = Color.Gold
+
             DataGridView1.Columns(0).Visible = False
-            '   Me.WindowState = FormWindowState.Maximized
+
 
             DataGridView1.Columns(0).Width = 300
 
             DataGridView1.Columns(1).Width = 300
 
-            DataGridView1.Columns(2).Width = 310
+            DataGridView1.Columns(2).Visible = False
 
         Catch ex As Exception
-
+            MsgBox("error al consultar aranceles en la base de datos", MsgBoxStyle.Exclamation)
         End Try
 
 

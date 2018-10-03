@@ -340,7 +340,7 @@ Partial Class pnlfondo
         '
         'PnlDiente41c2
         '
-        Me.PnlDiente41c2.BackColor = System.Drawing.Color.Red
+        Me.PnlDiente41c2.BackColor = System.Drawing.Color.White
         Me.PnlDiente41c2.Location = New System.Drawing.Point(414, 180)
         Me.PnlDiente41c2.Name = "PnlDiente41c2"
         Me.PnlDiente41c2.Size = New System.Drawing.Size(18, 34)
