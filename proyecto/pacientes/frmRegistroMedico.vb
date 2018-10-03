@@ -21,6 +21,7 @@ Public Class frmRegistroMedico
 
     End Sub
     Private Sub cargar()
+       
 
         Dim vista As New DataGridViewImageColumn
         vista.Name = "vista"
@@ -49,6 +50,7 @@ Public Class frmRegistroMedico
 
     Private Sub actBoca()
         Try
+           
             Consulta = "select * from estado_dientes where id_p = '" + id_p.ToString + "';"
             consultar()
             dgvEstadoDiente.DataSource = Tabla
@@ -513,7 +515,11 @@ Public Class frmRegistroMedico
 
     Private Sub actTabla()
         Try
+            Try
+                dgvRegistroMedico.Columns.Remove("vista")
+            Catch ex As Exception
 
+            End Try
             Consulta = "Select descripcion, fecha, hora, atendida from cita where id_p = '" + Str(id_p) + "';"
             consultar()
 
@@ -533,14 +539,8 @@ Public Class frmRegistroMedico
 
 
 
-
-
-
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
     Private Sub cbSeleccion_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbSeleccion.SelectedIndexChanged
+
         If cbSeleccion.SelectedIndex = 0 Then
             actTabla()
         ElseIf cbSeleccion.SelectedIndex = 1 Then
@@ -550,12 +550,23 @@ Public Class frmRegistroMedico
         End If
     End Sub
 
-    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+    Private Sub btnMostrarPlaca_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMostrarPlaca.Click
+
+        frmMenuInicio.Hide()
+        frmMuestraPlaca.Show()
+
+        frmMuestraPlaca.PictureBox1.ImageLocation = rutaGuardadoFotos + "\" + dgvRegistroMedico.CurrentRow.Cells(1).Value.ToString()
+        frmMuestraPlaca.txbDescripcion.Text = ""
+
+    End Sub
+
+    Private Sub dgvRegistroMedico_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgvRegistroMedico.MouseClick
+        If cbSeleccion.SelectedIndex = 1 Then
+
+            btnMostrarPlaca.Show()
+        End If
+
 
     End Sub
 End Class
-
-
-
-
-

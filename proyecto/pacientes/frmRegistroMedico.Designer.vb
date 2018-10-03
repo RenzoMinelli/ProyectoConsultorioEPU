@@ -80,6 +80,7 @@ Partial Class frmRegistroMedico
         Me.dgvTratamientos = New System.Windows.Forms.DataGridView()
         Me.cbSeleccion = New System.Windows.Forms.ComboBox()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnMostrarPlaca = New System.Windows.Forms.Button()
         CType(Me.dgvRegistroMedico, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvEstadoDiente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
@@ -148,7 +149,7 @@ Partial Class frmRegistroMedico
         Me.dgvRegistroMedico.Name = "dgvRegistroMedico"
         Me.dgvRegistroMedico.ReadOnly = True
         Me.dgvRegistroMedico.RowHeadersVisible = False
-        Me.dgvRegistroMedico.Size = New System.Drawing.Size(1120, 192)
+        Me.dgvRegistroMedico.Size = New System.Drawing.Size(1120, 231)
         Me.dgvRegistroMedico.TabIndex = 22
         '
         'Button1
@@ -156,7 +157,7 @@ Partial Class frmRegistroMedico
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(450, 604)
+        Me.Button1.Location = New System.Drawing.Point(219, 642)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(137, 71)
         Me.Button1.TabIndex = 24
@@ -733,11 +734,24 @@ Partial Class frmRegistroMedico
         Me.Button2.Text = "Imprimir Presupuesto"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'btnMostrarPlaca
+        '
+        Me.btnMostrarPlaca.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMostrarPlaca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMostrarPlaca.Location = New System.Drawing.Point(725, 642)
+        Me.btnMostrarPlaca.Name = "btnMostrarPlaca"
+        Me.btnMostrarPlaca.Size = New System.Drawing.Size(137, 71)
+        Me.btnMostrarPlaca.TabIndex = 53
+        Me.btnMostrarPlaca.Text = "Mostrar Placa"
+        Me.btnMostrarPlaca.UseVisualStyleBackColor = True
+        Me.btnMostrarPlaca.Visible = False
+        '
         'frmRegistroMedico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1184, 725)
+        Me.Controls.Add(Me.btnMostrarPlaca)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.cbSeleccion)
         Me.Controls.Add(Me.dgvTratamientos)
@@ -847,4 +861,5 @@ Partial Class frmRegistroMedico
     Friend WithEvents dgvTratamientos As System.Windows.Forms.DataGridView
     Friend WithEvents cbSeleccion As System.Windows.Forms.ComboBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnMostrarPlaca As System.Windows.Forms.Button
 End Class

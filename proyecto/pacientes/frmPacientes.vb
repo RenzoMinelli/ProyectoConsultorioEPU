@@ -461,18 +461,23 @@
             If dialogoCarga.ShowDialog() = Windows.Forms.DialogResult.OK Then 'Solo si se ha seleccionado alguna imagen
                 rutaArchivo = dialogoCarga.FileName 'Guarda la ruta con el nombre del archivo
 
+                MuestraMsgBoxVersatil("Ingrese una descripción para la foto", 2)
+                If respint = 2 Then
+                    MsgBox("Operación cancelada", MsgBoxStyle.Information)
+                Else
+                    posicionBarra = InStrRev(rutaArchivo, "\") ' Obtiene la posición en la que se encuentra la barra invertida en el String
+                    longitudNombre = rutaArchivo.Length - posicionBarra 'Obtiene la cantidad de caracteres que ocupa el nombre
 
+                    nombreArchivo = rutaArchivo.Substring(posicionBarra, longitudNombre) 'Corta la parte del nombre de la ruta completa
+                    Consulta = "INSERT INTO documentos (nombre, id_p, descripcion) VALUES ('" + nombreArchivo + "', '" + id_p.ToString + "','" + respString + "');"
+                    consultar()
 
-                posicionBarra = InStrRev(rutaArchivo, "\") ' Obtiene la posición en la que se encuentra la barra invertida en el String
-                longitudNombre = rutaArchivo.Length - posicionBarra 'Obtiene la cantidad de caracteres que ocupa el nombre
+                    My.Computer.FileSystem.CopyFile(rutaArchivo, rutaGuardadoFotos + "\" + nombreArchivo) 'Copia imagen seleccionada en la carpeta de guardado, no sobreescribe duplicados
+                    cargar()
+                    MsgBox("Archivo cargado", MsgBoxStyle.Information)
+                End If
 
-                nombreArchivo = rutaArchivo.Substring(posicionBarra, longitudNombre) 'Corta la parte del nombre de la ruta completa
-                Consulta = "INSERT INTO documentos (nombre, id_p) VALUES ('" + nombreArchivo + "', '" + id_p.ToString + "');"
-                consultar()
-
-                My.Computer.FileSystem.CopyFile(rutaArchivo, rutaGuardadoFotos + "\" + nombreArchivo) 'Copia imagen seleccionada en la carpeta de guardado, no sobreescribe duplicados
-                cargar()
-                MsgBox("Archivo cargado", MsgBoxStyle.Information)
+               
             End If
 
         Catch ex As Exception
