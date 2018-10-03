@@ -16,11 +16,13 @@
             DataGridView1.Columns(0).Visible = False
 
 
-            DataGridView1.Columns(0).Width = 300
 
-            DataGridView1.Columns(1).Width = 300
 
-            DataGridView1.Columns(2).Visible = False
+            DataGridView1.Columns(1).Width = 400
+
+            DataGridView1.Columns(2).Width = 350
+
+            DataGridView1.Columns(3).Visible = False
 
         Catch ex As Exception
             MsgBox("error al consultar aranceles en la base de datos", MsgBoxStyle.Exclamation)
