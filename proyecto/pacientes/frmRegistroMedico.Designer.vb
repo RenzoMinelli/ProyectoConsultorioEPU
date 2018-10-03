@@ -33,7 +33,7 @@ Partial Class frmRegistroMedico
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvRegistroMedico = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.dgvEstadoDiente = New System.Windows.Forms.DataGridView()
+        Me.dgvDatos = New System.Windows.Forms.DataGridView()
         Me.Panel000 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel0000 = New System.Windows.Forms.Panel()
@@ -82,13 +82,13 @@ Partial Class frmRegistroMedico
         Me.lblPlanTratamiento = New System.Windows.Forms.Label()
         Me.dgvTratamientos = New System.Windows.Forms.DataGridView()
         Me.cbSeleccion = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnPresupuesto = New System.Windows.Forms.Button()
         Me.btnMostrarPlaca = New System.Windows.Forms.Button()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.dgvAuxiliar = New System.Windows.Forms.DataGridView()
         CType(Me.dgvRegistroMedico, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvEstadoDiente, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvDatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
         CType(Me.pbDiente16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDiente17, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -164,22 +164,22 @@ Partial Class frmRegistroMedico
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(219, 642)
+        Me.Button1.Location = New System.Drawing.Point(228, 616)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(137, 71)
+        Me.Button1.Size = New System.Drawing.Size(137, 59)
         Me.Button1.TabIndex = 24
         Me.Button1.Text = "Atrás"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'dgvEstadoDiente
+        'dgvDatos
         '
-        Me.dgvEstadoDiente.AllowUserToAddRows = False
-        Me.dgvEstadoDiente.AllowUserToDeleteRows = False
-        Me.dgvEstadoDiente.AllowUserToResizeColumns = False
-        Me.dgvEstadoDiente.AllowUserToResizeRows = False
-        Me.dgvEstadoDiente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvEstadoDiente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvDatos.AllowUserToAddRows = False
+        Me.dgvDatos.AllowUserToDeleteRows = False
+        Me.dgvDatos.AllowUserToResizeColumns = False
+        Me.dgvDatos.AllowUserToResizeRows = False
+        Me.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvDatos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -187,8 +187,8 @@ Partial Class frmRegistroMedico
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvEstadoDiente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.dgvEstadoDiente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDatos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -196,15 +196,15 @@ Partial Class frmRegistroMedico
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvEstadoDiente.DefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvEstadoDiente.Location = New System.Drawing.Point(1136, 9)
-        Me.dgvEstadoDiente.MultiSelect = False
-        Me.dgvEstadoDiente.Name = "dgvEstadoDiente"
-        Me.dgvEstadoDiente.ReadOnly = True
-        Me.dgvEstadoDiente.RowHeadersVisible = False
-        Me.dgvEstadoDiente.Size = New System.Drawing.Size(36, 27)
-        Me.dgvEstadoDiente.TabIndex = 27
-        Me.dgvEstadoDiente.Visible = False
+        Me.dgvDatos.DefaultCellStyle = DataGridViewCellStyle4
+        Me.dgvDatos.Location = New System.Drawing.Point(1136, 9)
+        Me.dgvDatos.MultiSelect = False
+        Me.dgvDatos.Name = "dgvDatos"
+        Me.dgvDatos.ReadOnly = True
+        Me.dgvDatos.RowHeadersVisible = False
+        Me.dgvDatos.Size = New System.Drawing.Size(36, 27)
+        Me.dgvDatos.TabIndex = 27
+        Me.dgvDatos.Visible = False
         '
         'Panel000
         '
@@ -731,30 +731,27 @@ Partial Class frmRegistroMedico
         Me.cbSeleccion.Size = New System.Drawing.Size(255, 33)
         Me.cbSeleccion.TabIndex = 51
         '
-        'Button2
+        'btnPresupuesto
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(696, 314)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(415, 36)
-        Me.Button2.TabIndex = 52
-        Me.Button2.Text = "Imprimir Presupuesto"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnPresupuesto.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPresupuesto.Location = New System.Drawing.Point(696, 314)
+        Me.btnPresupuesto.Name = "btnPresupuesto"
+        Me.btnPresupuesto.Size = New System.Drawing.Size(415, 36)
+        Me.btnPresupuesto.TabIndex = 52
+        Me.btnPresupuesto.Text = "Imprimir Presupuesto"
+        Me.btnPresupuesto.UseVisualStyleBackColor = True
         '
         'btnMostrarPlaca
         '
         Me.btnMostrarPlaca.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMostrarPlaca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnMostrarPlaca.Location = New System.Drawing.Point(725, 642)
+        Me.btnMostrarPlaca.Location = New System.Drawing.Point(723, 616)
         Me.btnMostrarPlaca.Name = "btnMostrarPlaca"
-        Me.btnMostrarPlaca.Size = New System.Drawing.Size(137, 71)
+        Me.btnMostrarPlaca.Size = New System.Drawing.Size(137, 59)
         Me.btnMostrarPlaca.TabIndex = 53
         Me.btnMostrarPlaca.Text = "Mostrar Placa"
         Me.btnMostrarPlaca.UseVisualStyleBackColor = True
         Me.btnMostrarPlaca.Visible = False
-        '
-        'PrintDocument1
-        '
         '
         'PrintPreviewDialog1
         '
@@ -806,13 +803,13 @@ Partial Class frmRegistroMedico
         Me.ClientSize = New System.Drawing.Size(1184, 725)
         Me.Controls.Add(Me.dgvAuxiliar)
         Me.Controls.Add(Me.btnMostrarPlaca)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnPresupuesto)
         Me.Controls.Add(Me.cbSeleccion)
         Me.Controls.Add(Me.dgvTratamientos)
         Me.Controls.Add(Me.lblPlanTratamiento)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label37)
-        Me.Controls.Add(Me.dgvEstadoDiente)
+        Me.Controls.Add(Me.dgvDatos)
         Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.dgvRegistroMedico)
@@ -822,7 +819,7 @@ Partial Class frmRegistroMedico
         Me.Name = "frmRegistroMedico"
         Me.Text = "Registro_Medico"
         CType(Me.dgvRegistroMedico, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvEstadoDiente, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvDatos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel01477.ResumeLayout(False)
         Me.Panel01477.PerformLayout()
         CType(Me.pbDiente16, System.ComponentModel.ISupportInitialize).EndInit()
@@ -866,7 +863,7 @@ Partial Class frmRegistroMedico
     End Sub
     Friend WithEvents dgvRegistroMedico As System.Windows.Forms.DataGridView
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents dgvEstadoDiente As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvDatos As System.Windows.Forms.DataGridView
     Friend WithEvents Panel000 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Panel0000 As System.Windows.Forms.Panel
@@ -915,7 +912,7 @@ Partial Class frmRegistroMedico
     Friend WithEvents lblPlanTratamiento As System.Windows.Forms.Label
     Friend WithEvents dgvTratamientos As System.Windows.Forms.DataGridView
     Friend WithEvents cbSeleccion As System.Windows.Forms.ComboBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnPresupuesto As System.Windows.Forms.Button
     Friend WithEvents btnMostrarPlaca As System.Windows.Forms.Button
     Friend WithEvents PrintDocument1 As System.Drawing.Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As System.Windows.Forms.PrintPreviewDialog
