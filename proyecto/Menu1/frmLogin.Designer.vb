@@ -69,7 +69,7 @@ Partial Class frmLogin
         Me.btningresar.Name = "btningresar"
         Me.btningresar.Size = New System.Drawing.Size(216, 89)
         Me.btningresar.TabIndex = 7
-        Me.btningresar.Text = "ingresar"
+        Me.btningresar.Text = "Ingresar"
         Me.btningresar.UseVisualStyleBackColor = True
         '
         'dgbcontraseña
@@ -100,7 +100,7 @@ Partial Class frmLogin
         Me.btnAtras.Text = "Atras"
         Me.btnAtras.UseVisualStyleBackColor = True
         '
-        'Login
+        'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -113,7 +113,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.btnfuncionario)
         Me.Controls.Add(Me.btnodontologo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Name = "Login"
+        Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         CType(Me.dgbcontraseña, System.ComponentModel.ISupportInitialize).EndInit()

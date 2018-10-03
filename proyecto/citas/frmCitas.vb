@@ -2555,4 +2555,8 @@
     Private Sub dgvConsultaDia_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvConsultaDia.CellContentClick
 
     End Sub
+
+    Private Sub dgvHora_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvHora.CellContentClick
+
+    End Sub
 End Class
