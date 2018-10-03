@@ -15,7 +15,9 @@
     Dim listaResultados() As Integer
     Dim cont As Integer
     Dim extra As Integer
+    Dim contador3d As Integer
     Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        PnlSubmenu3d.Visible = False
         Pnl3d.Visible = True
         PnlTipo.Visible = True
         PnlGrafica.Visible = True
@@ -119,9 +121,9 @@
 
 
     End Sub
-    Private Sub grafica_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles grafica.Click
 
-    End Sub
+
+
 
     Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
         Movimiento.Start()
@@ -194,13 +196,11 @@
 
 
 
-    Private Sub pnldesplmenu_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnldesplmenu.MouseLeave
-
-    End Sub
-
     Private Sub frmGraficas_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.MouseEnter
         PnlPromedades.BackColor = Color.MidnightBlue
         Pnlact3d.BackColor = Color.MidnightBlue
+        PnlSubmenu3d.Visible = False
+        PnlSubMenuDatos.Visible = False
     End Sub
 
     Private Sub PnlMenu_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlMenu.MouseEnter
@@ -211,13 +211,13 @@
 
     Private Sub PnlSubMenuDatos_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubMenuDatos.MouseEnter
         PnlPromedades.BackColor = Color.MidnightBlue
-        Pnlact3d.BackColor = Color.MidnightBlue
     End Sub
 
 
     Private Sub PnlGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlGrafica.MouseEnter
         PnlPromedades.BackColor = Color.MidnightBlue
         Pnlact3d.BackColor = Color.MidnightBlue
+
     End Sub
 
     Private Sub LblActivar3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblActivar3d.Click
@@ -233,13 +233,11 @@
         Pnlact3d.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub PnlSubMenuDatos_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubMenuDatos.MouseLeave
-
+    Private Sub Pnl3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Pnl3d.MouseEnter
+        Pnlact3d.BackColor = Color.MidnightBlue
     End Sub
 
-    Private Sub PnlSubmenu3d_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubmenu3d.MouseLeave
 
-    End Sub
 
     Private Sub Pnl3d_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Pnl3d.Paint
 
@@ -251,4 +249,26 @@
     End Sub
 
 
+    Private Sub PnlGrafica_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles PnlGrafica.Paint
+        If PnlSubMenuDatos.Visible = True Then
+            PnlSubMenuDatos.Visible = False
+        Else
+            PnlSubMenuDatos.Visible = True
+
+        End If
+    End Sub
+
+    Private Sub grafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles grafica.MouseEnter
+        PnlSubmenu3d.Visible = False
+    End Sub
+
+
+
+    Private Sub LblGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblGrafica.MouseEnter
+
+    End Sub
+
+    Private Sub PnlSubmenu3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubmenu3d.MouseEnter
+        Pnlact3d.BackColor = Color.MidnightBlue
+    End Sub
 End Class

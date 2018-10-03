@@ -44,4 +44,9 @@
         End If
 
     End Sub
+
+    Private Sub pbCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCerrar.Click
+        Me.Dispose()
+
+    End Sub
 End Class

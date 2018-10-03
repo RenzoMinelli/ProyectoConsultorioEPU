@@ -383,4 +383,7 @@
 
 
 
+    Private Sub pnlBarraSuperior_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlBarraSuperior.Paint
+
+    End Sub
 End Class

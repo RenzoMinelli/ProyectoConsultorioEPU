@@ -82,35 +82,39 @@ Partial Class frmMenuInicio
         Me.pnlBarraSuperior.Controls.Add(Me.pbCerrar)
         Me.pnlBarraSuperior.Controls.Add(Me.pbMinimizar)
         Me.pnlBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlBarraSuperior.Location = New System.Drawing.Point(174, 0)
+        Me.pnlBarraSuperior.Location = New System.Drawing.Point(232, 0)
+        Me.pnlBarraSuperior.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlBarraSuperior.Name = "pnlBarraSuperior"
-        Me.pnlBarraSuperior.Size = New System.Drawing.Size(1206, 38)
+        Me.pnlBarraSuperior.Size = New System.Drawing.Size(1608, 47)
         Me.pnlBarraSuperior.TabIndex = 7
         '
         'pbMaximizar
         '
         Me.pbMaximizar.Image = Global.WindowsApplication1.My.Resources.Resources.maximize_window_1_
-        Me.pbMaximizar.Location = New System.Drawing.Point(1071, 6)
+        Me.pbMaximizar.Location = New System.Drawing.Point(1428, 7)
+        Me.pbMaximizar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbMaximizar.Name = "pbMaximizar"
-        Me.pbMaximizar.Size = New System.Drawing.Size(28, 29)
+        Me.pbMaximizar.Size = New System.Drawing.Size(37, 36)
         Me.pbMaximizar.TabIndex = 19
         Me.pbMaximizar.TabStop = False
         '
         'pbCerrar
         '
         Me.pbCerrar.Image = Global.WindowsApplication1.My.Resources.Resources.media_1_
-        Me.pbCerrar.Location = New System.Drawing.Point(1105, 6)
+        Me.pbCerrar.Location = New System.Drawing.Point(1473, 7)
+        Me.pbCerrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbCerrar.Name = "pbCerrar"
-        Me.pbCerrar.Size = New System.Drawing.Size(27, 32)
+        Me.pbCerrar.Size = New System.Drawing.Size(36, 39)
         Me.pbCerrar.TabIndex = 18
         Me.pbCerrar.TabStop = False
         '
         'pbMinimizar
         '
         Me.pbMinimizar.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
-        Me.pbMinimizar.Location = New System.Drawing.Point(1034, 6)
+        Me.pbMinimizar.Location = New System.Drawing.Point(1379, 7)
+        Me.pbMinimizar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbMinimizar.Name = "pbMinimizar"
-        Me.pbMinimizar.Size = New System.Drawing.Size(28, 32)
+        Me.pbMinimizar.Size = New System.Drawing.Size(37, 39)
         Me.pbMinimizar.TabIndex = 17
         Me.pbMinimizar.TabStop = False
         '
@@ -120,9 +124,10 @@ Partial Class frmMenuInicio
         Me.lblReloj.BackColor = System.Drawing.Color.Transparent
         Me.lblReloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblReloj.ForeColor = System.Drawing.Color.White
-        Me.lblReloj.Location = New System.Drawing.Point(12, 3)
+        Me.lblReloj.Location = New System.Drawing.Point(16, 4)
+        Me.lblReloj.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblReloj.Name = "lblReloj"
-        Me.lblReloj.Size = New System.Drawing.Size(103, 29)
+        Me.lblReloj.Size = New System.Drawing.Size(133, 36)
         Me.lblReloj.TabIndex = 9
         Me.lblReloj.Text = "00:00:00"
         '
@@ -131,17 +136,19 @@ Partial Class frmMenuInicio
         Me.pnlPacientes.BackColor = System.Drawing.Color.Silver
         Me.pnlPacientes.Controls.Add(Me.pbPacientes)
         Me.pnlPacientes.Controls.Add(Me.lblPacientes)
-        Me.pnlPacientes.Location = New System.Drawing.Point(13, 129)
+        Me.pnlPacientes.Location = New System.Drawing.Point(17, 159)
+        Me.pnlPacientes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlPacientes.Name = "pnlPacientes"
-        Me.pnlPacientes.Size = New System.Drawing.Size(161, 32)
+        Me.pnlPacientes.Size = New System.Drawing.Size(215, 39)
         Me.pnlPacientes.TabIndex = 22
         '
         'pbPacientes
         '
         Me.pbPacientes.Image = Global.WindowsApplication1.My.Resources.Resources._25437
-        Me.pbPacientes.Location = New System.Drawing.Point(6, 2)
+        Me.pbPacientes.Location = New System.Drawing.Point(8, 2)
+        Me.pbPacientes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbPacientes.Name = "pbPacientes"
-        Me.pbPacientes.Size = New System.Drawing.Size(27, 32)
+        Me.pbPacientes.Size = New System.Drawing.Size(36, 39)
         Me.pbPacientes.TabIndex = 13
         Me.pbPacientes.TabStop = False
         '
@@ -150,9 +157,10 @@ Partial Class frmMenuInicio
         Me.lblPacientes.AutoSize = True
         Me.lblPacientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPacientes.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblPacientes.Location = New System.Drawing.Point(39, 3)
+        Me.lblPacientes.Location = New System.Drawing.Point(52, 4)
+        Me.lblPacientes.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPacientes.Name = "lblPacientes"
-        Me.lblPacientes.Size = New System.Drawing.Size(119, 29)
+        Me.lblPacientes.Size = New System.Drawing.Size(145, 36)
         Me.lblPacientes.TabIndex = 9
         Me.lblPacientes.Text = "Pacientes"
         '
@@ -161,17 +169,19 @@ Partial Class frmMenuInicio
         Me.pnlCitas.BackColor = System.Drawing.Color.Silver
         Me.pnlCitas.Controls.Add(Me.pbCitas)
         Me.pnlCitas.Controls.Add(Me.lblCitas)
-        Me.pnlCitas.Location = New System.Drawing.Point(13, 93)
+        Me.pnlCitas.Location = New System.Drawing.Point(17, 114)
+        Me.pnlCitas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlCitas.Name = "pnlCitas"
-        Me.pnlCitas.Size = New System.Drawing.Size(161, 32)
+        Me.pnlCitas.Size = New System.Drawing.Size(215, 39)
         Me.pnlCitas.TabIndex = 21
         '
         'pbCitas
         '
         Me.pbCitas.Image = Global.WindowsApplication1.My.Resources.Resources.notebook
-        Me.pbCitas.Location = New System.Drawing.Point(6, 0)
+        Me.pbCitas.Location = New System.Drawing.Point(8, 0)
+        Me.pbCitas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbCitas.Name = "pbCitas"
-        Me.pbCitas.Size = New System.Drawing.Size(35, 39)
+        Me.pbCitas.Size = New System.Drawing.Size(47, 48)
         Me.pbCitas.TabIndex = 25
         Me.pbCitas.TabStop = False
         '
@@ -180,50 +190,56 @@ Partial Class frmMenuInicio
         Me.lblCitas.AutoSize = True
         Me.lblCitas.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCitas.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblCitas.Location = New System.Drawing.Point(39, 3)
+        Me.lblCitas.Location = New System.Drawing.Point(52, 4)
+        Me.lblCitas.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCitas.Name = "lblCitas"
-        Me.lblCitas.Size = New System.Drawing.Size(67, 29)
+        Me.lblCitas.Size = New System.Drawing.Size(82, 36)
         Me.lblCitas.TabIndex = 16
         Me.lblCitas.Text = "Citas"
         '
         'pnlPacientes2
         '
         Me.pnlPacientes2.BackColor = System.Drawing.Color.RoyalBlue
-        Me.pnlPacientes2.Location = New System.Drawing.Point(3, 129)
+        Me.pnlPacientes2.Location = New System.Drawing.Point(4, 159)
+        Me.pnlPacientes2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlPacientes2.Name = "pnlPacientes2"
-        Me.pnlPacientes2.Size = New System.Drawing.Size(10, 32)
+        Me.pnlPacientes2.Size = New System.Drawing.Size(13, 39)
         Me.pnlPacientes2.TabIndex = 6
         '
         'pnlAranceles2
         '
         Me.pnlAranceles2.BackColor = System.Drawing.Color.RoyalBlue
-        Me.pnlAranceles2.Location = New System.Drawing.Point(3, 165)
+        Me.pnlAranceles2.Location = New System.Drawing.Point(4, 203)
+        Me.pnlAranceles2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlAranceles2.Name = "pnlAranceles2"
-        Me.pnlAranceles2.Size = New System.Drawing.Size(10, 32)
+        Me.pnlAranceles2.Size = New System.Drawing.Size(13, 39)
         Me.pnlAranceles2.TabIndex = 7
         '
         'pnlCitas2
         '
         Me.pnlCitas2.BackColor = System.Drawing.Color.RoyalBlue
-        Me.pnlCitas2.Location = New System.Drawing.Point(3, 93)
+        Me.pnlCitas2.Location = New System.Drawing.Point(4, 114)
+        Me.pnlCitas2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlCitas2.Name = "pnlCitas2"
-        Me.pnlCitas2.Size = New System.Drawing.Size(10, 32)
+        Me.pnlCitas2.Size = New System.Drawing.Size(13, 39)
         Me.pnlCitas2.TabIndex = 7
         '
         'pnlFinanzas2
         '
         Me.pnlFinanzas2.BackColor = System.Drawing.Color.RoyalBlue
-        Me.pnlFinanzas2.Location = New System.Drawing.Point(3, 201)
+        Me.pnlFinanzas2.Location = New System.Drawing.Point(4, 247)
+        Me.pnlFinanzas2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlFinanzas2.Name = "pnlFinanzas2"
-        Me.pnlFinanzas2.Size = New System.Drawing.Size(10, 32)
+        Me.pnlFinanzas2.Size = New System.Drawing.Size(13, 39)
         Me.pnlFinanzas2.TabIndex = 8
         '
         'pnlGraficas2
         '
         Me.pnlGraficas2.BackColor = System.Drawing.Color.RoyalBlue
-        Me.pnlGraficas2.Location = New System.Drawing.Point(3, 237)
+        Me.pnlGraficas2.Location = New System.Drawing.Point(4, 292)
+        Me.pnlGraficas2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlGraficas2.Name = "pnlGraficas2"
-        Me.pnlGraficas2.Size = New System.Drawing.Size(10, 32)
+        Me.pnlGraficas2.Size = New System.Drawing.Size(13, 39)
         Me.pnlGraficas2.TabIndex = 9
         '
         'Panel8
@@ -231,16 +247,18 @@ Partial Class frmMenuInicio
         Me.Panel8.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel8.Controls.Add(Me.lblReloj)
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(182, 38)
+        Me.Panel8.Size = New System.Drawing.Size(243, 47)
         Me.Panel8.TabIndex = 20
         '
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
-        Me.PictureBox6.Location = New System.Drawing.Point(67, 676)
+        Me.PictureBox6.Location = New System.Drawing.Point(89, 832)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(25, 29)
+        Me.PictureBox6.Size = New System.Drawing.Size(33, 36)
         Me.PictureBox6.TabIndex = 15
         Me.PictureBox6.TabStop = False
         '
@@ -249,17 +267,19 @@ Partial Class frmMenuInicio
         Me.pnlGraficas.BackColor = System.Drawing.Color.Silver
         Me.pnlGraficas.Controls.Add(Me.pbGraficas)
         Me.pnlGraficas.Controls.Add(Me.lblGraficas)
-        Me.pnlGraficas.Location = New System.Drawing.Point(13, 237)
+        Me.pnlGraficas.Location = New System.Drawing.Point(17, 292)
+        Me.pnlGraficas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlGraficas.Name = "pnlGraficas"
-        Me.pnlGraficas.Size = New System.Drawing.Size(161, 32)
+        Me.pnlGraficas.Size = New System.Drawing.Size(215, 39)
         Me.pnlGraficas.TabIndex = 22
         '
         'pbGraficas
         '
         Me.pbGraficas.Image = Global.WindowsApplication1.My.Resources.Resources._20803
-        Me.pbGraficas.Location = New System.Drawing.Point(6, 2)
+        Me.pbGraficas.Location = New System.Drawing.Point(8, 2)
+        Me.pbGraficas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbGraficas.Name = "pbGraficas"
-        Me.pbGraficas.Size = New System.Drawing.Size(27, 32)
+        Me.pbGraficas.Size = New System.Drawing.Size(36, 39)
         Me.pbGraficas.TabIndex = 20
         Me.pbGraficas.TabStop = False
         '
@@ -268,9 +288,10 @@ Partial Class frmMenuInicio
         Me.lblGraficas.AutoSize = True
         Me.lblGraficas.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGraficas.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblGraficas.Location = New System.Drawing.Point(39, 1)
+        Me.lblGraficas.Location = New System.Drawing.Point(52, 1)
+        Me.lblGraficas.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGraficas.Name = "lblGraficas"
-        Me.lblGraficas.Size = New System.Drawing.Size(101, 29)
+        Me.lblGraficas.Size = New System.Drawing.Size(125, 36)
         Me.lblGraficas.TabIndex = 20
         Me.lblGraficas.Text = "Gráficas"
         '
@@ -279,17 +300,19 @@ Partial Class frmMenuInicio
         Me.pnlFinanzas.BackColor = System.Drawing.Color.Silver
         Me.pnlFinanzas.Controls.Add(Me.pbFinanzas)
         Me.pnlFinanzas.Controls.Add(Me.lblFinanzas)
-        Me.pnlFinanzas.Location = New System.Drawing.Point(13, 201)
+        Me.pnlFinanzas.Location = New System.Drawing.Point(17, 247)
+        Me.pnlFinanzas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlFinanzas.Name = "pnlFinanzas"
-        Me.pnlFinanzas.Size = New System.Drawing.Size(161, 32)
+        Me.pnlFinanzas.Size = New System.Drawing.Size(215, 39)
         Me.pnlFinanzas.TabIndex = 23
         '
         'pbFinanzas
         '
         Me.pbFinanzas.Image = Global.WindowsApplication1.My.Resources.Resources._64979
-        Me.pbFinanzas.Location = New System.Drawing.Point(7, 2)
+        Me.pbFinanzas.Location = New System.Drawing.Point(9, 2)
+        Me.pbFinanzas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbFinanzas.Name = "pbFinanzas"
-        Me.pbFinanzas.Size = New System.Drawing.Size(27, 32)
+        Me.pbFinanzas.Size = New System.Drawing.Size(36, 39)
         Me.pbFinanzas.TabIndex = 15
         Me.pbFinanzas.TabStop = False
         '
@@ -298,9 +321,10 @@ Partial Class frmMenuInicio
         Me.lblFinanzas.AutoSize = True
         Me.lblFinanzas.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFinanzas.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblFinanzas.Location = New System.Drawing.Point(39, 2)
+        Me.lblFinanzas.Location = New System.Drawing.Point(52, 2)
+        Me.lblFinanzas.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFinanzas.Name = "lblFinanzas"
-        Me.lblFinanzas.Size = New System.Drawing.Size(109, 29)
+        Me.lblFinanzas.Size = New System.Drawing.Size(136, 36)
         Me.lblFinanzas.TabIndex = 19
         Me.lblFinanzas.Text = "Finanzas"
         '
@@ -309,9 +333,10 @@ Partial Class frmMenuInicio
         Me.pnlAranceles.BackColor = System.Drawing.Color.Silver
         Me.pnlAranceles.Controls.Add(Me.lblAranceles)
         Me.pnlAranceles.Controls.Add(Me.pbAranceles)
-        Me.pnlAranceles.Location = New System.Drawing.Point(13, 165)
+        Me.pnlAranceles.Location = New System.Drawing.Point(17, 203)
+        Me.pnlAranceles.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlAranceles.Name = "pnlAranceles"
-        Me.pnlAranceles.Size = New System.Drawing.Size(163, 32)
+        Me.pnlAranceles.Size = New System.Drawing.Size(217, 39)
         Me.pnlAranceles.TabIndex = 24
         '
         'lblAranceles
@@ -319,18 +344,20 @@ Partial Class frmMenuInicio
         Me.lblAranceles.AutoSize = True
         Me.lblAranceles.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAranceles.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblAranceles.Location = New System.Drawing.Point(39, 3)
+        Me.lblAranceles.Location = New System.Drawing.Point(52, 4)
+        Me.lblAranceles.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAranceles.Name = "lblAranceles"
-        Me.lblAranceles.Size = New System.Drawing.Size(120, 29)
+        Me.lblAranceles.Size = New System.Drawing.Size(148, 36)
         Me.lblAranceles.TabIndex = 9
         Me.lblAranceles.Text = "Aranceles"
         '
         'pbAranceles
         '
         Me.pbAranceles.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
-        Me.pbAranceles.Location = New System.Drawing.Point(6, 3)
+        Me.pbAranceles.Location = New System.Drawing.Point(8, 4)
+        Me.pbAranceles.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbAranceles.Name = "pbAranceles"
-        Me.pbAranceles.Size = New System.Drawing.Size(27, 32)
+        Me.pbAranceles.Size = New System.Drawing.Size(36, 39)
         Me.pbAranceles.TabIndex = 14
         Me.pbAranceles.TabStop = False
         '
@@ -351,20 +378,22 @@ Partial Class frmMenuInicio
         Me.pnlMenu.Controls.Add(Me.pnlPacientes)
         Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlMenu.Location = New System.Drawing.Point(0, 0)
+        Me.pnlMenu.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlMenu.Name = "pnlMenu"
-        Me.pnlMenu.Size = New System.Drawing.Size(174, 731)
+        Me.pnlMenu.Size = New System.Drawing.Size(232, 900)
         Me.pnlMenu.TabIndex = 5
         '
         'frmMenuInicio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(1380, 731)
+        Me.ClientSize = New System.Drawing.Size(1840, 900)
         Me.Controls.Add(Me.pnlBarraSuperior)
         Me.Controls.Add(Me.pnlMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.IsMdiContainer = True
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmMenuInicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Inicio"

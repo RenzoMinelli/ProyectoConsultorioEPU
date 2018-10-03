@@ -23,9 +23,9 @@ Partial Class frmGraficas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.dgvInfo = New System.Windows.Forms.DataGridView()
         Me.pbconfig = New System.Windows.Forms.PictureBox()
@@ -61,17 +61,17 @@ Partial Class frmGraficas
         '
         'grafica
         '
-        ChartArea3.Name = "Pacientes"
-        Me.grafica.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.grafica.Legends.Add(Legend3)
+        ChartArea1.Name = "Pacientes"
+        Me.grafica.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.grafica.Legends.Add(Legend1)
         Me.grafica.Location = New System.Drawing.Point(1, 45)
         Me.grafica.Margin = New System.Windows.Forms.Padding(4)
         Me.grafica.Name = "grafica"
-        Series3.ChartArea = "Pacientes"
-        Series3.Legend = "Legend1"
-        Series3.Name = "Num pacientes"
-        Me.grafica.Series.Add(Series3)
+        Series1.ChartArea = "Pacientes"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Num pacientes"
+        Me.grafica.Series.Add(Series1)
         Me.grafica.Size = New System.Drawing.Size(1336, 656)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
@@ -222,7 +222,7 @@ Partial Class frmGraficas
         '
         'pnldesplmenu
         '
-        Me.pnldesplmenu.BackColor = System.Drawing.Color.MidnightBlue
+        Me.pnldesplmenu.BackColor = System.Drawing.Color.DarkBlue
         Me.pnldesplmenu.Controls.Add(Me.pbconfig)
         Me.pnldesplmenu.Location = New System.Drawing.Point(1337, -2)
         Me.pnldesplmenu.Name = "pnldesplmenu"
