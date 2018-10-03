@@ -23,9 +23,9 @@ Partial Class frmGraficas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.dgvInfo = New System.Windows.Forms.DataGridView()
         Me.pbconfig = New System.Windows.Forms.PictureBox()
@@ -36,17 +36,15 @@ Partial Class frmGraficas
         Me.Lbl3d = New System.Windows.Forms.Label()
         Me.PnlTipo = New System.Windows.Forms.Panel()
         Me.LblTipo = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Movimiento = New System.Windows.Forms.Timer(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PnlSubMenuDatos = New System.Windows.Forms.Panel()
+        Me.PnlPromedades = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Movimiento = New System.Windows.Forms.Timer(Me.components)
+        Me.pnldesplmenu = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PnlSubmenu3d = New System.Windows.Forms.Panel()
+        Me.Pnlact3d = New System.Windows.Forms.Panel()
+        Me.LblActivar3d = New System.Windows.Forms.Label()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbconfig, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,23 +52,27 @@ Partial Class frmGraficas
         Me.PnlGrafica.SuspendLayout()
         Me.Pnl3d.SuspendLayout()
         Me.PnlTipo.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel10.SuspendLayout()
+        Me.PnlSubMenuDatos.SuspendLayout()
+        Me.PnlPromedades.SuspendLayout()
+        Me.pnldesplmenu.SuspendLayout()
+        Me.PnlSubmenu3d.SuspendLayout()
+        Me.Pnlact3d.SuspendLayout()
         Me.SuspendLayout()
         '
         'grafica
         '
-        ChartArea1.Name = "Pacientes"
-        Me.grafica.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.grafica.Legends.Add(Legend1)
-        Me.grafica.Location = New System.Drawing.Point(1, 70)
+        ChartArea3.Name = "Pacientes"
+        Me.grafica.ChartAreas.Add(ChartArea3)
+        Legend3.Name = "Legend1"
+        Me.grafica.Legends.Add(Legend3)
+        Me.grafica.Location = New System.Drawing.Point(1, 45)
+        Me.grafica.Margin = New System.Windows.Forms.Padding(4)
         Me.grafica.Name = "grafica"
-        Series1.ChartArea = "Pacientes"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Num pacientes"
-        Me.grafica.Series.Add(Series1)
-        Me.grafica.Size = New System.Drawing.Size(694, 500)
+        Series3.ChartArea = "Pacientes"
+        Series3.Legend = "Legend1"
+        Series3.Name = "Num pacientes"
+        Me.grafica.Series.Add(Series3)
+        Me.grafica.Size = New System.Drawing.Size(1336, 656)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
         '
@@ -81,19 +83,21 @@ Partial Class frmGraficas
         Me.dgvInfo.AllowUserToResizeColumns = False
         Me.dgvInfo.AllowUserToResizeRows = False
         Me.dgvInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvInfo.Location = New System.Drawing.Point(12, 12)
+        Me.dgvInfo.Location = New System.Drawing.Point(1, -2)
+        Me.dgvInfo.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvInfo.Name = "dgvInfo"
         Me.dgvInfo.ReadOnly = True
-        Me.dgvInfo.Size = New System.Drawing.Size(21, 19)
+        Me.dgvInfo.Size = New System.Drawing.Size(10, 10)
         Me.dgvInfo.TabIndex = 6
         Me.dgvInfo.Visible = False
         '
         'pbconfig
         '
         Me.pbconfig.Image = Global.WindowsApplication1.My.Resources.Resources.ruedita
-        Me.pbconfig.Location = New System.Drawing.Point(1150, 1)
+        Me.pbconfig.Location = New System.Drawing.Point(201, 0)
+        Me.pbconfig.Margin = New System.Windows.Forms.Padding(4)
         Me.pbconfig.Name = "pbconfig"
-        Me.pbconfig.Size = New System.Drawing.Size(38, 40)
+        Me.pbconfig.Size = New System.Drawing.Size(43, 40)
         Me.pbconfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbconfig.TabIndex = 8
         Me.pbconfig.TabStop = False
@@ -104,9 +108,10 @@ Partial Class frmGraficas
         Me.PnlMenu.Controls.Add(Me.PnlGrafica)
         Me.PnlMenu.Controls.Add(Me.Pnl3d)
         Me.PnlMenu.Controls.Add(Me.PnlTipo)
-        Me.PnlMenu.Location = New System.Drawing.Point(1250, 42)
+        Me.PnlMenu.Location = New System.Drawing.Point(1337, 46)
+        Me.PnlMenu.Margin = New System.Windows.Forms.Padding(4)
         Me.PnlMenu.Name = "PnlMenu"
-        Me.PnlMenu.Size = New System.Drawing.Size(186, 345)
+        Me.PnlMenu.Size = New System.Drawing.Size(248, 425)
         Me.PnlMenu.TabIndex = 10
         '
         'PnlGrafica
@@ -114,9 +119,10 @@ Partial Class frmGraficas
         Me.PnlGrafica.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlGrafica.Controls.Add(Me.LblGrafica)
         Me.PnlGrafica.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.PnlGrafica.Location = New System.Drawing.Point(0, 151)
+        Me.PnlGrafica.Location = New System.Drawing.Point(0, 186)
+        Me.PnlGrafica.Margin = New System.Windows.Forms.Padding(4)
         Me.PnlGrafica.Name = "PnlGrafica"
-        Me.PnlGrafica.Size = New System.Drawing.Size(186, 36)
+        Me.PnlGrafica.Size = New System.Drawing.Size(248, 44)
         Me.PnlGrafica.TabIndex = 13
         Me.PnlGrafica.Visible = False
         '
@@ -124,10 +130,11 @@ Partial Class frmGraficas
         '
         Me.LblGrafica.AutoSize = True
         Me.LblGrafica.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblGrafica.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.LblGrafica.Location = New System.Drawing.Point(27, 7)
+        Me.LblGrafica.ForeColor = System.Drawing.SystemColors.Menu
+        Me.LblGrafica.Location = New System.Drawing.Point(36, 9)
+        Me.LblGrafica.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblGrafica.Name = "LblGrafica"
-        Me.LblGrafica.Size = New System.Drawing.Size(133, 24)
+        Me.LblGrafica.Size = New System.Drawing.Size(170, 29)
         Me.LblGrafica.TabIndex = 0
         Me.LblGrafica.Text = "Datos Grafica"
         '
@@ -136,20 +143,22 @@ Partial Class frmGraficas
         Me.Pnl3d.BackColor = System.Drawing.Color.RoyalBlue
         Me.Pnl3d.Controls.Add(Me.Lbl3d)
         Me.Pnl3d.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Pnl3d.Location = New System.Drawing.Point(0, 46)
+        Me.Pnl3d.Location = New System.Drawing.Point(0, 57)
+        Me.Pnl3d.Margin = New System.Windows.Forms.Padding(4)
         Me.Pnl3d.Name = "Pnl3d"
-        Me.Pnl3d.Size = New System.Drawing.Size(186, 36)
+        Me.Pnl3d.Size = New System.Drawing.Size(248, 44)
         Me.Pnl3d.TabIndex = 11
         Me.Pnl3d.Visible = False
         '
         'Lbl3d
         '
         Me.Lbl3d.AutoSize = True
-        Me.Lbl3d.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl3d.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Lbl3d.Location = New System.Drawing.Point(25, 5)
+        Me.Lbl3d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl3d.ForeColor = System.Drawing.SystemColors.Menu
+        Me.Lbl3d.Location = New System.Drawing.Point(48, 8)
+        Me.Lbl3d.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Lbl3d.Name = "Lbl3d"
-        Me.Lbl3d.Size = New System.Drawing.Size(118, 29)
+        Me.Lbl3d.Size = New System.Drawing.Size(136, 32)
         Me.Lbl3d.TabIndex = 0
         Me.Lbl3d.Text = "Modo 3D"
         '
@@ -158,9 +167,10 @@ Partial Class frmGraficas
         Me.PnlTipo.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlTipo.Controls.Add(Me.LblTipo)
         Me.PnlTipo.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.PnlTipo.Location = New System.Drawing.Point(0, 97)
+        Me.PnlTipo.Location = New System.Drawing.Point(0, 119)
+        Me.PnlTipo.Margin = New System.Windows.Forms.Padding(4)
         Me.PnlTipo.Name = "PnlTipo"
-        Me.PnlTipo.Size = New System.Drawing.Size(186, 36)
+        Me.PnlTipo.Size = New System.Drawing.Size(248, 44)
         Me.PnlTipo.TabIndex = 12
         Me.PnlTipo.Visible = False
         '
@@ -168,130 +178,113 @@ Partial Class frmGraficas
         '
         Me.LblTipo.AutoSize = True
         Me.LblTipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblTipo.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.LblTipo.Location = New System.Drawing.Point(20, 6)
+        Me.LblTipo.ForeColor = System.Drawing.SystemColors.Menu
+        Me.LblTipo.Location = New System.Drawing.Point(27, 7)
+        Me.LblTipo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblTipo.Name = "LblTipo"
-        Me.LblTipo.Size = New System.Drawing.Size(155, 24)
+        Me.LblTipo.Size = New System.Drawing.Size(197, 29)
         Me.LblTipo.TabIndex = 1
         Me.LblTipo.Text = "Tipo De Grafica"
         '
-        'Panel4
+        'PnlSubMenuDatos
         '
-        Me.Panel4.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel4.Controls.Add(Me.Panel8)
-        Me.Panel4.Controls.Add(Me.Panel7)
-        Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Location = New System.Drawing.Point(738, 70)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(201, 299)
-        Me.Panel4.TabIndex = 13
-        Me.Panel4.Visible = False
+        Me.PnlSubMenuDatos.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PnlSubMenuDatos.Controls.Add(Me.PnlPromedades)
+        Me.PnlSubMenuDatos.Location = New System.Drawing.Point(1069, 200)
+        Me.PnlSubMenuDatos.Margin = New System.Windows.Forms.Padding(4)
+        Me.PnlSubMenuDatos.Name = "PnlSubMenuDatos"
+        Me.PnlSubMenuDatos.Size = New System.Drawing.Size(268, 136)
+        Me.PnlSubMenuDatos.TabIndex = 13
+        Me.PnlSubMenuDatos.Visible = False
         '
-        'Panel8
+        'PnlPromedades
         '
-        Me.Panel8.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Panel8.Location = New System.Drawing.Point(0, 210)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(201, 36)
-        Me.Panel8.TabIndex = 16
-        Me.Panel8.Visible = False
-        '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Panel7.Location = New System.Drawing.Point(0, 158)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(201, 36)
-        Me.Panel7.TabIndex = 16
-        Me.Panel7.Visible = False
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Panel5.Location = New System.Drawing.Point(0, 53)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(201, 36)
-        Me.Panel5.TabIndex = 14
-        Me.Panel5.Visible = False
-        '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Panel6.Location = New System.Drawing.Point(738, 175)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(201, 36)
-        Me.Panel6.TabIndex = 15
-        Me.Panel6.Visible = False
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Panel9.Location = New System.Drawing.Point(738, 333)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(201, 36)
-        Me.Panel9.TabIndex = 16
-        Me.Panel9.Visible = False
-        '
-        'Panel10
-        '
-        Me.Panel10.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Panel10.Controls.Add(Me.Label3)
-        Me.Panel10.Location = New System.Drawing.Point(738, 70)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(201, 36)
-        Me.Panel10.TabIndex = 17
-        Me.Panel10.Visible = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label3.Location = New System.Drawing.Point(17, 10)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(178, 24)
-        Me.Label3.TabIndex = 18
-        Me.Label3.Text = "Edades Pacientes"
-        Me.Label3.Visible = False
-        '
-        'Movimiento
-        '
-        Me.Movimiento.Interval = 1
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(362, 17)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 18
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.PnlPromedades.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PnlPromedades.Controls.Add(Me.Label1)
+        Me.PnlPromedades.Location = New System.Drawing.Point(0, 0)
+        Me.PnlPromedades.Name = "PnlPromedades"
+        Me.PnlPromedades.Size = New System.Drawing.Size(268, 38)
+        Me.PnlPromedades.TabIndex = 21
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(546, 17)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Location = New System.Drawing.Point(14, 3)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 19
-        Me.Label1.Text = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(224, 29)
+        Me.Label1.TabIndex = 22
+        Me.Label1.Text = "Edades Pacientes"
+        '
+        'Movimiento
+        '
+        Me.Movimiento.Interval = 15
+        '
+        'pnldesplmenu
+        '
+        Me.pnldesplmenu.BackColor = System.Drawing.Color.MidnightBlue
+        Me.pnldesplmenu.Controls.Add(Me.pbconfig)
+        Me.pnldesplmenu.Location = New System.Drawing.Point(1337, -2)
+        Me.pnldesplmenu.Name = "pnldesplmenu"
+        Me.pnldesplmenu.Size = New System.Drawing.Size(248, 40)
+        Me.pnldesplmenu.TabIndex = 20
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.Label2.Location = New System.Drawing.Point(51, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(840, 32)
+        Me.Label2.TabIndex = 21
+        Me.Label2.Text = "la infomracion mostrada es ""Promedio edades de pacientes"":"
+        '
+        'PnlSubmenu3d
+        '
+        Me.PnlSubmenu3d.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PnlSubmenu3d.Controls.Add(Me.Pnlact3d)
+        Me.PnlSubmenu3d.Location = New System.Drawing.Point(1069, 70)
+        Me.PnlSubmenu3d.Margin = New System.Windows.Forms.Padding(4)
+        Me.PnlSubmenu3d.Name = "PnlSubmenu3d"
+        Me.PnlSubmenu3d.Size = New System.Drawing.Size(268, 136)
+        Me.PnlSubmenu3d.TabIndex = 22
+        Me.PnlSubmenu3d.Visible = False
+        '
+        'Pnlact3d
+        '
+        Me.Pnlact3d.BackColor = System.Drawing.Color.MidnightBlue
+        Me.Pnlact3d.Controls.Add(Me.LblActivar3d)
+        Me.Pnlact3d.Location = New System.Drawing.Point(0, 0)
+        Me.Pnlact3d.Name = "Pnlact3d"
+        Me.Pnlact3d.Size = New System.Drawing.Size(268, 38)
+        Me.Pnlact3d.TabIndex = 21
+        '
+        'LblActivar3d
+        '
+        Me.LblActivar3d.AutoSize = True
+        Me.LblActivar3d.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblActivar3d.Location = New System.Drawing.Point(3, 0)
+        Me.LblActivar3d.Name = "LblActivar3d"
+        Me.LblActivar3d.Size = New System.Drawing.Size(257, 29)
+        Me.LblActivar3d.TabIndex = 22
+        Me.LblActivar3d.Text = "Activar/Desactivar 3d"
         '
         'frmGraficas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1386, 607)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.pbconfig)
-        Me.Controls.Add(Me.Panel10)
-        Me.Controls.Add(Me.Panel9)
-        Me.Controls.Add(Me.Panel6)
-        Me.Controls.Add(Me.Panel4)
+        Me.ClientSize = New System.Drawing.Size(1848, 747)
+        Me.Controls.Add(Me.PnlSubmenu3d)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.pnldesplmenu)
+        Me.Controls.Add(Me.PnlSubMenuDatos)
         Me.Controls.Add(Me.PnlMenu)
         Me.Controls.Add(Me.dgvInfo)
         Me.Controls.Add(Me.grafica)
+        Me.ForeColor = System.Drawing.SystemColors.Menu
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmGraficas"
         Me.Text = "."
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).EndInit()
@@ -304,9 +297,13 @@ Partial Class frmGraficas
         Me.Pnl3d.PerformLayout()
         Me.PnlTipo.ResumeLayout(False)
         Me.PnlTipo.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel10.ResumeLayout(False)
-        Me.Panel10.PerformLayout()
+        Me.PnlSubMenuDatos.ResumeLayout(False)
+        Me.PnlPromedades.ResumeLayout(False)
+        Me.PnlPromedades.PerformLayout()
+        Me.pnldesplmenu.ResumeLayout(False)
+        Me.PnlSubmenu3d.ResumeLayout(False)
+        Me.Pnlact3d.ResumeLayout(False)
+        Me.Pnlact3d.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -321,15 +318,13 @@ Partial Class frmGraficas
     Friend WithEvents LblGrafica As System.Windows.Forms.Label
     Friend WithEvents Lbl3d As System.Windows.Forms.Label
     Friend WithEvents LblTipo As System.Windows.Forms.Label
-    Friend WithEvents Panel4 As System.Windows.Forms.Panel
-    Friend WithEvents Panel8 As System.Windows.Forms.Panel
-    Friend WithEvents Panel7 As System.Windows.Forms.Panel
-    Friend WithEvents Panel5 As System.Windows.Forms.Panel
-    Friend WithEvents Panel6 As System.Windows.Forms.Panel
-    Friend WithEvents Panel9 As System.Windows.Forms.Panel
-    Friend WithEvents Panel10 As System.Windows.Forms.Panel
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents PnlSubMenuDatos As System.Windows.Forms.Panel
     Friend WithEvents Movimiento As System.Windows.Forms.Timer
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents pnldesplmenu As System.Windows.Forms.Panel
+    Friend WithEvents PnlPromedades As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents PnlSubmenu3d As System.Windows.Forms.Panel
+    Friend WithEvents Pnlact3d As System.Windows.Forms.Panel
+    Friend WithEvents LblActivar3d As System.Windows.Forms.Label
 End Class

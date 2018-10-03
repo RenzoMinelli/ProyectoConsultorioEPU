@@ -13,7 +13,13 @@
     Dim menusuito As Integer = 0
     Dim edadespacientes As Integer = 0
     Dim listaResultados() As Integer
+    Dim cont As Integer
+    Dim extra As Integer
     Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Pnl3d.Visible = True
+        PnlTipo.Visible = True
+        PnlGrafica.Visible = True
+        PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y - 464)
         If edadespacientes = 0 Then
             Try
                 edadespacientes = 1
@@ -38,16 +44,27 @@
 
 
 
-                Me.grafica.Series("Num pacientes").Points.AddXY("0-10", intervalo1)
-                Me.grafica.Series("Num pacientes").Points.AddXY("11-20", intervalo2)
-                Me.grafica.Series("Num pacientes").Points.AddXY("21-30", intervalo3)
-                Me.grafica.Series("Num pacientes").Points.AddXY("31-40", intervalo4)
-                Me.grafica.Series("Num pacientes").Points.AddXY("41-50", intervalo5)
-                Me.grafica.Series("Num pacientes").Points.AddXY("51-60", intervalo6)
-                Me.grafica.Series("Num pacientes").Points.AddXY("61-70", intervalo7)
-                Me.grafica.Series("Num pacientes").Points.AddXY("71-80", intervalo8)
-                Me.grafica.Series("Num pacientes").Points.AddXY("81-90", intervalo9)
-                Me.grafica.Series("Num pacientes").Points.AddXY("+90", intervalo10)
+                Me.grafica.Series("Num pacientes").Points.AddY(intervalo1)
+
+                Me.grafica.Series("Num pacientes").Points.AddY(intervalo2)
+                Me.grafica.Series("Num pacientes").Points.AddY(intervalo3)
+                Me.grafica.Series("Num pacientes").Points.AddY(intervalo4)
+                Me.grafica.Series("Num pacientes").Points.AddY(intervalo5)
+                Me.grafica.Series("Num pacientes").Points.AddY(intervalo6)
+                Me.grafica.Series("Num pacientes").Points.AddY(intervalo7)
+                Me.grafica.Series("Num pacientes").Points.AddY(intervalo8)
+                Me.grafica.Series("Num pacientes").Points.AddY(intervalo9)
+                Me.grafica.Series("Num pacientes").Points.AddY(intervalo10)
+                Me.grafica.Series("Num pacientes").Points(0).AxisLabel = "0 a 10"
+                Me.grafica.Series("Num pacientes").Points(1).AxisLabel = "11 a 20"
+                Me.grafica.Series("Num pacientes").Points(2).AxisLabel = "21 a 30"
+                Me.grafica.Series("Num pacientes").Points(3).AxisLabel = "31 a 40"
+                Me.grafica.Series("Num pacientes").Points(4).AxisLabel = "41 a 50"
+                Me.grafica.Series("Num pacientes").Points(5).AxisLabel = "51 a 60"
+                Me.grafica.Series("Num pacientes").Points(6).AxisLabel = "61 a 70"
+                Me.grafica.Series("Num pacientes").Points(7).AxisLabel = "71 a 80"
+                Me.grafica.Series("Num pacientes").Points(8).AxisLabel = "81 a 90"
+                Me.grafica.Series("Num pacientes").Points(9).AxisLabel = "Mayores de 90"
 
 
 
@@ -58,57 +75,59 @@
     End Sub
 
     Private Sub pbconfig_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbconfig.Click
-
-
-        If menusuito = 0 Then
-            abrirmenu()
-        Else
-            cerrarmenu()
-
-        End If
-
-
-    End Sub
-    Public Sub abrirmenu()
-        menusuito = 1
-        Movimiento.Enabled = True
-
-
-    End Sub
-    Public Sub cerrarmenu()
-        menusuito = 0
-        Movimiento.Enabled = True
-
+        Movimiento.Start()
 
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
     End Sub
 
     Private Sub Lbl3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbl3d.Click
-        grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
+        If PnlSubmenu3d.Visible = True Then
+            PnlSubmenu3d.Visible = False
+        Else
+            PnlSubmenu3d.Visible = True
+        End If
 
     End Sub
 
 
     Private Sub Movimiento_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Movimiento.Tick
-
-
-        If menusuito = 0 And PnlMenu.Location.X > 1002 Then
-            PnlMenu.Location = New Point(PnlMenu.Location.X + 6, PnlMenu.Location.Y)
-            Label1.Text = PnlMenu.Location.X
-        ElseIf menusuito = 1 Then
-            PnlMenu.Location = New Point(PnlMenu.Location.X - 6, PnlMenu.Location.Y)
+        PnlSubmenu3d.Visible = False
+        PnlSubMenuDatos.Visible = False
+        If extra = 0 Then
+            If cont < 73 Then
+                PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y + 6)
+                cont += 1
+            Else
+                Movimiento.Dispose()
+                extra = 1
+            End If
+        Else
+            If cont > 0 Then
+                PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y - 6)
+                cont -= 1
+            Else
+                Movimiento.Dispose()
+                extra = 0
+            End If
         End If
-
 
     End Sub
 
     Private Sub LblTipo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblTipo.Click
-        ' grafica.ChartAreas("pacientes").
+
+
+    End Sub
+    Private Sub grafica_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles grafica.Click
+
     End Sub
 
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+    Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
+        Movimiento.Start()
+    End Sub
+
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
         If edadespacientes = 0 Then
             Try
                 edadespacientes = 1
@@ -151,7 +170,85 @@
         End If
     End Sub
 
-    Private Sub grafica_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles grafica.Click
+    Private Sub LblGrafica_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblGrafica.Click
+        If PnlSubMenuDatos.Visible = True Then
+            PnlSubMenuDatos.Visible = False
+        Else
+            PnlSubMenuDatos.Visible = True
+
+        End If
+    End Sub
+
+
+
+    Private Sub pnldesplmenu_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnldesplmenu.MouseClick
+        Movimiento.Start()
+        PnlSubMenuDatos.Visible = False
+        PnlPromedades.BackColor = Color.MidnightBlue
 
     End Sub
+
+    Private Sub PnlPromedades_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlPromedades.MouseEnter
+        PnlPromedades.BackColor = Color.RoyalBlue
+    End Sub
+
+
+
+    Private Sub pnldesplmenu_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnldesplmenu.MouseLeave
+
+    End Sub
+
+    Private Sub frmGraficas_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.MouseEnter
+        PnlPromedades.BackColor = Color.MidnightBlue
+        Pnlact3d.BackColor = Color.MidnightBlue
+    End Sub
+
+    Private Sub PnlMenu_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlMenu.MouseEnter
+        PnlPromedades.BackColor = Color.MidnightBlue
+        Pnlact3d.BackColor = Color.MidnightBlue
+    End Sub
+
+
+    Private Sub PnlSubMenuDatos_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubMenuDatos.MouseEnter
+        PnlPromedades.BackColor = Color.MidnightBlue
+        Pnlact3d.BackColor = Color.MidnightBlue
+    End Sub
+
+
+    Private Sub PnlGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlGrafica.MouseEnter
+        PnlPromedades.BackColor = Color.MidnightBlue
+        Pnlact3d.BackColor = Color.MidnightBlue
+    End Sub
+
+    Private Sub LblActivar3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblActivar3d.Click
+        grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
+    End Sub
+
+    Private Sub Pnlact3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Pnlact3d.MouseEnter
+        Pnlact3d.BackColor = Color.RoyalBlue
+
+    End Sub
+
+    Private Sub LblActivar3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblActivar3d.MouseEnter
+        Pnlact3d.BackColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub PnlSubMenuDatos_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubMenuDatos.MouseLeave
+
+    End Sub
+
+    Private Sub PnlSubmenu3d_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubmenu3d.MouseLeave
+
+    End Sub
+
+    Private Sub Pnl3d_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Pnl3d.Paint
+
+    End Sub
+
+    Private Sub pnldesplmenu_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnldesplmenu.Paint
+        Movimiento.Start()
+
+    End Sub
+
+
 End Class
