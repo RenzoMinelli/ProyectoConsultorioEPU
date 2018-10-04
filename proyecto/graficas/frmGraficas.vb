@@ -16,6 +16,7 @@
     Dim cont As Integer
     Dim extra As Integer
     Dim contador3d As Integer
+    Dim perspectiva As Integer = 10
     Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         PnlSubmenu3d.Visible = False
         Pnl3d.Visible = True
@@ -81,14 +82,12 @@
 
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-    End Sub
-
     Private Sub Lbl3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbl3d.Click
         If PnlSubmenu3d.Visible = True Then
             PnlSubmenu3d.Visible = False
         Else
             PnlSubmenu3d.Visible = True
+            PnlSubMenuDatos.Visible = False
         End If
 
     End Sub
@@ -122,12 +121,6 @@
 
     End Sub
 
-
-
-
-    Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
-        Movimiento.Start()
-    End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
         If edadespacientes = 0 Then
@@ -177,6 +170,7 @@
             PnlSubMenuDatos.Visible = False
         Else
             PnlSubMenuDatos.Visible = True
+            PnlSubmenu3d.Visible = False
 
         End If
     End Sub
@@ -186,6 +180,7 @@
     Private Sub pnldesplmenu_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnldesplmenu.MouseClick
         Movimiento.Start()
         PnlSubMenuDatos.Visible = False
+        PnlSubmenu3d.Visible = False
         PnlPromedades.BackColor = Color.MidnightBlue
 
     End Sub
@@ -194,11 +189,10 @@
         PnlPromedades.BackColor = Color.RoyalBlue
     End Sub
 
-
-
     Private Sub frmGraficas_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.MouseEnter
         PnlPromedades.BackColor = Color.MidnightBlue
         Pnlact3d.BackColor = Color.MidnightBlue
+        pnlCambarPerspectiva.BackColor = Color.MidnightBlue
         PnlSubmenu3d.Visible = False
         PnlSubMenuDatos.Visible = False
     End Sub
@@ -206,6 +200,7 @@
     Private Sub PnlMenu_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlMenu.MouseEnter
         PnlPromedades.BackColor = Color.MidnightBlue
         Pnlact3d.BackColor = Color.MidnightBlue
+        pnlCambarPerspectiva.BackColor = Color.MidnightBlue
     End Sub
 
 
@@ -217,20 +212,27 @@
     Private Sub PnlGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlGrafica.MouseEnter
         PnlPromedades.BackColor = Color.MidnightBlue
         Pnlact3d.BackColor = Color.MidnightBlue
-
+        pnlCambarPerspectiva.BackColor = Color.MidnightBlue
     End Sub
 
     Private Sub LblActivar3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblActivar3d.Click
-        grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
+        If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False Then
+            grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
+        Else
+            grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False
+        End If
+
+
     End Sub
 
     Private Sub Pnlact3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Pnlact3d.MouseEnter
         Pnlact3d.BackColor = Color.RoyalBlue
-
+        pnlCambarPerspectiva.BackColor = Color.MidnightBlue
     End Sub
 
     Private Sub LblActivar3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblActivar3d.MouseEnter
         Pnlact3d.BackColor = Color.RoyalBlue
+        pnlCambarPerspectiva.BackColor = Color.MidnightBlue
     End Sub
 
     Private Sub Pnl3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Pnl3d.MouseEnter
@@ -239,36 +241,37 @@
 
 
 
-    Private Sub Pnl3d_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Pnl3d.Paint
-
-    End Sub
-
-    Private Sub pnldesplmenu_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnldesplmenu.Paint
-        Movimiento.Start()
-
-    End Sub
-
-
-    Private Sub PnlGrafica_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles PnlGrafica.Paint
-        If PnlSubMenuDatos.Visible = True Then
-            PnlSubMenuDatos.Visible = False
-        Else
-            PnlSubMenuDatos.Visible = True
-
-        End If
-    End Sub
 
     Private Sub grafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles grafica.MouseEnter
         PnlSubmenu3d.Visible = False
-    End Sub
-
-
-
-    Private Sub LblGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblGrafica.MouseEnter
-
+        PnlSubMenuDatos.Visible = False
     End Sub
 
     Private Sub PnlSubmenu3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubmenu3d.MouseEnter
         Pnlact3d.BackColor = Color.MidnightBlue
     End Sub
+
+    Private Sub lblCambiarPers_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCambiarPers.Click
+        If perspectiva > 180 Then
+
+            perspectiva = 0
+
+        End If
+        'grafica.ChartAreas("Paciente").Area3DStyle.Rotation += 10
+        perspectiva += 10
+
+    End Sub
+
+   
+    Private Sub lblCambiarPers_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblCambiarPers.MouseEnter
+        pnlCambarPerspectiva.BackColor = Color.RoyalBlue
+        Pnlact3d.BackColor = Color.MidnightBlue
+    End Sub
+
+    Private Sub pnlCambarPerspectiva_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlCambarPerspectiva.MouseEnter
+        pnlCambarPerspectiva.BackColor = Color.RoyalBlue
+        Pnlact3d.BackColor = Color.MidnightBlue
+    End Sub
+
+  
 End Class

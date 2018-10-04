@@ -43,6 +43,8 @@ Partial Class frmGraficas
         Me.pnldesplmenu = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PnlSubmenu3d = New System.Windows.Forms.Panel()
+        Me.pnlCambarPerspectiva = New System.Windows.Forms.Panel()
+        Me.lblCambiarPers = New System.Windows.Forms.Label()
         Me.Pnlact3d = New System.Windows.Forms.Panel()
         Me.LblActivar3d = New System.Windows.Forms.Label()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +58,7 @@ Partial Class frmGraficas
         Me.PnlPromedades.SuspendLayout()
         Me.pnldesplmenu.SuspendLayout()
         Me.PnlSubmenu3d.SuspendLayout()
+        Me.pnlCambarPerspectiva.SuspendLayout()
         Me.Pnlact3d.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -243,6 +246,7 @@ Partial Class frmGraficas
         'PnlSubmenu3d
         '
         Me.PnlSubmenu3d.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PnlSubmenu3d.Controls.Add(Me.pnlCambarPerspectiva)
         Me.PnlSubmenu3d.Controls.Add(Me.Pnlact3d)
         Me.PnlSubmenu3d.Location = New System.Drawing.Point(1069, 70)
         Me.PnlSubmenu3d.Margin = New System.Windows.Forms.Padding(4)
@@ -250,6 +254,25 @@ Partial Class frmGraficas
         Me.PnlSubmenu3d.Size = New System.Drawing.Size(268, 136)
         Me.PnlSubmenu3d.TabIndex = 22
         Me.PnlSubmenu3d.Visible = False
+        '
+        'pnlCambarPerspectiva
+        '
+        Me.pnlCambarPerspectiva.BackColor = System.Drawing.Color.MidnightBlue
+        Me.pnlCambarPerspectiva.Controls.Add(Me.lblCambiarPers)
+        Me.pnlCambarPerspectiva.Location = New System.Drawing.Point(3, 39)
+        Me.pnlCambarPerspectiva.Name = "pnlCambarPerspectiva"
+        Me.pnlCambarPerspectiva.Size = New System.Drawing.Size(268, 38)
+        Me.pnlCambarPerspectiva.TabIndex = 23
+        '
+        'lblCambiarPers
+        '
+        Me.lblCambiarPers.AutoSize = True
+        Me.lblCambiarPers.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.lblCambiarPers.Location = New System.Drawing.Point(3, 0)
+        Me.lblCambiarPers.Name = "lblCambiarPers"
+        Me.lblCambiarPers.Size = New System.Drawing.Size(255, 29)
+        Me.lblCambiarPers.TabIndex = 22
+        Me.lblCambiarPers.Text = "Cambiar Perspectiva"
         '
         'Pnlact3d
         '
@@ -302,6 +325,8 @@ Partial Class frmGraficas
         Me.PnlPromedades.PerformLayout()
         Me.pnldesplmenu.ResumeLayout(False)
         Me.PnlSubmenu3d.ResumeLayout(False)
+        Me.pnlCambarPerspectiva.ResumeLayout(False)
+        Me.pnlCambarPerspectiva.PerformLayout()
         Me.Pnlact3d.ResumeLayout(False)
         Me.Pnlact3d.PerformLayout()
         Me.ResumeLayout(False)
@@ -327,4 +352,6 @@ Partial Class frmGraficas
     Friend WithEvents PnlSubmenu3d As System.Windows.Forms.Panel
     Friend WithEvents Pnlact3d As System.Windows.Forms.Panel
     Friend WithEvents LblActivar3d As System.Windows.Forms.Label
+    Friend WithEvents pnlCambarPerspectiva As System.Windows.Forms.Panel
+    Friend WithEvents lblCambiarPers As System.Windows.Forms.Label
 End Class
