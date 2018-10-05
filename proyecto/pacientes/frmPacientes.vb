@@ -439,7 +439,7 @@
    
 
 
-    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCargar.Click
         Try
 
             Dim dialogoCarga As New OpenFileDialog 'Crea un objeto del tipo OpenFileDialog para seleccionar archivos
@@ -480,4 +480,5 @@
     End Sub
 
 
+  
 End Class

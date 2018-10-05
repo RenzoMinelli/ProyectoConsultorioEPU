@@ -18,11 +18,11 @@ Public Class frmRegistroMedico
     End Sub
     
     Private Sub cargar()
-       
+        dgvRegistroMedico.DataSource = Nothing
 
         Dim vista As New DataGridViewImageColumn
         vista.Name = "vista"
-        vista.ImageLayout = DataGridViewImageCellLayout.Zoom
+        vista.ImageLayout = DataGridViewImageCellLayout.Normal
         dgvRegistroMedico.Columns.Add(vista)
 
         Dim filas As Integer
@@ -38,8 +38,10 @@ Public Class frmRegistroMedico
             For i As Integer = 0 To filas
                 ruta = dgvRegistroMedico.Rows(i).Cells(1).Value.ToString()
                 dgvRegistroMedico.Rows(i).Cells(0).Value = System.Drawing.Image.FromFile(rutaGuardadoFotos + "\" + dgvRegistroMedico.Rows(i).Cells(1).Value.ToString())
-                dgvRegistroMedico.Rows(i).Height = 200
+                dgvRegistroMedico.Rows(i).Height = 10
+
             Next
+            dgvRegistroMedico.Columns(0).Width = 300
         Catch ex As Exception
             MsgBox("Error al obtener las imagenes", MsgBoxStyle.Exclamation)
         End Try
@@ -517,7 +519,7 @@ Public Class frmRegistroMedico
             Catch ex As Exception
 
             End Try
-            Consulta = "Select descripcion, fecha, hora, atendida from cita where id_p = '" + Str(id_p) + "';"
+            Consulta = "Select descripcion, fecha, hora, atendida from cita where id_p = '" + Str(id_p) + "' order by fecha desc;"
             consultar()
 
             dgvRegistroMedico.DataSource = Tabla
@@ -526,7 +528,7 @@ Public Class frmRegistroMedico
             dgvRegistroMedico.Columns(1).HeaderText = "Fecha"
             dgvRegistroMedico.Columns(2).HeaderText = "Hora"
 
-            dgvRegistroMedico.Sort(dgvRegistroMedico.Columns(1), System.ComponentModel.ListSortDirection.Ascending)
+
 
         Catch ex As Exception
 
@@ -581,7 +583,7 @@ Public Class frmRegistroMedico
         ElseIf cbTratamientos.SelectedIndex = 1 Then
 
             Try
-                Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica', terminado as 'Terminado' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "';"
+                Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica', terminado as 'Terminado' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a inner join cita c on pl.id_c = c.id_c where pl.id_p = '" + id_p.ToString + "' order by fecha desc;"
                 consultar()
                 dgvTratamientos.DataSource = Tabla
             Catch ex As Exception
