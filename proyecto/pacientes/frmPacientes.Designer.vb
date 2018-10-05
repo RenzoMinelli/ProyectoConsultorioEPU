@@ -22,9 +22,8 @@ Partial Class frmPacientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblEstado = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -60,15 +59,10 @@ Partial Class frmPacientes
         Me.dgvFiltro = New System.Windows.Forms.DataGridView()
         Me.btnCambiarPacientes = New System.Windows.Forms.Button()
         Me.btnCargar = New System.Windows.Forms.Button()
-        Me.tmrOpcionesExtra = New System.Windows.Forms.Timer(Me.components)
-        Me.pnlOpcionesExtra = New System.Windows.Forms.Panel()
-        Me.pbFlecha = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.pnlTapa.SuspendLayout()
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvFiltro, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlOpcionesExtra.SuspendLayout()
-        CType(Me.pbFlecha, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -422,23 +416,23 @@ Partial Class frmPacientes
         Me.dgvPacientes.AllowUserToResizeRows = False
         Me.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPacientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle4
         Me.dgvPacientes.Location = New System.Drawing.Point(17, 70)
         Me.dgvPacientes.MultiSelect = False
         Me.dgvPacientes.Name = "dgvPacientes"
@@ -495,39 +489,14 @@ Partial Class frmPacientes
         Me.btnCargar.ForeColor = System.Drawing.Color.Black
         Me.btnCargar.Image = Global.WindowsApplication1.My.Resources.Resources.upload_file_icon_icons_com_56026__1_
         Me.btnCargar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCargar.Location = New System.Drawing.Point(26, 25)
+        Me.btnCargar.Location = New System.Drawing.Point(369, 522)
         Me.btnCargar.Name = "btnCargar"
         Me.btnCargar.Size = New System.Drawing.Size(196, 75)
-        Me.btnCargar.TabIndex = 21
+        Me.btnCargar.TabIndex = 25
         Me.btnCargar.Text = "Cargar Documento"
         Me.btnCargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnCargar.UseVisualStyleBackColor = True
         Me.btnCargar.Visible = False
-        '
-        'tmrOpcionesExtra
-        '
-        Me.tmrOpcionesExtra.Interval = 15
-        '
-        'pnlOpcionesExtra
-        '
-        Me.pnlOpcionesExtra.BackColor = System.Drawing.Color.DarkCyan
-        Me.pnlOpcionesExtra.Controls.Add(Me.btnCargar)
-        Me.pnlOpcionesExtra.Controls.Add(Me.pbFlecha)
-        Me.pnlOpcionesExtra.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlOpcionesExtra.Location = New System.Drawing.Point(1191, 0)
-        Me.pnlOpcionesExtra.Name = "pnlOpcionesExtra"
-        Me.pnlOpcionesExtra.Size = New System.Drawing.Size(109, 750)
-        Me.pnlOpcionesExtra.TabIndex = 24
-        '
-        'pbFlecha
-        '
-        Me.pbFlecha.Image = Global.WindowsApplication1.My.Resources.Resources.back
-        Me.pbFlecha.Location = New System.Drawing.Point(3, 335)
-        Me.pbFlecha.Name = "pbFlecha"
-        Me.pbFlecha.Size = New System.Drawing.Size(46, 49)
-        Me.pbFlecha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbFlecha.TabIndex = 25
-        Me.pbFlecha.TabStop = False
         '
         'frmPacientes
         '
@@ -535,7 +504,7 @@ Partial Class frmPacientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1300, 750)
-        Me.Controls.Add(Me.pnlOpcionesExtra)
+        Me.Controls.Add(Me.btnCargar)
         Me.Controls.Add(Me.pnlTapa)
         Me.Controls.Add(Me.btnCambiarPacientes)
         Me.Controls.Add(Me.dgvFiltro)
@@ -558,8 +527,6 @@ Partial Class frmPacientes
         Me.pnlTapa.ResumeLayout(False)
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvFiltro, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlOpcionesExtra.ResumeLayout(False)
-        CType(Me.pbFlecha, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -599,8 +566,5 @@ Partial Class frmPacientes
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents lblEstado As System.Windows.Forms.Label
     Friend WithEvents btnCargar As System.Windows.Forms.Button
-    Friend WithEvents tmrOpcionesExtra As System.Windows.Forms.Timer
-    Friend WithEvents pnlOpcionesExtra As System.Windows.Forms.Panel
-    Friend WithEvents pbFlecha As System.Windows.Forms.PictureBox
 
 End Class

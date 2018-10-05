@@ -1,28 +1,22 @@
-﻿Imports System.Data.SqlClient
-Imports System.Drawing.Printing
+﻿
 
 Public Class frmRegistroMedico
     Dim formu As New Form
     Dim i As Integer = 0
     'Create DataGridViewPrinter type variable  
-    Dim MyDataGridViewPrinter As DataGridViewPrinter
+
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Try
-            Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica', terminado as 'Terminado' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "';"
-            consultar()
-            dgvTratamientos.DataSource = Tabla
-        Catch ex As Exception
-
-        End Try
+        
 
         'actBoca()
 
         actTabla()
 
         cbSeleccion.SelectedIndex = 0
-
+        cbTratamientos.SelectedIndex = 1
     End Sub
+    
     Private Sub cargar()
        
 
@@ -573,51 +567,27 @@ Public Class frmRegistroMedico
 
     End Sub
 
-    Private Sub btnPresupuesto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPresupuesto.Click
-        Consulta = "select a.descripcion as 'Descrpcion General', pl.descripcion as 'Descripcion Especifica', precio as 'Precio' from aranceles a inner join plan_tratamiento pl on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "' and terminado = 0 "
-        consultar()
-        dgvAuxiliar.DataSource = Tabla
-        Dim total As Integer = 0
-        For x = 0 To dgvAuxiliar.RowCount - 1
-            total += dgvAuxiliar.Rows(x).Cells(2).Value
-        Next
-        dgvDatos.ColumnCount = 3
-        For x = 0 To dgvAuxiliar.RowCount - 1
-            dgvDatos.Rows.Add(dgvAuxiliar.Rows(x).Cells(0).Value.ToString, dgvAuxiliar.Rows(x).Cells(1).Value.ToString, dgvAuxiliar.Rows(x).Cells(2).Value.ToString)
-        Next
-        dgvDatos.Rows.Add("SUBTOTAL", "", total.ToString)
-        dgvDatos.Rows.Add("IVA", "", (total * 0.22).ToString)
-        dgvDatos.Rows.Add("TOTAL", "", (total * 1.22).ToString)
+    
 
-        If SetupThePrinting() Then
-            PrintDocument1.Print()
+    Private Sub cbTratamientos_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbTratamientos.SelectedIndexChanged
+        If cbTratamientos.SelectedIndex = 0 Then
+            Try
+                Consulta = "select a.descripcion as 'Descrpcion General', pl.descripcion as 'Descripcion Especifica', precio as 'Precio' from aranceles a inner join plan_tratamiento pl on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "' and terminado = 0 "
+                consultar()
+                dgvTratamientos.DataSource = Tabla
+            Catch ex As Exception
+                MsgBox("Error al obtener el presupuesto", MsgBoxStyle.Exclamation)
+            End Try
+        ElseIf cbTratamientos.SelectedIndex = 1 Then
+
+            Try
+                Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica', terminado as 'Terminado' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "';"
+                consultar()
+                dgvTratamientos.DataSource = Tabla
+            Catch ex As Exception
+                MsgBox("Error al obtener registro", MsgBoxStyle.Exclamation)
+            End Try
+
         End If
-
     End Sub
-
-
-
-    Private Function SetupThePrinting() As Boolean
-        Dim MyPrintDialog As PrintDialog = New PrintDialog()
-        MyPrintDialog.AllowCurrentPage = False
-        MyPrintDialog.AllowPrintToFile = False
-        MyPrintDialog.AllowSelection = False
-        MyPrintDialog.AllowSomePages = False
-        MyPrintDialog.PrintToFile = False
-        MyPrintDialog.ShowHelp = False
-        MyPrintDialog.ShowNetwork = False
-
-        If MyPrintDialog.ShowDialog() <> DialogResult.OK Then
-            Return False
-        End If
-
-        PrintDocument1.DocumentName = "Presupuesto"
-        PrintDocument1.PrinterSettings = MyPrintDialog.PrinterSettings
-        PrintDocument1.DefaultPageSettings = MyPrintDialog.PrinterSettings.DefaultPageSettings
-        PrintDocument1.DefaultPageSettings.Margins = New Margins(40, 40, 40, 40)
-
-        MyDataGridViewPrinter = New DataGridViewPrinter(dgvDatos, PrintDocument1, True, True, "Presupuesto", New Font("Tahoma", 25, FontStyle.Bold, GraphicsUnit.Point), Color.Black, True)
-
-        Return True
-    End Function
 End Class
