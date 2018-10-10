@@ -51,12 +51,13 @@ Partial Class frmGraficas
         Me.Pnlact3d = New System.Windows.Forms.Panel()
         Me.LblActivar3d = New System.Windows.Forms.Label()
         Me.PnlOpPers = New System.Windows.Forms.Panel()
+        Me.PnlOp3 = New System.Windows.Forms.Panel()
+        Me.LblOp3 = New System.Windows.Forms.Label()
         Me.PnlOp2 = New System.Windows.Forms.Panel()
         Me.LblOp2 = New System.Windows.Forms.Label()
         Me.PnlOp1 = New System.Windows.Forms.Panel()
         Me.Lblop1 = New System.Windows.Forms.Label()
-        Me.PnlOp3 = New System.Windows.Forms.Panel()
-        Me.LblOp3 = New System.Windows.Forms.Label()
+        Me.DgvTratamientos = New System.Windows.Forms.DataGridView()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbconfig, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,9 +73,10 @@ Partial Class frmGraficas
         Me.pnlCambarPerspectiva.SuspendLayout()
         Me.Pnlact3d.SuspendLayout()
         Me.PnlOpPers.SuspendLayout()
+        Me.PnlOp3.SuspendLayout()
         Me.PnlOp2.SuspendLayout()
         Me.PnlOp1.SuspendLayout()
-        Me.PnlOp3.SuspendLayout()
+        CType(Me.DgvTratamientos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'grafica
@@ -103,7 +105,7 @@ Partial Class frmGraficas
         Me.dgvInfo.AllowUserToResizeColumns = False
         Me.dgvInfo.AllowUserToResizeRows = False
         Me.dgvInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvInfo.Location = New System.Drawing.Point(1, -2)
+        Me.dgvInfo.Location = New System.Drawing.Point(1, 3)
         Me.dgvInfo.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvInfo.Name = "dgvInfo"
         Me.dgvInfo.ReadOnly = True
@@ -199,12 +201,12 @@ Partial Class frmGraficas
         Me.LblTipo.AutoSize = True
         Me.LblTipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTipo.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.LblTipo.Location = New System.Drawing.Point(27, 7)
+        Me.LblTipo.Location = New System.Drawing.Point(8, 8)
         Me.LblTipo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblTipo.Name = "LblTipo"
-        Me.LblTipo.Size = New System.Drawing.Size(197, 29)
+        Me.LblTipo.Size = New System.Drawing.Size(238, 29)
         Me.LblTipo.TabIndex = 1
-        Me.LblTipo.Text = "Tipo De Grafica"
+        Me.LblTipo.Text = "Opciones Esteticas"
         '
         'PnlSubMenuDatos
         '
@@ -257,7 +259,7 @@ Partial Class frmGraficas
         '
         'TmrMovimiento
         '
-        Me.TmrMovimiento.Interval = 12
+        Me.TmrMovimiento.Interval = 1
         '
         'pnldesplmenu
         '
@@ -353,6 +355,25 @@ Partial Class frmGraficas
         Me.PnlOpPers.TabIndex = 23
         Me.PnlOpPers.Visible = False
         '
+        'PnlOp3
+        '
+        Me.PnlOp3.Controls.Add(Me.LblOp3)
+        Me.PnlOp3.Location = New System.Drawing.Point(0, 91)
+        Me.PnlOp3.Name = "PnlOp3"
+        Me.PnlOp3.Size = New System.Drawing.Size(209, 44)
+        Me.PnlOp3.TabIndex = 3
+        '
+        'LblOp3
+        '
+        Me.LblOp3.AutoSize = True
+        Me.LblOp3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblOp3.ForeColor = System.Drawing.Color.MintCream
+        Me.LblOp3.Location = New System.Drawing.Point(5, 9)
+        Me.LblOp3.Name = "LblOp3"
+        Me.LblOp3.Size = New System.Drawing.Size(201, 29)
+        Me.LblOp3.TabIndex = 0
+        Me.LblOp3.Text = "Predeterminado"
+        '
         'PnlOp2
         '
         Me.PnlOp2.Controls.Add(Me.LblOp2)
@@ -391,30 +412,22 @@ Partial Class frmGraficas
         Me.Lblop1.TabIndex = 0
         Me.Lblop1.Text = "180°"
         '
-        'PnlOp3
+        'DgvTratamientos
         '
-        Me.PnlOp3.Controls.Add(Me.LblOp3)
-        Me.PnlOp3.Location = New System.Drawing.Point(3, 88)
-        Me.PnlOp3.Name = "PnlOp3"
-        Me.PnlOp3.Size = New System.Drawing.Size(209, 44)
-        Me.PnlOp3.TabIndex = 3
-        '
-        'LblOp3
-        '
-        Me.LblOp3.AutoSize = True
-        Me.LblOp3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblOp3.ForeColor = System.Drawing.Color.MintCream
-        Me.LblOp3.Location = New System.Drawing.Point(5, 9)
-        Me.LblOp3.Name = "LblOp3"
-        Me.LblOp3.Size = New System.Drawing.Size(201, 29)
-        Me.LblOp3.TabIndex = 0
-        Me.LblOp3.Text = "Predeterminado"
+        Me.DgvTratamientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvTratamientos.Location = New System.Drawing.Point(12, 3)
+        Me.DgvTratamientos.Name = "DgvTratamientos"
+        Me.DgvTratamientos.RowTemplate.Height = 24
+        Me.DgvTratamientos.Size = New System.Drawing.Size(10, 10)
+        Me.DgvTratamientos.TabIndex = 24
+        Me.DgvTratamientos.Visible = False
         '
         'frmGraficas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1848, 747)
+        Me.Controls.Add(Me.DgvTratamientos)
         Me.Controls.Add(Me.PnlOpPers)
         Me.Controls.Add(Me.PnlSubmenu3d)
         Me.Controls.Add(Me.Label2)
@@ -451,12 +464,13 @@ Partial Class frmGraficas
         Me.Pnlact3d.ResumeLayout(False)
         Me.Pnlact3d.PerformLayout()
         Me.PnlOpPers.ResumeLayout(False)
+        Me.PnlOp3.ResumeLayout(False)
+        Me.PnlOp3.PerformLayout()
         Me.PnlOp2.ResumeLayout(False)
         Me.PnlOp2.PerformLayout()
         Me.PnlOp1.ResumeLayout(False)
         Me.PnlOp1.PerformLayout()
-        Me.PnlOp3.ResumeLayout(False)
-        Me.PnlOp3.PerformLayout()
+        CType(Me.DgvTratamientos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -492,4 +506,5 @@ Partial Class frmGraficas
     Friend WithEvents LblOp2 As System.Windows.Forms.Label
     Friend WithEvents PnlOp3 As System.Windows.Forms.Panel
     Friend WithEvents LblOp3 As System.Windows.Forms.Label
+    Friend WithEvents DgvTratamientos As System.Windows.Forms.DataGridView
 End Class

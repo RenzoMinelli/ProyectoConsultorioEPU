@@ -19,9 +19,22 @@
     Dim mausito As Integer = 0
     Dim perspectiva As Integer = 10
     Dim tratamientos As Integer = 0
+    Dim bandera As Integer = 0
+    Dim tratamiento1 As Integer
+    Dim tratamiento2 As Integer
+    Dim tratamiento3 As Integer
+    Dim tratamiento4 As Integer
+    Dim tratamiento5 As Integer
+    Dim nomtratamiento1 As String
+    Dim nomtratamiento2 As String
+    Dim nomtratamiento3 As String
+    Dim nomtratamiento4 As String
+    Dim nomtratamiento5 As String
+
     Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
+
         PnlSubmenu3d.Visible = False
         Pnl3d.Visible = True
         PnlTipo.Visible = True
@@ -74,11 +87,15 @@
 
 
 
+
+
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
         End If
-        Me.grafica.Series(0).Palette = DataVisualization.Charting.ChartColorPalette.SemiTransparent
+
+
+
     End Sub
 
     Private Sub pbconfig_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbconfig.Click
@@ -90,6 +107,11 @@
     End Sub
 
     Private Sub Lbl3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbl3d.Click
+        If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True Then
+            pnlCambarPerspectiva.Visible = True
+        Else
+            pnlCambarPerspectiva.Visible = False
+        End If
         If PnlSubmenu3d.Visible = True Then
             PnlSubmenu3d.Visible = False
         Else
@@ -104,8 +126,8 @@
         PnlSubmenu3d.Visible = False
         PnlSubMenuDatos.Visible = False
         If extra = 0 Then
-            If cont < 73 Then
-                PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y + 6)
+            If cont < 45 Then
+                PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y + 10)
                 cont += 1
             Else
                 TmrMovimiento.Dispose()
@@ -113,7 +135,7 @@
             End If
         Else
             If cont > 0 Then
-                PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y - 6)
+                PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y - 10)
                 cont -= 1
             Else
                 TmrMovimiento.Dispose()
@@ -225,6 +247,7 @@
     End Sub
 
     Private Sub LblActivar3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblActivar3d.Click
+
         If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False Then
             grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
         Else
@@ -366,6 +389,10 @@
     Private Sub Lbltratamientos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbltratamientos.Click
         If tratamientos = 0 Then
             Try
+                Consulta = "select ad_a from plan_tratamiento;"
+                consultar()
+                DgvTratamientos.DataSource = Tabla
+
 
             Catch ex As Exception
                 MsgBox(ex.ToString)
