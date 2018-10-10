@@ -4,12 +4,12 @@ Imports MySql.Data.MySqlClient
 Module Module1
     Public user As String = "root"
     Public pass As String = ""
-    Dim ubicacion As String = "server=localhost; user id= '" + user + "'  ; password='" + pass + "';database = consultorio_odontologico"
+    Dim ubicacion As String = "server=localhost; user id= 'root'  ; password='';database = consultorio_odontologico"
 
     Public Conexion As MySqlDataAdapter
     Public Tabla As DataTable
     Public Consulta As String
-    Public MysqlConexion As MySqlConnection = New MySqlConnection(ubicacion)
+    Public MysqlConexion As MySqlConnection
 
     Public conex As Boolean
 
@@ -24,6 +24,18 @@ Module Module1
 
     Public screenWidth As Integer = Screen.PrimaryScreen.Bounds.Width
     Public screenHeight As Integer = Screen.PrimaryScreen.Bounds.Height
+
+    Public Sub cambiarUsuario(ByVal us As String, ByVal pas As String)
+
+        ubicacion = "server=localhost; user id= '" + us + "'  ; password='" + pas + "'; database = consultorio_odontologico"
+        Conexion = New MySqlDataAdapter
+        MysqlConexion = New MySqlConnection(ubicacion)
+        Consulta = "select nombre from paciente"
+        Conexion = New MySqlDataAdapter(Consulta, ubicacion)
+        Tabla = New DataTable
+        'Conexion.Fill(Tabla)
+
+    End Sub
 
     '////////////////Posicionamiento///////////////////////////
     Public xf, yf As Integer

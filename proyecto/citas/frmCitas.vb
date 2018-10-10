@@ -116,6 +116,9 @@
 
             If dgvHora.CurrentCell.Value = "" Then
                 btnMarcarCita.Hide()
+                btnAgregarCita.Show()
+            Else
+                btnAgregarCita.Hide()
             End If
 
             DiaSeleccionado = MCFecha.SelectionRange.Start

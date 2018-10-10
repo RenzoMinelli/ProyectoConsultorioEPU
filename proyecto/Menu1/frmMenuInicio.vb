@@ -117,7 +117,7 @@
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        lblReloj.Text = Date.Now.ToLongTimeString
+        lblReloj.Text = Date.Now.ToString("hh:mm:ss")
     End Sub
 
     Private Sub Panel2_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlBarraSuperior.MouseClick

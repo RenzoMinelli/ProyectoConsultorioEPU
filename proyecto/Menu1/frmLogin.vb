@@ -74,14 +74,14 @@
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Consulta = "select * from paciente"
-        consultar()
+        'Consulta = "select * from paciente"
+        'consultar()
 
-        If conex = False Then
+        'If conex = False Then
 
-            MsgBox("No hay conexión a la base de datos", MsgBoxStyle.Exclamation)
+        '    MsgBox("No hay conexión a la base de datos", MsgBoxStyle.Exclamation)
 
-        End If
+        'End If
 
         btningresar.Visible = False
         btnAtras.Visible = False
@@ -97,6 +97,7 @@
             If contraseñau = contraseña Then
                 user = "odontologo"
                 pass = "odontologo"
+                ' cambiarUsuario(user, pass)
                 Me.Hide()
                 frmMenuInicio.Show()
             Else
@@ -107,9 +108,9 @@
         ElseIf contador = 2 Then
 
             If contraseñau = contraseña Then
-
                 user = "funcionario"
                 pass = "funcionario"
+                '  cambiarUsuario(user, pass)
                 Me.Hide()
                 frmMenuInicio.Show()
 
