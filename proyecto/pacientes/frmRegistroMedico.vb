@@ -7,15 +7,6 @@ Public Class frmRegistroMedico
 
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-
-
-        PnlDiente18c1.MakeTriangular(TriangleDirection.Down)
-        PnlDiente18c3.MakeTriangular(TriangleDirection.Up)
-        PnlDiente18c2.MakeTriangular(TriangleDirection.Left)
-        PnlDiente18c4.MakeTriangular(TriangleDirection.Right)
-
-
-
         
 
         'actBoca()
