@@ -1,7 +1,10 @@
 ﻿Public Class frmCitas
 
-   
+    Public fechaCita As String
+    Public horaCita As String
     Public idcita As Integer
+
+    Dim hora2, horadgv, horadgv2 As TimeSpan
 
     Public fechita, dia, FCalendario As String
     Dim DiaSeleccionado As System.DateTime
@@ -72,6 +75,8 @@
 
    
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarCita.Click
+        horadgv = dgvHora.CurrentRow.Cells(0).Value
+        MsgBox(hora2)
         Me.Hide()
         frmContenedor = frmAgregarCita
         frmContenedor.MdiParent = frmMenuInicio
@@ -111,8 +116,6 @@
 
     Private Sub dgvHora_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvHora.CellClick
         If user = "odontologo" Or user = "root" Then
-
-
 
             If dgvHora.CurrentCell.Value = "" Then
                 btnMarcarCita.Hide()
@@ -366,14 +369,12 @@
                 For x = numero To 0 Step -1
 
 
-                    Dim hora2 As TimeSpan
-
                     hora2 = TimeSpan.Parse(dgvDatosCita.Rows(x).Cells(3).Value.ToString)
 
-                    Dim horadgv As TimeSpan
+
                     horadgv = TimeSpan.Parse(dgvHora.Rows(row).Cells(0).Value.ToString)
 
-                    Dim horadgv2 As TimeSpan
+
                     horadgv2 = TimeSpan.Parse(dgvHora.Rows(row + 1).Cells(0).Value.ToString)
 
                    
@@ -2555,11 +2556,5 @@
         actCitas()
     End Sub
 
-    Private Sub dgvConsultaDia_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvConsultaDia.CellContentClick
-
-    End Sub
-
-    Private Sub dgvHora_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvHora.CellContentClick
-
-    End Sub
+ 
 End Class
