@@ -158,7 +158,7 @@ Partial Class frmIngresarPaciente
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAgregar.Location = New System.Drawing.Point(495, 657)
+        Me.btnAgregar.Location = New System.Drawing.Point(499, 550)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(146, 63)
         Me.btnAgregar.TabIndex = 9
@@ -171,7 +171,7 @@ Partial Class frmIngresarPaciente
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.Image = Global.WindowsApplication1.My.Resources.Resources.X
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCancelar.Location = New System.Drawing.Point(83, 657)
+        Me.btnCancelar.Location = New System.Drawing.Point(81, 550)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(157, 63)
         Me.btnCancelar.TabIndex = 10

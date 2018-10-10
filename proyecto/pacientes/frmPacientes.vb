@@ -102,7 +102,6 @@
         lblCartel.Visible = True
         btnCambiarEstado.Visible = False
         btnModificarDatos.Visible = False
-        btnRegistrarCita.Visible = False
         btnRegistroMedico.Visible = False
         btnRealizarPago.Visible = False
         btnCargar.Visible = False
@@ -194,7 +193,6 @@
         'Hacemos visible los botones
         btnModificarDatos.Show()
         btnCambiarEstado.Show()
-        btnRegistrarCita.Show()
         btnMostrarAntecedentes.Show()
         btnRegistroMedico.Show()
         btnRealizarPago.Show()
@@ -258,17 +256,7 @@
         lblTelefono.Text = telefono
 
     End Sub
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRegistrarCita.Click
-
-        'Al presionar el boton btnRegistrarCita, se oculta el formulario actual, se guarda el formulario Crear_Cita en el frmContenedor y se muestra
-        Me.Hide()
-        frmContenedor = frmCrearCita
-        frmContenedor.MdiParent = frmMenuInicio
-        frmContenedor.Dock = DockStyle.Fill
-        frmContenedor.Show()
-
-        frmCrearCita.dgvCitasEnLaFecha.ClearSelection()
-    End Sub
+   
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
 

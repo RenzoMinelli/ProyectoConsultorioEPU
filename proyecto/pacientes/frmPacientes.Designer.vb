@@ -50,7 +50,6 @@ Partial Class frmPacientes
         Me.lblCartel = New System.Windows.Forms.Label()
         Me.txbBusqueda = New System.Windows.Forms.TextBox()
         Me.btnRegistroMedico = New System.Windows.Forms.Button()
-        Me.btnRegistrarCita = New System.Windows.Forms.Button()
         Me.btnCambiarEstado = New System.Windows.Forms.Button()
         Me.btnModificarDatos = New System.Windows.Forms.Button()
         Me.btnIngresarPaciente = New System.Windows.Forms.Button()
@@ -349,21 +348,6 @@ Partial Class frmPacientes
         Me.btnRegistroMedico.UseVisualStyleBackColor = True
         Me.btnRegistroMedico.Visible = False
         '
-        'btnRegistrarCita
-        '
-        Me.btnRegistrarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegistrarCita.ForeColor = System.Drawing.Color.Black
-        Me.btnRegistrarCita.Image = Global.WindowsApplication1.My.Resources.Resources._42954__1_
-        Me.btnRegistrarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRegistrarCita.Location = New System.Drawing.Point(596, 603)
-        Me.btnRegistrarCita.Name = "btnRegistrarCita"
-        Me.btnRegistrarCita.Size = New System.Drawing.Size(171, 75)
-        Me.btnRegistrarCita.TabIndex = 9
-        Me.btnRegistrarCita.Text = "Registrar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cita"
-        Me.btnRegistrarCita.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnRegistrarCita.UseVisualStyleBackColor = True
-        Me.btnRegistrarCita.Visible = False
-        '
         'btnCambiarEstado
         '
         Me.btnCambiarEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -512,7 +496,6 @@ Partial Class frmPacientes
         Me.Controls.Add(Me.dgvPacientes)
         Me.Controls.Add(Me.btnRegistroMedico)
         Me.Controls.Add(Me.txbBusqueda)
-        Me.Controls.Add(Me.btnRegistrarCita)
         Me.Controls.Add(Me.btnCambiarEstado)
         Me.Controls.Add(Me.btnModificarDatos)
         Me.Controls.Add(Me.Panel1)
@@ -551,7 +534,6 @@ Partial Class frmPacientes
     Friend WithEvents pnlTapa As System.Windows.Forms.Panel
     Friend WithEvents btnModificarDatos As System.Windows.Forms.Button
     Friend WithEvents btnCambiarEstado As System.Windows.Forms.Button
-    Friend WithEvents btnRegistrarCita As System.Windows.Forms.Button
     Friend WithEvents txbBusqueda As System.Windows.Forms.TextBox
     Friend WithEvents btnRegistroMedico As System.Windows.Forms.Button
     Friend WithEvents btnMostrarAntecedentes As System.Windows.Forms.Button
