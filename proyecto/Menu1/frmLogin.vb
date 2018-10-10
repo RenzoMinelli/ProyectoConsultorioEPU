@@ -97,7 +97,7 @@
             If contraseñau = contraseña Then
                 user = "odontologo"
                 pass = "odontologo"
-                ' cambiarUsuario(user, pass)
+                cambiarUsuario(user, pass)
                 Me.Hide()
                 frmMenuInicio.Show()
             Else
@@ -110,7 +110,7 @@
             If contraseñau = contraseña Then
                 user = "funcionario"
                 pass = "funcionario"
-                '  cambiarUsuario(user, pass)
+                cambiarUsuario(user, pass)
                 Me.Hide()
                 frmMenuInicio.Show()
 
