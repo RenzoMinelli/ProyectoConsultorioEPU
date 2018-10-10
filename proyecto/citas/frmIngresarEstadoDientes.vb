@@ -4114,7 +4114,7 @@
         '----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         If cambiador12c1 = True Then
-            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '2',  '1');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente12c1E + "','" + zona1 + "', '2',  '1');")
             consultar()
         End If
 
@@ -4125,12 +4125,12 @@
 
 
         If cambiador12c3 = True Then
-            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '2',  '3');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente12c3E + "','" + zona1 + "', '2',  '3');")
             consultar()
         End If
 
         If cambiador12c4 = True Then
-            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente12c2E + "','" + zona1 + "', '2',  '4');")
+            Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente,cara) values ('" + id_p.ToString + "','" + diente12c4E + "','" + zona1 + "', '2',  '4');")
             consultar()
         End If
 
