@@ -60,22 +60,7 @@ Module Module1
 
     End Sub
 
-    Public Sub verificarConex()
 
-        Select Case MysqlConexion.State
-            Case ConnectionState.Open
-                MsgBox("open")
-            Case ConnectionState.Closed
-                MsgBox("close")
-            Case ConnectionState.Connecting
-                MsgBox("connect")
-            Case ConnectionState.Fetching
-                MsgBox("fetching")
-            Case ConnectionState.Broken
-                MsgBox("broke")
-
-        End Select
-    End Sub
     Public Sub MuestraMsgBoxVersatil(ByVal texto As String, ByVal tipo As Integer)
         frmFondoTransparente.Show()
         If tipo = 0 Then
