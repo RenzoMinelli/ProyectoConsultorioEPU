@@ -3,19 +3,20 @@
     Dim nombre As String
     Dim min As String
     Dim descr As String
-    Dim fecha, hora As String
+
 
 
 
     Private Sub agregarcitas2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        txbFechaHora.Text = frmCitas.fechaCita + "   " + frmCitas.horaCita
         txbDuracion.Text = "1"
-        fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
-        hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
+
         id_p = 0
 
         Try
 
-            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora',duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
+            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora',duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + frmCitas.fechaCita + "';"
             consultar()
             dgvCitasEnLaFecha.DataSource = Tabla
             dgvCitasEnLaFecha.Columns(4).Visible = False
@@ -30,24 +31,10 @@
         Catch ex As Exception
 
         End Try
-       
+
 
     End Sub
-    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpFechaSeleccionada.ValueChanged
-        Try
-
-            fecha = dtpFechaSeleccionada.Value.ToString("yyyy-MM-dd")
-            hora = dtpFechaSeleccionada.Value.ToString("HH:mm:ss")
-
-            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora', duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + fecha + "';"
-            consultar()
-            dgvCitasEnLaFecha.DataSource = Tabla
-            dgvCitasEnLaFecha.Columns(4).Visible = False
-        Catch ex As Exception
-
-        End Try
-       
-    End Sub
+    
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvPacientes.CellClick
         id_p = dgvPacientes.CurrentRow.Cells(1).Value
@@ -75,9 +62,9 @@
             MsgBox("Complete la duaración de la cita", MsgBoxStyle.Exclamation)
         Else
 
-            Dim ultimaHora As TimeSpan = (Convert.ToDateTime("20:30:00")).TimeOfDay
+            Dim ultimaHora As TimeSpan = (Convert.ToDateTime("21:00:00")).TimeOfDay
             Dim primeraHora As TimeSpan = (Convert.ToDateTime("08:00:00")).TimeOfDay
-            Dim horaCita As TimeSpan = (Convert.ToDateTime(hora)).TimeOfDay
+            Dim horaCita As TimeSpan = (Convert.ToDateTime(frmCitas.horaCita)).TimeOfDay
             Dim horaCitaFinal As New TimeSpan
             Dim HoraAuxFinal As New TimeSpan
             Dim mediaHora As New TimeSpan(0, 30, 0)
@@ -98,7 +85,7 @@
 
             End If
 
-            If horaCitaFinal < ultimaHora And horaCita > primeraHora Then
+            If horaCitaFinal <= ultimaHora And horaCita >= primeraHora Then
 
                 Dim control As Integer = 0
 
@@ -130,7 +117,7 @@
 
 
 
-                        Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion, duracion) values ('" + id_p.ToString + "','" + fecha + "', '" + horaCita.ToString + "', 0, '" + descr + "','" + txbDuracion.Text + "'); "
+                        Consulta = "Insert into cita (id_p, fecha, hora, atendida, descripcion, duracion) values ('" + id_p.ToString + "','" + frmCitas.fechaCita + "', '" + horaCita.ToString + "', 0, '" + descr + "','" + txbDuracion.Text + "'); "
                         consultar()
 
 

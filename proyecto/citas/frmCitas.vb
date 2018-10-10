@@ -75,8 +75,167 @@
 
    
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarCita.Click
-        horadgv = dgvHora.CurrentRow.Cells(0).Value
-        MsgBox(hora2)
+        horaCita = dgvHora.CurrentRow.Cells(0).Value.ToString
+
+        DiaSeleccionado = MCFecha.SelectionRange.Start
+        FCalendario = Weekday(DiaSeleccionado)
+
+        Select Case dgvHora.CurrentCell.ColumnIndex
+            Case 1
+
+                Select Case FCalendario
+
+                    Case "2"
+                        fechaCita = DiaSeleccionado.ToString("yyyy-MM-dd")
+                        
+                    Case "3"
+                        fechaCita = DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd")
+                        
+                    Case "4"
+                        fechaCita = DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd")
+                        
+                    Case "5"
+                        fechaCita = DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd")
+                        
+                    Case "6"
+                        fechaCita = DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd")
+                        
+                    Case "7"
+                        fechaCita = DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd")
+
+                    Case "1"
+                        fechaCita = DiaSeleccionado.AddDays(-6).ToString("yyyy-MM-dd")
+                        
+                End Select
+
+            Case 2
+                Select Case FCalendario
+
+                    Case "2"
+                        fechaCita = DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd")
+                        
+                    Case "3"
+                        fechaCita = DiaSeleccionado.ToString("yyyy-MM-dd")
+                        
+                    Case "4"
+                        fechaCita = DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd")
+                        
+                    Case "5"
+                        fechaCita = DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd")
+
+                    Case "6"
+                        fechaCita = DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd")
+                        
+                    Case "7"
+                        fechaCita = DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd")
+                        
+                    Case "1"
+                        fechaCita = DiaSeleccionado.AddDays(-5).ToString("yyyy-MM-dd")
+                       
+                End Select
+
+            Case 3
+                Select Case FCalendario
+
+                    Case "2"
+                        fechaCita = DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd")
+                        
+                    Case "3"
+                        fechaCita = DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd")
+                        
+                    Case "4"
+                        fechaCita = DiaSeleccionado.ToString("yyyy-MM-dd")
+                        
+                    Case "5"
+                        fechaCita = DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd")
+                        
+                    Case "6"
+                        fechaCita = DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd")
+                        
+                    Case "7"
+                        fechaCita = DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd")
+
+                    Case "1"
+                        fechaCita = DiaSeleccionado.AddDays(-4).ToString("yyyy-MM-dd")
+                        
+                End Select
+            Case 4
+                Select Case FCalendario
+
+                    Case "2"
+                        fechaCita = DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd")
+                        
+                    Case "3"
+                        fechaCita = DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd")
+                        
+                    Case "4"
+                        fechaCita = DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd")
+                        
+                    Case "5"
+                        fechaCita = DiaSeleccionado.ToString("yyyy-MM-dd")
+                        
+                    Case "6"
+                        fechaCita = DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd")
+                        
+                    Case "7"
+                        fechaCita = DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd")
+                        
+                    Case "1"
+                        fechaCita = DiaSeleccionado.AddDays(-3).ToString("yyyy-MM-dd")
+                        
+                End Select
+            Case 5
+                Select Case FCalendario
+
+                    Case "2"
+                        fechaCita = DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd")
+                        
+                    Case "3"
+                        fechaCita = DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd")
+                     
+                    Case "4"
+                        fechaCita = DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd")
+                        
+                    Case "5"
+                        fechaCita = DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd")
+                      
+                    Case "6"
+                        fechaCita = DiaSeleccionado.ToString("yyyy-MM-dd")
+                        
+                    Case "7"
+                        fechaCita = DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd")
+                      
+                    Case "1"
+                        fechaCita = DiaSeleccionado.AddDays(-2).ToString("yyyy-MM-dd")
+                       
+                End Select
+            Case 6
+                Select Case FCalendario
+
+                    Case "2"
+                        fechaCita = DiaSeleccionado.AddDays(5).ToString("yyyy-MM-dd")
+                        
+                    Case "3"
+                        fechaCita = DiaSeleccionado.AddDays(4).ToString("yyyy-MM-dd")
+                       
+                    Case "4"
+                        fechaCita = DiaSeleccionado.AddDays(3).ToString("yyyy-MM-dd")
+                       
+                    Case "5"
+                        fechaCita = DiaSeleccionado.AddDays(2).ToString("yyyy-MM-dd")
+
+                    Case "6"
+                        fechaCita = DiaSeleccionado.AddDays(1).ToString("yyyy-MM-dd")
+                    Case "7"
+                        fechaCita = DiaSeleccionado.ToString("yyyy-MM-dd")
+                       
+                    Case "1"
+                        fechaCita = DiaSeleccionado.AddDays(-1).ToString("yyyy-MM-dd")
+                        
+                End Select
+
+        End Select
+
         Me.Hide()
         frmContenedor = frmAgregarCita
         frmContenedor.MdiParent = frmMenuInicio
