@@ -23,9 +23,9 @@ Partial Class frmGraficas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.dgvInfo = New System.Windows.Forms.DataGridView()
         Me.pbconfig = New System.Windows.Forms.PictureBox()
@@ -37,9 +37,11 @@ Partial Class frmGraficas
         Me.PnlTipo = New System.Windows.Forms.Panel()
         Me.LblTipo = New System.Windows.Forms.Label()
         Me.PnlSubMenuDatos = New System.Windows.Forms.Panel()
+        Me.PnlTratamientos = New System.Windows.Forms.Panel()
+        Me.Lbltratamientos = New System.Windows.Forms.Label()
         Me.PnlPromedades = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Movimiento = New System.Windows.Forms.Timer(Me.components)
+        Me.TmrMovimiento = New System.Windows.Forms.Timer(Me.components)
         Me.pnldesplmenu = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PnlSubmenu3d = New System.Windows.Forms.Panel()
@@ -47,6 +49,9 @@ Partial Class frmGraficas
         Me.lblCambiarPers = New System.Windows.Forms.Label()
         Me.Pnlact3d = New System.Windows.Forms.Panel()
         Me.LblActivar3d = New System.Windows.Forms.Label()
+        Me.PnlOpPers = New System.Windows.Forms.Panel()
+        Me.PnlOp1 = New System.Windows.Forms.Panel()
+        Me.Lblop1 = New System.Windows.Forms.Label()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbconfig, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,26 +60,29 @@ Partial Class frmGraficas
         Me.Pnl3d.SuspendLayout()
         Me.PnlTipo.SuspendLayout()
         Me.PnlSubMenuDatos.SuspendLayout()
+        Me.PnlTratamientos.SuspendLayout()
         Me.PnlPromedades.SuspendLayout()
         Me.pnldesplmenu.SuspendLayout()
         Me.PnlSubmenu3d.SuspendLayout()
         Me.pnlCambarPerspectiva.SuspendLayout()
         Me.Pnlact3d.SuspendLayout()
+        Me.PnlOpPers.SuspendLayout()
+        Me.PnlOp1.SuspendLayout()
         Me.SuspendLayout()
         '
         'grafica
         '
-        ChartArea1.Name = "Pacientes"
-        Me.grafica.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.grafica.Legends.Add(Legend1)
+        ChartArea2.Name = "Pacientes"
+        Me.grafica.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.grafica.Legends.Add(Legend2)
         Me.grafica.Location = New System.Drawing.Point(1, 45)
         Me.grafica.Margin = New System.Windows.Forms.Padding(4)
         Me.grafica.Name = "grafica"
-        Series1.ChartArea = "Pacientes"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Num pacientes"
-        Me.grafica.Series.Add(Series1)
+        Series2.ChartArea = "Pacientes"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Num pacientes"
+        Me.grafica.Series.Add(Series2)
         Me.grafica.Size = New System.Drawing.Size(1336, 656)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
@@ -107,11 +115,11 @@ Partial Class frmGraficas
         '
         'PnlMenu
         '
-        Me.PnlMenu.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PnlMenu.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlMenu.Controls.Add(Me.PnlGrafica)
         Me.PnlMenu.Controls.Add(Me.Pnl3d)
         Me.PnlMenu.Controls.Add(Me.PnlTipo)
-        Me.PnlMenu.Location = New System.Drawing.Point(1337, 46)
+        Me.PnlMenu.Location = New System.Drawing.Point(1300, 46)
         Me.PnlMenu.Margin = New System.Windows.Forms.Padding(4)
         Me.PnlMenu.Name = "PnlMenu"
         Me.PnlMenu.Size = New System.Drawing.Size(248, 425)
@@ -133,7 +141,7 @@ Partial Class frmGraficas
         '
         Me.LblGrafica.AutoSize = True
         Me.LblGrafica.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblGrafica.ForeColor = System.Drawing.SystemColors.Menu
+        Me.LblGrafica.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.LblGrafica.Location = New System.Drawing.Point(36, 9)
         Me.LblGrafica.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblGrafica.Name = "LblGrafica"
@@ -157,13 +165,13 @@ Partial Class frmGraficas
         '
         Me.Lbl3d.AutoSize = True
         Me.Lbl3d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl3d.ForeColor = System.Drawing.SystemColors.Menu
-        Me.Lbl3d.Location = New System.Drawing.Point(48, 8)
+        Me.Lbl3d.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Lbl3d.Location = New System.Drawing.Point(4, 6)
         Me.Lbl3d.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Lbl3d.Name = "Lbl3d"
-        Me.Lbl3d.Size = New System.Drawing.Size(136, 32)
+        Me.Lbl3d.Size = New System.Drawing.Size(240, 32)
         Me.Lbl3d.TabIndex = 0
-        Me.Lbl3d.Text = "Modo 3D"
+        Me.Lbl3d.Text = "     Modo 3D        "
         '
         'PnlTipo
         '
@@ -181,7 +189,7 @@ Partial Class frmGraficas
         '
         Me.LblTipo.AutoSize = True
         Me.LblTipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblTipo.ForeColor = System.Drawing.SystemColors.Menu
+        Me.LblTipo.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.LblTipo.Location = New System.Drawing.Point(27, 7)
         Me.LblTipo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblTipo.Name = "LblTipo"
@@ -191,18 +199,37 @@ Partial Class frmGraficas
         '
         'PnlSubMenuDatos
         '
-        Me.PnlSubMenuDatos.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PnlSubMenuDatos.BackColor = System.Drawing.Color.RoyalBlue
+        Me.PnlSubMenuDatos.Controls.Add(Me.PnlTratamientos)
         Me.PnlSubMenuDatos.Controls.Add(Me.PnlPromedades)
-        Me.PnlSubMenuDatos.Location = New System.Drawing.Point(1069, 200)
+        Me.PnlSubMenuDatos.Location = New System.Drawing.Point(1032, 200)
         Me.PnlSubMenuDatos.Margin = New System.Windows.Forms.Padding(4)
         Me.PnlSubMenuDatos.Name = "PnlSubMenuDatos"
         Me.PnlSubMenuDatos.Size = New System.Drawing.Size(268, 136)
         Me.PnlSubMenuDatos.TabIndex = 13
         Me.PnlSubMenuDatos.Visible = False
         '
+        'PnlTratamientos
+        '
+        Me.PnlTratamientos.Controls.Add(Me.Lbltratamientos)
+        Me.PnlTratamientos.Location = New System.Drawing.Point(0, 44)
+        Me.PnlTratamientos.Name = "PnlTratamientos"
+        Me.PnlTratamientos.Size = New System.Drawing.Size(268, 41)
+        Me.PnlTratamientos.TabIndex = 23
+        '
+        'Lbltratamientos
+        '
+        Me.Lbltratamientos.AutoSize = True
+        Me.Lbltratamientos.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbltratamientos.Location = New System.Drawing.Point(6, 12)
+        Me.Lbltratamientos.Name = "Lbltratamientos"
+        Me.Lbltratamientos.Size = New System.Drawing.Size(259, 20)
+        Me.Lbltratamientos.TabIndex = 0
+        Me.Lbltratamientos.Text = "Tratamientos Mas Realizados"
+        '
         'PnlPromedades
         '
-        Me.PnlPromedades.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PnlPromedades.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlPromedades.Controls.Add(Me.Label1)
         Me.PnlPromedades.Location = New System.Drawing.Point(0, 0)
         Me.PnlPromedades.Name = "PnlPromedades"
@@ -219,15 +246,15 @@ Partial Class frmGraficas
         Me.Label1.TabIndex = 22
         Me.Label1.Text = "Edades Pacientes"
         '
-        'Movimiento
+        'TmrMovimiento
         '
-        Me.Movimiento.Interval = 15
+        Me.TmrMovimiento.Interval = 15
         '
         'pnldesplmenu
         '
-        Me.pnldesplmenu.BackColor = System.Drawing.Color.DarkBlue
+        Me.pnldesplmenu.BackColor = System.Drawing.Color.CornflowerBlue
         Me.pnldesplmenu.Controls.Add(Me.pbconfig)
-        Me.pnldesplmenu.Location = New System.Drawing.Point(1337, -2)
+        Me.pnldesplmenu.Location = New System.Drawing.Point(1300, -2)
         Me.pnldesplmenu.Name = "pnldesplmenu"
         Me.pnldesplmenu.Size = New System.Drawing.Size(248, 40)
         Me.pnldesplmenu.TabIndex = 20
@@ -245,10 +272,10 @@ Partial Class frmGraficas
         '
         'PnlSubmenu3d
         '
-        Me.PnlSubmenu3d.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PnlSubmenu3d.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlSubmenu3d.Controls.Add(Me.pnlCambarPerspectiva)
         Me.PnlSubmenu3d.Controls.Add(Me.Pnlact3d)
-        Me.PnlSubmenu3d.Location = New System.Drawing.Point(1069, 70)
+        Me.PnlSubmenu3d.Location = New System.Drawing.Point(1032, 70)
         Me.PnlSubmenu3d.Margin = New System.Windows.Forms.Padding(4)
         Me.PnlSubmenu3d.Name = "PnlSubmenu3d"
         Me.PnlSubmenu3d.Size = New System.Drawing.Size(268, 136)
@@ -257,7 +284,7 @@ Partial Class frmGraficas
         '
         'pnlCambarPerspectiva
         '
-        Me.pnlCambarPerspectiva.BackColor = System.Drawing.Color.MidnightBlue
+        Me.pnlCambarPerspectiva.BackColor = System.Drawing.Color.RoyalBlue
         Me.pnlCambarPerspectiva.Controls.Add(Me.lblCambiarPers)
         Me.pnlCambarPerspectiva.Location = New System.Drawing.Point(3, 39)
         Me.pnlCambarPerspectiva.Name = "pnlCambarPerspectiva"
@@ -276,7 +303,7 @@ Partial Class frmGraficas
         '
         'Pnlact3d
         '
-        Me.Pnlact3d.BackColor = System.Drawing.Color.MidnightBlue
+        Me.Pnlact3d.BackColor = System.Drawing.Color.RoyalBlue
         Me.Pnlact3d.Controls.Add(Me.LblActivar3d)
         Me.Pnlact3d.Location = New System.Drawing.Point(0, 0)
         Me.Pnlact3d.Name = "Pnlact3d"
@@ -293,11 +320,42 @@ Partial Class frmGraficas
         Me.LblActivar3d.TabIndex = 22
         Me.LblActivar3d.Text = "Activar/Desactivar 3d"
         '
+        'PnlOpPers
+        '
+        Me.PnlOpPers.BackColor = System.Drawing.Color.RoyalBlue
+        Me.PnlOpPers.Controls.Add(Me.PnlOp1)
+        Me.PnlOpPers.ForeColor = System.Drawing.Color.MediumTurquoise
+        Me.PnlOpPers.Location = New System.Drawing.Point(816, 103)
+        Me.PnlOpPers.Name = "PnlOpPers"
+        Me.PnlOpPers.Size = New System.Drawing.Size(216, 135)
+        Me.PnlOpPers.TabIndex = 23
+        Me.PnlOpPers.Visible = False
+        '
+        'PnlOp1
+        '
+        Me.PnlOp1.Controls.Add(Me.Lblop1)
+        Me.PnlOp1.Location = New System.Drawing.Point(0, 0)
+        Me.PnlOp1.Name = "PnlOp1"
+        Me.PnlOp1.Size = New System.Drawing.Size(216, 44)
+        Me.PnlOp1.TabIndex = 1
+        '
+        'Lblop1
+        '
+        Me.Lblop1.AutoSize = True
+        Me.Lblop1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblop1.ForeColor = System.Drawing.Color.MintCream
+        Me.Lblop1.Location = New System.Drawing.Point(46, 6)
+        Me.Lblop1.Name = "Lblop1"
+        Me.Lblop1.Size = New System.Drawing.Size(118, 29)
+        Me.Lblop1.TabIndex = 0
+        Me.Lblop1.Text = "Opcion 1"
+        '
         'frmGraficas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1848, 747)
+        Me.Controls.Add(Me.PnlOpPers)
         Me.Controls.Add(Me.PnlSubmenu3d)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.pnldesplmenu)
@@ -321,6 +379,8 @@ Partial Class frmGraficas
         Me.PnlTipo.ResumeLayout(False)
         Me.PnlTipo.PerformLayout()
         Me.PnlSubMenuDatos.ResumeLayout(False)
+        Me.PnlTratamientos.ResumeLayout(False)
+        Me.PnlTratamientos.PerformLayout()
         Me.PnlPromedades.ResumeLayout(False)
         Me.PnlPromedades.PerformLayout()
         Me.pnldesplmenu.ResumeLayout(False)
@@ -329,6 +389,9 @@ Partial Class frmGraficas
         Me.pnlCambarPerspectiva.PerformLayout()
         Me.Pnlact3d.ResumeLayout(False)
         Me.Pnlact3d.PerformLayout()
+        Me.PnlOpPers.ResumeLayout(False)
+        Me.PnlOp1.ResumeLayout(False)
+        Me.PnlOp1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -344,7 +407,7 @@ Partial Class frmGraficas
     Friend WithEvents Lbl3d As System.Windows.Forms.Label
     Friend WithEvents LblTipo As System.Windows.Forms.Label
     Friend WithEvents PnlSubMenuDatos As System.Windows.Forms.Panel
-    Friend WithEvents Movimiento As System.Windows.Forms.Timer
+    Friend WithEvents TmrMovimiento As System.Windows.Forms.Timer
     Friend WithEvents pnldesplmenu As System.Windows.Forms.Panel
     Friend WithEvents PnlPromedades As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -354,4 +417,9 @@ Partial Class frmGraficas
     Friend WithEvents LblActivar3d As System.Windows.Forms.Label
     Friend WithEvents pnlCambarPerspectiva As System.Windows.Forms.Panel
     Friend WithEvents lblCambiarPers As System.Windows.Forms.Label
+    Friend WithEvents PnlTratamientos As System.Windows.Forms.Panel
+    Friend WithEvents Lbltratamientos As System.Windows.Forms.Label
+    Friend WithEvents PnlOpPers As System.Windows.Forms.Panel
+    Friend WithEvents PnlOp1 As System.Windows.Forms.Panel
+    Friend WithEvents Lblop1 As System.Windows.Forms.Label
 End Class
