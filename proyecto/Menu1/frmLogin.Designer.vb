@@ -39,8 +39,8 @@ Partial Class frmLogin
         'btnfuncionario
         '
         Me.btnfuncionario.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold)
-        Me.btnfuncionario.Location = New System.Drawing.Point(53, 441)
-        Me.btnfuncionario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnfuncionario.Location = New System.Drawing.Point(40, 350)
+        Me.btnfuncionario.Margin = New System.Windows.Forms.Padding(4)
         Me.btnfuncionario.Name = "btnfuncionario"
         Me.btnfuncionario.Size = New System.Drawing.Size(556, 103)
         Me.btnfuncionario.TabIndex = 2
@@ -51,7 +51,7 @@ Partial Class frmLogin
         '
         Me.btnodontologo.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold)
         Me.btnodontologo.Location = New System.Drawing.Point(40, 167)
-        Me.btnodontologo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnodontologo.Margin = New System.Windows.Forms.Padding(4)
         Me.btnodontologo.Name = "btnodontologo"
         Me.btnodontologo.Size = New System.Drawing.Size(556, 116)
         Me.btnodontologo.TabIndex = 1
@@ -72,8 +72,8 @@ Partial Class frmLogin
         'btningresar
         '
         Me.btningresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btningresar.Location = New System.Drawing.Point(340, 435)
-        Me.btningresar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btningresar.Location = New System.Drawing.Point(338, 350)
+        Me.btningresar.Margin = New System.Windows.Forms.Padding(4)
         Me.btningresar.Name = "btningresar"
         Me.btningresar.Size = New System.Drawing.Size(288, 110)
         Me.btningresar.TabIndex = 7
@@ -84,7 +84,7 @@ Partial Class frmLogin
         '
         Me.dgbcontraseña.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgbcontraseña.Location = New System.Drawing.Point(4, 4)
-        Me.dgbcontraseña.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgbcontraseña.Margin = New System.Windows.Forms.Padding(4)
         Me.dgbcontraseña.Name = "dgbcontraseña"
         Me.dgbcontraseña.Size = New System.Drawing.Size(13, 14)
         Me.dgbcontraseña.TabIndex = 8
@@ -94,7 +94,7 @@ Partial Class frmLogin
         '
         Me.txtcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtcontraseña.Location = New System.Drawing.Point(40, 226)
-        Me.txtcontraseña.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtcontraseña.Margin = New System.Windows.Forms.Padding(4)
         Me.txtcontraseña.Name = "txtcontraseña"
         Me.txtcontraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtcontraseña.Size = New System.Drawing.Size(555, 41)
@@ -103,8 +103,8 @@ Partial Class frmLogin
         'btnAtras
         '
         Me.btnAtras.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAtras.Location = New System.Drawing.Point(25, 435)
-        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAtras.Location = New System.Drawing.Point(25, 350)
+        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAtras.Name = "btnAtras"
         Me.btnAtras.Size = New System.Drawing.Size(288, 110)
         Me.btnAtras.TabIndex = 9
@@ -117,9 +117,9 @@ Partial Class frmLogin
         Me.Panel1.Controls.Add(Me.pbCerrar)
         Me.Panel1.Controls.Add(Me.lblingrusuario)
         Me.Panel1.Controls.Add(Me.dgbcontraseña)
-        Me.Panel1.Location = New System.Drawing.Point(0, 1)
+        Me.Panel1.Location = New System.Drawing.Point(0, -3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(659, 57)
+        Me.Panel1.Size = New System.Drawing.Size(659, 61)
         Me.Panel1.TabIndex = 10
         '
         'pbCerrar
@@ -136,7 +136,7 @@ Partial Class frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(660, 649)
+        Me.ClientSize = New System.Drawing.Size(660, 566)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnAtras)
         Me.Controls.Add(Me.btningresar)
@@ -144,7 +144,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.btnfuncionario)
         Me.Controls.Add(Me.btnodontologo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"

@@ -23,9 +23,9 @@ Partial Class frmGraficas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.dgvInfo = New System.Windows.Forms.DataGridView()
         Me.pbconfig = New System.Windows.Forms.PictureBox()
@@ -43,6 +43,7 @@ Partial Class frmGraficas
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TmrMovimiento = New System.Windows.Forms.Timer(Me.components)
         Me.pnldesplmenu = New System.Windows.Forms.Panel()
+        Me.LblDespmenu = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PnlSubmenu3d = New System.Windows.Forms.Panel()
         Me.pnlCambarPerspectiva = New System.Windows.Forms.Panel()
@@ -50,8 +51,12 @@ Partial Class frmGraficas
         Me.Pnlact3d = New System.Windows.Forms.Panel()
         Me.LblActivar3d = New System.Windows.Forms.Label()
         Me.PnlOpPers = New System.Windows.Forms.Panel()
+        Me.PnlOp2 = New System.Windows.Forms.Panel()
+        Me.LblOp2 = New System.Windows.Forms.Label()
         Me.PnlOp1 = New System.Windows.Forms.Panel()
         Me.Lblop1 = New System.Windows.Forms.Label()
+        Me.PnlOp3 = New System.Windows.Forms.Panel()
+        Me.LblOp3 = New System.Windows.Forms.Label()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbconfig, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -67,22 +72,26 @@ Partial Class frmGraficas
         Me.pnlCambarPerspectiva.SuspendLayout()
         Me.Pnlact3d.SuspendLayout()
         Me.PnlOpPers.SuspendLayout()
+        Me.PnlOp2.SuspendLayout()
         Me.PnlOp1.SuspendLayout()
+        Me.PnlOp3.SuspendLayout()
         Me.SuspendLayout()
         '
         'grafica
         '
-        ChartArea2.Name = "Pacientes"
-        Me.grafica.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.grafica.Legends.Add(Legend2)
+        ChartArea1.Name = "Pacientes"
+        Me.grafica.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.grafica.Legends.Add(Legend1)
         Me.grafica.Location = New System.Drawing.Point(1, 45)
         Me.grafica.Margin = New System.Windows.Forms.Padding(4)
         Me.grafica.Name = "grafica"
-        Series2.ChartArea = "Pacientes"
-        Series2.Legend = "Legend1"
-        Series2.Name = "Num pacientes"
-        Me.grafica.Series.Add(Series2)
+        Series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        Series1.ChartArea = "Pacientes"
+        Series1.Color = System.Drawing.Color.MidnightBlue
+        Series1.Legend = "Legend1"
+        Series1.Name = "Num pacientes"
+        Me.grafica.Series.Add(Series1)
         Me.grafica.Size = New System.Drawing.Size(1336, 656)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
@@ -105,7 +114,7 @@ Partial Class frmGraficas
         'pbconfig
         '
         Me.pbconfig.Image = Global.WindowsApplication1.My.Resources.Resources.ruedita
-        Me.pbconfig.Location = New System.Drawing.Point(201, 0)
+        Me.pbconfig.Location = New System.Drawing.Point(4, 0)
         Me.pbconfig.Margin = New System.Windows.Forms.Padding(4)
         Me.pbconfig.Name = "pbconfig"
         Me.pbconfig.Size = New System.Drawing.Size(43, 40)
@@ -202,10 +211,10 @@ Partial Class frmGraficas
         Me.PnlSubMenuDatos.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlSubMenuDatos.Controls.Add(Me.PnlTratamientos)
         Me.PnlSubMenuDatos.Controls.Add(Me.PnlPromedades)
-        Me.PnlSubMenuDatos.Location = New System.Drawing.Point(1032, 200)
+        Me.PnlSubMenuDatos.Location = New System.Drawing.Point(1025, 200)
         Me.PnlSubMenuDatos.Margin = New System.Windows.Forms.Padding(4)
         Me.PnlSubMenuDatos.Name = "PnlSubMenuDatos"
-        Me.PnlSubMenuDatos.Size = New System.Drawing.Size(268, 136)
+        Me.PnlSubMenuDatos.Size = New System.Drawing.Size(275, 136)
         Me.PnlSubMenuDatos.TabIndex = 13
         Me.PnlSubMenuDatos.Visible = False
         '
@@ -248,16 +257,27 @@ Partial Class frmGraficas
         '
         'TmrMovimiento
         '
-        Me.TmrMovimiento.Interval = 15
+        Me.TmrMovimiento.Interval = 12
         '
         'pnldesplmenu
         '
         Me.pnldesplmenu.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.pnldesplmenu.Controls.Add(Me.LblDespmenu)
         Me.pnldesplmenu.Controls.Add(Me.pbconfig)
         Me.pnldesplmenu.Location = New System.Drawing.Point(1300, -2)
         Me.pnldesplmenu.Name = "pnldesplmenu"
         Me.pnldesplmenu.Size = New System.Drawing.Size(248, 40)
         Me.pnldesplmenu.TabIndex = 20
+        '
+        'LblDespmenu
+        '
+        Me.LblDespmenu.AutoSize = True
+        Me.LblDespmenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblDespmenu.Location = New System.Drawing.Point(69, 5)
+        Me.LblDespmenu.Name = "LblDespmenu"
+        Me.LblDespmenu.Size = New System.Drawing.Size(125, 29)
+        Me.LblDespmenu.TabIndex = 9
+        Me.LblDespmenu.Text = "Opciones"
         '
         'Label2
         '
@@ -275,10 +295,10 @@ Partial Class frmGraficas
         Me.PnlSubmenu3d.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlSubmenu3d.Controls.Add(Me.pnlCambarPerspectiva)
         Me.PnlSubmenu3d.Controls.Add(Me.Pnlact3d)
-        Me.PnlSubmenu3d.Location = New System.Drawing.Point(1032, 70)
+        Me.PnlSubmenu3d.Location = New System.Drawing.Point(1021, 70)
         Me.PnlSubmenu3d.Margin = New System.Windows.Forms.Padding(4)
         Me.PnlSubmenu3d.Name = "PnlSubmenu3d"
-        Me.PnlSubmenu3d.Size = New System.Drawing.Size(268, 136)
+        Me.PnlSubmenu3d.Size = New System.Drawing.Size(279, 136)
         Me.PnlSubmenu3d.TabIndex = 22
         Me.PnlSubmenu3d.Visible = False
         '
@@ -286,9 +306,9 @@ Partial Class frmGraficas
         '
         Me.pnlCambarPerspectiva.BackColor = System.Drawing.Color.RoyalBlue
         Me.pnlCambarPerspectiva.Controls.Add(Me.lblCambiarPers)
-        Me.pnlCambarPerspectiva.Location = New System.Drawing.Point(3, 39)
+        Me.pnlCambarPerspectiva.Location = New System.Drawing.Point(0, 39)
         Me.pnlCambarPerspectiva.Name = "pnlCambarPerspectiva"
-        Me.pnlCambarPerspectiva.Size = New System.Drawing.Size(268, 38)
+        Me.pnlCambarPerspectiva.Size = New System.Drawing.Size(271, 38)
         Me.pnlCambarPerspectiva.TabIndex = 23
         '
         'lblCambiarPers
@@ -323,20 +343,41 @@ Partial Class frmGraficas
         'PnlOpPers
         '
         Me.PnlOpPers.BackColor = System.Drawing.Color.RoyalBlue
+        Me.PnlOpPers.Controls.Add(Me.PnlOp3)
+        Me.PnlOpPers.Controls.Add(Me.PnlOp2)
         Me.PnlOpPers.Controls.Add(Me.PnlOp1)
         Me.PnlOpPers.ForeColor = System.Drawing.Color.MediumTurquoise
-        Me.PnlOpPers.Location = New System.Drawing.Point(816, 103)
+        Me.PnlOpPers.Location = New System.Drawing.Point(820, 103)
         Me.PnlOpPers.Name = "PnlOpPers"
-        Me.PnlOpPers.Size = New System.Drawing.Size(216, 135)
+        Me.PnlOpPers.Size = New System.Drawing.Size(212, 135)
         Me.PnlOpPers.TabIndex = 23
         Me.PnlOpPers.Visible = False
+        '
+        'PnlOp2
+        '
+        Me.PnlOp2.Controls.Add(Me.LblOp2)
+        Me.PnlOp2.Location = New System.Drawing.Point(0, 44)
+        Me.PnlOp2.Name = "PnlOp2"
+        Me.PnlOp2.Size = New System.Drawing.Size(212, 44)
+        Me.PnlOp2.TabIndex = 2
+        '
+        'LblOp2
+        '
+        Me.LblOp2.AutoSize = True
+        Me.LblOp2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblOp2.ForeColor = System.Drawing.Color.MintCream
+        Me.LblOp2.Location = New System.Drawing.Point(69, 10)
+        Me.LblOp2.Name = "LblOp2"
+        Me.LblOp2.Size = New System.Drawing.Size(64, 29)
+        Me.LblOp2.TabIndex = 0
+        Me.LblOp2.Text = "140°"
         '
         'PnlOp1
         '
         Me.PnlOp1.Controls.Add(Me.Lblop1)
         Me.PnlOp1.Location = New System.Drawing.Point(0, 0)
         Me.PnlOp1.Name = "PnlOp1"
-        Me.PnlOp1.Size = New System.Drawing.Size(216, 44)
+        Me.PnlOp1.Size = New System.Drawing.Size(209, 38)
         Me.PnlOp1.TabIndex = 1
         '
         'Lblop1
@@ -344,11 +385,30 @@ Partial Class frmGraficas
         Me.Lblop1.AutoSize = True
         Me.Lblop1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lblop1.ForeColor = System.Drawing.Color.MintCream
-        Me.Lblop1.Location = New System.Drawing.Point(46, 6)
+        Me.Lblop1.Location = New System.Drawing.Point(69, 6)
         Me.Lblop1.Name = "Lblop1"
-        Me.Lblop1.Size = New System.Drawing.Size(118, 29)
+        Me.Lblop1.Size = New System.Drawing.Size(64, 29)
         Me.Lblop1.TabIndex = 0
-        Me.Lblop1.Text = "Opcion 1"
+        Me.Lblop1.Text = "180°"
+        '
+        'PnlOp3
+        '
+        Me.PnlOp3.Controls.Add(Me.LblOp3)
+        Me.PnlOp3.Location = New System.Drawing.Point(3, 88)
+        Me.PnlOp3.Name = "PnlOp3"
+        Me.PnlOp3.Size = New System.Drawing.Size(209, 44)
+        Me.PnlOp3.TabIndex = 3
+        '
+        'LblOp3
+        '
+        Me.LblOp3.AutoSize = True
+        Me.LblOp3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblOp3.ForeColor = System.Drawing.Color.MintCream
+        Me.LblOp3.Location = New System.Drawing.Point(5, 9)
+        Me.LblOp3.Name = "LblOp3"
+        Me.LblOp3.Size = New System.Drawing.Size(201, 29)
+        Me.LblOp3.TabIndex = 0
+        Me.LblOp3.Text = "Predeterminado"
         '
         'frmGraficas
         '
@@ -384,14 +444,19 @@ Partial Class frmGraficas
         Me.PnlPromedades.ResumeLayout(False)
         Me.PnlPromedades.PerformLayout()
         Me.pnldesplmenu.ResumeLayout(False)
+        Me.pnldesplmenu.PerformLayout()
         Me.PnlSubmenu3d.ResumeLayout(False)
         Me.pnlCambarPerspectiva.ResumeLayout(False)
         Me.pnlCambarPerspectiva.PerformLayout()
         Me.Pnlact3d.ResumeLayout(False)
         Me.Pnlact3d.PerformLayout()
         Me.PnlOpPers.ResumeLayout(False)
+        Me.PnlOp2.ResumeLayout(False)
+        Me.PnlOp2.PerformLayout()
         Me.PnlOp1.ResumeLayout(False)
         Me.PnlOp1.PerformLayout()
+        Me.PnlOp3.ResumeLayout(False)
+        Me.PnlOp3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -422,4 +487,9 @@ Partial Class frmGraficas
     Friend WithEvents PnlOpPers As System.Windows.Forms.Panel
     Friend WithEvents PnlOp1 As System.Windows.Forms.Panel
     Friend WithEvents Lblop1 As System.Windows.Forms.Label
+    Friend WithEvents LblDespmenu As System.Windows.Forms.Label
+    Friend WithEvents PnlOp2 As System.Windows.Forms.Panel
+    Friend WithEvents LblOp2 As System.Windows.Forms.Label
+    Friend WithEvents PnlOp3 As System.Windows.Forms.Panel
+    Friend WithEvents LblOp3 As System.Windows.Forms.Label
 End Class

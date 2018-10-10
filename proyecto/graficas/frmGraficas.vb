@@ -20,6 +20,7 @@
     Dim perspectiva As Integer = 10
     Dim tratamientos As Integer = 0
     Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
         grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
         PnlSubmenu3d.Visible = False
         Pnl3d.Visible = True
@@ -77,10 +78,14 @@
                 MsgBox(ex.ToString)
             End Try
         End If
+        Me.grafica.Series(0).Palette = DataVisualization.Charting.ChartColorPalette.SemiTransparent
     End Sub
 
     Private Sub pbconfig_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbconfig.Click
         TmrMovimiento.Start()
+        PnlSubMenuDatos.Visible = False
+        PnlSubmenu3d.Visible = False
+        PnlOpPers.Visible = False
 
     End Sub
 
@@ -183,7 +188,8 @@
         TmrMovimiento.Start()
         PnlSubMenuDatos.Visible = False
         PnlSubmenu3d.Visible = False
-        PnlPromedades.BackColor = Color.MidnightBlue
+        PnlOpPers.Visible = False
+
 
     End Sub
 
@@ -237,8 +243,6 @@
         Pnlact3d.BackColor = Color.MidnightBlue
         pnlCambarPerspectiva.BackColor = Color.RoyalBlue
     End Sub
-
-
 
     Private Sub grafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles grafica.MouseEnter
         PnlSubmenu3d.Visible = False
@@ -332,8 +336,9 @@
         PnlOpPers.Visible = True
     End Sub
 
-    Private Sub pnlCambarPerspectiva_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlCambarPerspectiva.Paint
 
+    Private Sub PnlOp1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlOp1.MouseClick
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 180
     End Sub
 
 
@@ -354,7 +359,7 @@
     End Sub
 
     Private Sub Lblop1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lblop1.Click
-
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 180
 
     End Sub
 
@@ -366,5 +371,58 @@
                 MsgBox(ex.ToString)
             End Try
         End If
+    End Sub
+
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblDespmenu.Click
+        TmrMovimiento.Start()
+        PnlSubMenuDatos.Visible = False
+        PnlSubmenu3d.Visible = False
+        PnlOpPers.Visible = False
+
+
+    End Sub
+
+    Private Sub LblOp2_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles LblOp2.MouseClick
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 140
+    End Sub
+
+    Private Sub PnlOp2_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlOp2.MouseEnter
+        PnlOp2.BackColor = Color.MidnightBlue
+    End Sub
+
+    Private Sub PnlOp2_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlOp2.MouseLeave
+        PnlOp2.BackColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub LblOp2_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblOp2.MouseEnter
+        PnlOp2.BackColor = Color.MidnightBlue
+    End Sub
+
+    Private Sub LblOp2_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblOp2.MouseLeave
+        PnlOp2.BackColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub LblOp3_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles LblOp3.MouseClick
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 10
+    End Sub
+
+    Private Sub PnlOp3_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlOp3.MouseClick
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 10
+    End Sub
+
+    Private Sub LblOp3_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblOp3.MouseEnter
+        PnlOp3.BackColor = Color.MidnightBlue
+    End Sub
+
+    Private Sub LblOp3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblOp3.MouseLeave
+        PnlOp3.BackColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub PnlOp3_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlOp3.MouseEnter
+        PnlOp3.BackColor = Color.MidnightBlue
+    End Sub
+
+    Private Sub PnlOp3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlOp3.MouseLeave
+        PnlOp3.BackColor = Color.RoyalBlue
     End Sub
 End Class
