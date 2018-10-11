@@ -12,19 +12,20 @@
         txbFechaHora.Text = frmCitas.fechaCita + "   " + frmCitas.horaCita
         txbDuracion.Text = "1"
 
+        'Establezco como debe cargar el txbBusqueda
+        txbBusqueda.ForeColor = Color.Gray
+        txbBusqueda.Text = "Buscar"
+
         id_p = 0
 
         Try
 
-            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora',duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + frmCitas.fechaCita + "';"
-            consultar()
-            dgvCitasEnLaFecha.DataSource = Tabla
-            dgvCitasEnLaFecha.Columns(4).Visible = False
+           
 
-            Consulta = "Select nombre as 'Nombre',id_p from paciente;"
+            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente;"
             consultar()
             dgvPacientes.DataSource = Tabla
-            dgvPacientes.Columns(1).Visible = False
+            dgvPacientes.Columns(3).Visible = False
 
 
 
@@ -37,7 +38,7 @@
     
 
     Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvPacientes.CellClick
-        id_p = dgvPacientes.CurrentRow.Cells(1).Value
+        id_p = dgvPacientes.CurrentRow.Cells(3).Value
         nombre = dgvPacientes.CurrentRow.Cells(0).Value
 
 
@@ -87,31 +88,7 @@
 
             If horaCitaFinal <= ultimaHora And horaCita >= primeraHora Then
 
-                Dim control As Integer = 0
-
-
-                For x = 0 To dgvCitasEnLaFecha.RowCount - 1
-
-                    HoraAux = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
-
-                    HoraAuxFinal = HoraAux
-
-                    For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(4).Value
-
-                        HoraAuxFinal += mediaHora
-                    Next
-                    If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
-
-                        control = 1
-
-                    End If
-
-
-                Next
-
-                If control = 1 Then
-                    MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
-                Else
+               
                     Try
 
 
@@ -133,11 +110,6 @@
                     End Try
 
                 End If
-            Else
-
-                MsgBox("Los horarios marcados están fuera de los límites", MsgBoxStyle.Exclamation)
-            End If
-
 
 
         End If
@@ -151,5 +123,101 @@
         Me.Dispose()
     End Sub
 
-   
+    Private Sub txbBusqueda_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.Click
+
+        'Si el contenido de txbBusqueda es Buscar y de color gris
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
+
+            'El cursos se ubique al inicio
+            Me.txbBusqueda.SelectionStart = 0
+
+        End If
+
+    End Sub
+
+    Private Sub txbBusqueda_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.GotFocus
+
+        'Si el contenido de txbBusqueda es Buscar y de color gris
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
+
+            'El cursos se ubique al inicio
+            txbBusqueda.SelectionStart = 0
+
+        End If
+
+    End Sub
+
+    Private Sub txbBusqueda_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txbBusqueda.KeyDown
+
+        'Si el contenido de txbBusqueda es Buscar, de color gris y la tecla presionada no es 
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray And Not e.KeyCode = Keys.Back Then
+
+            'Borrar el contenido del txbBusqueda y volver el color negro
+            txbBusqueda.Text = ""
+            txbBusqueda.ForeColor = Color.Black
+
+
+            'Si txbBusqueda solo tiene una letra y la tecla presionada fue borrar, 
+        ElseIf e.KeyCode = Keys.Back And txbBusqueda.Text.Length = 1 Then
+
+            'Introduzco el texto 'Buscar' al txbBusqueda de color Gris
+            txbBusqueda.Text = "Buscar"
+            txbBusqueda.ForeColor = Color.Gray
+            actTabla()
+
+
+            'Si la tecla presionada es borrar y todo el texto esta seleccionado
+        ElseIf e.KeyCode = Keys.Back And txbBusqueda.SelectedText = txbBusqueda.Text Then
+
+            'Introduzco el texto 'Buscar' al txbBusqueda de color Gris
+            txbBusqueda.Text = "Buscar"
+            txbBusqueda.ForeColor = Color.Gray
+            actTabla()
+
+        End If
+    End Sub
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
+
+        'Cuando el contenido de txbBusqueda cambia, guardamos lo ingresado en la variable busqueda
+        Dim busqueda As String = txbBusqueda.Text
+
+        'Si el txbBusqueda es igual a 'Buscar' y es de color Gris
+        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
+
+            'Que actualice el dgbPaciente simplemente
+            actTabla()
+
+        Else 'Si no
+
+            'Intentamos obtener los pacientes que cumplan con las condición
+            Try
+
+                Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente where cedula like '%" + txbBusqueda.Text + "%' or nombre like '%" + txbBusqueda.Text + "%' or apellido like '%" + txbBusqueda.Text + "%';"
+                consultar()
+                dgvPacientes.DataSource = Tabla
+
+            Catch ex As Exception
+
+                'Si se genera una excepción que se muestre una alerta
+                MsgBox("Error al buscar los pacientes", MsgBoxStyle.Exclamation)
+
+            End Try
+
+        End If
+
+    End Sub
+    Private Sub actTabla()
+        Try
+
+            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente;"
+            consultar()
+            dgvPacientes.DataSource = Tabla
+            dgvPacientes.Columns(3).Visible = False
+
+        Catch ex As Exception
+
+            MsgBox("Error al buscar los pacientes", MsgBoxStyle.Exclamation)
+
+        End Try
+    End Sub
 End Class

@@ -56,6 +56,7 @@ Partial Class frmCitas
         Me.btnAgregarCita.TabIndex = 2
         Me.btnAgregarCita.Text = "agregar cita"
         Me.btnAgregarCita.UseVisualStyleBackColor = True
+        Me.btnAgregarCita.Visible = False
         '
         'btnMarcarCita
         '

@@ -23,7 +23,7 @@
         Dim ver As Integer = 0
         Dim ver2 As Integer = 0
 
-        If txbNombre.Text <> "" And txbCedula.Text <> "" And txbDireccionPersonal.Text <> "" And txbTelefono.Text <> "" And txbApellido.Text <> "" Then
+        If txbNombre.Text <> "" And txbNombre.ForeColor <> Color.Gray And txbCedula.Text <> "" And txbCedula.ForeColor <> Color.Gray And txbDireccionPersonal.Text <> "" And txbDireccionPersonal.ForeColor <> Color.Gray And txbTelefono.Text <> "" And txbTelefono.ForeColor <> Color.Gray And txbApellido.Text <> "" And txbApellido.ForeColor <> Color.Gray Then
             If IsNumeric(txbCedula.Text) Then
 
                 Consulta = "select * from paciente where cedula = '" + txbCedula.Text + "';"
@@ -157,7 +157,7 @@
 
             Else
                 MsgBox("La cédula solo debe contener números", MsgBoxStyle.Exclamation)
-                txbCedula.Clear()
+
             End If
 
 
@@ -656,4 +656,5 @@
         End If
     End Sub
 
+ 
 End Class

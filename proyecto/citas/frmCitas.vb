@@ -4,7 +4,7 @@
     Public horaCita As String
     Public idcita As Integer
 
-    Dim hora2, horadgv, horadgv2 As TimeSpan
+    Dim hora2, hora2f, horadgv, horadgv2 As TimeSpan
 
     Public fechita, dia, FCalendario As String
     Dim DiaSeleccionado As System.DateTime
@@ -515,26 +515,29 @@
             End Select
 
 
-
-            ' MsgBox("dia act: " + FCalendario.ToString + " dia selec: " + dgvHora.CurrentCell.ColumnIndex.ToString)
-            ' viendo en que linea se selecciono ver en que hora esta
-            'en un for ver la tabla aux
-            'if comparando la hora de las citas con la hora de la cita seleccionada del (current row) y menor a la siguiente (current row.index(+1))
-
-
             If dgvDatosCita.RowCount <> 0 Then
 
                 Dim numero As Integer = dgvDatosCita.RowCount - 1
                 For x = numero To 0 Step -1
 
-
+                    Consulta = "select duracion from cita where id_c = '" + dgvDatosCita.Rows(x).Cells(0).Value.ToString + "';"
+                    consultar()
+                    dgvConsultaDia.DataSource = Tabla
+                    Dim dura As Integer = dgvConsultaDia.Rows(0).Cells(0).Value
                     hora2 = TimeSpan.Parse(dgvDatosCita.Rows(x).Cells(3).Value.ToString)
 
+                    hora2f = hora2
+
+                    Dim mediaHora As New TimeSpan(0, 30, 0)
+
+                    For x2 = 1 To dura
+                        hora2f += mediaHora
+                    Next
 
                     horadgv = TimeSpan.Parse(dgvHora.Rows(row).Cells(0).Value.ToString)
 
 
-                    horadgv2 = TimeSpan.Parse(dgvHora.Rows(row + 1).Cells(0).Value.ToString)
+                    horadgv2 = TimeSpan.Parse(dgvHora.Rows(row + dura).Cells(0).Value.ToString)
 
                    
                     If hora2 < horadgv Or hora2 >= horadgv2 Then
@@ -2716,4 +2719,9 @@
     End Sub
 
  
+    Private Sub dgvHora_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvHora.CellDoubleClick
+        If dgvHora.CurrentCell.Value = "" Then
+            btnAgregarCita.PerformClick()
+        End If
+    End Sub
 End Class
