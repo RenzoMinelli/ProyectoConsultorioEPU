@@ -389,7 +389,7 @@
     Private Sub Lbltratamientos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbltratamientos.Click
         If tratamientos = 0 Then
             Try
-                Consulta = "select ad_a from plan_tratamiento;"
+                Consulta = "select id_a from plan_tratamiento;"
                 consultar()
                 DgvTratamientos.DataSource = Tabla
 
