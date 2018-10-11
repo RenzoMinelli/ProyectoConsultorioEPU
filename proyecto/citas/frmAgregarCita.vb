@@ -20,13 +20,24 @@
 
         Try
 
-           
-
             Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente;"
             consultar()
             dgvPacientes.DataSource = Tabla
             dgvPacientes.Columns(3).Visible = False
 
+
+
+        Catch ex As Exception
+
+        End Try
+
+        Try
+
+           
+
+            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora', duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + frmCitas.fechaCita + "';"
+            consultar()
+            dgvCitasEnLaFecha.DataSource = Tabla
 
 
         Catch ex As Exception
@@ -86,9 +97,36 @@
 
             End If
 
-            If horaCitaFinal <= ultimaHora And horaCita >= primeraHora Then
+            If horaCitaFinal < ultimaHora And horaCita > primeraHora Then
 
-               
+                Dim control As Integer = 0
+
+
+                For x = 0 To dgvCitasEnLaFecha.RowCount - 1
+
+                    HoraAux = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
+
+                    HoraAuxFinal = HoraAux
+
+                    For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(4).Value
+
+                        HoraAuxFinal += mediaHora
+                    Next
+                    MsgBox("horaAux: " + HoraAux.ToString + " HoraAuxFinal: " + HoraAuxFinal.ToString + " HoraCita " + horaCita.ToString + " horaCitaFinal " + horaCitaFinal.ToString)
+
+                    'Tengo que arreglar esto !!!!!!!!!!!!!!
+                    If (horaCita < HoraAuxFinal And horaCita > HoraAux) Or (horaCitaFinal < HoraAuxFinal And horaCitaFinal > HoraAux) Or (horaCita < HoraAux And horaCitaFinal > HoraAuxFinal) Then
+
+                        control = 1
+
+                    End If
+
+
+                Next
+
+                If control = 1 Then
+                    MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
+                Else
                     Try
 
 
@@ -110,10 +148,14 @@
                     End Try
 
                 End If
+            Else
+
+                MsgBox("Los horarios marcados están fuera de los límites", MsgBoxStyle.Exclamation)
+            End If
+
 
 
         End If
-
 
 
     End Sub

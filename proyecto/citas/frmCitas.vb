@@ -524,6 +524,7 @@
                     consultar()
                     dgvConsultaDia.DataSource = Tabla
                     Dim dura As Integer = dgvConsultaDia.Rows(0).Cells(0).Value
+
                     hora2 = TimeSpan.Parse(dgvDatosCita.Rows(x).Cells(3).Value.ToString)
 
                     hora2f = hora2
@@ -537,7 +538,7 @@
                     horadgv = TimeSpan.Parse(dgvHora.Rows(row).Cells(0).Value.ToString)
 
 
-                    horadgv2 = TimeSpan.Parse(dgvHora.Rows(row + dura).Cells(0).Value.ToString)
+                    horadgv2 = TimeSpan.Parse(dgvHora.Rows(row + 1).Cells(0).Value.ToString)
 
                    
                     If hora2 < horadgv Or hora2 >= horadgv2 Then
