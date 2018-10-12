@@ -104,6 +104,12 @@
     <Compile Include="citas\frmMarcarCitaConcluida.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="citas\frmModificarCita.Designer.vb">
+      <DependentUpon>frmModificarCita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="citas\frmModificarCita.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="citas\frmPlanTratamiento.Designer.vb">
       <DependentUpon>frmPlanTratamiento.vb</DependentUpon>
     </Compile>
@@ -194,10 +200,6 @@
     <Compile Include="pacientes\frmAntecedentes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\frmCrearCita.Designer.vb">
-      <DependentUpon>frmCrearCita.vb</DependentUpon>
-    </Compile>
-    <Compile Include="pacientes\frmCrearCita.vb" />
     <Compile Include="pacientes\frmFondoTransparente.Designer.vb">
       <DependentUpon>frmFondoTransparente.vb</DependentUpon>
     </Compile>
@@ -278,6 +280,9 @@
     <EmbeddedResource Include="citas\frmMarcarCitaConcluida.resx">
       <DependentUpon>frmMarcarCitaConcluida.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="citas\frmModificarCita.resx">
+      <DependentUpon>frmModificarCita.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="citas\frmPlanTratamiento.resx">
       <DependentUpon>frmPlanTratamiento.vb</DependentUpon>
     </EmbeddedResource>
@@ -319,9 +324,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\frmAntecedentes.resx">
       <DependentUpon>frmAntecedentes.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\frmCrearCita.resx">
-      <DependentUpon>frmCrearCita.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\frmFondoTransparente.resx">
       <DependentUpon>frmFondoTransparente.vb</DependentUpon>

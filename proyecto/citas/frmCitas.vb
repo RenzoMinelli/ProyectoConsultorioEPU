@@ -12,7 +12,7 @@
    
     Private Sub Citas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        dgvDatosCita.Hide()
+        dgvDatosCita.Hide() '
 
         LabelDia.Hide()
         seleccionado.Hide()
@@ -57,6 +57,7 @@
         actCitas()
 
         btnMarcarCita.Visible = False
+        btnCambiarCita.Visible = False
     End Sub
 
     Private Sub Label19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -256,28 +257,12 @@
     End Sub
 
 
-    Private Sub DataGridView1_CellMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs)
-        btnMarcarCita.Visible = True
-        'Aca le asigno el valor a idPaciente y de idCita cuando se hace click en la tabla
-        'idcita = dgvLunes.CurrentRow.Cells(3).Value
-        'Mira que id_p es una variable global que se usa en todo el programa, no es necesario crear otra xd
-        'id_p = dgvLunes.CurrentRow.Cells(4).Value
-    End Sub
-
-
-
-
-
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-
     Private Sub dgvHora_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvHora.CellClick
         If user = "odontologo" Or user = "root" Then
 
             If dgvHora.CurrentCell.Value = "" Then
                 btnMarcarCita.Hide()
+                btnCambiarCita.Hide()
                 btnAgregarCita.Show()
             Else
                 btnAgregarCita.Hide()
@@ -559,7 +544,7 @@
                 idcita = dgvDatosCita.Rows(0).Cells(0).Value
 
                 btnMarcarCita.Show()
-
+                btnCambiarCita.Show()
             Else
                 dgvDatosCita.DataSource = Nothing
 
@@ -2724,5 +2709,13 @@
         If dgvHora.CurrentCell.Value = "" Then
             btnAgregarCita.PerformClick()
         End If
+    End Sub
+
+    Private Sub btnCambiarCita_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCambiarCita.Click
+        Me.Hide()
+        frmContenedor = frmModificarCita
+        frmContenedor.MdiParent = frmMenuInicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
     End Sub
 End Class

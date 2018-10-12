@@ -20,7 +20,7 @@
 
         Try
 
-            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente;"
+            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente order by apellido asc;"
             consultar()
             dgvPacientes.DataSource = Tabla
             dgvPacientes.Columns(3).Visible = False
@@ -82,20 +82,30 @@
             Dim mediaHora As New TimeSpan(0, 30, 0)
             Dim HoraAux As New TimeSpan
 
-            Dim duracion As Integer = Val(txbDuracion.Text)
+           
 
-            If duracion = 1 Then
 
-                horaCitaFinal = horaCita + mediaHora
 
-            Else
+                If Val(txbDuracion.Text) > 1 Then
 
-                horaCitaFinal = horaCita + mediaHora
-                For indice = 1 To Val(txbDuracion.Text) - 1
-                    horaCitaFinal += mediaHora
-                Next
+                    horaCitaFinal = horaCita + mediaHora
 
-            End If
+                    If Val(txbDuracion.Text) > 2 Then
+
+                        For indice = 1 To Val(txbDuracion.Text) - 2
+                            horaCitaFinal += mediaHora
+                        Next
+
+                    End If
+
+                    
+                Else
+                    horaCitaFinal = horaCita
+                End If
+
+
+
+
 
             If horaCitaFinal < ultimaHora And horaCita > primeraHora Then
 
@@ -106,16 +116,29 @@
 
                     HoraAux = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
 
-                    HoraAuxFinal = HoraAux
+                  
+                    If dgvCitasEnLaFecha.Rows(x).Cells(4).Value > 1 Then
 
-                    For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(4).Value
+                        HoraAuxFinal = HoraAux + mediaHora
+                      
+                        If dgvCitasEnLaFecha.Rows(x).Cells(4).Value > 2 Then
 
-                        HoraAuxFinal += mediaHora
-                    Next
-                    MsgBox("horaAux: " + HoraAux.ToString + " HoraAuxFinal: " + HoraAuxFinal.ToString + " HoraCita " + horaCita.ToString + " horaCitaFinal " + horaCitaFinal.ToString)
 
-                    'Tengo que arreglar esto !!!!!!!!!!!!!!
-                    If (horaCita < HoraAuxFinal And horaCita > HoraAux) Or (horaCitaFinal < HoraAuxFinal And horaCitaFinal > HoraAux) Or (horaCita < HoraAux And horaCitaFinal > HoraAuxFinal) Then
+
+                            For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(4).Value - 2
+                                HoraAuxFinal += mediaHora
+
+                            Next
+
+                        End If
+
+
+                    Else
+                        HoraAuxFinal = HoraAux
+                    End If
+
+                  
+                    If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
 
                         control = 1
 
