@@ -15,6 +15,10 @@
 
                 While lblTexto.Text(x) <> " "
                     x += 1
+                    If x > lblTexto.Text.Length - 1 Then
+                        Exit While
+                    End If
+
                 End While
 
                 parte1 = lblTexto.Text.Substring(0, x)

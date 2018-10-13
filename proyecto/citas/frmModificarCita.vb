@@ -40,110 +40,134 @@
     End Sub
 
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
-        If IsNumeric(txbDuracion.Text) = True Then
-            If Val(txbDuracion.Text) >= 1 Then
-                If txbDuracion.Text <> duracion Then
+        If txbDuracion.Text <> duracion Or txbAnotaciones.Text <> anotaciones Then
+            If IsNumeric(txbDuracion.Text) = True Then
+                If Val(txbDuracion.Text) >= 1 Then
+                    If txbAnotaciones.Text <> "" Then
 
-                    Dim ultimaHora As TimeSpan = (Convert.ToDateTime("21:00:00")).TimeOfDay
-                    Dim primeraHora As TimeSpan = (Convert.ToDateTime("08:00:00")).TimeOfDay
-                    Dim horaCita As TimeSpan = (Convert.ToDateTime(frmCitas.horaCita)).TimeOfDay
-                    Dim horaCitaFinal As New TimeSpan
-                    Dim HoraAuxFinal As New TimeSpan
-                    Dim mediaHora As New TimeSpan(0, 30, 0)
-                    Dim HoraAux As New TimeSpan
+                        MuestraMsgBoxVersatil("¿Desea gurdar los cambios realizados?", 0)
 
+                        If respint = 1 Then
 
+                            '--------------------------------------Si la duracion ha sido cambiada-----------------------------------------
+                            If txbDuracion.Text <> duracion Then
 
-                    If Val(txbDuracion.Text) > 1 Then
-
-                        horaCitaFinal = horaCita + mediaHora
-
-                        If Val(txbDuracion.Text) > 2 Then
-
-                            For indice = 1 To Val(txbDuracion.Text) - 2
-                                horaCitaFinal += mediaHora
-                            Next
-
-                        End If
-
-
-                    Else
-                        horaCitaFinal = horaCita
-                    End If
+                                Dim ultimaHora As TimeSpan = (Convert.ToDateTime("21:00:00")).TimeOfDay
+                                Dim primeraHora As TimeSpan = (Convert.ToDateTime("08:00:00")).TimeOfDay
+                                Dim horaCita As TimeSpan = (Convert.ToDateTime(frmCitas.horaCita)).TimeOfDay
+                                Dim horaCitaFinal As New TimeSpan
+                                Dim HoraAuxFinal As New TimeSpan
+                                Dim mediaHora As New TimeSpan(0, 30, 0)
+                                Dim HoraAux As New TimeSpan
 
 
 
+                                If Val(txbDuracion.Text) > 1 Then
+
+                                    horaCitaFinal = horaCita + mediaHora
+
+                                    If Val(txbDuracion.Text) > 2 Then
+
+                                        For indice = 1 To Val(txbDuracion.Text) - 2
+                                            horaCitaFinal += mediaHora
+                                        Next
+
+                                    End If
 
 
-                    If horaCitaFinal < ultimaHora And horaCita > primeraHora Then
-
-                        Dim control As Integer = 0
-
-
-                        For x = 0 To dgvCitasEnLaFecha.RowCount - 1
-
-                            HoraAux = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
-
-
-                            If dgvCitasEnLaFecha.Rows(x).Cells(4).Value > 1 Then
-
-                                HoraAuxFinal = HoraAux + mediaHora
-
-                                If dgvCitasEnLaFecha.Rows(x).Cells(4).Value > 2 Then
-
-
-
-                                    For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(4).Value - 2
-                                        HoraAuxFinal += mediaHora
-
-                                    Next
-
+                                Else
+                                    horaCitaFinal = horaCita
                                 End If
 
 
-                            Else
-                                HoraAuxFinal = HoraAux
+
+
+
+                                If horaCitaFinal < ultimaHora And horaCita > primeraHora Then
+
+                                    Dim control As Integer = 0
+
+
+                                    For x = 0 To dgvCitasEnLaFecha.RowCount - 1
+
+                                        HoraAux = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
+
+
+                                        If dgvCitasEnLaFecha.Rows(x).Cells(4).Value > 1 Then
+
+                                            HoraAuxFinal = HoraAux + mediaHora
+
+                                            If dgvCitasEnLaFecha.Rows(x).Cells(4).Value > 2 Then
+
+
+
+                                                For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(4).Value - 2
+                                                    HoraAuxFinal += mediaHora
+
+                                                Next
+
+                                            End If
+
+
+                                        Else
+                                            HoraAuxFinal = HoraAux
+                                        End If
+
+
+                                        If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
+
+                                            control = 1
+
+                                        End If
+
+
+                                    Next
+
+                                    If control = 1 Then
+                                        MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
+                                    Else
+
+
+                                        Try
+                                            Consulta = "update cita set duracion = '" + txbDuracion.Text + "' where id_c = '" + frmCitas.idcita.ToString + "';"
+                                            consultar()
+
+                                        Catch ex As Exception
+                                            MsgBox("Error al actualizar duración", MsgBoxStyle.Exclamation)
+                                        End Try
+
+                                    End If
+                                End If
                             End If
 
+                            '-----------------------------------------Si las anotaciones han sido cambiadas--------------------------------------------------
 
-                            If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
+                            Try
+                                Consulta = "UPDATE cita set descripcion = '" + txbAnotaciones.Text + "' where id_c = '" + frmCitas.idcita.ToString + "';"
+                                consultar()
 
-                                control = 1
+                            Catch ex As Exception
+                                MsgBox("Error al actualizar las anotaciones", MsgBoxStyle.Exclamation)
+                            End Try
 
-                            End If
-
-
-                        Next
-
-                        If control = 1 Then
-                            MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
+                            MsgBox("Actualizado satisfactoriamente", MsgBoxStyle.Information)
+                            frmCitas.actCitas()
+                            Me.Dispose()
+                            frmCitas.Show()
                         Else
-                            MuestraMsgBoxVersatil("¿Está seguro que desea cambiar la duración de la cita a " + txbDuracion.Text + "?", 0)
-                            If respint = 1 Then
-                                Try
-                                    Consulta = "update cita set duracion = '" + txbDuracion.Text + "' where id_c = '" + frmCitas.idcita.ToString + "';"
-                                    consultar()
-
-                                    MsgBox("Actualizado satisfactoriamente", MsgBoxStyle.Information)
-                                    frmCitas.actCitas()
-                                Catch ex As Exception
-                                    MsgBox("Error al actualizar duración", MsgBoxStyle.Exclamation)
-                                End Try
-                            Else
-                                MsgBox("Ningún cambio realizado", MsgBoxStyle.Information)
-                                txbDuracion.Text = duracion
-                            End If
+                            MsgBox("Ningun cambio fue realizado", MsgBoxStyle.Information)
                         End If
+                    Else
+                        MsgBox("Complete las anotaciones", MsgBoxStyle.Exclamation)
                     End If
                 Else
-                    MsgBox("no cambio")
+                    MsgBox("La duración debe ser 1 o mayor", MsgBoxStyle.Exclamation)
                 End If
             Else
-                MsgBox("La duración debe ser 1 o mayor", MsgBoxStyle.Exclamation)
+                MsgBox("La duración debe ser un número", MsgBoxStyle.Exclamation)
             End If
-        Else
-            MsgBox("La duración debe ser un número", MsgBoxStyle.Exclamation)
         End If
+
 
     End Sub
 End Class

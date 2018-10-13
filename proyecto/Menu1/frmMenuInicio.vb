@@ -2,8 +2,6 @@
 
 
     Dim a As Integer = 0
-    Dim xco, yco As Integer
-    Dim xc, yc As Integer
 
     Dim con As Integer = 0
 
@@ -12,16 +10,13 @@
 
 
 
-        ' Me.PerformAutoScale()
+
 
         ' Me.WindowState = FormWindowState.Maximized
         'pbMaximizar.Image = My.Resources.img_509774_1_
         'pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
         'pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
         'pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
-
-        'con = 1
-
 
 
         xf = Me.Location.X
@@ -350,7 +345,9 @@
 
 
         End If
-        actPos()
+
+        xf = Me.Location.X
+        yf = Me.Location.Y
     End Sub
 
     Private Sub PictureBox8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCitas.Click
@@ -382,8 +379,4 @@
     End Sub
 
 
-
-    Private Sub pnlBarraSuperior_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlBarraSuperior.Paint
-
-    End Sub
 End Class

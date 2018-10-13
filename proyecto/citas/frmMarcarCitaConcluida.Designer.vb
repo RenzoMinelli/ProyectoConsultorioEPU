@@ -48,7 +48,7 @@ Partial Class frmMarcarCitaConcluida
         Me.dgvTratamientos.AllowUserToDeleteRows = False
         Me.dgvTratamientos.AllowUserToResizeColumns = False
         Me.dgvTratamientos.AllowUserToResizeRows = False
-        Me.dgvTratamientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgvTratamientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvTratamientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
@@ -71,7 +71,7 @@ Partial Class frmMarcarCitaConcluida
         Me.dgvTratamientos.Name = "dgvTratamientos"
         Me.dgvTratamientos.ReadOnly = True
         Me.dgvTratamientos.RowHeadersVisible = False
-        Me.dgvTratamientos.Size = New System.Drawing.Size(503, 372)
+        Me.dgvTratamientos.Size = New System.Drawing.Size(631, 387)
         Me.dgvTratamientos.TabIndex = 0
         '
         'lblAranceles

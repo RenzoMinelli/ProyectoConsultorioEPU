@@ -2,6 +2,10 @@
     Dim contador As Integer = 0
     Dim contraseña As String
     Dim contraseñau As String
+
+    Dim mover As Boolean
+    
+
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnodontologo.Click
         contador = 1
         Try
@@ -86,6 +90,10 @@
         btningresar.Visible = False
         btnAtras.Visible = False
         txtcontraseña.Visible = False
+
+        xf = Me.Location.X
+        yf = Me.Location.Y
+
     End Sub
 
     Private Sub btningresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btningresar.Click
@@ -141,6 +149,65 @@
 
     Private Sub pbCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCerrar.Click
         Me.Dispose()
+    End Sub
+
+    Private Sub pnlBarra_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlBarra.MouseDown
+        mover = True
+       
+    End Sub
+
+
+    Private Sub pnlBarra_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlBarra.MouseMove
+
+        If mover = True Then
+            xc = Cursor.Position.X
+            yc = Cursor.Position.Y
+
+            Dim holax, holay As Integer
+
+            holax = xc - xco
+            holay = yc - yco
+
+            Me.Location = New Point(xf + holax, yf + holay)
+        Else
+            xco = Cursor.Position.X
+            yco = Cursor.Position.Y
+        End If
+       
+
+    End Sub
+
+    Private Sub pnlBarra_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlBarra.MouseUp
+        xf = Me.Location.X
+        yf = Me.Location.Y
+        mover = False
+    End Sub
+
+    Private Sub lblingrusuario_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblingrusuario.MouseDown
+        mover = True
+    End Sub
+
+    Private Sub lblingrusuario_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblingrusuario.MouseMove
+        If mover = True Then
+            xc = Cursor.Position.X
+            yc = Cursor.Position.Y
+
+            Dim holax, holay As Integer
+
+            holax = xc - xco
+            holay = yc - yco
+
+            Me.Location = New Point(xf + holax, yf + holay)
+        Else
+            xco = Cursor.Position.X
+            yco = Cursor.Position.Y
+        End If
+    End Sub
+
+    Private Sub lblingrusuario_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblingrusuario.MouseUp
+        xf = Me.Location.X
+        yf = Me.Location.Y
+        mover = False
     End Sub
 End Class
 

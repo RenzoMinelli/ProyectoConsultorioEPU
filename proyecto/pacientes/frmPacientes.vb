@@ -68,7 +68,7 @@
 
         'Luego intenta obtener todos los datos de los pacientes con el estado según le indicamos en la base de datos
         Try
-            Consulta = "SELECT id_p, cedula, fecha_nacimiento, concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'nombre', telefono, concat(upper(left(enviado_por,1)), lower(substring(enviado_por from 2))) as 'enviado_por', concat(upper(left(direccion_particular,1)), lower(substring(direccion_particular from 2))) as 'direccion_particular', concat(upper(left(direccion_trabajo,1)), lower(substring(direccion_trabajo from 2))) as 'direccion_trabajo', saldo, estado  FROM paciente where estado = '" + estado + "';"
+            Consulta = "SELECT id_p, cedula, fecha_nacimiento, concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'nombre', telefono, concat(upper(left(enviado_por,1)), lower(substring(enviado_por from 2))) as 'enviado_por', concat(upper(left(direccion_particular,1)), lower(substring(direccion_particular from 2))) as 'direccion_particular', concat(upper(left(direccion_trabajo,1)), lower(substring(direccion_trabajo from 2))) as 'direccion_trabajo', saldo, estado  FROM paciente where estado = '" + estado + "' order by apellido asc;"
             consultar()
             dgvPacientes.DataSource = Tabla
 
@@ -87,8 +87,7 @@
             dgvPacientes.Columns(3).HeaderText = "Apellido"
             dgvPacientes.Columns(4).HeaderText = "Nombre"
 
-            'Lo ordenamos según el apellido
-            dgvPacientes.Sort(dgvPacientes.Columns(3), System.ComponentModel.ListSortDirection.Ascending)
+
 
         Catch ex As Exception
 
@@ -326,10 +325,52 @@
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRealizarPago.Click
 
         'Al presionar el boton btnRealizarPago, se oculta el formulario actual, se guarda el formulario InputPago en el frmContenedor y se muestra
-        frmContenedor = frmInputPago
-        frmContenedor.MdiParent = frmMenuInicio
-        frmContenedor.Dock = DockStyle.Fill
-        frmContenedor.Show()
+        respString = ""
+        While respString = ""
+            MuestraMsgBoxVersatil("Ingrese el monto de lo depositado en pesos uruguayos", 2)
+            If respint = 1 Then
+                If respString = "" Then
+
+                    MsgBox("complete el monto", MsgBoxStyle.Exclamation)
+                ElseIf IsNumeric(respString) = False Then
+
+                    MsgBox("El monto debe contener solo números", MsgBoxStyle.Exclamation)
+                    respString = ""
+                End If
+            Else
+                Exit While
+            End If
+           
+        End While
+        Dim pago As String = respString
+        MuestraMsgBoxVersatil("¿Confirma que el paciente " + nombre + " depositó $" + pago + "?", 0)
+        If respint = 1 Then
+            saldo -= pago
+            Try
+                Consulta = "update paciente set saldo = '" + saldo.ToString + "' where id_p = '" + id_p.ToString + "';"
+                consultar()
+
+                Dim fecha As Date = Now.ToShortDateString
+                Dim nfecha = fecha.ToString("yyyy-MM-dd")
+
+                Consulta = "insert into recibo (fecha, pago, id_p) values ('" + nfecha + "', '" + pago.ToString + "', '" + id_p.ToString + "');"
+
+                consultar()
+
+                MsgBox("Información actualizada", MsgBoxStyle.Information)
+
+                actTabla(1)
+                actPanel()
+
+
+            Catch ex As Exception
+                MsgBox("Error")
+            End Try
+        Else
+            MsgBox("Ningún cambio ha sido realizado", MsgBoxStyle.Information)
+        End If
+
+     
 
     End Sub
 

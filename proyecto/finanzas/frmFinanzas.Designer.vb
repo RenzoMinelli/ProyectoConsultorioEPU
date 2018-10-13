@@ -174,9 +174,9 @@ Partial Class frmFinanzas
         'txbBusqueda
         '
         Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbBusqueda.Location = New System.Drawing.Point(587, 105)
+        Me.txbBusqueda.Location = New System.Drawing.Point(602, 105)
         Me.txbBusqueda.Name = "txbBusqueda"
-        Me.txbBusqueda.Size = New System.Drawing.Size(386, 35)
+        Me.txbBusqueda.Size = New System.Drawing.Size(371, 35)
         Me.txbBusqueda.TabIndex = 16
         '
         'frmFinanzas

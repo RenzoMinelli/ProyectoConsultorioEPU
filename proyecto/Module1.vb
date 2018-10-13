@@ -36,13 +36,8 @@ Module Module1
 
     '////////////////Posicionamiento///////////////////////////
     Public xf, yf As Integer
-
-    Public Sub actPos()
-
-        xf = frmMenuInicio.Location.X
-        yf = frmMenuInicio.Location.Y
-
-    End Sub
+    Public xco, yco As Integer
+    Public xc, yc As Integer
     '///////////////////////////////////////////////////////
 
 

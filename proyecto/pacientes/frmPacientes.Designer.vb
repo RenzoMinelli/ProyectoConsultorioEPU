@@ -22,8 +22,8 @@ Partial Class frmPacientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblEstado = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -91,7 +91,7 @@ Partial Class frmPacientes
         Me.Panel1.ForeColor = System.Drawing.Color.Black
         Me.Panel1.Location = New System.Drawing.Point(602, 22)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(565, 453)
+        Me.Panel1.Size = New System.Drawing.Size(552, 465)
         Me.Panel1.TabIndex = 3
         '
         'lblEstado
@@ -312,7 +312,7 @@ Partial Class frmPacientes
         Me.pnlTapa.ForeColor = System.Drawing.Color.Black
         Me.pnlTapa.Location = New System.Drawing.Point(602, 22)
         Me.pnlTapa.Name = "pnlTapa"
-        Me.pnlTapa.Size = New System.Drawing.Size(565, 453)
+        Me.pnlTapa.Size = New System.Drawing.Size(552, 465)
         Me.pnlTapa.TabIndex = 6
         '
         'lblCartel
@@ -338,7 +338,7 @@ Partial Class frmPacientes
         Me.btnRegistroMedico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnRegistroMedico.Image = Global.WindowsApplication1.My.Resources.Resources._104901_1_
         Me.btnRegistroMedico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRegistroMedico.Location = New System.Drawing.Point(283, 561)
+        Me.btnRegistroMedico.Location = New System.Drawing.Point(267, 561)
         Me.btnRegistroMedico.Name = "btnRegistroMedico"
         Me.btnRegistroMedico.Size = New System.Drawing.Size(178, 75)
         Me.btnRegistroMedico.TabIndex = 16
@@ -353,7 +353,7 @@ Partial Class frmPacientes
         Me.btnCambiarEstado.ForeColor = System.Drawing.Color.Black
         Me.btnCambiarEstado.Image = Global.WindowsApplication1.My.Resources.Resources._675024_delete_512x512_1_
         Me.btnCambiarEstado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCambiarEstado.Location = New System.Drawing.Point(770, 561)
+        Me.btnCambiarEstado.Location = New System.Drawing.Point(750, 561)
         Me.btnCambiarEstado.Name = "btnCambiarEstado"
         Me.btnCambiarEstado.Size = New System.Drawing.Size(172, 75)
         Me.btnCambiarEstado.TabIndex = 8
@@ -368,7 +368,7 @@ Partial Class frmPacientes
         Me.btnModificarDatos.ForeColor = System.Drawing.Color.Black
         Me.btnModificarDatos.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
         Me.btnModificarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModificarDatos.Location = New System.Drawing.Point(542, 561)
+        Me.btnModificarDatos.Location = New System.Drawing.Point(513, 561)
         Me.btnModificarDatos.Name = "btnModificarDatos"
         Me.btnModificarDatos.Size = New System.Drawing.Size(171, 75)
         Me.btnModificarDatos.TabIndex = 7
@@ -399,23 +399,23 @@ Partial Class frmPacientes
         Me.dgvPacientes.AllowUserToResizeRows = False
         Me.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPacientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle8
         Me.dgvPacientes.Location = New System.Drawing.Point(17, 70)
         Me.dgvPacientes.MultiSelect = False
         Me.dgvPacientes.Name = "dgvPacientes"
