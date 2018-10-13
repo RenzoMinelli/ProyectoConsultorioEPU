@@ -167,11 +167,11 @@ Partial Class frmAgregarAntecedentes
         Me.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnAtras.UseVisualStyleBackColor = True
         '
-        'Agregar_Antecedentes
+        'frmAgregarAntecedentes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.ClientSize = New System.Drawing.Size(1179, 684)
         Me.Controls.Add(Me.btnAtras)
         Me.Controls.Add(Me.txbObservaciones)
         Me.Controls.Add(Me.lblObservaciones)
@@ -185,7 +185,7 @@ Partial Class frmAgregarAntecedentes
         Me.Controls.Add(Me.chbxDiabeticos)
         Me.Controls.Add(Me.chbxAlergicos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Agregar_Antecedentes"
+        Me.Name = "frmAgregarAntecedentes"
         Me.Text = "Agregar_Antecedentes"
         Me.ResumeLayout(False)
         Me.PerformLayout()

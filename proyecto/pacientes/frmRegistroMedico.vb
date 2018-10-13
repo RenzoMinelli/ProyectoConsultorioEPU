@@ -368,29 +368,6 @@ Public Class frmRegistroMedico
         End If
     End Sub
 
-
-    Private Sub btnMostrarPlaca_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMostrarPlaca.Click
-
-        frmMenuInicio.Hide()
-        frmMuestraPlaca.Show()
-
-        'frmMuestraPlaca.PictureBox1.ImageLocation = rutaGuardadoFotos + "\" + dgvRegistroMedico.CurrentRow.Cells(1).Value.ToString()
-        'Label5.Text = "" + dgvRegistroMedico.CurrentRow.Cells(2).Value
-
-
-    End Sub
-
-    Private Sub dgvRegistroMedico_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgvRegistroMedico.MouseClick
-        If cbSeleccion.SelectedIndex = 1 Then
-
-            btnMostrarPlaca.Show()
-        End If
-
-
-    End Sub
-
-
-
     Private Sub cbTratamientos_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbTratamientos.SelectedIndexChanged
         If cbTratamientos.SelectedIndex = 0 Then
             Try

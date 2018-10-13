@@ -67,11 +67,11 @@ Partial Class frmMarcarCitaConcluida
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvTratamientos.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvTratamientos.Location = New System.Drawing.Point(12, 55)
+        Me.dgvTratamientos.Location = New System.Drawing.Point(12, 67)
         Me.dgvTratamientos.Name = "dgvTratamientos"
         Me.dgvTratamientos.ReadOnly = True
         Me.dgvTratamientos.RowHeadersVisible = False
-        Me.dgvTratamientos.Size = New System.Drawing.Size(421, 384)
+        Me.dgvTratamientos.Size = New System.Drawing.Size(503, 372)
         Me.dgvTratamientos.TabIndex = 0
         '
         'lblAranceles
@@ -88,7 +88,7 @@ Partial Class frmMarcarCitaConcluida
         '
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(817, 524)
+        Me.btnGuardar.Location = New System.Drawing.Point(982, 575)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(166, 84)
         Me.btnGuardar.TabIndex = 20
@@ -99,7 +99,7 @@ Partial Class frmMarcarCitaConcluida
         '
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCancelar.Location = New System.Drawing.Point(29, 524)
+        Me.btnCancelar.Location = New System.Drawing.Point(17, 575)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(166, 84)
         Me.btnCancelar.TabIndex = 21
@@ -110,7 +110,7 @@ Partial Class frmMarcarCitaConcluida
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(222, 524)
+        Me.Button1.Location = New System.Drawing.Point(254, 575)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(166, 84)
         Me.Button1.TabIndex = 22
@@ -121,7 +121,7 @@ Partial Class frmMarcarCitaConcluida
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(448, 267)
+        Me.Label2.Location = New System.Drawing.Point(698, 270)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(322, 29)
         Me.Label2.TabIndex = 23
@@ -130,7 +130,7 @@ Partial Class frmMarcarCitaConcluida
         'txbAnotaciones
         '
         Me.txbAnotaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbAnotaciones.Location = New System.Drawing.Point(453, 300)
+        Me.txbAnotaciones.Location = New System.Drawing.Point(703, 315)
         Me.txbAnotaciones.Multiline = True
         Me.txbAnotaciones.Name = "txbAnotaciones"
         Me.txbAnotaciones.ReadOnly = True
@@ -141,7 +141,7 @@ Partial Class frmMarcarCitaConcluida
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(629, 524)
+        Me.Button2.Location = New System.Drawing.Point(768, 575)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(166, 84)
         Me.Button2.TabIndex = 25
@@ -173,7 +173,7 @@ Partial Class frmMarcarCitaConcluida
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvAuxiliar.DefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvAuxiliar.Location = New System.Drawing.Point(974, 12)
+        Me.dgvAuxiliar.Location = New System.Drawing.Point(366, 12)
         Me.dgvAuxiliar.Name = "dgvAuxiliar"
         Me.dgvAuxiliar.ReadOnly = True
         Me.dgvAuxiliar.RowHeadersVisible = False
@@ -184,7 +184,7 @@ Partial Class frmMarcarCitaConcluida
         'txbRealizado
         '
         Me.txbRealizado.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbRealizado.Location = New System.Drawing.Point(453, 55)
+        Me.txbRealizado.Location = New System.Drawing.Point(703, 67)
         Me.txbRealizado.Multiline = True
         Me.txbRealizado.Name = "txbRealizado"
         Me.txbRealizado.Size = New System.Drawing.Size(416, 188)
@@ -194,7 +194,7 @@ Partial Class frmMarcarCitaConcluida
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(448, 23)
+        Me.Label1.Location = New System.Drawing.Point(698, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(363, 29)
         Me.Label1.TabIndex = 28
@@ -204,7 +204,7 @@ Partial Class frmMarcarCitaConcluida
         '
         Me.btnEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEstado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEstado.Location = New System.Drawing.Point(418, 524)
+        Me.btnEstado.Location = New System.Drawing.Point(508, 575)
         Me.btnEstado.Name = "btnEstado"
         Me.btnEstado.Size = New System.Drawing.Size(166, 84)
         Me.btnEstado.TabIndex = 29
@@ -215,7 +215,7 @@ Partial Class frmMarcarCitaConcluida
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1008, 634)
+        Me.ClientSize = New System.Drawing.Size(1179, 684)
         Me.Controls.Add(Me.btnEstado)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txbRealizado)

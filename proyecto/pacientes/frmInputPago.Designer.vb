@@ -77,18 +77,18 @@ Partial Class frmInputPago
         Me.lblIngreseMonto.TabIndex = 4
         Me.lblIngreseMonto.Text = "Ingrese el Monto en $:"
         '
-        'InputPago
+        'frmInputPago
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.ClientSize = New System.Drawing.Size(1179, 684)
         Me.Controls.Add(Me.lblIngreseMonto)
         Me.Controls.Add(Me.btnContinuar)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.txbMonto)
         Me.Controls.Add(Me.lblDatosPaciente)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "InputPago"
+        Me.Name = "frmInputPago"
         Me.Text = "InputPago"
         Me.ResumeLayout(False)
         Me.PerformLayout()

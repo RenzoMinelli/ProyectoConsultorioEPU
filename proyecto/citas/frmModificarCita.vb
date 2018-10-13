@@ -24,7 +24,7 @@
 
         Try
 
-            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora', duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + frmCitas.fechaCita + "';"
+            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora', duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + frmCitas.fechaCita + "' and id_c <> '" + frmCitas.idcita.ToString + "';"
             consultar()
             dgvCitasEnLaFecha.DataSource = Tabla
 
@@ -118,12 +118,14 @@
                         If control = 1 Then
                             MsgBox("Ya tiene una cita marcada a esa hora", MsgBoxStyle.Information)
                         Else
-                            MuestraMsgBoxVersatil("¿Está seguro que desea cambiar la duración de la cita a " + duracion.ToString + "?", 0)
+                            MuestraMsgBoxVersatil("¿Está seguro que desea cambiar la duración de la cita a " + txbDuracion.Text + "?", 0)
                             If respint = 1 Then
                                 Try
-                                    Consulta = "update cita set duracion = '" + duracion.ToString + "' where id_c = '" + frmCitas.idcita.ToString + "';"
+                                    Consulta = "update cita set duracion = '" + txbDuracion.Text + "' where id_c = '" + frmCitas.idcita.ToString + "';"
                                     consultar()
 
+                                    MsgBox("Actualizado satisfactoriamente", MsgBoxStyle.Information)
+                                    frmCitas.actCitas()
                                 Catch ex As Exception
                                     MsgBox("Error al actualizar duración", MsgBoxStyle.Exclamation)
                                 End Try

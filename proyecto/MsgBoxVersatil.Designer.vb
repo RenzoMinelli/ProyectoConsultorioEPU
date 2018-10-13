@@ -34,7 +34,7 @@ Partial Class MsgBoxVersatil
         '
         Me.lblTexto.AutoSize = True
         Me.lblTexto.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTexto.Location = New System.Drawing.Point(7, 78)
+        Me.lblTexto.Location = New System.Drawing.Point(12, 78)
         Me.lblTexto.Name = "lblTexto"
         Me.lblTexto.Size = New System.Drawing.Size(185, 29)
         Me.lblTexto.TabIndex = 4

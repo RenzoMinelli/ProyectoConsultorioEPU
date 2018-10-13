@@ -66,7 +66,7 @@ Module Module1
         If tipo = 0 Then
 
             Dim msgbv As New MsgBoxVersatil()
-
+            msgbv.lblTexto.Location = New Point(27, 50)
             msgbv.lblTexto.Text = texto
             msgbv.btnNo.Visible = True
             msgbv.btnSi.Visible = True

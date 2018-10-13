@@ -230,12 +230,6 @@
     <Compile Include="MsgBoxVersatil.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pacientes\frmMuestraPlaca.Designer.vb">
-      <DependentUpon>frmMuestraPlaca.vb</DependentUpon>
-    </Compile>
-    <Compile Include="pacientes\frmMuestraPlaca.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="pacientes\frmPacientes.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -339,9 +333,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MsgBoxVersatil.resx">
       <DependentUpon>MsgBoxVersatil.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pacientes\frmMuestraPlaca.resx">
-      <DependentUpon>frmMuestraPlaca.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\frmPacientes.resx">
       <DependentUpon>frmPacientes.vb</DependentUpon>

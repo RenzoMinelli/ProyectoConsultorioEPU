@@ -369,11 +369,11 @@ Partial Class frmAntecedentes
         Me.TextBox1.Size = New System.Drawing.Size(581, 269)
         Me.TextBox1.TabIndex = 54
         '
-        'Antecedentes
+        'frmAntecedentes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.ClientSize = New System.Drawing.Size(1179, 684)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label19)
@@ -406,7 +406,7 @@ Partial Class frmAntecedentes
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Antecedentes"
+        Me.Name = "frmAntecedentes"
         Me.Text = "Antecedentes2"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

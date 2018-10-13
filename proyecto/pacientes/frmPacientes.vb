@@ -104,7 +104,7 @@
         btnModificarDatos.Visible = False
         btnRegistroMedico.Visible = False
         btnRealizarPago.Visible = False
-        btnCargar.Visible = False
+
 
             btnIngresarPaciente.Visible = True
 
@@ -196,7 +196,7 @@
         btnMostrarAntecedentes.Show()
         btnRegistroMedico.Show()
         btnRealizarPago.Show()
-        btnCargar.Show()
+
 
 
         'Guardamos en las variables los datos acordes
@@ -425,47 +425,6 @@
         End If
     End Sub
    
-
-
-    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCargar.Click
-        Try
-
-            Dim dialogoCarga As New OpenFileDialog 'Crea un objeto del tipo OpenFileDialog para seleccionar archivos
-            dialogoCarga.Filter = "Imágenes|*.jpg; *.png; *.gif" 'Limita a que solo se puedan seleccionar imágenes de los tipos indicados
-            dialogoCarga.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) 'Indica en un String la ubicación en donde busca por defecto, en este caso se obtiene el escritorio
-
-            Dim rutaArchivo, nombreArchivo As String
-            Dim posicionBarra, longitudNombre As Integer
-
-            'dialogoCarga.ShowDialog() Abre una pantalla de diálogo que permite obtiener el nombre y la ruta del archivo cuando el usuario lo selecciona
-            If dialogoCarga.ShowDialog() = Windows.Forms.DialogResult.OK Then 'Solo si se ha seleccionado alguna imagen
-                rutaArchivo = dialogoCarga.FileName 'Guarda la ruta con el nombre del archivo
-
-                MuestraMsgBoxVersatil("Ingrese una descripción para la foto", 2)
-                If respint = 2 Then
-                    MsgBox("Operación cancelada", MsgBoxStyle.Information)
-                Else
-                    posicionBarra = InStrRev(rutaArchivo, "\") ' Obtiene la posición en la que se encuentra la barra invertida en el String
-                    longitudNombre = rutaArchivo.Length - posicionBarra 'Obtiene la cantidad de caracteres que ocupa el nombre
-
-                    nombreArchivo = rutaArchivo.Substring(posicionBarra, longitudNombre) 'Corta la parte del nombre de la ruta completa
-                    Consulta = "INSERT INTO documentos (nombre, id_p, descripcion) VALUES ('" + nombreArchivo + "', '" + id_p.ToString + "','" + respString + "');"
-                    consultar()
-
-                    My.Computer.FileSystem.CopyFile(rutaArchivo, rutaGuardadoFotos + "\" + nombreArchivo) 'Copia imagen seleccionada en la carpeta de guardado, no sobreescribe duplicados
-
-                    MsgBox("Archivo cargado", MsgBoxStyle.Information)
-                End If
-
-
-            End If
-
-        Catch ex As Exception
-            MsgBox("Error al cargar archivo", MsgBoxStyle.Exclamation)
-        End Try
-
-
-    End Sub
 
 
   

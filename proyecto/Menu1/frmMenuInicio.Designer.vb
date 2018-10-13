@@ -352,7 +352,7 @@ Partial Class frmMenuInicio
         Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlMenu.Location = New System.Drawing.Point(0, 0)
         Me.pnlMenu.Name = "pnlMenu"
-        Me.pnlMenu.Size = New System.Drawing.Size(174, 788)
+        Me.pnlMenu.Size = New System.Drawing.Size(174, 729)
         Me.pnlMenu.TabIndex = 5
         '
         'frmMenuInicio
@@ -360,7 +360,7 @@ Partial Class frmMenuInicio
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(1350, 788)
+        Me.ClientSize = New System.Drawing.Size(1350, 729)
         Me.Controls.Add(Me.pnlBarraSuperior)
         Me.Controls.Add(Me.pnlMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

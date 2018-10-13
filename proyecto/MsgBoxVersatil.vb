@@ -13,7 +13,7 @@
 
             For x = 50 To lblTexto.Text.Length - 1
 
-                While lblTexto.Text(x) = " "
+                While lblTexto.Text(x) <> " "
                     x += 1
                 End While
 

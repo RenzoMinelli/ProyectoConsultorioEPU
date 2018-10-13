@@ -37,6 +37,7 @@ Partial Class frmCitas
         Me.dgvConsultaDia = New System.Windows.Forms.DataGridView()
         Me.dgvDatosCita = New System.Windows.Forms.DataGridView()
         Me.btnCambiarCita = New System.Windows.Forms.Button()
+        Me.btnElimiarCita = New System.Windows.Forms.Button()
         CType(Me.dgvHora, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvConsultaDia, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvDatosCita, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -147,7 +148,7 @@ Partial Class frmCitas
         DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvConsultaDia.DefaultCellStyle = DataGridViewCellStyle10
-        Me.dgvConsultaDia.Location = New System.Drawing.Point(40, 696)
+        Me.dgvConsultaDia.Location = New System.Drawing.Point(1198, 169)
         Me.dgvConsultaDia.Name = "dgvConsultaDia"
         Me.dgvConsultaDia.ReadOnly = True
         Me.dgvConsultaDia.RowHeadersVisible = False
@@ -182,7 +183,7 @@ Partial Class frmCitas
         DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvDatosCita.DefaultCellStyle = DataGridViewCellStyle12
-        Me.dgvDatosCita.Location = New System.Drawing.Point(71, 696)
+        Me.dgvDatosCita.Location = New System.Drawing.Point(1229, 169)
         Me.dgvDatosCita.Name = "dgvDatosCita"
         Me.dgvDatosCita.ReadOnly = True
         Me.dgvDatosCita.RowHeadersVisible = False
@@ -195,16 +196,27 @@ Partial Class frmCitas
         Me.btnCambiarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
         Me.btnCambiarCita.Location = New System.Drawing.Point(12, 127)
         Me.btnCambiarCita.Name = "btnCambiarCita"
-        Me.btnCambiarCita.Size = New System.Drawing.Size(248, 90)
+        Me.btnCambiarCita.Size = New System.Drawing.Size(248, 106)
         Me.btnCambiarCita.TabIndex = 17
-        Me.btnCambiarCita.Text = "Cambiar Fecha u Hora de Cita"
+        Me.btnCambiarCita.Text = "Cambiar Anotaciones o Duración"
         Me.btnCambiarCita.UseVisualStyleBackColor = True
+        '
+        'btnElimiarCita
+        '
+        Me.btnElimiarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
+        Me.btnElimiarCita.Location = New System.Drawing.Point(12, 254)
+        Me.btnElimiarCita.Name = "btnElimiarCita"
+        Me.btnElimiarCita.Size = New System.Drawing.Size(248, 106)
+        Me.btnElimiarCita.TabIndex = 18
+        Me.btnElimiarCita.Text = "Eliminar Cita"
+        Me.btnElimiarCita.UseVisualStyleBackColor = True
         '
         'frmCitas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1386, 788)
+        Me.ClientSize = New System.Drawing.Size(1179, 684)
+        Me.Controls.Add(Me.btnElimiarCita)
         Me.Controls.Add(Me.btnCambiarCita)
         Me.Controls.Add(Me.dgvDatosCita)
         Me.Controls.Add(Me.dgvConsultaDia)
@@ -235,4 +247,5 @@ Partial Class frmCitas
     Friend WithEvents dgvConsultaDia As System.Windows.Forms.DataGridView
     Friend WithEvents dgvDatosCita As System.Windows.Forms.DataGridView
     Friend WithEvents btnCambiarCita As System.Windows.Forms.Button
+    Friend WithEvents btnElimiarCita As System.Windows.Forms.Button
 End Class

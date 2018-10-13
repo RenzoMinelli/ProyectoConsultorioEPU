@@ -181,11 +181,11 @@ Partial Class frmModificarAntecedentes
         Me.chbxTratamientosMedicos.Text = "Tratamientos Médicos"
         Me.chbxTratamientosMedicos.UseVisualStyleBackColor = True
         '
-        'Modificar_Antecedentes
+        'frmModificarAntecedentes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.ClientSize = New System.Drawing.Size(1179, 684)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.txbObservaciones)
@@ -200,7 +200,7 @@ Partial Class frmModificarAntecedentes
         Me.Controls.Add(Me.chbxDiabeticos)
         Me.Controls.Add(Me.chbxAlergicos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Modificar_Antecedentes"
+        Me.Name = "frmModificarAntecedentes"
         Me.Text = "Modificar_Antecedentes"
         Me.ResumeLayout(False)
         Me.PerformLayout()
