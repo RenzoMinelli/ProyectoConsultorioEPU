@@ -315,6 +315,1511 @@ Public Class frmRegistroMedico
                                 PnlDiente12c1.BackColor = Color.White
                         End Select
 
+                    Case "122"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente12c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente12c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente12c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente12c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "123"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente12c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente12c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente12c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente12c3.BackColor = Color.White
+                        End Select
+
+                    Case "124"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente12c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente12c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente12c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente12c4.BackColor = Color.White
+                        End Select
+
+
+                    Case "131"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente13c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente13c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente13c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente13c1.BackColor = Color.White
+                        End Select
+
+                    Case "132"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente13c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente13c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente13c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente13c2.BackColor = Color.White
+                        End Select
+
+                    Case "133"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente13c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente13c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente13c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente13c3.BackColor = Color.White
+                        End Select
+
+                    Case "134"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente13c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente13c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente13c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente13c4.BackColor = Color.White
+                        End Select
+
+                    Case "141"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente14c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente14c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente14c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente14c1.BackColor = Color.White
+                        End Select
+
+                    Case "142"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente14c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente14c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente14c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente14c2.BackColor = Color.White
+                        End Select
+
+                    Case "143"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente14c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente14c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente14c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente14c3.BackColor = Color.White
+                        End Select
+
+                    Case "144"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente14c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente14c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente14c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente14c4.BackColor = Color.White
+                        End Select
+
+                    Case "151"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente15c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente15c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente15c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente15c1.BackColor = Color.White
+                        End Select
+
+
+                    Case "152"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente15c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente15c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente15c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente15c2.BackColor = Color.White
+                        End Select
+
+                    Case "153"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente15c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente15c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente15c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente15c3.BackColor = Color.White
+                        End Select
+
+                    Case "154"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente15c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente15c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente15c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente15c4.BackColor = Color.White
+                        End Select
+
+                    Case "161"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente16c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente16c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente16c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente16c1.BackColor = Color.White
+                        End Select
+
+                    Case "162"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente16c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente16c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente16c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente16c2.BackColor = Color.White
+                        End Select
+
+                    Case "163"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente16c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente16c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente16c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente16c3.BackColor = Color.White
+                        End Select
+
+                    Case "164"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente16c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente16c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente16c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente16c4.BackColor = Color.White
+                        End Select
+
+                    Case "171"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente17c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente17c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente17c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente17c1.BackColor = Color.White
+                        End Select
+
+
+                    Case "172"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente17c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente17c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente17c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente17c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "173"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente17c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente17c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente17c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente17c3.BackColor = Color.White
+                        End Select
+
+                    Case "174"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente17c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente17c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente17c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente17c4.BackColor = Color.White
+                        End Select
+
+                    Case "181"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente18c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente18c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente18c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente18c1.BackColor = Color.White
+                        End Select
+
+                    Case "182"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente18c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente18c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente18c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente18c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "183"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente18c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente18c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente18c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente18c3.BackColor = Color.White
+                        End Select
+
+                    Case "184"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente18c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente18c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente18c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente18c4.BackColor = Color.White
+                        End Select
+                End Select
+                '////////////////////////////////////////////////////
+                        Select zona
+                    Case "211"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente21c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente21c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente21c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente21c1.BackColor = Color.White
+                        End Select
+                    Case "212"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente21c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente21c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente21c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente21c2.BackColor = Color.White
+
+                        End Select
+                    Case "213"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente21c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente21c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente21c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente21c3.BackColor = Color.White
+                        End Select
+
+                    Case "214"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente21c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente21c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente21c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente21c4.BackColor = Color.White
+                        End Select
+
+                    Case "221"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente22c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente22c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente22c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente22c1.BackColor = Color.White
+                        End Select
+
+                    Case "222"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente22c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente22c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente22c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente22c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "223"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente22c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente22c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente22c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente22c3.BackColor = Color.White
+                        End Select
+
+                    Case "224"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente22c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente22c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente22c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente22c4.BackColor = Color.White
+                        End Select
+
+
+                    Case "231"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente23c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente23c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente23c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente23c1.BackColor = Color.White
+                        End Select
+
+                    Case "232"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente23c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente23c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente23c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente23c2.BackColor = Color.White
+                        End Select
+
+                    Case "233"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente23c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente23c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente23c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente23c3.BackColor = Color.White
+                        End Select
+
+                    Case "234"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente23c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente23c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente23c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente23c4.BackColor = Color.White
+                        End Select
+
+                    Case "241"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente24c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente24c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente24c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente24c1.BackColor = Color.White
+                        End Select
+
+                    Case "242"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente24c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente24c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente24c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente24c2.BackColor = Color.White
+                        End Select
+
+                    Case "243"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente24c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente24c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente24c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente24c3.BackColor = Color.White
+                        End Select
+
+                    Case "244"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente24c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente24c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente24c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente24c4.BackColor = Color.White
+                        End Select
+
+                    Case "251"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente25c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente25c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente25c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente25c1.BackColor = Color.White
+                        End Select
+
+
+                    Case "252"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente25c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente25c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente25c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente25c2.BackColor = Color.White
+                        End Select
+
+                    Case "253"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente25c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente25c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente25c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente25c3.BackColor = Color.White
+                        End Select
+
+                    Case "254"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente25c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente25c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente25c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente25c4.BackColor = Color.White
+                        End Select
+
+                    Case "261"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente26c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente26c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente26c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente26c1.BackColor = Color.White
+                        End Select
+
+                    Case "262"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente26c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente26c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente26c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente26c2.BackColor = Color.White
+                        End Select
+
+                    Case "263"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente26c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente26c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente26c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente26c3.BackColor = Color.White
+                        End Select
+
+                    Case "264"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente26c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente26c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente26c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente26c4.BackColor = Color.White
+                        End Select
+
+                    Case "271"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente27c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente27c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente27c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente27c1.BackColor = Color.White
+                        End Select
+
+
+                    Case "272"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente27c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente27c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente27c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente27c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "273"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente27c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente27c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente27c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente27c3.BackColor = Color.White
+                        End Select
+
+                    Case "274"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente27c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente27c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente27c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente27c4.BackColor = Color.White
+                        End Select
+
+                    Case "281"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente28c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente28c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente28c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente28c1.BackColor = Color.White
+                        End Select
+
+                    Case "282"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente28c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente28c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente28c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente28c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "283"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente28c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente28c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente28c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente28c3.BackColor = Color.White
+                        End Select
+
+                    Case "284"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente28c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente28c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente28c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente28c4.BackColor = Color.White
+                        End Select
+                End Select
+
+                '/////////////////////////////////////////////////////////////
+                                Select zona
+                    Case "311"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente31c1.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente31c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente31c1.BackColor = Color.Black
+                            Case Else
+                                pnlDiente31c1.BackColor = Color.White
+                        End Select
+                    Case "312"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente31c2.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente31c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente31c2.BackColor = Color.Black
+                            Case Else
+                                pnlDiente31c2.BackColor = Color.White
+
+                        End Select
+                    Case "313"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente31c3.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente31c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente31c3.BackColor = Color.Black
+                            Case Else
+                                pnlDiente31c3.BackColor = Color.White
+                        End Select
+
+                    Case "314"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente31c4.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente31c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente31c4.BackColor = Color.Black
+                            Case Else
+                                pnlDiente31c4.BackColor = Color.White
+                        End Select
+
+                    Case "321"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente32c1.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente32c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente32c1.BackColor = Color.Black
+                            Case Else
+                                pnlDiente32c1.BackColor = Color.White
+                        End Select
+
+                    Case "322"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente32c2.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente32c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente32c2.BackColor = Color.Black
+                            Case Else
+                                pnlDiente32c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "323"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente32c3.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente32c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente32c3.BackColor = Color.Black
+                            Case Else
+                                pnlDiente32c3.BackColor = Color.White
+                        End Select
+
+                    Case "324"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente32c4.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente32c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente32c4.BackColor = Color.Black
+                            Case Else
+                                pnlDiente32c4.BackColor = Color.White
+                        End Select
+
+
+                    Case "331"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente33c1.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente33c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente33c1.BackColor = Color.Black
+                            Case Else
+                                pnlDiente33c1.BackColor = Color.White
+                        End Select
+
+                    Case "332"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente33c2.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente33c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente33c2.BackColor = Color.Black
+                            Case Else
+                                pnlDiente33c2.BackColor = Color.White
+                        End Select
+
+                    Case "333"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente33c3.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente33c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente33c3.BackColor = Color.Black
+                            Case Else
+                                pnlDiente33c3.BackColor = Color.White
+                        End Select
+
+                    Case "334"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente33c4.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente33c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente33c4.BackColor = Color.Black
+                            Case Else
+                                pnlDiente33c4.BackColor = Color.White
+                        End Select
+
+                    Case "341"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente34c1.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente34c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente34c1.BackColor = Color.Black
+                            Case Else
+                                pnlDiente34c1.BackColor = Color.White
+                        End Select
+
+                    Case "342"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente34c2.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente34c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente34c2.BackColor = Color.Black
+                            Case Else
+                                pnlDiente34c2.BackColor = Color.White
+                        End Select
+
+                    Case "343"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente34c3.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente34c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente34c3.BackColor = Color.Black
+                            Case Else
+                                pnlDiente34c3.BackColor = Color.White
+                        End Select
+
+                    Case "344"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente34c4.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente34c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente34c4.BackColor = Color.Black
+                            Case Else
+                                pnlDiente34c4.BackColor = Color.White
+                        End Select
+
+                    Case "351"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente35c1.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente35c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente35c1.BackColor = Color.Black
+                            Case Else
+                                pnlDiente35c1.BackColor = Color.White
+                        End Select
+
+
+                    Case "352"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente35c2.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente35c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente35c2.BackColor = Color.Black
+                            Case Else
+                                pnlDiente35c2.BackColor = Color.White
+                        End Select
+
+                    Case "353"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente35c3.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente35c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente35c3.BackColor = Color.Black
+                            Case Else
+                                pnlDiente35c3.BackColor = Color.White
+                        End Select
+
+                    Case "354"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente35c4.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente35c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente35c4.BackColor = Color.Black
+                            Case Else
+                                pnlDiente35c4.BackColor = Color.White
+                        End Select
+
+                    Case "361"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente36c1.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente36c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente36c1.BackColor = Color.Black
+                            Case Else
+                                pnlDiente36c1.BackColor = Color.White
+                        End Select
+
+                    Case "362"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente36c2.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente36c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente36c2.BackColor = Color.Black
+                            Case Else
+                                pnlDiente36c2.BackColor = Color.White
+                        End Select
+
+                    Case "363"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente36c3.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente36c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente36c3.BackColor = Color.Black
+                            Case Else
+                                pnlDiente36c3.BackColor = Color.White
+                        End Select
+
+                    Case "364"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente36c4.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente36c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente36c4.BackColor = Color.Black
+                            Case Else
+                                pnlDiente36c4.BackColor = Color.White
+                        End Select
+
+                    Case "371"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente37c1.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente37c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente37c1.BackColor = Color.Black
+                            Case Else
+                                pnlDiente37c1.BackColor = Color.White
+                        End Select
+
+
+                    Case "372"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente37c2.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente37c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente37c2.BackColor = Color.Black
+                            Case Else
+                                pnlDiente37c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "373"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente37c3.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente37c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente37c3.BackColor = Color.Black
+                            Case Else
+                                pnlDiente37c3.BackColor = Color.White
+                        End Select
+
+                    Case "374"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente37c4.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente37c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente37c4.BackColor = Color.Black
+                            Case Else
+                                pnlDiente37c4.BackColor = Color.White
+                        End Select
+
+                    Case "381"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente38c1.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente38c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente38c1.BackColor = Color.Black
+                            Case Else
+                                pnlDiente38c1.BackColor = Color.White
+                        End Select
+
+                    Case "382"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente38c2.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente38c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente38c2.BackColor = Color.Black
+                            Case Else
+                                pnlDiente38c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "383"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente38c3.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente38c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente38c3.BackColor = Color.Black
+                            Case Else
+                                pnlDiente38c3.BackColor = Color.White
+                        End Select
+
+                    Case "384"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                pnlDiente38c4.BackColor = Color.Red
+                            Case "precaucion"
+                                pnlDiente38c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                pnlDiente38c4.BackColor = Color.Black
+                            Case Else
+                                pnlDiente38c4.BackColor = Color.White
+                        End Select
+                End Select
+                '/////////////////////////////////////////////////////////////////////
+
+                Select Case zona
+                    Case "411"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente41c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente41c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente41c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente41c1.BackColor = Color.White
+                        End Select
+                    Case "412"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente41c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente41c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente41c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente41c2.BackColor = Color.White
+
+                        End Select
+                    Case "413"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente41c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente41c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente41c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente41c3.BackColor = Color.White
+                        End Select
+
+                    Case "414"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente41c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente41c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente41c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente41c4.BackColor = Color.White
+                        End Select
+
+                    Case "421"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente42c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente42c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente42c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente42c1.BackColor = Color.White
+                        End Select
+
+                    Case "422"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente42c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente42c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente42c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente42c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "423"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente42c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente42c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente42c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente42c3.BackColor = Color.White
+                        End Select
+
+                    Case "424"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente42c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente42c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente42c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente42c4.BackColor = Color.White
+                        End Select
+
+
+                    Case "431"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente43c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente43c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente43c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente43c1.BackColor = Color.White
+                        End Select
+
+                    Case "432"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente43c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente43c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente43c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente43c2.BackColor = Color.White
+                        End Select
+
+                    Case "433"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente43c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente43c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente43c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente43c3.BackColor = Color.White
+                        End Select
+
+                    Case "434"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente43c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente43c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente43c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente43c4.BackColor = Color.White
+                        End Select
+
+                    Case "441"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente44c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente44c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente44c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente44c1.BackColor = Color.White
+                        End Select
+
+                    Case "442"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente44c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente44c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente44c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente44c2.BackColor = Color.White
+                        End Select
+
+                    Case "443"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente44c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente44c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente44c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente44c3.BackColor = Color.White
+                        End Select
+
+                    Case "444"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente44c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente44c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente44c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente44c4.BackColor = Color.White
+                        End Select
+
+                    Case "451"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente45c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente45c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente45c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente45c1.BackColor = Color.White
+                        End Select
+
+
+                    Case "452"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente45c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente45c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente45c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente45c2.BackColor = Color.White
+                        End Select
+
+                    Case "453"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente45c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente45c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente45c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente45c3.BackColor = Color.White
+                        End Select
+
+                    Case "454"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente45c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente45c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente45c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente45c4.BackColor = Color.White
+                        End Select
+
+                    Case "461"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente46c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente46c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente46c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente46c1.BackColor = Color.White
+                        End Select
+
+                    Case "462"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente46c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente46c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente46c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente46c2.BackColor = Color.White
+                        End Select
+
+                    Case "463"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente46c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente46c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente46c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente46c3.BackColor = Color.White
+                        End Select
+
+                    Case "464"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente46c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente46c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente46c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente46c4.BackColor = Color.White
+                        End Select
+
+                    Case "471"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente47c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente47c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente47c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente47c1.BackColor = Color.White
+                        End Select
+
+
+                    Case "472"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente47c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente47c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente47c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente47c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "473"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente47c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente47c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente47c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente47c3.BackColor = Color.White
+                        End Select
+
+                    Case "474"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente47c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente47c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente47c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente47c4.BackColor = Color.White
+                        End Select
+
+                    Case "481"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente48c1.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente48c1.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente48c1.BackColor = Color.Black
+                            Case Else
+                                PnlDiente48c1.BackColor = Color.White
+                        End Select
+
+                    Case "482"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente48c2.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente48c2.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente48c2.BackColor = Color.Black
+                            Case Else
+                                PnlDiente48c2.BackColor = Color.White
+                        End Select
+
+
+                    Case "483"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente48c3.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente48c3.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente48c3.BackColor = Color.Black
+                            Case Else
+                                PnlDiente48c3.BackColor = Color.White
+                        End Select
+
+                    Case "484"
+                        Select Case dgvEstadoDiente.Rows(x).Cells(2).Value
+                            Case "alerta"
+                                PnlDiente48c4.BackColor = Color.Red
+                            Case "precaucion"
+                                PnlDiente48c4.BackColor = Color.Yellow
+                            Case "ausente"
+                                PnlDiente48c4.BackColor = Color.Black
+                            Case Else
+                                PnlDiente48c4.BackColor = Color.White
+                        End Select
+
                 End Select
 
 
