@@ -170,7 +170,7 @@ Partial Class pnlfondo
         '
         'bttoningrdientes
         '
-        Me.bttoningrdientes.Font = New System.Drawing.Font("Modern No. 20", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bttoningrdientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttoningrdientes.Location = New System.Drawing.Point(221, 478)
         Me.bttoningrdientes.Name = "bttoningrdientes"
         Me.bttoningrdientes.Size = New System.Drawing.Size(440, 96)

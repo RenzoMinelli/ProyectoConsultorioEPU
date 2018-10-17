@@ -41,7 +41,7 @@ Partial Class frmRegistroMedico
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel01477 = New System.Windows.Forms.Panel()
         Me.Panel55 = New System.Windows.Forms.Panel()
-        Me.Label37 = New System.Windows.Forms.Label()
+        Me.lblOdontogramainicial = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.dgvTratamientos = New System.Windows.Forms.DataGridView()
         Me.cbSeleccion = New System.Windows.Forms.ComboBox()
@@ -178,7 +178,137 @@ Partial Class frmRegistroMedico
         Me.pnlDiente33c4 = New System.Windows.Forms.Panel()
         Me.pnlDiente31c1 = New System.Windows.Forms.Panel()
         Me.dgvEstadoDiente = New System.Windows.Forms.DataGridView()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.Panel19 = New System.Windows.Forms.Panel()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.Panel22 = New System.Windows.Forms.Panel()
+        Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.Panel25 = New System.Windows.Forms.Panel()
+        Me.Panel26 = New System.Windows.Forms.Panel()
+        Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.Panel28 = New System.Windows.Forms.Panel()
+        Me.Panel29 = New System.Windows.Forms.Panel()
+        Me.Panel30 = New System.Windows.Forms.Panel()
+        Me.Panel31 = New System.Windows.Forms.Panel()
+        Me.Panel32 = New System.Windows.Forms.Panel()
+        Me.Panel33 = New System.Windows.Forms.Panel()
+        Me.Panel34 = New System.Windows.Forms.Panel()
+        Me.Panel35 = New System.Windows.Forms.Panel()
+        Me.Panel36 = New System.Windows.Forms.Panel()
+        Me.Panel37 = New System.Windows.Forms.Panel()
+        Me.Panel38 = New System.Windows.Forms.Panel()
+        Me.Panel39 = New System.Windows.Forms.Panel()
+        Me.Panel40 = New System.Windows.Forms.Panel()
+        Me.Panel41 = New System.Windows.Forms.Panel()
+        Me.Panel42 = New System.Windows.Forms.Panel()
+        Me.Panel43 = New System.Windows.Forms.Panel()
+        Me.Panel44 = New System.Windows.Forms.Panel()
+        Me.Panel45 = New System.Windows.Forms.Panel()
+        Me.Panel46 = New System.Windows.Forms.Panel()
+        Me.Panel47 = New System.Windows.Forms.Panel()
+        Me.Panel48 = New System.Windows.Forms.Panel()
+        Me.Panel49 = New System.Windows.Forms.Panel()
+        Me.Panel50 = New System.Windows.Forms.Panel()
+        Me.Panel51 = New System.Windows.Forms.Panel()
+        Me.Panel52 = New System.Windows.Forms.Panel()
+        Me.Panel53 = New System.Windows.Forms.Panel()
+        Me.Panel54 = New System.Windows.Forms.Panel()
+        Me.Panel56 = New System.Windows.Forms.Panel()
+        Me.Panel57 = New System.Windows.Forms.Panel()
+        Me.Panel58 = New System.Windows.Forms.Panel()
+        Me.Panel59 = New System.Windows.Forms.Panel()
+        Me.Panel60 = New System.Windows.Forms.Panel()
+        Me.Panel61 = New System.Windows.Forms.Panel()
+        Me.Panel62 = New System.Windows.Forms.Panel()
+        Me.Panel63 = New System.Windows.Forms.Panel()
+        Me.Panel64 = New System.Windows.Forms.Panel()
+        Me.Panel65 = New System.Windows.Forms.Panel()
+        Me.Panel66 = New System.Windows.Forms.Panel()
+        Me.Panel67 = New System.Windows.Forms.Panel()
+        Me.Panel68 = New System.Windows.Forms.Panel()
+        Me.Panel69 = New System.Windows.Forms.Panel()
+        Me.Panel70 = New System.Windows.Forms.Panel()
+        Me.Panel71 = New System.Windows.Forms.Panel()
+        Me.Panel72 = New System.Windows.Forms.Panel()
+        Me.Panel73 = New System.Windows.Forms.Panel()
+        Me.Panel74 = New System.Windows.Forms.Panel()
+        Me.Panel75 = New System.Windows.Forms.Panel()
+        Me.Panel76 = New System.Windows.Forms.Panel()
+        Me.Panel77 = New System.Windows.Forms.Panel()
+        Me.Panel78 = New System.Windows.Forms.Panel()
+        Me.Panel79 = New System.Windows.Forms.Panel()
+        Me.Panel80 = New System.Windows.Forms.Panel()
+        Me.Panel81 = New System.Windows.Forms.Panel()
+        Me.Panel82 = New System.Windows.Forms.Panel()
+        Me.Panel83 = New System.Windows.Forms.Panel()
+        Me.Panel84 = New System.Windows.Forms.Panel()
+        Me.Panel85 = New System.Windows.Forms.Panel()
+        Me.Panel86 = New System.Windows.Forms.Panel()
+        Me.Panel87 = New System.Windows.Forms.Panel()
+        Me.Panel88 = New System.Windows.Forms.Panel()
+        Me.Panel89 = New System.Windows.Forms.Panel()
+        Me.Panel90 = New System.Windows.Forms.Panel()
+        Me.Panel91 = New System.Windows.Forms.Panel()
+        Me.Panel92 = New System.Windows.Forms.Panel()
+        Me.Panel93 = New System.Windows.Forms.Panel()
+        Me.Panel94 = New System.Windows.Forms.Panel()
+        Me.Panel95 = New System.Windows.Forms.Panel()
+        Me.Panel96 = New System.Windows.Forms.Panel()
+        Me.Panel97 = New System.Windows.Forms.Panel()
+        Me.Panel98 = New System.Windows.Forms.Panel()
+        Me.Panel99 = New System.Windows.Forms.Panel()
+        Me.Panel100 = New System.Windows.Forms.Panel()
+        Me.Panel101 = New System.Windows.Forms.Panel()
+        Me.Panel102 = New System.Windows.Forms.Panel()
+        Me.Panel103 = New System.Windows.Forms.Panel()
+        Me.Panel104 = New System.Windows.Forms.Panel()
+        Me.Panel105 = New System.Windows.Forms.Panel()
+        Me.Panel106 = New System.Windows.Forms.Panel()
+        Me.Panel107 = New System.Windows.Forms.Panel()
+        Me.Panel108 = New System.Windows.Forms.Panel()
+        Me.Panel109 = New System.Windows.Forms.Panel()
+        Me.Panel110 = New System.Windows.Forms.Panel()
+        Me.Panel111 = New System.Windows.Forms.Panel()
+        Me.Panel112 = New System.Windows.Forms.Panel()
+        Me.Panel113 = New System.Windows.Forms.Panel()
+        Me.Panel114 = New System.Windows.Forms.Panel()
+        Me.Panel115 = New System.Windows.Forms.Panel()
+        Me.Panel116 = New System.Windows.Forms.Panel()
+        Me.Panel117 = New System.Windows.Forms.Panel()
+        Me.Panel118 = New System.Windows.Forms.Panel()
+        Me.Panel119 = New System.Windows.Forms.Panel()
+        Me.Panel120 = New System.Windows.Forms.Panel()
+        Me.Panel121 = New System.Windows.Forms.Panel()
+        Me.Panel122 = New System.Windows.Forms.Panel()
+        Me.Panel123 = New System.Windows.Forms.Panel()
+        Me.Panel124 = New System.Windows.Forms.Panel()
+        Me.Panel125 = New System.Windows.Forms.Panel()
+        Me.Panel126 = New System.Windows.Forms.Panel()
+        Me.Panel127 = New System.Windows.Forms.Panel()
+        Me.Panel128 = New System.Windows.Forms.Panel()
+        Me.Panel129 = New System.Windows.Forms.Panel()
+        Me.Panel130 = New System.Windows.Forms.Panel()
+        Me.Panel131 = New System.Windows.Forms.Panel()
+        Me.Panel132 = New System.Windows.Forms.Panel()
+        Me.Panel133 = New System.Windows.Forms.Panel()
+        Me.Panel134 = New System.Windows.Forms.Panel()
+        Me.lblOdontogramaactual = New System.Windows.Forms.Label()
         CType(Me.dgvRegistroMedico, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel01477.SuspendLayout()
         CType(Me.dgvTratamientos, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -234,15 +364,15 @@ Partial Class frmRegistroMedico
         'Panel000
         '
         Me.Panel000.BackColor = System.Drawing.Color.Red
-        Me.Panel000.Location = New System.Drawing.Point(50, 18)
+        Me.Panel000.Location = New System.Drawing.Point(12, 23)
         Me.Panel000.Name = "Panel000"
-        Me.Panel000.Size = New System.Drawing.Size(42, 26)
+        Me.Panel000.Size = New System.Drawing.Size(20, 20)
         Me.Panel000.TabIndex = 0
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(98, 18)
+        Me.Label2.Location = New System.Drawing.Point(24, 19)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(51, 24)
         Me.Label2.TabIndex = 1
@@ -251,15 +381,15 @@ Partial Class frmRegistroMedico
         'Panel0000
         '
         Me.Panel0000.BackColor = System.Drawing.Color.Yellow
-        Me.Panel0000.Location = New System.Drawing.Point(171, 18)
+        Me.Panel0000.Location = New System.Drawing.Point(81, 23)
         Me.Panel0000.Name = "Panel0000"
-        Me.Panel0000.Size = New System.Drawing.Size(42, 28)
+        Me.Panel0000.Size = New System.Drawing.Size(20, 22)
         Me.Panel0000.TabIndex = 2
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(222, 22)
+        Me.Label3.Location = New System.Drawing.Point(93, 21)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(106, 24)
         Me.Label3.TabIndex = 3
@@ -268,15 +398,15 @@ Partial Class frmRegistroMedico
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Location = New System.Drawing.Point(342, 18)
+        Me.Panel1.Location = New System.Drawing.Point(204, 23)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(42, 28)
+        Me.Panel1.Size = New System.Drawing.Size(30, 22)
         Me.Panel1.TabIndex = 3
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(394, 23)
+        Me.Label4.Location = New System.Drawing.Point(228, 21)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 24)
         Me.Label4.TabIndex = 4
@@ -285,15 +415,15 @@ Partial Class frmRegistroMedico
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Black
-        Me.Panel4.Location = New System.Drawing.Point(473, 19)
+        Me.Panel4.Location = New System.Drawing.Point(301, 23)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(42, 28)
+        Me.Panel4.Size = New System.Drawing.Size(30, 22)
         Me.Panel4.TabIndex = 5
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(525, 24)
+        Me.Label1.Location = New System.Drawing.Point(346, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(76, 24)
         Me.Label1.TabIndex = 6
@@ -311,9 +441,9 @@ Partial Class frmRegistroMedico
         Me.Panel01477.Controls.Add(Me.Label2)
         Me.Panel01477.Controls.Add(Me.Panel000)
         Me.Panel01477.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel01477.Location = New System.Drawing.Point(16, 306)
+        Me.Panel01477.Location = New System.Drawing.Point(37, 318)
         Me.Panel01477.Name = "Panel01477"
-        Me.Panel01477.Size = New System.Drawing.Size(657, 66)
+        Me.Panel01477.Size = New System.Drawing.Size(429, 54)
         Me.Panel01477.TabIndex = 25
         '
         'Panel55
@@ -324,15 +454,15 @@ Partial Class frmRegistroMedico
         Me.Panel55.Size = New System.Drawing.Size(10, 122)
         Me.Panel55.TabIndex = 20
         '
-        'Label37
+        'lblOdontogramainicial
         '
-        Me.Label37.AutoSize = True
-        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(432, 5)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(168, 24)
-        Me.Label37.TabIndex = 29
-        Me.Label37.Text = "Estado de Dientes:"
+        Me.lblOdontogramainicial.AutoSize = True
+        Me.lblOdontogramainicial.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOdontogramainicial.Location = New System.Drawing.Point(16, 1)
+        Me.lblOdontogramainicial.Name = "lblOdontogramainicial"
+        Me.lblOdontogramainicial.Size = New System.Drawing.Size(178, 24)
+        Me.lblOdontogramainicial.TabIndex = 29
+        Me.lblOdontogramainicial.Text = "Odontograma inicial"
         '
         'Panel3
         '
@@ -434,7 +564,7 @@ Partial Class frmRegistroMedico
         Me.cbTratamientos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTratamientos.FormattingEnabled = True
         Me.cbTratamientos.Items.AddRange(New Object() {"Plan Tratamiento Actual", "Registro Medico"})
-        Me.cbTratamientos.Location = New System.Drawing.Point(696, 5)
+        Me.cbTratamientos.Location = New System.Drawing.Point(881, 1)
         Me.cbTratamientos.Name = "cbTratamientos"
         Me.cbTratamientos.Size = New System.Drawing.Size(255, 33)
         Me.cbTratamientos.TabIndex = 55
@@ -1475,21 +1605,1192 @@ Partial Class frmRegistroMedico
         Me.dgvEstadoDiente.Size = New System.Drawing.Size(430, 174)
         Me.dgvEstadoDiente.TabIndex = 306
         '
-        'Label5
+        'Panel2
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(478, 231)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 13)
-        Me.Label5.TabIndex = 307
-        Me.Label5.Text = "Label5"
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Location = New System.Drawing.Point(627, 263)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(27, 15)
+        Me.Panel2.TabIndex = 431
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.White
+        Me.Panel5.Location = New System.Drawing.Point(303, 263)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(27, 15)
+        Me.Panel5.TabIndex = 433
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.White
+        Me.Panel6.Location = New System.Drawing.Point(626, 279)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(29, 13)
+        Me.Panel6.TabIndex = 428
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.White
+        Me.Panel7.Location = New System.Drawing.Point(302, 279)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(29, 13)
+        Me.Panel7.TabIndex = 430
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.White
+        Me.Panel8.Location = New System.Drawing.Point(624, 265)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(10, 27)
+        Me.Panel8.TabIndex = 435
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.White
+        Me.Panel9.Location = New System.Drawing.Point(300, 265)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(10, 27)
+        Me.Panel9.TabIndex = 436
+        '
+        'Panel10
+        '
+        Me.Panel10.BackColor = System.Drawing.Color.White
+        Me.Panel10.Location = New System.Drawing.Point(647, 265)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(10, 27)
+        Me.Panel10.TabIndex = 432
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.Color.White
+        Me.Panel11.Location = New System.Drawing.Point(323, 265)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(10, 27)
+        Me.Panel11.TabIndex = 434
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.White
+        Me.Panel12.Location = New System.Drawing.Point(589, 264)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(27, 15)
+        Me.Panel12.TabIndex = 423
+        '
+        'Panel13
+        '
+        Me.Panel13.BackColor = System.Drawing.Color.White
+        Me.Panel13.Location = New System.Drawing.Point(264, 264)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(27, 15)
+        Me.Panel13.TabIndex = 425
+        '
+        'Panel14
+        '
+        Me.Panel14.BackColor = System.Drawing.Color.White
+        Me.Panel14.Location = New System.Drawing.Point(588, 280)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(29, 13)
+        Me.Panel14.TabIndex = 420
+        '
+        'Panel15
+        '
+        Me.Panel15.BackColor = System.Drawing.Color.White
+        Me.Panel15.Location = New System.Drawing.Point(263, 280)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(29, 13)
+        Me.Panel15.TabIndex = 422
+        '
+        'Panel16
+        '
+        Me.Panel16.BackColor = System.Drawing.Color.White
+        Me.Panel16.Location = New System.Drawing.Point(586, 266)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(10, 27)
+        Me.Panel16.TabIndex = 427
+        '
+        'Panel17
+        '
+        Me.Panel17.BackColor = System.Drawing.Color.White
+        Me.Panel17.Location = New System.Drawing.Point(261, 266)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(10, 27)
+        Me.Panel17.TabIndex = 429
+        '
+        'Panel18
+        '
+        Me.Panel18.BackColor = System.Drawing.Color.White
+        Me.Panel18.Location = New System.Drawing.Point(609, 266)
+        Me.Panel18.Name = "Panel18"
+        Me.Panel18.Size = New System.Drawing.Size(10, 27)
+        Me.Panel18.TabIndex = 424
+        '
+        'Panel19
+        '
+        Me.Panel19.BackColor = System.Drawing.Color.White
+        Me.Panel19.Location = New System.Drawing.Point(284, 266)
+        Me.Panel19.Name = "Panel19"
+        Me.Panel19.Size = New System.Drawing.Size(10, 27)
+        Me.Panel19.TabIndex = 426
+        '
+        'Panel20
+        '
+        Me.Panel20.BackColor = System.Drawing.Color.White
+        Me.Panel20.Location = New System.Drawing.Point(550, 264)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(27, 15)
+        Me.Panel20.TabIndex = 396
+        '
+        'Panel21
+        '
+        Me.Panel21.BackColor = System.Drawing.Color.White
+        Me.Panel21.Location = New System.Drawing.Point(225, 264)
+        Me.Panel21.Name = "Panel21"
+        Me.Panel21.Size = New System.Drawing.Size(27, 15)
+        Me.Panel21.TabIndex = 399
+        '
+        'Panel22
+        '
+        Me.Panel22.BackColor = System.Drawing.Color.White
+        Me.Panel22.Location = New System.Drawing.Point(549, 280)
+        Me.Panel22.Name = "Panel22"
+        Me.Panel22.Size = New System.Drawing.Size(29, 13)
+        Me.Panel22.TabIndex = 381
+        '
+        'Panel23
+        '
+        Me.Panel23.BackColor = System.Drawing.Color.White
+        Me.Panel23.Location = New System.Drawing.Point(224, 280)
+        Me.Panel23.Name = "Panel23"
+        Me.Panel23.Size = New System.Drawing.Size(29, 13)
+        Me.Panel23.TabIndex = 383
+        '
+        'Panel24
+        '
+        Me.Panel24.BackColor = System.Drawing.Color.White
+        Me.Panel24.Location = New System.Drawing.Point(511, 263)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(27, 15)
+        Me.Panel24.TabIndex = 398
+        '
+        'Panel25
+        '
+        Me.Panel25.BackColor = System.Drawing.Color.White
+        Me.Panel25.Location = New System.Drawing.Point(547, 266)
+        Me.Panel25.Name = "Panel25"
+        Me.Panel25.Size = New System.Drawing.Size(10, 27)
+        Me.Panel25.TabIndex = 417
+        '
+        'Panel26
+        '
+        Me.Panel26.BackColor = System.Drawing.Color.White
+        Me.Panel26.Location = New System.Drawing.Point(186, 263)
+        Me.Panel26.Name = "Panel26"
+        Me.Panel26.Size = New System.Drawing.Size(27, 15)
+        Me.Panel26.TabIndex = 401
+        '
+        'Panel27
+        '
+        Me.Panel27.BackColor = System.Drawing.Color.White
+        Me.Panel27.Location = New System.Drawing.Point(473, 263)
+        Me.Panel27.Name = "Panel27"
+        Me.Panel27.Size = New System.Drawing.Size(27, 15)
+        Me.Panel27.TabIndex = 391
+        '
+        'Panel28
+        '
+        Me.Panel28.BackColor = System.Drawing.Color.White
+        Me.Panel28.Location = New System.Drawing.Point(222, 266)
+        Me.Panel28.Name = "Panel28"
+        Me.Panel28.Size = New System.Drawing.Size(10, 27)
+        Me.Panel28.TabIndex = 419
+        '
+        'Panel29
+        '
+        Me.Panel29.BackColor = System.Drawing.Color.White
+        Me.Panel29.Location = New System.Drawing.Point(570, 266)
+        Me.Panel29.Name = "Panel29"
+        Me.Panel29.Size = New System.Drawing.Size(10, 27)
+        Me.Panel29.TabIndex = 404
+        '
+        'Panel30
+        '
+        Me.Panel30.BackColor = System.Drawing.Color.White
+        Me.Panel30.Location = New System.Drawing.Point(146, 263)
+        Me.Panel30.Name = "Panel30"
+        Me.Panel30.Size = New System.Drawing.Size(27, 15)
+        Me.Panel30.TabIndex = 392
+        '
+        'Panel31
+        '
+        Me.Panel31.BackColor = System.Drawing.Color.White
+        Me.Panel31.Location = New System.Drawing.Point(510, 279)
+        Me.Panel31.Name = "Panel31"
+        Me.Panel31.Size = New System.Drawing.Size(29, 13)
+        Me.Panel31.TabIndex = 385
+        '
+        'Panel32
+        '
+        Me.Panel32.BackColor = System.Drawing.Color.White
+        Me.Panel32.Location = New System.Drawing.Point(245, 266)
+        Me.Panel32.Name = "Panel32"
+        Me.Panel32.Size = New System.Drawing.Size(10, 27)
+        Me.Panel32.TabIndex = 406
+        '
+        'Panel33
+        '
+        Me.Panel33.BackColor = System.Drawing.Color.White
+        Me.Panel33.Location = New System.Drawing.Point(508, 265)
+        Me.Panel33.Name = "Panel33"
+        Me.Panel33.Size = New System.Drawing.Size(10, 27)
+        Me.Panel33.TabIndex = 418
+        '
+        'Panel34
+        '
+        Me.Panel34.BackColor = System.Drawing.Color.White
+        Me.Panel34.Location = New System.Drawing.Point(185, 279)
+        Me.Panel34.Name = "Panel34"
+        Me.Panel34.Size = New System.Drawing.Size(29, 13)
+        Me.Panel34.TabIndex = 386
+        '
+        'Panel35
+        '
+        Me.Panel35.BackColor = System.Drawing.Color.White
+        Me.Panel35.Location = New System.Drawing.Point(354, 279)
+        Me.Panel35.Name = "Panel35"
+        Me.Panel35.Size = New System.Drawing.Size(29, 13)
+        Me.Panel35.TabIndex = 373
+        '
+        'Panel36
+        '
+        Me.Panel36.BackColor = System.Drawing.Color.White
+        Me.Panel36.Location = New System.Drawing.Point(183, 265)
+        Me.Panel36.Name = "Panel36"
+        Me.Panel36.Size = New System.Drawing.Size(10, 27)
+        Me.Panel36.TabIndex = 421
+        '
+        'Panel37
+        '
+        Me.Panel37.BackColor = System.Drawing.Color.White
+        Me.Panel37.Location = New System.Drawing.Point(434, 263)
+        Me.Panel37.Name = "Panel37"
+        Me.Panel37.Size = New System.Drawing.Size(27, 15)
+        Me.Panel37.TabIndex = 393
+        '
+        'Panel38
+        '
+        Me.Panel38.BackColor = System.Drawing.Color.White
+        Me.Panel38.Location = New System.Drawing.Point(26, 279)
+        Me.Panel38.Name = "Panel38"
+        Me.Panel38.Size = New System.Drawing.Size(29, 13)
+        Me.Panel38.TabIndex = 374
+        '
+        'Panel39
+        '
+        Me.Panel39.BackColor = System.Drawing.Color.White
+        Me.Panel39.Location = New System.Drawing.Point(375, 265)
+        Me.Panel39.Name = "Panel39"
+        Me.Panel39.Size = New System.Drawing.Size(10, 27)
+        Me.Panel39.TabIndex = 376
+        '
+        'Panel40
+        '
+        Me.Panel40.BackColor = System.Drawing.Color.White
+        Me.Panel40.Location = New System.Drawing.Point(106, 263)
+        Me.Panel40.Name = "Panel40"
+        Me.Panel40.Size = New System.Drawing.Size(27, 15)
+        Me.Panel40.TabIndex = 394
+        '
+        'Panel41
+        '
+        Me.Panel41.BackColor = System.Drawing.Color.White
+        Me.Panel41.Location = New System.Drawing.Point(531, 265)
+        Me.Panel41.Name = "Panel41"
+        Me.Panel41.Size = New System.Drawing.Size(10, 27)
+        Me.Panel41.TabIndex = 402
+        '
+        'Panel42
+        '
+        Me.Panel42.BackColor = System.Drawing.Color.White
+        Me.Panel42.Location = New System.Drawing.Point(47, 265)
+        Me.Panel42.Name = "Panel42"
+        Me.Panel42.Size = New System.Drawing.Size(10, 27)
+        Me.Panel42.TabIndex = 379
+        '
+        'Panel43
+        '
+        Me.Panel43.BackColor = System.Drawing.Color.White
+        Me.Panel43.Location = New System.Drawing.Point(352, 265)
+        Me.Panel43.Name = "Panel43"
+        Me.Panel43.Size = New System.Drawing.Size(10, 27)
+        Me.Panel43.TabIndex = 378
+        '
+        'Panel44
+        '
+        Me.Panel44.BackColor = System.Drawing.Color.White
+        Me.Panel44.Location = New System.Drawing.Point(206, 265)
+        Me.Panel44.Name = "Panel44"
+        Me.Panel44.Size = New System.Drawing.Size(10, 27)
+        Me.Panel44.TabIndex = 405
+        '
+        'Panel45
+        '
+        Me.Panel45.BackColor = System.Drawing.Color.White
+        Me.Panel45.Location = New System.Drawing.Point(472, 279)
+        Me.Panel45.Name = "Panel45"
+        Me.Panel45.Size = New System.Drawing.Size(29, 13)
+        Me.Panel45.TabIndex = 382
+        '
+        'Panel46
+        '
+        Me.Panel46.BackColor = System.Drawing.Color.White
+        Me.Panel46.Location = New System.Drawing.Point(24, 265)
+        Me.Panel46.Name = "Panel46"
+        Me.Panel46.Size = New System.Drawing.Size(10, 27)
+        Me.Panel46.TabIndex = 380
+        '
+        'Panel47
+        '
+        Me.Panel47.BackColor = System.Drawing.Color.White
+        Me.Panel47.Location = New System.Drawing.Point(414, 265)
+        Me.Panel47.Name = "Panel47"
+        Me.Panel47.Size = New System.Drawing.Size(10, 27)
+        Me.Panel47.TabIndex = 409
+        '
+        'Panel48
+        '
+        Me.Panel48.BackColor = System.Drawing.Color.White
+        Me.Panel48.Location = New System.Drawing.Point(145, 279)
+        Me.Panel48.Name = "Panel48"
+        Me.Panel48.Size = New System.Drawing.Size(29, 13)
+        Me.Panel48.TabIndex = 384
+        '
+        'Panel49
+        '
+        Me.Panel49.BackColor = System.Drawing.Color.White
+        Me.Panel49.Location = New System.Drawing.Point(470, 265)
+        Me.Panel49.Name = "Panel49"
+        Me.Panel49.Size = New System.Drawing.Size(10, 27)
+        Me.Panel49.TabIndex = 415
+        '
+        'Panel50
+        '
+        Me.Panel50.BackColor = System.Drawing.Color.White
+        Me.Panel50.Location = New System.Drawing.Point(86, 265)
+        Me.Panel50.Name = "Panel50"
+        Me.Panel50.Size = New System.Drawing.Size(10, 27)
+        Me.Panel50.TabIndex = 410
+        '
+        'Panel51
+        '
+        Me.Panel51.BackColor = System.Drawing.Color.White
+        Me.Panel51.Location = New System.Drawing.Point(391, 265)
+        Me.Panel51.Name = "Panel51"
+        Me.Panel51.Size = New System.Drawing.Size(10, 27)
+        Me.Panel51.TabIndex = 411
+        '
+        'Panel52
+        '
+        Me.Panel52.BackColor = System.Drawing.Color.White
+        Me.Panel52.Location = New System.Drawing.Point(143, 265)
+        Me.Panel52.Name = "Panel52"
+        Me.Panel52.Size = New System.Drawing.Size(10, 27)
+        Me.Panel52.TabIndex = 416
+        '
+        'Panel53
+        '
+        Me.Panel53.BackColor = System.Drawing.Color.White
+        Me.Panel53.Location = New System.Drawing.Point(394, 263)
+        Me.Panel53.Name = "Panel53"
+        Me.Panel53.Size = New System.Drawing.Size(27, 15)
+        Me.Panel53.TabIndex = 395
+        '
+        'Panel54
+        '
+        Me.Panel54.BackColor = System.Drawing.Color.White
+        Me.Panel54.Location = New System.Drawing.Point(63, 265)
+        Me.Panel54.Name = "Panel54"
+        Me.Panel54.Size = New System.Drawing.Size(10, 27)
+        Me.Panel54.TabIndex = 413
+        '
+        'Panel56
+        '
+        Me.Panel56.BackColor = System.Drawing.Color.White
+        Me.Panel56.Location = New System.Drawing.Point(392, 279)
+        Me.Panel56.Name = "Panel56"
+        Me.Panel56.Size = New System.Drawing.Size(29, 13)
+        Me.Panel56.TabIndex = 389
+        '
+        'Panel57
+        '
+        Me.Panel57.BackColor = System.Drawing.Color.White
+        Me.Panel57.Location = New System.Drawing.Point(66, 263)
+        Me.Panel57.Name = "Panel57"
+        Me.Panel57.Size = New System.Drawing.Size(27, 15)
+        Me.Panel57.TabIndex = 397
+        '
+        'Panel58
+        '
+        Me.Panel58.BackColor = System.Drawing.Color.White
+        Me.Panel58.Location = New System.Drawing.Point(493, 265)
+        Me.Panel58.Name = "Panel58"
+        Me.Panel58.Size = New System.Drawing.Size(10, 27)
+        Me.Panel58.TabIndex = 407
+        '
+        'Panel59
+        '
+        Me.Panel59.BackColor = System.Drawing.Color.White
+        Me.Panel59.Location = New System.Drawing.Point(65, 279)
+        Me.Panel59.Name = "Panel59"
+        Me.Panel59.Size = New System.Drawing.Size(29, 13)
+        Me.Panel59.TabIndex = 390
+        '
+        'Panel60
+        '
+        Me.Panel60.BackColor = System.Drawing.Color.White
+        Me.Panel60.Location = New System.Drawing.Point(454, 265)
+        Me.Panel60.Name = "Panel60"
+        Me.Panel60.Size = New System.Drawing.Size(10, 27)
+        Me.Panel60.TabIndex = 400
+        '
+        'Panel61
+        '
+        Me.Panel61.BackColor = System.Drawing.Color.White
+        Me.Panel61.Location = New System.Drawing.Point(166, 265)
+        Me.Panel61.Name = "Panel61"
+        Me.Panel61.Size = New System.Drawing.Size(10, 27)
+        Me.Panel61.TabIndex = 408
+        '
+        'Panel62
+        '
+        Me.Panel62.BackColor = System.Drawing.Color.White
+        Me.Panel62.Location = New System.Drawing.Point(433, 279)
+        Me.Panel62.Name = "Panel62"
+        Me.Panel62.Size = New System.Drawing.Size(29, 13)
+        Me.Panel62.TabIndex = 387
+        '
+        'Panel63
+        '
+        Me.Panel63.BackColor = System.Drawing.Color.White
+        Me.Panel63.Location = New System.Drawing.Point(126, 265)
+        Me.Panel63.Name = "Panel63"
+        Me.Panel63.Size = New System.Drawing.Size(10, 27)
+        Me.Panel63.TabIndex = 403
+        '
+        'Panel64
+        '
+        Me.Panel64.BackColor = System.Drawing.Color.White
+        Me.Panel64.Location = New System.Drawing.Point(431, 265)
+        Me.Panel64.Name = "Panel64"
+        Me.Panel64.Size = New System.Drawing.Size(10, 27)
+        Me.Panel64.TabIndex = 412
+        '
+        'Panel65
+        '
+        Me.Panel65.BackColor = System.Drawing.Color.White
+        Me.Panel65.Location = New System.Drawing.Point(105, 279)
+        Me.Panel65.Name = "Panel65"
+        Me.Panel65.Size = New System.Drawing.Size(29, 13)
+        Me.Panel65.TabIndex = 388
+        '
+        'Panel66
+        '
+        Me.Panel66.BackColor = System.Drawing.Color.White
+        Me.Panel66.Location = New System.Drawing.Point(355, 263)
+        Me.Panel66.Name = "Panel66"
+        Me.Panel66.Size = New System.Drawing.Size(27, 15)
+        Me.Panel66.TabIndex = 375
+        '
+        'Panel67
+        '
+        Me.Panel67.BackColor = System.Drawing.Color.White
+        Me.Panel67.Location = New System.Drawing.Point(103, 265)
+        Me.Panel67.Name = "Panel67"
+        Me.Panel67.Size = New System.Drawing.Size(10, 27)
+        Me.Panel67.TabIndex = 414
+        '
+        'Panel68
+        '
+        Me.Panel68.BackColor = System.Drawing.Color.White
+        Me.Panel68.Location = New System.Drawing.Point(27, 263)
+        Me.Panel68.Name = "Panel68"
+        Me.Panel68.Size = New System.Drawing.Size(27, 15)
+        Me.Panel68.TabIndex = 377
+        '
+        'Panel69
+        '
+        Me.Panel69.BackColor = System.Drawing.Color.White
+        Me.Panel69.Location = New System.Drawing.Point(632, 208)
+        Me.Panel69.Name = "Panel69"
+        Me.Panel69.Size = New System.Drawing.Size(27, 15)
+        Me.Panel69.TabIndex = 370
+        '
+        'Panel70
+        '
+        Me.Panel70.BackColor = System.Drawing.Color.White
+        Me.Panel70.Location = New System.Drawing.Point(631, 224)
+        Me.Panel70.Name = "Panel70"
+        Me.Panel70.Size = New System.Drawing.Size(29, 13)
+        Me.Panel70.TabIndex = 369
+        '
+        'Panel71
+        '
+        Me.Panel71.BackColor = System.Drawing.Color.White
+        Me.Panel71.Location = New System.Drawing.Point(629, 210)
+        Me.Panel71.Name = "Panel71"
+        Me.Panel71.Size = New System.Drawing.Size(10, 27)
+        Me.Panel71.TabIndex = 372
+        '
+        'Panel72
+        '
+        Me.Panel72.BackColor = System.Drawing.Color.White
+        Me.Panel72.Location = New System.Drawing.Point(652, 210)
+        Me.Panel72.Name = "Panel72"
+        Me.Panel72.Size = New System.Drawing.Size(10, 27)
+        Me.Panel72.TabIndex = 371
+        '
+        'Panel73
+        '
+        Me.Panel73.BackColor = System.Drawing.Color.White
+        Me.Panel73.Location = New System.Drawing.Point(595, 208)
+        Me.Panel73.Name = "Panel73"
+        Me.Panel73.Size = New System.Drawing.Size(27, 15)
+        Me.Panel73.TabIndex = 366
+        '
+        'Panel74
+        '
+        Me.Panel74.BackColor = System.Drawing.Color.White
+        Me.Panel74.Location = New System.Drawing.Point(594, 224)
+        Me.Panel74.Name = "Panel74"
+        Me.Panel74.Size = New System.Drawing.Size(29, 13)
+        Me.Panel74.TabIndex = 365
+        '
+        'Panel75
+        '
+        Me.Panel75.BackColor = System.Drawing.Color.White
+        Me.Panel75.Location = New System.Drawing.Point(592, 210)
+        Me.Panel75.Name = "Panel75"
+        Me.Panel75.Size = New System.Drawing.Size(10, 27)
+        Me.Panel75.TabIndex = 368
+        '
+        'Panel76
+        '
+        Me.Panel76.BackColor = System.Drawing.Color.White
+        Me.Panel76.Location = New System.Drawing.Point(615, 210)
+        Me.Panel76.Name = "Panel76"
+        Me.Panel76.Size = New System.Drawing.Size(10, 27)
+        Me.Panel76.TabIndex = 367
+        '
+        'Panel77
+        '
+        Me.Panel77.BackColor = System.Drawing.Color.White
+        Me.Panel77.Location = New System.Drawing.Point(555, 209)
+        Me.Panel77.Name = "Panel77"
+        Me.Panel77.Size = New System.Drawing.Size(27, 15)
+        Me.Panel77.TabIndex = 353
+        '
+        'Panel78
+        '
+        Me.Panel78.BackColor = System.Drawing.Color.White
+        Me.Panel78.Location = New System.Drawing.Point(554, 225)
+        Me.Panel78.Name = "Panel78"
+        Me.Panel78.Size = New System.Drawing.Size(29, 13)
+        Me.Panel78.TabIndex = 345
+        '
+        'Panel79
+        '
+        Me.Panel79.BackColor = System.Drawing.Color.White
+        Me.Panel79.Location = New System.Drawing.Point(517, 209)
+        Me.Panel79.Name = "Panel79"
+        Me.Panel79.Size = New System.Drawing.Size(27, 15)
+        Me.Panel79.TabIndex = 354
+        '
+        'Panel80
+        '
+        Me.Panel80.BackColor = System.Drawing.Color.White
+        Me.Panel80.Location = New System.Drawing.Point(552, 211)
+        Me.Panel80.Name = "Panel80"
+        Me.Panel80.Size = New System.Drawing.Size(10, 27)
+        Me.Panel80.TabIndex = 363
+        '
+        'Panel81
+        '
+        Me.Panel81.BackColor = System.Drawing.Color.White
+        Me.Panel81.Location = New System.Drawing.Point(476, 209)
+        Me.Panel81.Name = "Panel81"
+        Me.Panel81.Size = New System.Drawing.Size(27, 15)
+        Me.Panel81.TabIndex = 350
+        '
+        'Panel82
+        '
+        Me.Panel82.BackColor = System.Drawing.Color.White
+        Me.Panel82.Location = New System.Drawing.Point(575, 211)
+        Me.Panel82.Name = "Panel82"
+        Me.Panel82.Size = New System.Drawing.Size(10, 27)
+        Me.Panel82.TabIndex = 357
+        '
+        'Panel83
+        '
+        Me.Panel83.BackColor = System.Drawing.Color.White
+        Me.Panel83.Location = New System.Drawing.Point(516, 225)
+        Me.Panel83.Name = "Panel83"
+        Me.Panel83.Size = New System.Drawing.Size(29, 13)
+        Me.Panel83.TabIndex = 347
+        '
+        'Panel84
+        '
+        Me.Panel84.BackColor = System.Drawing.Color.White
+        Me.Panel84.Location = New System.Drawing.Point(514, 211)
+        Me.Panel84.Name = "Panel84"
+        Me.Panel84.Size = New System.Drawing.Size(10, 27)
+        Me.Panel84.TabIndex = 364
+        '
+        'Panel85
+        '
+        Me.Panel85.BackColor = System.Drawing.Color.White
+        Me.Panel85.Location = New System.Drawing.Point(355, 225)
+        Me.Panel85.Name = "Panel85"
+        Me.Panel85.Size = New System.Drawing.Size(29, 13)
+        Me.Panel85.TabIndex = 341
+        '
+        'Panel86
+        '
+        Me.Panel86.BackColor = System.Drawing.Color.White
+        Me.Panel86.Location = New System.Drawing.Point(436, 209)
+        Me.Panel86.Name = "Panel86"
+        Me.Panel86.Size = New System.Drawing.Size(27, 15)
+        Me.Panel86.TabIndex = 351
+        '
+        'Panel87
+        '
+        Me.Panel87.BackColor = System.Drawing.Color.White
+        Me.Panel87.Location = New System.Drawing.Point(376, 211)
+        Me.Panel87.Name = "Panel87"
+        Me.Panel87.Size = New System.Drawing.Size(10, 27)
+        Me.Panel87.TabIndex = 343
+        '
+        'Panel88
+        '
+        Me.Panel88.BackColor = System.Drawing.Color.White
+        Me.Panel88.Location = New System.Drawing.Point(537, 211)
+        Me.Panel88.Name = "Panel88"
+        Me.Panel88.Size = New System.Drawing.Size(10, 27)
+        Me.Panel88.TabIndex = 356
+        '
+        'Panel89
+        '
+        Me.Panel89.BackColor = System.Drawing.Color.White
+        Me.Panel89.Location = New System.Drawing.Point(353, 211)
+        Me.Panel89.Name = "Panel89"
+        Me.Panel89.Size = New System.Drawing.Size(10, 27)
+        Me.Panel89.TabIndex = 344
+        '
+        'Panel90
+        '
+        Me.Panel90.BackColor = System.Drawing.Color.White
+        Me.Panel90.Location = New System.Drawing.Point(475, 225)
+        Me.Panel90.Name = "Panel90"
+        Me.Panel90.Size = New System.Drawing.Size(29, 13)
+        Me.Panel90.TabIndex = 346
+        '
+        'Panel91
+        '
+        Me.Panel91.BackColor = System.Drawing.Color.White
+        Me.Panel91.Location = New System.Drawing.Point(416, 211)
+        Me.Panel91.Name = "Panel91"
+        Me.Panel91.Size = New System.Drawing.Size(10, 27)
+        Me.Panel91.TabIndex = 359
+        '
+        'Panel92
+        '
+        Me.Panel92.BackColor = System.Drawing.Color.White
+        Me.Panel92.Location = New System.Drawing.Point(473, 211)
+        Me.Panel92.Name = "Panel92"
+        Me.Panel92.Size = New System.Drawing.Size(10, 27)
+        Me.Panel92.TabIndex = 362
+        '
+        'Panel93
+        '
+        Me.Panel93.BackColor = System.Drawing.Color.White
+        Me.Panel93.Location = New System.Drawing.Point(393, 211)
+        Me.Panel93.Name = "Panel93"
+        Me.Panel93.Size = New System.Drawing.Size(10, 27)
+        Me.Panel93.TabIndex = 360
+        '
+        'Panel94
+        '
+        Me.Panel94.BackColor = System.Drawing.Color.White
+        Me.Panel94.Location = New System.Drawing.Point(396, 209)
+        Me.Panel94.Name = "Panel94"
+        Me.Panel94.Size = New System.Drawing.Size(27, 15)
+        Me.Panel94.TabIndex = 352
+        '
+        'Panel95
+        '
+        Me.Panel95.BackColor = System.Drawing.Color.White
+        Me.Panel95.Location = New System.Drawing.Point(395, 225)
+        Me.Panel95.Name = "Panel95"
+        Me.Panel95.Size = New System.Drawing.Size(29, 13)
+        Me.Panel95.TabIndex = 349
+        '
+        'Panel96
+        '
+        Me.Panel96.BackColor = System.Drawing.Color.White
+        Me.Panel96.Location = New System.Drawing.Point(496, 211)
+        Me.Panel96.Name = "Panel96"
+        Me.Panel96.Size = New System.Drawing.Size(10, 27)
+        Me.Panel96.TabIndex = 358
+        '
+        'Panel97
+        '
+        Me.Panel97.BackColor = System.Drawing.Color.White
+        Me.Panel97.Location = New System.Drawing.Point(456, 211)
+        Me.Panel97.Name = "Panel97"
+        Me.Panel97.Size = New System.Drawing.Size(10, 27)
+        Me.Panel97.TabIndex = 355
+        '
+        'Panel98
+        '
+        Me.Panel98.BackColor = System.Drawing.Color.White
+        Me.Panel98.Location = New System.Drawing.Point(435, 225)
+        Me.Panel98.Name = "Panel98"
+        Me.Panel98.Size = New System.Drawing.Size(29, 13)
+        Me.Panel98.TabIndex = 348
+        '
+        'Panel99
+        '
+        Me.Panel99.BackColor = System.Drawing.Color.White
+        Me.Panel99.Location = New System.Drawing.Point(433, 211)
+        Me.Panel99.Name = "Panel99"
+        Me.Panel99.Size = New System.Drawing.Size(10, 27)
+        Me.Panel99.TabIndex = 361
+        '
+        'Panel100
+        '
+        Me.Panel100.BackColor = System.Drawing.Color.White
+        Me.Panel100.Location = New System.Drawing.Point(356, 209)
+        Me.Panel100.Name = "Panel100"
+        Me.Panel100.Size = New System.Drawing.Size(27, 15)
+        Me.Panel100.TabIndex = 342
+        '
+        'Panel101
+        '
+        Me.Panel101.BackColor = System.Drawing.Color.White
+        Me.Panel101.Location = New System.Drawing.Point(303, 208)
+        Me.Panel101.Name = "Panel101"
+        Me.Panel101.Size = New System.Drawing.Size(27, 15)
+        Me.Panel101.TabIndex = 338
+        '
+        'Panel102
+        '
+        Me.Panel102.BackColor = System.Drawing.Color.White
+        Me.Panel102.Location = New System.Drawing.Point(302, 224)
+        Me.Panel102.Name = "Panel102"
+        Me.Panel102.Size = New System.Drawing.Size(29, 13)
+        Me.Panel102.TabIndex = 337
+        '
+        'Panel103
+        '
+        Me.Panel103.BackColor = System.Drawing.Color.White
+        Me.Panel103.Location = New System.Drawing.Point(300, 210)
+        Me.Panel103.Name = "Panel103"
+        Me.Panel103.Size = New System.Drawing.Size(10, 27)
+        Me.Panel103.TabIndex = 340
+        '
+        'Panel104
+        '
+        Me.Panel104.BackColor = System.Drawing.Color.White
+        Me.Panel104.Location = New System.Drawing.Point(323, 210)
+        Me.Panel104.Name = "Panel104"
+        Me.Panel104.Size = New System.Drawing.Size(10, 27)
+        Me.Panel104.TabIndex = 339
+        '
+        'Panel105
+        '
+        Me.Panel105.BackColor = System.Drawing.Color.White
+        Me.Panel105.Location = New System.Drawing.Point(264, 209)
+        Me.Panel105.Name = "Panel105"
+        Me.Panel105.Size = New System.Drawing.Size(27, 15)
+        Me.Panel105.TabIndex = 334
+        '
+        'Panel106
+        '
+        Me.Panel106.BackColor = System.Drawing.Color.White
+        Me.Panel106.Location = New System.Drawing.Point(263, 225)
+        Me.Panel106.Name = "Panel106"
+        Me.Panel106.Size = New System.Drawing.Size(29, 13)
+        Me.Panel106.TabIndex = 333
+        '
+        'Panel107
+        '
+        Me.Panel107.BackColor = System.Drawing.Color.White
+        Me.Panel107.Location = New System.Drawing.Point(261, 211)
+        Me.Panel107.Name = "Panel107"
+        Me.Panel107.Size = New System.Drawing.Size(10, 27)
+        Me.Panel107.TabIndex = 336
+        '
+        'Panel108
+        '
+        Me.Panel108.BackColor = System.Drawing.Color.White
+        Me.Panel108.Location = New System.Drawing.Point(284, 211)
+        Me.Panel108.Name = "Panel108"
+        Me.Panel108.Size = New System.Drawing.Size(10, 27)
+        Me.Panel108.TabIndex = 335
+        '
+        'Panel109
+        '
+        Me.Panel109.BackColor = System.Drawing.Color.White
+        Me.Panel109.Location = New System.Drawing.Point(225, 209)
+        Me.Panel109.Name = "Panel109"
+        Me.Panel109.Size = New System.Drawing.Size(27, 15)
+        Me.Panel109.TabIndex = 320
+        '
+        'Panel110
+        '
+        Me.Panel110.BackColor = System.Drawing.Color.White
+        Me.Panel110.Location = New System.Drawing.Point(224, 225)
+        Me.Panel110.Name = "Panel110"
+        Me.Panel110.Size = New System.Drawing.Size(29, 13)
+        Me.Panel110.TabIndex = 317
+        '
+        'Panel111
+        '
+        Me.Panel111.BackColor = System.Drawing.Color.White
+        Me.Panel111.Location = New System.Drawing.Point(186, 208)
+        Me.Panel111.Name = "Panel111"
+        Me.Panel111.Size = New System.Drawing.Size(27, 15)
+        Me.Panel111.TabIndex = 321
+        '
+        'Panel112
+        '
+        Me.Panel112.BackColor = System.Drawing.Color.White
+        Me.Panel112.Location = New System.Drawing.Point(222, 211)
+        Me.Panel112.Name = "Panel112"
+        Me.Panel112.Size = New System.Drawing.Size(10, 27)
+        Me.Panel112.TabIndex = 328
+        '
+        'Panel113
+        '
+        Me.Panel113.BackColor = System.Drawing.Color.White
+        Me.Panel113.Location = New System.Drawing.Point(146, 208)
+        Me.Panel113.Name = "Panel113"
+        Me.Panel113.Size = New System.Drawing.Size(27, 15)
+        Me.Panel113.TabIndex = 319
+        '
+        'Panel114
+        '
+        Me.Panel114.BackColor = System.Drawing.Color.White
+        Me.Panel114.Location = New System.Drawing.Point(245, 211)
+        Me.Panel114.Name = "Panel114"
+        Me.Panel114.Size = New System.Drawing.Size(10, 27)
+        Me.Panel114.TabIndex = 327
+        '
+        'Panel115
+        '
+        Me.Panel115.BackColor = System.Drawing.Color.White
+        Me.Panel115.Location = New System.Drawing.Point(185, 224)
+        Me.Panel115.Name = "Panel115"
+        Me.Panel115.Size = New System.Drawing.Size(29, 13)
+        Me.Panel115.TabIndex = 314
+        '
+        'Panel116
+        '
+        Me.Panel116.BackColor = System.Drawing.Color.White
+        Me.Panel116.Location = New System.Drawing.Point(183, 210)
+        Me.Panel116.Name = "Panel116"
+        Me.Panel116.Size = New System.Drawing.Size(10, 27)
+        Me.Panel116.TabIndex = 331
+        '
+        'Panel117
+        '
+        Me.Panel117.BackColor = System.Drawing.Color.White
+        Me.Panel117.Location = New System.Drawing.Point(28, 225)
+        Me.Panel117.Name = "Panel117"
+        Me.Panel117.Size = New System.Drawing.Size(29, 13)
+        Me.Panel117.TabIndex = 309
+        '
+        'Panel118
+        '
+        Me.Panel118.BackColor = System.Drawing.Color.White
+        Me.Panel118.Location = New System.Drawing.Point(107, 209)
+        Me.Panel118.Name = "Panel118"
+        Me.Panel118.Size = New System.Drawing.Size(27, 15)
+        Me.Panel118.TabIndex = 322
+        '
+        'Panel119
+        '
+        Me.Panel119.BackColor = System.Drawing.Color.White
+        Me.Panel119.Location = New System.Drawing.Point(49, 211)
+        Me.Panel119.Name = "Panel119"
+        Me.Panel119.Size = New System.Drawing.Size(10, 27)
+        Me.Panel119.TabIndex = 311
+        '
+        'Panel120
+        '
+        Me.Panel120.BackColor = System.Drawing.Color.White
+        Me.Panel120.Location = New System.Drawing.Point(206, 210)
+        Me.Panel120.Name = "Panel120"
+        Me.Panel120.Size = New System.Drawing.Size(10, 27)
+        Me.Panel120.TabIndex = 323
+        '
+        'Panel121
+        '
+        Me.Panel121.BackColor = System.Drawing.Color.White
+        Me.Panel121.Location = New System.Drawing.Point(26, 211)
+        Me.Panel121.Name = "Panel121"
+        Me.Panel121.Size = New System.Drawing.Size(10, 27)
+        Me.Panel121.TabIndex = 312
+        '
+        'Panel122
+        '
+        Me.Panel122.BackColor = System.Drawing.Color.White
+        Me.Panel122.Location = New System.Drawing.Point(145, 224)
+        Me.Panel122.Name = "Panel122"
+        Me.Panel122.Size = New System.Drawing.Size(29, 13)
+        Me.Panel122.TabIndex = 315
+        '
+        'Panel123
+        '
+        Me.Panel123.BackColor = System.Drawing.Color.White
+        Me.Panel123.Location = New System.Drawing.Point(88, 211)
+        Me.Panel123.Name = "Panel123"
+        Me.Panel123.Size = New System.Drawing.Size(10, 27)
+        Me.Panel123.TabIndex = 326
+        '
+        'Panel124
+        '
+        Me.Panel124.BackColor = System.Drawing.Color.White
+        Me.Panel124.Location = New System.Drawing.Point(143, 210)
+        Me.Panel124.Name = "Panel124"
+        Me.Panel124.Size = New System.Drawing.Size(10, 27)
+        Me.Panel124.TabIndex = 332
+        '
+        'Panel125
+        '
+        Me.Panel125.BackColor = System.Drawing.Color.White
+        Me.Panel125.Location = New System.Drawing.Point(65, 211)
+        Me.Panel125.Name = "Panel125"
+        Me.Panel125.Size = New System.Drawing.Size(10, 27)
+        Me.Panel125.TabIndex = 329
+        '
+        'Panel126
+        '
+        Me.Panel126.BackColor = System.Drawing.Color.White
+        Me.Panel126.Location = New System.Drawing.Point(68, 209)
+        Me.Panel126.Name = "Panel126"
+        Me.Panel126.Size = New System.Drawing.Size(27, 15)
+        Me.Panel126.TabIndex = 318
+        '
+        'Panel127
+        '
+        Me.Panel127.BackColor = System.Drawing.Color.White
+        Me.Panel127.Location = New System.Drawing.Point(67, 225)
+        Me.Panel127.Name = "Panel127"
+        Me.Panel127.Size = New System.Drawing.Size(29, 13)
+        Me.Panel127.TabIndex = 313
+        '
+        'Panel128
+        '
+        Me.Panel128.BackColor = System.Drawing.Color.White
+        Me.Panel128.Location = New System.Drawing.Point(166, 210)
+        Me.Panel128.Name = "Panel128"
+        Me.Panel128.Size = New System.Drawing.Size(10, 27)
+        Me.Panel128.TabIndex = 324
+        '
+        'Panel129
+        '
+        Me.Panel129.BackColor = System.Drawing.Color.White
+        Me.Panel129.Location = New System.Drawing.Point(127, 211)
+        Me.Panel129.Name = "Panel129"
+        Me.Panel129.Size = New System.Drawing.Size(10, 27)
+        Me.Panel129.TabIndex = 325
+        '
+        'Panel130
+        '
+        Me.Panel130.BackColor = System.Drawing.Color.White
+        Me.Panel130.Location = New System.Drawing.Point(106, 225)
+        Me.Panel130.Name = "Panel130"
+        Me.Panel130.Size = New System.Drawing.Size(29, 13)
+        Me.Panel130.TabIndex = 316
+        '
+        'Panel131
+        '
+        Me.Panel131.BackColor = System.Drawing.Color.White
+        Me.Panel131.Location = New System.Drawing.Point(104, 211)
+        Me.Panel131.Name = "Panel131"
+        Me.Panel131.Size = New System.Drawing.Size(10, 27)
+        Me.Panel131.TabIndex = 330
+        '
+        'Panel132
+        '
+        Me.Panel132.BackColor = System.Drawing.Color.White
+        Me.Panel132.Location = New System.Drawing.Point(29, 209)
+        Me.Panel132.Name = "Panel132"
+        Me.Panel132.Size = New System.Drawing.Size(27, 15)
+        Me.Panel132.TabIndex = 310
+        '
+        'Panel133
+        '
+        Me.Panel133.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel133.Location = New System.Drawing.Point(20, 246)
+        Me.Panel133.Name = "Panel133"
+        Me.Panel133.Size = New System.Drawing.Size(648, 11)
+        Me.Panel133.TabIndex = 308
+        '
+        'Panel134
+        '
+        Me.Panel134.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel134.Location = New System.Drawing.Point(338, 190)
+        Me.Panel134.Name = "Panel134"
+        Me.Panel134.Size = New System.Drawing.Size(10, 122)
+        Me.Panel134.TabIndex = 307
+        '
+        'lblOdontogramaactual
+        '
+        Me.lblOdontogramaactual.AutoSize = True
+        Me.lblOdontogramaactual.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOdontogramaactual.Location = New System.Drawing.Point(20, 164)
+        Me.lblOdontogramaactual.Name = "lblOdontogramaactual"
+        Me.lblOdontogramaactual.Size = New System.Drawing.Size(180, 24)
+        Me.lblOdontogramaactual.TabIndex = 437
+        Me.lblOdontogramaactual.Text = "Odontograma actual"
         '
         'frmRegistroMedico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1184, 725)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.lblOdontogramaactual)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.Panel6)
+        Me.Controls.Add(Me.Panel7)
+        Me.Controls.Add(Me.Panel8)
+        Me.Controls.Add(Me.Panel9)
+        Me.Controls.Add(Me.Panel10)
+        Me.Controls.Add(Me.Panel11)
+        Me.Controls.Add(Me.Panel12)
+        Me.Controls.Add(Me.Panel13)
+        Me.Controls.Add(Me.Panel14)
+        Me.Controls.Add(Me.Panel15)
+        Me.Controls.Add(Me.Panel16)
+        Me.Controls.Add(Me.Panel17)
+        Me.Controls.Add(Me.Panel18)
+        Me.Controls.Add(Me.Panel19)
+        Me.Controls.Add(Me.Panel20)
+        Me.Controls.Add(Me.Panel21)
+        Me.Controls.Add(Me.Panel22)
+        Me.Controls.Add(Me.Panel23)
+        Me.Controls.Add(Me.Panel24)
+        Me.Controls.Add(Me.Panel25)
+        Me.Controls.Add(Me.Panel26)
+        Me.Controls.Add(Me.Panel27)
+        Me.Controls.Add(Me.Panel28)
+        Me.Controls.Add(Me.Panel29)
+        Me.Controls.Add(Me.Panel30)
+        Me.Controls.Add(Me.Panel31)
+        Me.Controls.Add(Me.Panel32)
+        Me.Controls.Add(Me.Panel33)
+        Me.Controls.Add(Me.Panel34)
+        Me.Controls.Add(Me.Panel35)
+        Me.Controls.Add(Me.Panel36)
+        Me.Controls.Add(Me.Panel37)
+        Me.Controls.Add(Me.Panel38)
+        Me.Controls.Add(Me.Panel39)
+        Me.Controls.Add(Me.Panel40)
+        Me.Controls.Add(Me.Panel41)
+        Me.Controls.Add(Me.Panel42)
+        Me.Controls.Add(Me.Panel43)
+        Me.Controls.Add(Me.Panel44)
+        Me.Controls.Add(Me.Panel45)
+        Me.Controls.Add(Me.Panel46)
+        Me.Controls.Add(Me.Panel47)
+        Me.Controls.Add(Me.Panel48)
+        Me.Controls.Add(Me.Panel49)
+        Me.Controls.Add(Me.Panel50)
+        Me.Controls.Add(Me.Panel51)
+        Me.Controls.Add(Me.Panel52)
+        Me.Controls.Add(Me.Panel53)
+        Me.Controls.Add(Me.Panel54)
+        Me.Controls.Add(Me.Panel56)
+        Me.Controls.Add(Me.Panel57)
+        Me.Controls.Add(Me.Panel58)
+        Me.Controls.Add(Me.Panel59)
+        Me.Controls.Add(Me.Panel60)
+        Me.Controls.Add(Me.Panel61)
+        Me.Controls.Add(Me.Panel62)
+        Me.Controls.Add(Me.Panel63)
+        Me.Controls.Add(Me.Panel64)
+        Me.Controls.Add(Me.Panel65)
+        Me.Controls.Add(Me.Panel66)
+        Me.Controls.Add(Me.Panel67)
+        Me.Controls.Add(Me.Panel68)
+        Me.Controls.Add(Me.Panel69)
+        Me.Controls.Add(Me.Panel70)
+        Me.Controls.Add(Me.Panel71)
+        Me.Controls.Add(Me.Panel72)
+        Me.Controls.Add(Me.Panel73)
+        Me.Controls.Add(Me.Panel74)
+        Me.Controls.Add(Me.Panel75)
+        Me.Controls.Add(Me.Panel76)
+        Me.Controls.Add(Me.Panel77)
+        Me.Controls.Add(Me.Panel78)
+        Me.Controls.Add(Me.Panel79)
+        Me.Controls.Add(Me.Panel80)
+        Me.Controls.Add(Me.Panel81)
+        Me.Controls.Add(Me.Panel82)
+        Me.Controls.Add(Me.Panel83)
+        Me.Controls.Add(Me.Panel84)
+        Me.Controls.Add(Me.Panel85)
+        Me.Controls.Add(Me.Panel86)
+        Me.Controls.Add(Me.Panel87)
+        Me.Controls.Add(Me.Panel88)
+        Me.Controls.Add(Me.Panel89)
+        Me.Controls.Add(Me.Panel90)
+        Me.Controls.Add(Me.Panel91)
+        Me.Controls.Add(Me.Panel92)
+        Me.Controls.Add(Me.Panel93)
+        Me.Controls.Add(Me.Panel94)
+        Me.Controls.Add(Me.Panel95)
+        Me.Controls.Add(Me.Panel96)
+        Me.Controls.Add(Me.Panel97)
+        Me.Controls.Add(Me.Panel98)
+        Me.Controls.Add(Me.Panel99)
+        Me.Controls.Add(Me.Panel100)
+        Me.Controls.Add(Me.Panel101)
+        Me.Controls.Add(Me.Panel102)
+        Me.Controls.Add(Me.Panel103)
+        Me.Controls.Add(Me.Panel104)
+        Me.Controls.Add(Me.Panel105)
+        Me.Controls.Add(Me.Panel106)
+        Me.Controls.Add(Me.Panel107)
+        Me.Controls.Add(Me.Panel108)
+        Me.Controls.Add(Me.Panel109)
+        Me.Controls.Add(Me.Panel110)
+        Me.Controls.Add(Me.Panel111)
+        Me.Controls.Add(Me.Panel112)
+        Me.Controls.Add(Me.Panel113)
+        Me.Controls.Add(Me.Panel114)
+        Me.Controls.Add(Me.Panel115)
+        Me.Controls.Add(Me.Panel116)
+        Me.Controls.Add(Me.Panel117)
+        Me.Controls.Add(Me.Panel118)
+        Me.Controls.Add(Me.Panel119)
+        Me.Controls.Add(Me.Panel120)
+        Me.Controls.Add(Me.Panel121)
+        Me.Controls.Add(Me.Panel122)
+        Me.Controls.Add(Me.Panel123)
+        Me.Controls.Add(Me.Panel124)
+        Me.Controls.Add(Me.Panel125)
+        Me.Controls.Add(Me.Panel126)
+        Me.Controls.Add(Me.Panel127)
+        Me.Controls.Add(Me.Panel128)
+        Me.Controls.Add(Me.Panel129)
+        Me.Controls.Add(Me.Panel130)
+        Me.Controls.Add(Me.Panel131)
+        Me.Controls.Add(Me.Panel132)
+        Me.Controls.Add(Me.Panel133)
+        Me.Controls.Add(Me.Panel134)
         Me.Controls.Add(Me.dgvEstadoDiente)
         Me.Controls.Add(Me.pnlDiente38c1)
         Me.Controls.Add(Me.PnlDiente41c1)
@@ -1624,7 +2925,7 @@ Partial Class frmRegistroMedico
         Me.Controls.Add(Me.cbSeleccion)
         Me.Controls.Add(Me.dgvTratamientos)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Label37)
+        Me.Controls.Add(Me.lblOdontogramainicial)
         Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.dgvRegistroMedico)
@@ -1654,7 +2955,7 @@ Partial Class frmRegistroMedico
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel01477 As System.Windows.Forms.Panel
     Friend WithEvents Panel55 As System.Windows.Forms.Panel
-    Friend WithEvents Label37 As System.Windows.Forms.Label
+    Friend WithEvents lblOdontogramainicial As System.Windows.Forms.Label
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents dgvTratamientos As System.Windows.Forms.DataGridView
     Friend WithEvents cbSeleccion As System.Windows.Forms.ComboBox
@@ -1791,5 +3092,135 @@ Partial Class frmRegistroMedico
     Friend WithEvents pnlDiente33c4 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente31c1 As System.Windows.Forms.Panel
     Friend WithEvents dgvEstadoDiente As System.Windows.Forms.DataGridView
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents Panel6 As System.Windows.Forms.Panel
+    Friend WithEvents Panel7 As System.Windows.Forms.Panel
+    Friend WithEvents Panel8 As System.Windows.Forms.Panel
+    Friend WithEvents Panel9 As System.Windows.Forms.Panel
+    Friend WithEvents Panel10 As System.Windows.Forms.Panel
+    Friend WithEvents Panel11 As System.Windows.Forms.Panel
+    Friend WithEvents Panel12 As System.Windows.Forms.Panel
+    Friend WithEvents Panel13 As System.Windows.Forms.Panel
+    Friend WithEvents Panel14 As System.Windows.Forms.Panel
+    Friend WithEvents Panel15 As System.Windows.Forms.Panel
+    Friend WithEvents Panel16 As System.Windows.Forms.Panel
+    Friend WithEvents Panel17 As System.Windows.Forms.Panel
+    Friend WithEvents Panel18 As System.Windows.Forms.Panel
+    Friend WithEvents Panel19 As System.Windows.Forms.Panel
+    Friend WithEvents Panel20 As System.Windows.Forms.Panel
+    Friend WithEvents Panel21 As System.Windows.Forms.Panel
+    Friend WithEvents Panel22 As System.Windows.Forms.Panel
+    Friend WithEvents Panel23 As System.Windows.Forms.Panel
+    Friend WithEvents Panel24 As System.Windows.Forms.Panel
+    Friend WithEvents Panel25 As System.Windows.Forms.Panel
+    Friend WithEvents Panel26 As System.Windows.Forms.Panel
+    Friend WithEvents Panel27 As System.Windows.Forms.Panel
+    Friend WithEvents Panel28 As System.Windows.Forms.Panel
+    Friend WithEvents Panel29 As System.Windows.Forms.Panel
+    Friend WithEvents Panel30 As System.Windows.Forms.Panel
+    Friend WithEvents Panel31 As System.Windows.Forms.Panel
+    Friend WithEvents Panel32 As System.Windows.Forms.Panel
+    Friend WithEvents Panel33 As System.Windows.Forms.Panel
+    Friend WithEvents Panel34 As System.Windows.Forms.Panel
+    Friend WithEvents Panel35 As System.Windows.Forms.Panel
+    Friend WithEvents Panel36 As System.Windows.Forms.Panel
+    Friend WithEvents Panel37 As System.Windows.Forms.Panel
+    Friend WithEvents Panel38 As System.Windows.Forms.Panel
+    Friend WithEvents Panel39 As System.Windows.Forms.Panel
+    Friend WithEvents Panel40 As System.Windows.Forms.Panel
+    Friend WithEvents Panel41 As System.Windows.Forms.Panel
+    Friend WithEvents Panel42 As System.Windows.Forms.Panel
+    Friend WithEvents Panel43 As System.Windows.Forms.Panel
+    Friend WithEvents Panel44 As System.Windows.Forms.Panel
+    Friend WithEvents Panel45 As System.Windows.Forms.Panel
+    Friend WithEvents Panel46 As System.Windows.Forms.Panel
+    Friend WithEvents Panel47 As System.Windows.Forms.Panel
+    Friend WithEvents Panel48 As System.Windows.Forms.Panel
+    Friend WithEvents Panel49 As System.Windows.Forms.Panel
+    Friend WithEvents Panel50 As System.Windows.Forms.Panel
+    Friend WithEvents Panel51 As System.Windows.Forms.Panel
+    Friend WithEvents Panel52 As System.Windows.Forms.Panel
+    Friend WithEvents Panel53 As System.Windows.Forms.Panel
+    Friend WithEvents Panel54 As System.Windows.Forms.Panel
+    Friend WithEvents Panel56 As System.Windows.Forms.Panel
+    Friend WithEvents Panel57 As System.Windows.Forms.Panel
+    Friend WithEvents Panel58 As System.Windows.Forms.Panel
+    Friend WithEvents Panel59 As System.Windows.Forms.Panel
+    Friend WithEvents Panel60 As System.Windows.Forms.Panel
+    Friend WithEvents Panel61 As System.Windows.Forms.Panel
+    Friend WithEvents Panel62 As System.Windows.Forms.Panel
+    Friend WithEvents Panel63 As System.Windows.Forms.Panel
+    Friend WithEvents Panel64 As System.Windows.Forms.Panel
+    Friend WithEvents Panel65 As System.Windows.Forms.Panel
+    Friend WithEvents Panel66 As System.Windows.Forms.Panel
+    Friend WithEvents Panel67 As System.Windows.Forms.Panel
+    Friend WithEvents Panel68 As System.Windows.Forms.Panel
+    Friend WithEvents Panel69 As System.Windows.Forms.Panel
+    Friend WithEvents Panel70 As System.Windows.Forms.Panel
+    Friend WithEvents Panel71 As System.Windows.Forms.Panel
+    Friend WithEvents Panel72 As System.Windows.Forms.Panel
+    Friend WithEvents Panel73 As System.Windows.Forms.Panel
+    Friend WithEvents Panel74 As System.Windows.Forms.Panel
+    Friend WithEvents Panel75 As System.Windows.Forms.Panel
+    Friend WithEvents Panel76 As System.Windows.Forms.Panel
+    Friend WithEvents Panel77 As System.Windows.Forms.Panel
+    Friend WithEvents Panel78 As System.Windows.Forms.Panel
+    Friend WithEvents Panel79 As System.Windows.Forms.Panel
+    Friend WithEvents Panel80 As System.Windows.Forms.Panel
+    Friend WithEvents Panel81 As System.Windows.Forms.Panel
+    Friend WithEvents Panel82 As System.Windows.Forms.Panel
+    Friend WithEvents Panel83 As System.Windows.Forms.Panel
+    Friend WithEvents Panel84 As System.Windows.Forms.Panel
+    Friend WithEvents Panel85 As System.Windows.Forms.Panel
+    Friend WithEvents Panel86 As System.Windows.Forms.Panel
+    Friend WithEvents Panel87 As System.Windows.Forms.Panel
+    Friend WithEvents Panel88 As System.Windows.Forms.Panel
+    Friend WithEvents Panel89 As System.Windows.Forms.Panel
+    Friend WithEvents Panel90 As System.Windows.Forms.Panel
+    Friend WithEvents Panel91 As System.Windows.Forms.Panel
+    Friend WithEvents Panel92 As System.Windows.Forms.Panel
+    Friend WithEvents Panel93 As System.Windows.Forms.Panel
+    Friend WithEvents Panel94 As System.Windows.Forms.Panel
+    Friend WithEvents Panel95 As System.Windows.Forms.Panel
+    Friend WithEvents Panel96 As System.Windows.Forms.Panel
+    Friend WithEvents Panel97 As System.Windows.Forms.Panel
+    Friend WithEvents Panel98 As System.Windows.Forms.Panel
+    Friend WithEvents Panel99 As System.Windows.Forms.Panel
+    Friend WithEvents Panel100 As System.Windows.Forms.Panel
+    Friend WithEvents Panel101 As System.Windows.Forms.Panel
+    Friend WithEvents Panel102 As System.Windows.Forms.Panel
+    Friend WithEvents Panel103 As System.Windows.Forms.Panel
+    Friend WithEvents Panel104 As System.Windows.Forms.Panel
+    Friend WithEvents Panel105 As System.Windows.Forms.Panel
+    Friend WithEvents Panel106 As System.Windows.Forms.Panel
+    Friend WithEvents Panel107 As System.Windows.Forms.Panel
+    Friend WithEvents Panel108 As System.Windows.Forms.Panel
+    Friend WithEvents Panel109 As System.Windows.Forms.Panel
+    Friend WithEvents Panel110 As System.Windows.Forms.Panel
+    Friend WithEvents Panel111 As System.Windows.Forms.Panel
+    Friend WithEvents Panel112 As System.Windows.Forms.Panel
+    Friend WithEvents Panel113 As System.Windows.Forms.Panel
+    Friend WithEvents Panel114 As System.Windows.Forms.Panel
+    Friend WithEvents Panel115 As System.Windows.Forms.Panel
+    Friend WithEvents Panel116 As System.Windows.Forms.Panel
+    Friend WithEvents Panel117 As System.Windows.Forms.Panel
+    Friend WithEvents Panel118 As System.Windows.Forms.Panel
+    Friend WithEvents Panel119 As System.Windows.Forms.Panel
+    Friend WithEvents Panel120 As System.Windows.Forms.Panel
+    Friend WithEvents Panel121 As System.Windows.Forms.Panel
+    Friend WithEvents Panel122 As System.Windows.Forms.Panel
+    Friend WithEvents Panel123 As System.Windows.Forms.Panel
+    Friend WithEvents Panel124 As System.Windows.Forms.Panel
+    Friend WithEvents Panel125 As System.Windows.Forms.Panel
+    Friend WithEvents Panel126 As System.Windows.Forms.Panel
+    Friend WithEvents Panel127 As System.Windows.Forms.Panel
+    Friend WithEvents Panel128 As System.Windows.Forms.Panel
+    Friend WithEvents Panel129 As System.Windows.Forms.Panel
+    Friend WithEvents Panel130 As System.Windows.Forms.Panel
+    Friend WithEvents Panel131 As System.Windows.Forms.Panel
+    Friend WithEvents Panel132 As System.Windows.Forms.Panel
+    Friend WithEvents Panel133 As System.Windows.Forms.Panel
+    Friend WithEvents Panel134 As System.Windows.Forms.Panel
+    Friend WithEvents lblOdontogramaactual As System.Windows.Forms.Label
 End Class

@@ -226,7 +226,9 @@ Public Class frmRegistroMedico
     Private Sub actBoca()
         Try
 
-            Consulta = "select * from estado_dientes where id_p = '" + id_p.ToString + "' order by id_e asc;"
+            ' Consulta = "select * from estado_dientes where id_p = '" + id_p.ToString + "'   order by fecha asc;"
+            Consulta = "select * from estado_dientes where id_p = '" + id_p.ToString + "'  and fecha = ( select min(fecha) from estado_dientes where id_p ='" + id_p.ToString + "' );"
+
             consultar()
             dgvEstadoDiente.DataSource = Tabla
 
@@ -1895,7 +1897,5 @@ Public Class frmRegistroMedico
         End If
     End Sub
 
-    Private Sub dgvAuxiliar_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvAuxiliar.CellContentClick
 
-    End Sub
 End Class
