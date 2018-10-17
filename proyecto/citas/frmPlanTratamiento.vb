@@ -69,9 +69,13 @@ Public Class frmPlanTratamiento
                 If dgvArancelesSelect.Rows(x).Cells(4).Value <> 0 Then
                     Try
 
+                        Consulta = "UPDATE paciente set saldo = saldo - " + (dgvArancelesSelect.CurrentRow.Cells(2).Value * 1.22).ToString + " where id_p = '" + id_p.ToString + "';"
+
+
                         Consulta = "DELETE FROM plan_tratamiento where id_pl = '" + dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "';"
                         consultar()
                         actArancelesSelect()
+
                         MsgBox("Elemento eliminado", MsgBoxStyle.Information)
 
                     Catch ex As Exception
@@ -95,7 +99,7 @@ Public Class frmPlanTratamiento
             btnEliminar.Visible = False
             btnModificarPrecio.Visible = False
             btnModificarDesc.Visible = False
-
+            btnMarcar.Visible = False
         End If
     End Sub
 
@@ -256,7 +260,7 @@ Public Class frmPlanTratamiento
                     Consulta = "Insert into plan_tratamiento (id_p,id_a, id_c, descripcion, precio,terminado ) values ('" + id_p.ToString + "','" + dgvArancelesSelect.Rows(x).Cells(0).Value.ToString + "','" + frmCitas.idcita.ToString + "', '" + dgvArancelesSelect.Rows(x).Cells(3).Value + "', '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "','0');"
                     consultar()
 
-                    Consulta = "update paciente set saldo = saldo + '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "' where id_p = '" + id_p.ToString + "';"
+                    Consulta = "update paciente set saldo = saldo + '" + (dgvArancelesSelect.Rows(x).Cells(2).Value * 1.22).ToString + "' where id_p = '" + id_p.ToString + "';"
                     consultar()
 
                 End If
@@ -355,4 +359,6 @@ Public Class frmPlanTratamiento
         Me.Dispose()
         frmMarcarCitaConcluida.Show()
     End Sub
+
+  
 End Class

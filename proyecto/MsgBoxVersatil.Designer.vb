@@ -46,7 +46,7 @@ Partial Class MsgBoxVersatil
         Me.txbRespuesta.Location = New System.Drawing.Point(198, 174)
         Me.txbRespuesta.Name = "txbRespuesta"
         Me.txbRespuesta.Size = New System.Drawing.Size(372, 35)
-        Me.txbRespuesta.TabIndex = 3
+        Me.txbRespuesta.TabIndex = 2
         Me.txbRespuesta.WordWrap = False
         '
         'btnSi
@@ -55,7 +55,7 @@ Partial Class MsgBoxVersatil
         Me.btnSi.Location = New System.Drawing.Point(55, 272)
         Me.btnSi.Name = "btnSi"
         Me.btnSi.Size = New System.Drawing.Size(126, 52)
-        Me.btnSi.TabIndex = 5
+        Me.btnSi.TabIndex = 3
         Me.btnSi.Text = "Sí"
         Me.btnSi.UseVisualStyleBackColor = True
         '
@@ -65,7 +65,7 @@ Partial Class MsgBoxVersatil
         Me.btnNo.Location = New System.Drawing.Point(502, 272)
         Me.btnNo.Name = "btnNo"
         Me.btnNo.Size = New System.Drawing.Size(128, 52)
-        Me.btnNo.TabIndex = 6
+        Me.btnNo.TabIndex = 4
         Me.btnNo.Text = "No"
         Me.btnNo.UseVisualStyleBackColor = True
         '
@@ -75,7 +75,7 @@ Partial Class MsgBoxVersatil
         Me.txbOpcional.Location = New System.Drawing.Point(198, 78)
         Me.txbOpcional.Name = "txbOpcional"
         Me.txbOpcional.Size = New System.Drawing.Size(372, 35)
-        Me.txbOpcional.TabIndex = 7
+        Me.txbOpcional.TabIndex = 1
         Me.txbOpcional.Visible = False
         Me.txbOpcional.WordWrap = False
         '

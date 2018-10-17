@@ -150,7 +150,7 @@ Module Module1
             msgbv.lblTexto.Location = New Point(7, 174)
             msgbv.txbOpcional.Location = New Point(198, 78)
             msgbv.txbRespuesta.Location = New Point(198, 174)
-            msgbv.txbOpcional.Focus()
+            msgbv.lblOpcional.Focus()
 
             'Determinar si el formulario esta listo para seguir
             If msgbv.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
