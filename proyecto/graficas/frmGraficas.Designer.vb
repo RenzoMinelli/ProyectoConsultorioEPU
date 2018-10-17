@@ -44,7 +44,7 @@ Partial Class frmGraficas
         Me.TmrMovimiento = New System.Windows.Forms.Timer(Me.components)
         Me.pnldesplmenu = New System.Windows.Forms.Panel()
         Me.LblDespmenu = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Lbltitulo = New System.Windows.Forms.Label()
         Me.PnlSubmenu3d = New System.Windows.Forms.Panel()
         Me.pnlCambarPerspectiva = New System.Windows.Forms.Panel()
         Me.lblCambiarPers = New System.Windows.Forms.Label()
@@ -58,6 +58,7 @@ Partial Class frmGraficas
         Me.PnlOp1 = New System.Windows.Forms.Panel()
         Me.Lblop1 = New System.Windows.Forms.Label()
         Me.DgvTratamientos = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbconfig, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -281,16 +282,16 @@ Partial Class frmGraficas
         Me.LblDespmenu.TabIndex = 9
         Me.LblDespmenu.Text = "Opciones"
         '
-        'Label2
+        'Lbltitulo
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.Label2.Location = New System.Drawing.Point(51, 9)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(840, 32)
-        Me.Label2.TabIndex = 21
-        Me.Label2.Text = "la infomracion mostrada es ""Promedio edades de pacientes"":"
+        Me.Lbltitulo.AutoSize = True
+        Me.Lbltitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbltitulo.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.Lbltitulo.Location = New System.Drawing.Point(51, 9)
+        Me.Lbltitulo.Name = "Lbltitulo"
+        Me.Lbltitulo.Size = New System.Drawing.Size(830, 32)
+        Me.Lbltitulo.TabIndex = 21
+        Me.Lbltitulo.Text = "la informacion mostrada es 'Promedio edades de pacientes':"
         '
         'PnlSubmenu3d
         '
@@ -422,15 +423,25 @@ Partial Class frmGraficas
         Me.DgvTratamientos.TabIndex = 24
         Me.DgvTratamientos.Visible = False
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(1178, 448)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 25
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frmGraficas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1848, 747)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DgvTratamientos)
         Me.Controls.Add(Me.PnlOpPers)
         Me.Controls.Add(Me.PnlSubmenu3d)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Lbltitulo)
         Me.Controls.Add(Me.pnldesplmenu)
         Me.Controls.Add(Me.PnlSubMenuDatos)
         Me.Controls.Add(Me.PnlMenu)
@@ -490,7 +501,7 @@ Partial Class frmGraficas
     Friend WithEvents pnldesplmenu As System.Windows.Forms.Panel
     Friend WithEvents PnlPromedades As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Lbltitulo As System.Windows.Forms.Label
     Friend WithEvents PnlSubmenu3d As System.Windows.Forms.Panel
     Friend WithEvents Pnlact3d As System.Windows.Forms.Panel
     Friend WithEvents LblActivar3d As System.Windows.Forms.Label
@@ -507,4 +518,5 @@ Partial Class frmGraficas
     Friend WithEvents PnlOp3 As System.Windows.Forms.Panel
     Friend WithEvents LblOp3 As System.Windows.Forms.Label
     Friend WithEvents DgvTratamientos As System.Windows.Forms.DataGridView
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
