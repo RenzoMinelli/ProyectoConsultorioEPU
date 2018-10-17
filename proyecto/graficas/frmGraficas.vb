@@ -152,10 +152,11 @@
     End Sub
 
 
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbledpacientes.Click
         Try
             Lbltitulo.Text = "la informacion mostrada es 'Promedio edades de pacientes':"
             grafica.Series.Clear()
+            grafica.Series.Add("Num pacientes")
             edadespacientes = 1
             Consulta = "SELECT SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 1 AND 10, 1, 0)) AS '0-10', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 11 AND 20, 1, 0)) AS '11-20', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 21 AND 30, 1, 0)) AS '21-30', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 31 AND 40, 1, 0)) AS '31-40', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 41 AND 50, 1, 0)) AS '41-50', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 51 AND 60, 1, 0)) AS '51-60', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 61 AND 70, 1, 0)) AS '61-70', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 71 AND 80, 1, 0)) AS '71-80',SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 81 AND 90, 1, 0)) AS '81-90',SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) > 90, 1, 0)) AS '+90' FROM paciente;"
 
@@ -214,6 +215,50 @@
         PnlOpPers.Visible = False
 
 
+    End Sub
+
+    Private Sub PnlPromedades_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlPromedades.MouseClick
+        Try
+            Lbltitulo.Text = "la informacion mostrada es 'Promedio edades de pacientes':"
+            grafica.Series.Clear()
+            grafica.Series.Add("Num pacientes")
+            edadespacientes = 1
+            Consulta = "SELECT SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 1 AND 10, 1, 0)) AS '0-10', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 11 AND 20, 1, 0)) AS '11-20', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 21 AND 30, 1, 0)) AS '21-30', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 31 AND 40, 1, 0)) AS '31-40', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 41 AND 50, 1, 0)) AS '41-50', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 51 AND 60, 1, 0)) AS '51-60', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 61 AND 70, 1, 0)) AS '61-70', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 71 AND 80, 1, 0)) AS '71-80',SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 81 AND 90, 1, 0)) AS '81-90',SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) > 90, 1, 0)) AS '+90' FROM paciente;"
+
+            consultar()
+
+
+            dgvInfo.DataSource = Tabla
+
+            intervalo1 = dgvInfo.Rows(0).Cells(0).Value.ToString
+            intervalo2 = dgvInfo.Rows(0).Cells(1).Value.ToString
+            intervalo3 = dgvInfo.Rows(0).Cells(2).Value.ToString
+            intervalo4 = dgvInfo.Rows(0).Cells(3).Value.ToString
+            intervalo5 = dgvInfo.Rows(0).Cells(4).Value.ToString
+            intervalo6 = dgvInfo.Rows(0).Cells(5).Value.ToString
+            intervalo7 = dgvInfo.Rows(0).Cells(6).Value.ToString
+            intervalo8 = dgvInfo.Rows(0).Cells(7).Value.ToString
+            intervalo9 = dgvInfo.Rows(0).Cells(8).Value.ToString
+            intervalo10 = dgvInfo.Rows(0).Cells(9).Value.ToString
+
+
+
+            Me.grafica.Series("Num pacientes").Points.AddXY("0-10", intervalo1)
+            Me.grafica.Series("Num pacientes").Points.AddXY("11-20", intervalo2)
+            Me.grafica.Series("Num pacientes").Points.AddXY("21-30", intervalo3)
+            Me.grafica.Series("Num pacientes").Points.AddXY("31-40", intervalo4)
+            Me.grafica.Series("Num pacientes").Points.AddXY("41-50", intervalo5)
+            Me.grafica.Series("Num pacientes").Points.AddXY("51-60", intervalo6)
+            Me.grafica.Series("Num pacientes").Points.AddXY("61-70", intervalo7)
+            Me.grafica.Series("Num pacientes").Points.AddXY("71-80", intervalo8)
+            Me.grafica.Series("Num pacientes").Points.AddXY("81-90", intervalo9)
+            Me.grafica.Series("Num pacientes").Points.AddXY("90+", intervalo10)
+
+
+
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
     End Sub
 
     Private Sub PnlPromedades_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlPromedades.MouseEnter
@@ -289,11 +334,202 @@
         Pnlact3d.BackColor = Color.RoyalBlue
     End Sub
 
-  
+
     Private Sub pnldesplmenu_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnldesplmenu.MouseEnter
         PnlSubmenu3d.Visible = False
         PnlSubMenuDatos.Visible = False
     End Sub
+
+    Private Sub PnlTratamientos_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlTratamientos.MouseClick
+        Dim numero As Integer = 0
+
+        Try
+            Consulta = "select count(*) from plan_tratamiento group by id_a;"
+            consultar()
+
+            For Each row In Tabla.Rows
+                numero += 1
+            Next
+        Catch ex As Exception
+
+        End Try
+
+
+        Select Case numero
+
+            Case 0
+                MsgBox("No hay tratamientos realizados", MsgBoxStyle.Information)
+
+            Case 1
+                Try
+                    grafica.Series.Clear()
+                    grafica.Series.Add("Total Tratamientos mas usados")
+                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    consultar()
+                    DgvTratamientos.DataSource = Tabla
+
+
+                    tratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value
+
+                    nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+            Case 2
+                Try
+                    grafica.Series.Clear()
+                    grafica.Series.Add("Total Tratamientos mas usados")
+                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    consultar()
+                    DgvTratamientos.DataSource = Tabla
+
+
+                    tratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value
+                    tratamiento2 = DgvTratamientos.Rows(1).Cells(0).Value
+
+                    nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
+
+                    nomtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
+
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
+
+
+
+
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+            Case 3
+                Try
+                    grafica.Series.Clear()
+                    grafica.Series.Add("Total Tratamientos mas usados")
+                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    consultar()
+                    DgvTratamientos.DataSource = Tabla
+
+                    tratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value
+                    tratamiento2 = DgvTratamientos.Rows(1).Cells(0).Value
+                    tratamiento3 = DgvTratamientos.Rows(2).Cells(0).Value
+
+                    nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
+
+                    nomtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
+
+                    nomtratamiento3 = DgvTratamientos.Rows(2).Cells(2).Value.ToString
+
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
+
+
+
+
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+            Case 4
+                Try
+                    grafica.Series.Clear()
+                    grafica.Series.Add("Total Tratamientos mas usados")
+                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    consultar()
+                    DgvTratamientos.DataSource = Tabla
+
+                    tratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value
+                    tratamiento2 = DgvTratamientos.Rows(1).Cells(0).Value
+                    tratamiento3 = DgvTratamientos.Rows(2).Cells(0).Value
+                    tratamiento4 = DgvTratamientos.Rows(3).Cells(0).Value
+
+                    nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
+
+                    nomtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
+
+                    nomtratamiento3 = DgvTratamientos.Rows(2).Cells(2).Value.ToString
+
+                    nomtratamiento4 = DgvTratamientos.Rows(3).Cells(2).Value.ToString
+
+                    nomtratamiento5 = DgvTratamientos.Rows(4).Cells(2).Value.ToString
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento4)
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(3).AxisLabel = nomtratamiento4
+
+
+
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+
+            Case 5
+                Try
+                    grafica.Series.Clear()
+                    grafica.Series.Add("Total Tratamientos mas usados")
+                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    consultar()
+                    DgvTratamientos.DataSource = Tabla
+
+                    tratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value
+                    tratamiento2 = DgvTratamientos.Rows(1).Cells(0).Value
+                    tratamiento3 = DgvTratamientos.Rows(2).Cells(0).Value
+                    tratamiento4 = DgvTratamientos.Rows(3).Cells(0).Value
+                    tratamiento5 = DgvTratamientos.Rows(4).Cells(0).Value
+
+                    nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
+
+                    nomtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
+
+                    nomtratamiento3 = DgvTratamientos.Rows(2).Cells(2).Value.ToString
+
+                    nomtratamiento4 = DgvTratamientos.Rows(3).Cells(2).Value.ToString
+
+                    nomtratamiento5 = DgvTratamientos.Rows(4).Cells(2).Value.ToString
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento4)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento5)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(3).AxisLabel = nomtratamiento4
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(4).AxisLabel = nomtratamiento5
+
+
+
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+        End Select
+
+    End Sub
+
 
     Private Sub PnlTratamientos_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlTratamientos.MouseEnter
         PnlTratamientos.BackColor = Color.MidnightBlue
@@ -388,62 +624,192 @@
     End Sub
 
     Private Sub Lbltratamientos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbltratamientos.Click
+        Dim numero As Integer = 0
+
         Try
-            grafica.Series.Clear()
-            Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
-            Consulta = "select count(*), id_a from plan_tratamiento group by id_a order by 1 desc;"
+            Consulta = "select count(*) from plan_tratamiento group by id_a;"
             consultar()
-            DgvTratamientos.DataSource = Tabla
 
-            idtratamiento1 = DgvTratamientos.Rows(1).Cells(1).Value.ToString
-            idtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
-            idtratamiento3 = DgvTratamientos.Rows(1).Cells(3).Value.ToString
-            idtratamiento4 = DgvTratamientos.Rows(1).Cells(4).Value.ToString
-            idtratamiento5 = DgvTratamientos.Rows(1).Cells(5).Value.ToString
-            tratamiento1 = DgvTratamientos.Rows(0).Cells(1).Value.ToString
-            tratamiento2 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
-            tratamiento3 = DgvTratamientos.Rows(0).Cells(3).Value.ToString
-            tratamiento4 = DgvTratamientos.Rows(0).Cells(4).Value.ToString
-            tratamiento5 = DgvTratamientos.Rows(0).Cells(5).Value.ToString
-
-
-            Consulta = "select descripcion from plan_tratamiento where id_a =" + idtratamiento1 + ";"
-            consultar()
-            DgvTratamientos.DataSource = Tabla
-            nomtratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value.ToString
-            Consulta = "select descripcion from plan_tratamiento where id_a =" + idtratamiento2 + ";"
-            consultar()
-            DgvTratamientos.DataSource = Tabla
-            nomtratamiento2 = DgvTratamientos.Rows(0).Cells(0).Value.ToString
-            Consulta = "select descripcion from plan_tratamiento where id_a =" + idtratamiento3 + ";"
-            consultar()
-            DgvTratamientos.DataSource = Tabla
-            nomtratamiento3 = DgvTratamientos.Rows(0).Cells(0).Value.ToString
-            Consulta = "select descripcion from plan_tratamiento where id_a =" + idtratamiento4 + ";"
-            consultar()
-            DgvTratamientos.DataSource = Tabla
-            nomtratamiento4 = DgvTratamientos.Rows(0).Cells(0).Value.ToString
-            Consulta = "select descripcion from plan_tratamiento where id_a =" + idtratamiento5 + ";"
-            consultar()
-            DgvTratamientos.DataSource = Tabla
-            nomtratamiento5 = DgvTratamientos.Rows(0).Cells(0).Value.ToString
-
-            Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(nomtratamiento1)
-            Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(nomtratamiento2)
-            Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(nomtratamiento3)
-            Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(nomtratamiento4)
-            Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(nomtratamiento5)
-            Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = tratamiento1
-            Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = tratamiento2
-            Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = tratamiento3
-            Me.grafica.Series("Total Tratamientos mas usados").Points(3).AxisLabel = tratamiento4
-            Me.grafica.Series("Total Tratamientos mas usados").Points(4).AxisLabel = tratamiento5
-
-
-
+            For Each row In Tabla.Rows
+                numero += 1
+            Next
         Catch ex As Exception
-            MsgBox(ex.ToString)
+
         End Try
+
+
+        Select Case numero
+
+            Case 0
+                MsgBox("No hay tratamientos realizados", MsgBoxStyle.Information)
+
+            Case 1
+                Try
+                    grafica.Series.Clear()
+                    grafica.Series.Add("Total Tratamientos mas usados")
+                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    consultar()
+                    DgvTratamientos.DataSource = Tabla
+
+
+                    tratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value
+
+                    nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+            Case 2
+                Try
+                    grafica.Series.Clear()
+                    grafica.Series.Add("Total Tratamientos mas usados")
+                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    consultar()
+                    DgvTratamientos.DataSource = Tabla
+
+
+                    tratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value
+                    tratamiento2 = DgvTratamientos.Rows(1).Cells(0).Value
+
+                    nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
+
+                    nomtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
+
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
+
+
+
+
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+            Case 3
+                Try
+                    grafica.Series.Clear()
+                    grafica.Series.Add("Total Tratamientos mas usados")
+                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    consultar()
+                    DgvTratamientos.DataSource = Tabla
+
+                    tratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value
+                    tratamiento2 = DgvTratamientos.Rows(1).Cells(0).Value
+                    tratamiento3 = DgvTratamientos.Rows(2).Cells(0).Value
+
+                    nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
+
+                    nomtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
+
+                    nomtratamiento3 = DgvTratamientos.Rows(2).Cells(2).Value.ToString
+
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
+
+
+
+
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+            Case 4
+                Try
+                    grafica.Series.Clear()
+                    grafica.Series.Add("Total Tratamientos mas usados")
+                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    consultar()
+                    DgvTratamientos.DataSource = Tabla
+
+                    tratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value
+                    tratamiento2 = DgvTratamientos.Rows(1).Cells(0).Value
+                    tratamiento3 = DgvTratamientos.Rows(2).Cells(0).Value
+                    tratamiento4 = DgvTratamientos.Rows(3).Cells(0).Value
+
+                    nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
+
+                    nomtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
+
+                    nomtratamiento3 = DgvTratamientos.Rows(2).Cells(2).Value.ToString
+
+                    nomtratamiento4 = DgvTratamientos.Rows(3).Cells(2).Value.ToString
+
+                    nomtratamiento5 = DgvTratamientos.Rows(4).Cells(2).Value.ToString
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento4)
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(3).AxisLabel = nomtratamiento4
+
+
+
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+
+            Case 5
+                Try
+                    grafica.Series.Clear()
+                    grafica.Series.Add("Total Tratamientos mas usados")
+                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    consultar()
+                    DgvTratamientos.DataSource = Tabla
+
+                    tratamiento1 = DgvTratamientos.Rows(0).Cells(0).Value
+                    tratamiento2 = DgvTratamientos.Rows(1).Cells(0).Value
+                    tratamiento3 = DgvTratamientos.Rows(2).Cells(0).Value
+                    tratamiento4 = DgvTratamientos.Rows(3).Cells(0).Value
+                    tratamiento5 = DgvTratamientos.Rows(4).Cells(0).Value
+
+                    nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
+
+                    nomtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
+
+                    nomtratamiento3 = DgvTratamientos.Rows(2).Cells(2).Value.ToString
+
+                    nomtratamiento4 = DgvTratamientos.Rows(3).Cells(2).Value.ToString
+
+                    nomtratamiento5 = DgvTratamientos.Rows(4).Cells(2).Value.ToString
+
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento4)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento5)
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(3).AxisLabel = nomtratamiento4
+                    Me.grafica.Series("Total Tratamientos mas usados").Points(4).AxisLabel = nomtratamiento5
+
+
+
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+        End Select
 
     End Sub
 
@@ -504,4 +870,6 @@
         grafica.Series.Clear()
 
     End Sub
+
+
 End Class
