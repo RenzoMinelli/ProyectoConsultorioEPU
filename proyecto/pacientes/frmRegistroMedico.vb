@@ -190,7 +190,7 @@ Public Class frmRegistroMedico
 
         actTabla()
 
-        cbSeleccion.SelectedIndex = 0
+
         cbTratamientos.SelectedIndex = 1
     End Sub
     
@@ -1863,18 +1863,6 @@ Public Class frmRegistroMedico
 
     End Sub
 
-
-
-    Private Sub cbSeleccion_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbSeleccion.SelectedIndexChanged
-
-        If cbSeleccion.SelectedIndex = 0 Then
-            actTabla()
-        ElseIf cbSeleccion.SelectedIndex = 1 Then
-            cargar()
-
-
-        End If
-    End Sub
 
     Private Sub cbTratamientos_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbTratamientos.SelectedIndexChanged
         If cbTratamientos.SelectedIndex = 0 Then
