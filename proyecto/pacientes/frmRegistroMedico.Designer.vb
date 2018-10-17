@@ -22,13 +22,13 @@ Partial Class frmRegistroMedico
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRegistroMedico))
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvRegistroMedico = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel000 = New System.Windows.Forms.Panel()
@@ -178,134 +178,134 @@ Partial Class frmRegistroMedico
         Me.pnlDiente33c4 = New System.Windows.Forms.Panel()
         Me.pnlDiente31c1 = New System.Windows.Forms.Panel()
         Me.dgvEstadoDiente = New System.Windows.Forms.DataGridView()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_38c1 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_38c3 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_38c4 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_38c2 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_37c1 = New System.Windows.Forms.Panel()
         Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_37c3 = New System.Windows.Forms.Panel()
         Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_37c4 = New System.Windows.Forms.Panel()
         Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_37c2 = New System.Windows.Forms.Panel()
         Me.Panel19 = New System.Windows.Forms.Panel()
-        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_36c1 = New System.Windows.Forms.Panel()
         Me.Panel21 = New System.Windows.Forms.Panel()
-        Me.Panel22 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_36c3 = New System.Windows.Forms.Panel()
         Me.Panel23 = New System.Windows.Forms.Panel()
-        Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.Panel25 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_35c1 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_36c4 = New System.Windows.Forms.Panel()
         Me.Panel26 = New System.Windows.Forms.Panel()
-        Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_34c1 = New System.Windows.Forms.Panel()
         Me.Panel28 = New System.Windows.Forms.Panel()
-        Me.Panel29 = New System.Windows.Forms.Panel()
-        Me.Panel30 = New System.Windows.Forms.Panel()
-        Me.Panel31 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_36c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_45c1 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_35c3 = New System.Windows.Forms.Panel()
         Me.Panel32 = New System.Windows.Forms.Panel()
-        Me.Panel33 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_35c4 = New System.Windows.Forms.Panel()
         Me.Panel34 = New System.Windows.Forms.Panel()
-        Me.Panel35 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_31c3 = New System.Windows.Forms.Panel()
         Me.Panel36 = New System.Windows.Forms.Panel()
-        Me.Panel37 = New System.Windows.Forms.Panel()
-        Me.Panel38 = New System.Windows.Forms.Panel()
-        Me.Panel39 = New System.Windows.Forms.Panel()
-        Me.Panel40 = New System.Windows.Forms.Panel()
-        Me.Panel41 = New System.Windows.Forms.Panel()
-        Me.Panel42 = New System.Windows.Forms.Panel()
-        Me.Panel43 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_33c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_48c3 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_31c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_46c1 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_35c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_48c2 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_31c4 = New System.Windows.Forms.Panel()
         Me.Panel44 = New System.Windows.Forms.Panel()
-        Me.Panel45 = New System.Windows.Forms.Panel()
-        Me.Panel46 = New System.Windows.Forms.Panel()
-        Me.Panel47 = New System.Windows.Forms.Panel()
-        Me.Panel48 = New System.Windows.Forms.Panel()
-        Me.Panel49 = New System.Windows.Forms.Panel()
-        Me.Panel50 = New System.Windows.Forms.Panel()
-        Me.Panel51 = New System.Windows.Forms.Panel()
-        Me.Panel52 = New System.Windows.Forms.Panel()
-        Me.Panel53 = New System.Windows.Forms.Panel()
-        Me.Panel54 = New System.Windows.Forms.Panel()
-        Me.Panel56 = New System.Windows.Forms.Panel()
-        Me.Panel57 = New System.Windows.Forms.Panel()
-        Me.Panel58 = New System.Windows.Forms.Panel()
-        Me.Panel59 = New System.Windows.Forms.Panel()
-        Me.Panel60 = New System.Windows.Forms.Panel()
-        Me.Panel61 = New System.Windows.Forms.Panel()
-        Me.Panel62 = New System.Windows.Forms.Panel()
-        Me.Panel63 = New System.Windows.Forms.Panel()
-        Me.Panel64 = New System.Windows.Forms.Panel()
-        Me.Panel65 = New System.Windows.Forms.Panel()
-        Me.Panel66 = New System.Windows.Forms.Panel()
-        Me.Panel67 = New System.Windows.Forms.Panel()
-        Me.Panel68 = New System.Windows.Forms.Panel()
-        Me.Panel69 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_34c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_48c4 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_32c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_45c3 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_34c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_47c2 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_32c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_45c4 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_32c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_47c4 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_32c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_47c1 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_34c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_47c3 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_33c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_45c2 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_33c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_46c2 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_33c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_46c3 = New System.Windows.Forms.Panel()
+        Me.pnlDiente2_31c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_46c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_48c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_28c1 = New System.Windows.Forms.Panel()
         Me.Panel70 = New System.Windows.Forms.Panel()
         Me.Panel71 = New System.Windows.Forms.Panel()
         Me.Panel72 = New System.Windows.Forms.Panel()
-        Me.Panel73 = New System.Windows.Forms.Panel()
-        Me.Panel74 = New System.Windows.Forms.Panel()
-        Me.Panel75 = New System.Windows.Forms.Panel()
-        Me.Panel76 = New System.Windows.Forms.Panel()
-        Me.Panel77 = New System.Windows.Forms.Panel()
-        Me.Panel78 = New System.Windows.Forms.Panel()
-        Me.Panel79 = New System.Windows.Forms.Panel()
-        Me.Panel80 = New System.Windows.Forms.Panel()
-        Me.Panel81 = New System.Windows.Forms.Panel()
-        Me.Panel82 = New System.Windows.Forms.Panel()
-        Me.Panel83 = New System.Windows.Forms.Panel()
-        Me.Panel84 = New System.Windows.Forms.Panel()
-        Me.Panel85 = New System.Windows.Forms.Panel()
-        Me.Panel86 = New System.Windows.Forms.Panel()
-        Me.Panel87 = New System.Windows.Forms.Panel()
-        Me.Panel88 = New System.Windows.Forms.Panel()
-        Me.Panel89 = New System.Windows.Forms.Panel()
-        Me.Panel90 = New System.Windows.Forms.Panel()
-        Me.Panel91 = New System.Windows.Forms.Panel()
-        Me.Panel92 = New System.Windows.Forms.Panel()
-        Me.Panel93 = New System.Windows.Forms.Panel()
-        Me.Panel94 = New System.Windows.Forms.Panel()
-        Me.Panel95 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_27c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_27c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_27c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_27c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_26c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_26c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_25c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_26c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_24c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_26c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_25c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_25c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_21c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_23c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_21c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_25c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_21c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_24c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_22c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_24c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_22c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_22c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_22c3 = New System.Windows.Forms.Panel()
         Me.Panel96 = New System.Windows.Forms.Panel()
-        Me.Panel97 = New System.Windows.Forms.Panel()
-        Me.Panel98 = New System.Windows.Forms.Panel()
-        Me.Panel99 = New System.Windows.Forms.Panel()
-        Me.Panel100 = New System.Windows.Forms.Panel()
-        Me.Panel101 = New System.Windows.Forms.Panel()
-        Me.Panel102 = New System.Windows.Forms.Panel()
-        Me.Panel103 = New System.Windows.Forms.Panel()
-        Me.Panel104 = New System.Windows.Forms.Panel()
-        Me.Panel105 = New System.Windows.Forms.Panel()
-        Me.Panel106 = New System.Windows.Forms.Panel()
-        Me.Panel107 = New System.Windows.Forms.Panel()
-        Me.Panel108 = New System.Windows.Forms.Panel()
-        Me.Panel109 = New System.Windows.Forms.Panel()
-        Me.Panel110 = New System.Windows.Forms.Panel()
-        Me.Panel111 = New System.Windows.Forms.Panel()
-        Me.Panel112 = New System.Windows.Forms.Panel()
-        Me.Panel113 = New System.Windows.Forms.Panel()
-        Me.Panel114 = New System.Windows.Forms.Panel()
-        Me.Panel115 = New System.Windows.Forms.Panel()
-        Me.Panel116 = New System.Windows.Forms.Panel()
-        Me.Panel117 = New System.Windows.Forms.Panel()
-        Me.Panel118 = New System.Windows.Forms.Panel()
-        Me.Panel119 = New System.Windows.Forms.Panel()
-        Me.Panel120 = New System.Windows.Forms.Panel()
-        Me.Panel121 = New System.Windows.Forms.Panel()
-        Me.Panel122 = New System.Windows.Forms.Panel()
-        Me.Panel123 = New System.Windows.Forms.Panel()
-        Me.Panel124 = New System.Windows.Forms.Panel()
-        Me.Panel125 = New System.Windows.Forms.Panel()
-        Me.Panel126 = New System.Windows.Forms.Panel()
-        Me.Panel127 = New System.Windows.Forms.Panel()
-        Me.Panel128 = New System.Windows.Forms.Panel()
-        Me.Panel129 = New System.Windows.Forms.Panel()
-        Me.Panel130 = New System.Windows.Forms.Panel()
-        Me.Panel131 = New System.Windows.Forms.Panel()
-        Me.Panel132 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_23c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_23c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_23c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_21c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_11c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_11c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_11c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_11c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_12c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_12c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_12c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_12c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_13c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_13c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_14c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_13c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_15c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_13c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_14c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_14c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_18c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_16c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_18c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_14c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_18c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_15c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_17c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_15c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_17c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_17c1 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_17c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_15c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_16c2 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_16c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_16c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_18c1 = New System.Windows.Forms.Panel()
         Me.Panel133 = New System.Windows.Forms.Panel()
         Me.Panel134 = New System.Windows.Forms.Panel()
         Me.lblOdontogramaactual = New System.Windows.Forms.Label()
@@ -314,6 +314,7 @@ Partial Class frmRegistroMedico
         CType(Me.dgvTratamientos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvEstadoDiente, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PnlDiente2_21c1.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgvRegistroMedico
@@ -324,23 +325,23 @@ Partial Class frmRegistroMedico
         Me.dgvRegistroMedico.AllowUserToResizeRows = False
         Me.dgvRegistroMedico.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvRegistroMedico.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvRegistroMedico.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvRegistroMedico.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.dgvRegistroMedico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvRegistroMedico.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvRegistroMedico.DefaultCellStyle = DataGridViewCellStyle8
         Me.dgvRegistroMedico.Location = New System.Drawing.Point(16, 417)
         Me.dgvRegistroMedico.Name = "dgvRegistroMedico"
         Me.dgvRegistroMedico.ReadOnly = True
@@ -480,23 +481,23 @@ Partial Class frmRegistroMedico
         Me.dgvTratamientos.AllowUserToResizeRows = False
         Me.dgvTratamientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvTratamientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvTratamientos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvTratamientos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.dgvTratamientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvTratamientos.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvTratamientos.DefaultCellStyle = DataGridViewCellStyle10
         Me.dgvTratamientos.Location = New System.Drawing.Point(952, 99)
         Me.dgvTratamientos.Name = "dgvTratamientos"
         Me.dgvTratamientos.ReadOnly = True
@@ -533,23 +534,23 @@ Partial Class frmRegistroMedico
         Me.dgvAuxiliar.AllowUserToResizeRows = False
         Me.dgvAuxiliar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvAuxiliar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvAuxiliar.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvAuxiliar.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.dgvAuxiliar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvAuxiliar.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvAuxiliar.DefaultCellStyle = DataGridViewCellStyle12
         Me.dgvAuxiliar.Location = New System.Drawing.Point(1132, 306)
         Me.dgvAuxiliar.Name = "dgvAuxiliar"
         Me.dgvAuxiliar.ReadOnly = True
@@ -1605,13 +1606,13 @@ Partial Class frmRegistroMedico
         Me.dgvEstadoDiente.Size = New System.Drawing.Size(430, 174)
         Me.dgvEstadoDiente.TabIndex = 306
         '
-        'Panel2
+        'pnlDiente2_38c1
         '
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Location = New System.Drawing.Point(627, 263)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(27, 15)
-        Me.Panel2.TabIndex = 431
+        Me.pnlDiente2_38c1.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_38c1.Location = New System.Drawing.Point(627, 263)
+        Me.pnlDiente2_38c1.Name = "pnlDiente2_38c1"
+        Me.pnlDiente2_38c1.Size = New System.Drawing.Size(27, 15)
+        Me.pnlDiente2_38c1.TabIndex = 431
         '
         'Panel5
         '
@@ -1621,13 +1622,13 @@ Partial Class frmRegistroMedico
         Me.Panel5.Size = New System.Drawing.Size(27, 15)
         Me.Panel5.TabIndex = 433
         '
-        'Panel6
+        'pnlDiente2_38c3
         '
-        Me.Panel6.BackColor = System.Drawing.Color.White
-        Me.Panel6.Location = New System.Drawing.Point(626, 279)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(29, 13)
-        Me.Panel6.TabIndex = 428
+        Me.pnlDiente2_38c3.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_38c3.Location = New System.Drawing.Point(626, 279)
+        Me.pnlDiente2_38c3.Name = "pnlDiente2_38c3"
+        Me.pnlDiente2_38c3.Size = New System.Drawing.Size(29, 13)
+        Me.pnlDiente2_38c3.TabIndex = 428
         '
         'Panel7
         '
@@ -1637,13 +1638,13 @@ Partial Class frmRegistroMedico
         Me.Panel7.Size = New System.Drawing.Size(29, 13)
         Me.Panel7.TabIndex = 430
         '
-        'Panel8
+        'pnlDiente2_38c4
         '
-        Me.Panel8.BackColor = System.Drawing.Color.White
-        Me.Panel8.Location = New System.Drawing.Point(624, 265)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(10, 27)
-        Me.Panel8.TabIndex = 435
+        Me.pnlDiente2_38c4.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_38c4.Location = New System.Drawing.Point(624, 265)
+        Me.pnlDiente2_38c4.Name = "pnlDiente2_38c4"
+        Me.pnlDiente2_38c4.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_38c4.TabIndex = 435
         '
         'Panel9
         '
@@ -1653,13 +1654,13 @@ Partial Class frmRegistroMedico
         Me.Panel9.Size = New System.Drawing.Size(10, 27)
         Me.Panel9.TabIndex = 436
         '
-        'Panel10
+        'pnlDiente2_38c2
         '
-        Me.Panel10.BackColor = System.Drawing.Color.White
-        Me.Panel10.Location = New System.Drawing.Point(647, 265)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(10, 27)
-        Me.Panel10.TabIndex = 432
+        Me.pnlDiente2_38c2.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_38c2.Location = New System.Drawing.Point(647, 265)
+        Me.pnlDiente2_38c2.Name = "pnlDiente2_38c2"
+        Me.pnlDiente2_38c2.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_38c2.TabIndex = 432
         '
         'Panel11
         '
@@ -1669,13 +1670,13 @@ Partial Class frmRegistroMedico
         Me.Panel11.Size = New System.Drawing.Size(10, 27)
         Me.Panel11.TabIndex = 434
         '
-        'Panel12
+        'pnlDiente2_37c1
         '
-        Me.Panel12.BackColor = System.Drawing.Color.White
-        Me.Panel12.Location = New System.Drawing.Point(589, 264)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(27, 15)
-        Me.Panel12.TabIndex = 423
+        Me.pnlDiente2_37c1.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_37c1.Location = New System.Drawing.Point(589, 264)
+        Me.pnlDiente2_37c1.Name = "pnlDiente2_37c1"
+        Me.pnlDiente2_37c1.Size = New System.Drawing.Size(27, 15)
+        Me.pnlDiente2_37c1.TabIndex = 423
         '
         'Panel13
         '
@@ -1685,13 +1686,13 @@ Partial Class frmRegistroMedico
         Me.Panel13.Size = New System.Drawing.Size(27, 15)
         Me.Panel13.TabIndex = 425
         '
-        'Panel14
+        'pnlDiente2_37c3
         '
-        Me.Panel14.BackColor = System.Drawing.Color.White
-        Me.Panel14.Location = New System.Drawing.Point(588, 280)
-        Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(29, 13)
-        Me.Panel14.TabIndex = 420
+        Me.pnlDiente2_37c3.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_37c3.Location = New System.Drawing.Point(588, 280)
+        Me.pnlDiente2_37c3.Name = "pnlDiente2_37c3"
+        Me.pnlDiente2_37c3.Size = New System.Drawing.Size(29, 13)
+        Me.pnlDiente2_37c3.TabIndex = 420
         '
         'Panel15
         '
@@ -1701,13 +1702,13 @@ Partial Class frmRegistroMedico
         Me.Panel15.Size = New System.Drawing.Size(29, 13)
         Me.Panel15.TabIndex = 422
         '
-        'Panel16
+        'pnlDiente2_37c4
         '
-        Me.Panel16.BackColor = System.Drawing.Color.White
-        Me.Panel16.Location = New System.Drawing.Point(586, 266)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(10, 27)
-        Me.Panel16.TabIndex = 427
+        Me.pnlDiente2_37c4.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_37c4.Location = New System.Drawing.Point(586, 266)
+        Me.pnlDiente2_37c4.Name = "pnlDiente2_37c4"
+        Me.pnlDiente2_37c4.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_37c4.TabIndex = 427
         '
         'Panel17
         '
@@ -1717,13 +1718,13 @@ Partial Class frmRegistroMedico
         Me.Panel17.Size = New System.Drawing.Size(10, 27)
         Me.Panel17.TabIndex = 429
         '
-        'Panel18
+        'pnlDiente2_37c2
         '
-        Me.Panel18.BackColor = System.Drawing.Color.White
-        Me.Panel18.Location = New System.Drawing.Point(609, 266)
-        Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(10, 27)
-        Me.Panel18.TabIndex = 424
+        Me.pnlDiente2_37c2.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_37c2.Location = New System.Drawing.Point(609, 266)
+        Me.pnlDiente2_37c2.Name = "pnlDiente2_37c2"
+        Me.pnlDiente2_37c2.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_37c2.TabIndex = 424
         '
         'Panel19
         '
@@ -1733,13 +1734,13 @@ Partial Class frmRegistroMedico
         Me.Panel19.Size = New System.Drawing.Size(10, 27)
         Me.Panel19.TabIndex = 426
         '
-        'Panel20
+        'pnlDiente2_36c1
         '
-        Me.Panel20.BackColor = System.Drawing.Color.White
-        Me.Panel20.Location = New System.Drawing.Point(550, 264)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(27, 15)
-        Me.Panel20.TabIndex = 396
+        Me.pnlDiente2_36c1.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_36c1.Location = New System.Drawing.Point(550, 264)
+        Me.pnlDiente2_36c1.Name = "pnlDiente2_36c1"
+        Me.pnlDiente2_36c1.Size = New System.Drawing.Size(27, 15)
+        Me.pnlDiente2_36c1.TabIndex = 396
         '
         'Panel21
         '
@@ -1749,13 +1750,13 @@ Partial Class frmRegistroMedico
         Me.Panel21.Size = New System.Drawing.Size(27, 15)
         Me.Panel21.TabIndex = 399
         '
-        'Panel22
+        'pnlDiente2_36c3
         '
-        Me.Panel22.BackColor = System.Drawing.Color.White
-        Me.Panel22.Location = New System.Drawing.Point(549, 280)
-        Me.Panel22.Name = "Panel22"
-        Me.Panel22.Size = New System.Drawing.Size(29, 13)
-        Me.Panel22.TabIndex = 381
+        Me.pnlDiente2_36c3.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_36c3.Location = New System.Drawing.Point(549, 280)
+        Me.pnlDiente2_36c3.Name = "pnlDiente2_36c3"
+        Me.pnlDiente2_36c3.Size = New System.Drawing.Size(29, 13)
+        Me.pnlDiente2_36c3.TabIndex = 381
         '
         'Panel23
         '
@@ -1765,21 +1766,21 @@ Partial Class frmRegistroMedico
         Me.Panel23.Size = New System.Drawing.Size(29, 13)
         Me.Panel23.TabIndex = 383
         '
-        'Panel24
+        'pnlDiente2_35c1
         '
-        Me.Panel24.BackColor = System.Drawing.Color.White
-        Me.Panel24.Location = New System.Drawing.Point(511, 263)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(27, 15)
-        Me.Panel24.TabIndex = 398
+        Me.pnlDiente2_35c1.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_35c1.Location = New System.Drawing.Point(511, 263)
+        Me.pnlDiente2_35c1.Name = "pnlDiente2_35c1"
+        Me.pnlDiente2_35c1.Size = New System.Drawing.Size(27, 15)
+        Me.pnlDiente2_35c1.TabIndex = 398
         '
-        'Panel25
+        'pnlDiente2_36c4
         '
-        Me.Panel25.BackColor = System.Drawing.Color.White
-        Me.Panel25.Location = New System.Drawing.Point(547, 266)
-        Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(10, 27)
-        Me.Panel25.TabIndex = 417
+        Me.pnlDiente2_36c4.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_36c4.Location = New System.Drawing.Point(547, 266)
+        Me.pnlDiente2_36c4.Name = "pnlDiente2_36c4"
+        Me.pnlDiente2_36c4.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_36c4.TabIndex = 417
         '
         'Panel26
         '
@@ -1789,13 +1790,13 @@ Partial Class frmRegistroMedico
         Me.Panel26.Size = New System.Drawing.Size(27, 15)
         Me.Panel26.TabIndex = 401
         '
-        'Panel27
+        'pnlDiente2_34c1
         '
-        Me.Panel27.BackColor = System.Drawing.Color.White
-        Me.Panel27.Location = New System.Drawing.Point(473, 263)
-        Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(27, 15)
-        Me.Panel27.TabIndex = 391
+        Me.pnlDiente2_34c1.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_34c1.Location = New System.Drawing.Point(473, 263)
+        Me.pnlDiente2_34c1.Name = "pnlDiente2_34c1"
+        Me.pnlDiente2_34c1.Size = New System.Drawing.Size(27, 15)
+        Me.pnlDiente2_34c1.TabIndex = 391
         '
         'Panel28
         '
@@ -1805,29 +1806,29 @@ Partial Class frmRegistroMedico
         Me.Panel28.Size = New System.Drawing.Size(10, 27)
         Me.Panel28.TabIndex = 419
         '
-        'Panel29
+        'pnlDiente2_36c2
         '
-        Me.Panel29.BackColor = System.Drawing.Color.White
-        Me.Panel29.Location = New System.Drawing.Point(570, 266)
-        Me.Panel29.Name = "Panel29"
-        Me.Panel29.Size = New System.Drawing.Size(10, 27)
-        Me.Panel29.TabIndex = 404
+        Me.pnlDiente2_36c2.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_36c2.Location = New System.Drawing.Point(570, 266)
+        Me.pnlDiente2_36c2.Name = "pnlDiente2_36c2"
+        Me.pnlDiente2_36c2.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_36c2.TabIndex = 404
         '
-        'Panel30
+        'PnlDiente2_45c1
         '
-        Me.Panel30.BackColor = System.Drawing.Color.White
-        Me.Panel30.Location = New System.Drawing.Point(146, 263)
-        Me.Panel30.Name = "Panel30"
-        Me.Panel30.Size = New System.Drawing.Size(27, 15)
-        Me.Panel30.TabIndex = 392
+        Me.PnlDiente2_45c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_45c1.Location = New System.Drawing.Point(145, 263)
+        Me.PnlDiente2_45c1.Name = "PnlDiente2_45c1"
+        Me.PnlDiente2_45c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_45c1.TabIndex = 392
         '
-        'Panel31
+        'pnlDiente2_35c3
         '
-        Me.Panel31.BackColor = System.Drawing.Color.White
-        Me.Panel31.Location = New System.Drawing.Point(510, 279)
-        Me.Panel31.Name = "Panel31"
-        Me.Panel31.Size = New System.Drawing.Size(29, 13)
-        Me.Panel31.TabIndex = 385
+        Me.pnlDiente2_35c3.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_35c3.Location = New System.Drawing.Point(510, 279)
+        Me.pnlDiente2_35c3.Name = "pnlDiente2_35c3"
+        Me.pnlDiente2_35c3.Size = New System.Drawing.Size(29, 13)
+        Me.pnlDiente2_35c3.TabIndex = 385
         '
         'Panel32
         '
@@ -1837,13 +1838,13 @@ Partial Class frmRegistroMedico
         Me.Panel32.Size = New System.Drawing.Size(10, 27)
         Me.Panel32.TabIndex = 406
         '
-        'Panel33
+        'pnlDiente2_35c4
         '
-        Me.Panel33.BackColor = System.Drawing.Color.White
-        Me.Panel33.Location = New System.Drawing.Point(508, 265)
-        Me.Panel33.Name = "Panel33"
-        Me.Panel33.Size = New System.Drawing.Size(10, 27)
-        Me.Panel33.TabIndex = 418
+        Me.pnlDiente2_35c4.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_35c4.Location = New System.Drawing.Point(508, 265)
+        Me.pnlDiente2_35c4.Name = "pnlDiente2_35c4"
+        Me.pnlDiente2_35c4.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_35c4.TabIndex = 418
         '
         'Panel34
         '
@@ -1853,13 +1854,13 @@ Partial Class frmRegistroMedico
         Me.Panel34.Size = New System.Drawing.Size(29, 13)
         Me.Panel34.TabIndex = 386
         '
-        'Panel35
+        'pnlDiente2_31c3
         '
-        Me.Panel35.BackColor = System.Drawing.Color.White
-        Me.Panel35.Location = New System.Drawing.Point(354, 279)
-        Me.Panel35.Name = "Panel35"
-        Me.Panel35.Size = New System.Drawing.Size(29, 13)
-        Me.Panel35.TabIndex = 373
+        Me.pnlDiente2_31c3.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_31c3.Location = New System.Drawing.Point(354, 279)
+        Me.pnlDiente2_31c3.Name = "pnlDiente2_31c3"
+        Me.pnlDiente2_31c3.Size = New System.Drawing.Size(29, 13)
+        Me.pnlDiente2_31c3.TabIndex = 373
         '
         'Panel36
         '
@@ -1869,61 +1870,61 @@ Partial Class frmRegistroMedico
         Me.Panel36.Size = New System.Drawing.Size(10, 27)
         Me.Panel36.TabIndex = 421
         '
-        'Panel37
+        'pnlDiente2_33c1
         '
-        Me.Panel37.BackColor = System.Drawing.Color.White
-        Me.Panel37.Location = New System.Drawing.Point(434, 263)
-        Me.Panel37.Name = "Panel37"
-        Me.Panel37.Size = New System.Drawing.Size(27, 15)
-        Me.Panel37.TabIndex = 393
+        Me.pnlDiente2_33c1.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_33c1.Location = New System.Drawing.Point(434, 263)
+        Me.pnlDiente2_33c1.Name = "pnlDiente2_33c1"
+        Me.pnlDiente2_33c1.Size = New System.Drawing.Size(27, 15)
+        Me.pnlDiente2_33c1.TabIndex = 393
         '
-        'Panel38
+        'PnlDiente2_48c3
         '
-        Me.Panel38.BackColor = System.Drawing.Color.White
-        Me.Panel38.Location = New System.Drawing.Point(26, 279)
-        Me.Panel38.Name = "Panel38"
-        Me.Panel38.Size = New System.Drawing.Size(29, 13)
-        Me.Panel38.TabIndex = 374
+        Me.PnlDiente2_48c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_48c3.Location = New System.Drawing.Point(26, 279)
+        Me.PnlDiente2_48c3.Name = "PnlDiente2_48c3"
+        Me.PnlDiente2_48c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_48c3.TabIndex = 374
         '
-        'Panel39
+        'pnlDiente2_31c2
         '
-        Me.Panel39.BackColor = System.Drawing.Color.White
-        Me.Panel39.Location = New System.Drawing.Point(375, 265)
-        Me.Panel39.Name = "Panel39"
-        Me.Panel39.Size = New System.Drawing.Size(10, 27)
-        Me.Panel39.TabIndex = 376
+        Me.pnlDiente2_31c2.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_31c2.Location = New System.Drawing.Point(375, 265)
+        Me.pnlDiente2_31c2.Name = "pnlDiente2_31c2"
+        Me.pnlDiente2_31c2.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_31c2.TabIndex = 376
         '
-        'Panel40
+        'PnlDiente2_46c1
         '
-        Me.Panel40.BackColor = System.Drawing.Color.White
-        Me.Panel40.Location = New System.Drawing.Point(106, 263)
-        Me.Panel40.Name = "Panel40"
-        Me.Panel40.Size = New System.Drawing.Size(27, 15)
-        Me.Panel40.TabIndex = 394
+        Me.PnlDiente2_46c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_46c1.Location = New System.Drawing.Point(106, 263)
+        Me.PnlDiente2_46c1.Name = "PnlDiente2_46c1"
+        Me.PnlDiente2_46c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_46c1.TabIndex = 394
         '
-        'Panel41
+        'pnlDiente2_35c2
         '
-        Me.Panel41.BackColor = System.Drawing.Color.White
-        Me.Panel41.Location = New System.Drawing.Point(531, 265)
-        Me.Panel41.Name = "Panel41"
-        Me.Panel41.Size = New System.Drawing.Size(10, 27)
-        Me.Panel41.TabIndex = 402
+        Me.pnlDiente2_35c2.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_35c2.Location = New System.Drawing.Point(531, 265)
+        Me.pnlDiente2_35c2.Name = "pnlDiente2_35c2"
+        Me.pnlDiente2_35c2.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_35c2.TabIndex = 402
         '
-        'Panel42
+        'PnlDiente2_48c2
         '
-        Me.Panel42.BackColor = System.Drawing.Color.White
-        Me.Panel42.Location = New System.Drawing.Point(47, 265)
-        Me.Panel42.Name = "Panel42"
-        Me.Panel42.Size = New System.Drawing.Size(10, 27)
-        Me.Panel42.TabIndex = 379
+        Me.PnlDiente2_48c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_48c2.Location = New System.Drawing.Point(47, 265)
+        Me.PnlDiente2_48c2.Name = "PnlDiente2_48c2"
+        Me.PnlDiente2_48c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_48c2.TabIndex = 379
         '
-        'Panel43
+        'pnlDiente2_31c4
         '
-        Me.Panel43.BackColor = System.Drawing.Color.White
-        Me.Panel43.Location = New System.Drawing.Point(352, 265)
-        Me.Panel43.Name = "Panel43"
-        Me.Panel43.Size = New System.Drawing.Size(10, 27)
-        Me.Panel43.TabIndex = 378
+        Me.pnlDiente2_31c4.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_31c4.Location = New System.Drawing.Point(352, 265)
+        Me.pnlDiente2_31c4.Name = "pnlDiente2_31c4"
+        Me.pnlDiente2_31c4.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_31c4.TabIndex = 378
         '
         'Panel44
         '
@@ -1933,197 +1934,197 @@ Partial Class frmRegistroMedico
         Me.Panel44.Size = New System.Drawing.Size(10, 27)
         Me.Panel44.TabIndex = 405
         '
-        'Panel45
+        'pnlDiente2_34c3
         '
-        Me.Panel45.BackColor = System.Drawing.Color.White
-        Me.Panel45.Location = New System.Drawing.Point(472, 279)
-        Me.Panel45.Name = "Panel45"
-        Me.Panel45.Size = New System.Drawing.Size(29, 13)
-        Me.Panel45.TabIndex = 382
+        Me.pnlDiente2_34c3.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_34c3.Location = New System.Drawing.Point(472, 279)
+        Me.pnlDiente2_34c3.Name = "pnlDiente2_34c3"
+        Me.pnlDiente2_34c3.Size = New System.Drawing.Size(29, 13)
+        Me.pnlDiente2_34c3.TabIndex = 382
         '
-        'Panel46
+        'PnlDiente2_48c4
         '
-        Me.Panel46.BackColor = System.Drawing.Color.White
-        Me.Panel46.Location = New System.Drawing.Point(24, 265)
-        Me.Panel46.Name = "Panel46"
-        Me.Panel46.Size = New System.Drawing.Size(10, 27)
-        Me.Panel46.TabIndex = 380
+        Me.PnlDiente2_48c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_48c4.Location = New System.Drawing.Point(24, 265)
+        Me.PnlDiente2_48c4.Name = "PnlDiente2_48c4"
+        Me.PnlDiente2_48c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_48c4.TabIndex = 380
         '
-        'Panel47
+        'pnlDiente2_32c2
         '
-        Me.Panel47.BackColor = System.Drawing.Color.White
-        Me.Panel47.Location = New System.Drawing.Point(414, 265)
-        Me.Panel47.Name = "Panel47"
-        Me.Panel47.Size = New System.Drawing.Size(10, 27)
-        Me.Panel47.TabIndex = 409
+        Me.pnlDiente2_32c2.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_32c2.Location = New System.Drawing.Point(414, 265)
+        Me.pnlDiente2_32c2.Name = "pnlDiente2_32c2"
+        Me.pnlDiente2_32c2.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_32c2.TabIndex = 409
         '
-        'Panel48
+        'PnlDiente2_45c3
         '
-        Me.Panel48.BackColor = System.Drawing.Color.White
-        Me.Panel48.Location = New System.Drawing.Point(145, 279)
-        Me.Panel48.Name = "Panel48"
-        Me.Panel48.Size = New System.Drawing.Size(29, 13)
-        Me.Panel48.TabIndex = 384
+        Me.PnlDiente2_45c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_45c3.Location = New System.Drawing.Point(145, 279)
+        Me.PnlDiente2_45c3.Name = "PnlDiente2_45c3"
+        Me.PnlDiente2_45c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_45c3.TabIndex = 384
         '
-        'Panel49
+        'pnlDiente2_34c4
         '
-        Me.Panel49.BackColor = System.Drawing.Color.White
-        Me.Panel49.Location = New System.Drawing.Point(470, 265)
-        Me.Panel49.Name = "Panel49"
-        Me.Panel49.Size = New System.Drawing.Size(10, 27)
-        Me.Panel49.TabIndex = 415
+        Me.pnlDiente2_34c4.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_34c4.Location = New System.Drawing.Point(470, 265)
+        Me.pnlDiente2_34c4.Name = "pnlDiente2_34c4"
+        Me.pnlDiente2_34c4.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_34c4.TabIndex = 415
         '
-        'Panel50
+        'PnlDiente2_47c2
         '
-        Me.Panel50.BackColor = System.Drawing.Color.White
-        Me.Panel50.Location = New System.Drawing.Point(86, 265)
-        Me.Panel50.Name = "Panel50"
-        Me.Panel50.Size = New System.Drawing.Size(10, 27)
-        Me.Panel50.TabIndex = 410
+        Me.PnlDiente2_47c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_47c2.Location = New System.Drawing.Point(86, 265)
+        Me.PnlDiente2_47c2.Name = "PnlDiente2_47c2"
+        Me.PnlDiente2_47c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_47c2.TabIndex = 410
         '
-        'Panel51
+        'pnlDiente2_32c4
         '
-        Me.Panel51.BackColor = System.Drawing.Color.White
-        Me.Panel51.Location = New System.Drawing.Point(391, 265)
-        Me.Panel51.Name = "Panel51"
-        Me.Panel51.Size = New System.Drawing.Size(10, 27)
-        Me.Panel51.TabIndex = 411
+        Me.pnlDiente2_32c4.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_32c4.Location = New System.Drawing.Point(391, 265)
+        Me.pnlDiente2_32c4.Name = "pnlDiente2_32c4"
+        Me.pnlDiente2_32c4.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_32c4.TabIndex = 411
         '
-        'Panel52
+        'PnlDiente2_45c4
         '
-        Me.Panel52.BackColor = System.Drawing.Color.White
-        Me.Panel52.Location = New System.Drawing.Point(143, 265)
-        Me.Panel52.Name = "Panel52"
-        Me.Panel52.Size = New System.Drawing.Size(10, 27)
-        Me.Panel52.TabIndex = 416
+        Me.PnlDiente2_45c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_45c4.Location = New System.Drawing.Point(143, 265)
+        Me.PnlDiente2_45c4.Name = "PnlDiente2_45c4"
+        Me.PnlDiente2_45c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_45c4.TabIndex = 416
         '
-        'Panel53
+        'pnlDiente2_32c1
         '
-        Me.Panel53.BackColor = System.Drawing.Color.White
-        Me.Panel53.Location = New System.Drawing.Point(394, 263)
-        Me.Panel53.Name = "Panel53"
-        Me.Panel53.Size = New System.Drawing.Size(27, 15)
-        Me.Panel53.TabIndex = 395
+        Me.pnlDiente2_32c1.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_32c1.Location = New System.Drawing.Point(394, 263)
+        Me.pnlDiente2_32c1.Name = "pnlDiente2_32c1"
+        Me.pnlDiente2_32c1.Size = New System.Drawing.Size(27, 15)
+        Me.pnlDiente2_32c1.TabIndex = 395
         '
-        'Panel54
+        'PnlDiente2_47c4
         '
-        Me.Panel54.BackColor = System.Drawing.Color.White
-        Me.Panel54.Location = New System.Drawing.Point(63, 265)
-        Me.Panel54.Name = "Panel54"
-        Me.Panel54.Size = New System.Drawing.Size(10, 27)
-        Me.Panel54.TabIndex = 413
+        Me.PnlDiente2_47c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_47c4.Location = New System.Drawing.Point(63, 265)
+        Me.PnlDiente2_47c4.Name = "PnlDiente2_47c4"
+        Me.PnlDiente2_47c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_47c4.TabIndex = 413
         '
-        'Panel56
+        'pnlDiente2_32c3
         '
-        Me.Panel56.BackColor = System.Drawing.Color.White
-        Me.Panel56.Location = New System.Drawing.Point(392, 279)
-        Me.Panel56.Name = "Panel56"
-        Me.Panel56.Size = New System.Drawing.Size(29, 13)
-        Me.Panel56.TabIndex = 389
+        Me.pnlDiente2_32c3.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_32c3.Location = New System.Drawing.Point(392, 279)
+        Me.pnlDiente2_32c3.Name = "pnlDiente2_32c3"
+        Me.pnlDiente2_32c3.Size = New System.Drawing.Size(29, 13)
+        Me.pnlDiente2_32c3.TabIndex = 389
         '
-        'Panel57
+        'PnlDiente2_47c1
         '
-        Me.Panel57.BackColor = System.Drawing.Color.White
-        Me.Panel57.Location = New System.Drawing.Point(66, 263)
-        Me.Panel57.Name = "Panel57"
-        Me.Panel57.Size = New System.Drawing.Size(27, 15)
-        Me.Panel57.TabIndex = 397
+        Me.PnlDiente2_47c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_47c1.Location = New System.Drawing.Point(66, 263)
+        Me.PnlDiente2_47c1.Name = "PnlDiente2_47c1"
+        Me.PnlDiente2_47c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_47c1.TabIndex = 397
         '
-        'Panel58
+        'pnlDiente2_34c2
         '
-        Me.Panel58.BackColor = System.Drawing.Color.White
-        Me.Panel58.Location = New System.Drawing.Point(493, 265)
-        Me.Panel58.Name = "Panel58"
-        Me.Panel58.Size = New System.Drawing.Size(10, 27)
-        Me.Panel58.TabIndex = 407
+        Me.pnlDiente2_34c2.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_34c2.Location = New System.Drawing.Point(493, 265)
+        Me.pnlDiente2_34c2.Name = "pnlDiente2_34c2"
+        Me.pnlDiente2_34c2.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_34c2.TabIndex = 407
         '
-        'Panel59
+        'PnlDiente2_47c3
         '
-        Me.Panel59.BackColor = System.Drawing.Color.White
-        Me.Panel59.Location = New System.Drawing.Point(65, 279)
-        Me.Panel59.Name = "Panel59"
-        Me.Panel59.Size = New System.Drawing.Size(29, 13)
-        Me.Panel59.TabIndex = 390
+        Me.PnlDiente2_47c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_47c3.Location = New System.Drawing.Point(65, 279)
+        Me.PnlDiente2_47c3.Name = "PnlDiente2_47c3"
+        Me.PnlDiente2_47c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_47c3.TabIndex = 390
         '
-        'Panel60
+        'pnlDiente2_33c2
         '
-        Me.Panel60.BackColor = System.Drawing.Color.White
-        Me.Panel60.Location = New System.Drawing.Point(454, 265)
-        Me.Panel60.Name = "Panel60"
-        Me.Panel60.Size = New System.Drawing.Size(10, 27)
-        Me.Panel60.TabIndex = 400
+        Me.pnlDiente2_33c2.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_33c2.Location = New System.Drawing.Point(454, 265)
+        Me.pnlDiente2_33c2.Name = "pnlDiente2_33c2"
+        Me.pnlDiente2_33c2.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_33c2.TabIndex = 400
         '
-        'Panel61
+        'PnlDiente2_45c2
         '
-        Me.Panel61.BackColor = System.Drawing.Color.White
-        Me.Panel61.Location = New System.Drawing.Point(166, 265)
-        Me.Panel61.Name = "Panel61"
-        Me.Panel61.Size = New System.Drawing.Size(10, 27)
-        Me.Panel61.TabIndex = 408
+        Me.PnlDiente2_45c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_45c2.Location = New System.Drawing.Point(166, 265)
+        Me.PnlDiente2_45c2.Name = "PnlDiente2_45c2"
+        Me.PnlDiente2_45c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_45c2.TabIndex = 408
         '
-        'Panel62
+        'pnlDiente2_33c3
         '
-        Me.Panel62.BackColor = System.Drawing.Color.White
-        Me.Panel62.Location = New System.Drawing.Point(433, 279)
-        Me.Panel62.Name = "Panel62"
-        Me.Panel62.Size = New System.Drawing.Size(29, 13)
-        Me.Panel62.TabIndex = 387
+        Me.pnlDiente2_33c3.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_33c3.Location = New System.Drawing.Point(433, 279)
+        Me.pnlDiente2_33c3.Name = "pnlDiente2_33c3"
+        Me.pnlDiente2_33c3.Size = New System.Drawing.Size(29, 13)
+        Me.pnlDiente2_33c3.TabIndex = 387
         '
-        'Panel63
+        'PnlDiente2_46c2
         '
-        Me.Panel63.BackColor = System.Drawing.Color.White
-        Me.Panel63.Location = New System.Drawing.Point(126, 265)
-        Me.Panel63.Name = "Panel63"
-        Me.Panel63.Size = New System.Drawing.Size(10, 27)
-        Me.Panel63.TabIndex = 403
+        Me.PnlDiente2_46c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_46c2.Location = New System.Drawing.Point(126, 265)
+        Me.PnlDiente2_46c2.Name = "PnlDiente2_46c2"
+        Me.PnlDiente2_46c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_46c2.TabIndex = 403
         '
-        'Panel64
+        'pnlDiente2_33c4
         '
-        Me.Panel64.BackColor = System.Drawing.Color.White
-        Me.Panel64.Location = New System.Drawing.Point(431, 265)
-        Me.Panel64.Name = "Panel64"
-        Me.Panel64.Size = New System.Drawing.Size(10, 27)
-        Me.Panel64.TabIndex = 412
+        Me.pnlDiente2_33c4.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_33c4.Location = New System.Drawing.Point(431, 265)
+        Me.pnlDiente2_33c4.Name = "pnlDiente2_33c4"
+        Me.pnlDiente2_33c4.Size = New System.Drawing.Size(10, 27)
+        Me.pnlDiente2_33c4.TabIndex = 412
         '
-        'Panel65
+        'PnlDiente2_46c3
         '
-        Me.Panel65.BackColor = System.Drawing.Color.White
-        Me.Panel65.Location = New System.Drawing.Point(105, 279)
-        Me.Panel65.Name = "Panel65"
-        Me.Panel65.Size = New System.Drawing.Size(29, 13)
-        Me.Panel65.TabIndex = 388
+        Me.PnlDiente2_46c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_46c3.Location = New System.Drawing.Point(105, 279)
+        Me.PnlDiente2_46c3.Name = "PnlDiente2_46c3"
+        Me.PnlDiente2_46c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_46c3.TabIndex = 388
         '
-        'Panel66
+        'pnlDiente2_31c1
         '
-        Me.Panel66.BackColor = System.Drawing.Color.White
-        Me.Panel66.Location = New System.Drawing.Point(355, 263)
-        Me.Panel66.Name = "Panel66"
-        Me.Panel66.Size = New System.Drawing.Size(27, 15)
-        Me.Panel66.TabIndex = 375
+        Me.pnlDiente2_31c1.BackColor = System.Drawing.Color.White
+        Me.pnlDiente2_31c1.Location = New System.Drawing.Point(355, 263)
+        Me.pnlDiente2_31c1.Name = "pnlDiente2_31c1"
+        Me.pnlDiente2_31c1.Size = New System.Drawing.Size(27, 15)
+        Me.pnlDiente2_31c1.TabIndex = 375
         '
-        'Panel67
+        'PnlDiente2_46c4
         '
-        Me.Panel67.BackColor = System.Drawing.Color.White
-        Me.Panel67.Location = New System.Drawing.Point(103, 265)
-        Me.Panel67.Name = "Panel67"
-        Me.Panel67.Size = New System.Drawing.Size(10, 27)
-        Me.Panel67.TabIndex = 414
+        Me.PnlDiente2_46c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_46c4.Location = New System.Drawing.Point(103, 265)
+        Me.PnlDiente2_46c4.Name = "PnlDiente2_46c4"
+        Me.PnlDiente2_46c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_46c4.TabIndex = 414
         '
-        'Panel68
+        'PnlDiente2_48c1
         '
-        Me.Panel68.BackColor = System.Drawing.Color.White
-        Me.Panel68.Location = New System.Drawing.Point(27, 263)
-        Me.Panel68.Name = "Panel68"
-        Me.Panel68.Size = New System.Drawing.Size(27, 15)
-        Me.Panel68.TabIndex = 377
+        Me.PnlDiente2_48c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_48c1.Location = New System.Drawing.Point(27, 263)
+        Me.PnlDiente2_48c1.Name = "PnlDiente2_48c1"
+        Me.PnlDiente2_48c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_48c1.TabIndex = 377
         '
-        'Panel69
+        'PnlDiente2_28c1
         '
-        Me.Panel69.BackColor = System.Drawing.Color.White
-        Me.Panel69.Location = New System.Drawing.Point(632, 208)
-        Me.Panel69.Name = "Panel69"
-        Me.Panel69.Size = New System.Drawing.Size(27, 15)
-        Me.Panel69.TabIndex = 370
+        Me.PnlDiente2_28c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_28c1.Location = New System.Drawing.Point(632, 208)
+        Me.PnlDiente2_28c1.Name = "PnlDiente2_28c1"
+        Me.PnlDiente2_28c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_28c1.TabIndex = 370
         '
         'Panel70
         '
@@ -2149,189 +2150,189 @@ Partial Class frmRegistroMedico
         Me.Panel72.Size = New System.Drawing.Size(10, 27)
         Me.Panel72.TabIndex = 371
         '
-        'Panel73
+        'PnlDiente2_27c1
         '
-        Me.Panel73.BackColor = System.Drawing.Color.White
-        Me.Panel73.Location = New System.Drawing.Point(595, 208)
-        Me.Panel73.Name = "Panel73"
-        Me.Panel73.Size = New System.Drawing.Size(27, 15)
-        Me.Panel73.TabIndex = 366
+        Me.PnlDiente2_27c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_27c1.Location = New System.Drawing.Point(595, 208)
+        Me.PnlDiente2_27c1.Name = "PnlDiente2_27c1"
+        Me.PnlDiente2_27c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_27c1.TabIndex = 366
         '
-        'Panel74
+        'PnlDiente2_27c3
         '
-        Me.Panel74.BackColor = System.Drawing.Color.White
-        Me.Panel74.Location = New System.Drawing.Point(594, 224)
-        Me.Panel74.Name = "Panel74"
-        Me.Panel74.Size = New System.Drawing.Size(29, 13)
-        Me.Panel74.TabIndex = 365
+        Me.PnlDiente2_27c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_27c3.Location = New System.Drawing.Point(594, 224)
+        Me.PnlDiente2_27c3.Name = "PnlDiente2_27c3"
+        Me.PnlDiente2_27c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_27c3.TabIndex = 365
         '
-        'Panel75
+        'PnlDiente2_27c4
         '
-        Me.Panel75.BackColor = System.Drawing.Color.White
-        Me.Panel75.Location = New System.Drawing.Point(592, 210)
-        Me.Panel75.Name = "Panel75"
-        Me.Panel75.Size = New System.Drawing.Size(10, 27)
-        Me.Panel75.TabIndex = 368
+        Me.PnlDiente2_27c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_27c4.Location = New System.Drawing.Point(592, 210)
+        Me.PnlDiente2_27c4.Name = "PnlDiente2_27c4"
+        Me.PnlDiente2_27c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_27c4.TabIndex = 368
         '
-        'Panel76
+        'PnlDiente2_27c2
         '
-        Me.Panel76.BackColor = System.Drawing.Color.White
-        Me.Panel76.Location = New System.Drawing.Point(615, 210)
-        Me.Panel76.Name = "Panel76"
-        Me.Panel76.Size = New System.Drawing.Size(10, 27)
-        Me.Panel76.TabIndex = 367
+        Me.PnlDiente2_27c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_27c2.Location = New System.Drawing.Point(615, 210)
+        Me.PnlDiente2_27c2.Name = "PnlDiente2_27c2"
+        Me.PnlDiente2_27c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_27c2.TabIndex = 367
         '
-        'Panel77
+        'PnlDiente2_26c1
         '
-        Me.Panel77.BackColor = System.Drawing.Color.White
-        Me.Panel77.Location = New System.Drawing.Point(555, 209)
-        Me.Panel77.Name = "Panel77"
-        Me.Panel77.Size = New System.Drawing.Size(27, 15)
-        Me.Panel77.TabIndex = 353
+        Me.PnlDiente2_26c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_26c1.Location = New System.Drawing.Point(555, 209)
+        Me.PnlDiente2_26c1.Name = "PnlDiente2_26c1"
+        Me.PnlDiente2_26c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_26c1.TabIndex = 353
         '
-        'Panel78
+        'PnlDiente2_26c3
         '
-        Me.Panel78.BackColor = System.Drawing.Color.White
-        Me.Panel78.Location = New System.Drawing.Point(554, 225)
-        Me.Panel78.Name = "Panel78"
-        Me.Panel78.Size = New System.Drawing.Size(29, 13)
-        Me.Panel78.TabIndex = 345
+        Me.PnlDiente2_26c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_26c3.Location = New System.Drawing.Point(554, 225)
+        Me.PnlDiente2_26c3.Name = "PnlDiente2_26c3"
+        Me.PnlDiente2_26c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_26c3.TabIndex = 345
         '
-        'Panel79
+        'PnlDiente2_25c1
         '
-        Me.Panel79.BackColor = System.Drawing.Color.White
-        Me.Panel79.Location = New System.Drawing.Point(517, 209)
-        Me.Panel79.Name = "Panel79"
-        Me.Panel79.Size = New System.Drawing.Size(27, 15)
-        Me.Panel79.TabIndex = 354
+        Me.PnlDiente2_25c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_25c1.Location = New System.Drawing.Point(517, 209)
+        Me.PnlDiente2_25c1.Name = "PnlDiente2_25c1"
+        Me.PnlDiente2_25c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_25c1.TabIndex = 354
         '
-        'Panel80
+        'PnlDiente2_26c4
         '
-        Me.Panel80.BackColor = System.Drawing.Color.White
-        Me.Panel80.Location = New System.Drawing.Point(552, 211)
-        Me.Panel80.Name = "Panel80"
-        Me.Panel80.Size = New System.Drawing.Size(10, 27)
-        Me.Panel80.TabIndex = 363
+        Me.PnlDiente2_26c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_26c4.Location = New System.Drawing.Point(552, 211)
+        Me.PnlDiente2_26c4.Name = "PnlDiente2_26c4"
+        Me.PnlDiente2_26c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_26c4.TabIndex = 363
         '
-        'Panel81
+        'PnlDiente2_24c1
         '
-        Me.Panel81.BackColor = System.Drawing.Color.White
-        Me.Panel81.Location = New System.Drawing.Point(476, 209)
-        Me.Panel81.Name = "Panel81"
-        Me.Panel81.Size = New System.Drawing.Size(27, 15)
-        Me.Panel81.TabIndex = 350
+        Me.PnlDiente2_24c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_24c1.Location = New System.Drawing.Point(476, 209)
+        Me.PnlDiente2_24c1.Name = "PnlDiente2_24c1"
+        Me.PnlDiente2_24c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_24c1.TabIndex = 350
         '
-        'Panel82
+        'PnlDiente2_26c2
         '
-        Me.Panel82.BackColor = System.Drawing.Color.White
-        Me.Panel82.Location = New System.Drawing.Point(575, 211)
-        Me.Panel82.Name = "Panel82"
-        Me.Panel82.Size = New System.Drawing.Size(10, 27)
-        Me.Panel82.TabIndex = 357
+        Me.PnlDiente2_26c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_26c2.Location = New System.Drawing.Point(575, 211)
+        Me.PnlDiente2_26c2.Name = "PnlDiente2_26c2"
+        Me.PnlDiente2_26c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_26c2.TabIndex = 357
         '
-        'Panel83
+        'PnlDiente2_25c3
         '
-        Me.Panel83.BackColor = System.Drawing.Color.White
-        Me.Panel83.Location = New System.Drawing.Point(516, 225)
-        Me.Panel83.Name = "Panel83"
-        Me.Panel83.Size = New System.Drawing.Size(29, 13)
-        Me.Panel83.TabIndex = 347
+        Me.PnlDiente2_25c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_25c3.Location = New System.Drawing.Point(516, 225)
+        Me.PnlDiente2_25c3.Name = "PnlDiente2_25c3"
+        Me.PnlDiente2_25c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_25c3.TabIndex = 347
         '
-        'Panel84
+        'PnlDiente2_25c4
         '
-        Me.Panel84.BackColor = System.Drawing.Color.White
-        Me.Panel84.Location = New System.Drawing.Point(514, 211)
-        Me.Panel84.Name = "Panel84"
-        Me.Panel84.Size = New System.Drawing.Size(10, 27)
-        Me.Panel84.TabIndex = 364
+        Me.PnlDiente2_25c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_25c4.Location = New System.Drawing.Point(514, 211)
+        Me.PnlDiente2_25c4.Name = "PnlDiente2_25c4"
+        Me.PnlDiente2_25c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_25c4.TabIndex = 364
         '
-        'Panel85
+        'PnlDiente2_21c3
         '
-        Me.Panel85.BackColor = System.Drawing.Color.White
-        Me.Panel85.Location = New System.Drawing.Point(355, 225)
-        Me.Panel85.Name = "Panel85"
-        Me.Panel85.Size = New System.Drawing.Size(29, 13)
-        Me.Panel85.TabIndex = 341
+        Me.PnlDiente2_21c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_21c3.Location = New System.Drawing.Point(355, 225)
+        Me.PnlDiente2_21c3.Name = "PnlDiente2_21c3"
+        Me.PnlDiente2_21c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_21c3.TabIndex = 341
         '
-        'Panel86
+        'PnlDiente2_23c1
         '
-        Me.Panel86.BackColor = System.Drawing.Color.White
-        Me.Panel86.Location = New System.Drawing.Point(436, 209)
-        Me.Panel86.Name = "Panel86"
-        Me.Panel86.Size = New System.Drawing.Size(27, 15)
-        Me.Panel86.TabIndex = 351
+        Me.PnlDiente2_23c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_23c1.Location = New System.Drawing.Point(436, 209)
+        Me.PnlDiente2_23c1.Name = "PnlDiente2_23c1"
+        Me.PnlDiente2_23c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_23c1.TabIndex = 351
         '
-        'Panel87
+        'PnlDiente2_21c2
         '
-        Me.Panel87.BackColor = System.Drawing.Color.White
-        Me.Panel87.Location = New System.Drawing.Point(376, 211)
-        Me.Panel87.Name = "Panel87"
-        Me.Panel87.Size = New System.Drawing.Size(10, 27)
-        Me.Panel87.TabIndex = 343
+        Me.PnlDiente2_21c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_21c2.Location = New System.Drawing.Point(20, 2)
+        Me.PnlDiente2_21c2.Name = "PnlDiente2_21c2"
+        Me.PnlDiente2_21c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_21c2.TabIndex = 343
         '
-        'Panel88
+        'PnlDiente2_25c2
         '
-        Me.Panel88.BackColor = System.Drawing.Color.White
-        Me.Panel88.Location = New System.Drawing.Point(537, 211)
-        Me.Panel88.Name = "Panel88"
-        Me.Panel88.Size = New System.Drawing.Size(10, 27)
-        Me.Panel88.TabIndex = 356
+        Me.PnlDiente2_25c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_25c2.Location = New System.Drawing.Point(537, 211)
+        Me.PnlDiente2_25c2.Name = "PnlDiente2_25c2"
+        Me.PnlDiente2_25c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_25c2.TabIndex = 356
         '
-        'Panel89
+        'PnlDiente2_21c4
         '
-        Me.Panel89.BackColor = System.Drawing.Color.White
-        Me.Panel89.Location = New System.Drawing.Point(353, 211)
-        Me.Panel89.Name = "Panel89"
-        Me.Panel89.Size = New System.Drawing.Size(10, 27)
-        Me.Panel89.TabIndex = 344
+        Me.PnlDiente2_21c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_21c4.Location = New System.Drawing.Point(353, 211)
+        Me.PnlDiente2_21c4.Name = "PnlDiente2_21c4"
+        Me.PnlDiente2_21c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_21c4.TabIndex = 344
         '
-        'Panel90
+        'PnlDiente2_24c3
         '
-        Me.Panel90.BackColor = System.Drawing.Color.White
-        Me.Panel90.Location = New System.Drawing.Point(475, 225)
-        Me.Panel90.Name = "Panel90"
-        Me.Panel90.Size = New System.Drawing.Size(29, 13)
-        Me.Panel90.TabIndex = 346
+        Me.PnlDiente2_24c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_24c3.Location = New System.Drawing.Point(475, 225)
+        Me.PnlDiente2_24c3.Name = "PnlDiente2_24c3"
+        Me.PnlDiente2_24c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_24c3.TabIndex = 346
         '
-        'Panel91
+        'PnlDiente2_22c2
         '
-        Me.Panel91.BackColor = System.Drawing.Color.White
-        Me.Panel91.Location = New System.Drawing.Point(416, 211)
-        Me.Panel91.Name = "Panel91"
-        Me.Panel91.Size = New System.Drawing.Size(10, 27)
-        Me.Panel91.TabIndex = 359
+        Me.PnlDiente2_22c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_22c2.Location = New System.Drawing.Point(416, 211)
+        Me.PnlDiente2_22c2.Name = "PnlDiente2_22c2"
+        Me.PnlDiente2_22c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_22c2.TabIndex = 359
         '
-        'Panel92
+        'PnlDiente2_24c4
         '
-        Me.Panel92.BackColor = System.Drawing.Color.White
-        Me.Panel92.Location = New System.Drawing.Point(473, 211)
-        Me.Panel92.Name = "Panel92"
-        Me.Panel92.Size = New System.Drawing.Size(10, 27)
-        Me.Panel92.TabIndex = 362
+        Me.PnlDiente2_24c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_24c4.Location = New System.Drawing.Point(473, 211)
+        Me.PnlDiente2_24c4.Name = "PnlDiente2_24c4"
+        Me.PnlDiente2_24c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_24c4.TabIndex = 362
         '
-        'Panel93
+        'PnlDiente2_22c4
         '
-        Me.Panel93.BackColor = System.Drawing.Color.White
-        Me.Panel93.Location = New System.Drawing.Point(393, 211)
-        Me.Panel93.Name = "Panel93"
-        Me.Panel93.Size = New System.Drawing.Size(10, 27)
-        Me.Panel93.TabIndex = 360
+        Me.PnlDiente2_22c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_22c4.Location = New System.Drawing.Point(393, 211)
+        Me.PnlDiente2_22c4.Name = "PnlDiente2_22c4"
+        Me.PnlDiente2_22c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_22c4.TabIndex = 360
         '
-        'Panel94
+        'PnlDiente2_22c1
         '
-        Me.Panel94.BackColor = System.Drawing.Color.White
-        Me.Panel94.Location = New System.Drawing.Point(396, 209)
-        Me.Panel94.Name = "Panel94"
-        Me.Panel94.Size = New System.Drawing.Size(27, 15)
-        Me.Panel94.TabIndex = 352
+        Me.PnlDiente2_22c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_22c1.Location = New System.Drawing.Point(396, 209)
+        Me.PnlDiente2_22c1.Name = "PnlDiente2_22c1"
+        Me.PnlDiente2_22c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_22c1.TabIndex = 352
         '
-        'Panel95
+        'PnlDiente2_22c3
         '
-        Me.Panel95.BackColor = System.Drawing.Color.White
-        Me.Panel95.Location = New System.Drawing.Point(395, 225)
-        Me.Panel95.Name = "Panel95"
-        Me.Panel95.Size = New System.Drawing.Size(29, 13)
-        Me.Panel95.TabIndex = 349
+        Me.PnlDiente2_22c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_22c3.Location = New System.Drawing.Point(395, 225)
+        Me.PnlDiente2_22c3.Name = "PnlDiente2_22c3"
+        Me.PnlDiente2_22c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_22c3.TabIndex = 349
         '
         'Panel96
         '
@@ -2341,293 +2342,294 @@ Partial Class frmRegistroMedico
         Me.Panel96.Size = New System.Drawing.Size(10, 27)
         Me.Panel96.TabIndex = 358
         '
-        'Panel97
-        '
-        Me.Panel97.BackColor = System.Drawing.Color.White
-        Me.Panel97.Location = New System.Drawing.Point(456, 211)
-        Me.Panel97.Name = "Panel97"
-        Me.Panel97.Size = New System.Drawing.Size(10, 27)
-        Me.Panel97.TabIndex = 355
+        'PnlDiente2_23c2
+        '
+        Me.PnlDiente2_23c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_23c2.Location = New System.Drawing.Point(456, 211)
+        Me.PnlDiente2_23c2.Name = "PnlDiente2_23c2"
+        Me.PnlDiente2_23c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_23c2.TabIndex = 355
         '
-        'Panel98
-        '
-        Me.Panel98.BackColor = System.Drawing.Color.White
-        Me.Panel98.Location = New System.Drawing.Point(435, 225)
-        Me.Panel98.Name = "Panel98"
-        Me.Panel98.Size = New System.Drawing.Size(29, 13)
-        Me.Panel98.TabIndex = 348
+        'PnlDiente2_23c3
+        '
+        Me.PnlDiente2_23c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_23c3.Location = New System.Drawing.Point(435, 225)
+        Me.PnlDiente2_23c3.Name = "PnlDiente2_23c3"
+        Me.PnlDiente2_23c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_23c3.TabIndex = 348
         '
-        'Panel99
-        '
-        Me.Panel99.BackColor = System.Drawing.Color.White
-        Me.Panel99.Location = New System.Drawing.Point(433, 211)
-        Me.Panel99.Name = "Panel99"
-        Me.Panel99.Size = New System.Drawing.Size(10, 27)
-        Me.Panel99.TabIndex = 361
+        'PnlDiente2_23c4
+        '
+        Me.PnlDiente2_23c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_23c4.Location = New System.Drawing.Point(433, 211)
+        Me.PnlDiente2_23c4.Name = "PnlDiente2_23c4"
+        Me.PnlDiente2_23c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_23c4.TabIndex = 361
         '
-        'Panel100
-        '
-        Me.Panel100.BackColor = System.Drawing.Color.White
-        Me.Panel100.Location = New System.Drawing.Point(356, 209)
-        Me.Panel100.Name = "Panel100"
-        Me.Panel100.Size = New System.Drawing.Size(27, 15)
-        Me.Panel100.TabIndex = 342
+        'PnlDiente2_21c1
+        '
+        Me.PnlDiente2_21c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_21c1.Controls.Add(Me.PnlDiente2_21c2)
+        Me.PnlDiente2_21c1.Location = New System.Drawing.Point(356, 209)
+        Me.PnlDiente2_21c1.Name = "PnlDiente2_21c1"
+        Me.PnlDiente2_21c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_21c1.TabIndex = 342
         '
-        'Panel101
-        '
-        Me.Panel101.BackColor = System.Drawing.Color.White
-        Me.Panel101.Location = New System.Drawing.Point(303, 208)
-        Me.Panel101.Name = "Panel101"
-        Me.Panel101.Size = New System.Drawing.Size(27, 15)
-        Me.Panel101.TabIndex = 338
+        'PnlDiente2_11c1
+        '
+        Me.PnlDiente2_11c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_11c1.Location = New System.Drawing.Point(303, 208)
+        Me.PnlDiente2_11c1.Name = "PnlDiente2_11c1"
+        Me.PnlDiente2_11c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_11c1.TabIndex = 338
         '
-        'Panel102
-        '
-        Me.Panel102.BackColor = System.Drawing.Color.White
-        Me.Panel102.Location = New System.Drawing.Point(302, 224)
-        Me.Panel102.Name = "Panel102"
-        Me.Panel102.Size = New System.Drawing.Size(29, 13)
-        Me.Panel102.TabIndex = 337
+        'PnlDiente2_11c3
+        '
+        Me.PnlDiente2_11c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_11c3.Location = New System.Drawing.Point(302, 224)
+        Me.PnlDiente2_11c3.Name = "PnlDiente2_11c3"
+        Me.PnlDiente2_11c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_11c3.TabIndex = 337
         '
-        'Panel103
-        '
-        Me.Panel103.BackColor = System.Drawing.Color.White
-        Me.Panel103.Location = New System.Drawing.Point(300, 210)
-        Me.Panel103.Name = "Panel103"
-        Me.Panel103.Size = New System.Drawing.Size(10, 27)
-        Me.Panel103.TabIndex = 340
+        'PnlDiente2_11c4
+        '
+        Me.PnlDiente2_11c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_11c4.Location = New System.Drawing.Point(300, 210)
+        Me.PnlDiente2_11c4.Name = "PnlDiente2_11c4"
+        Me.PnlDiente2_11c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_11c4.TabIndex = 340
         '
-        'Panel104
-        '
-        Me.Panel104.BackColor = System.Drawing.Color.White
-        Me.Panel104.Location = New System.Drawing.Point(323, 210)
-        Me.Panel104.Name = "Panel104"
-        Me.Panel104.Size = New System.Drawing.Size(10, 27)
-        Me.Panel104.TabIndex = 339
+        'PnlDiente2_11c2
+        '
+        Me.PnlDiente2_11c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_11c2.Location = New System.Drawing.Point(323, 210)
+        Me.PnlDiente2_11c2.Name = "PnlDiente2_11c2"
+        Me.PnlDiente2_11c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_11c2.TabIndex = 339
         '
-        'Panel105
-        '
-        Me.Panel105.BackColor = System.Drawing.Color.White
-        Me.Panel105.Location = New System.Drawing.Point(264, 209)
-        Me.Panel105.Name = "Panel105"
-        Me.Panel105.Size = New System.Drawing.Size(27, 15)
-        Me.Panel105.TabIndex = 334
+        'PnlDiente2_12c1
+        '
+        Me.PnlDiente2_12c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_12c1.Location = New System.Drawing.Point(264, 209)
+        Me.PnlDiente2_12c1.Name = "PnlDiente2_12c1"
+        Me.PnlDiente2_12c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_12c1.TabIndex = 334
         '
-        'Panel106
-        '
-        Me.Panel106.BackColor = System.Drawing.Color.White
-        Me.Panel106.Location = New System.Drawing.Point(263, 225)
-        Me.Panel106.Name = "Panel106"
-        Me.Panel106.Size = New System.Drawing.Size(29, 13)
-        Me.Panel106.TabIndex = 333
+        'PnlDiente2_12c3
+        '
+        Me.PnlDiente2_12c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_12c3.Location = New System.Drawing.Point(263, 225)
+        Me.PnlDiente2_12c3.Name = "PnlDiente2_12c3"
+        Me.PnlDiente2_12c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_12c3.TabIndex = 333
         '
-        'Panel107
-        '
-        Me.Panel107.BackColor = System.Drawing.Color.White
-        Me.Panel107.Location = New System.Drawing.Point(261, 211)
-        Me.Panel107.Name = "Panel107"
-        Me.Panel107.Size = New System.Drawing.Size(10, 27)
-        Me.Panel107.TabIndex = 336
+        'PnlDiente2_12c4
+        '
+        Me.PnlDiente2_12c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_12c4.Location = New System.Drawing.Point(261, 211)
+        Me.PnlDiente2_12c4.Name = "PnlDiente2_12c4"
+        Me.PnlDiente2_12c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_12c4.TabIndex = 336
         '
-        'Panel108
-        '
-        Me.Panel108.BackColor = System.Drawing.Color.White
-        Me.Panel108.Location = New System.Drawing.Point(284, 211)
-        Me.Panel108.Name = "Panel108"
-        Me.Panel108.Size = New System.Drawing.Size(10, 27)
-        Me.Panel108.TabIndex = 335
+        'PnlDiente2_12c2
+        '
+        Me.PnlDiente2_12c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_12c2.Location = New System.Drawing.Point(284, 211)
+        Me.PnlDiente2_12c2.Name = "PnlDiente2_12c2"
+        Me.PnlDiente2_12c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_12c2.TabIndex = 335
         '
-        'Panel109
-        '
-        Me.Panel109.BackColor = System.Drawing.Color.White
-        Me.Panel109.Location = New System.Drawing.Point(225, 209)
-        Me.Panel109.Name = "Panel109"
-        Me.Panel109.Size = New System.Drawing.Size(27, 15)
-        Me.Panel109.TabIndex = 320
+        'PnlDiente2_13c1
+        '
+        Me.PnlDiente2_13c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_13c1.Location = New System.Drawing.Point(225, 209)
+        Me.PnlDiente2_13c1.Name = "PnlDiente2_13c1"
+        Me.PnlDiente2_13c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_13c1.TabIndex = 320
         '
-        'Panel110
-        '
-        Me.Panel110.BackColor = System.Drawing.Color.White
-        Me.Panel110.Location = New System.Drawing.Point(224, 225)
-        Me.Panel110.Name = "Panel110"
-        Me.Panel110.Size = New System.Drawing.Size(29, 13)
-        Me.Panel110.TabIndex = 317
+        'PnlDiente2_13c3
+        '
+        Me.PnlDiente2_13c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_13c3.Location = New System.Drawing.Point(224, 225)
+        Me.PnlDiente2_13c3.Name = "PnlDiente2_13c3"
+        Me.PnlDiente2_13c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_13c3.TabIndex = 317
         '
-        'Panel111
-        '
-        Me.Panel111.BackColor = System.Drawing.Color.White
-        Me.Panel111.Location = New System.Drawing.Point(186, 208)
-        Me.Panel111.Name = "Panel111"
-        Me.Panel111.Size = New System.Drawing.Size(27, 15)
-        Me.Panel111.TabIndex = 321
+        'PnlDiente2_14c1
+        '
+        Me.PnlDiente2_14c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_14c1.Location = New System.Drawing.Point(186, 208)
+        Me.PnlDiente2_14c1.Name = "PnlDiente2_14c1"
+        Me.PnlDiente2_14c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_14c1.TabIndex = 321
         '
-        'Panel112
-        '
-        Me.Panel112.BackColor = System.Drawing.Color.White
-        Me.Panel112.Location = New System.Drawing.Point(222, 211)
-        Me.Panel112.Name = "Panel112"
-        Me.Panel112.Size = New System.Drawing.Size(10, 27)
-        Me.Panel112.TabIndex = 328
+        'PnlDiente2_13c4
+        '
+        Me.PnlDiente2_13c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_13c4.Location = New System.Drawing.Point(222, 211)
+        Me.PnlDiente2_13c4.Name = "PnlDiente2_13c4"
+        Me.PnlDiente2_13c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_13c4.TabIndex = 328
         '
-        'Panel113
-        '
-        Me.Panel113.BackColor = System.Drawing.Color.White
-        Me.Panel113.Location = New System.Drawing.Point(146, 208)
-        Me.Panel113.Name = "Panel113"
-        Me.Panel113.Size = New System.Drawing.Size(27, 15)
-        Me.Panel113.TabIndex = 319
+        'PnlDiente2_15c1
+        '
+        Me.PnlDiente2_15c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_15c1.Location = New System.Drawing.Point(146, 208)
+        Me.PnlDiente2_15c1.Name = "PnlDiente2_15c1"
+        Me.PnlDiente2_15c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_15c1.TabIndex = 319
         '
-        'Panel114
-        '
-        Me.Panel114.BackColor = System.Drawing.Color.White
-        Me.Panel114.Location = New System.Drawing.Point(245, 211)
-        Me.Panel114.Name = "Panel114"
-        Me.Panel114.Size = New System.Drawing.Size(10, 27)
-        Me.Panel114.TabIndex = 327
+        'PnlDiente2_13c2
+        '
+        Me.PnlDiente2_13c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_13c2.Location = New System.Drawing.Point(245, 211)
+        Me.PnlDiente2_13c2.Name = "PnlDiente2_13c2"
+        Me.PnlDiente2_13c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_13c2.TabIndex = 327
         '
-        'Panel115
-        '
-        Me.Panel115.BackColor = System.Drawing.Color.White
-        Me.Panel115.Location = New System.Drawing.Point(185, 224)
-        Me.Panel115.Name = "Panel115"
-        Me.Panel115.Size = New System.Drawing.Size(29, 13)
-        Me.Panel115.TabIndex = 314
+        'PnlDiente2_14c3
+        '
+        Me.PnlDiente2_14c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_14c3.Location = New System.Drawing.Point(185, 224)
+        Me.PnlDiente2_14c3.Name = "PnlDiente2_14c3"
+        Me.PnlDiente2_14c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_14c3.TabIndex = 314
         '
-        'Panel116
-        '
-        Me.Panel116.BackColor = System.Drawing.Color.White
-        Me.Panel116.Location = New System.Drawing.Point(183, 210)
-        Me.Panel116.Name = "Panel116"
-        Me.Panel116.Size = New System.Drawing.Size(10, 27)
-        Me.Panel116.TabIndex = 331
+        'PnlDiente2_14c4
+        '
+        Me.PnlDiente2_14c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_14c4.Location = New System.Drawing.Point(183, 210)
+        Me.PnlDiente2_14c4.Name = "PnlDiente2_14c4"
+        Me.PnlDiente2_14c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_14c4.TabIndex = 331
         '
-        'Panel117
-        '
-        Me.Panel117.BackColor = System.Drawing.Color.White
-        Me.Panel117.Location = New System.Drawing.Point(28, 225)
-        Me.Panel117.Name = "Panel117"
-        Me.Panel117.Size = New System.Drawing.Size(29, 13)
-        Me.Panel117.TabIndex = 309
+        'PnlDiente2_18c3
+        '
+        Me.PnlDiente2_18c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_18c3.Location = New System.Drawing.Point(28, 225)
+        Me.PnlDiente2_18c3.Name = "PnlDiente2_18c3"
+        Me.PnlDiente2_18c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_18c3.TabIndex = 309
         '
-        'Panel118
-        '
-        Me.Panel118.BackColor = System.Drawing.Color.White
-        Me.Panel118.Location = New System.Drawing.Point(107, 209)
-        Me.Panel118.Name = "Panel118"
-        Me.Panel118.Size = New System.Drawing.Size(27, 15)
-        Me.Panel118.TabIndex = 322
+        'PnlDiente2_16c1
+        '
+        Me.PnlDiente2_16c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_16c1.Location = New System.Drawing.Point(107, 209)
+        Me.PnlDiente2_16c1.Name = "PnlDiente2_16c1"
+        Me.PnlDiente2_16c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_16c1.TabIndex = 322
         '
-        'Panel119
-        '
-        Me.Panel119.BackColor = System.Drawing.Color.White
-        Me.Panel119.Location = New System.Drawing.Point(49, 211)
-        Me.Panel119.Name = "Panel119"
-        Me.Panel119.Size = New System.Drawing.Size(10, 27)
-        Me.Panel119.TabIndex = 311
+        'PnlDiente2_18c2
+        '
+        Me.PnlDiente2_18c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_18c2.Location = New System.Drawing.Point(49, 211)
+        Me.PnlDiente2_18c2.Name = "PnlDiente2_18c2"
+        Me.PnlDiente2_18c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_18c2.TabIndex = 311
         '
-        'Panel120
-        '
-        Me.Panel120.BackColor = System.Drawing.Color.White
-        Me.Panel120.Location = New System.Drawing.Point(206, 210)
-        Me.Panel120.Name = "Panel120"
-        Me.Panel120.Size = New System.Drawing.Size(10, 27)
-        Me.Panel120.TabIndex = 323
-        '
-        'Panel121
-        '
-        Me.Panel121.BackColor = System.Drawing.Color.White
-        Me.Panel121.Location = New System.Drawing.Point(26, 211)
-        Me.Panel121.Name = "Panel121"
-        Me.Panel121.Size = New System.Drawing.Size(10, 27)
-        Me.Panel121.TabIndex = 312
-        '
-        'Panel122
-        '
-        Me.Panel122.BackColor = System.Drawing.Color.White
-        Me.Panel122.Location = New System.Drawing.Point(145, 224)
-        Me.Panel122.Name = "Panel122"
-        Me.Panel122.Size = New System.Drawing.Size(29, 13)
-        Me.Panel122.TabIndex = 315
-        '
-        'Panel123
-        '
-        Me.Panel123.BackColor = System.Drawing.Color.White
-        Me.Panel123.Location = New System.Drawing.Point(88, 211)
-        Me.Panel123.Name = "Panel123"
-        Me.Panel123.Size = New System.Drawing.Size(10, 27)
-        Me.Panel123.TabIndex = 326
-        '
-        'Panel124
-        '
-        Me.Panel124.BackColor = System.Drawing.Color.White
-        Me.Panel124.Location = New System.Drawing.Point(143, 210)
-        Me.Panel124.Name = "Panel124"
-        Me.Panel124.Size = New System.Drawing.Size(10, 27)
-        Me.Panel124.TabIndex = 332
-        '
-        'Panel125
-        '
-        Me.Panel125.BackColor = System.Drawing.Color.White
-        Me.Panel125.Location = New System.Drawing.Point(65, 211)
-        Me.Panel125.Name = "Panel125"
-        Me.Panel125.Size = New System.Drawing.Size(10, 27)
-        Me.Panel125.TabIndex = 329
-        '
-        'Panel126
-        '
-        Me.Panel126.BackColor = System.Drawing.Color.White
-        Me.Panel126.Location = New System.Drawing.Point(68, 209)
-        Me.Panel126.Name = "Panel126"
-        Me.Panel126.Size = New System.Drawing.Size(27, 15)
-        Me.Panel126.TabIndex = 318
-        '
-        'Panel127
-        '
-        Me.Panel127.BackColor = System.Drawing.Color.White
-        Me.Panel127.Location = New System.Drawing.Point(67, 225)
-        Me.Panel127.Name = "Panel127"
-        Me.Panel127.Size = New System.Drawing.Size(29, 13)
-        Me.Panel127.TabIndex = 313
-        '
-        'Panel128
-        '
-        Me.Panel128.BackColor = System.Drawing.Color.White
-        Me.Panel128.Location = New System.Drawing.Point(166, 210)
-        Me.Panel128.Name = "Panel128"
-        Me.Panel128.Size = New System.Drawing.Size(10, 27)
-        Me.Panel128.TabIndex = 324
-        '
-        'Panel129
-        '
-        Me.Panel129.BackColor = System.Drawing.Color.White
-        Me.Panel129.Location = New System.Drawing.Point(127, 211)
-        Me.Panel129.Name = "Panel129"
-        Me.Panel129.Size = New System.Drawing.Size(10, 27)
-        Me.Panel129.TabIndex = 325
-        '
-        'Panel130
-        '
-        Me.Panel130.BackColor = System.Drawing.Color.White
-        Me.Panel130.Location = New System.Drawing.Point(106, 225)
-        Me.Panel130.Name = "Panel130"
-        Me.Panel130.Size = New System.Drawing.Size(29, 13)
-        Me.Panel130.TabIndex = 316
-        '
-        'Panel131
-        '
-        Me.Panel131.BackColor = System.Drawing.Color.White
-        Me.Panel131.Location = New System.Drawing.Point(104, 211)
-        Me.Panel131.Name = "Panel131"
-        Me.Panel131.Size = New System.Drawing.Size(10, 27)
-        Me.Panel131.TabIndex = 330
-        '
-        'Panel132
-        '
-        Me.Panel132.BackColor = System.Drawing.Color.White
-        Me.Panel132.Location = New System.Drawing.Point(29, 209)
-        Me.Panel132.Name = "Panel132"
-        Me.Panel132.Size = New System.Drawing.Size(27, 15)
-        Me.Panel132.TabIndex = 310
+        'PnlDiente2_14c2
+        '
+        Me.PnlDiente2_14c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_14c2.Location = New System.Drawing.Point(206, 210)
+        Me.PnlDiente2_14c2.Name = "PnlDiente2_14c2"
+        Me.PnlDiente2_14c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_14c2.TabIndex = 323
+        '
+        'PnlDiente2_18c4
+        '
+        Me.PnlDiente2_18c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_18c4.Location = New System.Drawing.Point(26, 211)
+        Me.PnlDiente2_18c4.Name = "PnlDiente2_18c4"
+        Me.PnlDiente2_18c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_18c4.TabIndex = 312
+        '
+        'PnlDiente2_15c3
+        '
+        Me.PnlDiente2_15c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_15c3.Location = New System.Drawing.Point(145, 224)
+        Me.PnlDiente2_15c3.Name = "PnlDiente2_15c3"
+        Me.PnlDiente2_15c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_15c3.TabIndex = 315
+        '
+        'PnlDiente2_17c2
+        '
+        Me.PnlDiente2_17c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_17c2.Location = New System.Drawing.Point(88, 211)
+        Me.PnlDiente2_17c2.Name = "PnlDiente2_17c2"
+        Me.PnlDiente2_17c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_17c2.TabIndex = 326
+        '
+        'PnlDiente2_15c4
+        '
+        Me.PnlDiente2_15c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_15c4.Location = New System.Drawing.Point(143, 210)
+        Me.PnlDiente2_15c4.Name = "PnlDiente2_15c4"
+        Me.PnlDiente2_15c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_15c4.TabIndex = 332
+        '
+        'PnlDiente2_17c4
+        '
+        Me.PnlDiente2_17c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_17c4.Location = New System.Drawing.Point(65, 211)
+        Me.PnlDiente2_17c4.Name = "PnlDiente2_17c4"
+        Me.PnlDiente2_17c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_17c4.TabIndex = 329
+        '
+        'PnlDiente2_17c1
+        '
+        Me.PnlDiente2_17c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_17c1.Location = New System.Drawing.Point(68, 209)
+        Me.PnlDiente2_17c1.Name = "PnlDiente2_17c1"
+        Me.PnlDiente2_17c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_17c1.TabIndex = 318
+        '
+        'PnlDiente2_17c3
+        '
+        Me.PnlDiente2_17c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_17c3.Location = New System.Drawing.Point(67, 225)
+        Me.PnlDiente2_17c3.Name = "PnlDiente2_17c3"
+        Me.PnlDiente2_17c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_17c3.TabIndex = 313
+        '
+        'PnlDiente2_15c2
+        '
+        Me.PnlDiente2_15c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_15c2.Location = New System.Drawing.Point(166, 210)
+        Me.PnlDiente2_15c2.Name = "PnlDiente2_15c2"
+        Me.PnlDiente2_15c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_15c2.TabIndex = 324
+        '
+        'PnlDiente2_16c2
+        '
+        Me.PnlDiente2_16c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_16c2.Location = New System.Drawing.Point(127, 211)
+        Me.PnlDiente2_16c2.Name = "PnlDiente2_16c2"
+        Me.PnlDiente2_16c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_16c2.TabIndex = 325
+        '
+        'PnlDiente2_16c3
+        '
+        Me.PnlDiente2_16c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_16c3.Location = New System.Drawing.Point(106, 225)
+        Me.PnlDiente2_16c3.Name = "PnlDiente2_16c3"
+        Me.PnlDiente2_16c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_16c3.TabIndex = 316
+        '
+        'PnlDiente2_16c4
+        '
+        Me.PnlDiente2_16c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_16c4.Location = New System.Drawing.Point(104, 211)
+        Me.PnlDiente2_16c4.Name = "PnlDiente2_16c4"
+        Me.PnlDiente2_16c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_16c4.TabIndex = 330
+        '
+        'PnlDiente2_18c1
+        '
+        Me.PnlDiente2_18c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_18c1.Location = New System.Drawing.Point(29, 209)
+        Me.PnlDiente2_18c1.Name = "PnlDiente2_18c1"
+        Me.PnlDiente2_18c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_18c1.TabIndex = 310
         '
         'Panel133
         '
@@ -2661,134 +2663,133 @@ Partial Class frmRegistroMedico
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1184, 725)
         Me.Controls.Add(Me.lblOdontogramaactual)
-        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.pnlDiente2_38c1)
         Me.Controls.Add(Me.Panel5)
-        Me.Controls.Add(Me.Panel6)
+        Me.Controls.Add(Me.pnlDiente2_38c3)
         Me.Controls.Add(Me.Panel7)
-        Me.Controls.Add(Me.Panel8)
+        Me.Controls.Add(Me.pnlDiente2_38c4)
         Me.Controls.Add(Me.Panel9)
-        Me.Controls.Add(Me.Panel10)
+        Me.Controls.Add(Me.pnlDiente2_38c2)
         Me.Controls.Add(Me.Panel11)
-        Me.Controls.Add(Me.Panel12)
+        Me.Controls.Add(Me.pnlDiente2_37c1)
         Me.Controls.Add(Me.Panel13)
-        Me.Controls.Add(Me.Panel14)
+        Me.Controls.Add(Me.pnlDiente2_37c3)
         Me.Controls.Add(Me.Panel15)
-        Me.Controls.Add(Me.Panel16)
+        Me.Controls.Add(Me.pnlDiente2_37c4)
         Me.Controls.Add(Me.Panel17)
-        Me.Controls.Add(Me.Panel18)
+        Me.Controls.Add(Me.pnlDiente2_37c2)
         Me.Controls.Add(Me.Panel19)
-        Me.Controls.Add(Me.Panel20)
+        Me.Controls.Add(Me.pnlDiente2_36c1)
         Me.Controls.Add(Me.Panel21)
-        Me.Controls.Add(Me.Panel22)
+        Me.Controls.Add(Me.pnlDiente2_36c3)
         Me.Controls.Add(Me.Panel23)
-        Me.Controls.Add(Me.Panel24)
-        Me.Controls.Add(Me.Panel25)
+        Me.Controls.Add(Me.pnlDiente2_35c1)
+        Me.Controls.Add(Me.pnlDiente2_36c4)
         Me.Controls.Add(Me.Panel26)
-        Me.Controls.Add(Me.Panel27)
+        Me.Controls.Add(Me.pnlDiente2_34c1)
         Me.Controls.Add(Me.Panel28)
-        Me.Controls.Add(Me.Panel29)
-        Me.Controls.Add(Me.Panel30)
-        Me.Controls.Add(Me.Panel31)
+        Me.Controls.Add(Me.pnlDiente2_36c2)
+        Me.Controls.Add(Me.PnlDiente2_45c1)
+        Me.Controls.Add(Me.pnlDiente2_35c3)
         Me.Controls.Add(Me.Panel32)
-        Me.Controls.Add(Me.Panel33)
+        Me.Controls.Add(Me.pnlDiente2_35c4)
         Me.Controls.Add(Me.Panel34)
-        Me.Controls.Add(Me.Panel35)
+        Me.Controls.Add(Me.pnlDiente2_31c3)
         Me.Controls.Add(Me.Panel36)
-        Me.Controls.Add(Me.Panel37)
-        Me.Controls.Add(Me.Panel38)
-        Me.Controls.Add(Me.Panel39)
-        Me.Controls.Add(Me.Panel40)
-        Me.Controls.Add(Me.Panel41)
-        Me.Controls.Add(Me.Panel42)
-        Me.Controls.Add(Me.Panel43)
+        Me.Controls.Add(Me.pnlDiente2_33c1)
+        Me.Controls.Add(Me.PnlDiente2_48c3)
+        Me.Controls.Add(Me.pnlDiente2_31c2)
+        Me.Controls.Add(Me.PnlDiente2_46c1)
+        Me.Controls.Add(Me.pnlDiente2_35c2)
+        Me.Controls.Add(Me.PnlDiente2_48c2)
+        Me.Controls.Add(Me.pnlDiente2_31c4)
         Me.Controls.Add(Me.Panel44)
-        Me.Controls.Add(Me.Panel45)
-        Me.Controls.Add(Me.Panel46)
-        Me.Controls.Add(Me.Panel47)
-        Me.Controls.Add(Me.Panel48)
-        Me.Controls.Add(Me.Panel49)
-        Me.Controls.Add(Me.Panel50)
-        Me.Controls.Add(Me.Panel51)
-        Me.Controls.Add(Me.Panel52)
-        Me.Controls.Add(Me.Panel53)
-        Me.Controls.Add(Me.Panel54)
-        Me.Controls.Add(Me.Panel56)
-        Me.Controls.Add(Me.Panel57)
-        Me.Controls.Add(Me.Panel58)
-        Me.Controls.Add(Me.Panel59)
-        Me.Controls.Add(Me.Panel60)
-        Me.Controls.Add(Me.Panel61)
-        Me.Controls.Add(Me.Panel62)
-        Me.Controls.Add(Me.Panel63)
-        Me.Controls.Add(Me.Panel64)
-        Me.Controls.Add(Me.Panel65)
-        Me.Controls.Add(Me.Panel66)
-        Me.Controls.Add(Me.Panel67)
-        Me.Controls.Add(Me.Panel68)
-        Me.Controls.Add(Me.Panel69)
+        Me.Controls.Add(Me.pnlDiente2_34c3)
+        Me.Controls.Add(Me.PnlDiente2_48c4)
+        Me.Controls.Add(Me.pnlDiente2_32c2)
+        Me.Controls.Add(Me.PnlDiente2_45c3)
+        Me.Controls.Add(Me.pnlDiente2_34c4)
+        Me.Controls.Add(Me.PnlDiente2_47c2)
+        Me.Controls.Add(Me.pnlDiente2_32c4)
+        Me.Controls.Add(Me.PnlDiente2_45c4)
+        Me.Controls.Add(Me.pnlDiente2_32c1)
+        Me.Controls.Add(Me.PnlDiente2_47c4)
+        Me.Controls.Add(Me.pnlDiente2_32c3)
+        Me.Controls.Add(Me.PnlDiente2_47c1)
+        Me.Controls.Add(Me.pnlDiente2_34c2)
+        Me.Controls.Add(Me.PnlDiente2_47c3)
+        Me.Controls.Add(Me.pnlDiente2_33c2)
+        Me.Controls.Add(Me.PnlDiente2_45c2)
+        Me.Controls.Add(Me.pnlDiente2_33c3)
+        Me.Controls.Add(Me.PnlDiente2_46c2)
+        Me.Controls.Add(Me.pnlDiente2_33c4)
+        Me.Controls.Add(Me.PnlDiente2_46c3)
+        Me.Controls.Add(Me.pnlDiente2_31c1)
+        Me.Controls.Add(Me.PnlDiente2_46c4)
+        Me.Controls.Add(Me.PnlDiente2_48c1)
+        Me.Controls.Add(Me.PnlDiente2_28c1)
         Me.Controls.Add(Me.Panel70)
         Me.Controls.Add(Me.Panel71)
         Me.Controls.Add(Me.Panel72)
-        Me.Controls.Add(Me.Panel73)
-        Me.Controls.Add(Me.Panel74)
-        Me.Controls.Add(Me.Panel75)
-        Me.Controls.Add(Me.Panel76)
-        Me.Controls.Add(Me.Panel77)
-        Me.Controls.Add(Me.Panel78)
-        Me.Controls.Add(Me.Panel79)
-        Me.Controls.Add(Me.Panel80)
-        Me.Controls.Add(Me.Panel81)
-        Me.Controls.Add(Me.Panel82)
-        Me.Controls.Add(Me.Panel83)
-        Me.Controls.Add(Me.Panel84)
-        Me.Controls.Add(Me.Panel85)
-        Me.Controls.Add(Me.Panel86)
-        Me.Controls.Add(Me.Panel87)
-        Me.Controls.Add(Me.Panel88)
-        Me.Controls.Add(Me.Panel89)
-        Me.Controls.Add(Me.Panel90)
-        Me.Controls.Add(Me.Panel91)
-        Me.Controls.Add(Me.Panel92)
-        Me.Controls.Add(Me.Panel93)
-        Me.Controls.Add(Me.Panel94)
-        Me.Controls.Add(Me.Panel95)
+        Me.Controls.Add(Me.PnlDiente2_27c1)
+        Me.Controls.Add(Me.PnlDiente2_27c3)
+        Me.Controls.Add(Me.PnlDiente2_27c4)
+        Me.Controls.Add(Me.PnlDiente2_27c2)
+        Me.Controls.Add(Me.PnlDiente2_26c1)
+        Me.Controls.Add(Me.PnlDiente2_26c3)
+        Me.Controls.Add(Me.PnlDiente2_25c1)
+        Me.Controls.Add(Me.PnlDiente2_26c4)
+        Me.Controls.Add(Me.PnlDiente2_24c1)
+        Me.Controls.Add(Me.PnlDiente2_26c2)
+        Me.Controls.Add(Me.PnlDiente2_25c3)
+        Me.Controls.Add(Me.PnlDiente2_25c4)
+        Me.Controls.Add(Me.PnlDiente2_21c3)
+        Me.Controls.Add(Me.PnlDiente2_23c1)
+        Me.Controls.Add(Me.PnlDiente2_25c2)
+        Me.Controls.Add(Me.PnlDiente2_21c4)
+        Me.Controls.Add(Me.PnlDiente2_24c3)
+        Me.Controls.Add(Me.PnlDiente2_22c2)
+        Me.Controls.Add(Me.PnlDiente2_24c4)
+        Me.Controls.Add(Me.PnlDiente2_22c4)
+        Me.Controls.Add(Me.PnlDiente2_22c1)
+        Me.Controls.Add(Me.PnlDiente2_22c3)
         Me.Controls.Add(Me.Panel96)
-        Me.Controls.Add(Me.Panel97)
-        Me.Controls.Add(Me.Panel98)
-        Me.Controls.Add(Me.Panel99)
-        Me.Controls.Add(Me.Panel100)
-        Me.Controls.Add(Me.Panel101)
-        Me.Controls.Add(Me.Panel102)
-        Me.Controls.Add(Me.Panel103)
-        Me.Controls.Add(Me.Panel104)
-        Me.Controls.Add(Me.Panel105)
-        Me.Controls.Add(Me.Panel106)
-        Me.Controls.Add(Me.Panel107)
-        Me.Controls.Add(Me.Panel108)
-        Me.Controls.Add(Me.Panel109)
-        Me.Controls.Add(Me.Panel110)
-        Me.Controls.Add(Me.Panel111)
-        Me.Controls.Add(Me.Panel112)
-        Me.Controls.Add(Me.Panel113)
-        Me.Controls.Add(Me.Panel114)
-        Me.Controls.Add(Me.Panel115)
-        Me.Controls.Add(Me.Panel116)
-        Me.Controls.Add(Me.Panel117)
-        Me.Controls.Add(Me.Panel118)
-        Me.Controls.Add(Me.Panel119)
-        Me.Controls.Add(Me.Panel120)
-        Me.Controls.Add(Me.Panel121)
-        Me.Controls.Add(Me.Panel122)
-        Me.Controls.Add(Me.Panel123)
-        Me.Controls.Add(Me.Panel124)
-        Me.Controls.Add(Me.Panel125)
-        Me.Controls.Add(Me.Panel126)
-        Me.Controls.Add(Me.Panel127)
-        Me.Controls.Add(Me.Panel128)
-        Me.Controls.Add(Me.Panel129)
-        Me.Controls.Add(Me.Panel130)
-        Me.Controls.Add(Me.Panel131)
-        Me.Controls.Add(Me.Panel132)
+        Me.Controls.Add(Me.PnlDiente2_23c2)
+        Me.Controls.Add(Me.PnlDiente2_23c3)
+        Me.Controls.Add(Me.PnlDiente2_23c4)
+        Me.Controls.Add(Me.PnlDiente2_21c1)
+        Me.Controls.Add(Me.PnlDiente2_11c1)
+        Me.Controls.Add(Me.PnlDiente2_11c3)
+        Me.Controls.Add(Me.PnlDiente2_11c4)
+        Me.Controls.Add(Me.PnlDiente2_11c2)
+        Me.Controls.Add(Me.PnlDiente2_12c1)
+        Me.Controls.Add(Me.PnlDiente2_12c3)
+        Me.Controls.Add(Me.PnlDiente2_12c4)
+        Me.Controls.Add(Me.PnlDiente2_12c2)
+        Me.Controls.Add(Me.PnlDiente2_13c1)
+        Me.Controls.Add(Me.PnlDiente2_13c3)
+        Me.Controls.Add(Me.PnlDiente2_14c1)
+        Me.Controls.Add(Me.PnlDiente2_13c4)
+        Me.Controls.Add(Me.PnlDiente2_15c1)
+        Me.Controls.Add(Me.PnlDiente2_13c2)
+        Me.Controls.Add(Me.PnlDiente2_14c3)
+        Me.Controls.Add(Me.PnlDiente2_14c4)
+        Me.Controls.Add(Me.PnlDiente2_18c3)
+        Me.Controls.Add(Me.PnlDiente2_16c1)
+        Me.Controls.Add(Me.PnlDiente2_18c2)
+        Me.Controls.Add(Me.PnlDiente2_14c2)
+        Me.Controls.Add(Me.PnlDiente2_18c4)
+        Me.Controls.Add(Me.PnlDiente2_15c3)
+        Me.Controls.Add(Me.PnlDiente2_17c2)
+        Me.Controls.Add(Me.PnlDiente2_15c4)
+        Me.Controls.Add(Me.PnlDiente2_17c4)
+        Me.Controls.Add(Me.PnlDiente2_17c1)
+        Me.Controls.Add(Me.PnlDiente2_17c3)
+        Me.Controls.Add(Me.PnlDiente2_15c2)
+        Me.Controls.Add(Me.PnlDiente2_16c2)
+        Me.Controls.Add(Me.PnlDiente2_16c3)
+        Me.Controls.Add(Me.PnlDiente2_16c4)
+        Me.Controls.Add(Me.PnlDiente2_18c1)
         Me.Controls.Add(Me.Panel133)
         Me.Controls.Add(Me.Panel134)
         Me.Controls.Add(Me.dgvEstadoDiente)
@@ -2939,6 +2940,7 @@ Partial Class frmRegistroMedico
         CType(Me.dgvTratamientos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvEstadoDiente, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PnlDiente2_21c1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3092,134 +3094,134 @@ Partial Class frmRegistroMedico
     Friend WithEvents pnlDiente33c4 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente31c1 As System.Windows.Forms.Panel
     Friend WithEvents dgvEstadoDiente As System.Windows.Forms.DataGridView
-    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_38c1 As System.Windows.Forms.Panel
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
-    Friend WithEvents Panel6 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_38c3 As System.Windows.Forms.Panel
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
-    Friend WithEvents Panel8 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_38c4 As System.Windows.Forms.Panel
     Friend WithEvents Panel9 As System.Windows.Forms.Panel
-    Friend WithEvents Panel10 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_38c2 As System.Windows.Forms.Panel
     Friend WithEvents Panel11 As System.Windows.Forms.Panel
-    Friend WithEvents Panel12 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_37c1 As System.Windows.Forms.Panel
     Friend WithEvents Panel13 As System.Windows.Forms.Panel
-    Friend WithEvents Panel14 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_37c3 As System.Windows.Forms.Panel
     Friend WithEvents Panel15 As System.Windows.Forms.Panel
-    Friend WithEvents Panel16 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_37c4 As System.Windows.Forms.Panel
     Friend WithEvents Panel17 As System.Windows.Forms.Panel
-    Friend WithEvents Panel18 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_37c2 As System.Windows.Forms.Panel
     Friend WithEvents Panel19 As System.Windows.Forms.Panel
-    Friend WithEvents Panel20 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_36c1 As System.Windows.Forms.Panel
     Friend WithEvents Panel21 As System.Windows.Forms.Panel
-    Friend WithEvents Panel22 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_36c3 As System.Windows.Forms.Panel
     Friend WithEvents Panel23 As System.Windows.Forms.Panel
-    Friend WithEvents Panel24 As System.Windows.Forms.Panel
-    Friend WithEvents Panel25 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_35c1 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_36c4 As System.Windows.Forms.Panel
     Friend WithEvents Panel26 As System.Windows.Forms.Panel
-    Friend WithEvents Panel27 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_34c1 As System.Windows.Forms.Panel
     Friend WithEvents Panel28 As System.Windows.Forms.Panel
-    Friend WithEvents Panel29 As System.Windows.Forms.Panel
-    Friend WithEvents Panel30 As System.Windows.Forms.Panel
-    Friend WithEvents Panel31 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_36c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_45c1 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_35c3 As System.Windows.Forms.Panel
     Friend WithEvents Panel32 As System.Windows.Forms.Panel
-    Friend WithEvents Panel33 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_35c4 As System.Windows.Forms.Panel
     Friend WithEvents Panel34 As System.Windows.Forms.Panel
-    Friend WithEvents Panel35 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_31c3 As System.Windows.Forms.Panel
     Friend WithEvents Panel36 As System.Windows.Forms.Panel
-    Friend WithEvents Panel37 As System.Windows.Forms.Panel
-    Friend WithEvents Panel38 As System.Windows.Forms.Panel
-    Friend WithEvents Panel39 As System.Windows.Forms.Panel
-    Friend WithEvents Panel40 As System.Windows.Forms.Panel
-    Friend WithEvents Panel41 As System.Windows.Forms.Panel
-    Friend WithEvents Panel42 As System.Windows.Forms.Panel
-    Friend WithEvents Panel43 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_33c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_48c3 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_31c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_46c1 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_35c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_48c2 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_31c4 As System.Windows.Forms.Panel
     Friend WithEvents Panel44 As System.Windows.Forms.Panel
-    Friend WithEvents Panel45 As System.Windows.Forms.Panel
-    Friend WithEvents Panel46 As System.Windows.Forms.Panel
-    Friend WithEvents Panel47 As System.Windows.Forms.Panel
-    Friend WithEvents Panel48 As System.Windows.Forms.Panel
-    Friend WithEvents Panel49 As System.Windows.Forms.Panel
-    Friend WithEvents Panel50 As System.Windows.Forms.Panel
-    Friend WithEvents Panel51 As System.Windows.Forms.Panel
-    Friend WithEvents Panel52 As System.Windows.Forms.Panel
-    Friend WithEvents Panel53 As System.Windows.Forms.Panel
-    Friend WithEvents Panel54 As System.Windows.Forms.Panel
-    Friend WithEvents Panel56 As System.Windows.Forms.Panel
-    Friend WithEvents Panel57 As System.Windows.Forms.Panel
-    Friend WithEvents Panel58 As System.Windows.Forms.Panel
-    Friend WithEvents Panel59 As System.Windows.Forms.Panel
-    Friend WithEvents Panel60 As System.Windows.Forms.Panel
-    Friend WithEvents Panel61 As System.Windows.Forms.Panel
-    Friend WithEvents Panel62 As System.Windows.Forms.Panel
-    Friend WithEvents Panel63 As System.Windows.Forms.Panel
-    Friend WithEvents Panel64 As System.Windows.Forms.Panel
-    Friend WithEvents Panel65 As System.Windows.Forms.Panel
-    Friend WithEvents Panel66 As System.Windows.Forms.Panel
-    Friend WithEvents Panel67 As System.Windows.Forms.Panel
-    Friend WithEvents Panel68 As System.Windows.Forms.Panel
-    Friend WithEvents Panel69 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_34c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_48c4 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_32c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_45c3 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_34c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_47c2 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_32c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_45c4 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_32c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_47c4 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_32c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_47c1 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_34c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_47c3 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_33c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_45c2 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_33c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_46c2 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_33c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_46c3 As System.Windows.Forms.Panel
+    Friend WithEvents pnlDiente2_31c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_46c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_48c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_28c1 As System.Windows.Forms.Panel
     Friend WithEvents Panel70 As System.Windows.Forms.Panel
     Friend WithEvents Panel71 As System.Windows.Forms.Panel
     Friend WithEvents Panel72 As System.Windows.Forms.Panel
-    Friend WithEvents Panel73 As System.Windows.Forms.Panel
-    Friend WithEvents Panel74 As System.Windows.Forms.Panel
-    Friend WithEvents Panel75 As System.Windows.Forms.Panel
-    Friend WithEvents Panel76 As System.Windows.Forms.Panel
-    Friend WithEvents Panel77 As System.Windows.Forms.Panel
-    Friend WithEvents Panel78 As System.Windows.Forms.Panel
-    Friend WithEvents Panel79 As System.Windows.Forms.Panel
-    Friend WithEvents Panel80 As System.Windows.Forms.Panel
-    Friend WithEvents Panel81 As System.Windows.Forms.Panel
-    Friend WithEvents Panel82 As System.Windows.Forms.Panel
-    Friend WithEvents Panel83 As System.Windows.Forms.Panel
-    Friend WithEvents Panel84 As System.Windows.Forms.Panel
-    Friend WithEvents Panel85 As System.Windows.Forms.Panel
-    Friend WithEvents Panel86 As System.Windows.Forms.Panel
-    Friend WithEvents Panel87 As System.Windows.Forms.Panel
-    Friend WithEvents Panel88 As System.Windows.Forms.Panel
-    Friend WithEvents Panel89 As System.Windows.Forms.Panel
-    Friend WithEvents Panel90 As System.Windows.Forms.Panel
-    Friend WithEvents Panel91 As System.Windows.Forms.Panel
-    Friend WithEvents Panel92 As System.Windows.Forms.Panel
-    Friend WithEvents Panel93 As System.Windows.Forms.Panel
-    Friend WithEvents Panel94 As System.Windows.Forms.Panel
-    Friend WithEvents Panel95 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_27c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_27c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_27c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_27c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_26c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_26c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_25c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_26c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_24c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_26c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_25c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_25c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_21c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_23c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_21c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_25c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_21c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_24c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_22c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_24c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_22c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_22c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_22c3 As System.Windows.Forms.Panel
     Friend WithEvents Panel96 As System.Windows.Forms.Panel
-    Friend WithEvents Panel97 As System.Windows.Forms.Panel
-    Friend WithEvents Panel98 As System.Windows.Forms.Panel
-    Friend WithEvents Panel99 As System.Windows.Forms.Panel
-    Friend WithEvents Panel100 As System.Windows.Forms.Panel
-    Friend WithEvents Panel101 As System.Windows.Forms.Panel
-    Friend WithEvents Panel102 As System.Windows.Forms.Panel
-    Friend WithEvents Panel103 As System.Windows.Forms.Panel
-    Friend WithEvents Panel104 As System.Windows.Forms.Panel
-    Friend WithEvents Panel105 As System.Windows.Forms.Panel
-    Friend WithEvents Panel106 As System.Windows.Forms.Panel
-    Friend WithEvents Panel107 As System.Windows.Forms.Panel
-    Friend WithEvents Panel108 As System.Windows.Forms.Panel
-    Friend WithEvents Panel109 As System.Windows.Forms.Panel
-    Friend WithEvents Panel110 As System.Windows.Forms.Panel
-    Friend WithEvents Panel111 As System.Windows.Forms.Panel
-    Friend WithEvents Panel112 As System.Windows.Forms.Panel
-    Friend WithEvents Panel113 As System.Windows.Forms.Panel
-    Friend WithEvents Panel114 As System.Windows.Forms.Panel
-    Friend WithEvents Panel115 As System.Windows.Forms.Panel
-    Friend WithEvents Panel116 As System.Windows.Forms.Panel
-    Friend WithEvents Panel117 As System.Windows.Forms.Panel
-    Friend WithEvents Panel118 As System.Windows.Forms.Panel
-    Friend WithEvents Panel119 As System.Windows.Forms.Panel
-    Friend WithEvents Panel120 As System.Windows.Forms.Panel
-    Friend WithEvents Panel121 As System.Windows.Forms.Panel
-    Friend WithEvents Panel122 As System.Windows.Forms.Panel
-    Friend WithEvents Panel123 As System.Windows.Forms.Panel
-    Friend WithEvents Panel124 As System.Windows.Forms.Panel
-    Friend WithEvents Panel125 As System.Windows.Forms.Panel
-    Friend WithEvents Panel126 As System.Windows.Forms.Panel
-    Friend WithEvents Panel127 As System.Windows.Forms.Panel
-    Friend WithEvents Panel128 As System.Windows.Forms.Panel
-    Friend WithEvents Panel129 As System.Windows.Forms.Panel
-    Friend WithEvents Panel130 As System.Windows.Forms.Panel
-    Friend WithEvents Panel131 As System.Windows.Forms.Panel
-    Friend WithEvents Panel132 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_23c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_23c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_23c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_21c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_11c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_11c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_11c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_11c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_12c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_12c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_12c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_12c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_13c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_13c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_14c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_13c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_15c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_13c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_14c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_14c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_18c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_16c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_18c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_14c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_18c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_15c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_17c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_15c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_17c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_17c1 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_17c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_15c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_16c2 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_16c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_16c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_18c1 As System.Windows.Forms.Panel
     Friend WithEvents Panel133 As System.Windows.Forms.Panel
     Friend WithEvents Panel134 As System.Windows.Forms.Panel
     Friend WithEvents lblOdontogramaactual As System.Windows.Forms.Label
