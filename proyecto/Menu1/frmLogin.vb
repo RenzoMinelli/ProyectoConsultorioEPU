@@ -97,12 +97,21 @@
     End Sub
 
     Private Sub btningresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btningresar.Click
+      
 
-        contraseñau = txtcontraseña.Text
 
         If contador = 1 Then
 
-            If contraseñau = contraseña Then
+            Consulta = "select contrasenia from usuarios where contrasenia = sha2('" + txtcontraseña.Text + "', 256) and usuario = 'odo';"
+            consultar()
+            Dim verifi As Integer = 0
+            For Each row In Tabla.Rows
+                If Not IsDBNull(row("contrasenia")) Then
+                    verifi = 1
+                End If
+            Next
+
+            If verifi = 1 Then
                 user = "odontologo"
                 pass = "odontologo"
                 cambiarUsuario(user, pass)
@@ -115,7 +124,17 @@
 
         ElseIf contador = 2 Then
 
-            If contraseñau = contraseña Then
+
+            Consulta = "select contrasenia from usuarios where contrasenia = sha2('" + txtcontraseña.Text + "', 256) and usuario = 'fun';"
+            consultar()
+            Dim verifi As Integer = 0
+            For Each row In Tabla.Rows
+                If Not IsDBNull(row("contrasenia")) Then
+                    verifi = 1
+                End If
+            Next
+
+            If verifi = 1 Then
                 user = "funcionario"
                 pass = "funcionario"
                 cambiarUsuario(user, pass)

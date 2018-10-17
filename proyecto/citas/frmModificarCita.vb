@@ -45,7 +45,7 @@
                 If Val(txbDuracion.Text) >= 1 Then
                     If txbAnotaciones.Text <> "" Then
 
-                        MuestraMsgBoxVersatil("¿Desea gurdar los cambios realizados?", 0)
+                        MuestraMsgBoxVersatil("¿Desea guardar los cambios realizados?", 0)
 
                         If respint = 1 Then
 

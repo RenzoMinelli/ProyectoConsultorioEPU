@@ -67,11 +67,22 @@ Public Class frmPlanTratamiento
             If dgvArancelesSelect.Rows(x).Cells(0).Value = id_Arancel And dgvArancelesSelect.Rows(x).Cells(3).Value = descEsp Then
 
                 If dgvArancelesSelect.Rows(x).Cells(4).Value <> 0 Then
+                    Try
 
-                    MsgBox("No puede borrar aranceles previamente ingresados, " + vbNewLine + "solo puede modificar su precio o descripcion", MsgBoxStyle.Exclamation)
+                        Consulta = "DELETE FROM plan_tratamiento where id_pl = '" + dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "';"
+                        consultar()
+                        actArancelesSelect()
+                        MsgBox("Elemento eliminado", MsgBoxStyle.Information)
+
+                    Catch ex As Exception
+
+                        MsgBox("Error al eliminar el tratamiento", MsgBoxStyle.Exclamation)
+                    End Try
+                   
 
                 Else
                     dgvArancelesSelect.Rows.RemoveAt(x)
+                    MsgBox("Elemento eliminado", MsgBoxStyle.Information)
                 End If
 
 
@@ -339,4 +350,9 @@ Public Class frmPlanTratamiento
 
         Return True
     End Function
+
+    Private Sub Button1_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Dispose()
+        frmMarcarCitaConcluida.Show()
+    End Sub
 End Class

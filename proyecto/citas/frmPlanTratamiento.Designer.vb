@@ -47,6 +47,7 @@ Partial Class frmPlanTratamiento
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.dgvDatos = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.dgvAranceles, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvArancelesSelect, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -209,7 +210,7 @@ Partial Class frmPlanTratamiento
         '
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(161, 569)
+        Me.btnGuardar.Location = New System.Drawing.Point(327, 571)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(130, 70)
         Me.btnGuardar.TabIndex = 8
@@ -318,11 +319,23 @@ Partial Class frmPlanTratamiento
         Me.dgvDatos.TabIndex = 55
         Me.dgvDatos.Visible = False
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(114, 571)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(130, 70)
+        Me.Button1.TabIndex = 57
+        Me.Button1.Text = "Cancelar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frmPlanTratamiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1179, 684)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.dgvDatos)
         Me.Controls.Add(Me.btnPresupuesto)
@@ -365,4 +378,5 @@ Partial Class frmPlanTratamiento
     Friend WithEvents PrintDocument1 As System.Drawing.Printing.PrintDocument
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents dgvDatos As System.Windows.Forms.DataGridView
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

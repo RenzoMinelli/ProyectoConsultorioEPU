@@ -13,7 +13,7 @@
 
             If contador = 0 And contraseña = repcontraseña Then
                 Try
-                    Consulta = "update usuarios SET contrasenia = '" + contraseña + "' where usuario = 'odo';"
+                    Consulta = "update usuarios SET contrasenia = sha2('" + contraseña + "',256) where usuario = 'odo';"
                     consultar()
 
                     contador = contador + 1
@@ -27,7 +27,7 @@
             ElseIf contador = 1 And contraseña = repcontraseña Then
 
                 Try
-                    Consulta = "update usuarios SET contrasenia = '" + contraseña + "' where usuario = 'fun';"
+                    Consulta = "update usuarios SET contrasenia = sha2('" + contraseña + "',256) where usuario = 'fun';"
                     consultar()
 
                     MsgBox("Contraseñas Registradas", MsgBoxStyle.Information)
