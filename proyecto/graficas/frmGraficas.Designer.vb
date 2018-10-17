@@ -23,9 +23,9 @@ Partial Class frmGraficas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.dgvInfo = New System.Windows.Forms.DataGridView()
         Me.pbconfig = New System.Windows.Forms.PictureBox()
@@ -58,7 +58,6 @@ Partial Class frmGraficas
         Me.PnlOp1 = New System.Windows.Forms.Panel()
         Me.Lblop1 = New System.Windows.Forms.Label()
         Me.DgvTratamientos = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbconfig, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -82,19 +81,19 @@ Partial Class frmGraficas
         '
         'grafica
         '
-        ChartArea1.Name = "Pacientes"
-        Me.grafica.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.grafica.Legends.Add(Legend1)
+        ChartArea2.Name = "Pacientes"
+        Me.grafica.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.grafica.Legends.Add(Legend2)
         Me.grafica.Location = New System.Drawing.Point(1, 45)
         Me.grafica.Margin = New System.Windows.Forms.Padding(4)
         Me.grafica.Name = "grafica"
-        Series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        Series1.ChartArea = "Pacientes"
-        Series1.Color = System.Drawing.Color.MidnightBlue
-        Series1.Legend = "Legend1"
-        Series1.Name = "Num pacientes"
-        Me.grafica.Series.Add(Series1)
+        Series2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        Series2.ChartArea = "Pacientes"
+        Series2.Color = System.Drawing.Color.MidnightBlue
+        Series2.Legend = "Legend1"
+        Series2.Name = "Num pacientes"
+        Me.grafica.Series.Add(Series2)
         Me.grafica.Size = New System.Drawing.Size(1336, 656)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
@@ -202,7 +201,7 @@ Partial Class frmGraficas
         Me.LblTipo.AutoSize = True
         Me.LblTipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTipo.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.LblTipo.Location = New System.Drawing.Point(8, 8)
+        Me.LblTipo.Location = New System.Drawing.Point(5, 8)
         Me.LblTipo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblTipo.Name = "LblTipo"
         Me.LblTipo.Size = New System.Drawing.Size(238, 29)
@@ -423,21 +422,11 @@ Partial Class frmGraficas
         Me.DgvTratamientos.TabIndex = 24
         Me.DgvTratamientos.Visible = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(1178, 448)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 25
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'frmGraficas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1848, 747)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DgvTratamientos)
         Me.Controls.Add(Me.PnlOpPers)
         Me.Controls.Add(Me.PnlSubmenu3d)
@@ -518,5 +507,4 @@ Partial Class frmGraficas
     Friend WithEvents PnlOp3 As System.Windows.Forms.Panel
     Friend WithEvents LblOp3 As System.Windows.Forms.Label
     Friend WithEvents DgvTratamientos As System.Windows.Forms.DataGridView
-    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

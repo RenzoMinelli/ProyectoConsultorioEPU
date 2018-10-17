@@ -428,7 +428,16 @@
             DgvTratamientos.DataSource = Tabla
             nomtratamiento5 = DgvTratamientos.Rows(0).Cells(0).Value.ToString
 
-
+            Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(nomtratamiento1)
+            Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(nomtratamiento2)
+            Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(nomtratamiento3)
+            Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(nomtratamiento4)
+            Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(nomtratamiento5)
+            Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = tratamiento1
+            Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = tratamiento2
+            Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = tratamiento3
+            Me.grafica.Series("Total Tratamientos mas usados").Points(3).AxisLabel = tratamiento4
+            Me.grafica.Series("Total Tratamientos mas usados").Points(4).AxisLabel = tratamiento5
 
 
 
@@ -491,7 +500,7 @@
         PnlOp3.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         grafica.Series.Clear()
 
     End Sub
