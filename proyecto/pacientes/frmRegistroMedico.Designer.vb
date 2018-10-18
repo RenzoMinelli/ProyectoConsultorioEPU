@@ -22,13 +22,13 @@ Partial Class frmRegistroMedico
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRegistroMedico))
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvRegistroMedico = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel000 = New System.Windows.Forms.Panel()
@@ -178,38 +178,38 @@ Partial Class frmRegistroMedico
         Me.pnlDiente31c1 = New System.Windows.Forms.Panel()
         Me.dgvEstadoDiente = New System.Windows.Forms.DataGridView()
         Me.pnlDiente2_38c1 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_41c1 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_38c3 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_41c3 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_38c4 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_41c4 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_38c2 = New System.Windows.Forms.Panel()
-        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_41c2 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_37c1 = New System.Windows.Forms.Panel()
-        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_42c1 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_37c3 = New System.Windows.Forms.Panel()
-        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_42c3 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_37c4 = New System.Windows.Forms.Panel()
-        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_42c4 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_37c2 = New System.Windows.Forms.Panel()
-        Me.Panel19 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_42c2 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_36c1 = New System.Windows.Forms.Panel()
-        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_43c1 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_36c3 = New System.Windows.Forms.Panel()
-        Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_43c3 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_35c1 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_36c4 = New System.Windows.Forms.Panel()
-        Me.Panel26 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_44c1 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_34c1 = New System.Windows.Forms.Panel()
-        Me.Panel28 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_43c4 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_36c2 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_45c1 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_35c3 = New System.Windows.Forms.Panel()
-        Me.Panel32 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_43c2 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_35c4 = New System.Windows.Forms.Panel()
-        Me.Panel34 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_44c3 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_31c3 = New System.Windows.Forms.Panel()
-        Me.Panel36 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_44c4 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_33c1 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_48c3 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_31c2 = New System.Windows.Forms.Panel()
@@ -217,7 +217,7 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_35c2 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_48c2 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_31c4 = New System.Windows.Forms.Panel()
-        Me.Panel44 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_44c2 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_34c3 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_48c4 = New System.Windows.Forms.Panel()
         Me.pnlDiente2_32c2 = New System.Windows.Forms.Panel()
@@ -325,23 +325,23 @@ Partial Class frmRegistroMedico
         Me.dgvRegistroMedico.AllowUserToResizeRows = False
         Me.dgvRegistroMedico.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvRegistroMedico.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvRegistroMedico.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvRegistroMedico.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.dgvRegistroMedico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvRegistroMedico.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvRegistroMedico.DefaultCellStyle = DataGridViewCellStyle8
         Me.dgvRegistroMedico.Location = New System.Drawing.Point(16, 417)
         Me.dgvRegistroMedico.Name = "dgvRegistroMedico"
         Me.dgvRegistroMedico.ReadOnly = True
@@ -481,23 +481,23 @@ Partial Class frmRegistroMedico
         Me.dgvTratamientos.AllowUserToResizeRows = False
         Me.dgvTratamientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvTratamientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvTratamientos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvTratamientos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.dgvTratamientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvTratamientos.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvTratamientos.DefaultCellStyle = DataGridViewCellStyle10
         Me.dgvTratamientos.Location = New System.Drawing.Point(696, 47)
         Me.dgvTratamientos.Name = "dgvTratamientos"
         Me.dgvTratamientos.ReadOnly = True
@@ -523,23 +523,23 @@ Partial Class frmRegistroMedico
         Me.dgvAuxiliar.AllowUserToResizeRows = False
         Me.dgvAuxiliar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvAuxiliar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvAuxiliar.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvAuxiliar.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.dgvAuxiliar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvAuxiliar.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvAuxiliar.DefaultCellStyle = DataGridViewCellStyle12
         Me.dgvAuxiliar.Location = New System.Drawing.Point(1132, 306)
         Me.dgvAuxiliar.Name = "dgvAuxiliar"
         Me.dgvAuxiliar.ReadOnly = True
@@ -1604,13 +1604,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_38c1.Size = New System.Drawing.Size(27, 15)
         Me.pnlDiente2_38c1.TabIndex = 431
         '
-        'Panel5
+        'PnlDiente2_41c1
         '
-        Me.Panel5.BackColor = System.Drawing.Color.White
-        Me.Panel5.Location = New System.Drawing.Point(303, 263)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(27, 15)
-        Me.Panel5.TabIndex = 433
+        Me.PnlDiente2_41c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_41c1.Location = New System.Drawing.Point(303, 263)
+        Me.PnlDiente2_41c1.Name = "PnlDiente2_41c1"
+        Me.PnlDiente2_41c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_41c1.TabIndex = 433
         '
         'pnlDiente2_38c3
         '
@@ -1620,13 +1620,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_38c3.Size = New System.Drawing.Size(29, 13)
         Me.pnlDiente2_38c3.TabIndex = 428
         '
-        'Panel7
+        'PnlDiente2_41c3
         '
-        Me.Panel7.BackColor = System.Drawing.Color.White
-        Me.Panel7.Location = New System.Drawing.Point(302, 279)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(29, 13)
-        Me.Panel7.TabIndex = 430
+        Me.PnlDiente2_41c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_41c3.Location = New System.Drawing.Point(302, 279)
+        Me.PnlDiente2_41c3.Name = "PnlDiente2_41c3"
+        Me.PnlDiente2_41c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_41c3.TabIndex = 430
         '
         'pnlDiente2_38c4
         '
@@ -1636,13 +1636,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_38c4.Size = New System.Drawing.Size(10, 27)
         Me.pnlDiente2_38c4.TabIndex = 435
         '
-        'Panel9
+        'PnlDiente2_41c4
         '
-        Me.Panel9.BackColor = System.Drawing.Color.White
-        Me.Panel9.Location = New System.Drawing.Point(300, 265)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(10, 27)
-        Me.Panel9.TabIndex = 436
+        Me.PnlDiente2_41c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_41c4.Location = New System.Drawing.Point(300, 265)
+        Me.PnlDiente2_41c4.Name = "PnlDiente2_41c4"
+        Me.PnlDiente2_41c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_41c4.TabIndex = 436
         '
         'pnlDiente2_38c2
         '
@@ -1652,13 +1652,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_38c2.Size = New System.Drawing.Size(10, 27)
         Me.pnlDiente2_38c2.TabIndex = 432
         '
-        'Panel11
+        'PnlDiente2_41c2
         '
-        Me.Panel11.BackColor = System.Drawing.Color.White
-        Me.Panel11.Location = New System.Drawing.Point(323, 265)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(10, 27)
-        Me.Panel11.TabIndex = 434
+        Me.PnlDiente2_41c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_41c2.Location = New System.Drawing.Point(323, 265)
+        Me.PnlDiente2_41c2.Name = "PnlDiente2_41c2"
+        Me.PnlDiente2_41c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_41c2.TabIndex = 434
         '
         'pnlDiente2_37c1
         '
@@ -1668,13 +1668,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_37c1.Size = New System.Drawing.Size(27, 15)
         Me.pnlDiente2_37c1.TabIndex = 423
         '
-        'Panel13
+        'PnlDiente2_42c1
         '
-        Me.Panel13.BackColor = System.Drawing.Color.White
-        Me.Panel13.Location = New System.Drawing.Point(264, 264)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(27, 15)
-        Me.Panel13.TabIndex = 425
+        Me.PnlDiente2_42c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_42c1.Location = New System.Drawing.Point(264, 264)
+        Me.PnlDiente2_42c1.Name = "PnlDiente2_42c1"
+        Me.PnlDiente2_42c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_42c1.TabIndex = 425
         '
         'pnlDiente2_37c3
         '
@@ -1684,13 +1684,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_37c3.Size = New System.Drawing.Size(29, 13)
         Me.pnlDiente2_37c3.TabIndex = 420
         '
-        'Panel15
+        'PnlDiente2_42c3
         '
-        Me.Panel15.BackColor = System.Drawing.Color.White
-        Me.Panel15.Location = New System.Drawing.Point(263, 280)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(29, 13)
-        Me.Panel15.TabIndex = 422
+        Me.PnlDiente2_42c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_42c3.Location = New System.Drawing.Point(263, 280)
+        Me.PnlDiente2_42c3.Name = "PnlDiente2_42c3"
+        Me.PnlDiente2_42c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_42c3.TabIndex = 422
         '
         'pnlDiente2_37c4
         '
@@ -1700,13 +1700,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_37c4.Size = New System.Drawing.Size(10, 27)
         Me.pnlDiente2_37c4.TabIndex = 427
         '
-        'Panel17
+        'PnlDiente2_42c4
         '
-        Me.Panel17.BackColor = System.Drawing.Color.White
-        Me.Panel17.Location = New System.Drawing.Point(261, 266)
-        Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(10, 27)
-        Me.Panel17.TabIndex = 429
+        Me.PnlDiente2_42c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_42c4.Location = New System.Drawing.Point(261, 266)
+        Me.PnlDiente2_42c4.Name = "PnlDiente2_42c4"
+        Me.PnlDiente2_42c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_42c4.TabIndex = 429
         '
         'pnlDiente2_37c2
         '
@@ -1716,13 +1716,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_37c2.Size = New System.Drawing.Size(10, 27)
         Me.pnlDiente2_37c2.TabIndex = 424
         '
-        'Panel19
+        'PnlDiente2_42c2
         '
-        Me.Panel19.BackColor = System.Drawing.Color.White
-        Me.Panel19.Location = New System.Drawing.Point(284, 266)
-        Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(10, 27)
-        Me.Panel19.TabIndex = 426
+        Me.PnlDiente2_42c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_42c2.Location = New System.Drawing.Point(284, 266)
+        Me.PnlDiente2_42c2.Name = "PnlDiente2_42c2"
+        Me.PnlDiente2_42c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_42c2.TabIndex = 426
         '
         'pnlDiente2_36c1
         '
@@ -1732,13 +1732,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_36c1.Size = New System.Drawing.Size(27, 15)
         Me.pnlDiente2_36c1.TabIndex = 396
         '
-        'Panel21
+        'PnlDiente2_43c1
         '
-        Me.Panel21.BackColor = System.Drawing.Color.White
-        Me.Panel21.Location = New System.Drawing.Point(225, 264)
-        Me.Panel21.Name = "Panel21"
-        Me.Panel21.Size = New System.Drawing.Size(27, 15)
-        Me.Panel21.TabIndex = 399
+        Me.PnlDiente2_43c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_43c1.Location = New System.Drawing.Point(225, 264)
+        Me.PnlDiente2_43c1.Name = "PnlDiente2_43c1"
+        Me.PnlDiente2_43c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_43c1.TabIndex = 399
         '
         'pnlDiente2_36c3
         '
@@ -1748,13 +1748,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_36c3.Size = New System.Drawing.Size(29, 13)
         Me.pnlDiente2_36c3.TabIndex = 381
         '
-        'Panel23
+        'PnlDiente2_43c3
         '
-        Me.Panel23.BackColor = System.Drawing.Color.White
-        Me.Panel23.Location = New System.Drawing.Point(224, 280)
-        Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(29, 13)
-        Me.Panel23.TabIndex = 383
+        Me.PnlDiente2_43c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_43c3.Location = New System.Drawing.Point(224, 280)
+        Me.PnlDiente2_43c3.Name = "PnlDiente2_43c3"
+        Me.PnlDiente2_43c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_43c3.TabIndex = 383
         '
         'pnlDiente2_35c1
         '
@@ -1772,13 +1772,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_36c4.Size = New System.Drawing.Size(10, 27)
         Me.pnlDiente2_36c4.TabIndex = 417
         '
-        'Panel26
+        'PnlDiente2_44c1
         '
-        Me.Panel26.BackColor = System.Drawing.Color.White
-        Me.Panel26.Location = New System.Drawing.Point(186, 263)
-        Me.Panel26.Name = "Panel26"
-        Me.Panel26.Size = New System.Drawing.Size(27, 15)
-        Me.Panel26.TabIndex = 401
+        Me.PnlDiente2_44c1.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_44c1.Location = New System.Drawing.Point(186, 263)
+        Me.PnlDiente2_44c1.Name = "PnlDiente2_44c1"
+        Me.PnlDiente2_44c1.Size = New System.Drawing.Size(27, 15)
+        Me.PnlDiente2_44c1.TabIndex = 401
         '
         'pnlDiente2_34c1
         '
@@ -1788,13 +1788,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_34c1.Size = New System.Drawing.Size(27, 15)
         Me.pnlDiente2_34c1.TabIndex = 391
         '
-        'Panel28
+        'PnlDiente2_43c4
         '
-        Me.Panel28.BackColor = System.Drawing.Color.White
-        Me.Panel28.Location = New System.Drawing.Point(222, 266)
-        Me.Panel28.Name = "Panel28"
-        Me.Panel28.Size = New System.Drawing.Size(10, 27)
-        Me.Panel28.TabIndex = 419
+        Me.PnlDiente2_43c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_43c4.Location = New System.Drawing.Point(222, 266)
+        Me.PnlDiente2_43c4.Name = "PnlDiente2_43c4"
+        Me.PnlDiente2_43c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_43c4.TabIndex = 419
         '
         'pnlDiente2_36c2
         '
@@ -1820,13 +1820,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_35c3.Size = New System.Drawing.Size(29, 13)
         Me.pnlDiente2_35c3.TabIndex = 385
         '
-        'Panel32
+        'PnlDiente2_43c2
         '
-        Me.Panel32.BackColor = System.Drawing.Color.White
-        Me.Panel32.Location = New System.Drawing.Point(245, 266)
-        Me.Panel32.Name = "Panel32"
-        Me.Panel32.Size = New System.Drawing.Size(10, 27)
-        Me.Panel32.TabIndex = 406
+        Me.PnlDiente2_43c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_43c2.Location = New System.Drawing.Point(245, 266)
+        Me.PnlDiente2_43c2.Name = "PnlDiente2_43c2"
+        Me.PnlDiente2_43c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_43c2.TabIndex = 406
         '
         'pnlDiente2_35c4
         '
@@ -1836,13 +1836,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_35c4.Size = New System.Drawing.Size(10, 27)
         Me.pnlDiente2_35c4.TabIndex = 418
         '
-        'Panel34
+        'PnlDiente2_44c3
         '
-        Me.Panel34.BackColor = System.Drawing.Color.White
-        Me.Panel34.Location = New System.Drawing.Point(185, 279)
-        Me.Panel34.Name = "Panel34"
-        Me.Panel34.Size = New System.Drawing.Size(29, 13)
-        Me.Panel34.TabIndex = 386
+        Me.PnlDiente2_44c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_44c3.Location = New System.Drawing.Point(185, 279)
+        Me.PnlDiente2_44c3.Name = "PnlDiente2_44c3"
+        Me.PnlDiente2_44c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_44c3.TabIndex = 386
         '
         'pnlDiente2_31c3
         '
@@ -1852,13 +1852,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_31c3.Size = New System.Drawing.Size(29, 13)
         Me.pnlDiente2_31c3.TabIndex = 373
         '
-        'Panel36
+        'PnlDiente2_44c4
         '
-        Me.Panel36.BackColor = System.Drawing.Color.White
-        Me.Panel36.Location = New System.Drawing.Point(183, 265)
-        Me.Panel36.Name = "Panel36"
-        Me.Panel36.Size = New System.Drawing.Size(10, 27)
-        Me.Panel36.TabIndex = 421
+        Me.PnlDiente2_44c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_44c4.Location = New System.Drawing.Point(183, 265)
+        Me.PnlDiente2_44c4.Name = "PnlDiente2_44c4"
+        Me.PnlDiente2_44c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_44c4.TabIndex = 421
         '
         'pnlDiente2_33c1
         '
@@ -1916,13 +1916,13 @@ Partial Class frmRegistroMedico
         Me.pnlDiente2_31c4.Size = New System.Drawing.Size(10, 27)
         Me.pnlDiente2_31c4.TabIndex = 378
         '
-        'Panel44
+        'PnlDiente2_44c2
         '
-        Me.Panel44.BackColor = System.Drawing.Color.White
-        Me.Panel44.Location = New System.Drawing.Point(206, 265)
-        Me.Panel44.Name = "Panel44"
-        Me.Panel44.Size = New System.Drawing.Size(10, 27)
-        Me.Panel44.TabIndex = 405
+        Me.PnlDiente2_44c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_44c2.Location = New System.Drawing.Point(206, 265)
+        Me.PnlDiente2_44c2.Name = "PnlDiente2_44c2"
+        Me.PnlDiente2_44c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_44c2.TabIndex = 405
         '
         'pnlDiente2_34c3
         '
@@ -2665,38 +2665,38 @@ Partial Class frmRegistroMedico
         Me.Controls.Add(Me.lblCitas)
         Me.Controls.Add(Me.lblOdontogramaactual)
         Me.Controls.Add(Me.pnlDiente2_38c1)
-        Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.PnlDiente2_41c1)
         Me.Controls.Add(Me.pnlDiente2_38c3)
-        Me.Controls.Add(Me.Panel7)
+        Me.Controls.Add(Me.PnlDiente2_41c3)
         Me.Controls.Add(Me.pnlDiente2_38c4)
-        Me.Controls.Add(Me.Panel9)
+        Me.Controls.Add(Me.PnlDiente2_41c4)
         Me.Controls.Add(Me.pnlDiente2_38c2)
-        Me.Controls.Add(Me.Panel11)
+        Me.Controls.Add(Me.PnlDiente2_41c2)
         Me.Controls.Add(Me.pnlDiente2_37c1)
-        Me.Controls.Add(Me.Panel13)
+        Me.Controls.Add(Me.PnlDiente2_42c1)
         Me.Controls.Add(Me.pnlDiente2_37c3)
-        Me.Controls.Add(Me.Panel15)
+        Me.Controls.Add(Me.PnlDiente2_42c3)
         Me.Controls.Add(Me.pnlDiente2_37c4)
-        Me.Controls.Add(Me.Panel17)
+        Me.Controls.Add(Me.PnlDiente2_42c4)
         Me.Controls.Add(Me.pnlDiente2_37c2)
-        Me.Controls.Add(Me.Panel19)
+        Me.Controls.Add(Me.PnlDiente2_42c2)
         Me.Controls.Add(Me.pnlDiente2_36c1)
-        Me.Controls.Add(Me.Panel21)
+        Me.Controls.Add(Me.PnlDiente2_43c1)
         Me.Controls.Add(Me.pnlDiente2_36c3)
-        Me.Controls.Add(Me.Panel23)
+        Me.Controls.Add(Me.PnlDiente2_43c3)
         Me.Controls.Add(Me.pnlDiente2_35c1)
         Me.Controls.Add(Me.pnlDiente2_36c4)
-        Me.Controls.Add(Me.Panel26)
+        Me.Controls.Add(Me.PnlDiente2_44c1)
         Me.Controls.Add(Me.pnlDiente2_34c1)
-        Me.Controls.Add(Me.Panel28)
+        Me.Controls.Add(Me.PnlDiente2_43c4)
         Me.Controls.Add(Me.pnlDiente2_36c2)
         Me.Controls.Add(Me.PnlDiente2_45c1)
         Me.Controls.Add(Me.pnlDiente2_35c3)
-        Me.Controls.Add(Me.Panel32)
+        Me.Controls.Add(Me.PnlDiente2_43c2)
         Me.Controls.Add(Me.pnlDiente2_35c4)
-        Me.Controls.Add(Me.Panel34)
+        Me.Controls.Add(Me.PnlDiente2_44c3)
         Me.Controls.Add(Me.pnlDiente2_31c3)
-        Me.Controls.Add(Me.Panel36)
+        Me.Controls.Add(Me.PnlDiente2_44c4)
         Me.Controls.Add(Me.pnlDiente2_33c1)
         Me.Controls.Add(Me.PnlDiente2_48c3)
         Me.Controls.Add(Me.pnlDiente2_31c2)
@@ -2704,7 +2704,7 @@ Partial Class frmRegistroMedico
         Me.Controls.Add(Me.pnlDiente2_35c2)
         Me.Controls.Add(Me.PnlDiente2_48c2)
         Me.Controls.Add(Me.pnlDiente2_31c4)
-        Me.Controls.Add(Me.Panel44)
+        Me.Controls.Add(Me.PnlDiente2_44c2)
         Me.Controls.Add(Me.pnlDiente2_34c3)
         Me.Controls.Add(Me.PnlDiente2_48c4)
         Me.Controls.Add(Me.pnlDiente2_32c2)
@@ -3094,38 +3094,38 @@ Partial Class frmRegistroMedico
     Friend WithEvents pnlDiente31c1 As System.Windows.Forms.Panel
     Friend WithEvents dgvEstadoDiente As System.Windows.Forms.DataGridView
     Friend WithEvents pnlDiente2_38c1 As System.Windows.Forms.Panel
-    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_41c1 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_38c3 As System.Windows.Forms.Panel
-    Friend WithEvents Panel7 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_41c3 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_38c4 As System.Windows.Forms.Panel
-    Friend WithEvents Panel9 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_41c4 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_38c2 As System.Windows.Forms.Panel
-    Friend WithEvents Panel11 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_41c2 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_37c1 As System.Windows.Forms.Panel
-    Friend WithEvents Panel13 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_42c1 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_37c3 As System.Windows.Forms.Panel
-    Friend WithEvents Panel15 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_42c3 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_37c4 As System.Windows.Forms.Panel
-    Friend WithEvents Panel17 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_42c4 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_37c2 As System.Windows.Forms.Panel
-    Friend WithEvents Panel19 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_42c2 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_36c1 As System.Windows.Forms.Panel
-    Friend WithEvents Panel21 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_43c1 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_36c3 As System.Windows.Forms.Panel
-    Friend WithEvents Panel23 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_43c3 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_35c1 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_36c4 As System.Windows.Forms.Panel
-    Friend WithEvents Panel26 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_44c1 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_34c1 As System.Windows.Forms.Panel
-    Friend WithEvents Panel28 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_43c4 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_36c2 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_45c1 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_35c3 As System.Windows.Forms.Panel
-    Friend WithEvents Panel32 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_43c2 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_35c4 As System.Windows.Forms.Panel
-    Friend WithEvents Panel34 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_44c3 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_31c3 As System.Windows.Forms.Panel
-    Friend WithEvents Panel36 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_44c4 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_33c1 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_48c3 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_31c2 As System.Windows.Forms.Panel
@@ -3133,7 +3133,7 @@ Partial Class frmRegistroMedico
     Friend WithEvents pnlDiente2_35c2 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_48c2 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_31c4 As System.Windows.Forms.Panel
-    Friend WithEvents Panel44 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_44c2 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_34c3 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_48c4 As System.Windows.Forms.Panel
     Friend WithEvents pnlDiente2_32c2 As System.Windows.Forms.Panel

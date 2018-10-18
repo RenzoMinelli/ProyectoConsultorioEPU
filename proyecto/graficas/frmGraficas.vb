@@ -37,7 +37,7 @@
     Dim idtratamiento5 As Integer
 
 
-    Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
 
@@ -104,7 +104,7 @@
 
     End Sub
 
-    Private Sub pbconfig_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbconfig.Click
+    Private Sub pbconfig_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         TmrMovimiento.Start()
         PnlSubMenuDatos.Visible = False
         PnlSubmenu3d.Visible = False
@@ -112,7 +112,7 @@
 
     End Sub
 
-    Private Sub Lbl3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbl3d.Click
+    Private Sub Lbl3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True Then
             pnlCambarPerspectiva.Visible = True
         Else
@@ -128,7 +128,7 @@
     End Sub
 
 
-    Private Sub Movimiento_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TmrMovimiento.Tick
+    Private Sub Movimiento_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs)
         PnlSubmenu3d.Visible = False
         PnlSubMenuDatos.Visible = False
         If extra = 0 Then
@@ -152,7 +152,7 @@
     End Sub
 
 
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbledpacientes.Click
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblEdadPaciente.Click
         Try
             Lbltitulo.Text = "la informacion mostrada es 'Promedio edades de pacientes':"
             grafica.Series.Clear()
