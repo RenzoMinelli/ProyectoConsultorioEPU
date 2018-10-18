@@ -2028,8 +2028,11 @@ Public Class frmRegistroMedico
             dgvRegistroMedico.Columns(0).HeaderText = "Descripcion"
             dgvRegistroMedico.Columns(1).HeaderText = "Fecha"
             dgvRegistroMedico.Columns(2).HeaderText = "Hora"
+            dgvRegistroMedico.Columns(3).HeaderText = "Atendida"
 
-
+            dgvRegistroMedico.Columns(1).Width = 70
+            dgvRegistroMedico.Columns(2).Width = 70
+            dgvRegistroMedico.Columns(3).Width = 120
 
         Catch ex As Exception
 

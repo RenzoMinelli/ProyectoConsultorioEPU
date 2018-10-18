@@ -103,6 +103,7 @@
 
 
         If dgvHora.CurrentCell.Value = "" Then
+           
             btnMarcarCita.Hide()
             btnCambiarCita.Hide()
             btnElimiarCita.Hide()
@@ -391,7 +392,10 @@
             id_p = dgvDatosCita.Rows(0).Cells(1).Value
             idcita = dgvDatosCita.Rows(0).Cells(0).Value
 
-            btnMarcarCita.Show()
+            If user <> "funcionario" Then
+                btnMarcarCita.Show()
+            End If
+
             btnCambiarCita.Show()
             btnElimiarCita.Show()
         Else
