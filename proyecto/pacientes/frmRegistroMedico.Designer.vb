@@ -242,9 +242,9 @@ Partial Class frmRegistroMedico
         Me.PnlDiente2_46c4 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_48c1 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_28c1 = New System.Windows.Forms.Panel()
-        Me.Panel70 = New System.Windows.Forms.Panel()
-        Me.Panel71 = New System.Windows.Forms.Panel()
-        Me.Panel72 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_28c3 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_28c4 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_28c2 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_27c1 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_27c3 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_27c4 = New System.Windows.Forms.Panel()
@@ -268,7 +268,7 @@ Partial Class frmRegistroMedico
         Me.PnlDiente2_22c4 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_22c1 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_22c3 = New System.Windows.Forms.Panel()
-        Me.Panel96 = New System.Windows.Forms.Panel()
+        Me.PnlDiente2_24c2 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_23c2 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_23c3 = New System.Windows.Forms.Panel()
         Me.PnlDiente2_23c4 = New System.Windows.Forms.Panel()
@@ -2116,29 +2116,29 @@ Partial Class frmRegistroMedico
         Me.PnlDiente2_28c1.Size = New System.Drawing.Size(27, 15)
         Me.PnlDiente2_28c1.TabIndex = 370
         '
-        'Panel70
+        'PnlDiente2_28c3
         '
-        Me.Panel70.BackColor = System.Drawing.Color.White
-        Me.Panel70.Location = New System.Drawing.Point(631, 224)
-        Me.Panel70.Name = "Panel70"
-        Me.Panel70.Size = New System.Drawing.Size(29, 13)
-        Me.Panel70.TabIndex = 369
+        Me.PnlDiente2_28c3.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_28c3.Location = New System.Drawing.Point(631, 224)
+        Me.PnlDiente2_28c3.Name = "PnlDiente2_28c3"
+        Me.PnlDiente2_28c3.Size = New System.Drawing.Size(29, 13)
+        Me.PnlDiente2_28c3.TabIndex = 369
         '
-        'Panel71
+        'PnlDiente2_28c4
         '
-        Me.Panel71.BackColor = System.Drawing.Color.White
-        Me.Panel71.Location = New System.Drawing.Point(629, 210)
-        Me.Panel71.Name = "Panel71"
-        Me.Panel71.Size = New System.Drawing.Size(10, 27)
-        Me.Panel71.TabIndex = 372
+        Me.PnlDiente2_28c4.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_28c4.Location = New System.Drawing.Point(629, 210)
+        Me.PnlDiente2_28c4.Name = "PnlDiente2_28c4"
+        Me.PnlDiente2_28c4.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_28c4.TabIndex = 372
         '
-        'Panel72
+        'PnlDiente2_28c2
         '
-        Me.Panel72.BackColor = System.Drawing.Color.White
-        Me.Panel72.Location = New System.Drawing.Point(652, 210)
-        Me.Panel72.Name = "Panel72"
-        Me.Panel72.Size = New System.Drawing.Size(10, 27)
-        Me.Panel72.TabIndex = 371
+        Me.PnlDiente2_28c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_28c2.Location = New System.Drawing.Point(652, 210)
+        Me.PnlDiente2_28c2.Name = "PnlDiente2_28c2"
+        Me.PnlDiente2_28c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_28c2.TabIndex = 371
         '
         'PnlDiente2_27c1
         '
@@ -2324,13 +2324,13 @@ Partial Class frmRegistroMedico
         Me.PnlDiente2_22c3.Size = New System.Drawing.Size(29, 13)
         Me.PnlDiente2_22c3.TabIndex = 349
         '
-        'Panel96
+        'PnlDiente2_24c2
         '
-        Me.Panel96.BackColor = System.Drawing.Color.White
-        Me.Panel96.Location = New System.Drawing.Point(496, 211)
-        Me.Panel96.Name = "Panel96"
-        Me.Panel96.Size = New System.Drawing.Size(10, 27)
-        Me.Panel96.TabIndex = 358
+        Me.PnlDiente2_24c2.BackColor = System.Drawing.Color.White
+        Me.PnlDiente2_24c2.Location = New System.Drawing.Point(496, 211)
+        Me.PnlDiente2_24c2.Name = "PnlDiente2_24c2"
+        Me.PnlDiente2_24c2.Size = New System.Drawing.Size(10, 27)
+        Me.PnlDiente2_24c2.TabIndex = 358
         '
         'PnlDiente2_23c2
         '
@@ -2729,9 +2729,9 @@ Partial Class frmRegistroMedico
         Me.Controls.Add(Me.PnlDiente2_46c4)
         Me.Controls.Add(Me.PnlDiente2_48c1)
         Me.Controls.Add(Me.PnlDiente2_28c1)
-        Me.Controls.Add(Me.Panel70)
-        Me.Controls.Add(Me.Panel71)
-        Me.Controls.Add(Me.Panel72)
+        Me.Controls.Add(Me.PnlDiente2_28c3)
+        Me.Controls.Add(Me.PnlDiente2_28c4)
+        Me.Controls.Add(Me.PnlDiente2_28c2)
         Me.Controls.Add(Me.PnlDiente2_27c1)
         Me.Controls.Add(Me.PnlDiente2_27c3)
         Me.Controls.Add(Me.PnlDiente2_27c4)
@@ -2754,7 +2754,7 @@ Partial Class frmRegistroMedico
         Me.Controls.Add(Me.PnlDiente2_22c4)
         Me.Controls.Add(Me.PnlDiente2_22c1)
         Me.Controls.Add(Me.PnlDiente2_22c3)
-        Me.Controls.Add(Me.Panel96)
+        Me.Controls.Add(Me.PnlDiente2_24c2)
         Me.Controls.Add(Me.PnlDiente2_23c2)
         Me.Controls.Add(Me.PnlDiente2_23c3)
         Me.Controls.Add(Me.PnlDiente2_23c4)
@@ -3158,9 +3158,9 @@ Partial Class frmRegistroMedico
     Friend WithEvents PnlDiente2_46c4 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_48c1 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_28c1 As System.Windows.Forms.Panel
-    Friend WithEvents Panel70 As System.Windows.Forms.Panel
-    Friend WithEvents Panel71 As System.Windows.Forms.Panel
-    Friend WithEvents Panel72 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_28c3 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_28c4 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_28c2 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_27c1 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_27c3 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_27c4 As System.Windows.Forms.Panel
@@ -3184,7 +3184,7 @@ Partial Class frmRegistroMedico
     Friend WithEvents PnlDiente2_22c4 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_22c1 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_22c3 As System.Windows.Forms.Panel
-    Friend WithEvents Panel96 As System.Windows.Forms.Panel
+    Friend WithEvents PnlDiente2_24c2 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_23c2 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_23c3 As System.Windows.Forms.Panel
     Friend WithEvents PnlDiente2_23c4 As System.Windows.Forms.Panel
