@@ -37,7 +37,7 @@
     Dim idtratamiento5 As Integer
 
 
-    Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
 
@@ -104,7 +104,7 @@
 
     End Sub
 
-    Private Sub pbconfig_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub pbconfig_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbconfig.Click
         TmrMovimiento.Start()
         PnlSubMenuDatos.Visible = False
         PnlSubmenu3d.Visible = False
@@ -112,7 +112,7 @@
 
     End Sub
 
-    Private Sub Lbl3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub Lbl3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbl3d.Click
         If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True Then
             pnlCambarPerspectiva.Visible = True
         Else
@@ -128,7 +128,7 @@
     End Sub
 
 
-    Private Sub Movimiento_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub Movimiento_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TmrMovimiento.Tick
         PnlSubmenu3d.Visible = False
         PnlSubMenuDatos.Visible = False
         If extra = 0 Then
