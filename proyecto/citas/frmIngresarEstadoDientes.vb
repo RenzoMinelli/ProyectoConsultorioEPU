@@ -805,7 +805,11 @@
             Case 4
                 PnlDiente18c1.BackColor = Color.White
                 diente18c1E = "normal"
+            Case 5
+                PnlDiente18c1.BackColor = Color.Green
+                diente18c1E = "puente"
                 diente18c1 = 0
+
 
         End Select
     End Sub
@@ -3327,7 +3331,7 @@
         diente38c1 = diente38c1 + 1
         cambiador38c1 = True
 
-        Select Case diente48c1
+        Select Case diente38c1
             Case 0
                 pnlDiente38c1.BackColor = Color.White
                 diente38c1E = "normal"
@@ -3401,7 +3405,7 @@
 
 
     Private Sub PnlDiente37c2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlDiente37c2.Click
-        diente37c2 = diente47c2 + 1
+        diente37c2 = diente37c2 + 1
         cambiador37c2 = True
 
         Select Case diente37c2
@@ -3468,7 +3472,7 @@
                 pnlDiente36c4.BackColor = Color.Red
                 diente36c4E = "alerta"
             Case 3
-                PnlDiente46c4.BackColor = Color.Black
+                pnlDiente36c4.BackColor = Color.Black
                 diente36c4E = "ausente"
             Case 4
                 pnlDiente36c4.BackColor = Color.White

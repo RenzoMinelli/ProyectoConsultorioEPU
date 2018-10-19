@@ -165,6 +165,7 @@ Partial Class pnlfondo
         Me.PnlDiente16c3 = New System.Windows.Forms.Panel()
         Me.PnlDiente16c4 = New System.Windows.Forms.Panel()
         Me.PnlDiente18c1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel01477.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -202,14 +203,14 @@ Partial Class pnlfondo
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(462, 22)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(79, 24)
+        Me.Label5.Size = New System.Drawing.Size(69, 24)
         Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Moldura"
+        Me.Label5.Text = "puente"
         '
         'Panel20
         '
         Me.Panel20.BackColor = System.Drawing.Color.Green
-        Me.Panel20.Location = New System.Drawing.Point(409, 21)
+        Me.Panel20.Location = New System.Drawing.Point(409, 19)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(42, 28)
         Me.Panel20.TabIndex = 7
@@ -251,7 +252,7 @@ Partial Class pnlfondo
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(194, 22)
+        Me.Label3.Location = New System.Drawing.Point(199, 19)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(188, 24)
         Me.Label3.TabIndex = 3
@@ -260,7 +261,7 @@ Partial Class pnlfondo
         'Panel0000
         '
         Me.Panel0000.BackColor = System.Drawing.Color.Yellow
-        Me.Panel0000.Location = New System.Drawing.Point(143, 18)
+        Me.Panel0000.Location = New System.Drawing.Point(151, 18)
         Me.Panel0000.Name = "Panel0000"
         Me.Panel0000.Size = New System.Drawing.Size(42, 28)
         Me.Panel0000.TabIndex = 2
@@ -1332,6 +1333,15 @@ Partial Class pnlfondo
         Me.PnlDiente18c1.Size = New System.Drawing.Size(35, 22)
         Me.PnlDiente18c1.TabIndex = 147
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Panel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel2.Location = New System.Drawing.Point(-11, 42)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(915, 192)
+        Me.Panel2.TabIndex = 54
+        '
         'pnlfondo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1470,6 +1480,7 @@ Partial Class pnlfondo
         Me.Controls.Add(Me.PnlDiente18c1)
         Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.bttoningrdientes)
+        Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "pnlfondo"
         Me.Text = "marcar_cita"
@@ -1622,4 +1633,5 @@ Partial Class pnlfondo
     Friend WithEvents PnlDiente18c1 As System.Windows.Forms.Panel
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Panel20 As System.Windows.Forms.Panel
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
 End Class
