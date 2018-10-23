@@ -213,7 +213,7 @@ Partial Class frmGraficas
         '
         Me.PnlTratamientos.Controls.Add(Me.Lbltratamientos)
         Me.PnlTratamientos.Location = New System.Drawing.Point(0, 36)
-        Me.PnlTratamientos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PnlTratamientos.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlTratamientos.Name = "PnlTratamientos"
         Me.PnlTratamientos.Size = New System.Drawing.Size(201, 33)
         Me.PnlTratamientos.TabIndex = 23
@@ -234,7 +234,7 @@ Partial Class frmGraficas
         Me.PnlPromedades.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlPromedades.Controls.Add(Me.lblEdadPaciente)
         Me.PnlPromedades.Location = New System.Drawing.Point(0, 0)
-        Me.PnlPromedades.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PnlPromedades.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlPromedades.Name = "PnlPromedades"
         Me.PnlPromedades.Size = New System.Drawing.Size(201, 31)
         Me.PnlPromedades.TabIndex = 21
@@ -260,7 +260,7 @@ Partial Class frmGraficas
         Me.pnldesplmenu.Controls.Add(Me.LblDespmenu)
         Me.pnldesplmenu.Controls.Add(Me.pbconfig)
         Me.pnldesplmenu.Location = New System.Drawing.Point(975, -2)
-        Me.pnldesplmenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnldesplmenu.Margin = New System.Windows.Forms.Padding(2)
         Me.pnldesplmenu.Name = "pnldesplmenu"
         Me.pnldesplmenu.Size = New System.Drawing.Size(186, 32)
         Me.pnldesplmenu.TabIndex = 20
@@ -304,7 +304,7 @@ Partial Class frmGraficas
         Me.pnlCambarPerspectiva.BackColor = System.Drawing.Color.RoyalBlue
         Me.pnlCambarPerspectiva.Controls.Add(Me.lblCambiarPers)
         Me.pnlCambarPerspectiva.Location = New System.Drawing.Point(0, 32)
-        Me.pnlCambarPerspectiva.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlCambarPerspectiva.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlCambarPerspectiva.Name = "pnlCambarPerspectiva"
         Me.pnlCambarPerspectiva.Size = New System.Drawing.Size(203, 31)
         Me.pnlCambarPerspectiva.TabIndex = 23
@@ -325,7 +325,7 @@ Partial Class frmGraficas
         Me.Pnlact3d.BackColor = System.Drawing.Color.RoyalBlue
         Me.Pnlact3d.Controls.Add(Me.LblActivar3d)
         Me.Pnlact3d.Location = New System.Drawing.Point(0, 0)
-        Me.Pnlact3d.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnlact3d.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnlact3d.Name = "Pnlact3d"
         Me.Pnlact3d.Size = New System.Drawing.Size(201, 31)
         Me.Pnlact3d.TabIndex = 21
@@ -349,7 +349,7 @@ Partial Class frmGraficas
         Me.PnlOpPers.Controls.Add(Me.PnlOp1)
         Me.PnlOpPers.ForeColor = System.Drawing.Color.MediumTurquoise
         Me.PnlOpPers.Location = New System.Drawing.Point(615, 84)
-        Me.PnlOpPers.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PnlOpPers.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlOpPers.Name = "PnlOpPers"
         Me.PnlOpPers.Size = New System.Drawing.Size(159, 110)
         Me.PnlOpPers.TabIndex = 23
@@ -359,7 +359,7 @@ Partial Class frmGraficas
         '
         Me.PnlOp3.Controls.Add(Me.LblOp3)
         Me.PnlOp3.Location = New System.Drawing.Point(0, 74)
-        Me.PnlOp3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PnlOp3.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlOp3.Name = "PnlOp3"
         Me.PnlOp3.Size = New System.Drawing.Size(157, 36)
         Me.PnlOp3.TabIndex = 3
@@ -380,7 +380,7 @@ Partial Class frmGraficas
         '
         Me.PnlOp2.Controls.Add(Me.LblOp2)
         Me.PnlOp2.Location = New System.Drawing.Point(0, 36)
-        Me.PnlOp2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PnlOp2.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlOp2.Name = "PnlOp2"
         Me.PnlOp2.Size = New System.Drawing.Size(159, 36)
         Me.PnlOp2.TabIndex = 2
@@ -401,7 +401,7 @@ Partial Class frmGraficas
         '
         Me.PnlOp1.Controls.Add(Me.Lblop1)
         Me.PnlOp1.Location = New System.Drawing.Point(0, 0)
-        Me.PnlOp1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PnlOp1.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlOp1.Name = "PnlOp1"
         Me.PnlOp1.Size = New System.Drawing.Size(157, 31)
         Me.PnlOp1.TabIndex = 1
@@ -422,7 +422,7 @@ Partial Class frmGraficas
         '
         Me.DgvTratamientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvTratamientos.Location = New System.Drawing.Point(9, 2)
-        Me.DgvTratamientos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DgvTratamientos.Margin = New System.Windows.Forms.Padding(2)
         Me.DgvTratamientos.Name = "DgvTratamientos"
         Me.DgvTratamientos.RowTemplate.Height = 24
         Me.DgvTratamientos.Size = New System.Drawing.Size(8, 8)

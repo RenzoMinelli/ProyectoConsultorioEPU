@@ -57,6 +57,7 @@ Partial Class frmPacientes
         Me.btnRealizarPago = New System.Windows.Forms.Button()
         Me.dgvFiltro = New System.Windows.Forms.DataGridView()
         Me.btnCambiarPacientes = New System.Windows.Forms.Button()
+        Me.btnTratamiento = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.pnlTapa.SuspendLayout()
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -338,7 +339,7 @@ Partial Class frmPacientes
         Me.btnRegistroMedico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnRegistroMedico.Image = Global.WindowsApplication1.My.Resources.Resources._104901_1_
         Me.btnRegistroMedico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRegistroMedico.Location = New System.Drawing.Point(267, 561)
+        Me.btnRegistroMedico.Location = New System.Drawing.Point(28, 598)
         Me.btnRegistroMedico.Name = "btnRegistroMedico"
         Me.btnRegistroMedico.Size = New System.Drawing.Size(178, 75)
         Me.btnRegistroMedico.TabIndex = 16
@@ -353,7 +354,7 @@ Partial Class frmPacientes
         Me.btnCambiarEstado.ForeColor = System.Drawing.Color.Black
         Me.btnCambiarEstado.Image = Global.WindowsApplication1.My.Resources.Resources._675024_delete_512x512_1_
         Me.btnCambiarEstado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCambiarEstado.Location = New System.Drawing.Point(750, 561)
+        Me.btnCambiarEstado.Location = New System.Drawing.Point(327, 598)
         Me.btnCambiarEstado.Name = "btnCambiarEstado"
         Me.btnCambiarEstado.Size = New System.Drawing.Size(172, 75)
         Me.btnCambiarEstado.TabIndex = 8
@@ -368,7 +369,7 @@ Partial Class frmPacientes
         Me.btnModificarDatos.ForeColor = System.Drawing.Color.Black
         Me.btnModificarDatos.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
         Me.btnModificarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModificarDatos.Location = New System.Drawing.Point(513, 561)
+        Me.btnModificarDatos.Location = New System.Drawing.Point(328, 517)
         Me.btnModificarDatos.Name = "btnModificarDatos"
         Me.btnModificarDatos.Size = New System.Drawing.Size(171, 75)
         Me.btnModificarDatos.TabIndex = 7
@@ -383,7 +384,7 @@ Partial Class frmPacientes
         Me.btnIngresarPaciente.ForeColor = System.Drawing.Color.Black
         Me.btnIngresarPaciente.Image = Global.WindowsApplication1.My.Resources.Resources.add_user_icon_icons__2_
         Me.btnIngresarPaciente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIngresarPaciente.Location = New System.Drawing.Point(31, 561)
+        Me.btnIngresarPaciente.Location = New System.Drawing.Point(28, 517)
         Me.btnIngresarPaciente.Name = "btnIngresarPaciente"
         Me.btnIngresarPaciente.Size = New System.Drawing.Size(178, 75)
         Me.btnIngresarPaciente.TabIndex = 0
@@ -466,12 +467,28 @@ Partial Class frmPacientes
         Me.btnCambiarPacientes.Text = "Mostrar Pacientes Inactivos"
         Me.btnCambiarPacientes.UseVisualStyleBackColor = True
         '
+        'btnTratamiento
+        '
+        Me.btnTratamiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTratamiento.ForeColor = System.Drawing.Color.Black
+        Me.btnTratamiento.Image = Global.WindowsApplication1.My.Resources.Resources._675024_delete_512x512_1_
+        Me.btnTratamiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnTratamiento.Location = New System.Drawing.Point(659, 529)
+        Me.btnTratamiento.Name = "btnTratamiento"
+        Me.btnTratamiento.Size = New System.Drawing.Size(205, 72)
+        Me.btnTratamiento.TabIndex = 21
+        Me.btnTratamiento.Text = "Plan Tratamiento"
+        Me.btnTratamiento.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnTratamiento.UseVisualStyleBackColor = True
+        Me.btnTratamiento.Visible = False
+        '
         'frmPacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1179, 684)
+        Me.Controls.Add(Me.btnTratamiento)
         Me.Controls.Add(Me.pnlTapa)
         Me.Controls.Add(Me.btnCambiarPacientes)
         Me.Controls.Add(Me.dgvFiltro)
@@ -530,5 +547,6 @@ Partial Class frmPacientes
     Friend WithEvents btnCambiarPacientes As System.Windows.Forms.Button
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents lblEstado As System.Windows.Forms.Label
+    Friend WithEvents btnTratamiento As System.Windows.Forms.Button
 
 End Class

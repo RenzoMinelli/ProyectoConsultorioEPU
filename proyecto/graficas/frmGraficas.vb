@@ -872,4 +872,7 @@
     End Sub
 
 
+    Private Sub grafica_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles grafica.Click
+
+    End Sub
 End Class

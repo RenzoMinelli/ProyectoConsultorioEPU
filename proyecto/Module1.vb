@@ -12,7 +12,7 @@ Module Module1
     Public MysqlConexion As MySqlConnection
 
     Public conex As Boolean
-
+    Public ver As Integer = 0
     Public id_p As Integer
 
     Public frmContenedor As New Form

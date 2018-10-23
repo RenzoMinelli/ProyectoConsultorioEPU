@@ -103,7 +103,7 @@
         btnModificarDatos.Visible = False
         btnRegistroMedico.Visible = False
         btnRealizarPago.Visible = False
-
+        btnTratamiento.Visible = False
 
             btnIngresarPaciente.Visible = True
 
@@ -195,7 +195,7 @@
         btnMostrarAntecedentes.Show()
         btnRegistroMedico.Show()
         btnRealizarPago.Show()
-
+        btnTratamiento.Show()
 
 
         'Guardamos en las variables los datos acordes
@@ -469,4 +469,13 @@
 
 
   
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTratamiento.Click
+
+        ver = 1
+        Me.Hide()
+        frmContenedor = frmPlanTratamiento
+        frmContenedor.MdiParent = frmMenuInicio
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+    End Sub
 End Class

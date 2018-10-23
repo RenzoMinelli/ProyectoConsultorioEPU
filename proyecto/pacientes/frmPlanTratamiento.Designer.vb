@@ -210,7 +210,7 @@ Partial Class frmPlanTratamiento
         '
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(327, 571)
+        Me.btnGuardar.Location = New System.Drawing.Point(390, 571)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(130, 70)
         Me.btnGuardar.TabIndex = 8
@@ -323,7 +323,7 @@ Partial Class frmPlanTratamiento
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(114, 571)
+        Me.Button1.Location = New System.Drawing.Point(82, 571)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(130, 70)
         Me.Button1.TabIndex = 57

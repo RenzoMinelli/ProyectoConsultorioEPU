@@ -356,8 +356,20 @@ Public Class frmPlanTratamiento
     End Function
 
     Private Sub Button1_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+
         Me.Dispose()
-        frmMarcarCitaConcluida.Show()
+
+        If ver = 1 Then
+
+            frmPacientes.Show()
+            ver = 0
+        Else
+
+            frmMarcarCitaConcluida.Show()
+        End If
+
+
     End Sub
 
   
