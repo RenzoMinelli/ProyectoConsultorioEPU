@@ -43,7 +43,6 @@
 
         PnlSubmenu3d.Visible = False
         Pnl3d.Visible = True
-        PnlTipo.Visible = True
         PnlGrafica.Visible = True
         PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y - 464)
         If edadespacientes = 0 Then
@@ -551,25 +550,11 @@
         Pnl3d.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub PnlTipo_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlTipo.MouseEnter
-        PnlTipo.BackColor = Color.MidnightBlue
-    End Sub
-
-    Private Sub PnlTipo_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlTipo.MouseLeave
-        PnlTipo.BackColor = Color.RoyalBlue
-    End Sub
 
     Private Sub PnlGrafica_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlGrafica.MouseLeave
         PnlGrafica.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub LblTipo_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblTipo.MouseEnter
-        PnlTipo.BackColor = Color.MidnightBlue
-    End Sub
-
-    Private Sub LblTipo_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblTipo.MouseLeave
-        PnlTipo.BackColor = Color.RoyalBlue
-    End Sub
 
     Private Sub LblGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblGrafica.MouseEnter
         PnlGrafica.BackColor = Color.MidnightBlue
@@ -843,7 +828,7 @@
     End Sub
 
     Private Sub LblOp3_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles LblOp3.MouseClick
-        grafica.ChartAreas(0).Area3DStyle.Rotation = 10
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 30
     End Sub
 
     Private Sub PnlOp3_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlOp3.MouseClick
@@ -871,8 +856,4 @@
 
     End Sub
 
-
-    Private Sub grafica_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles grafica.Click
-
-    End Sub
 End Class
