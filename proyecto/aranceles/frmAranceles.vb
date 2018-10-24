@@ -72,4 +72,11 @@
     End Sub
 
 
+
+    Private Sub WaterMarkTextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBuscarArancel.TextChanged
+        Dim busqueda As String = txbBuscarArancel.Text
+        Consulta = "select * from aranceles where descripcion like '" + busqueda + "%'"
+        consultar()
+        DataGridView1.DataSource = Tabla
+    End Sub
 End Class

@@ -1558,7 +1558,7 @@
                 PnlDiente28c4.BackColor = Color.White
                 diente28c4E = "normal"
             Case 1
-                PnlDiente18c4.BackColor = Color.Yellow
+                PnlDiente28c4.BackColor = Color.Yellow
                 diente28c4E = "precaucion"
             Case 2
                 PnlDiente28c4.BackColor = Color.Red
@@ -1677,7 +1677,7 @@
     End Sub
 
     Private Sub PnlDiente27c3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente27c3.Click
-        diente27c3 = diente17c3 + 1
+        diente27c3 = diente27c3 + 1
         cambiador27c3 = True
 
         Select Case diente27c3
