@@ -12,12 +12,12 @@
 
 
 
-        ' Me.WindowState = FormWindowState.Maximized
-        'pbMaximizar.Image = My.Resources.img_509774_1_
-        'pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
-        'pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
-        'pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
-
+        Me.WindowState = FormWindowState.Maximized
+        pbMaximizar.Image = My.Resources.img_509774_1_
+        pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
+        pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
+        pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
+        con = 1
 
         xf = Me.Location.X
         yf = Me.Location.Y
@@ -57,10 +57,10 @@
 
         If conex = True Then
 
-            PictureBox6.Image = My.Resources._70002
+            pbConexion.Image = My.Resources._70002
         Else
 
-            PictureBox6.Image = My.Resources.letterx_87521
+            pbConexion.Image = My.Resources.letterx_87521
         End If
 
 
@@ -324,7 +324,7 @@
         If con = 1 Then
 
             Me.Width = 1350
-            Me.Height = 919
+            Me.Height = 729
 
             Me.WindowState = FormWindowState.Normal
             pbMaximizar.Image = My.Resources.maximize_window_1_
@@ -379,4 +379,7 @@
     End Sub
 
 
+    Private Sub pnlMenu_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlMenu.Paint
+
+    End Sub
 End Class

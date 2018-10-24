@@ -41,7 +41,7 @@ Partial Class frmMenuInicio
         Me.pnlFinanzas2 = New System.Windows.Forms.Panel()
         Me.pnlGraficas2 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.pbConexion = New System.Windows.Forms.PictureBox()
         Me.pnlGraficas = New System.Windows.Forms.Panel()
         Me.pbGraficas = New System.Windows.Forms.PictureBox()
         Me.lblGraficas = New System.Windows.Forms.Label()
@@ -61,7 +61,7 @@ Partial Class frmMenuInicio
         Me.pnlCitas.SuspendLayout()
         CType(Me.pbCitas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbConexion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlGraficas.SuspendLayout()
         CType(Me.pbGraficas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlFinanzas.SuspendLayout()
@@ -229,21 +229,21 @@ Partial Class frmMenuInicio
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel8.Controls.Add(Me.PictureBox6)
+        Me.Panel8.Controls.Add(Me.pbConexion)
         Me.Panel8.Controls.Add(Me.lblReloj)
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(182, 38)
         Me.Panel8.TabIndex = 20
         '
-        'PictureBox6
+        'pbConexion
         '
-        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
-        Me.PictureBox6.Location = New System.Drawing.Point(146, 6)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(25, 29)
-        Me.PictureBox6.TabIndex = 15
-        Me.PictureBox6.TabStop = False
+        Me.pbConexion.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
+        Me.pbConexion.Location = New System.Drawing.Point(146, 6)
+        Me.pbConexion.Name = "pbConexion"
+        Me.pbConexion.Size = New System.Drawing.Size(25, 29)
+        Me.pbConexion.TabIndex = 15
+        Me.pbConexion.TabStop = False
         '
         'pnlGraficas
         '
@@ -380,7 +380,7 @@ Partial Class frmMenuInicio
         CType(Me.pbCitas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         Me.Panel8.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbConexion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlGraficas.ResumeLayout(False)
         Me.pnlGraficas.PerformLayout()
         CType(Me.pbGraficas, System.ComponentModel.ISupportInitialize).EndInit()
@@ -418,7 +418,7 @@ Partial Class frmMenuInicio
     Friend WithEvents pbAranceles As System.Windows.Forms.PictureBox
     Friend WithEvents pnlMenu As System.Windows.Forms.Panel
     Friend WithEvents lblGraficas As System.Windows.Forms.Label
-    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbConexion As System.Windows.Forms.PictureBox
     Friend WithEvents pbFinanzas As System.Windows.Forms.PictureBox
     Friend WithEvents pbCitas As System.Windows.Forms.PictureBox
     Friend WithEvents pbGraficas As System.Windows.Forms.PictureBox

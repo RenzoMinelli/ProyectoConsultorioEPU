@@ -31,9 +31,11 @@ Partial Class frmLogin
         Me.btnAtras = New System.Windows.Forms.Button()
         Me.pnlBarra = New System.Windows.Forms.Panel()
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
+        Me.pbConexion = New System.Windows.Forms.PictureBox()
         CType(Me.dgbcontraseña, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlBarra.SuspendLayout()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbConexion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnfuncionario
@@ -125,11 +127,22 @@ Partial Class frmLogin
         Me.pbCerrar.TabIndex = 19
         Me.pbCerrar.TabStop = False
         '
+        'pbConexion
+        '
+        Me.pbConexion.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
+        Me.pbConexion.Location = New System.Drawing.Point(222, 398)
+        Me.pbConexion.Name = "pbConexion"
+        Me.pbConexion.Size = New System.Drawing.Size(39, 41)
+        Me.pbConexion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbConexion.TabIndex = 16
+        Me.pbConexion.TabStop = False
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(495, 460)
+        Me.Controls.Add(Me.pbConexion)
         Me.Controls.Add(Me.pnlBarra)
         Me.Controls.Add(Me.btnAtras)
         Me.Controls.Add(Me.btningresar)
@@ -144,6 +157,7 @@ Partial Class frmLogin
         Me.pnlBarra.ResumeLayout(False)
         Me.pnlBarra.PerformLayout()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbConexion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -157,4 +171,5 @@ Partial Class frmLogin
     Friend WithEvents btnAtras As System.Windows.Forms.Button
     Friend WithEvents pnlBarra As System.Windows.Forms.Panel
     Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
+    Friend WithEvents pbConexion As System.Windows.Forms.PictureBox
 End Class

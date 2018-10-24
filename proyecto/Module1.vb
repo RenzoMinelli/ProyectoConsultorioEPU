@@ -6,10 +6,10 @@ Module Module1
     Public pass As String = ""
     Dim ubicacion As String = "server=localhost; user id= 'root'  ; password='';database = consultorio"
 
-    Public Conexion As MySqlDataAdapter
+    Public Conexion As MySqlDataAdapter = New MySqlDataAdapter
     Public Tabla As DataTable
     Public Consulta As String
-    Public MysqlConexion As MySqlConnection
+    Public MysqlConexion As MySqlConnection = New MySqlConnection(ubicacion)
 
     Public conex As Boolean
     Public ver As Integer = 0

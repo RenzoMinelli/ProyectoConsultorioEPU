@@ -78,14 +78,17 @@
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        'Consulta = "select * from paciente"
-        'consultar()
+        Consulta = "select * from paciente"
+        consultar()
 
-        'If conex = False Then
+        If conex = False Then
 
-        '    MsgBox("No hay conexión a la base de datos", MsgBoxStyle.Exclamation)
+            MsgBox("No hay conexión a la base de datos", MsgBoxStyle.Exclamation)
+            pbConexion.Image = My.Resources.letterx_87521
+        Else
+            pbConexion.Image = My.Resources._70002
 
-        'End If
+        End If
 
         btningresar.Visible = False
         btnAtras.Visible = False

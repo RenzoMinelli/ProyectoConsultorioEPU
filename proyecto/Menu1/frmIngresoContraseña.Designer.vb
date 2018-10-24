@@ -29,9 +29,9 @@ Partial Class frmIngresoContraseña
         Me.lblrepcontraseña = New System.Windows.Forms.Label()
         Me.lblexplicacion = New System.Windows.Forms.Label()
         Me.lblhack = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlBarra = New System.Windows.Forms.Panel()
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
-        Me.Panel1.SuspendLayout()
+        Me.pnlBarra.SuspendLayout()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,7 +85,7 @@ Partial Class frmIngresoContraseña
         '
         Me.lblexplicacion.AutoSize = True
         Me.lblexplicacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblexplicacion.Location = New System.Drawing.Point(25, 44)
+        Me.lblexplicacion.Location = New System.Drawing.Point(12, 58)
         Me.lblexplicacion.Name = "lblexplicacion"
         Me.lblexplicacion.Size = New System.Drawing.Size(578, 145)
         Me.lblexplicacion.TabIndex = 5
@@ -96,21 +96,21 @@ Partial Class frmIngresoContraseña
         '
         Me.lblhack.AutoSize = True
         Me.lblhack.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.lblhack.Location = New System.Drawing.Point(120, 136)
+        Me.lblhack.Location = New System.Drawing.Point(109, 174)
         Me.lblhack.Name = "lblhack"
         Me.lblhack.Size = New System.Drawing.Size(151, 29)
         Me.lblhack.TabIndex = 6
         Me.lblhack.Text = "Odontologo"
         '
-        'Panel1
+        'pnlBarra
         '
-        Me.Panel1.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel1.Controls.Add(Me.pbCerrar)
-        Me.Panel1.Location = New System.Drawing.Point(2, 1)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(614, 41)
-        Me.Panel1.TabIndex = 7
+        Me.pnlBarra.BackColor = System.Drawing.Color.RoyalBlue
+        Me.pnlBarra.Controls.Add(Me.pbCerrar)
+        Me.pnlBarra.Location = New System.Drawing.Point(2, 1)
+        Me.pnlBarra.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlBarra.Name = "pnlBarra"
+        Me.pnlBarra.Size = New System.Drawing.Size(614, 41)
+        Me.pnlBarra.TabIndex = 7
         '
         'pbCerrar
         '
@@ -126,9 +126,9 @@ Partial Class frmIngresoContraseña
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(615, 469)
-        Me.Controls.Add(Me.lblexplicacion)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lblhack)
+        Me.Controls.Add(Me.lblexplicacion)
+        Me.Controls.Add(Me.pnlBarra)
         Me.Controls.Add(Me.lblrepcontraseña)
         Me.Controls.Add(Me.lblcontraseña)
         Me.Controls.Add(Me.txtrepcontraseña)
@@ -138,7 +138,7 @@ Partial Class frmIngresoContraseña
         Me.Name = "frmIngresoContraseña"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ingreso_contraseña"
-        Me.Panel1.ResumeLayout(False)
+        Me.pnlBarra.ResumeLayout(False)
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -151,6 +151,6 @@ Partial Class frmIngresoContraseña
     Friend WithEvents lblrepcontraseña As System.Windows.Forms.Label
     Friend WithEvents lblexplicacion As System.Windows.Forms.Label
     Friend WithEvents lblhack As System.Windows.Forms.Label
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents pnlBarra As System.Windows.Forms.Panel
     Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
 End Class
