@@ -322,11 +322,19 @@ Public Class frmPlanTratamiento
             If SetupThePrinting() Then
                 PrintDocument1.Print()
             End If
+
+
         Catch ex As Exception
             MsgBox("Error al obtener presupuesto", MsgBoxStyle.Exclamation)
         End Try
 
 
+    End Sub
+    Private Sub PrintDocument1_PrintPage(ByVal sender As System.Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        Dim more As Boolean = MyDataGridViewPrinter.DrawDataGridView(e.Graphics)
+        If more = True Then
+            e.HasMorePages = True
+        End If
     End Sub
 
 

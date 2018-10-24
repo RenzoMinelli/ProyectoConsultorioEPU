@@ -261,30 +261,21 @@
         'Cuando el contenido de txbBusqueda cambia, guardamos lo ingresado en la variable busqueda
         Dim busqueda As String = txbBusqueda.Text
 
-        'Si el txbBusqueda es igual a 'Buscar' y es de color Gris
-        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
 
-            'Que actualice el dgbPaciente simplemente
-            actTabla(EstadoPacientes)
+        'Intentamos obtener los pacientes que cumplan con las condición
+        Try
 
-        Else 'Si no
+            Consulta = "SELECT id_p, cedula, fecha_nacimiento, concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'nombre', telefono, concat(upper(left(enviado_por,1)), lower(substring(enviado_por from 2))) as 'enviado_por', concat(upper(left(direccion_particular,1)), lower(substring(direccion_particular from 2))) as 'direccion_particular', concat(upper(left(direccion_trabajo,1)), lower(substring(direccion_trabajo from 2))) as 'direccion_trabajo', saldo, estado from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + busqueda + "%' or cedula like '" + busqueda + "%' or apellido like '" + busqueda + "%' );"
 
-            'Intentamos obtener los pacientes que cumplan con las condición
-            Try
+            consultar()
+            dgvPacientes.DataSource = Tabla
 
-                Consulta = "SELECT id_p, cedula, fecha_nacimiento, concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'nombre', telefono, concat(upper(left(enviado_por,1)), lower(substring(enviado_por from 2))) as 'enviado_por', concat(upper(left(direccion_particular,1)), lower(substring(direccion_particular from 2))) as 'direccion_particular', concat(upper(left(direccion_trabajo,1)), lower(substring(direccion_trabajo from 2))) as 'direccion_trabajo', saldo, estado from paciente where estado = '" + EstadoPacientes.ToString + "' and (nombre like '" + busqueda + "%' or cedula like '" + busqueda + "%' or apellido like '" + busqueda + "%' );"
+        Catch ex As Exception
 
-                consultar()
-                dgvPacientes.DataSource = Tabla
+            'Si se genera una excepción que se muestre una alerta
+            MsgBox("Error al buscar los pacientes", MsgBoxStyle.Exclamation)
 
-            Catch ex As Exception
-
-                'Si se genera una excepción que se muestre una alerta
-                MsgBox("Error al buscar los pacientes", MsgBoxStyle.Exclamation)
-
-            End Try
-
-        End If
+        End Try
 
     End Sub
 
