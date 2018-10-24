@@ -166,15 +166,16 @@ Partial Class pnlfondo
         Me.PnlDiente16c4 = New System.Windows.Forms.Panel()
         Me.PnlDiente18c1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel01477.SuspendLayout()
         Me.SuspendLayout()
         '
         'bttoningrdientes
         '
-        Me.bttoningrdientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bttoningrdientes.Location = New System.Drawing.Point(221, 478)
+        Me.bttoningrdientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bttoningrdientes.Location = New System.Drawing.Point(469, 525)
         Me.bttoningrdientes.Name = "bttoningrdientes"
-        Me.bttoningrdientes.Size = New System.Drawing.Size(440, 96)
+        Me.bttoningrdientes.Size = New System.Drawing.Size(321, 49)
         Me.bttoningrdientes.TabIndex = 0
         Me.bttoningrdientes.Text = "Ingresar Estado Dientes"
         Me.bttoningrdientes.UseVisualStyleBackColor = True
@@ -1342,11 +1343,22 @@ Partial Class pnlfondo
         Me.Panel2.Size = New System.Drawing.Size(915, 192)
         Me.Panel2.TabIndex = 54
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(65, 525)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(117, 49)
+        Me.Button1.TabIndex = 274
+        Me.Button1.Text = "Atras"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'pnlfondo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(873, 596)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pnlDiente38c1)
         Me.Controls.Add(Me.PnlDiente41c1)
         Me.Controls.Add(Me.pnlDiente38c3)
@@ -1634,4 +1646,5 @@ Partial Class pnlfondo
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Panel20 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

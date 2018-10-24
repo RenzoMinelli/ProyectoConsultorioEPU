@@ -7,7 +7,7 @@ Public Class frmRegistroMedico
 
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        dgvEstadoDiente.Hide()
+        ' dgvEstadoDiente.Hide()
 
         PnlDiente18c1.MakeTriangular(TriangleDirection.Down)
         PnlDiente18c3.MakeTriangular(TriangleDirection.Up)
@@ -368,45 +368,15 @@ Public Class frmRegistroMedico
         cbTratamientos.SelectedIndex = 1
     End Sub
 
-    Private Sub cargar()
-        dgvRegistroMedico.DataSource = Nothing
-
-        Dim vista As New DataGridViewImageColumn
-        vista.Name = "vista"
-        vista.ImageLayout = DataGridViewImageCellLayout.Normal
-        dgvRegistroMedico.Columns.Add(vista)
-
-        Dim filas As Integer
-        Dim ruta As String
-
-        Try
-            Consulta = ("SELECT  nombre, descripcion FROM documentos where id_p = '" + id_p.ToString + "'")
-            consultar()
-
-            dgvRegistroMedico.DataSource = Tabla
-            dgvRegistroMedico.Columns(1).Visible = False
-            filas = dgvRegistroMedico.Rows.Count - 1
-            For i As Integer = 0 To filas
-                ruta = dgvRegistroMedico.Rows(i).Cells(1).Value.ToString()
-                dgvRegistroMedico.Rows(i).Cells(0).Value = System.Drawing.Image.FromFile(rutaGuardadoFotos + "\" + dgvRegistroMedico.Rows(i).Cells(1).Value.ToString())
-                dgvRegistroMedico.Rows(i).Height = 10
-
-            Next
-            dgvRegistroMedico.Columns(0).Width = 300
-        Catch ex As Exception
-            MsgBox("Error al obtener las imagenes", MsgBoxStyle.Exclamation)
-        End Try
-    End Sub
-
+    
     Private Sub odontograma2()
         Try
-
+            cambiarUsuario("root", "")
             Consulta = "select * from estado_dientes where id_p = '" + id_p.ToString + "'   order by fecha asc;"
-
-
             consultar()
             dgvEstadoDiente.DataSource = Tabla
 
+            
             Dim zona As String = ""
 
 
@@ -2002,7 +1972,7 @@ Public Class frmRegistroMedico
 
             Next
         Catch ex As Exception
-            MsgBox("No hay datos dientes")
+            MsgBox("No hay datos dientes" + ex.ToString, MsgBoxStyle.Exclamation)
         End Try
 
     End Sub
