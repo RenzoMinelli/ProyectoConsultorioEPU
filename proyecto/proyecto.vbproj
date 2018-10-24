@@ -194,10 +194,13 @@
     <Compile Include="pacientes\frmAntecedentes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFondoTransparente.Designer.vb">
+    <Compile Include="Utilidades\WaterMarkTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utilidades\frmFondoTransparente.Designer.vb">
       <DependentUpon>frmFondoTransparente.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmFondoTransparente.vb">
+    <Compile Include="Utilidades\frmFondoTransparente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="pacientes\frmModificarAntecedentes.Designer.vb">
@@ -212,10 +215,10 @@
     <Compile Include="pacientes\frmModificarPaciente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MsgBoxVersatil.Designer.vb">
+    <Compile Include="Utilidades\MsgBoxVersatil.Designer.vb">
       <DependentUpon>MsgBoxVersatil.vb</DependentUpon>
     </Compile>
-    <Compile Include="MsgBoxVersatil.vb">
+    <Compile Include="Utilidades\MsgBoxVersatil.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="pacientes\frmPacientes.vb">
@@ -304,7 +307,7 @@
     <EmbeddedResource Include="pacientes\frmAntecedentes.resx">
       <DependentUpon>frmAntecedentes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFondoTransparente.resx">
+    <EmbeddedResource Include="Utilidades\frmFondoTransparente.resx">
       <DependentUpon>frmFondoTransparente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\frmModificarAntecedentes.resx">
@@ -313,7 +316,7 @@
     <EmbeddedResource Include="pacientes\frmModificarPaciente.resx">
       <DependentUpon>frmModificarPaciente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MsgBoxVersatil.resx">
+    <EmbeddedResource Include="Utilidades\MsgBoxVersatil.resx">
       <DependentUpon>MsgBoxVersatil.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pacientes\frmPacientes.resx">

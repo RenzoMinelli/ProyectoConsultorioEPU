@@ -12,9 +12,6 @@
         txbFechaHora.Text = frmCitas.fechaCita + "   " + frmCitas.horaCita
         txbDuracion.Text = "1"
 
-        'Establezco como debe cargar el txbBusqueda
-        txbBusqueda.ForeColor = Color.Gray
-        txbBusqueda.Text = "Buscar"
 
         id_p = 0
 
@@ -188,7 +185,7 @@
         Me.Dispose()
     End Sub
 
-    Private Sub txbBusqueda_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.Click
+    Private Sub txbBusqueda_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
         'Si el contenido de txbBusqueda es Buscar y de color gris
         If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
@@ -200,43 +197,19 @@
 
     End Sub
 
-    Private Sub txbBusqueda_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.GotFocus
-
-        'Si el contenido de txbBusqueda es Buscar y de color gris
-        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
-
-            'El cursos se ubique al inicio
-            txbBusqueda.SelectionStart = 0
-
-        End If
-
-    End Sub
 
     Private Sub txbBusqueda_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txbBusqueda.KeyDown
 
         'Si el contenido de txbBusqueda es Buscar, de color gris y la tecla presionada no es 
-        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray And Not e.KeyCode = Keys.Back Then
+        If e.KeyCode = Keys.Back And txbBusqueda.Text.Length = 1 Then
 
-            'Borrar el contenido del txbBusqueda y volver el color negro
-            txbBusqueda.Text = ""
-            txbBusqueda.ForeColor = Color.Black
-
-
-            'Si txbBusqueda solo tiene una letra y la tecla presionada fue borrar, 
-        ElseIf e.KeyCode = Keys.Back And txbBusqueda.Text.Length = 1 Then
-
-            'Introduzco el texto 'Buscar' al txbBusqueda de color Gris
-            txbBusqueda.Text = "Buscar"
-            txbBusqueda.ForeColor = Color.Gray
             actTabla()
 
 
             'Si la tecla presionada es borrar y todo el texto esta seleccionado
         ElseIf e.KeyCode = Keys.Back And txbBusqueda.SelectedText = txbBusqueda.Text Then
 
-            'Introduzco el texto 'Buscar' al txbBusqueda de color Gris
-            txbBusqueda.Text = "Buscar"
-            txbBusqueda.ForeColor = Color.Gray
+
             actTabla()
 
         End If
@@ -285,4 +258,5 @@
 
         End Try
     End Sub
+
 End Class

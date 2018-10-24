@@ -48,7 +48,6 @@ Partial Class frmPacientes
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlTapa = New System.Windows.Forms.Panel()
         Me.lblCartel = New System.Windows.Forms.Label()
-        Me.txbBusqueda = New System.Windows.Forms.TextBox()
         Me.btnRegistroMedico = New System.Windows.Forms.Button()
         Me.btnCambiarEstado = New System.Windows.Forms.Button()
         Me.btnModificarDatos = New System.Windows.Forms.Button()
@@ -58,6 +57,7 @@ Partial Class frmPacientes
         Me.dgvFiltro = New System.Windows.Forms.DataGridView()
         Me.btnCambiarPacientes = New System.Windows.Forms.Button()
         Me.btnTratamiento = New System.Windows.Forms.Button()
+        Me.txbBusqueda = New WindowsApplication1.WaterMarkTextBox()
         Me.Panel1.SuspendLayout()
         Me.pnlTapa.SuspendLayout()
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -325,14 +325,6 @@ Partial Class frmPacientes
         Me.lblCartel.TabIndex = 0
         Me.lblCartel.Text = "SELECCIONE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "UN PACIENTE"
         '
-        'txbBusqueda
-        '
-        Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbBusqueda.Location = New System.Drawing.Point(17, 22)
-        Me.txbBusqueda.Name = "txbBusqueda"
-        Me.txbBusqueda.Size = New System.Drawing.Size(515, 35)
-        Me.txbBusqueda.TabIndex = 13
-        '
         'btnRegistroMedico
         '
         Me.btnRegistroMedico.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -482,12 +474,23 @@ Partial Class frmPacientes
         Me.btnTratamiento.UseVisualStyleBackColor = True
         Me.btnTratamiento.Visible = False
         '
+        'txbBusqueda
+        '
+        Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbBusqueda.Location = New System.Drawing.Point(17, 22)
+        Me.txbBusqueda.Name = "txbBusqueda"
+        Me.txbBusqueda.Size = New System.Drawing.Size(515, 35)
+        Me.txbBusqueda.TabIndex = 22
+        Me.txbBusqueda.WaterMarkColor = System.Drawing.Color.Gray
+        Me.txbBusqueda.WaterMarkText = "Buscar"
+        '
         'frmPacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1179, 684)
+        Me.Controls.Add(Me.txbBusqueda)
         Me.Controls.Add(Me.btnTratamiento)
         Me.Controls.Add(Me.pnlTapa)
         Me.Controls.Add(Me.btnCambiarPacientes)
@@ -495,7 +498,6 @@ Partial Class frmPacientes
         Me.Controls.Add(Me.btnRealizarPago)
         Me.Controls.Add(Me.dgvPacientes)
         Me.Controls.Add(Me.btnRegistroMedico)
-        Me.Controls.Add(Me.txbBusqueda)
         Me.Controls.Add(Me.btnCambiarEstado)
         Me.Controls.Add(Me.btnModificarDatos)
         Me.Controls.Add(Me.Panel1)
@@ -534,7 +536,6 @@ Partial Class frmPacientes
     Friend WithEvents pnlTapa As System.Windows.Forms.Panel
     Friend WithEvents btnModificarDatos As System.Windows.Forms.Button
     Friend WithEvents btnCambiarEstado As System.Windows.Forms.Button
-    Friend WithEvents txbBusqueda As System.Windows.Forms.TextBox
     Friend WithEvents btnRegistroMedico As System.Windows.Forms.Button
     Friend WithEvents btnMostrarAntecedentes As System.Windows.Forms.Button
     Friend WithEvents dgvPacientes As System.Windows.Forms.DataGridView
@@ -548,5 +549,6 @@ Partial Class frmPacientes
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents lblEstado As System.Windows.Forms.Label
     Friend WithEvents btnTratamiento As System.Windows.Forms.Button
+    Friend WithEvents txbBusqueda As WindowsApplication1.WaterMarkTextBox
 
 End Class
