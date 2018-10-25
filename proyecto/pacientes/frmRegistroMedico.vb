@@ -364,6 +364,7 @@ Public Class frmRegistroMedico
         odontograma2()
 
         cbTratamientos.SelectedIndex = 0
+        '  PnlDiente2_21c2.Parent = Panel5
     End Sub
 
     
