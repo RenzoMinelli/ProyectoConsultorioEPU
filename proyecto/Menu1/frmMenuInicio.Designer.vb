@@ -23,7 +23,7 @@ Partial Class frmMenuInicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrReloj = New System.Windows.Forms.Timer(Me.components)
         Me.pnlBarraSuperior = New System.Windows.Forms.Panel()
         Me.pbMaximizar = New System.Windows.Forms.PictureBox()
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
@@ -71,9 +71,9 @@ Partial Class frmMenuInicio
         Me.pnlMenu.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Timer1
+        'tmrReloj
         '
-        Me.Timer1.Enabled = True
+        Me.tmrReloj.Enabled = True
         '
         'pnlBarraSuperior
         '
@@ -89,7 +89,7 @@ Partial Class frmMenuInicio
         '
         'pbMaximizar
         '
-        Me.pbMaximizar.Image = Global.WindowsApplication1.My.Resources.Resources.maximize_window_1_
+        Me.pbMaximizar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoVistaMaximizar
         Me.pbMaximizar.Location = New System.Drawing.Point(1071, 6)
         Me.pbMaximizar.Name = "pbMaximizar"
         Me.pbMaximizar.Size = New System.Drawing.Size(28, 29)
@@ -98,7 +98,7 @@ Partial Class frmMenuInicio
         '
         'pbCerrar
         '
-        Me.pbCerrar.Image = Global.WindowsApplication1.My.Resources.Resources.media_1_
+        Me.pbCerrar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoCerrar2
         Me.pbCerrar.Location = New System.Drawing.Point(1105, 6)
         Me.pbCerrar.Name = "pbCerrar"
         Me.pbCerrar.Size = New System.Drawing.Size(27, 32)
@@ -107,7 +107,7 @@ Partial Class frmMenuInicio
         '
         'pbMinimizar
         '
-        Me.pbMinimizar.Image = Global.WindowsApplication1.My.Resources.Resources.minimize_window
+        Me.pbMinimizar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoMinimizar
         Me.pbMinimizar.Location = New System.Drawing.Point(1034, 6)
         Me.pbMinimizar.Name = "pbMinimizar"
         Me.pbMinimizar.Size = New System.Drawing.Size(28, 32)
@@ -138,7 +138,7 @@ Partial Class frmMenuInicio
         '
         'pbPacientes
         '
-        Me.pbPacientes.Image = Global.WindowsApplication1.My.Resources.Resources._25437
+        Me.pbPacientes.Image = Global.WindowsApplication1.My.Resources.Resources.IconoPacientes
         Me.pbPacientes.Location = New System.Drawing.Point(6, 2)
         Me.pbPacientes.Name = "pbPacientes"
         Me.pbPacientes.Size = New System.Drawing.Size(27, 32)
@@ -257,7 +257,7 @@ Partial Class frmMenuInicio
         '
         'pbGraficas
         '
-        Me.pbGraficas.Image = Global.WindowsApplication1.My.Resources.Resources._20803
+        Me.pbGraficas.Image = Global.WindowsApplication1.My.Resources.Resources.IconoGraficas
         Me.pbGraficas.Location = New System.Drawing.Point(6, 2)
         Me.pbGraficas.Name = "pbGraficas"
         Me.pbGraficas.Size = New System.Drawing.Size(27, 32)
@@ -287,7 +287,7 @@ Partial Class frmMenuInicio
         '
         'pbFinanzas
         '
-        Me.pbFinanzas.Image = Global.WindowsApplication1.My.Resources.Resources._64979
+        Me.pbFinanzas.Image = Global.WindowsApplication1.My.Resources.Resources.IconoFinazas
         Me.pbFinanzas.Location = New System.Drawing.Point(7, 2)
         Me.pbFinanzas.Name = "pbFinanzas"
         Me.pbFinanzas.Size = New System.Drawing.Size(27, 32)
@@ -328,7 +328,7 @@ Partial Class frmMenuInicio
         '
         'pbAranceles
         '
-        Me.pbAranceles.Image = Global.WindowsApplication1.My.Resources.Resources.money_bag
+        Me.pbAranceles.Image = Global.WindowsApplication1.My.Resources.Resources.IconoAranceles
         Me.pbAranceles.Location = New System.Drawing.Point(6, 3)
         Me.pbAranceles.Name = "pbAranceles"
         Me.pbAranceles.Size = New System.Drawing.Size(27, 32)
@@ -394,7 +394,7 @@ Partial Class frmMenuInicio
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents tmrReloj As System.Windows.Forms.Timer
     Friend WithEvents pnlBarraSuperior As System.Windows.Forms.Panel
     Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
     Friend WithEvents pbMinimizar As System.Windows.Forms.PictureBox

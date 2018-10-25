@@ -123,7 +123,7 @@ Partial Class frmIngresoContraseña
         '
         'pbCerrar
         '
-        Me.pbCerrar.Image = Global.WindowsApplication1.My.Resources.Resources.media_1_
+        Me.pbCerrar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoCerrar2
         Me.pbCerrar.Location = New System.Drawing.Point(765, 10)
         Me.pbCerrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pbCerrar.Name = "pbCerrar"

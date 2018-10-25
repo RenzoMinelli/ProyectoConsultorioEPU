@@ -329,7 +329,7 @@ Partial Class frmPacientes
         '
         Me.btnRegistroMedico.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegistroMedico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnRegistroMedico.Image = Global.WindowsApplication1.My.Resources.Resources._104901_1_
+        Me.btnRegistroMedico.Image = Global.WindowsApplication1.My.Resources.Resources.IconoRegistroMedico
         Me.btnRegistroMedico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnRegistroMedico.Location = New System.Drawing.Point(490, 506)
         Me.btnRegistroMedico.Name = "btnRegistroMedico"
@@ -344,7 +344,7 @@ Partial Class frmPacientes
         '
         Me.btnCambiarEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCambiarEstado.ForeColor = System.Drawing.Color.Black
-        Me.btnCambiarEstado.Image = Global.WindowsApplication1.My.Resources.Resources._675024_delete_512x512_1_
+        Me.btnCambiarEstado.Image = Global.WindowsApplication1.My.Resources.Resources.IconoVolverInactivo
         Me.btnCambiarEstado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCambiarEstado.Location = New System.Drawing.Point(886, 506)
         Me.btnCambiarEstado.Name = "btnCambiarEstado"
@@ -359,7 +359,7 @@ Partial Class frmPacientes
         '
         Me.btnModificarDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarDatos.ForeColor = System.Drawing.Color.Black
-        Me.btnModificarDatos.Image = Global.WindowsApplication1.My.Resources.Resources.Users_Edit_User_icon__1_
+        Me.btnModificarDatos.Image = Global.WindowsApplication1.My.Resources.Resources.IconoModificarUsuario
         Me.btnModificarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnModificarDatos.Location = New System.Drawing.Point(72, 596)
         Me.btnModificarDatos.Name = "btnModificarDatos"
@@ -374,7 +374,7 @@ Partial Class frmPacientes
         '
         Me.btnIngresarPaciente.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIngresarPaciente.ForeColor = System.Drawing.Color.Black
-        Me.btnIngresarPaciente.Image = Global.WindowsApplication1.My.Resources.Resources.add_user_icon_icons__2_
+        Me.btnIngresarPaciente.Image = Global.WindowsApplication1.My.Resources.Resources.IconoAgregarPaciente
         Me.btnIngresarPaciente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIngresarPaciente.Location = New System.Drawing.Point(72, 506)
         Me.btnIngresarPaciente.Name = "btnIngresarPaciente"
@@ -422,7 +422,7 @@ Partial Class frmPacientes
         '
         Me.btnRealizarPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRealizarPago.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnRealizarPago.Image = Global.WindowsApplication1.My.Resources.Resources.fac159a300a5cd5efbd3c544cb37d3b0_1_
+        Me.btnRealizarPago.Image = Global.WindowsApplication1.My.Resources.Resources.IconoMoneda
         Me.btnRealizarPago.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnRealizarPago.Location = New System.Drawing.Point(886, 596)
         Me.btnRealizarPago.Name = "btnRealizarPago"
@@ -463,7 +463,7 @@ Partial Class frmPacientes
         '
         Me.btnTratamiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTratamiento.ForeColor = System.Drawing.Color.Black
-        Me.btnTratamiento.Image = Global.WindowsApplication1.My.Resources.Resources._675024_delete_512x512_1_
+        Me.btnTratamiento.Image = Global.WindowsApplication1.My.Resources.Resources.notebook
         Me.btnTratamiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnTratamiento.Location = New System.Drawing.Point(490, 597)
         Me.btnTratamiento.Name = "btnTratamiento"

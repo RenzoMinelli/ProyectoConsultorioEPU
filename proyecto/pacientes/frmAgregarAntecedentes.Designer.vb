@@ -157,7 +157,7 @@ Partial Class frmAgregarAntecedentes
         'btnAtras
         '
         Me.btnAtras.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAtras.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
+        Me.btnAtras.Image = Global.WindowsApplication1.My.Resources.Resources.IconoFlechaIzquierda
         Me.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAtras.Location = New System.Drawing.Point(584, 439)
         Me.btnAtras.Name = "btnAtras"

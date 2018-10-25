@@ -13,7 +13,7 @@
 
 
         Me.WindowState = FormWindowState.Maximized
-        pbMaximizar.Image = My.Resources.img_509774_1_
+        pbMaximizar.Image = My.Resources.IconoVistaNormal
         pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
         pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
         pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
@@ -57,7 +57,7 @@
 
         If conex = True Then
 
-            pbConexion.Image = My.Resources._70002
+            pbConexion.Image = My.Resources.IconoConexion
         Else
 
             pbConexion.Image = My.Resources.letterx_87521
@@ -111,7 +111,7 @@
 
     End Sub
 
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrReloj.Tick
         lblReloj.Text = Date.Now.ToString("hh:mm:ss")
     End Sub
 
@@ -327,7 +327,7 @@
             Me.Height = 729
 
             Me.WindowState = FormWindowState.Normal
-            pbMaximizar.Image = My.Resources.maximize_window_1_
+            pbMaximizar.Image = My.Resources.IconoVistaMaximizar
             pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
             pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
             pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
@@ -337,7 +337,7 @@
 
         Else
             Me.WindowState = FormWindowState.Maximized
-            pbMaximizar.Image = My.Resources.img_509774_1_
+            pbMaximizar.Image = My.Resources.IconoVistaNormal
             pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
             pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
             pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)

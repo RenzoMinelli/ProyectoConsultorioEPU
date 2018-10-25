@@ -120,7 +120,7 @@ Partial Class frmLogin
         '
         'pbCerrar
         '
-        Me.pbCerrar.Image = Global.WindowsApplication1.My.Resources.Resources.media_1_
+        Me.pbCerrar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoCerrar2
         Me.pbCerrar.Location = New System.Drawing.Point(456, 14)
         Me.pbCerrar.Name = "pbCerrar"
         Me.pbCerrar.Size = New System.Drawing.Size(27, 32)

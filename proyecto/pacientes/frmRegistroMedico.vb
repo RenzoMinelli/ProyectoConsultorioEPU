@@ -7,7 +7,7 @@ Public Class frmRegistroMedico
 
     Private Sub Registro_Medico_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        ' dgvEstadoDiente.Hide()
+        dgvEstadoDiente.Hide()
 
         PnlDiente18c1.MakeTriangular(TriangleDirection.Down)
         PnlDiente18c3.MakeTriangular(TriangleDirection.Up)
@@ -130,7 +130,7 @@ Public Class frmRegistroMedico
         pnlDiente33c4.MakeTriangular(TriangleDirection.Right)
         pnlDiente33c2.MakeTriangular(TriangleDirection.Left)
 
-        pnlDiente32c2.MakeTriangular(TriangleDirection.Up)
+        pnlDiente32c3.MakeTriangular(TriangleDirection.Up)
         pnlDiente32c4.MakeTriangular(TriangleDirection.Right)
         pnlDiente32c2.MakeTriangular(TriangleDirection.Left)
         pnlDiente32c1.MakeTriangular(TriangleDirection.Down)
@@ -305,7 +305,7 @@ Public Class frmRegistroMedico
         PnlDiente2_33c4.MakeTriangular(TriangleDirection.Right)
         PnlDiente2_33c2.MakeTriangular(TriangleDirection.Left)
 
-        PnlDiente2_32c2.MakeTriangular(TriangleDirection.Up)
+        pnlDiente2_32c3.MakeTriangular(TriangleDirection.Up)
         PnlDiente2_32c4.MakeTriangular(TriangleDirection.Right)
         PnlDiente2_32c2.MakeTriangular(TriangleDirection.Left)
         PnlDiente2_32c1.MakeTriangular(TriangleDirection.Down)
@@ -362,10 +362,8 @@ Public Class frmRegistroMedico
 
         odontograma1()
         odontograma2()
-        actTabla()
 
-
-        cbTratamientos.SelectedIndex = 1
+        cbTratamientos.SelectedIndex = 0
     End Sub
 
     
@@ -1984,29 +1982,7 @@ Public Class frmRegistroMedico
     End Sub
 
     Private Sub actTabla()
-        Try
-            Try
-                dgvRegistroMedico.Columns.Remove("vista")
-            Catch ex As Exception
-
-            End Try
-            Consulta = "Select descripcion, fecha, hora, atendida from cita where id_p = '" + Str(id_p) + "' order by fecha desc;"
-            consultar()
-
-            dgvRegistroMedico.DataSource = Tabla
-
-            dgvRegistroMedico.Columns(0).HeaderText = "Descripcion"
-            dgvRegistroMedico.Columns(1).HeaderText = "Fecha"
-            dgvRegistroMedico.Columns(2).HeaderText = "Hora"
-            dgvRegistroMedico.Columns(3).HeaderText = "Atendida"
-
-            dgvRegistroMedico.Columns(1).Width = 70
-            dgvRegistroMedico.Columns(2).Width = 70
-            dgvRegistroMedico.Columns(3).Width = 120
-
-        Catch ex As Exception
-
-        End Try
+        
 
     End Sub
 
@@ -2029,7 +2005,27 @@ Public Class frmRegistroMedico
             Catch ex As Exception
                 MsgBox("Error al obtener registro", MsgBoxStyle.Exclamation)
             End Try
+        ElseIf cbTratamientos.SelectedIndex = 2 Then
 
+            Try
+
+                Consulta = "Select descripcion, fecha, hora, atendida from cita where id_p = '" + Str(id_p) + "' order by fecha desc;"
+                consultar()
+
+                dgvTratamientos.DataSource = Tabla
+
+                dgvTratamientos.Columns(0).HeaderText = "Descripcion"
+                dgvTratamientos.Columns(1).HeaderText = "Fecha"
+                dgvTratamientos.Columns(2).HeaderText = "Hora"
+                dgvTratamientos.Columns(3).HeaderText = "Atendida"
+
+                dgvTratamientos.Columns(1).Width = 70
+                dgvTratamientos.Columns(2).Width = 70
+                dgvTratamientos.Columns(3).Width = 120
+
+            Catch ex As Exception
+
+            End Try
         End If
     End Sub
 

@@ -9,7 +9,7 @@ Public Class frmPlanTratamiento
     Dim MyDataGridViewPrinter As DataGridViewPrinter
 
     Private Sub PlanTratamiento_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+        btnMover.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
         txbBusqueda.ForeColor = Color.Gray
         txbBusqueda.Text = "Buscar"
 
@@ -18,32 +18,17 @@ Public Class frmPlanTratamiento
 
     End Sub
 
+    Private Sub dgvAranceles_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvAranceles.CellClick
+        btnMover.Visible = True
+        btnEliminar.Visible = False
+        btnModificarPrecio.Visible = False
+        btnModificarDesc.Visible = False
+        btnMarcar.Visible = False
+    End Sub
+
     Private Sub dgvAranceles_MouseDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgvAranceles.MouseDoubleClick
-
-        Dim id_a As Integer = dgvAranceles.CurrentRow.Cells(0).Value
-
-        Try
-            Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Precio' from aranceles where id_a = '" + id_a.ToString + "';"
-            consultar()
-            dgvAuxiliar.DataSource = Tabla
-
-
-            dgvArancelesSelect.Columns(0).HeaderText = "id_a"
-            dgvArancelesSelect.Columns(1).HeaderText = "Descripcion"
-            dgvArancelesSelect.Columns(2).HeaderText = "Precio"
-            dgvArancelesSelect.Columns(3).HeaderText = "Descripcion especifica"
-            dgvArancelesSelect.Columns(4).HeaderText = "id_pl"
-
-            dgvArancelesSelect.Columns(0).Visible = False
-            dgvArancelesSelect.Columns(4).Visible = False
-
-            MuestraMsgBoxVersatil("Ingrese descripcion especifica para el Arancel", 1)
-
-            dt.Rows.Add(dgvAuxiliar.Rows(0).Cells(0).Value, dgvAuxiliar.Rows(0).Cells(1).Value, dgvAuxiliar.Rows(0).Cells(2).Value, respString, 0)
-
-        Catch ex As Exception
-            MsgBox("Error al pasar los aranceles", MsgBoxStyle.Exclamation)
-        End Try
+        btnMover.Visible = True
+        btnMover.PerformClick()
 
     End Sub
 
@@ -56,7 +41,7 @@ Public Class frmPlanTratamiento
         btnModificarPrecio.Visible = True
         btnModificarDesc.Visible = True
         btnMarcar.Visible = True
-
+        btnMover.Visible = False
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
@@ -381,4 +366,32 @@ Public Class frmPlanTratamiento
     End Sub
 
   
+    Private Sub btnMover_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMover.Click
+
+        Dim id_a As Integer = dgvAranceles.CurrentRow.Cells(0).Value
+
+        Try
+            Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Precio' from aranceles where id_a = '" + id_a.ToString + "';"
+            consultar()
+            dgvAuxiliar.DataSource = Tabla
+
+
+            dgvArancelesSelect.Columns(0).HeaderText = "id_a"
+            dgvArancelesSelect.Columns(1).HeaderText = "Descripcion"
+            dgvArancelesSelect.Columns(2).HeaderText = "Precio"
+            dgvArancelesSelect.Columns(3).HeaderText = "Descripcion especifica"
+            dgvArancelesSelect.Columns(4).HeaderText = "id_pl"
+
+            dgvArancelesSelect.Columns(0).Visible = False
+            dgvArancelesSelect.Columns(4).Visible = False
+
+            MuestraMsgBoxVersatil("Ingrese descripcion especifica para el Arancel", 1)
+
+            dt.Rows.Add(dgvAuxiliar.Rows(0).Cells(0).Value, dgvAuxiliar.Rows(0).Cells(1).Value, dgvAuxiliar.Rows(0).Cells(2).Value, respString, 0)
+
+        Catch ex As Exception
+            MsgBox("Error al pasar los aranceles", MsgBoxStyle.Exclamation)
+        End Try
+
+    End Sub
 End Class

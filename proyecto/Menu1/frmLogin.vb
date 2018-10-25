@@ -86,7 +86,7 @@
             MsgBox("No hay conexión a la base de datos", MsgBoxStyle.Exclamation)
             pbConexion.Image = My.Resources.letterx_87521
         Else
-            pbConexion.Image = My.Resources._70002
+            pbConexion.Image = My.Resources.IconoConexion
 
         End If
 

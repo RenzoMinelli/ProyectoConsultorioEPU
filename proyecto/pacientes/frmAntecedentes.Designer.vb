@@ -348,7 +348,7 @@ Partial Class frmAntecedentes
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.circled_left_2_1_
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.IconoFlechaIzquierda
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.Location = New System.Drawing.Point(590, 521)
         Me.Button1.Name = "Button1"

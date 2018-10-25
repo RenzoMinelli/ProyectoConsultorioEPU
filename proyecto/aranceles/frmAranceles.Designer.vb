@@ -76,7 +76,7 @@ Partial Class frmAranceles
         'btnEditar
         '
         Me.btnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEditar.Image = Global.WindowsApplication1.My.Resources.Resources.edit_file
+        Me.btnEditar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoModificarArchivo
         Me.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEditar.Location = New System.Drawing.Point(764, 504)
         Me.btnEditar.Name = "btnEditar"
@@ -101,7 +101,7 @@ Partial Class frmAranceles
         'btnAgregar
         '
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregar.Image = Global.WindowsApplication1.My.Resources.Resources._56238
+        Me.btnAgregar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoAgregarDoc
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAgregar.Location = New System.Drawing.Point(163, 504)
         Me.btnAgregar.Name = "btnAgregar"
