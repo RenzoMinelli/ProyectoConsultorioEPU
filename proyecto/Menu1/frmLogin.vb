@@ -78,16 +78,21 @@
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Consulta = "select * from paciente"
+        Consulta = "select * from cita"
         consultar()
 
         If conex = False Then
 
-            MsgBox("No hay conexión a la base de datos", MsgBoxStyle.Exclamation)
-            pbConexion.Image = My.Resources.letterx_87521
+            pbConexion.Image = My.Resources.X
+            btnfuncionario.Enabled = False
+            btnodontologo.Enabled = False
+            btningresar.Enabled = False
+
         Else
             pbConexion.Image = My.Resources.IconoConexion
-
+            btnfuncionario.Enabled = True
+            btnodontologo.Enabled = True
+            btningresar.Enabled = True
         End If
 
         btningresar.Visible = False
@@ -230,6 +235,26 @@
         xf = Me.Location.X
         yf = Me.Location.Y
         mover = False
+    End Sub
+
+    Private Sub tmrConexion_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrConexion.Tick
+        Consulta = "select * from cita"
+        consultar()
+        If conex = False Then
+            pbConexion.Image = My.Resources.X
+            btnfuncionario.Enabled = False
+            btnodontologo.Enabled = False
+            btningresar.Enabled = False
+            btnAtras.Enabled = False
+            txtcontraseña.Enabled = False
+        Else
+            pbConexion.Image = My.Resources.IconoConexion
+            btnfuncionario.Enabled = True
+            btnodontologo.Enabled = True
+            btningresar.Enabled = True
+            btnAtras.Enabled = True
+            txtcontraseña.Enabled = True
+        End If
     End Sub
 End Class
 

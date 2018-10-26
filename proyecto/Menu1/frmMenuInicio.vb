@@ -55,12 +55,14 @@
         Consulta = "select * from cita"
         consultar()
 
-        If conex = True Then
+        If conex = False Then
 
-            pbConexion.Image = My.Resources.IconoConexion
+            pbConexion.Image = My.Resources.X
+
+
         Else
+            pbConexion.Image = My.Resources.IconoConexion
 
-            pbConexion.Image = My.Resources.letterx_87521
         End If
 
 
@@ -379,7 +381,6 @@
     End Sub
 
 
-    Private Sub pnlMenu_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlMenu.Paint
-
-    End Sub
+   
+    
 End Class

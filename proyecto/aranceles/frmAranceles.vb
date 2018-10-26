@@ -39,7 +39,7 @@
         Try
             Consulta = " update aranceles set estado = 0 where id_a = " + Str(id) + ""
             consultar()
-            Consulta = "select * from aranceles"
+            Consulta = "select * from aranceles where estado = 1"
             consultar()
             DataGridView1.DataSource = Tabla
         Catch ex As Exception

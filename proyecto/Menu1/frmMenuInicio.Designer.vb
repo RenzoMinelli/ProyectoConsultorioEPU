@@ -238,10 +238,11 @@ Partial Class frmMenuInicio
         '
         'pbConexion
         '
-        Me.pbConexion.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
-        Me.pbConexion.Location = New System.Drawing.Point(146, 6)
+        Me.pbConexion.Image = Global.WindowsApplication1.My.Resources.Resources.X
+        Me.pbConexion.Location = New System.Drawing.Point(139, 6)
         Me.pbConexion.Name = "pbConexion"
-        Me.pbConexion.Size = New System.Drawing.Size(25, 29)
+        Me.pbConexion.Size = New System.Drawing.Size(32, 29)
+        Me.pbConexion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbConexion.TabIndex = 15
         Me.pbConexion.TabStop = False
         '

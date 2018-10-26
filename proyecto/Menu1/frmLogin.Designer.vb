@@ -22,6 +22,7 @@ Partial Class frmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnfuncionario = New System.Windows.Forms.Button()
         Me.btnodontologo = New System.Windows.Forms.Button()
         Me.lblingrusuario = New System.Windows.Forms.Label()
@@ -32,6 +33,8 @@ Partial Class frmLogin
         Me.pnlBarra = New System.Windows.Forms.Panel()
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
         Me.pbConexion = New System.Windows.Forms.PictureBox()
+        Me.tmrConexion = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.dgbcontraseña, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlBarra.SuspendLayout()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,9 +44,9 @@ Partial Class frmLogin
         'btnfuncionario
         '
         Me.btnfuncionario.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold)
-        Me.btnfuncionario.Location = New System.Drawing.Point(19, 284)
+        Me.btnfuncionario.Location = New System.Drawing.Point(19, 268)
         Me.btnfuncionario.Name = "btnfuncionario"
-        Me.btnfuncionario.Size = New System.Drawing.Size(451, 89)
+        Me.btnfuncionario.Size = New System.Drawing.Size(451, 105)
         Me.btnfuncionario.TabIndex = 2
         Me.btnfuncionario.Text = "Funcionario"
         Me.btnfuncionario.UseVisualStyleBackColor = True
@@ -51,9 +54,9 @@ Partial Class frmLogin
         'btnodontologo
         '
         Me.btnodontologo.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold)
-        Me.btnodontologo.Location = New System.Drawing.Point(19, 130)
+        Me.btnodontologo.Location = New System.Drawing.Point(19, 108)
         Me.btnodontologo.Name = "btnodontologo"
-        Me.btnodontologo.Size = New System.Drawing.Size(451, 89)
+        Me.btnodontologo.Size = New System.Drawing.Size(451, 106)
         Me.btnodontologo.TabIndex = 1
         Me.btnodontologo.Text = "Odontologo"
         Me.btnodontologo.UseVisualStyleBackColor = True
@@ -129,19 +132,35 @@ Partial Class frmLogin
         '
         'pbConexion
         '
-        Me.pbConexion.Image = Global.WindowsApplication1.My.Resources.Resources.letterx_87521
-        Me.pbConexion.Location = New System.Drawing.Point(222, 398)
+        Me.pbConexion.Image = Global.WindowsApplication1.My.Resources.Resources.X
+        Me.pbConexion.Location = New System.Drawing.Point(461, 429)
         Me.pbConexion.Name = "pbConexion"
-        Me.pbConexion.Size = New System.Drawing.Size(39, 41)
+        Me.pbConexion.Size = New System.Drawing.Size(28, 27)
         Me.pbConexion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbConexion.TabIndex = 16
         Me.pbConexion.TabStop = False
+        '
+        'tmrConexion
+        '
+        Me.tmrConexion.Enabled = True
+        Me.tmrConexion.Interval = 10000
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(283, 436)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(175, 20)
+        Me.Label1.TabIndex = 20
+        Me.Label1.Text = "Estado de Conexión:"
         '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(495, 460)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.pbConexion)
         Me.Controls.Add(Me.pnlBarra)
         Me.Controls.Add(Me.btnAtras)
@@ -172,4 +191,6 @@ Partial Class frmLogin
     Friend WithEvents pnlBarra As System.Windows.Forms.Panel
     Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
     Friend WithEvents pbConexion As System.Windows.Forms.PictureBox
+    Friend WithEvents tmrConexion As System.Windows.Forms.Timer
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

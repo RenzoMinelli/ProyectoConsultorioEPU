@@ -2589,6 +2589,11 @@
         Catch ex As Exception
             MsgBox("Error al cargar citas", MsgBoxStyle.Exclamation)
         End Try
+
+        For Each col As DataGridViewColumn In dgvHora.Columns
+            col.SortMode = DataGridViewColumnSortMode.NotSortable
+        Next
+
     End Sub
 
     Private Sub MCFecha_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MCFecha.DateChanged

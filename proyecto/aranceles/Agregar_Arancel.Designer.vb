@@ -32,9 +32,10 @@ Partial Class Agregar_Arancel
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(123, 56)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(209, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(209, 29)
         Me.TextBox1.TabIndex = 3
         '
         'Label3
@@ -49,29 +50,36 @@ Partial Class Agregar_Arancel
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(122, 116)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(209, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(209, 29)
         Me.TextBox2.TabIndex = 4
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(32, 191)
+        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.X
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(17, 182)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(105, 35)
+        Me.Button2.Size = New System.Drawing.Size(128, 54)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "Cerrar"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(238, 191)
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(228, 182)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(105, 35)
+        Me.Button1.Size = New System.Drawing.Size(130, 54)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Agregar"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1

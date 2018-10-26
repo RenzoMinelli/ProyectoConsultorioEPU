@@ -116,7 +116,7 @@ Partial Class frmAranceles
         Me.txbBuscarArancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txbBuscarArancel.Location = New System.Drawing.Point(163, 12)
         Me.txbBuscarArancel.Name = "txbBuscarArancel"
-        Me.txbBuscarArancel.Size = New System.Drawing.Size(211, 35)
+        Me.txbBuscarArancel.Size = New System.Drawing.Size(714, 35)
         Me.txbBuscarArancel.TabIndex = 5
         Me.txbBuscarArancel.WaterMarkColor = System.Drawing.Color.Gray
         Me.txbBuscarArancel.WaterMarkText = "Buscar"
