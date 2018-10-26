@@ -357,6 +357,7 @@
     <None Include="Resources\money-bag.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\wrench-and-nut_icon-icons.com_70326%281%29.png" />
     <None Include="Resources\read_consent_to_tick_icon_461639%281%29.png" />
     <None Include="Resources\delete%281%29.png" />
     <None Include="Resources\índice%281%291.png" />

@@ -82,16 +82,15 @@ Partial Class frmGraficas
         Me.grafica.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
         Me.grafica.Legends.Add(Legend1)
-        Me.grafica.Location = New System.Drawing.Point(1, 46)
-        Me.grafica.Margin = New System.Windows.Forms.Padding(4)
+        Me.grafica.Location = New System.Drawing.Point(1, 37)
         Me.grafica.Name = "grafica"
         Series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
         Series1.ChartArea = "Pacientes"
-        Series1.Color = System.Drawing.Color.MidnightBlue
+        Series1.Color = System.Drawing.Color.RoyalBlue
         Series1.Legend = "Legend1"
         Series1.Name = "Num pacientes"
         Me.grafica.Series.Add(Series1)
-        Me.grafica.Size = New System.Drawing.Size(1336, 656)
+        Me.grafica.Size = New System.Drawing.Size(1002, 533)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
         '
@@ -103,20 +102,18 @@ Partial Class frmGraficas
         Me.dgvInfo.AllowUserToResizeRows = False
         Me.dgvInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvInfo.Location = New System.Drawing.Point(1, 2)
-        Me.dgvInfo.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvInfo.Name = "dgvInfo"
         Me.dgvInfo.ReadOnly = True
-        Me.dgvInfo.Size = New System.Drawing.Size(11, 10)
+        Me.dgvInfo.Size = New System.Drawing.Size(8, 8)
         Me.dgvInfo.TabIndex = 6
         Me.dgvInfo.Visible = False
         '
         'pbconfig
         '
-        Me.pbconfig.Image = Global.WindowsApplication1.My.Resources.Resources.ruedita
-        Me.pbconfig.Location = New System.Drawing.Point(4, 0)
-        Me.pbconfig.Margin = New System.Windows.Forms.Padding(4)
+        Me.pbconfig.Image = Global.WindowsApplication1.My.Resources.Resources.wrench_and_nut_icon_icons_com_70326_1_
+        Me.pbconfig.Location = New System.Drawing.Point(3, 2)
         Me.pbconfig.Name = "pbconfig"
-        Me.pbconfig.Size = New System.Drawing.Size(43, 39)
+        Me.pbconfig.Size = New System.Drawing.Size(25, 28)
         Me.pbconfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbconfig.TabIndex = 8
         Me.pbconfig.TabStop = False
@@ -126,10 +123,9 @@ Partial Class frmGraficas
         Me.PnlMenu.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlMenu.Controls.Add(Me.PnlGrafica)
         Me.PnlMenu.Controls.Add(Me.Pnl3d)
-        Me.PnlMenu.Location = New System.Drawing.Point(1300, 46)
-        Me.PnlMenu.Margin = New System.Windows.Forms.Padding(4)
+        Me.PnlMenu.Location = New System.Drawing.Point(975, 37)
         Me.PnlMenu.Name = "PnlMenu"
-        Me.PnlMenu.Size = New System.Drawing.Size(248, 425)
+        Me.PnlMenu.Size = New System.Drawing.Size(186, 181)
         Me.PnlMenu.TabIndex = 10
         '
         'PnlGrafica
@@ -137,10 +133,9 @@ Partial Class frmGraficas
         Me.PnlGrafica.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlGrafica.Controls.Add(Me.LblGrafica)
         Me.PnlGrafica.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.PnlGrafica.Location = New System.Drawing.Point(0, 120)
-        Me.PnlGrafica.Margin = New System.Windows.Forms.Padding(4)
+        Me.PnlGrafica.Location = New System.Drawing.Point(0, 98)
         Me.PnlGrafica.Name = "PnlGrafica"
-        Me.PnlGrafica.Size = New System.Drawing.Size(248, 44)
+        Me.PnlGrafica.Size = New System.Drawing.Size(186, 36)
         Me.PnlGrafica.TabIndex = 13
         Me.PnlGrafica.Visible = False
         '
@@ -149,10 +144,9 @@ Partial Class frmGraficas
         Me.LblGrafica.AutoSize = True
         Me.LblGrafica.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblGrafica.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.LblGrafica.Location = New System.Drawing.Point(36, 9)
-        Me.LblGrafica.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblGrafica.Location = New System.Drawing.Point(27, 7)
         Me.LblGrafica.Name = "LblGrafica"
-        Me.LblGrafica.Size = New System.Drawing.Size(170, 29)
+        Me.LblGrafica.Size = New System.Drawing.Size(133, 24)
         Me.LblGrafica.TabIndex = 0
         Me.LblGrafica.Text = "Datos Grafica"
         '
@@ -161,10 +155,9 @@ Partial Class frmGraficas
         Me.Pnl3d.BackColor = System.Drawing.Color.RoyalBlue
         Me.Pnl3d.Controls.Add(Me.Lbl3d)
         Me.Pnl3d.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Pnl3d.Location = New System.Drawing.Point(0, 57)
-        Me.Pnl3d.Margin = New System.Windows.Forms.Padding(4)
+        Me.Pnl3d.Location = New System.Drawing.Point(0, 46)
         Me.Pnl3d.Name = "Pnl3d"
-        Me.Pnl3d.Size = New System.Drawing.Size(248, 44)
+        Me.Pnl3d.Size = New System.Drawing.Size(186, 36)
         Me.Pnl3d.TabIndex = 11
         Me.Pnl3d.Visible = False
         '
@@ -173,10 +166,9 @@ Partial Class frmGraficas
         Me.Lbl3d.AutoSize = True
         Me.Lbl3d.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lbl3d.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Lbl3d.Location = New System.Drawing.Point(4, 6)
-        Me.Lbl3d.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lbl3d.Location = New System.Drawing.Point(3, 5)
         Me.Lbl3d.Name = "Lbl3d"
-        Me.Lbl3d.Size = New System.Drawing.Size(240, 32)
+        Me.Lbl3d.Size = New System.Drawing.Size(198, 26)
         Me.Lbl3d.TabIndex = 0
         Me.Lbl3d.Text = "     Modo 3D        "
         '
@@ -185,49 +177,51 @@ Partial Class frmGraficas
         Me.PnlSubMenuDatos.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlSubMenuDatos.Controls.Add(Me.PnlTratamientos)
         Me.PnlSubMenuDatos.Controls.Add(Me.PnlPromedades)
-        Me.PnlSubMenuDatos.Location = New System.Drawing.Point(1025, 133)
-        Me.PnlSubMenuDatos.Margin = New System.Windows.Forms.Padding(4)
+        Me.PnlSubMenuDatos.Location = New System.Drawing.Point(769, 108)
         Me.PnlSubMenuDatos.Name = "PnlSubMenuDatos"
-        Me.PnlSubMenuDatos.Size = New System.Drawing.Size(275, 135)
+        Me.PnlSubMenuDatos.Size = New System.Drawing.Size(206, 86)
         Me.PnlSubMenuDatos.TabIndex = 13
         Me.PnlSubMenuDatos.Visible = False
         '
         'PnlTratamientos
         '
         Me.PnlTratamientos.Controls.Add(Me.Lbltratamientos)
-        Me.PnlTratamientos.Location = New System.Drawing.Point(0, 44)
-        Me.PnlTratamientos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PnlTratamientos.Location = New System.Drawing.Point(0, 36)
+        Me.PnlTratamientos.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlTratamientos.Name = "PnlTratamientos"
-        Me.PnlTratamientos.Size = New System.Drawing.Size(268, 41)
+        Me.PnlTratamientos.Size = New System.Drawing.Size(201, 45)
         Me.PnlTratamientos.TabIndex = 23
         '
         'Lbltratamientos
         '
         Me.Lbltratamientos.AutoSize = True
-        Me.Lbltratamientos.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbltratamientos.Location = New System.Drawing.Point(5, 12)
+        Me.Lbltratamientos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbltratamientos.Location = New System.Drawing.Point(32, 3)
+        Me.Lbltratamientos.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lbltratamientos.Name = "Lbltratamientos"
-        Me.Lbltratamientos.Size = New System.Drawing.Size(259, 20)
+        Me.Lbltratamientos.Size = New System.Drawing.Size(152, 40)
         Me.Lbltratamientos.TabIndex = 0
-        Me.Lbltratamientos.Text = "Tratamientos Mas Realizados"
+        Me.Lbltratamientos.Text = "Tratamientos Mas" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Realizados"
+        Me.Lbltratamientos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PnlPromedades
         '
         Me.PnlPromedades.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlPromedades.Controls.Add(Me.lblEdadPaciente)
         Me.PnlPromedades.Location = New System.Drawing.Point(0, 0)
-        Me.PnlPromedades.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PnlPromedades.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlPromedades.Name = "PnlPromedades"
-        Me.PnlPromedades.Size = New System.Drawing.Size(268, 38)
+        Me.PnlPromedades.Size = New System.Drawing.Size(204, 32)
         Me.PnlPromedades.TabIndex = 21
         '
         'lblEdadPaciente
         '
         Me.lblEdadPaciente.AutoSize = True
         Me.lblEdadPaciente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.lblEdadPaciente.Location = New System.Drawing.Point(13, 2)
+        Me.lblEdadPaciente.Location = New System.Drawing.Point(10, 2)
+        Me.lblEdadPaciente.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblEdadPaciente.Name = "lblEdadPaciente"
-        Me.lblEdadPaciente.Size = New System.Drawing.Size(224, 29)
+        Me.lblEdadPaciente.Size = New System.Drawing.Size(178, 24)
         Me.lblEdadPaciente.TabIndex = 22
         Me.lblEdadPaciente.Text = "Edades Pacientes"
         '
@@ -240,19 +234,20 @@ Partial Class frmGraficas
         Me.pnldesplmenu.BackColor = System.Drawing.Color.CornflowerBlue
         Me.pnldesplmenu.Controls.Add(Me.LblDespmenu)
         Me.pnldesplmenu.Controls.Add(Me.pbconfig)
-        Me.pnldesplmenu.Location = New System.Drawing.Point(1300, -2)
-        Me.pnldesplmenu.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnldesplmenu.Location = New System.Drawing.Point(975, -2)
+        Me.pnldesplmenu.Margin = New System.Windows.Forms.Padding(2)
         Me.pnldesplmenu.Name = "pnldesplmenu"
-        Me.pnldesplmenu.Size = New System.Drawing.Size(248, 39)
+        Me.pnldesplmenu.Size = New System.Drawing.Size(186, 32)
         Me.pnldesplmenu.TabIndex = 20
         '
         'LblDespmenu
         '
         Me.LblDespmenu.AutoSize = True
         Me.LblDespmenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblDespmenu.Location = New System.Drawing.Point(69, 5)
+        Me.LblDespmenu.Location = New System.Drawing.Point(52, 4)
+        Me.LblDespmenu.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblDespmenu.Name = "LblDespmenu"
-        Me.LblDespmenu.Size = New System.Drawing.Size(125, 29)
+        Me.LblDespmenu.Size = New System.Drawing.Size(100, 24)
         Me.LblDespmenu.TabIndex = 9
         Me.LblDespmenu.Text = "Opciones"
         '
@@ -261,9 +256,10 @@ Partial Class frmGraficas
         Me.Lbltitulo.AutoSize = True
         Me.Lbltitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lbltitulo.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.Lbltitulo.Location = New System.Drawing.Point(51, 9)
+        Me.Lbltitulo.Location = New System.Drawing.Point(38, 7)
+        Me.Lbltitulo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lbltitulo.Name = "Lbltitulo"
-        Me.Lbltitulo.Size = New System.Drawing.Size(830, 32)
+        Me.Lbltitulo.Size = New System.Drawing.Size(652, 26)
         Me.Lbltitulo.TabIndex = 21
         Me.Lbltitulo.Text = "la informacion mostrada es 'Promedio edades de pacientes':"
         '
@@ -272,10 +268,9 @@ Partial Class frmGraficas
         Me.PnlSubmenu3d.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlSubmenu3d.Controls.Add(Me.pnlCambarPerspectiva)
         Me.PnlSubmenu3d.Controls.Add(Me.Pnlact3d)
-        Me.PnlSubmenu3d.Location = New System.Drawing.Point(1021, 70)
-        Me.PnlSubmenu3d.Margin = New System.Windows.Forms.Padding(4)
+        Me.PnlSubmenu3d.Location = New System.Drawing.Point(766, 57)
         Me.PnlSubmenu3d.Name = "PnlSubmenu3d"
-        Me.PnlSubmenu3d.Size = New System.Drawing.Size(279, 135)
+        Me.PnlSubmenu3d.Size = New System.Drawing.Size(209, 59)
         Me.PnlSubmenu3d.TabIndex = 22
         Me.PnlSubmenu3d.Visible = False
         '
@@ -283,10 +278,10 @@ Partial Class frmGraficas
         '
         Me.pnlCambarPerspectiva.BackColor = System.Drawing.Color.RoyalBlue
         Me.pnlCambarPerspectiva.Controls.Add(Me.lblCambiarPers)
-        Me.pnlCambarPerspectiva.Location = New System.Drawing.Point(0, 39)
-        Me.pnlCambarPerspectiva.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnlCambarPerspectiva.Location = New System.Drawing.Point(0, 32)
+        Me.pnlCambarPerspectiva.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlCambarPerspectiva.Name = "pnlCambarPerspectiva"
-        Me.pnlCambarPerspectiva.Size = New System.Drawing.Size(271, 38)
+        Me.pnlCambarPerspectiva.Size = New System.Drawing.Size(209, 31)
         Me.pnlCambarPerspectiva.TabIndex = 23
         '
         'lblCambiarPers
@@ -294,8 +289,9 @@ Partial Class frmGraficas
         Me.lblCambiarPers.AutoSize = True
         Me.lblCambiarPers.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.lblCambiarPers.Location = New System.Drawing.Point(3, 0)
+        Me.lblCambiarPers.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCambiarPers.Name = "lblCambiarPers"
-        Me.lblCambiarPers.Size = New System.Drawing.Size(255, 29)
+        Me.lblCambiarPers.Size = New System.Drawing.Size(201, 24)
         Me.lblCambiarPers.TabIndex = 22
         Me.lblCambiarPers.Text = "Cambiar Perspectiva"
         '
@@ -304,18 +300,19 @@ Partial Class frmGraficas
         Me.Pnlact3d.BackColor = System.Drawing.Color.RoyalBlue
         Me.Pnlact3d.Controls.Add(Me.LblActivar3d)
         Me.Pnlact3d.Location = New System.Drawing.Point(0, 0)
-        Me.Pnlact3d.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Pnlact3d.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnlact3d.Name = "Pnlact3d"
-        Me.Pnlact3d.Size = New System.Drawing.Size(268, 38)
+        Me.Pnlact3d.Size = New System.Drawing.Size(209, 31)
         Me.Pnlact3d.TabIndex = 21
         '
         'LblActivar3d
         '
         Me.LblActivar3d.AutoSize = True
         Me.LblActivar3d.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.LblActivar3d.Location = New System.Drawing.Point(3, 0)
+        Me.LblActivar3d.Location = New System.Drawing.Point(1, 2)
+        Me.LblActivar3d.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblActivar3d.Name = "LblActivar3d"
-        Me.LblActivar3d.Size = New System.Drawing.Size(257, 29)
+        Me.LblActivar3d.Size = New System.Drawing.Size(204, 24)
         Me.LblActivar3d.TabIndex = 22
         Me.LblActivar3d.Text = "Activar/Desactivar 3d"
         '
@@ -326,20 +323,20 @@ Partial Class frmGraficas
         Me.PnlOpPers.Controls.Add(Me.PnlOp2)
         Me.PnlOpPers.Controls.Add(Me.PnlOp1)
         Me.PnlOpPers.ForeColor = System.Drawing.Color.MediumTurquoise
-        Me.PnlOpPers.Location = New System.Drawing.Point(820, 103)
-        Me.PnlOpPers.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PnlOpPers.Location = New System.Drawing.Point(615, 84)
+        Me.PnlOpPers.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlOpPers.Name = "PnlOpPers"
-        Me.PnlOpPers.Size = New System.Drawing.Size(212, 135)
+        Me.PnlOpPers.Size = New System.Drawing.Size(159, 110)
         Me.PnlOpPers.TabIndex = 23
         Me.PnlOpPers.Visible = False
         '
         'PnlOp3
         '
         Me.PnlOp3.Controls.Add(Me.LblOp3)
-        Me.PnlOp3.Location = New System.Drawing.Point(0, 91)
-        Me.PnlOp3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PnlOp3.Location = New System.Drawing.Point(0, 74)
+        Me.PnlOp3.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlOp3.Name = "PnlOp3"
-        Me.PnlOp3.Size = New System.Drawing.Size(209, 44)
+        Me.PnlOp3.Size = New System.Drawing.Size(157, 36)
         Me.PnlOp3.TabIndex = 3
         '
         'LblOp3
@@ -347,19 +344,20 @@ Partial Class frmGraficas
         Me.LblOp3.AutoSize = True
         Me.LblOp3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblOp3.ForeColor = System.Drawing.Color.MintCream
-        Me.LblOp3.Location = New System.Drawing.Point(5, 9)
+        Me.LblOp3.Location = New System.Drawing.Point(4, 7)
+        Me.LblOp3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblOp3.Name = "LblOp3"
-        Me.LblOp3.Size = New System.Drawing.Size(201, 29)
+        Me.LblOp3.Size = New System.Drawing.Size(159, 24)
         Me.LblOp3.TabIndex = 0
         Me.LblOp3.Text = "Predeterminado"
         '
         'PnlOp2
         '
         Me.PnlOp2.Controls.Add(Me.LblOp2)
-        Me.PnlOp2.Location = New System.Drawing.Point(0, 44)
-        Me.PnlOp2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PnlOp2.Location = New System.Drawing.Point(0, 36)
+        Me.PnlOp2.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlOp2.Name = "PnlOp2"
-        Me.PnlOp2.Size = New System.Drawing.Size(212, 44)
+        Me.PnlOp2.Size = New System.Drawing.Size(159, 36)
         Me.PnlOp2.TabIndex = 2
         '
         'LblOp2
@@ -367,9 +365,10 @@ Partial Class frmGraficas
         Me.LblOp2.AutoSize = True
         Me.LblOp2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblOp2.ForeColor = System.Drawing.Color.MintCream
-        Me.LblOp2.Location = New System.Drawing.Point(69, 10)
+        Me.LblOp2.Location = New System.Drawing.Point(52, 8)
+        Me.LblOp2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblOp2.Name = "LblOp2"
-        Me.LblOp2.Size = New System.Drawing.Size(64, 29)
+        Me.LblOp2.Size = New System.Drawing.Size(50, 24)
         Me.LblOp2.TabIndex = 0
         Me.LblOp2.Text = "140°"
         '
@@ -377,9 +376,9 @@ Partial Class frmGraficas
         '
         Me.PnlOp1.Controls.Add(Me.Lblop1)
         Me.PnlOp1.Location = New System.Drawing.Point(0, 0)
-        Me.PnlOp1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PnlOp1.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlOp1.Name = "PnlOp1"
-        Me.PnlOp1.Size = New System.Drawing.Size(209, 38)
+        Me.PnlOp1.Size = New System.Drawing.Size(157, 31)
         Me.PnlOp1.TabIndex = 1
         '
         'Lblop1
@@ -387,28 +386,29 @@ Partial Class frmGraficas
         Me.Lblop1.AutoSize = True
         Me.Lblop1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lblop1.ForeColor = System.Drawing.Color.MintCream
-        Me.Lblop1.Location = New System.Drawing.Point(69, 6)
+        Me.Lblop1.Location = New System.Drawing.Point(52, 5)
+        Me.Lblop1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblop1.Name = "Lblop1"
-        Me.Lblop1.Size = New System.Drawing.Size(64, 29)
+        Me.Lblop1.Size = New System.Drawing.Size(50, 24)
         Me.Lblop1.TabIndex = 0
         Me.Lblop1.Text = "180°"
         '
         'DgvTratamientos
         '
         Me.DgvTratamientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvTratamientos.Location = New System.Drawing.Point(12, 2)
-        Me.DgvTratamientos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DgvTratamientos.Location = New System.Drawing.Point(9, 2)
+        Me.DgvTratamientos.Margin = New System.Windows.Forms.Padding(2)
         Me.DgvTratamientos.Name = "DgvTratamientos"
         Me.DgvTratamientos.RowTemplate.Height = 24
-        Me.DgvTratamientos.Size = New System.Drawing.Size(11, 10)
+        Me.DgvTratamientos.Size = New System.Drawing.Size(8, 8)
         Me.DgvTratamientos.TabIndex = 24
         Me.DgvTratamientos.Visible = False
         '
         'frmGraficas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1387, 747)
+        Me.ClientSize = New System.Drawing.Size(1180, 607)
         Me.Controls.Add(Me.DgvTratamientos)
         Me.Controls.Add(Me.PnlOpPers)
         Me.Controls.Add(Me.PnlSubmenu3d)
@@ -420,7 +420,6 @@ Partial Class frmGraficas
         Me.Controls.Add(Me.grafica)
         Me.ForeColor = System.Drawing.SystemColors.Menu
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmGraficas"
         Me.Text = "."
         CType(Me.grafica, System.ComponentModel.ISupportInitialize).EndInit()
