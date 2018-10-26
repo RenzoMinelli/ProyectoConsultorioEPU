@@ -44,7 +44,7 @@
         PnlSubmenu3d.Visible = False
         Pnl3d.Visible = True
         PnlGrafica.Visible = True
-        PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y - 464)
+        PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y - (PnlMenu.Height + pnldesplmenu.Height))
         If edadespacientes = 0 Then
             Try
                 edadespacientes = 1
@@ -128,10 +128,9 @@
 
 
     Private Sub Movimiento_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TmrMovimiento.Tick
-        PnlSubmenu3d.Visible = False
-        PnlSubMenuDatos.Visible = False
+        
         If extra = 0 Then
-            If cont < 45 Then
+            If cont < 20 Then
                 PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y + 10)
                 cont += 1
             Else

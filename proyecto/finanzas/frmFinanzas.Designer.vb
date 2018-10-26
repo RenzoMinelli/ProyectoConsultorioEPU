@@ -69,7 +69,7 @@ Partial Class frmFinanzas
         Me.dgbPagos.Name = "dgbPagos"
         Me.dgbPagos.ReadOnly = True
         Me.dgbPagos.RowHeadersVisible = False
-        Me.dgbPagos.Size = New System.Drawing.Size(1001, 204)
+        Me.dgbPagos.Size = New System.Drawing.Size(1133, 204)
         Me.dgbPagos.TabIndex = 0
         '
         'desde
@@ -167,7 +167,7 @@ Partial Class frmFinanzas
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.Black
-        Me.Label22.Location = New System.Drawing.Point(640, 40)
+        Me.Label22.Location = New System.Drawing.Point(744, 40)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(301, 58)
         Me.Label22.TabIndex = 17
@@ -177,7 +177,7 @@ Partial Class frmFinanzas
         'txbBusqueda
         '
         Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbBusqueda.Location = New System.Drawing.Point(602, 105)
+        Me.txbBusqueda.Location = New System.Drawing.Point(706, 105)
         Me.txbBusqueda.Name = "txbBusqueda"
         Me.txbBusqueda.Size = New System.Drawing.Size(371, 35)
         Me.txbBusqueda.TabIndex = 16
@@ -187,7 +187,7 @@ Partial Class frmFinanzas
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(1034, 541)
+        Me.ClientSize = New System.Drawing.Size(1179, 684)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.txbBusqueda)
         Me.Controls.Add(Me.dgbPacientes)

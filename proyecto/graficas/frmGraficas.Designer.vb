@@ -23,9 +23,9 @@ Partial Class frmGraficas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.dgvInfo = New System.Windows.Forms.DataGridView()
         Me.pbconfig = New System.Windows.Forms.PictureBox()
@@ -78,19 +78,19 @@ Partial Class frmGraficas
         '
         'grafica
         '
-        ChartArea1.Name = "Pacientes"
-        Me.grafica.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.grafica.Legends.Add(Legend1)
+        ChartArea2.Name = "Pacientes"
+        Me.grafica.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.grafica.Legends.Add(Legend2)
         Me.grafica.Location = New System.Drawing.Point(1, 37)
         Me.grafica.Name = "grafica"
-        Series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        Series1.ChartArea = "Pacientes"
-        Series1.Color = System.Drawing.Color.RoyalBlue
-        Series1.Legend = "Legend1"
-        Series1.Name = "Num pacientes"
-        Me.grafica.Series.Add(Series1)
-        Me.grafica.Size = New System.Drawing.Size(1002, 533)
+        Series2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        Series2.ChartArea = "Pacientes"
+        Series2.Color = System.Drawing.Color.RoyalBlue
+        Series2.Legend = "Legend1"
+        Series2.Name = "Num pacientes"
+        Me.grafica.Series.Add(Series2)
+        Me.grafica.Size = New System.Drawing.Size(990, 533)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
         '
@@ -123,7 +123,7 @@ Partial Class frmGraficas
         Me.PnlMenu.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlMenu.Controls.Add(Me.PnlGrafica)
         Me.PnlMenu.Controls.Add(Me.Pnl3d)
-        Me.PnlMenu.Location = New System.Drawing.Point(975, 37)
+        Me.PnlMenu.Location = New System.Drawing.Point(991, 38)
         Me.PnlMenu.Name = "PnlMenu"
         Me.PnlMenu.Size = New System.Drawing.Size(186, 181)
         Me.PnlMenu.TabIndex = 10
@@ -177,7 +177,7 @@ Partial Class frmGraficas
         Me.PnlSubMenuDatos.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlSubMenuDatos.Controls.Add(Me.PnlTratamientos)
         Me.PnlSubMenuDatos.Controls.Add(Me.PnlPromedades)
-        Me.PnlSubMenuDatos.Location = New System.Drawing.Point(769, 108)
+        Me.PnlSubMenuDatos.Location = New System.Drawing.Point(785, 109)
         Me.PnlSubMenuDatos.Name = "PnlSubMenuDatos"
         Me.PnlSubMenuDatos.Size = New System.Drawing.Size(206, 86)
         Me.PnlSubMenuDatos.TabIndex = 13
@@ -234,7 +234,7 @@ Partial Class frmGraficas
         Me.pnldesplmenu.BackColor = System.Drawing.Color.CornflowerBlue
         Me.pnldesplmenu.Controls.Add(Me.LblDespmenu)
         Me.pnldesplmenu.Controls.Add(Me.pbconfig)
-        Me.pnldesplmenu.Location = New System.Drawing.Point(975, -2)
+        Me.pnldesplmenu.Location = New System.Drawing.Point(991, -1)
         Me.pnldesplmenu.Margin = New System.Windows.Forms.Padding(2)
         Me.pnldesplmenu.Name = "pnldesplmenu"
         Me.pnldesplmenu.Size = New System.Drawing.Size(186, 32)
@@ -259,16 +259,16 @@ Partial Class frmGraficas
         Me.Lbltitulo.Location = New System.Drawing.Point(38, 7)
         Me.Lbltitulo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lbltitulo.Name = "Lbltitulo"
-        Me.Lbltitulo.Size = New System.Drawing.Size(652, 26)
+        Me.Lbltitulo.Size = New System.Drawing.Size(659, 26)
         Me.Lbltitulo.TabIndex = 21
-        Me.Lbltitulo.Text = "la informacion mostrada es 'Promedio edades de pacientes':"
+        Me.Lbltitulo.Text = "La información mostrada es 'Promedio edades de pacientes':"
         '
         'PnlSubmenu3d
         '
         Me.PnlSubmenu3d.BackColor = System.Drawing.Color.RoyalBlue
         Me.PnlSubmenu3d.Controls.Add(Me.pnlCambarPerspectiva)
         Me.PnlSubmenu3d.Controls.Add(Me.Pnlact3d)
-        Me.PnlSubmenu3d.Location = New System.Drawing.Point(766, 57)
+        Me.PnlSubmenu3d.Location = New System.Drawing.Point(782, 58)
         Me.PnlSubmenu3d.Name = "PnlSubmenu3d"
         Me.PnlSubmenu3d.Size = New System.Drawing.Size(209, 59)
         Me.PnlSubmenu3d.TabIndex = 22
@@ -323,7 +323,7 @@ Partial Class frmGraficas
         Me.PnlOpPers.Controls.Add(Me.PnlOp2)
         Me.PnlOpPers.Controls.Add(Me.PnlOp1)
         Me.PnlOpPers.ForeColor = System.Drawing.Color.MediumTurquoise
-        Me.PnlOpPers.Location = New System.Drawing.Point(615, 84)
+        Me.PnlOpPers.Location = New System.Drawing.Point(631, 85)
         Me.PnlOpPers.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlOpPers.Name = "PnlOpPers"
         Me.PnlOpPers.Size = New System.Drawing.Size(159, 110)
@@ -408,7 +408,7 @@ Partial Class frmGraficas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1180, 607)
+        Me.ClientSize = New System.Drawing.Size(1179, 684)
         Me.Controls.Add(Me.DgvTratamientos)
         Me.Controls.Add(Me.PnlOpPers)
         Me.Controls.Add(Me.PnlSubmenu3d)
