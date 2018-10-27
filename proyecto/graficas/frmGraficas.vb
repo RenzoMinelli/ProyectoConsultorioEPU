@@ -37,14 +37,19 @@
     Dim idtratamiento5 As Integer
 
 
-    Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    'Consulta = " select descripcion from aranceles where id_a in (select id_a from plan_tratamiento p inner join cita c on c.id_c = p.id_c where month(fecha) = '" + mes + "' and year(fecha) = '" + anio + "') ;"
 
+
+
+    Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        dtpAnio.Hide()
+        lblAnio.Hide()
         grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
 
         PnlSubmenu3d.Visible = False
-        Pnl3d.Visible = True
-        PnlGrafica.Visible = True
-        PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y - (PnlMenu.Height + pnldesplmenu.Height))
+        pnlModo3D.Visible = True
+        pnlDatosGrafica.Visible = True
+        pnlMenu.Location = New Point(pnlMenu.Location.X, pnlMenu.Location.Y - (pnlMenu.Height + pnlDesplMenu.Height))
         If edadespacientes = 0 Then
             Try
                 edadespacientes = 1
@@ -69,26 +74,26 @@
 
 
 
-                Me.grafica.Series("Num pacientes").Points.AddY(intervalo1)
-                Me.grafica.Series("Num pacientes").Points.AddY(intervalo2)
-                Me.grafica.Series("Num pacientes").Points.AddY(intervalo3)
-                Me.grafica.Series("Num pacientes").Points.AddY(intervalo4)
-                Me.grafica.Series("Num pacientes").Points.AddY(intervalo5)
-                Me.grafica.Series("Num pacientes").Points.AddY(intervalo6)
-                Me.grafica.Series("Num pacientes").Points.AddY(intervalo7)
-                Me.grafica.Series("Num pacientes").Points.AddY(intervalo8)
-                Me.grafica.Series("Num pacientes").Points.AddY(intervalo9)
-                Me.grafica.Series("Num pacientes").Points.AddY(intervalo10)
-                Me.grafica.Series("Num pacientes").Points(0).AxisLabel = "0 a 10"
-                Me.grafica.Series("Num pacientes").Points(1).AxisLabel = "11 a 20"
-                Me.grafica.Series("Num pacientes").Points(2).AxisLabel = "21 a 30"
-                Me.grafica.Series("Num pacientes").Points(3).AxisLabel = "31 a 40"
-                Me.grafica.Series("Num pacientes").Points(4).AxisLabel = "41 a 50"
-                Me.grafica.Series("Num pacientes").Points(5).AxisLabel = "51 a 60"
-                Me.grafica.Series("Num pacientes").Points(6).AxisLabel = "61 a 70"
-                Me.grafica.Series("Num pacientes").Points(7).AxisLabel = "71 a 80"
-                Me.grafica.Series("Num pacientes").Points(8).AxisLabel = "81 a 90"
-                Me.grafica.Series("Num pacientes").Points(9).AxisLabel = "Mayores de 90"
+                Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo1)
+                Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo2)
+                Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo3)
+                Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo4)
+                Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo5)
+                Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo6)
+                Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo7)
+                Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo8)
+                Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo9)
+                Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo10)
+                Me.grafica.Series("Número de Pacientes").Points(0).AxisLabel = "0 a 10"
+                Me.grafica.Series("Número de Pacientes").Points(1).AxisLabel = "11 a 20"
+                Me.grafica.Series("Número de Pacientes").Points(2).AxisLabel = "21 a 30"
+                Me.grafica.Series("Número de Pacientes").Points(3).AxisLabel = "31 a 40"
+                Me.grafica.Series("Número de Pacientes").Points(4).AxisLabel = "41 a 50"
+                Me.grafica.Series("Número de Pacientes").Points(5).AxisLabel = "51 a 60"
+                Me.grafica.Series("Número de Pacientes").Points(6).AxisLabel = "61 a 70"
+                Me.grafica.Series("Número de Pacientes").Points(7).AxisLabel = "71 a 80"
+                Me.grafica.Series("Número de Pacientes").Points(8).AxisLabel = "81 a 90"
+                Me.grafica.Series("Número de Pacientes").Points(9).AxisLabel = "Mayores de 90"
 
 
 
@@ -105,33 +110,33 @@
 
     Private Sub pbconfig_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbconfig.Click
         TmrMovimiento.Start()
-        PnlSubMenuDatos.Visible = False
+        PnlSubMenuDatosGrafica.Visible = False
         PnlSubmenu3d.Visible = False
-        PnlOpPers.Visible = False
+        pnlSubMenuCambiarPerspectiva.Visible = False
 
     End Sub
 
-    Private Sub Lbl3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbl3d.Click
+    Private Sub Lbl3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblModo3D.Click
         If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True Then
-            pnlCambarPerspectiva.Visible = True
+            pnlCambiarPerspectiva.Visible = True
         Else
-            pnlCambarPerspectiva.Visible = False
+            pnlCambiarPerspectiva.Visible = False
         End If
         If PnlSubmenu3d.Visible = True Then
             PnlSubmenu3d.Visible = False
         Else
             PnlSubmenu3d.Visible = True
-            PnlSubMenuDatos.Visible = False
+            PnlSubMenuDatosGrafica.Visible = False
         End If
 
     End Sub
 
 
     Private Sub Movimiento_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TmrMovimiento.Tick
-        
+
         If extra = 0 Then
             If cont < 20 Then
-                PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y + 10)
+                pnlMenu.Location = New Point(pnlMenu.Location.X, pnlMenu.Location.Y + 10)
                 cont += 1
             Else
                 TmrMovimiento.Dispose()
@@ -139,7 +144,7 @@
             End If
         Else
             If cont > 0 Then
-                PnlMenu.Location = New Point(PnlMenu.Location.X, PnlMenu.Location.Y - 10)
+                pnlMenu.Location = New Point(pnlMenu.Location.X, pnlMenu.Location.Y - 10)
                 cont -= 1
             Else
                 TmrMovimiento.Dispose()
@@ -151,10 +156,14 @@
 
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblEdadPaciente.Click
+
+        dtpAnio.Hide()
+        lblAnio.Hide()
+
         Try
             Lbltitulo.Text = "la informacion mostrada es 'Promedio edades de pacientes':"
             grafica.Series.Clear()
-            grafica.Series.Add("Num pacientes")
+            grafica.Series.Add("Número de Pacientes")
             edadespacientes = 1
             Consulta = "SELECT SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 1 AND 10, 1, 0)) AS '0-10', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 11 AND 20, 1, 0)) AS '11-20', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 21 AND 30, 1, 0)) AS '21-30', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 31 AND 40, 1, 0)) AS '31-40', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 41 AND 50, 1, 0)) AS '41-50', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 51 AND 60, 1, 0)) AS '51-60', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 61 AND 70, 1, 0)) AS '61-70', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 71 AND 80, 1, 0)) AS '71-80',SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 81 AND 90, 1, 0)) AS '81-90',SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) > 90, 1, 0)) AS '+90' FROM paciente;"
 
@@ -176,16 +185,16 @@
 
 
 
-            Me.grafica.Series("Num pacientes").Points.AddXY("0-10", intervalo1)
-            Me.grafica.Series("Num pacientes").Points.AddXY("11-20", intervalo2)
-            Me.grafica.Series("Num pacientes").Points.AddXY("21-30", intervalo3)
-            Me.grafica.Series("Num pacientes").Points.AddXY("31-40", intervalo4)
-            Me.grafica.Series("Num pacientes").Points.AddXY("41-50", intervalo5)
-            Me.grafica.Series("Num pacientes").Points.AddXY("51-60", intervalo6)
-            Me.grafica.Series("Num pacientes").Points.AddXY("61-70", intervalo7)
-            Me.grafica.Series("Num pacientes").Points.AddXY("71-80", intervalo8)
-            Me.grafica.Series("Num pacientes").Points.AddXY("81-90", intervalo9)
-            Me.grafica.Series("Num pacientes").Points.AddXY("90+", intervalo10)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("0-10", intervalo1)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("11-20", intervalo2)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("21-30", intervalo3)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("31-40", intervalo4)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("41-50", intervalo5)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("51-60", intervalo6)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("61-70", intervalo7)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("71-80", intervalo8)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("81-90", intervalo9)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("90+", intervalo10)
 
 
 
@@ -195,10 +204,10 @@
     End Sub
 
     Private Sub LblGrafica_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblGrafica.Click
-        If PnlSubMenuDatos.Visible = True Then
-            PnlSubMenuDatos.Visible = False
+        If PnlSubMenuDatosGrafica.Visible = True Then
+            PnlSubMenuDatosGrafica.Visible = False
         Else
-            PnlSubMenuDatos.Visible = True
+            PnlSubMenuDatosGrafica.Visible = True
             PnlSubmenu3d.Visible = False
 
         End If
@@ -206,20 +215,24 @@
 
 
 
-    Private Sub pnldesplmenu_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnldesplmenu.MouseClick
+    Private Sub pnldesplmenu_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlDesplMenu.MouseClick
         TmrMovimiento.Start()
-        PnlSubMenuDatos.Visible = False
+        PnlSubMenuDatosGrafica.Visible = False
         PnlSubmenu3d.Visible = False
-        PnlOpPers.Visible = False
+        pnlSubMenuCambiarPerspectiva.Visible = False
 
 
     End Sub
 
-    Private Sub PnlPromedades_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlPromedades.MouseClick
+    Private Sub PnlPromedades_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlEdadPaciente.MouseClick
+
+        dtpAnio.Hide()
+        lblAnio.Hide()
+
         Try
             Lbltitulo.Text = "la informacion mostrada es 'Promedio edades de pacientes':"
             grafica.Series.Clear()
-            grafica.Series.Add("Num pacientes")
+            grafica.Series.Add("Número de Pacientes")
             edadespacientes = 1
             Consulta = "SELECT SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 1 AND 10, 1, 0)) AS '0-10', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 11 AND 20, 1, 0)) AS '11-20', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 21 AND 30, 1, 0)) AS '21-30', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 31 AND 40, 1, 0)) AS '31-40', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 41 AND 50, 1, 0)) AS '41-50', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 51 AND 60, 1, 0)) AS '51-60', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 61 AND 70, 1, 0)) AS '61-70', SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 71 AND 80, 1, 0)) AS '71-80',SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) BETWEEN 81 AND 90, 1, 0)) AS '81-90',SUM(IF (TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) > 90, 1, 0)) AS '+90' FROM paciente;"
 
@@ -241,16 +254,16 @@
 
 
 
-            Me.grafica.Series("Num pacientes").Points.AddXY("0-10", intervalo1)
-            Me.grafica.Series("Num pacientes").Points.AddXY("11-20", intervalo2)
-            Me.grafica.Series("Num pacientes").Points.AddXY("21-30", intervalo3)
-            Me.grafica.Series("Num pacientes").Points.AddXY("31-40", intervalo4)
-            Me.grafica.Series("Num pacientes").Points.AddXY("41-50", intervalo5)
-            Me.grafica.Series("Num pacientes").Points.AddXY("51-60", intervalo6)
-            Me.grafica.Series("Num pacientes").Points.AddXY("61-70", intervalo7)
-            Me.grafica.Series("Num pacientes").Points.AddXY("71-80", intervalo8)
-            Me.grafica.Series("Num pacientes").Points.AddXY("81-90", intervalo9)
-            Me.grafica.Series("Num pacientes").Points.AddXY("90+", intervalo10)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("0-10", intervalo1)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("11-20", intervalo2)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("21-30", intervalo3)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("31-40", intervalo4)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("41-50", intervalo5)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("51-60", intervalo6)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("61-70", intervalo7)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("71-80", intervalo8)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("81-90", intervalo9)
+            Me.grafica.Series("Número de Pacientes").Points.AddXY("90+", intervalo10)
 
 
 
@@ -259,38 +272,38 @@
         End Try
     End Sub
 
-    Private Sub PnlPromedades_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlPromedades.MouseEnter
-        PnlPromedades.BackColor = Color.MidnightBlue
+    Private Sub PnlPromedades_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlEdadPaciente.MouseEnter
+        PnlEdadPaciente.BackColor = Color.MidnightBlue
     End Sub
 
     Private Sub frmGraficas_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.MouseEnter
-        PnlPromedades.BackColor = Color.RoyalBlue
-        Pnlact3d.BackColor = Color.RoyalBlue
-        pnlCambarPerspectiva.BackColor = Color.RoyalBlue
+        PnlEdadPaciente.BackColor = Color.RoyalBlue
+        pnlActivar3D.BackColor = Color.RoyalBlue
+        pnlCambiarPerspectiva.BackColor = Color.RoyalBlue
         PnlSubmenu3d.Visible = False
-        PnlSubMenuDatos.Visible = False
+        PnlSubMenuDatosGrafica.Visible = False
     End Sub
 
-    Private Sub PnlMenu_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlMenu.MouseEnter
-        PnlPromedades.BackColor = Color.RoyalBlue
-        Pnlact3d.BackColor = Color.RoyalBlue
-        pnlCambarPerspectiva.BackColor = Color.RoyalBlue
-    End Sub
-
-
-    Private Sub PnlSubMenuDatos_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubMenuDatos.MouseEnter
-        PnlPromedades.BackColor = Color.RoyalBlue
+    Private Sub PnlMenu_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlMenu.MouseEnter
+        PnlEdadPaciente.BackColor = Color.RoyalBlue
+        pnlActivar3D.BackColor = Color.RoyalBlue
+        pnlCambiarPerspectiva.BackColor = Color.RoyalBlue
     End Sub
 
 
-    Private Sub PnlGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlGrafica.MouseEnter
-        PnlGrafica.BackColor = Color.RoyalBlue
-        PnlPromedades.BackColor = Color.RoyalBlue
-        Pnlact3d.BackColor = Color.RoyalBlue
-        pnlCambarPerspectiva.BackColor = Color.RoyalBlue
+    Private Sub PnlSubMenuDatos_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubMenuDatosGrafica.MouseEnter
+        PnlEdadPaciente.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub LblActivar3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblActivar3d.Click
+
+    Private Sub PnlGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlDatosGrafica.MouseEnter
+        pnlDatosGrafica.BackColor = Color.RoyalBlue
+        PnlEdadPaciente.BackColor = Color.RoyalBlue
+        pnlActivar3D.BackColor = Color.RoyalBlue
+        pnlCambiarPerspectiva.BackColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub LblActivar3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblActivar3D.Click
 
         If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False Then
             grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
@@ -301,7 +314,7 @@
 
     End Sub
 
-    Private Sub Pnlact3d_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Pnlact3d.MouseClick
+    Private Sub Pnlact3d_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlActivar3D.MouseClick
         If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False Then
             grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
         Else
@@ -309,50 +322,51 @@
         End If
     End Sub
 
-    Private Sub Pnlact3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Pnlact3d.MouseEnter
-        Pnlact3d.BackColor = Color.MidnightBlue
-        pnlCambarPerspectiva.BackColor = Color.RoyalBlue
+    Private Sub Pnlact3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlActivar3D.MouseEnter
+        pnlActivar3D.BackColor = Color.MidnightBlue
+        pnlCambiarPerspectiva.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub LblActivar3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblActivar3d.MouseEnter
-        Pnlact3d.BackColor = Color.MidnightBlue
-        pnlCambarPerspectiva.BackColor = Color.RoyalBlue
+    Private Sub LblActivar3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblActivar3D.MouseEnter
+        pnlActivar3D.BackColor = Color.MidnightBlue
+        pnlCambiarPerspectiva.BackColor = Color.RoyalBlue
     End Sub
 
     Private Sub grafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles grafica.MouseEnter
         PnlSubmenu3d.Visible = False
-        PnlSubMenuDatos.Visible = False
-        PnlOpPers.Visible = False
+        PnlSubMenuDatosGrafica.Visible = False
+        pnlSubMenuCambiarPerspectiva.Visible = False
     End Sub
 
     Private Sub PnlSubmenu3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubmenu3d.MouseEnter
-        Pnlact3d.BackColor = Color.RoyalBlue
-        PnlOpPers.Visible = False
+        pnlActivar3D.BackColor = Color.RoyalBlue
+        pnlSubMenuCambiarPerspectiva.Visible = False
     End Sub
 
-    Private Sub lblCambiarPers_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblCambiarPers.MouseEnter
-        pnlCambarPerspectiva.BackColor = Color.MidnightBlue
-        Pnlact3d.BackColor = Color.RoyalBlue
+    Private Sub lblCambiarPers_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblCambiarPerspectiva.MouseEnter
+        pnlCambiarPerspectiva.BackColor = Color.MidnightBlue
+        pnlActivar3D.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub pnlCambarPerspectiva_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlCambarPerspectiva.MouseClick
-        PnlOpPers.Visible = True
+    Private Sub pnlCambarPerspectiva_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlCambiarPerspectiva.MouseClick
+        pnlSubMenuCambiarPerspectiva.Visible = True
     End Sub
 
-    Private Sub pnlCambarPerspectiva_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlCambarPerspectiva.MouseEnter
-        pnlCambarPerspectiva.BackColor = Color.MidnightBlue
-        Pnlact3d.BackColor = Color.RoyalBlue
+    Private Sub pnlCambarPerspectiva_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlCambiarPerspectiva.MouseEnter
+        pnlCambiarPerspectiva.BackColor = Color.MidnightBlue
+        pnlActivar3D.BackColor = Color.RoyalBlue
     End Sub
 
 
-    Private Sub pnldesplmenu_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnldesplmenu.MouseEnter
+    Private Sub pnldesplmenu_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlDesplMenu.MouseEnter
         PnlSubmenu3d.Visible = False
-        PnlSubMenuDatos.Visible = False
+        PnlSubMenuDatosGrafica.Visible = False
     End Sub
 
     Private Sub PnlTratamientos_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlTratamientos.MouseClick
         Dim numero As Integer = 0
-
+        dtpAnio.Hide()
+        lblAnio.Hide()
         Try
             Consulta = "select count(*) from plan_tratamiento group by id_a;"
             consultar()
@@ -373,7 +387,7 @@
             Case 1
                 Try
                     grafica.Series.Clear()
-                    grafica.Series.Add("Total Tratamientos mas usados")
+                    grafica.Series.Add("Total Tratamientos más usados")
                     Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
@@ -384,9 +398,9 @@
 
                     nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos más usados").Points(0).AxisLabel = nomtratamiento1
 
                 Catch ex As Exception
                     MsgBox(ex.ToString)
@@ -394,7 +408,7 @@
             Case 2
                 Try
                     grafica.Series.Clear()
-                    grafica.Series.Add("Total Tratamientos mas usados")
+                    grafica.Series.Add("Total Tratamientos más usados")
                     Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
@@ -409,11 +423,11 @@
                     nomtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
 
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento2)
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos más usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos más usados").Points(1).AxisLabel = nomtratamiento2
 
 
 
@@ -424,7 +438,7 @@
             Case 3
                 Try
                     grafica.Series.Clear()
-                    grafica.Series.Add("Total Tratamientos mas usados")
+                    grafica.Series.Add("Total Tratamientos más usados")
                     Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
@@ -441,13 +455,13 @@
                     nomtratamiento3 = DgvTratamientos.Rows(2).Cells(2).Value.ToString
 
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento3)
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
+                    Me.grafica.Series("Total Tratamientos más usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos más usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos más usados").Points(2).AxisLabel = nomtratamiento3
 
 
 
@@ -458,7 +472,7 @@
             Case 4
                 Try
                     grafica.Series.Clear()
-                    grafica.Series.Add("Total Tratamientos mas usados")
+                    grafica.Series.Add("Total Tratamientos más usados")
                     Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
@@ -479,15 +493,15 @@
 
                     nomtratamiento5 = DgvTratamientos.Rows(4).Cells(2).Value.ToString
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento4)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento3)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento4)
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(3).AxisLabel = nomtratamiento4
+                    Me.grafica.Series("Total Tratamientos más usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos más usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos más usados").Points(2).AxisLabel = nomtratamiento3
+                    Me.grafica.Series("Total Tratamientos más usados").Points(3).AxisLabel = nomtratamiento4
 
 
 
@@ -498,7 +512,7 @@
             Case 5
                 Try
                     grafica.Series.Clear()
-                    grafica.Series.Add("Total Tratamientos mas usados")
+                    grafica.Series.Add("Total Tratamientos más usados")
                     Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
@@ -520,16 +534,16 @@
 
                     nomtratamiento5 = DgvTratamientos.Rows(4).Cells(2).Value.ToString
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento4)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento5)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(3).AxisLabel = nomtratamiento4
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(4).AxisLabel = nomtratamiento5
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento3)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento4)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento5)
+                    Me.grafica.Series("Total Tratamientos más usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos más usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos más usados").Points(2).AxisLabel = nomtratamiento3
+                    Me.grafica.Series("Total Tratamientos más usados").Points(3).AxisLabel = nomtratamiento4
+                    Me.grafica.Series("Total Tratamientos más usados").Points(4).AxisLabel = nomtratamiento5
 
 
 
@@ -549,77 +563,80 @@
         PnlTratamientos.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub Lbltratamientos_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Lbltratamientos.MouseEnter
+    Private Sub Lbltratamientos_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblTratamientos.MouseEnter
         PnlTratamientos.BackColor = Color.MidnightBlue
     End Sub
 
-    Private Sub Lbltratamientos_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Lbltratamientos.MouseLeave
+    Private Sub Lbltratamientos_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblTratamientos.MouseLeave
         PnlTratamientos.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub Pnl3d_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Pnl3d.MouseLeave
-        Pnl3d.BackColor = Color.RoyalBlue
+    Private Sub Pnl3d_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlModo3D.MouseLeave
+        pnlModo3D.BackColor = Color.RoyalBlue
     End Sub
 
 
-    Private Sub PnlGrafica_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlGrafica.MouseLeave
-        PnlGrafica.BackColor = Color.RoyalBlue
+    Private Sub PnlGrafica_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlDatosGrafica.MouseLeave
+        pnlDatosGrafica.BackColor = Color.RoyalBlue
     End Sub
 
 
     Private Sub LblGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblGrafica.MouseEnter
-        PnlGrafica.BackColor = Color.MidnightBlue
-        PnlOpPers.Visible = False
+        pnlDatosGrafica.BackColor = Color.MidnightBlue
+        pnlSubMenuCambiarPerspectiva.Visible = False
     End Sub
 
     Private Sub LblGrafica_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblGrafica.MouseLeave
-        PnlGrafica.BackColor = Color.RoyalBlue
+        pnlDatosGrafica.BackColor = Color.RoyalBlue
     End Sub
-    Private Sub Pnl3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Pnl3d.MouseEnter
-        Pnl3d.BackColor = Color.MidnightBlue
-    End Sub
-
-    Private Sub Lbl3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Lbl3d.MouseEnter
-        Pnl3d.BackColor = Color.MidnightBlue
+    Private Sub Pnl3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlModo3D.MouseEnter
+        pnlModo3D.BackColor = Color.MidnightBlue
     End Sub
 
-    Private Sub Lbl3d_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Lbl3d.MouseLeave
-        Pnl3d.BackColor = Color.RoyalBlue
+    Private Sub Lbl3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblModo3D.MouseEnter
+        pnlModo3D.BackColor = Color.MidnightBlue
     End Sub
 
-
-    Private Sub lblCambiarPers_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCambiarPers.Click
-        PnlOpPers.Visible = True
+    Private Sub Lbl3d_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblModo3D.MouseLeave
+        pnlModo3D.BackColor = Color.RoyalBlue
     End Sub
 
 
-    Private Sub PnlOp1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlOp1.MouseClick
+    Private Sub lblCambiarPers_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCambiarPerspectiva.Click
+        pnlSubMenuCambiarPerspectiva.Visible = True
+    End Sub
+
+
+    Private Sub PnlOp1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnl180.MouseClick
         grafica.ChartAreas(0).Area3DStyle.Rotation = 180
     End Sub
 
 
-    Private Sub PnlOp1_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlOp1.MouseEnter
-        PnlOp1.BackColor = Color.MidnightBlue
+    Private Sub PnlOp1_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnl180.MouseEnter
+        pnl180.BackColor = Color.MidnightBlue
     End Sub
 
-    Private Sub PnlOp1_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlOp1.MouseLeave
-        PnlOp1.BackColor = Color.RoyalBlue
+    Private Sub PnlOp1_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnl180.MouseLeave
+        pnl180.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub Lblop1_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Lblop1.MouseEnter
-        PnlOp1.BackColor = Color.MidnightBlue
+    Private Sub Lblop1_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lbl180.MouseEnter
+        pnl180.BackColor = Color.MidnightBlue
     End Sub
 
-    Private Sub Lblop1_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Lblop1.MouseLeave
-        PnlOp1.BackColor = Color.RoyalBlue
+    Private Sub Lblop1_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lbl180.MouseLeave
+        pnl180.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub Lblop1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lblop1.Click
+    Private Sub Lblop1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbl180.Click
         grafica.ChartAreas(0).Area3DStyle.Rotation = 180
 
     End Sub
 
-    Private Sub Lbltratamientos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Lbltratamientos.Click
+    Private Sub Lbltratamientos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblTratamientos.Click
+        dtpAnio.Hide()
+        lblAnio.Hide()
+
         Dim numero As Integer = 0
 
         Try
@@ -642,7 +659,7 @@
             Case 1
                 Try
                     grafica.Series.Clear()
-                    grafica.Series.Add("Total Tratamientos mas usados")
+                    grafica.Series.Add("Total Tratamientos más usados")
                     Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
@@ -653,9 +670,9 @@
 
                     nomtratamiento1 = DgvTratamientos.Rows(0).Cells(2).Value.ToString
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos más usados").Points(0).AxisLabel = nomtratamiento1
 
                 Catch ex As Exception
                     MsgBox(ex.ToString)
@@ -663,7 +680,7 @@
             Case 2
                 Try
                     grafica.Series.Clear()
-                    grafica.Series.Add("Total Tratamientos mas usados")
+                    grafica.Series.Add("Total Tratamientos más usados")
                     Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
@@ -678,11 +695,11 @@
                     nomtratamiento2 = DgvTratamientos.Rows(1).Cells(2).Value.ToString
 
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento2)
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos más usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos más usados").Points(1).AxisLabel = nomtratamiento2
 
 
 
@@ -693,7 +710,7 @@
             Case 3
                 Try
                     grafica.Series.Clear()
-                    grafica.Series.Add("Total Tratamientos mas usados")
+                    grafica.Series.Add("Total Tratamientos más usados")
                     Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
@@ -710,13 +727,13 @@
                     nomtratamiento3 = DgvTratamientos.Rows(2).Cells(2).Value.ToString
 
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento3)
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
+                    Me.grafica.Series("Total Tratamientos más usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos más usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos más usados").Points(2).AxisLabel = nomtratamiento3
 
 
 
@@ -727,7 +744,7 @@
             Case 4
                 Try
                     grafica.Series.Clear()
-                    grafica.Series.Add("Total Tratamientos mas usados")
+                    grafica.Series.Add("Total Tratamientos más usados")
                     Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
@@ -748,15 +765,15 @@
 
                     nomtratamiento5 = DgvTratamientos.Rows(4).Cells(2).Value.ToString
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento4)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento3)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento4)
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(3).AxisLabel = nomtratamiento4
+                    Me.grafica.Series("Total Tratamientos más usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos más usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos más usados").Points(2).AxisLabel = nomtratamiento3
+                    Me.grafica.Series("Total Tratamientos más usados").Points(3).AxisLabel = nomtratamiento4
 
 
 
@@ -767,7 +784,7 @@
             Case 5
                 Try
                     grafica.Series.Clear()
-                    grafica.Series.Add("Total Tratamientos mas usados")
+                    grafica.Series.Add("Total Tratamientos más usados")
                     Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
@@ -789,16 +806,16 @@
 
                     nomtratamiento5 = DgvTratamientos.Rows(4).Cells(2).Value.ToString
 
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento1)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento2)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento3)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento4)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points.AddY(tratamiento5)
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(0).AxisLabel = nomtratamiento1
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(1).AxisLabel = nomtratamiento2
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(2).AxisLabel = nomtratamiento3
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(3).AxisLabel = nomtratamiento4
-                    Me.grafica.Series("Total Tratamientos mas usados").Points(4).AxisLabel = nomtratamiento5
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento2)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento3)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento4)
+                    Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento5)
+                    Me.grafica.Series("Total Tratamientos más usados").Points(0).AxisLabel = nomtratamiento1
+                    Me.grafica.Series("Total Tratamientos más usados").Points(1).AxisLabel = nomtratamiento2
+                    Me.grafica.Series("Total Tratamientos más usados").Points(2).AxisLabel = nomtratamiento3
+                    Me.grafica.Series("Total Tratamientos más usados").Points(3).AxisLabel = nomtratamiento4
+                    Me.grafica.Series("Total Tratamientos más usados").Points(4).AxisLabel = nomtratamiento5
 
 
 
@@ -811,55 +828,55 @@
 
     Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblDespmenu.Click
         TmrMovimiento.Start()
-        PnlSubMenuDatos.Visible = False
+        PnlSubMenuDatosGrafica.Visible = False
         PnlSubmenu3d.Visible = False
-        PnlOpPers.Visible = False
+        pnlSubMenuCambiarPerspectiva.Visible = False
 
 
     End Sub
 
-    Private Sub LblOp2_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles LblOp2.MouseClick
+    Private Sub LblOp2_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lbl140.MouseClick
         grafica.ChartAreas(0).Area3DStyle.Rotation = 140
     End Sub
 
-    Private Sub PnlOp2_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlOp2.MouseEnter
-        PnlOp2.BackColor = Color.MidnightBlue
+    Private Sub PnlOp2_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnl140.MouseEnter
+        pnl140.BackColor = Color.MidnightBlue
     End Sub
 
-    Private Sub PnlOp2_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlOp2.MouseLeave
-        PnlOp2.BackColor = Color.RoyalBlue
+    Private Sub PnlOp2_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnl140.MouseLeave
+        pnl140.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub LblOp2_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblOp2.MouseEnter
-        PnlOp2.BackColor = Color.MidnightBlue
+    Private Sub LblOp2_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lbl140.MouseEnter
+        pnl140.BackColor = Color.MidnightBlue
     End Sub
 
-    Private Sub LblOp2_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblOp2.MouseLeave
-        PnlOp2.BackColor = Color.RoyalBlue
+    Private Sub LblOp2_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lbl140.MouseLeave
+        pnl140.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub LblOp3_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles LblOp3.MouseClick
+    Private Sub LblOp3_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblPredeterminado.MouseClick
         grafica.ChartAreas(0).Area3DStyle.Rotation = 30
     End Sub
 
-    Private Sub PnlOp3_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlOp3.MouseClick
+    Private Sub PnlOp3_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlPredeterminado.MouseClick
         grafica.ChartAreas(0).Area3DStyle.Rotation = 10
     End Sub
 
-    Private Sub LblOp3_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblOp3.MouseEnter
-        PnlOp3.BackColor = Color.MidnightBlue
+    Private Sub LblOp3_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblPredeterminado.MouseEnter
+        pnlPredeterminado.BackColor = Color.MidnightBlue
     End Sub
 
-    Private Sub LblOp3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblOp3.MouseLeave
-        PnlOp3.BackColor = Color.RoyalBlue
+    Private Sub LblOp3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblPredeterminado.MouseLeave
+        pnlPredeterminado.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub PnlOp3_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlOp3.MouseEnter
-        PnlOp3.BackColor = Color.MidnightBlue
+    Private Sub PnlOp3_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlPredeterminado.MouseEnter
+        pnlPredeterminado.BackColor = Color.MidnightBlue
     End Sub
 
-    Private Sub PnlOp3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlOp3.MouseLeave
-        PnlOp3.BackColor = Color.RoyalBlue
+    Private Sub PnlOp3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlPredeterminado.MouseLeave
+        pnlPredeterminado.BackColor = Color.RoyalBlue
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -867,17 +884,155 @@
 
     End Sub
 
-    Private Sub PnlSubMenuDatos_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles PnlSubMenuDatos.Paint
-
-    End Sub
+   
 
     Private Sub grafica_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles grafica.Click
 
     End Sub
 
     Private Sub pbconfig_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pbconfig.MouseEnter
-        PnlSubMenuDatos.Visible = False
+        PnlSubMenuDatosGrafica.Visible = False
         PnlSubmenu3d.Visible = False
-        PnlOpPers.Visible = False
+        pnlSubMenuCambiarPerspectiva.Visible = False
+    End Sub
+
+    Private Sub PnlTratamientos_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles PnlTratamientos.Paint
+
+    End Sub
+
+    Private Sub pnlNumCitas_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlNumCitas.MouseClick
+        dtpAnio.Show()
+        lblAnio.Show()
+        dtpAnio.Value = "01/01/2018"
+        numCitas()
+    End Sub
+
+    Private Sub pnlNumCitas_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlNumCitas.MouseEnter
+        pnlNumCitas.BackColor = Color.MidnightBlue
+    End Sub
+
+    Private Sub lblNumCitas_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblNumCitas.MouseEnter
+        pnlNumCitas.BackColor = Color.MidnightBlue
+    End Sub
+
+    Private Sub pnlNumCitas_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlNumCitas.MouseLeave
+        pnlNumCitas.BackColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub lblNumCitas_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblNumCitas.MouseLeave
+        pnlNumCitas.BackColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub lblNumCitas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblNumCitas.Click
+        dtpAnio.Show()
+        lblAnio.Show()
+        dtpAnio.Value = "01/01/2018"
+        numCitas()
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpAnio.ValueChanged
+        numCitas()
+    End Sub
+
+    Private Sub numCitas()
+        Dim anio As String = dtpAnio.Text   '  Dim mes As String = ""
+        grafica.Series.Clear()
+         Try
+
+            Consulta = "select count(*) from cita where month(fecha) = '1' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim enero As Integer
+            For Each row In Tabla.Rows
+                enero = Val(row(0))
+            Next
+
+            Consulta = "select count(*) from cita where month(fecha) = '2' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim feb As Integer
+            For Each row In Tabla.Rows
+                feb = Val(row(0))
+            Next
+
+            Consulta = "select count(*) from cita where month(fecha) = '3' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim mar As Integer
+            For Each row In Tabla.Rows
+                mar = Val(row(0))
+            Next
+
+            Consulta = "select count(*) from cita where month(fecha) = '4' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim abr As Integer
+            For Each row In Tabla.Rows
+                abr = Val(row(0))
+            Next
+            Consulta = "select count(*) from cita where month(fecha) = '5' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim may As Integer
+            For Each row In Tabla.Rows
+                may = Val(row(0))
+            Next
+            Consulta = "select count(*) from cita where month(fecha) = '6' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim jun As Integer
+            For Each row In Tabla.Rows
+                jun = Val(row(0))
+            Next
+            Consulta = "select count(*) from cita where month(fecha) = '7' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim jul As Integer
+            For Each row In Tabla.Rows
+                jul = Val(row(0))
+            Next
+            Consulta = "select count(*) from cita where month(fecha) = '8' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim ago As Integer
+            For Each row In Tabla.Rows
+                ago = Val(row(0))
+            Next
+            Consulta = "select count(*) from cita where month(fecha) = '9' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim sep As Integer
+            For Each row In Tabla.Rows
+                sep = Val(row(0))
+            Next
+            Consulta = "select count(*) from cita where month(fecha) = '10' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim oct As Integer
+            For Each row In Tabla.Rows
+                oct = Val(row(0))
+
+            Next
+            Consulta = "select count(*) from cita where month(fecha) = '11' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim nov As Integer
+            For Each row In Tabla.Rows
+                nov = Val(row(0))
+            Next
+            Consulta = "select count(*) from cita where month(fecha) = '12' and year(fecha) = '" + anio + "' and atendida = '1';"
+            consultar()
+            Dim dic As Integer
+            For Each row In Tabla.Rows
+                dic = Val(row(0))
+            Next
+
+            grafica.Series.Add("Número Citas")
+            grafica.Series("Número Citas").Points.AddXY("Enero", enero)
+            grafica.Series("Número Citas").Points.AddXY("Febrero", feb)
+            grafica.Series("Número Citas").Points.AddXY("Marzo", mar)
+            grafica.Series("Número Citas").Points.AddXY("Abril", abr)
+            grafica.Series("Número Citas").Points.AddXY("Mayo", may)
+            grafica.Series("Número Citas").Points.AddXY("Junio", jun)
+            grafica.Series("Número Citas").Points.AddXY("Julio", jul)
+            grafica.Series("Número Citas").Points.AddXY("Agosto", ago)
+            grafica.Series("Número Citas").Points.AddXY("Septiembre", sep)
+            grafica.Series("Número Citas").Points.AddXY("Octubre", oct)
+            grafica.Series("Número Citas").Points.AddXY("Noviembre", nov)
+            grafica.Series("Número Citas").Points.AddXY("Diciembre", dic)
+        Catch ex As Exception
+
+            MsgBox("Error al obtener el número de citas", MsgBoxStyle.Exclamation)
+        End Try
+
     End Sub
 End Class

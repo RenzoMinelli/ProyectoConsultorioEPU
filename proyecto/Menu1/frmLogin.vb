@@ -238,6 +238,9 @@
     End Sub
 
     Private Sub tmrConexion_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrConexion.Tick
+
+
+
         Consulta = "select * from cita"
         consultar()
         If conex = False Then
