@@ -1084,4 +1084,17 @@
     Private Sub lblActivar3D_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblActivar3D.MouseLeave
         pnlActivar3D.BackColor = Color.RoyalBlue
     End Sub
+
+    Private Sub lblEdadPaciente_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblEdadPaciente.MouseEnter
+        pnlEdadPaciente.BackColor = Color.MidnightBlue
+    End Sub
+
+  
+    Private Sub pnlEdadPaciente_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlEdadPaciente.MouseLeave
+        pnlEdadPaciente.BackColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub lblEdadPaciente_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblEdadPaciente.MouseLeave
+        pnlEdadPaciente.BackColor = Color.RoyalBlue
+    End Sub
 End Class
