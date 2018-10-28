@@ -96,6 +96,7 @@
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
         frmAranceles.dgvAranceles.ClearSelection()
+        frmAranceles.dgvArancelesUtilizados.ClearSelection()
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCitas.Click
@@ -378,6 +379,7 @@
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
         frmAranceles.dgvAranceles.ClearSelection()
+        frmAranceles.dgvArancelesUtilizados.ClearSelection()
     End Sub
 
 
