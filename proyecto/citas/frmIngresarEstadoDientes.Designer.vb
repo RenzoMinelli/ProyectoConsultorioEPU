@@ -167,7 +167,9 @@ Partial Class pnlfondo
         Me.PnlDiente18c1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.dgvEstadoDiente2 = New System.Windows.Forms.DataGridView()
         Me.Panel01477.SuspendLayout()
+        CType(Me.dgvEstadoDiente2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'bttoningrdientes
@@ -1353,11 +1355,24 @@ Partial Class pnlfondo
         Me.Button1.Text = "Atras"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'dgvEstadoDiente2
+        '
+        Me.dgvEstadoDiente2.AllowUserToAddRows = False
+        Me.dgvEstadoDiente2.AllowUserToDeleteRows = False
+        Me.dgvEstadoDiente2.AllowUserToResizeColumns = False
+        Me.dgvEstadoDiente2.AllowUserToResizeRows = False
+        Me.dgvEstadoDiente2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvEstadoDiente2.Location = New System.Drawing.Point(266, 13)
+        Me.dgvEstadoDiente2.Name = "dgvEstadoDiente2"
+        Me.dgvEstadoDiente2.Size = New System.Drawing.Size(20, 23)
+        Me.dgvEstadoDiente2.TabIndex = 275
+        '
         'pnlfondo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(873, 596)
+        Me.Controls.Add(Me.dgvEstadoDiente2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pnlDiente38c1)
         Me.Controls.Add(Me.PnlDiente41c1)
@@ -1498,6 +1513,7 @@ Partial Class pnlfondo
         Me.Text = "marcar_cita"
         Me.Panel01477.ResumeLayout(False)
         Me.Panel01477.PerformLayout()
+        CType(Me.dgvEstadoDiente2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1647,4 +1663,5 @@ Partial Class pnlfondo
     Friend WithEvents Panel20 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents dgvEstadoDiente2 As System.Windows.Forms.DataGridView
 End Class
