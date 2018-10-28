@@ -95,7 +95,7 @@
         lblPacientes.ForeColor = Color.RoyalBlue
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
-        frmAranceles.DataGridView1.ClearSelection()
+        frmAranceles.dgvAranceles.ClearSelection()
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCitas.Click
@@ -377,7 +377,7 @@
         lblGraficas.ForeColor = Color.White
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
-        frmAranceles.DataGridView1.ClearSelection()
+        frmAranceles.dgvAranceles.ClearSelection()
     End Sub
 
 

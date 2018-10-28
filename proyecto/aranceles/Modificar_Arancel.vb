@@ -8,7 +8,7 @@
 
         Consulta = "select * from aranceles"
         consultar()
-        frmAranceles.DataGridView1.DataSource = Tabla
+        frmAranceles.dgvAranceles.DataSource = Tabla
         Me.Dispose()
         frmAranceles.Show()
     End Sub

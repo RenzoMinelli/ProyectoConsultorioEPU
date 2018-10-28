@@ -1,7 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.OleDb
 Imports MySql.Data.MySqlClient
-Module Module1
+Module ModuloBaseDeDatos
     Public user As String = "root"
     Public pass As String = ""
     Dim ubicacion As String = "server=localhost; user id= 'root'  ; password='';database = consultorio"
@@ -30,7 +30,7 @@ Module Module1
         ubicacion = "server=localhost; user id= '" + us + "'  ; password='" + pas + "'; database = consultorio"
         Conexion = New MySqlDataAdapter
         MysqlConexion = New MySqlConnection(ubicacion)
-        
+
 
     End Sub
 
@@ -170,8 +170,8 @@ Module Module1
         End If
 
     End Sub
-   
-    
+
+
 
 End Module
 

@@ -37,11 +37,14 @@
     Dim idtratamiento5 As Integer
 
 
-    'Consulta = " select descripcion from aranceles where id_a in (select id_a from plan_tratamiento p inner join cita c on c.id_c = p.id_c where month(fecha) = '" + mes + "' and year(fecha) = '" + anio + "') ;"
-
+   
 
 
     Private Sub graficas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        grafica.Series.Clear()
+        grafica.Series.Add("Número de Pacientes")
+
         dtpAnio.Hide()
         lblAnio.Hide()
         grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
@@ -49,7 +52,9 @@
         PnlSubmenu3d.Visible = False
         pnlModo3D.Visible = True
         pnlDatosGrafica.Visible = True
+
         pnlMenu.Location = New Point(pnlMenu.Location.X, pnlMenu.Location.Y - (pnlMenu.Height + pnlDesplMenu.Height))
+
         If edadespacientes = 0 Then
             Try
                 edadespacientes = 1
@@ -57,9 +62,6 @@
 
                 consultar()
                 dgvInfo.DataSource = Tabla
-
-
-
 
                 intervalo1 = dgvInfo.Rows(0).Cells(0).Value.ToString
                 intervalo2 = dgvInfo.Rows(0).Cells(1).Value.ToString
@@ -71,8 +73,6 @@
                 intervalo8 = dgvInfo.Rows(0).Cells(7).Value.ToString
                 intervalo9 = dgvInfo.Rows(0).Cells(8).Value.ToString
                 intervalo10 = dgvInfo.Rows(0).Cells(9).Value.ToString
-
-
 
                 Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo1)
                 Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo2)
@@ -95,10 +95,6 @@
                 Me.grafica.Series("Número de Pacientes").Points(8).AxisLabel = "81 a 90"
                 Me.grafica.Series("Número de Pacientes").Points(9).AxisLabel = "Mayores de 90"
 
-
-
-
-
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
@@ -117,10 +113,11 @@
     End Sub
 
     Private Sub Lbl3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblModo3D.Click
+
         If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True Then
-            pnlCambiarPerspectiva.Visible = True
+            pnlPerspectiva.Visible = True
         Else
-            pnlCambiarPerspectiva.Visible = False
+            pnlPerspectiva.Visible = False
         End If
         If PnlSubmenu3d.Visible = True Then
             PnlSubmenu3d.Visible = False
@@ -135,8 +132,8 @@
     Private Sub Movimiento_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TmrMovimiento.Tick
 
         If extra = 0 Then
-            If cont < 20 Then
-                pnlMenu.Location = New Point(pnlMenu.Location.X, pnlMenu.Location.Y + 10)
+            If cont < 27 Then
+                pnlMenu.Location = New Point(pnlMenu.Location.X, pnlMenu.Location.Y + 7)
                 cont += 1
             Else
                 TmrMovimiento.Dispose()
@@ -144,7 +141,7 @@
             End If
         Else
             If cont > 0 Then
-                pnlMenu.Location = New Point(pnlMenu.Location.X, pnlMenu.Location.Y - 10)
+                pnlMenu.Location = New Point(pnlMenu.Location.X, pnlMenu.Location.Y - 7)
                 cont -= 1
             Else
                 TmrMovimiento.Dispose()
@@ -161,7 +158,7 @@
         lblAnio.Hide()
 
         Try
-            Lbltitulo.Text = "la informacion mostrada es 'Promedio edades de pacientes':"
+
             grafica.Series.Clear()
             grafica.Series.Add("Número de Pacientes")
             edadespacientes = 1
@@ -203,7 +200,7 @@
         End Try
     End Sub
 
-    Private Sub LblGrafica_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblGrafica.Click
+    Private Sub LblGrafica_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblDatosGrafica.Click
         If PnlSubMenuDatosGrafica.Visible = True Then
             PnlSubMenuDatosGrafica.Visible = False
         Else
@@ -224,13 +221,13 @@
 
     End Sub
 
-    Private Sub PnlPromedades_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PnlEdadPaciente.MouseClick
+    Private Sub PnlPromedades_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlEdadPaciente.MouseClick
 
         dtpAnio.Hide()
         lblAnio.Hide()
 
         Try
-            Lbltitulo.Text = "la informacion mostrada es 'Promedio edades de pacientes':"
+
             grafica.Series.Clear()
             grafica.Series.Add("Número de Pacientes")
             edadespacientes = 1
@@ -272,43 +269,60 @@
         End Try
     End Sub
 
-    Private Sub PnlPromedades_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlEdadPaciente.MouseEnter
-        PnlEdadPaciente.BackColor = Color.MidnightBlue
+    Private Sub PnlPromedades_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlEdadPaciente.MouseEnter
+        pnlEdadPaciente.BackColor = Color.MidnightBlue
+        PnlTratamientos.BackColor = Color.RoyalBlue
+
+        pnlNumCitas.BackColor = Color.RoyalBlue
     End Sub
 
     Private Sub frmGraficas_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.MouseEnter
-        PnlEdadPaciente.BackColor = Color.RoyalBlue
+        pnlEdadPaciente.BackColor = Color.RoyalBlue
         pnlActivar3D.BackColor = Color.RoyalBlue
-        pnlCambiarPerspectiva.BackColor = Color.RoyalBlue
+        pnlPerspectiva.BackColor = Color.RoyalBlue
         PnlSubmenu3d.Visible = False
         PnlSubMenuDatosGrafica.Visible = False
     End Sub
 
     Private Sub PnlMenu_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlMenu.MouseEnter
-        PnlEdadPaciente.BackColor = Color.RoyalBlue
+        pnlEdadPaciente.BackColor = Color.RoyalBlue
         pnlActivar3D.BackColor = Color.RoyalBlue
-        pnlCambiarPerspectiva.BackColor = Color.RoyalBlue
+        pnlPerspectiva.BackColor = Color.RoyalBlue
     End Sub
 
 
     Private Sub PnlSubMenuDatos_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubMenuDatosGrafica.MouseEnter
-        PnlEdadPaciente.BackColor = Color.RoyalBlue
+        pnlEdadPaciente.BackColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub pnlDatosGrafica_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlDatosGrafica.MouseClick
+        If PnlSubMenuDatosGrafica.Visible = True Then
+            PnlSubMenuDatosGrafica.Visible = False
+        Else
+            PnlSubMenuDatosGrafica.Visible = True
+            PnlSubmenu3d.Visible = False
+
+        End If
     End Sub
 
 
     Private Sub PnlGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlDatosGrafica.MouseEnter
-        pnlDatosGrafica.BackColor = Color.RoyalBlue
-        PnlEdadPaciente.BackColor = Color.RoyalBlue
+        pnlDatosGrafica.BackColor = Color.MidnightBlue
+        pnlEdadPaciente.BackColor = Color.RoyalBlue
         pnlActivar3D.BackColor = Color.RoyalBlue
-        pnlCambiarPerspectiva.BackColor = Color.RoyalBlue
+        pnlPerspectiva.BackColor = Color.RoyalBlue
     End Sub
 
     Private Sub LblActivar3d_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblActivar3D.Click
 
         If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False Then
             grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
+            pnlPerspectiva.Visible = True
+            lblCambiarPerspectiva.Visible = True
         Else
             grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False
+            pnlPerspectiva.Visible = False
+            lblCambiarPerspectiva.Visible = False
         End If
 
 
@@ -317,19 +331,23 @@
     Private Sub Pnlact3d_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlActivar3D.MouseClick
         If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False Then
             grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True
+            pnlPerspectiva.Visible = True
+            lblCambiarPerspectiva.Visible = True
         Else
             grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False
+            pnlPerspectiva.Visible = False
+            lblCambiarPerspectiva.Visible = False
         End If
     End Sub
 
     Private Sub Pnlact3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlActivar3D.MouseEnter
         pnlActivar3D.BackColor = Color.MidnightBlue
-        pnlCambiarPerspectiva.BackColor = Color.RoyalBlue
+        pnlPerspectiva.BackColor = Color.RoyalBlue
     End Sub
 
     Private Sub LblActivar3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblActivar3D.MouseEnter
         pnlActivar3D.BackColor = Color.MidnightBlue
-        pnlCambiarPerspectiva.BackColor = Color.RoyalBlue
+        pnlPerspectiva.BackColor = Color.RoyalBlue
     End Sub
 
     Private Sub grafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles grafica.MouseEnter
@@ -344,16 +362,16 @@
     End Sub
 
     Private Sub lblCambiarPers_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblCambiarPerspectiva.MouseEnter
-        pnlCambiarPerspectiva.BackColor = Color.MidnightBlue
+        pnlPerspectiva.BackColor = Color.MidnightBlue
         pnlActivar3D.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub pnlCambarPerspectiva_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlCambiarPerspectiva.MouseClick
+    Private Sub pnlCambarPerspectiva_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlPerspectiva.MouseClick
         pnlSubMenuCambiarPerspectiva.Visible = True
     End Sub
 
-    Private Sub pnlCambarPerspectiva_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlCambiarPerspectiva.MouseEnter
-        pnlCambiarPerspectiva.BackColor = Color.MidnightBlue
+    Private Sub pnlCambarPerspectiva_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlPerspectiva.MouseEnter
+        pnlPerspectiva.BackColor = Color.MidnightBlue
         pnlActivar3D.BackColor = Color.RoyalBlue
     End Sub
 
@@ -388,7 +406,7 @@
                 Try
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
-                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
@@ -409,7 +427,7 @@
                 Try
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
-                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
@@ -439,7 +457,7 @@
                 Try
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
-                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
@@ -473,7 +491,7 @@
                 Try
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
-                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
@@ -513,7 +531,7 @@
                 Try
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
-                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
@@ -557,6 +575,8 @@
 
     Private Sub PnlTratamientos_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlTratamientos.MouseEnter
         PnlTratamientos.BackColor = Color.MidnightBlue
+        pnlEdadPaciente.BackColor = Color.RoyalBlue
+        pnlNumCitas.BackColor = Color.RoyalBlue
     End Sub
 
     Private Sub PnlTratamientos_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlTratamientos.MouseLeave
@@ -571,6 +591,23 @@
         PnlTratamientos.BackColor = Color.RoyalBlue
     End Sub
 
+    Private Sub pnlModo3D_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlModo3D.Click
+
+
+
+        If grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = True Then
+            pnlPerspectiva.Visible = True
+        Else
+            pnlPerspectiva.Visible = False
+        End If
+        If PnlSubmenu3d.Visible = True Then
+            PnlSubmenu3d.Visible = False
+        Else
+            PnlSubmenu3d.Visible = True
+            PnlSubMenuDatosGrafica.Visible = False
+        End If
+    End Sub
+
     Private Sub Pnl3d_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlModo3D.MouseLeave
         pnlModo3D.BackColor = Color.RoyalBlue
     End Sub
@@ -581,16 +618,18 @@
     End Sub
 
 
-    Private Sub LblGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblGrafica.MouseEnter
+    Private Sub LblGrafica_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblDatosGrafica.MouseEnter
         pnlDatosGrafica.BackColor = Color.MidnightBlue
         pnlSubMenuCambiarPerspectiva.Visible = False
     End Sub
 
-    Private Sub LblGrafica_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles LblGrafica.MouseLeave
+    Private Sub LblGrafica_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblDatosGrafica.MouseLeave
         pnlDatosGrafica.BackColor = Color.RoyalBlue
     End Sub
     Private Sub Pnl3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlModo3D.MouseEnter
         pnlModo3D.BackColor = Color.MidnightBlue
+        pnlPerspectiva.BackColor = Color.RoyalBlue
+        pnlEdadPaciente.BackColor = Color.RoyalBlue
     End Sub
 
     Private Sub Lbl3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblModo3D.MouseEnter
@@ -660,7 +699,7 @@
                 Try
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
-                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
@@ -681,7 +720,7 @@
                 Try
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
-                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
@@ -711,7 +750,7 @@
                 Try
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
-                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
@@ -745,7 +784,7 @@
                 Try
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
-                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
@@ -785,7 +824,7 @@
                 Try
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
-                    Lbltitulo.Text = "la informacion mostrada es 'Tratamientos mas Realizados':"
+
                     Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
@@ -908,6 +947,8 @@
     End Sub
 
     Private Sub pnlNumCitas_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlNumCitas.MouseEnter
+        PnlTratamientos.BackColor = Color.RoyalBlue
+        pnlEdadPaciente.BackColor = Color.RoyalBlue
         pnlNumCitas.BackColor = Color.MidnightBlue
     End Sub
 
@@ -924,6 +965,7 @@
     End Sub
 
     Private Sub lblNumCitas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblNumCitas.Click
+
         dtpAnio.Show()
         lblAnio.Show()
         dtpAnio.Value = "01/01/2018"
@@ -1034,5 +1076,12 @@
             MsgBox("Error al obtener el número de citas", MsgBoxStyle.Exclamation)
         End Try
 
+    End Sub
+
+    
+
+   
+    Private Sub lblActivar3D_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblActivar3D.MouseLeave
+        pnlActivar3D.BackColor = Color.RoyalBlue
     End Sub
 End Class
