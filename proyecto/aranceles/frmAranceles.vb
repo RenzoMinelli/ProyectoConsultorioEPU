@@ -29,11 +29,12 @@
         Try
 
             Dim fecha As Date = Now.Date
-            Consulta = " select id_a, descripcion from aranceles where id_a in (select id_a from plan_tratamiento p inner join cita c on c.id_c = p.id_c where month(fecha) = '" + fecha.ToString("MM") + "' and year(fecha) = '" + fecha.ToString("yyyy") + "') ;"
+            Consulta = " select id_a, descripcion,costo from aranceles where id_a in (select id_a from plan_tratamiento p inner join cita c on c.id_c = p.id_c where month(fecha) = '" + fecha.ToString("MM") + "' and year(fecha) = '" + fecha.ToString("yyyy") + "') and estado = '1' ;"
             consultar()
             dgvArancelesUtilizados.DataSource = Tabla
             dgvArancelesUtilizados.Columns(0).Visible = False
             dgvArancelesUtilizados.Columns(1).HeaderText = "Descripción"
+            dgvArancelesUtilizados.Columns(2).HeaderText = "Costo"
         Catch ex As Exception
             MsgBox("Error al obtener aranceles utilizados este mes", MsgBoxStyle.Exclamation)
         End Try

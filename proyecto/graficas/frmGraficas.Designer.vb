@@ -115,7 +115,7 @@ Partial Class frmGraficas
         '
         'pbconfig
         '
-        Me.pbconfig.Image = Global.WindowsApplication1.My.Resources.Resources.wrench_and_nut_icon_icons_com_70326_1_
+        Me.pbconfig.Image = Global.WindowsApplication1.My.Resources.Resources.IconoEditarGraf
         Me.pbconfig.Location = New System.Drawing.Point(3, 2)
         Me.pbconfig.Name = "pbconfig"
         Me.pbconfig.Size = New System.Drawing.Size(25, 28)

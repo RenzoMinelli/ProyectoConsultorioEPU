@@ -133,9 +133,9 @@ Partial Class frmFinanzas
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.banknotes_1_
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.IconoPagar
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(21, 424)
+        Me.Button1.Location = New System.Drawing.Point(21, 488)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(190, 71)
         Me.Button1.TabIndex = 7
@@ -177,7 +177,7 @@ Partial Class frmFinanzas
         'txbBusqueda
         '
         Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbBusqueda.Location = New System.Drawing.Point(706, 105)
+        Me.txbBusqueda.Location = New System.Drawing.Point(705, 115)
         Me.txbBusqueda.Name = "txbBusqueda"
         Me.txbBusqueda.Size = New System.Drawing.Size(371, 35)
         Me.txbBusqueda.TabIndex = 16

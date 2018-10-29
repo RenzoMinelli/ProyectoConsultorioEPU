@@ -17,7 +17,7 @@
 
         Try
 
-            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente order by apellido asc;"
+            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente where estado = '1' order by apellido asc;"
             consultar()
             dgvPacientes.DataSource = Tabla
             dgvPacientes.Columns(3).Visible = False
@@ -230,7 +230,7 @@
             'Intentamos obtener los pacientes que cumplan con las condición
             Try
 
-                Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente where cedula like '%" + txbBusqueda.Text + "%' or nombre like '%" + txbBusqueda.Text + "%' or apellido like '%" + txbBusqueda.Text + "%';"
+                Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente where (cedula like '%" + txbBusqueda.Text + "%' or nombre like '%" + txbBusqueda.Text + "%' or apellido like '%" + txbBusqueda.Text + "%' ) and estado = '1'  order by apellido asc;"
                 consultar()
                 dgvPacientes.DataSource = Tabla
 
@@ -247,7 +247,7 @@
     Private Sub actTabla()
         Try
 
-            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente;"
+            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente where estado = '1'  order by apellido asc ;"
             consultar()
             dgvPacientes.DataSource = Tabla
             dgvPacientes.Columns(3).Visible = False

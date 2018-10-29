@@ -52,22 +52,28 @@ Partial Class frmCitas
         'btnAgregarCita
         '
         Me.btnAgregarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.btnAgregarCita.Location = New System.Drawing.Point(12, 390)
+        Me.btnAgregarCita.Image = Global.WindowsApplication1.My.Resources.Resources.IconoAgregarCita2
+        Me.btnAgregarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAgregarCita.Location = New System.Drawing.Point(19, 390)
         Me.btnAgregarCita.Name = "btnAgregarCita"
-        Me.btnAgregarCita.Size = New System.Drawing.Size(248, 90)
+        Me.btnAgregarCita.Size = New System.Drawing.Size(228, 90)
         Me.btnAgregarCita.TabIndex = 2
         Me.btnAgregarCita.Text = "Agregar cita"
+        Me.btnAgregarCita.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnAgregarCita.UseVisualStyleBackColor = True
         Me.btnAgregarCita.Visible = False
         '
         'btnMarcarCita
         '
         Me.btnMarcarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.btnMarcarCita.Location = New System.Drawing.Point(12, 12)
+        Me.btnMarcarCita.Image = Global.WindowsApplication1.My.Resources.Resources.calendario_guardar
+        Me.btnMarcarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMarcarCita.Location = New System.Drawing.Point(19, 12)
         Me.btnMarcarCita.Name = "btnMarcarCita"
-        Me.btnMarcarCita.Size = New System.Drawing.Size(248, 90)
+        Me.btnMarcarCita.Size = New System.Drawing.Size(228, 99)
         Me.btnMarcarCita.TabIndex = 5
-        Me.btnMarcarCita.Text = "Marcar cita como concluida"
+        Me.btnMarcarCita.Text = "Marcar cita" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "como" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "concluida"
+        Me.btnMarcarCita.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnMarcarCita.UseVisualStyleBackColor = True
         '
         'LabelDia
@@ -193,21 +199,27 @@ Partial Class frmCitas
         'btnCambiarCita
         '
         Me.btnCambiarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.btnCambiarCita.Location = New System.Drawing.Point(12, 127)
+        Me.btnCambiarCita.Image = Global.WindowsApplication1.My.Resources.Resources.calendario
+        Me.btnCambiarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCambiarCita.Location = New System.Drawing.Point(19, 127)
         Me.btnCambiarCita.Name = "btnCambiarCita"
-        Me.btnCambiarCita.Size = New System.Drawing.Size(248, 106)
+        Me.btnCambiarCita.Size = New System.Drawing.Size(228, 106)
         Me.btnCambiarCita.TabIndex = 17
         Me.btnCambiarCita.Text = "Cambiar Anotaciones o Duración"
+        Me.btnCambiarCita.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnCambiarCita.UseVisualStyleBackColor = True
         '
         'btnElimiarCita
         '
         Me.btnElimiarCita.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.btnElimiarCita.Location = New System.Drawing.Point(12, 254)
+        Me.btnElimiarCita.Image = Global.WindowsApplication1.My.Resources.Resources.calendario_borrar
+        Me.btnElimiarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnElimiarCita.Location = New System.Drawing.Point(19, 254)
         Me.btnElimiarCita.Name = "btnElimiarCita"
-        Me.btnElimiarCita.Size = New System.Drawing.Size(248, 106)
+        Me.btnElimiarCita.Size = New System.Drawing.Size(228, 106)
         Me.btnElimiarCita.TabIndex = 18
         Me.btnElimiarCita.Text = "Eliminar Cita"
+        Me.btnElimiarCita.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnElimiarCita.UseVisualStyleBackColor = True
         '
         'frmCitas

@@ -87,34 +87,40 @@ Partial Class frmMarcarCitaConcluida
         'btnGuardar
         '
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnGuardar.Location = New System.Drawing.Point(982, 575)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(166, 84)
         Me.btnGuardar.TabIndex = 20
         Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.Image = Global.WindowsApplication1.My.Resources.Resources.X
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCancelar.Location = New System.Drawing.Point(17, 575)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(166, 84)
         Me.btnCancelar.TabIndex = 21
         Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.notebook
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(254, 575)
+        Me.Button1.Location = New System.Drawing.Point(263, 575)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(166, 84)
+        Me.Button1.Size = New System.Drawing.Size(182, 84)
         Me.Button1.TabIndex = 22
         Me.Button1.Text = "Modificar Tratamientos"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label2
@@ -140,12 +146,14 @@ Partial Class frmMarcarCitaConcluida
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.IconoPagar
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button2.Location = New System.Drawing.Point(768, 575)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(166, 84)
         Me.Button2.TabIndex = 25
-        Me.Button2.Text = "Cobrar Extra"
+        Me.Button2.Text = "Cobrar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Extra"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.UseVisualStyleBackColor = True
         '
         'dgvAuxiliar
@@ -203,12 +211,14 @@ Partial Class frmMarcarCitaConcluida
         'btnEstado
         '
         Me.btnEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEstado.Image = Global.WindowsApplication1.My.Resources.Resources.IconoDientes
         Me.btnEstado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEstado.Location = New System.Drawing.Point(508, 575)
+        Me.btnEstado.Location = New System.Drawing.Point(520, 575)
         Me.btnEstado.Name = "btnEstado"
-        Me.btnEstado.Size = New System.Drawing.Size(166, 84)
+        Me.btnEstado.Size = New System.Drawing.Size(154, 84)
         Me.btnEstado.TabIndex = 29
-        Me.btnEstado.Text = "Estado Dientes"
+        Me.btnEstado.Text = "Estado" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Dientes"
+        Me.btnEstado.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnEstado.UseVisualStyleBackColor = True
         '
         'frmMarcarCitaConcluida

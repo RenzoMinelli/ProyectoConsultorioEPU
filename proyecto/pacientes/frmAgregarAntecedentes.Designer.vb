@@ -161,7 +161,7 @@ Partial Class frmAgregarAntecedentes
         Me.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAtras.Location = New System.Drawing.Point(584, 439)
         Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(125, 62)
+        Me.btnAtras.Size = New System.Drawing.Size(152, 77)
         Me.btnAtras.TabIndex = 11
         Me.btnAtras.Text = "Atrás"
         Me.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight
