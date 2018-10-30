@@ -328,6 +328,7 @@
                                 PnlDiente13c1.BackColor = Color.White
                         End Select
                         diente13c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "132"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -339,6 +340,7 @@
                             Case Else
                                 PnlDiente13c2.BackColor = Color.White
                         End Select
+                        diente13c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "133"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -352,6 +354,8 @@
                                 PnlDiente13c3.BackColor = Color.White
                         End Select
                         diente13c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
+
                     Case "134"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -364,6 +368,7 @@
                                 PnlDiente13c4.BackColor = Color.White
                         End Select
                         diente13c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "141"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -496,6 +501,7 @@
                                 PnlDiente16c2.BackColor = Color.White
                         End Select
                         diente16c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "163"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -508,6 +514,7 @@
                                 PnlDiente16c3.BackColor = Color.White
                         End Select
                         diente16c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "164"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -520,6 +527,7 @@
                                 PnlDiente16c4.BackColor = Color.White
                         End Select
                         diente16c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "171"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -571,6 +579,7 @@
                                 PnlDiente17c4.BackColor = Color.White
                         End Select
                         diente17c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "181"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -583,6 +592,7 @@
                                 PnlDiente18c1.BackColor = Color.White
                         End Select
                         diente18c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "182"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -608,6 +618,7 @@
                                 PnlDiente18c3.BackColor = Color.White
                         End Select
                         diente18c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "184"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -635,6 +646,7 @@
                                 PnlDiente21c1.BackColor = Color.White
                         End Select
                         diente21c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "212"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -646,6 +658,7 @@
                             Case Else
                                 PnlDiente21c2.BackColor = Color.White
                                 diente21c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                         End Select
                     Case "213"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -659,6 +672,7 @@
                                 PnlDiente21c3.BackColor = Color.White
                         End Select
                         diente21c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "214"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -670,6 +684,7 @@
                             Case Else
                                 PnlDiente21c4.BackColor = Color.White
                         End Select
+                        diente21c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "221"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -682,6 +697,7 @@
                             Case Else
                                 PnlDiente22c1.BackColor = Color.White
                         End Select
+                        diente22c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "222"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -694,7 +710,7 @@
                             Case Else
                                 PnlDiente22c2.BackColor = Color.White
                         End Select
-
+                        diente22c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "223"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -707,6 +723,7 @@
                             Case Else
                                 PnlDiente22c3.BackColor = Color.White
                         End Select
+                        diente22c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "224"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -719,7 +736,7 @@
                             Case Else
                                 PnlDiente22c4.BackColor = Color.White
                         End Select
-
+                        diente22c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "231"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -732,6 +749,7 @@
                             Case Else
                                 PnlDiente23c1.BackColor = Color.White
                         End Select
+                        diente23c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "232"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -744,6 +762,7 @@
                             Case Else
                                 PnlDiente23c2.BackColor = Color.White
                         End Select
+                        diente23c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "233"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -756,6 +775,7 @@
                             Case Else
                                 PnlDiente23c3.BackColor = Color.White
                         End Select
+                        diente23c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "234"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -768,6 +788,7 @@
                             Case Else
                                 PnlDiente23c4.BackColor = Color.White
                         End Select
+                        diente23c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "241"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -780,6 +801,7 @@
                             Case Else
                                 PnlDiente24c1.BackColor = Color.White
                         End Select
+                        diente24c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "242"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -792,6 +814,7 @@
                             Case Else
                                 PnlDiente24c2.BackColor = Color.White
                         End Select
+                        diente24c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "243"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -804,6 +827,7 @@
                             Case Else
                                 PnlDiente24c3.BackColor = Color.White
                         End Select
+                        diente24c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "244"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -816,6 +840,7 @@
                             Case Else
                                 PnlDiente24c4.BackColor = Color.White
                         End Select
+                        diente22c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "251"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -828,7 +853,7 @@
                             Case Else
                                 PnlDiente25c1.BackColor = Color.White
                         End Select
-
+                        diente25c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "252"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -841,6 +866,7 @@
                             Case Else
                                 PnlDiente25c2.BackColor = Color.White
                         End Select
+                        diente25c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "253"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -853,6 +879,7 @@
                             Case Else
                                 PnlDiente25c3.BackColor = Color.White
                         End Select
+                        diente25c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "254"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -865,6 +892,7 @@
                             Case Else
                                 PnlDiente25c4.BackColor = Color.White
                         End Select
+                        diente25c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "261"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -877,6 +905,7 @@
                             Case Else
                                 PnlDiente26c1.BackColor = Color.White
                         End Select
+                        diente26c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "262"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -889,6 +918,7 @@
                             Case Else
                                 PnlDiente26c2.BackColor = Color.White
                         End Select
+                        diente26c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "263"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -901,6 +931,7 @@
                             Case Else
                                 PnlDiente26c3.BackColor = Color.White
                         End Select
+                        diente26c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "264"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -913,6 +944,7 @@
                             Case Else
                                 PnlDiente26c4.BackColor = Color.White
                         End Select
+                        diente26c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "271"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -925,7 +957,7 @@
                             Case Else
                                 PnlDiente27c1.BackColor = Color.White
                         End Select
-
+                        diente27c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "272"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -938,7 +970,7 @@
                             Case Else
                                 PnlDiente27c2.BackColor = Color.White
                         End Select
-
+                        diente27c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "273"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -951,6 +983,7 @@
                             Case Else
                                 PnlDiente27c3.BackColor = Color.White
                         End Select
+                        diente27c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "274"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -963,6 +996,7 @@
                             Case Else
                                 PnlDiente27c4.BackColor = Color.White
                         End Select
+                        diente27c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "281"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -975,6 +1009,7 @@
                             Case Else
                                 PnlDiente28c1.BackColor = Color.White
                         End Select
+                        diente28c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "282"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -987,7 +1022,7 @@
                             Case Else
                                 PnlDiente28c2.BackColor = Color.White
                         End Select
-
+                        diente28c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "283"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1000,6 +1035,7 @@
                             Case Else
                                 PnlDiente28c3.BackColor = Color.White
                         End Select
+                        diente28c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "284"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1012,6 +1048,7 @@
                             Case Else
                                 PnlDiente28c4.BackColor = Color.White
                         End Select
+                        diente28c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
                 End Select
 
                 '/////////////////////////////////////////////////////////////
@@ -1027,6 +1064,8 @@
                             Case Else
                                 pnlDiente31c1.BackColor = Color.White
                         End Select
+                        diente31c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "312"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -1037,8 +1076,9 @@
                                 pnlDiente31c2.BackColor = Color.Black
                             Case Else
                                 pnlDiente31c2.BackColor = Color.White
-
                         End Select
+                        diente31c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "313"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -1050,6 +1090,7 @@
                             Case Else
                                 pnlDiente31c3.BackColor = Color.White
                         End Select
+                        diente31c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "314"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1062,6 +1103,7 @@
                             Case Else
                                 pnlDiente31c4.BackColor = Color.White
                         End Select
+                        diente31c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "321"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1074,6 +1116,7 @@
                             Case Else
                                 pnlDiente32c1.BackColor = Color.White
                         End Select
+                        diente32c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "322"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1086,7 +1129,7 @@
                             Case Else
                                 pnlDiente32c2.BackColor = Color.White
                         End Select
-
+                        diente32c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "323"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1099,6 +1142,7 @@
                             Case Else
                                 pnlDiente32c3.BackColor = Color.White
                         End Select
+                        diente32c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "324"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1111,7 +1155,7 @@
                             Case Else
                                 pnlDiente32c4.BackColor = Color.White
                         End Select
-
+                        diente32c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "331"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1124,6 +1168,7 @@
                             Case Else
                                 pnlDiente33c1.BackColor = Color.White
                         End Select
+                        diente33c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "332"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1136,6 +1181,7 @@
                             Case Else
                                 pnlDiente33c2.BackColor = Color.White
                         End Select
+                        diente33c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "333"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1148,6 +1194,7 @@
                             Case Else
                                 pnlDiente33c3.BackColor = Color.White
                         End Select
+                        diente33c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "334"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1160,6 +1207,7 @@
                             Case Else
                                 pnlDiente33c4.BackColor = Color.White
                         End Select
+                        diente33c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "341"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1172,6 +1220,7 @@
                             Case Else
                                 pnlDiente34c1.BackColor = Color.White
                         End Select
+                        diente34c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "342"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1184,6 +1233,7 @@
                             Case Else
                                 pnlDiente34c2.BackColor = Color.White
                         End Select
+                        diente34c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "343"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1196,6 +1246,7 @@
                             Case Else
                                 pnlDiente34c3.BackColor = Color.White
                         End Select
+                        diente34c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "344"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1208,6 +1259,7 @@
                             Case Else
                                 pnlDiente34c4.BackColor = Color.White
                         End Select
+                        diente34c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "351"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1220,7 +1272,7 @@
                             Case Else
                                 pnlDiente35c1.BackColor = Color.White
                         End Select
-
+                        diente35c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "352"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1233,6 +1285,7 @@
                             Case Else
                                 pnlDiente35c2.BackColor = Color.White
                         End Select
+                        diente35c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "353"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1245,6 +1298,7 @@
                             Case Else
                                 pnlDiente35c3.BackColor = Color.White
                         End Select
+                        diente35c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "354"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1257,6 +1311,7 @@
                             Case Else
                                 pnlDiente35c4.BackColor = Color.White
                         End Select
+                        diente35c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "361"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1269,6 +1324,7 @@
                             Case Else
                                 pnlDiente36c1.BackColor = Color.White
                         End Select
+                        diente36c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "362"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1281,6 +1337,7 @@
                             Case Else
                                 pnlDiente36c2.BackColor = Color.White
                         End Select
+                        diente36c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "363"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1293,6 +1350,7 @@
                             Case Else
                                 pnlDiente36c3.BackColor = Color.White
                         End Select
+                        diente36c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "364"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1305,6 +1363,7 @@
                             Case Else
                                 pnlDiente36c4.BackColor = Color.White
                         End Select
+                        diente36c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "371"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1317,7 +1376,7 @@
                             Case Else
                                 pnlDiente37c1.BackColor = Color.White
                         End Select
-
+                        diente37c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "372"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1330,7 +1389,7 @@
                             Case Else
                                 pnlDiente37c2.BackColor = Color.White
                         End Select
-
+                        diente37c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "373"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1343,6 +1402,7 @@
                             Case Else
                                 pnlDiente37c3.BackColor = Color.White
                         End Select
+                        diente37c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "374"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1355,6 +1415,7 @@
                             Case Else
                                 pnlDiente37c4.BackColor = Color.White
                         End Select
+                        diente37c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "381"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1367,6 +1428,7 @@
                             Case Else
                                 pnlDiente38c1.BackColor = Color.White
                         End Select
+                        diente38c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "382"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1379,7 +1441,7 @@
                             Case Else
                                 pnlDiente38c2.BackColor = Color.White
                         End Select
-
+                        diente38c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "383"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1392,6 +1454,7 @@
                             Case Else
                                 pnlDiente38c3.BackColor = Color.White
                         End Select
+                        diente38c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "384"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1404,6 +1467,7 @@
                             Case Else
                                 pnlDiente38c4.BackColor = Color.White
                         End Select
+                        diente38c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
                 End Select
                 '/////////////////////////////////////////////////////////////////////
 
@@ -1419,6 +1483,8 @@
                             Case Else
                                 PnlDiente41c1.BackColor = Color.White
                         End Select
+                        diente41c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "412"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -1431,6 +1497,8 @@
                                 PnlDiente41c2.BackColor = Color.White
 
                         End Select
+                        diente41c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "413"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
@@ -1442,6 +1510,7 @@
                             Case Else
                                 PnlDiente41c3.BackColor = Color.White
                         End Select
+                        diente41c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "414"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1454,6 +1523,7 @@
                             Case Else
                                 PnlDiente41c4.BackColor = Color.White
                         End Select
+                        diente41c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "421"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1466,6 +1536,7 @@
                             Case Else
                                 PnlDiente42c1.BackColor = Color.White
                         End Select
+                        diente42c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "422"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1478,7 +1549,7 @@
                             Case Else
                                 PnlDiente42c2.BackColor = Color.White
                         End Select
-
+                        diente42c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "423"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1491,6 +1562,7 @@
                             Case Else
                                 PnlDiente42c3.BackColor = Color.White
                         End Select
+                        diente42c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "424"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1503,7 +1575,7 @@
                             Case Else
                                 PnlDiente42c4.BackColor = Color.White
                         End Select
-
+                        diente42c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "431"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1516,6 +1588,7 @@
                             Case Else
                                 PnlDiente43c1.BackColor = Color.White
                         End Select
+                        diente43c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "432"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1528,6 +1601,7 @@
                             Case Else
                                 PnlDiente43c2.BackColor = Color.White
                         End Select
+                        diente43c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "433"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1540,6 +1614,7 @@
                             Case Else
                                 PnlDiente43c3.BackColor = Color.White
                         End Select
+                        diente43c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "434"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1552,6 +1627,7 @@
                             Case Else
                                 PnlDiente43c4.BackColor = Color.White
                         End Select
+                        diente43c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "441"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1564,6 +1640,7 @@
                             Case Else
                                 PnlDiente44c1.BackColor = Color.White
                         End Select
+                        diente44c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "442"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1576,6 +1653,7 @@
                             Case Else
                                 PnlDiente44c2.BackColor = Color.White
                         End Select
+                        diente44c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "443"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1588,6 +1666,7 @@
                             Case Else
                                 PnlDiente44c3.BackColor = Color.White
                         End Select
+                        diente44c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "444"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1600,6 +1679,7 @@
                             Case Else
                                 PnlDiente44c4.BackColor = Color.White
                         End Select
+                        diente44c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "451"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1612,6 +1692,7 @@
                             Case Else
                                 PnlDiente45c1.BackColor = Color.White
                         End Select
+                        diente45c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
 
                     Case "452"
@@ -1625,6 +1706,7 @@
                             Case Else
                                 PnlDiente45c2.BackColor = Color.White
                         End Select
+                        diente45c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "453"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1637,6 +1719,7 @@
                             Case Else
                                 PnlDiente45c3.BackColor = Color.White
                         End Select
+                        diente45c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "454"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1649,6 +1732,7 @@
                             Case Else
                                 PnlDiente45c4.BackColor = Color.White
                         End Select
+                        diente45c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "461"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1661,6 +1745,7 @@
                             Case Else
                                 PnlDiente46c1.BackColor = Color.White
                         End Select
+                        diente46c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "462"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1673,6 +1758,7 @@
                             Case Else
                                 PnlDiente46c2.BackColor = Color.White
                         End Select
+                        diente46c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "463"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1685,6 +1771,7 @@
                             Case Else
                                 PnlDiente46c3.BackColor = Color.White
                         End Select
+                        diente46c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "464"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1697,6 +1784,7 @@
                             Case Else
                                 PnlDiente46c4.BackColor = Color.White
                         End Select
+                        diente46c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "471"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1709,6 +1797,7 @@
                             Case Else
                                 PnlDiente47c1.BackColor = Color.White
                         End Select
+                        diente47c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
 
                     Case "472"
@@ -1722,7 +1811,7 @@
                             Case Else
                                 PnlDiente47c2.BackColor = Color.White
                         End Select
-
+                        diente47c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "473"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1735,6 +1824,7 @@
                             Case Else
                                 PnlDiente47c3.BackColor = Color.White
                         End Select
+                        diente47c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "474"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1747,6 +1837,7 @@
                             Case Else
                                 PnlDiente47c4.BackColor = Color.White
                         End Select
+                        diente47c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "481"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1759,6 +1850,7 @@
                             Case Else
                                 PnlDiente48c1.BackColor = Color.White
                         End Select
+                        diente48c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "482"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1771,7 +1863,7 @@
                             Case Else
                                 PnlDiente48c2.BackColor = Color.White
                         End Select
-
+                        diente48c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "483"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1784,6 +1876,7 @@
                             Case Else
                                 PnlDiente48c3.BackColor = Color.White
                         End Select
+                        diente48c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                     Case "484"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
@@ -1796,6 +1889,7 @@
                             Case Else
                                 PnlDiente48c4.BackColor = Color.White
                         End Select
+                        diente48c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
 
                 End Select
             Next
