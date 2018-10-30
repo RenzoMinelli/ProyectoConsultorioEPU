@@ -215,145 +215,187 @@
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente11c1.BackColor = Color.Red
-
+                                cambiador11c1 = 2
                             Case "precaucion"
                                 PnlDiente11c1.BackColor = Color.Yellow
+                                cambiador11c1 = 1
                             Case "ausente"
                                 PnlDiente11c1.BackColor = Color.Black
+                                cambiador11c1 = 3
                             Case Else
                                 PnlDiente11c1.BackColor = Color.White
-                        End Select
+                                cambiador11c1 = 0
 
-                        diente11c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+                        End Select
 
                     Case "112"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente11c2.BackColor = Color.Red
+                                cambiador11c2 = 2
                             Case "precaucion"
                                 PnlDiente11c2.BackColor = Color.Yellow
+                                cambiador11c2 = 1
                             Case "ausente"
                                 PnlDiente11c2.BackColor = Color.Black
+                                cambiador11c2 = 3
                             Case Else
                                 PnlDiente11c2.BackColor = Color.White
+                                cambiador11c2 = 0
 
                         End Select
-                        diente11c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "113"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente11c3.BackColor = Color.Red
+                                cambiador11c3 = 3
                             Case "precaucion"
                                 PnlDiente11c3.BackColor = Color.Yellow
+                                cambiador11c3 = 1
                             Case "ausente"
                                 PnlDiente11c3.BackColor = Color.Black
+                                cambiador11c3 = 3
                             Case Else
                                 PnlDiente11c3.BackColor = Color.White
+                                cambiador11c3 = 0
                         End Select
-                        diente11c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "114"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente11c4.BackColor = Color.Red
+                                cambiador11c4 = 2
                             Case "precaucion"
                                 PnlDiente11c4.BackColor = Color.Yellow
+                                cambiador11c4 = 1
                             Case "ausente"
                                 PnlDiente11c4.BackColor = Color.Black
+                                cambiador11c4 = 3
                             Case Else
                                 PnlDiente11c4.BackColor = Color.White
+                                cambiador11c4 = 0
                         End Select
-                        diente11c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "121"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente12c1.BackColor = Color.Red
+                                cambiador12c1 = 2
                             Case "precaucion"
                                 PnlDiente12c1.BackColor = Color.Yellow
+                                cambiador12c1 = 1
                             Case "ausente"
                                 PnlDiente12c1.BackColor = Color.Black
+                                cambiador12c1 = 3
                             Case Else
                                 PnlDiente12c1.BackColor = Color.White
+                                cambiador12c1 = 0
                         End Select
-                        diente12c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "122"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente12c2.BackColor = Color.Red
+                                cambiador12c2 = 2
                             Case "precaucion"
                                 PnlDiente12c2.BackColor = Color.Yellow
+                                cambiador12c2 = 1
                             Case "ausente"
                                 PnlDiente12c2.BackColor = Color.Black
+                                cambiador12c2 = 3
                             Case Else
                                 PnlDiente12c2.BackColor = Color.White
+                                cambiador12c2 = 0
                         End Select
-                        diente12c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "123"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente12c3.BackColor = Color.Red
+                                cambiador12c3 = 2
                             Case "precaucion"
                                 PnlDiente12c3.BackColor = Color.Yellow
+                                cambiador12c3 = 1
                             Case "ausente"
                                 PnlDiente12c3.BackColor = Color.Black
+                                cambiador12c3 = 3
                             Case Else
                                 PnlDiente12c3.BackColor = Color.White
+                                cambiador12c3 = 0
                         End Select
-                        diente12c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
                     Case "124"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente12c4.BackColor = Color.Red
+                                cambiador12c3 = 2
                             Case "precaucion"
                                 PnlDiente12c4.BackColor = Color.Yellow
+                                cambiador12c4 = 1
                             Case "ausente"
                                 PnlDiente12c4.BackColor = Color.Black
+                                cambiador12c4 = 3
                             Case Else
                                 PnlDiente12c4.BackColor = Color.White
+                                cambiador12c4 = 0
                         End Select
-                        diente12c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "131"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente13c1.BackColor = Color.Red
+                                cambiador13c1 = 2
                             Case "precaucion"
                                 PnlDiente13c1.BackColor = Color.Yellow
+                                cambiador31c1 = 1
                             Case "ausente"
                                 PnlDiente13c1.BackColor = Color.Black
+                                cambiador13c1 = 3
                             Case Else
                                 PnlDiente13c1.BackColor = Color.White
+                                cambiador13c1 = 0
                         End Select
-                        diente13c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "132"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente13c2.BackColor = Color.Red
+                                cambiador13c2 = 2
                             Case "precaucion"
                                 PnlDiente13c2.BackColor = Color.Yellow
+                                cambiador13c2 = 1
                             Case "ausente"
                                 PnlDiente13c2.BackColor = Color.Black
+                                cambiador13c2 = 3
                             Case Else
                                 PnlDiente13c2.BackColor = Color.White
+                                cambiador13c2 = 0
                         End Select
-                        diente13c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "133"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
                             Case "alerta"
                                 PnlDiente13c3.BackColor = Color.Red
+                                cambiador13c3 = 2
                             Case "precaucion"
                                 PnlDiente13c3.BackColor = Color.Yellow
+                                cambiador13c3 = 1
                             Case "ausente"
                                 PnlDiente13c3.BackColor = Color.Black
+                                cambiador13c3 = 3
                             Case Else
                                 PnlDiente13c3.BackColor = Color.White
+                                cambiador13c3 = 0
                         End Select
-                        diente13c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
 
                     Case "134"

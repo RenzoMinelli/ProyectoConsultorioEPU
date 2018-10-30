@@ -28,15 +28,6 @@ Partial Class frmRegistroMedico
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Panel000 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel0000 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel01477 = New System.Windows.Forms.Panel()
         Me.Panel55 = New System.Windows.Forms.Panel()
         Me.lblOdontogramainicial = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -307,11 +298,22 @@ Partial Class frmRegistroMedico
         Me.lblOdontogramaactual = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel01477.SuspendLayout()
+        Me.Panel01477 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel0000 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel000 = New System.Windows.Forms.Panel()
         CType(Me.dgvTratamientos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvEstadoDiente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
+        Me.Panel01477.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -326,91 +328,6 @@ Partial Class frmRegistroMedico
         Me.Button1.Text = "Atrás"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Panel000
-        '
-        Me.Panel000.BackColor = System.Drawing.Color.Red
-        Me.Panel000.Location = New System.Drawing.Point(12, 23)
-        Me.Panel000.Name = "Panel000"
-        Me.Panel000.Size = New System.Drawing.Size(20, 20)
-        Me.Panel000.TabIndex = 0
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(24, 19)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 24)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Malo"
-        '
-        'Panel0000
-        '
-        Me.Panel0000.BackColor = System.Drawing.Color.Yellow
-        Me.Panel0000.Location = New System.Drawing.Point(81, 23)
-        Me.Panel0000.Name = "Panel0000"
-        Me.Panel0000.Size = New System.Drawing.Size(20, 22)
-        Me.Panel0000.TabIndex = 2
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(93, 21)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(106, 24)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Precaucion"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Location = New System.Drawing.Point(204, 23)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(30, 22)
-        Me.Panel1.TabIndex = 3
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(228, 21)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(71, 24)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Normal"
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.Black
-        Me.Panel4.Location = New System.Drawing.Point(301, 23)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(30, 22)
-        Me.Panel4.TabIndex = 5
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(346, 23)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 24)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Faltante"
-        '
-        'Panel01477
-        '
-        Me.Panel01477.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Panel01477.Controls.Add(Me.Label1)
-        Me.Panel01477.Controls.Add(Me.Panel4)
-        Me.Panel01477.Controls.Add(Me.Label4)
-        Me.Panel01477.Controls.Add(Me.Panel1)
-        Me.Panel01477.Controls.Add(Me.Label3)
-        Me.Panel01477.Controls.Add(Me.Panel0000)
-        Me.Panel01477.Controls.Add(Me.Label2)
-        Me.Panel01477.Controls.Add(Me.Panel000)
-        Me.Panel01477.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel01477.Location = New System.Drawing.Point(722, 115)
-        Me.Panel01477.Name = "Panel01477"
-        Me.Panel01477.Size = New System.Drawing.Size(429, 142)
-        Me.Panel01477.TabIndex = 25
         '
         'Panel55
         '
@@ -2630,11 +2547,116 @@ Partial Class frmRegistroMedico
         Me.Panel5.Size = New System.Drawing.Size(648, 122)
         Me.Panel5.TabIndex = 440
         '
+        'Panel01477
+        '
+        Me.Panel01477.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Panel01477.Controls.Add(Me.Label5)
+        Me.Panel01477.Controls.Add(Me.Panel20)
+        Me.Panel01477.Controls.Add(Me.Label1)
+        Me.Panel01477.Controls.Add(Me.Panel4)
+        Me.Panel01477.Controls.Add(Me.Label4)
+        Me.Panel01477.Controls.Add(Me.Panel1)
+        Me.Panel01477.Controls.Add(Me.Label3)
+        Me.Panel01477.Controls.Add(Me.Panel0000)
+        Me.Panel01477.Controls.Add(Me.Label2)
+        Me.Panel01477.Controls.Add(Me.Panel000)
+        Me.Panel01477.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel01477.Location = New System.Drawing.Point(704, 128)
+        Me.Panel01477.Name = "Panel01477"
+        Me.Panel01477.Size = New System.Drawing.Size(453, 60)
+        Me.Panel01477.TabIndex = 54
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(259, 2)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(69, 24)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "puente"
+        '
+        'Panel20
+        '
+        Me.Panel20.BackColor = System.Drawing.Color.Green
+        Me.Panel20.Location = New System.Drawing.Point(238, 7)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(24, 19)
+        Me.Panel20.TabIndex = 7
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(378, 8)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(76, 24)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Faltante"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Black
+        Me.Panel4.Location = New System.Drawing.Point(345, 9)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(24, 19)
+        Me.Panel4.TabIndex = 5
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(268, 32)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(71, 24)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Normal"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Location = New System.Drawing.Point(238, 33)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(24, 19)
+        Me.Panel1.TabIndex = 3
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(30, 28)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(188, 24)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Restauracion estetica"
+        '
+        'Panel0000
+        '
+        Me.Panel0000.BackColor = System.Drawing.Color.Yellow
+        Me.Panel0000.Location = New System.Drawing.Point(5, 32)
+        Me.Panel0000.Name = "Panel0000"
+        Me.Panel0000.Size = New System.Drawing.Size(24, 19)
+        Me.Panel0000.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(29, 4)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(75, 24)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Cariado"
+        '
+        'Panel000
+        '
+        Me.Panel000.BackColor = System.Drawing.Color.Red
+        Me.Panel000.Location = New System.Drawing.Point(5, 9)
+        Me.Panel000.Name = "Panel000"
+        Me.Panel000.Size = New System.Drawing.Size(24, 17)
+        Me.Panel000.TabIndex = 0
+        '
         'frmRegistroMedico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1184, 725)
+        Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.PnlDiente2_21c2)
         Me.Controls.Add(Me.lblOdontogramaactual)
         Me.Controls.Add(Me.pnlDiente2_38c1)
@@ -2899,7 +2921,6 @@ Partial Class frmRegistroMedico
         Me.Controls.Add(Me.dgvTratamientos)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.lblOdontogramainicial)
-        Me.Controls.Add(Me.Panel01477)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel55)
         Me.Controls.Add(Me.Panel2)
@@ -2907,26 +2928,17 @@ Partial Class frmRegistroMedico
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmRegistroMedico"
         Me.Text = "Registro_Medico"
-        Me.Panel01477.ResumeLayout(False)
-        Me.Panel01477.PerformLayout()
         CType(Me.dgvTratamientos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvEstadoDiente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
+        Me.Panel01477.ResumeLayout(False)
+        Me.Panel01477.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Panel000 As System.Windows.Forms.Panel
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Panel0000 As System.Windows.Forms.Panel
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Panel4 As System.Windows.Forms.Panel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Panel01477 As System.Windows.Forms.Panel
     Friend WithEvents Panel55 As System.Windows.Forms.Panel
     Friend WithEvents lblOdontogramainicial As System.Windows.Forms.Label
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
@@ -3197,4 +3209,15 @@ Partial Class frmRegistroMedico
     Friend WithEvents lblOdontogramaactual As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents Panel01477 As System.Windows.Forms.Panel
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Panel20 As System.Windows.Forms.Panel
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Panel0000 As System.Windows.Forms.Panel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Panel000 As System.Windows.Forms.Panel
 End Class
