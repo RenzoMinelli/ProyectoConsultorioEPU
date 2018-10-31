@@ -6720,7 +6720,7 @@
             End If
 
             If cambiador28c4 = True Then
-                Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente, cara) values ('" + id_p.ToString + "','" + diente28c4E + "','" + zona2 + "', '8',  '4', '" + fecha.ToString("yyyy-MM-dd hh:mm:ss") + "');")
+                Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente, cara, fecha) values ('" + id_p.ToString + "','" + diente28c4E + "','" + zona2 + "', '8',  '4', '" + fecha.ToString("yyyy-MM-dd hh:mm:ss") + "');")
                 consultar()
 
             End If

@@ -175,11 +175,14 @@ Partial Class pnlfondo
         'bttoningrdientes
         '
         Me.bttoningrdientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bttoningrdientes.Location = New System.Drawing.Point(469, 525)
+        Me.bttoningrdientes.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
+        Me.bttoningrdientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bttoningrdientes.Location = New System.Drawing.Point(449, 502)
         Me.bttoningrdientes.Name = "bttoningrdientes"
-        Me.bttoningrdientes.Size = New System.Drawing.Size(321, 49)
+        Me.bttoningrdientes.Size = New System.Drawing.Size(252, 72)
         Me.bttoningrdientes.TabIndex = 0
-        Me.bttoningrdientes.Text = "Ingresar Estado Dientes"
+        Me.bttoningrdientes.Text = "Ingresar Estado" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Dientes"
+        Me.bttoningrdientes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.bttoningrdientes.UseVisualStyleBackColor = True
         '
         'Panel01477
@@ -206,9 +209,9 @@ Partial Class pnlfondo
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(462, 22)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(69, 24)
+        Me.Label5.Size = New System.Drawing.Size(70, 24)
         Me.Label5.TabIndex = 8
-        Me.Label5.Text = "puente"
+        Me.Label5.Text = "Puente"
         '
         'Panel20
         '
@@ -257,9 +260,9 @@ Partial Class pnlfondo
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(199, 19)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(188, 24)
+        Me.Label3.Size = New System.Drawing.Size(190, 24)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Restauracion estetica"
+        Me.Label3.Text = "Restauracion Estética"
         '
         'Panel0000
         '
@@ -1348,11 +1351,14 @@ Partial Class pnlfondo
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(65, 525)
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.IconoFlechaIzquierda
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(65, 502)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(117, 49)
+        Me.Button1.Size = New System.Drawing.Size(152, 72)
         Me.Button1.TabIndex = 274
         Me.Button1.Text = "Atras"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
         'dgvEstadoDiente2
@@ -1366,6 +1372,7 @@ Partial Class pnlfondo
         Me.dgvEstadoDiente2.Name = "dgvEstadoDiente2"
         Me.dgvEstadoDiente2.Size = New System.Drawing.Size(20, 23)
         Me.dgvEstadoDiente2.TabIndex = 275
+        Me.dgvEstadoDiente2.Visible = False
         '
         'pnlfondo
         '
