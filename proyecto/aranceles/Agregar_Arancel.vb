@@ -10,7 +10,7 @@
 
             'actualizo la tabla
 
-            Consulta = "select * from aranceles"
+            Consulta = "select * from aranceles where estado = 1"
             consultar()
             frmAranceles.dgvAranceles.DataSource = Tabla
             Me.Dispose()

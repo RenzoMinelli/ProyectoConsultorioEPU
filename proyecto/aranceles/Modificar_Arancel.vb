@@ -1,12 +1,12 @@
 ﻿Public Class Modificar_Arancel
     Dim id As Integer = frmAranceles.id
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Consulta = "update aranceles set descripcion = '" + TextBox1.Text + "', costo = '" + TextBox2.Text + "' where id_a = " + Str(id) + ";"
+        Consulta = "update aranceles set descripcion = '" + TextBox1.Text + "', costo = '" + TextBox2.Text + "' where id_a = " + Str(id) + " and estado = 1;"
         consultar()
         frmAranceles.Show()
         Me.Dispose()
 
-        Consulta = "select * from aranceles"
+        Consulta = "select * from aranceles where estado = 1"
         consultar()
         frmAranceles.dgvAranceles.DataSource = Tabla
         Me.Dispose()
