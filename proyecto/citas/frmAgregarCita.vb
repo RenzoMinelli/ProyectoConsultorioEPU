@@ -71,7 +71,7 @@
             MsgBox("Complete la duaración de la cita", MsgBoxStyle.Exclamation)
         Else
 
-            Dim ultimaHora As TimeSpan = (Convert.ToDateTime("21:00:00")).TimeOfDay
+            Dim ultimaHora As TimeSpan = (Convert.ToDateTime("20:30:00")).TimeOfDay
             Dim primeraHora As TimeSpan = (Convert.ToDateTime("08:00:00")).TimeOfDay
             Dim horaCita As TimeSpan = (Convert.ToDateTime(frmCitas.horaCita)).TimeOfDay
             Dim horaCitaFinal As New TimeSpan
@@ -104,7 +104,7 @@
 
 
 
-            If horaCitaFinal < ultimaHora And horaCita > primeraHora Then
+            If horaCitaFinal <= ultimaHora And horaCita >= primeraHora Then
 
                 Dim control As Integer = 0
 
@@ -113,11 +113,11 @@
 
                     HoraAux = dgvCitasEnLaFecha.Rows(x).Cells(3).Value
 
-                  
+
                     If dgvCitasEnLaFecha.Rows(x).Cells(4).Value > 1 Then
 
                         HoraAuxFinal = HoraAux + mediaHora
-                      
+
                         If dgvCitasEnLaFecha.Rows(x).Cells(4).Value > 2 Then
 
 
@@ -134,7 +134,7 @@
                         HoraAuxFinal = HoraAux
                     End If
 
-                  
+
                     If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
 
                         control = 1
@@ -185,17 +185,7 @@
         Me.Dispose()
     End Sub
 
-    Private Sub txbBusqueda_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
-        'Si el contenido de txbBusqueda es Buscar y de color gris
-        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
-
-            'El cursos se ubique al inicio
-            Me.txbBusqueda.SelectionStart = 0
-
-        End If
-
-    End Sub
 
 
     Private Sub txbBusqueda_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txbBusqueda.KeyDown
@@ -219,20 +209,15 @@
         'Cuando el contenido de txbBusqueda cambia, guardamos lo ingresado en la variable busqueda
         Dim busqueda As String = txbBusqueda.Text
 
-        'Si el txbBusqueda es igual a 'Buscar' y es de color Gris
-        If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
-
-            'Que actualice el dgbPaciente simplemente
-            actTabla()
-
-        Else 'Si no
+      
 
             'Intentamos obtener los pacientes que cumplan con las condición
             Try
 
-                Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente where (cedula like '%" + txbBusqueda.Text + "%' or nombre like '%" + txbBusqueda.Text + "%' or apellido like '%" + txbBusqueda.Text + "%' ) and estado = '1'  order by apellido asc;"
-                consultar()
-                dgvPacientes.DataSource = Tabla
+            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente where (cedula like '" + txbBusqueda.Text + "%' or nombre like '" + txbBusqueda.Text + "%' or apellido like '" + txbBusqueda.Text + "%' ) and estado = '1'  order by apellido asc;"
+            consultar()
+            dgvPacientes.DataSource = Tabla
+            dgvPacientes.ClearSelection()
 
             Catch ex As Exception
 
@@ -241,7 +226,7 @@
 
             End Try
 
-        End If
+
 
     End Sub
     Private Sub actTabla()

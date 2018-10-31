@@ -38,10 +38,9 @@ Partial Class frmIngresoContraseña
         'btnguardar
         '
         Me.btnguardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnguardar.Location = New System.Drawing.Point(116, 464)
-        Me.btnguardar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnguardar.Location = New System.Drawing.Point(87, 377)
         Me.btnguardar.Name = "btnguardar"
-        Me.btnguardar.Size = New System.Drawing.Size(565, 66)
+        Me.btnguardar.Size = New System.Drawing.Size(424, 54)
         Me.btnguardar.TabIndex = 0
         Me.btnguardar.Text = "Guardar Contraseña"
         Me.btnguardar.UseVisualStyleBackColor = True
@@ -49,31 +48,28 @@ Partial Class frmIngresoContraseña
         'txtcontraseña
         '
         Me.txtcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcontraseña.Location = New System.Drawing.Point(479, 265)
-        Me.txtcontraseña.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtcontraseña.Location = New System.Drawing.Point(359, 215)
         Me.txtcontraseña.Name = "txtcontraseña"
         Me.txtcontraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtcontraseña.Size = New System.Drawing.Size(201, 41)
+        Me.txtcontraseña.Size = New System.Drawing.Size(152, 35)
         Me.txtcontraseña.TabIndex = 1
         '
         'txtrepcontraseña
         '
         Me.txtrepcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtrepcontraseña.Location = New System.Drawing.Point(479, 363)
-        Me.txtrepcontraseña.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtrepcontraseña.Location = New System.Drawing.Point(359, 295)
         Me.txtrepcontraseña.Name = "txtrepcontraseña"
         Me.txtrepcontraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtrepcontraseña.Size = New System.Drawing.Size(201, 41)
+        Me.txtrepcontraseña.Size = New System.Drawing.Size(152, 35)
         Me.txtrepcontraseña.TabIndex = 2
         '
         'lblcontraseña
         '
         Me.lblcontraseña.AutoSize = True
         Me.lblcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcontraseña.Location = New System.Drawing.Point(109, 265)
-        Me.lblcontraseña.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblcontraseña.Location = New System.Drawing.Point(82, 215)
         Me.lblcontraseña.Name = "lblcontraseña"
-        Me.lblcontraseña.Size = New System.Drawing.Size(302, 36)
+        Me.lblcontraseña.Size = New System.Drawing.Size(248, 29)
         Me.lblcontraseña.TabIndex = 3
         Me.lblcontraseña.Text = "Ingrese Contraseña:"
         '
@@ -81,10 +77,9 @@ Partial Class frmIngresoContraseña
         '
         Me.lblrepcontraseña.AutoSize = True
         Me.lblrepcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrepcontraseña.Location = New System.Drawing.Point(109, 363)
-        Me.lblrepcontraseña.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblrepcontraseña.Location = New System.Drawing.Point(82, 295)
         Me.lblrepcontraseña.Name = "lblrepcontraseña"
-        Me.lblrepcontraseña.Size = New System.Drawing.Size(288, 36)
+        Me.lblrepcontraseña.Size = New System.Drawing.Size(236, 29)
         Me.lblrepcontraseña.TabIndex = 4
         Me.lblrepcontraseña.Text = "Repita Contraseña:"
         '
@@ -92,22 +87,20 @@ Partial Class frmIngresoContraseña
         '
         Me.lblexplicacion.AutoSize = True
         Me.lblexplicacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblexplicacion.Location = New System.Drawing.Point(16, 71)
-        Me.lblexplicacion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblexplicacion.Location = New System.Drawing.Point(12, 58)
         Me.lblexplicacion.Name = "lblexplicacion"
-        Me.lblexplicacion.Size = New System.Drawing.Size(707, 180)
+        Me.lblexplicacion.Size = New System.Drawing.Size(578, 145)
         Me.lblexplicacion.TabIndex = 5
-        Me.lblexplicacion.Text = "                                 saludos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "A continuacion ingrese la contraseñ" & _
+        Me.lblexplicacion.Text = "                                 Saludos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "A continuacion ingrese la contraseñ" & _
             "a que desea " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "para el "
         '
         'lblhack
         '
         Me.lblhack.AutoSize = True
         Me.lblhack.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.lblhack.Location = New System.Drawing.Point(129, 215)
-        Me.lblhack.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblhack.Location = New System.Drawing.Point(97, 175)
         Me.lblhack.Name = "lblhack"
-        Me.lblhack.Size = New System.Drawing.Size(181, 36)
+        Me.lblhack.Size = New System.Drawing.Size(151, 29)
         Me.lblhack.TabIndex = 6
         Me.lblhack.Text = "Odontologo"
         '
@@ -115,27 +108,26 @@ Partial Class frmIngresoContraseña
         '
         Me.pnlBarra.BackColor = System.Drawing.Color.RoyalBlue
         Me.pnlBarra.Controls.Add(Me.pbCerrar)
-        Me.pnlBarra.Location = New System.Drawing.Point(3, 1)
-        Me.pnlBarra.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnlBarra.Location = New System.Drawing.Point(2, 1)
+        Me.pnlBarra.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlBarra.Name = "pnlBarra"
-        Me.pnlBarra.Size = New System.Drawing.Size(819, 50)
+        Me.pnlBarra.Size = New System.Drawing.Size(614, 41)
         Me.pnlBarra.TabIndex = 7
         '
         'pbCerrar
         '
         Me.pbCerrar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoCerrar2
-        Me.pbCerrar.Location = New System.Drawing.Point(765, 10)
-        Me.pbCerrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pbCerrar.Location = New System.Drawing.Point(574, 8)
         Me.pbCerrar.Name = "pbCerrar"
-        Me.pbCerrar.Size = New System.Drawing.Size(36, 39)
+        Me.pbCerrar.Size = New System.Drawing.Size(27, 32)
         Me.pbCerrar.TabIndex = 19
         Me.pbCerrar.TabStop = False
         '
         'frmIngresoContraseña
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(820, 577)
+        Me.ClientSize = New System.Drawing.Size(615, 469)
         Me.Controls.Add(Me.lblhack)
         Me.Controls.Add(Me.lblexplicacion)
         Me.Controls.Add(Me.pnlBarra)
@@ -145,7 +137,6 @@ Partial Class frmIngresoContraseña
         Me.Controls.Add(Me.txtcontraseña)
         Me.Controls.Add(Me.btnguardar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmIngresoContraseña"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ingreso_contraseña"

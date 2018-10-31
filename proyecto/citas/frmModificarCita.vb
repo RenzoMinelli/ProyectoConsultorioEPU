@@ -52,7 +52,7 @@
                             '--------------------------------------Si la duracion ha sido cambiada-----------------------------------------
                             If txbDuracion.Text <> duracion Then
 
-                                Dim ultimaHora As TimeSpan = (Convert.ToDateTime("21:00:00")).TimeOfDay
+                                Dim ultimaHora As TimeSpan = (Convert.ToDateTime("20:30:00")).TimeOfDay
                                 Dim primeraHora As TimeSpan = (Convert.ToDateTime("08:00:00")).TimeOfDay
                                 Dim horaCita As TimeSpan = (Convert.ToDateTime(frmCitas.horaCita)).TimeOfDay
                                 Dim horaCitaFinal As New TimeSpan
@@ -83,7 +83,7 @@
 
 
 
-                                If horaCitaFinal < ultimaHora And horaCita > primeraHora Then
+                                If horaCitaFinal <= ultimaHora And horaCita >= primeraHora Then
 
                                     Dim control As Integer = 0
 
@@ -100,8 +100,8 @@
                                             If dgvCitasEnLaFecha.Rows(x).Cells(4).Value > 2 Then
 
 
-
                                                 For indice = 1 To dgvCitasEnLaFecha.Rows(x).Cells(4).Value - 2
+
                                                     HoraAuxFinal += mediaHora
 
                                                 Next
@@ -112,12 +112,12 @@
                                         Else
                                             HoraAuxFinal = HoraAux
                                         End If
-
+                                        MsgBox("se acerco")
 
                                         If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
 
                                             control = 1
-
+                                            MsgBox("verifico")
                                         End If
 
 
@@ -137,6 +137,8 @@
                                         End Try
 
                                     End If
+                                Else
+                                    MsgBox("La nueva hora quedaría fuera de los horarios", MsgBoxStyle.Exclamation)
                                 End If
                             End If
 

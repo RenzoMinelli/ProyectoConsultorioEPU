@@ -45,40 +45,35 @@ Public Class frmPlanTratamiento
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
-        descEsp = dgvArancelesSelect.CurrentRow.Cells(3).Value
+       
 
-        For x = 0 To dgvArancelesSelect.RowCount - 1
+        If dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString <> "" Then
+            Try
 
-            If dgvArancelesSelect.Rows(x).Cells(0).Value = id_Arancel And dgvArancelesSelect.Rows(x).Cells(3).Value = descEsp Then
+                Dim id As String = dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString
 
-                If dgvArancelesSelect.Rows(x).Cells(4).Value <> 0 Then
-                    Try
+                Consulta = "DELETE FROM plan_tratamiento where id_pl = '" + id + "';"
+                consultar()
 
-                        Consulta = "UPDATE paciente set saldo = saldo - " + (dgvArancelesSelect.CurrentRow.Cells(2).Value * 1.22).ToString + " where id_p = '" + id_p.ToString + "';"
+                actArancelesSelect()
 
+                Consulta = "UPDATE paciente set saldo = saldo - " + (dgvArancelesSelect.CurrentRow.Cells(2).Value * 1.22).ToString + " where id_p = '" + id_p.ToString + "';"
+                consultar()
 
-                        Consulta = "DELETE FROM plan_tratamiento where id_pl = '" + dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "';"
-                        consultar()
-                        actArancelesSelect()
+                MsgBox("Elemento eliminado", MsgBoxStyle.Information)
 
-                        MsgBox("Elemento eliminado", MsgBoxStyle.Information)
+            Catch ex As Exception
 
-                    Catch ex As Exception
-
-                        MsgBox("Error al eliminar el tratamiento", MsgBoxStyle.Exclamation)
-                    End Try
-                   
-
-                Else
-                    dgvArancelesSelect.Rows.RemoveAt(x)
-                    MsgBox("Elemento eliminado", MsgBoxStyle.Information)
-                End If
+                MsgBox("Error al eliminar el tratamiento", MsgBoxStyle.Exclamation)
+            End Try
 
 
-                Exit For
+        Else
 
-            End If
-        Next
+            dgvArancelesSelect.Rows.RemoveAt(dgvArancelesSelect.CurrentRow.Index)
+            MsgBox("Elemento eliminado", MsgBoxStyle.Information)
+        End If
+
         If dgvArancelesSelect.RowCount = 0 Then
 
             btnEliminar.Visible = False
@@ -192,7 +187,7 @@ Public Class frmPlanTratamiento
     Private Sub actArancelesSelect()
         Try
 
-            Consulta = "select  a.id_a, a.descripcion as 'Descripcion General', a.costo as 'Precio', pl.descripcion as 'Descripcion Especifica', pl.id_pl from plan_tratamiento pl inner join aranceles a on a.id_a = pl.id_a where  id_p = '" + id_p.ToString + "';"
+            Consulta = "select  a.id_a, a.descripcion as 'Descripcion General', a.costo as 'Precio', pl.descripcion as 'Descripcion Especifica', pl.id_pl from plan_tratamiento pl inner join aranceles a on a.id_a = pl.id_a where  id_p = '" + id_p.ToString + "' and terminado = 0"
             consultar()
 
             dt = DirectCast(Tabla, DataTable)
@@ -276,16 +271,22 @@ Public Class frmPlanTratamiento
 
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMarcar.Click
-        MuestraMsgBoxVersatil("¿Desea marcar como concluido el tratamiento sobre " + dgvArancelesSelect.CurrentRow.Cells(3).Value + "?", 0)
-        If respint = 1 Then
-            Consulta = "update plan_tratamiento set terminado = '1' where id_pl = '" + dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString + "';"
-            consultar()
-            actArancelesSelect()
+        If dgvArancelesSelect.CurrentRow.Cells(1).Value <> "" Then
 
-            MsgBox("Actualizado", MsgBoxStyle.Information)
+            MuestraMsgBoxVersatil("¿Desea marcar como concluido el tratamiento sobre " + dgvArancelesSelect.CurrentRow.Cells(3).Value + "?", 0)
+            If respint = 1 Then
+                Consulta = "update plan_tratamiento set terminado = '1' where id_pl = '" + dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString + "';"
+                consultar()
+                actArancelesSelect()
+
+                MsgBox("Actualizado", MsgBoxStyle.Information)
+            Else
+                MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
+            End If
         Else
-            MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
+            MsgBox("Aún no se ha guardado al plan de tratamiento", MsgBoxStyle.Information)
         End If
+        
     End Sub
     Private Sub btnPresupuesto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPresupuesto.Click
         Try

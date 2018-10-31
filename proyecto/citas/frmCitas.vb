@@ -539,15 +539,15 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(2).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.Orange
                                         End If
 
                                         IndHoras += 1
@@ -589,16 +589,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(3).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -635,17 +635,17 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(4).Value = nombre
 
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -683,15 +683,15 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
-                                        
+                                        dgvHora.Rows(IndHoras).Cells(5).Value = nombre
+
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.Orange
                                         End If
 
                                         IndHoras += 1
@@ -733,16 +733,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(6).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -793,16 +793,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(1).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(1).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(1).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -843,17 +843,17 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.Orange
                                         End If
-                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(2).Value = nombre
                                         IndHoras += 1
                                     Next
                                     Exit For
@@ -891,16 +891,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(3).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -939,16 +939,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(4).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -987,16 +987,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(5).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1036,16 +1036,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(6).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1094,17 +1094,17 @@
                                 Dim posicion As TimeSpan
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
-
-                                If hora < posicion Then
+                                '
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(1).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(1).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(1).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1144,16 +1144,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(2).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1194,16 +1194,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(3).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1244,16 +1244,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(4).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1295,16 +1295,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(5).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1345,16 +1345,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(6).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1401,16 +1401,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(1).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(1).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(1).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1449,16 +1449,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(2).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1498,16 +1498,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(3).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1547,16 +1547,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(4).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1596,16 +1596,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(5).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1645,16 +1645,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(6).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1701,16 +1701,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(1).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(1).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(1).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1750,16 +1750,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(2).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1799,16 +1799,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(3).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1847,16 +1847,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(4).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1895,16 +1895,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(5).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -1943,16 +1943,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(6).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2018,23 +2018,7 @@
 
                                 End If
 
-                                'If hora < posicion Then
-
-
-                                '    For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                '        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
-
-                                '        If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                '            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.LightBlue
-                                '        Else
-                                '            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.Orange
-                                '        End If
-                                '        IndHoras += 1
-                                '    Next
-
-                                '    Exit For
-                                'End If
-
+                                
                             Next
                         Next
 
@@ -2067,16 +2051,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(2).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2116,16 +2100,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(3).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2165,16 +2149,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(4).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2214,16 +2198,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(5).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2262,16 +2246,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(6).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2318,16 +2302,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(1).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(1).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(1).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(1).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(1).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2367,16 +2351,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(2).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(2).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(2).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(2).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2416,16 +2400,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(3).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(3).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(3).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(3).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2465,16 +2449,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(4).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(4).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(4).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(4).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2514,16 +2498,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(5).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(5).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(5).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(5).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next
@@ -2562,16 +2546,16 @@
 
                                 posicion = TimeSpan.Parse(dgvHora.Rows(IndHoras).Cells(0).Value.ToString)
 
-                                If hora < posicion Then
+                                If hora = posicion Then
 
 
                                     For indice2 = 1 To dgvConsultaDia.Rows(indice).Cells(2).Value
-                                        dgvHora.Rows(IndHoras - 1).Cells(6).Value = nombre
+                                        dgvHora.Rows(IndHoras).Cells(6).Value = nombre
 
                                         If dgvConsultaDia.Rows(indice).Cells(3).Value = 0 Then
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.LightBlue
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.LightBlue
                                         Else
-                                            dgvHora.Rows(IndHoras - 1).Cells(6).Style.BackColor = Color.Orange
+                                            dgvHora.Rows(IndHoras).Cells(6).Style.BackColor = Color.Orange
                                         End If
                                         IndHoras += 1
                                     Next

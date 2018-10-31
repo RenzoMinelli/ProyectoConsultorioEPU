@@ -86,6 +86,7 @@ Partial Class frmAgregarCita
         Me.dgvPacientes.Name = "dgvPacientes"
         Me.dgvPacientes.ReadOnly = True
         Me.dgvPacientes.RowHeadersVisible = False
+        Me.dgvPacientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvPacientes.Size = New System.Drawing.Size(688, 146)
         Me.dgvPacientes.TabIndex = 7
         '
@@ -190,6 +191,7 @@ Partial Class frmAgregarCita
         Me.dgvTratamientos.Name = "dgvTratamientos"
         Me.dgvTratamientos.ReadOnly = True
         Me.dgvTratamientos.RowHeadersVisible = False
+        Me.dgvTratamientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvTratamientos.Size = New System.Drawing.Size(688, 183)
         Me.dgvTratamientos.TabIndex = 27
         '
