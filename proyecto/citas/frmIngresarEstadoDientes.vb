@@ -212,10 +212,10 @@
                 Select Case zona
                     Case "111"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente11c1.BackColor = Color.Red
                                 diente11c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente11c1.BackColor = Color.Yellow
                                 diente11c1 = 1
                             Case "ausente"
@@ -232,10 +232,10 @@
 
                     Case "112"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente11c2.BackColor = Color.Red
                                 diente11c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente11c2.BackColor = Color.Yellow
                                 diente11c2 = 1
                             Case "ausente"
@@ -250,10 +250,10 @@
 
                     Case "113"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente11c3.BackColor = Color.Red
                                 diente11c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente11c3.BackColor = Color.Yellow
                                 diente11c3 = 1
                             Case "ausente"
@@ -267,10 +267,10 @@
 
                     Case "114"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente11c4.BackColor = Color.Red
                                 diente11c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente11c4.BackColor = Color.Yellow
                                 diente11c4 = 1
                             Case "ausente"
@@ -283,10 +283,10 @@
 
                     Case "121"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente12c1.BackColor = Color.Red
                                 diente12c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente12c1.BackColor = Color.Yellow
                                 diente12c1 = 1
                             Case "ausente"
@@ -303,10 +303,10 @@
 
                     Case "122"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente12c2.BackColor = Color.Red
                                 diente12c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente12c2.BackColor = Color.Yellow
                                 diente12c2 = 1
                             Case "ausente"
@@ -320,10 +320,10 @@
 
                     Case "123"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente12c3.BackColor = Color.Red
                                 diente12c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente12c3.BackColor = Color.Yellow
                                 diente12c3 = 1
                             Case "ausente"
@@ -336,10 +336,10 @@
 
                     Case "124"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente12c4.BackColor = Color.Red
                                 diente12c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente12c4.BackColor = Color.Yellow
                                 diente12c4 = 1
                             Case "ausente"
@@ -353,10 +353,10 @@
 
                     Case "131"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente13c1.BackColor = Color.Red
                                 diente13c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente13c1.BackColor = Color.Yellow
                                 diente31c1 = 1
                             Case "ausente"
@@ -373,10 +373,10 @@
 
                     Case "132"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente13c2.BackColor = Color.Red
                                 diente13c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente13c2.BackColor = Color.Yellow
                                 diente13c2 = 1
                             Case "ausente"
@@ -390,10 +390,10 @@
 
                     Case "133"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente13c3.BackColor = Color.Red
                                 diente13c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente13c3.BackColor = Color.Yellow
                                 diente13c3 = 1
                             Case "ausente"
@@ -408,10 +408,10 @@
 
                     Case "134"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente13c4.BackColor = Color.Red
                                 diente13c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente13c4.BackColor = Color.Yellow
                                 diente13c4 = 1
                             Case "ausente"
@@ -426,10 +426,10 @@
 
                     Case "141"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente14c1.BackColor = Color.Red
                                 diente14c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente14c1.BackColor = Color.Yellow
                                 diente14c1 = 1
                             Case "ausente"
@@ -446,10 +446,10 @@
 
                     Case "142"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente14c2.BackColor = Color.Red
                                 diente14c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente14c2.BackColor = Color.Yellow
                                 diente14c2 = 1
                             Case "ausente"
@@ -464,10 +464,10 @@
 
                     Case "143"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente14c3.BackColor = Color.Red
                                 diente14c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente14c3.BackColor = Color.Yellow
                                 diente14c3 = 1
                             Case "ausente"
@@ -482,10 +482,10 @@
 
                     Case "144"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente14c4.BackColor = Color.Red
                                 diente14c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente14c4.BackColor = Color.Yellow
                                 diente14c4 = 1
                             Case "ausente"
@@ -499,10 +499,10 @@
 
                     Case "151"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente15c1.BackColor = Color.Red
                                 diente15c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente15c1.BackColor = Color.Yellow
                                 diente15c1 = 1
                             Case "ausente"
@@ -518,10 +518,10 @@
 
                     Case "152"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente15c2.BackColor = Color.Red
                                 diente15c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente15c2.BackColor = Color.Yellow
                                 diente15c2 = 1
                             Case "ausente"
@@ -535,10 +535,10 @@
 
                     Case "153"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente15c3.BackColor = Color.Red
                                 diente15c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente15c3.BackColor = Color.Yellow
                                 diente15c3 = 1
                             Case "ausente"
@@ -552,10 +552,10 @@
 
                     Case "154"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente15c4.BackColor = Color.Red
                                 diente15c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente15c4.BackColor = Color.Yellow
                                 diente15c4 = 1
                             Case "ausente"
@@ -569,10 +569,10 @@
 
                     Case "161"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente16c1.BackColor = Color.Red
                                 diente16c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente16c1.BackColor = Color.Yellow
                                 diente16c1 = 1
                             Case "ausente"
@@ -586,10 +586,10 @@
 
                     Case "162"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente16c2.BackColor = Color.Red
                                 diente16c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente16c2.BackColor = Color.Yellow
                                 diente16c2 = 1
                             Case "ausente"
@@ -603,10 +603,10 @@
 
                     Case "163"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente16c3.BackColor = Color.Red
                                 diente16c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente16c3.BackColor = Color.Yellow
                                 diente16c3 = 1
                             Case "ausente"
@@ -620,10 +620,10 @@
 
                     Case "164"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente16c4.BackColor = Color.Red
                                 diente16c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente16c4.BackColor = Color.Yellow
                                 diente16c4 = 1
                             Case "ausente"
@@ -637,10 +637,10 @@
 
                     Case "171"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente17c1.BackColor = Color.Red
                                 diente17c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente17c1.BackColor = Color.Yellow
                                 diente17c1 = 1
                             Case "ausente"
@@ -653,10 +653,10 @@
 
                     Case "172"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente17c2.BackColor = Color.Red
                                 diente17c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente17c2.BackColor = Color.Yellow
                                 diente17c2 = 1
                             Case "ausente"
@@ -670,10 +670,10 @@
 
                     Case "173"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente17c3.BackColor = Color.Red
                                 diente17c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente17c3.BackColor = Color.Yellow
                                 diente17c3 = 1
                             Case "ausente"
@@ -687,10 +687,10 @@
 
                     Case "174"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente17c4.BackColor = Color.Red
                                 diente17c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente17c4.BackColor = Color.Yellow
                                 diente17c4 = 1
                             Case "ausente"
@@ -704,10 +704,10 @@
 
                     Case "181"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente18c1.BackColor = Color.Red
                                 diente18c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente18c1.BackColor = Color.Yellow
                                 diente18c1 = 1
                             Case "ausente"
@@ -724,10 +724,10 @@
 
                     Case "182"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente18c2.BackColor = Color.Red
                                 diente18c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente18c2.BackColor = Color.Yellow
                                 diente18c2 = 1
                             Case "ausente"
@@ -741,10 +741,10 @@
 
                     Case "183"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente18c3.BackColor = Color.Red
                                 diente18c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente18c3.BackColor = Color.Yellow
                                 diente18c3 = 1
                             Case "ausente"
@@ -758,10 +758,10 @@
 
                     Case "184"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente18c4.BackColor = Color.Red
                                 diente18c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente18c4.BackColor = Color.Yellow
                                 diente18c4 = 1
                             Case "ausente"
@@ -777,10 +777,10 @@
                 Select Case zona
                     Case "211"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente21c1.BackColor = Color.Red
                                 diente21c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente21c1.BackColor = Color.Yellow
                                 diente21c1 = 1
 
@@ -798,10 +798,10 @@
 
                     Case "212"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente21c2.BackColor = Color.Red
                                 diente21c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente21c2.BackColor = Color.Yellow
                                 diente21c2 = 1
                             Case "ausente"
@@ -815,10 +815,10 @@
                         End Select
                     Case "213"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente21c3.BackColor = Color.Red
                                 diente21c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente21c3.BackColor = Color.Yellow
                                 diente21c3 = 1
                             Case "ausente"
@@ -832,10 +832,10 @@
 
                     Case "214"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente21c4.BackColor = Color.Red
                                 diente21c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente21c4.BackColor = Color.Yellow
                                 diente21c4 = 1
                             Case "ausente"
@@ -849,10 +849,10 @@
 
                     Case "221"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente22c1.BackColor = Color.Red
                                 diente22c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente22c1.BackColor = Color.Yellow
                                 diente22c1 = 1
                             Case "ausente"
@@ -869,10 +869,10 @@
 
                     Case "222"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente22c2.BackColor = Color.Red
                                 diente22c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente22c2.BackColor = Color.Yellow
                                 diente22c2 = 1
                             Case "ausente"
@@ -886,10 +886,10 @@
 
                     Case "223"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente22c3.BackColor = Color.Red
                                 diente22c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente22c3.BackColor = Color.Yellow
                                 diente22c3 = 1
                             Case "ausente"
@@ -903,10 +903,10 @@
 
                     Case "224"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente22c4.BackColor = Color.Red
                                 diente22c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente22c4.BackColor = Color.Yellow
                                 diente22c4 = 1
                             Case "ausente"
@@ -920,10 +920,10 @@
 
                     Case "231"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente23c1.BackColor = Color.Red
                                 diente23c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente23c1.BackColor = Color.Yellow
                                 diente23c1 = 1
                             Case "ausente"
@@ -940,10 +940,10 @@
 
                     Case "232"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente23c2.BackColor = Color.Red
                                 diente23c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente23c2.BackColor = Color.Yellow
                                 diente23c2 = 1
                             Case "ausente"
@@ -957,10 +957,10 @@
 
                     Case "233"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente23c3.BackColor = Color.Red
                                 diente23c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente23c3.BackColor = Color.Yellow
                                 diente23c3 = 1
                             Case "ausente"
@@ -974,10 +974,10 @@
 
                     Case "234"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente23c4.BackColor = Color.Red
                                 diente23c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente23c4.BackColor = Color.Yellow
                                 diente23c4 = 1
                             Case "ausente"
@@ -991,10 +991,10 @@
 
                     Case "241"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente24c1.BackColor = Color.Red
                                 diente14c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente24c1.BackColor = Color.Yellow
                                 diente14c1 = 1
                             Case "ausente"
@@ -1011,10 +1011,10 @@
 
                     Case "242"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente24c2.BackColor = Color.Red
                                 diente24c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente24c2.BackColor = Color.Yellow
                                 diente24c4 = 1
                             Case "ausente"
@@ -1028,10 +1028,10 @@
 
                     Case "243"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente24c3.BackColor = Color.Red
                                 diente24c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente24c3.BackColor = Color.Yellow
                                 diente24c3 = 1
                             Case "ausente"
@@ -1045,10 +1045,10 @@
 
                     Case "244"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente24c4.BackColor = Color.Red
                                 diente24c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente24c4.BackColor = Color.Yellow
                                 diente24c4 = 1
                             Case "ausente"
@@ -1062,10 +1062,10 @@
 
                     Case "251"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente25c1.BackColor = Color.Red
                                 diente25c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente25c1.BackColor = Color.Yellow
                                 diente25c1 = 1
                             Case "ausente"
@@ -1082,10 +1082,10 @@
 
                     Case "252"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente25c2.BackColor = Color.Red
                                 diente25c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente25c2.BackColor = Color.Yellow
                                 diente25c2 = 1
                             Case "ausente"
@@ -1099,10 +1099,10 @@
 
                     Case "253"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente25c3.BackColor = Color.Red
                                 diente25c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente25c3.BackColor = Color.Yellow
                                 diente25c3 = 1
                             Case "ausente"
@@ -1116,10 +1116,10 @@
 
                     Case "254"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente25c4.BackColor = Color.Red
                                 diente25c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente25c4.BackColor = Color.Yellow
                                 diente25c4 = 1
                             Case "ausente"
@@ -1133,10 +1133,10 @@
 
                     Case "261"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente26c1.BackColor = Color.Red
                                 diente26c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente26c1.BackColor = Color.Yellow
                                 diente26c1 = 1
                             Case "ausente"
@@ -1153,10 +1153,10 @@
 
                     Case "262"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente26c2.BackColor = Color.Red
                                 diente26c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente26c2.BackColor = Color.Yellow
                                 diente26c2 = 1
                             Case "ausente"
@@ -1170,10 +1170,10 @@
 
                     Case "263"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente26c3.BackColor = Color.Red
                                 diente26c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente26c3.BackColor = Color.Yellow
                                 diente26c3 = 1
                             Case "ausente"
@@ -1187,10 +1187,10 @@
 
                     Case "264"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente26c4.BackColor = Color.Red
                                 diente26c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente26c4.BackColor = Color.Yellow
                                 diente26c4 = 1
                             Case "ausente"
@@ -1204,10 +1204,10 @@
 
                     Case "271"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente27c1.BackColor = Color.Red
                                 diente27c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente27c1.BackColor = Color.Yellow
                                 diente27c1 = 1
                             Case "ausente"
@@ -1224,10 +1224,10 @@
 
                     Case "272"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente27c2.BackColor = Color.Red
                                 diente27c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente27c2.BackColor = Color.Yellow
                                 diente27c2 = 1
                             Case "ausente"
@@ -1241,10 +1241,10 @@
 
                     Case "273"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente27c3.BackColor = Color.Red
                                 diente27c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente27c3.BackColor = Color.Yellow
                                 diente27c3 = 1
                             Case "ausente"
@@ -1258,10 +1258,10 @@
 
                     Case "274"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente27c4.BackColor = Color.Red
                                 diente27c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente27c4.BackColor = Color.Yellow
                                 diente27c4 = 1
                             Case "ausente"
@@ -1275,10 +1275,10 @@
 
                     Case "281"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente28c1.BackColor = Color.Red
                                 diente28c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente28c1.BackColor = Color.Yellow
                                 diente28c1 = 1
                             Case "ausente"
@@ -1295,10 +1295,10 @@
 
                     Case "282"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente28c2.BackColor = Color.Red
                                 diente28c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente28c2.BackColor = Color.Yellow
                                 diente28c2 = 1
                             Case "ausente"
@@ -1312,10 +1312,10 @@
 
                     Case "283"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente28c3.BackColor = Color.Red
                                 diente28c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente28c3.BackColor = Color.Yellow
                                 diente28c3 = 1
                             Case "ausente"
@@ -1328,10 +1328,10 @@
 
                     Case "284"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente28c4.BackColor = Color.Red
                                 diente28c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente28c4.BackColor = Color.Yellow
                                 diente28c4 = 1
                             Case "ausente"
@@ -1348,10 +1348,10 @@
                 Select Case zona
                     Case "311"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente31c1.BackColor = Color.Red
                                 diente31c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente31c1.BackColor = Color.Yellow
                                 diente31c1 = 1
                             Case "ausente"
@@ -1368,10 +1368,10 @@
 
                     Case "312"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente31c2.BackColor = Color.Red
                                 diente31c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente31c2.BackColor = Color.Yellow
                                 diente31c2 = 1
                             Case "ausente"
@@ -1386,10 +1386,10 @@
                     Case "313"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
 
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente31c3.BackColor = Color.Red
                                 diente31c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente31c3.BackColor = Color.Yellow
                                 diente31c3 = 1
                             Case "ausente"
@@ -1403,10 +1403,10 @@
 
                     Case "314"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente31c4.BackColor = Color.Red
                                 diente31c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente31c4.BackColor = Color.Yellow
                                 diente31c4 = 1
                             Case "ausente"
@@ -1420,10 +1420,10 @@
 
                     Case "321"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente32c1.BackColor = Color.Red
                                 diente32c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente32c1.BackColor = Color.Yellow
                                 diente32c1 = 1
                             Case "ausente"
@@ -1440,10 +1440,10 @@
 
                     Case "322"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente32c2.BackColor = Color.Red
                                 diente32c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente32c2.BackColor = Color.Yellow
                                 diente32c2 = 1
                             Case "ausente"
@@ -1457,10 +1457,10 @@
 
                     Case "323"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente32c3.BackColor = Color.Red
                                 diente32c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente32c3.BackColor = Color.Yellow
                                 diente32c3 = 1
                             Case "ausente"
@@ -1474,10 +1474,10 @@
 
                     Case "324"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente32c4.BackColor = Color.Red
                                 diente32c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente32c4.BackColor = Color.Yellow
                                 diente32c4 = 1
                             Case "ausente"
@@ -1491,10 +1491,10 @@
 
                     Case "331"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente33c1.BackColor = Color.Red
                                 diente33c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente33c1.BackColor = Color.Yellow
                                 diente33c1 = 1
                             Case "ausente"
@@ -1511,10 +1511,10 @@
 
                     Case "332"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente33c2.BackColor = Color.Red
                                 diente33c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente33c2.BackColor = Color.Yellow
                                 diente33c2 = 1
                             Case "ausente"
@@ -1528,10 +1528,10 @@
 
                     Case "333"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente33c3.BackColor = Color.Red
                                 diente33c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente33c3.BackColor = Color.Yellow
                                 diente33c3 = 1
                             Case "ausente"
@@ -1545,10 +1545,10 @@
 
                     Case "334"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente33c4.BackColor = Color.Red
                                 diente33c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente33c4.BackColor = Color.Yellow
                                 diente33c4 = 1
                             Case "ausente"
@@ -1562,10 +1562,10 @@
 
                     Case "341"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente34c1.BackColor = Color.Red
                                 diente34c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente34c1.BackColor = Color.Yellow
                                 diente34c1 = 1
                             Case "ausente"
@@ -1582,10 +1582,10 @@
 
                     Case "342"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente34c2.BackColor = Color.Red
                                 diente34c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente34c2.BackColor = Color.Yellow
                                 diente34c2 = 1
                             Case "ausente"
@@ -1599,10 +1599,10 @@
 
                     Case "343"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente34c3.BackColor = Color.Red
                                 diente34c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente34c3.BackColor = Color.Yellow
                                 diente34c3 = 1
                             Case "ausente"
@@ -1616,10 +1616,10 @@
 
                     Case "344"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente34c4.BackColor = Color.Red
                                 diente34c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente34c4.BackColor = Color.Yellow
                                 diente34c4 = 1
                             Case "ausente"
@@ -1633,15 +1633,18 @@
 
                     Case "351"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente35c1.BackColor = Color.Red
                                 diente35c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente35c1.BackColor = Color.Yellow
                                 diente35c1 = 1
                             Case "ausente"
                                 pnlDiente35c1.BackColor = Color.Black
                                 diente35c1 = 3
+                            Case "puente"
+                                pnlDiente35c1.BackColor = Color.Green
+                                diente35c1 = 4
                             Case Else
                                 pnlDiente35c1.BackColor = Color.White
                                 diente35c1 = 0
@@ -1650,10 +1653,10 @@
 
                     Case "352"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente35c2.BackColor = Color.Red
                                 diente35c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente35c2.BackColor = Color.Yellow
                                 diente35c2 = 1
                             Case "ausente"
@@ -1667,10 +1670,10 @@
 
                     Case "353"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente35c3.BackColor = Color.Red
                                 diente35c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente35c3.BackColor = Color.Yellow
                                 diente35c3 = 1
                             Case "ausente"
@@ -1684,10 +1687,10 @@
 
                     Case "354"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente35c4.BackColor = Color.Red
                                 diente35c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente35c4.BackColor = Color.Yellow
                                 diente35c4 = 1
                             Case "ausente"
@@ -1701,10 +1704,10 @@
 
                     Case "361"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente36c1.BackColor = Color.Red
                                 diente36c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente36c1.BackColor = Color.Yellow
                                 diente36c1 = 1
                             Case "ausente"
@@ -1721,10 +1724,10 @@
 
                     Case "362"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente36c2.BackColor = Color.Red
                                 diente36c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente36c2.BackColor = Color.Yellow
                                 diente36c2 = 1
                             Case "ausente"
@@ -1738,10 +1741,10 @@
 
                     Case "363"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente36c3.BackColor = Color.Red
                                 diente36c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente36c3.BackColor = Color.Yellow
                                 diente36c3 = 1
                             Case "ausente"
@@ -1755,10 +1758,10 @@
 
                     Case "364"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente36c4.BackColor = Color.Red
                                 diente36c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente36c4.BackColor = Color.Yellow
                                 diente36c4 = 1
                             Case "ausente"
@@ -1772,10 +1775,10 @@
 
                     Case "371"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente37c1.BackColor = Color.Red
                                 diente37c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente37c1.BackColor = Color.Yellow
                                 diente37c1 = 1
                             Case "ausente"
@@ -1792,10 +1795,10 @@
 
                     Case "372"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente37c2.BackColor = Color.Red
                                 diente37c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente37c2.BackColor = Color.Yellow
                                 diente37c2 = 1
                             Case "ausente"
@@ -1809,10 +1812,10 @@
 
                     Case "373"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente37c3.BackColor = Color.Red
                                 diente37c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente37c3.BackColor = Color.Yellow
                                 diente37c3 = 1
                             Case "ausente"
@@ -1826,10 +1829,10 @@
 
                     Case "374"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente37c4.BackColor = Color.Red
                                 diente37c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente37c4.BackColor = Color.Yellow
                                 diente37c4 = 1
                             Case "ausente"
@@ -1842,10 +1845,10 @@
 
                     Case "381"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente38c1.BackColor = Color.Red
                                 diente38c1 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente38c1.BackColor = Color.Yellow
                                 diente38c1 = 1
                             Case "ausente"
@@ -1862,10 +1865,10 @@
 
                     Case "382"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente38c2.BackColor = Color.Red
                                 diente38c2 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente38c2.BackColor = Color.Yellow
                                 diente38c2 = 1
                             Case "ausente"
@@ -1879,10 +1882,10 @@
 
                     Case "383"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente38c3.BackColor = Color.Red
                                 diente38c3 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente38c3.BackColor = Color.Yellow
                                 diente38c3 = 1
                             Case "ausente"
@@ -1896,10 +1899,10 @@
 
                     Case "384"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 pnlDiente38c4.BackColor = Color.Red
                                 diente38c4 = 2
-                            Case "precaucion"
+                            Case "restauracion"
                                 pnlDiente38c4.BackColor = Color.Yellow
                                 diente38c4 = 1
                             Case "ausente"
@@ -1916,429 +1919,571 @@
                 Select Case zona
                     Case "411"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente41c1.BackColor = Color.Red
-                            Case "precaucion"
+                                diente41c1 = 2
+                            Case "restauracion"
                                 PnlDiente41c1.BackColor = Color.Yellow
+                                diente41c1 = 1
                             Case "ausente"
                                 PnlDiente41c1.BackColor = Color.Black
+                                diente41c1 = 3
+                            Case "puente"
+                                PnlDiente41c1.BackColor = Color.Green
+                                diente41c1 = 4
                             Case Else
                                 PnlDiente41c1.BackColor = Color.White
+                                diente41c1 = 0
                         End Select
-                        diente41c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "412"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente41c2.BackColor = Color.Red
-                            Case "precaucion"
+                                diente41c2 = 2
+                            Case "restauracion"
                                 PnlDiente41c2.BackColor = Color.Yellow
+                                diente41c2 = 1
                             Case "ausente"
                                 PnlDiente41c2.BackColor = Color.Black
+                                diente41c2 = 3
                             Case Else
                                 PnlDiente41c2.BackColor = Color.White
+                                diente41c2 = 0
 
                         End Select
-                        diente41c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "413"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente41c3.BackColor = Color.Red
-                            Case "precaucion"
+                                diente41c3 = 2
+                            Case "restauracion"
                                 PnlDiente41c3.BackColor = Color.Yellow
+                                diente41c3 = 1
                             Case "ausente"
                                 PnlDiente41c3.BackColor = Color.Black
+                                diente41c3 = 3
                             Case Else
                                 PnlDiente41c3.BackColor = Color.White
+                                diente41c3 = 0
                         End Select
-                        diente41c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "414"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente41c4.BackColor = Color.Red
-                            Case "precaucion"
+                                diente41c4 = 2
+                            Case "restauracion"
                                 PnlDiente41c4.BackColor = Color.Yellow
+                                diente41c4 = 1
                             Case "ausente"
                                 PnlDiente41c4.BackColor = Color.Black
+                                diente41c4 = 3
                             Case Else
                                 PnlDiente41c4.BackColor = Color.White
+                                diente41c4 = 0
                         End Select
-                        diente41c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "421"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente42c1.BackColor = Color.Red
-                            Case "precaucion"
+                                diente42c1 = 2
+                            Case "restauracion"
                                 PnlDiente42c1.BackColor = Color.Yellow
+                                diente42c1 = 1
                             Case "ausente"
                                 PnlDiente42c1.BackColor = Color.Black
+                                diente42c1 = 3
+                            Case "puente"
+                                PnlDiente42c1.BackColor = Color.Green
+                                diente42c1 = 4
                             Case Else
                                 PnlDiente42c1.BackColor = Color.White
+                                diente42c1 = 0
                         End Select
-                        diente42c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "422"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente42c2.BackColor = Color.Red
-                            Case "precaucion"
+                                diente42c2 = 2
+                            Case "restauracion"
                                 PnlDiente42c2.BackColor = Color.Yellow
+                                diente42c2 = 1
                             Case "ausente"
                                 PnlDiente42c2.BackColor = Color.Black
+                                diente42c2 = 3
                             Case Else
                                 PnlDiente42c2.BackColor = Color.White
+                                diente42c2 = 0
                         End Select
-                        diente42c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "423"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente42c3.BackColor = Color.Red
-                            Case "precaucion"
+                                diente42c3 = 2
+                            Case "restauracion"
                                 PnlDiente42c3.BackColor = Color.Yellow
+                                diente42c3 = 1
                             Case "ausente"
                                 PnlDiente42c3.BackColor = Color.Black
+                                diente42c3 = 3
                             Case Else
                                 PnlDiente42c3.BackColor = Color.White
+                                diente42c3 = 0
                         End Select
-                        diente42c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "424"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente42c4.BackColor = Color.Red
-                            Case "precaucion"
+                                diente42c4 = 2
+                            Case "restauracion"
                                 PnlDiente42c4.BackColor = Color.Yellow
+                                diente42c4 = 1
                             Case "ausente"
                                 PnlDiente42c4.BackColor = Color.Black
+                                diente42c4 = 3
                             Case Else
                                 PnlDiente42c4.BackColor = Color.White
+                                diente42c4 = 0
                         End Select
-                        diente42c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "431"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente43c1.BackColor = Color.Red
-                            Case "precaucion"
+                            Case "restauracion"
                                 PnlDiente43c1.BackColor = Color.Yellow
                             Case "ausente"
                                 PnlDiente43c1.BackColor = Color.Black
                             Case Else
                                 PnlDiente43c1.BackColor = Color.White
                         End Select
-                        diente43c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "432"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente43c2.BackColor = Color.Red
-                            Case "precaucion"
+                                diente43c2 = 2
+                            Case "restauracion"
                                 PnlDiente43c2.BackColor = Color.Yellow
+                                diente43c2 = 1
                             Case "ausente"
                                 PnlDiente43c2.BackColor = Color.Black
+                                diente43c2 = 3
                             Case Else
                                 PnlDiente43c2.BackColor = Color.White
+                                diente43c2 = 0
                         End Select
-                        diente43c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "433"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente43c3.BackColor = Color.Red
-                            Case "precaucion"
+                                diente43c3 = 2
+                            Case "restauracion"
                                 PnlDiente43c3.BackColor = Color.Yellow
+                                diente43c3 = 1
                             Case "ausente"
                                 PnlDiente43c3.BackColor = Color.Black
+                                diente43c3 = 3
                             Case Else
                                 PnlDiente43c3.BackColor = Color.White
+                                diente43c3 = 0
                         End Select
-                        diente43c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "434"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente43c4.BackColor = Color.Red
-                            Case "precaucion"
+                                diente43c4 = 2
+                            Case "restauracion"
                                 PnlDiente43c4.BackColor = Color.Yellow
+                                diente43c4 = 1
                             Case "ausente"
                                 PnlDiente43c4.BackColor = Color.Black
+                                diente43c4 = 3
                             Case Else
                                 PnlDiente43c4.BackColor = Color.White
+                                diente43c4 = 0
                         End Select
-                        diente43c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "441"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente44c1.BackColor = Color.Red
-                            Case "precaucion"
+                                diente44c1 = 2
+                            Case "restauracion"
                                 PnlDiente44c1.BackColor = Color.Yellow
+                                diente44c1 = 1
                             Case "ausente"
                                 PnlDiente44c1.BackColor = Color.Black
+                                diente44c1 = 3
+                            Case "puente"
+                                PnlDiente44c1.BackColor = Color.Green
+                                diente44c1 = 4
                             Case Else
                                 PnlDiente44c1.BackColor = Color.White
+                                diente44c1 = 0
                         End Select
-                        diente44c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "442"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente44c2.BackColor = Color.Red
-                            Case "precaucion"
+                                diente44c2 = 2
+                            Case "restauracion"
                                 PnlDiente44c2.BackColor = Color.Yellow
+                                diente44c2 = 1
                             Case "ausente"
                                 PnlDiente44c2.BackColor = Color.Black
+                                diente44c2 = 3
                             Case Else
                                 PnlDiente44c2.BackColor = Color.White
+                                diente44c2 = 0
                         End Select
-                        diente44c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "443"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente44c3.BackColor = Color.Red
-                            Case "precaucion"
+                                diente44c3 = 2
+                            Case "restauracion"
                                 PnlDiente44c3.BackColor = Color.Yellow
+                                diente44c2 = 1
                             Case "ausente"
                                 PnlDiente44c3.BackColor = Color.Black
+                                diente44c2 = 3
                             Case Else
                                 PnlDiente44c3.BackColor = Color.White
+                                diente44c3 = 0
                         End Select
-                        diente44c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "444"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente44c4.BackColor = Color.Red
-                            Case "precaucion"
+                                diente44c4 = 2
+                            Case "restauracion"
                                 PnlDiente44c4.BackColor = Color.Yellow
+                                diente44c4 = 1
                             Case "ausente"
                                 PnlDiente44c4.BackColor = Color.Black
+                                diente44c4 = 3
                             Case Else
                                 PnlDiente44c4.BackColor = Color.White
+                                diente44c4 = 0
                         End Select
-                        diente44c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "451"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente45c1.BackColor = Color.Red
-                            Case "precaucion"
+                                diente45c1 = 2
+                            Case "restauracion"
                                 PnlDiente45c1.BackColor = Color.Yellow
+                                diente45c1 = 1
                             Case "ausente"
                                 PnlDiente45c1.BackColor = Color.Black
+                                diente45c1 = 3
+                            Case "puente"
+                                PnlDiente45c1.BackColor = Color.Green
+                                diente45c1 = 4
                             Case Else
                                 PnlDiente45c1.BackColor = Color.White
+                                diente45c1 = 0
                         End Select
-                        diente45c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
 
                     Case "452"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente45c2.BackColor = Color.Red
-                            Case "precaucion"
+                                diente45c2 = 2
+                            Case "restauracion"
                                 PnlDiente45c2.BackColor = Color.Yellow
+                                diente45c2 = 1
                             Case "ausente"
                                 PnlDiente45c2.BackColor = Color.Black
+                                diente45c2 = 3
                             Case Else
                                 PnlDiente45c2.BackColor = Color.White
+                                diente45c2 = 0
                         End Select
-                        diente45c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "453"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente45c3.BackColor = Color.Red
-                            Case "precaucion"
+                                diente45c3 = 2
+                            Case "restauracion"
                                 PnlDiente45c3.BackColor = Color.Yellow
+                                diente45c3 = 1
                             Case "ausente"
                                 PnlDiente45c3.BackColor = Color.Black
+                                diente45c3 = 3
                             Case Else
                                 PnlDiente45c3.BackColor = Color.White
+                                diente45c3 = 0
                         End Select
-                        diente45c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "454"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente45c4.BackColor = Color.Red
-                            Case "precaucion"
+                                diente45c4 = 2
+                            Case "restauracion"
                                 PnlDiente45c4.BackColor = Color.Yellow
+                                diente45c4 = 1
                             Case "ausente"
                                 PnlDiente45c4.BackColor = Color.Black
+                                diente45c4 = 3
                             Case Else
                                 PnlDiente45c4.BackColor = Color.White
+                                diente45c4 = 0
                         End Select
-                        diente45c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "461"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente46c1.BackColor = Color.Red
-                            Case "precaucion"
+                                diente46c1 = 2
+                            Case "restauracion"
                                 PnlDiente46c1.BackColor = Color.Yellow
+                                diente46c1 = 1
                             Case "ausente"
                                 PnlDiente46c1.BackColor = Color.Black
+                                diente46c1 = 3
                             Case Else
                                 PnlDiente46c1.BackColor = Color.White
+                                diente46c1 = 0
                         End Select
-                        diente46c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "462"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente46c2.BackColor = Color.Red
-                            Case "precaucion"
+                                diente46c2 = 2
+                            Case "restauracion"
                                 PnlDiente46c2.BackColor = Color.Yellow
+                                diente46c2 = 1
                             Case "ausente"
                                 PnlDiente46c2.BackColor = Color.Black
+                                diente46c2 = 3
                             Case Else
                                 PnlDiente46c2.BackColor = Color.White
+                                diente46c2 = 0
                         End Select
-                        diente46c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "463"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente46c3.BackColor = Color.Red
-                            Case "precaucion"
+                                diente46c3 = 2
+                            Case "restauracion"
                                 PnlDiente46c3.BackColor = Color.Yellow
+                                diente46c3 = 1
                             Case "ausente"
                                 PnlDiente46c3.BackColor = Color.Black
+                                diente46c3 = 3
                             Case Else
                                 PnlDiente46c3.BackColor = Color.White
+                                diente46c3 = 0
                         End Select
-                        diente46c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "464"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente46c4.BackColor = Color.Red
-                            Case "precaucion"
+                                diente46c4 = 2
+                            Case "restauracion"
                                 PnlDiente46c4.BackColor = Color.Yellow
+                                diente46c4 = 1
                             Case "ausente"
                                 PnlDiente46c4.BackColor = Color.Black
+                                diente46c4 = 3
                             Case Else
                                 PnlDiente46c4.BackColor = Color.White
+                                diente46c4 = 0
                         End Select
-                        diente46c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "471"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente47c1.BackColor = Color.Red
-                            Case "precaucion"
+                                diente47c1 = 2
+                            Case "restauracion"
                                 PnlDiente47c1.BackColor = Color.Yellow
+                                diente47c1 = 1
                             Case "ausente"
                                 PnlDiente47c1.BackColor = Color.Black
+                                diente47c1 = 3
+                            Case "puente"
+                                PnlDiente47c1.BackColor = Color.Green
+                                diente47c1 = 4
                             Case Else
                                 PnlDiente47c1.BackColor = Color.White
+                                diente47c1 = 0
                         End Select
-                        diente47c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
 
                     Case "472"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente47c2.BackColor = Color.Red
-                            Case "precaucion"
+                                diente47c2 = 2
+                            Case "restauracion"
                                 PnlDiente47c2.BackColor = Color.Yellow
+                                diente47c2 = 1
                             Case "ausente"
                                 PnlDiente47c2.BackColor = Color.Black
+                                diente47c2 = 3
                             Case Else
                                 PnlDiente47c2.BackColor = Color.White
+                                diente47c2 = 0
                         End Select
-                        diente47c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "473"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente47c3.BackColor = Color.Red
-                            Case "precaucion"
+                                diente47c3 = 2
+                            Case "restauracion"
                                 PnlDiente47c3.BackColor = Color.Yellow
+                                diente47c3 = 1
                             Case "ausente"
                                 PnlDiente47c3.BackColor = Color.Black
+                                diente47c3 = 3
                             Case Else
                                 PnlDiente47c3.BackColor = Color.White
+                                diente47c3 = 0
                         End Select
-                        diente47c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "474"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente47c4.BackColor = Color.Red
-                            Case "precaucion"
+                                diente47c4 = 2
+                            Case "restauracion"
                                 PnlDiente47c4.BackColor = Color.Yellow
+                                diente47c4 = 1
                             Case "ausente"
                                 PnlDiente47c4.BackColor = Color.Black
+                                diente47c4 = 3
                             Case Else
                                 PnlDiente47c4.BackColor = Color.White
+                                diente47c4 = 0
                         End Select
-                        diente47c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "481"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente48c1.BackColor = Color.Red
-                            Case "precaucion"
+                                diente48c1 = 2
+                            Case "restauracion"
                                 PnlDiente48c1.BackColor = Color.Yellow
+                                diente48c1 = 1
                             Case "ausente"
                                 PnlDiente48c1.BackColor = Color.Black
+                                diente48c1 = 3
+                            Case "puente"
+                                PnlDiente48c1.BackColor = Color.Green
+                                diente48c1 = 4
                             Case Else
                                 PnlDiente48c1.BackColor = Color.White
+                                diente48c1 = 0
                         End Select
-                        diente48c1E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "482"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente48c2.BackColor = Color.Red
-                            Case "precaucion"
+                                diente48c2 = 2
+                            Case "restauracion"
                                 PnlDiente48c2.BackColor = Color.Yellow
+                                diente48c2 = 1
                             Case "ausente"
                                 PnlDiente48c2.BackColor = Color.Black
+                                diente48c2 = 3
                             Case Else
                                 PnlDiente48c2.BackColor = Color.White
+                                diente48c2 = 0
                         End Select
-                        diente48c2E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "483"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente48c3.BackColor = Color.Red
-                            Case "precaucion"
+                                diente48c3 = 2
+                            Case "restauracion"
                                 PnlDiente48c3.BackColor = Color.Yellow
+                                diente48c3 = 1
                             Case "ausente"
                                 PnlDiente48c3.BackColor = Color.Black
+                                diente48c3 = 3
                             Case Else
                                 PnlDiente48c3.BackColor = Color.White
+                                diente48c3 = 0
                         End Select
-                        diente48c3E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                     Case "484"
                         Select Case dgvEstadoDiente2.Rows(x).Cells(2).Value
-                            Case "alerta"
+                            Case "cariado"
                                 PnlDiente48c4.BackColor = Color.Red
-                            Case "precaucion"
+                                diente48c4 = 2
+                            Case "restauracion"
                                 PnlDiente48c4.BackColor = Color.Yellow
+                                diente48c4 = 1
                             Case "ausente"
                                 PnlDiente48c4.BackColor = Color.Black
+                                diente48c4 = 3
                             Case Else
                                 PnlDiente48c4.BackColor = Color.White
+                                diente48c4 = 0
                         End Select
-                        diente48c4E = dgvEstadoDiente2.Rows(x).Cells(2).Value
+
 
                 End Select
             Next
 
         Catch ex As Exception
             MsgBox("Error al obtener estado de los dientes", MsgBoxStyle.Exclamation)
-           
+
         End Try
 
     End Sub
@@ -2878,10 +3023,10 @@
                 diente18c4E = "normal"
             Case 1
                 PnlDiente18c4.BackColor = Color.Yellow
-                diente18c4E = "precaucion"
+                diente18c4E = "restauracion"
             Case 2
                 PnlDiente18c4.BackColor = Color.Red
-                diente18c4E = "alerta"
+                diente18c4E = "cariado"
             Case 3
                 PnlDiente18c4.BackColor = Color.Black
                 diente18c4E = "ausente"
@@ -2904,10 +3049,10 @@
                 diente18c3E = "normal"
             Case 1
                 PnlDiente18c3.BackColor = Color.Yellow
-                diente18c3E = "precaucion"
+                diente18c3E = "restauracion"
             Case 2
                 PnlDiente18c3.BackColor = Color.Red
-                diente18c3E = "alerta"
+                diente18c3E = "cariado"
             Case 3
                 PnlDiente18c3.BackColor = Color.Black
                 diente18c3E = "ausente"
@@ -2929,10 +3074,10 @@
                 diente18c2E = "normal"
             Case 1
                 PnlDiente18c2.BackColor = Color.Yellow
-                diente18c2E = "precaucion"
+                diente18c2E = "restauracion"
             Case 2
                 PnlDiente18c2.BackColor = Color.Red
-                diente18c2E = "alerta"
+                diente18c2E = "cariado"
             Case 3
                 PnlDiente18c2.BackColor = Color.Black
                 diente18c2E = "ausente"
@@ -2955,10 +3100,10 @@
                 diente18c1E = "normal"
             Case 1
                 PnlDiente18c1.BackColor = Color.Yellow
-                diente18c1E = "precaucion"
+                diente18c1E = "restauracion"
             Case 2
                 PnlDiente18c1.BackColor = Color.Red
-                diente18c1E = "alerta"
+                diente18c1E = "cariado"
             Case 3
                 PnlDiente18c1.BackColor = Color.Black
                 diente18c1E = "ausente"
@@ -2984,10 +3129,10 @@
                 diente17c4E = "normal"
             Case 1
                 PnlDiente17c4.BackColor = Color.Yellow
-                diente17c4E = "precaucion"
+                diente17c4E = "restauracion"
             Case 2
                 PnlDiente17c4.BackColor = Color.Red
-                diente17c4E = "alerta"
+                diente17c4E = "cariado"
             Case 3
                 PnlDiente17c4.BackColor = Color.Black
                 diente17c4E = "ausente"
@@ -3009,10 +3154,10 @@
                 diente17c3E = "normal"
             Case 1
                 PnlDiente17c3.BackColor = Color.Yellow
-                diente17c3E = "precaucion"
+                diente17c3E = "restauracion"
             Case 2
                 PnlDiente17c3.BackColor = Color.Red
-                diente17c3E = "alerta"
+                diente17c3E = "cariado"
             Case 3
                 PnlDiente17c3.BackColor = Color.Black
                 diente17c3E = "ausente"
@@ -3034,10 +3179,10 @@
                 diente17c2E = "normal"
             Case 1
                 PnlDiente17c2.BackColor = Color.Yellow
-                diente17c2E = "precaucion"
+                diente17c2E = "restauracion"
             Case 2
                 PnlDiente17c2.BackColor = Color.Red
-                diente17c2E = "alerta"
+                diente17c2E = "cariado"
             Case 3
                 PnlDiente17c2.BackColor = Color.Black
                 diente17c2E = "ausente"
@@ -3061,10 +3206,10 @@
                 diente17c1E = "normal"
             Case 1
                 PnlDiente17c1.BackColor = Color.Yellow
-                diente17c1E = "precaucion"
+                diente17c1E = "restauracion"
             Case 2
                 PnlDiente17c1.BackColor = Color.Red
-                diente17c1E = "alerta"
+                diente17c1E = "cariado"
             Case 3
                 PnlDiente17c1.BackColor = Color.Black
                 diente17c1E = "ausente"
@@ -3090,10 +3235,10 @@
                 diente16c4E = "normal"
             Case 1
                 PnlDiente16c4.BackColor = Color.Yellow
-                diente16c4E = "precaucion"
+                diente16c4E = "restauracion"
             Case 2
                 PnlDiente16c4.BackColor = Color.Red
-                diente16c4E = "alerta"
+                diente16c4E = "cariado"
             Case 3
                 PnlDiente16c4.BackColor = Color.Black
                 diente16c4E = "ausente"
@@ -3116,10 +3261,10 @@
                 diente16c3E = "normal"
             Case 1
                 PnlDiente16c3.BackColor = Color.Yellow
-                diente16c3E = "precaucion"
+                diente16c3E = "restauracion"
             Case 2
                 PnlDiente16c3.BackColor = Color.Red
-                diente16c3E = "alerta"
+                diente16c3E = "cariado"
             Case 3
                 PnlDiente16c3.BackColor = Color.Black
                 diente16c3E = "ausente"
@@ -3143,10 +3288,10 @@
                 diente16c2E = "normal"
             Case 1
                 PnlDiente16c2.BackColor = Color.Yellow
-                diente16c2E = "precaucion"
+                diente16c2E = "restauracion"
             Case 2
                 PnlDiente16c2.BackColor = Color.Red
-                diente16c2E = "alerta"
+                diente16c2E = "cariado"
             Case 3
                 PnlDiente16c2.BackColor = Color.Black
                 diente16c2E = "ausente"
@@ -3170,10 +3315,10 @@
                 diente16c1E = "normal"
             Case 1
                 PnlDiente16c1.BackColor = Color.Yellow
-                diente16c1E = "precaucion"
+                diente16c1E = "restauracion"
             Case 2
                 PnlDiente16c1.BackColor = Color.Red
-                diente16c1E = "alerta"
+                diente16c1E = "cariado"
             Case 3
                 PnlDiente16c1.BackColor = Color.Black
                 diente16c1E = "ausente"
@@ -3200,10 +3345,10 @@
                 diente15c4E = "normal"
             Case 1
                 PnlDiente15c4.BackColor = Color.Yellow
-                diente15c4E = "precaucion"
+                diente15c4E = "restauracion"
             Case 2
                 PnlDiente15c4.BackColor = Color.Red
-                diente15c4E = "alerta"
+                diente15c4E = "cariado"
             Case 3
                 PnlDiente15c4.BackColor = Color.Black
                 diente15c4E = "ausente"
@@ -3227,10 +3372,10 @@
                 diente15c3E = "normal"
             Case 1
                 PnlDiente15c3.BackColor = Color.Yellow
-                diente15c3E = "precaucion"
+                diente15c3E = "restauracion"
             Case 2
                 PnlDiente15c3.BackColor = Color.Red
-                diente15c3E = "alerta"
+                diente15c3E = "cariado"
             Case 3
                 PnlDiente15c3.BackColor = Color.Black
                 diente15c3E = "ausente"
@@ -3252,10 +3397,10 @@
                 diente15c2E = "normal"
             Case 1
                 PnlDiente15c2.BackColor = Color.Yellow
-                diente15c2E = "precaucion"
+                diente15c2E = "restauracion"
             Case 2
                 PnlDiente15c2.BackColor = Color.Red
-                diente15c2E = "alerta"
+                diente15c2E = "cariado"
             Case 3
                 PnlDiente15c2.BackColor = Color.Black
                 diente15c2E = "ausente"
@@ -3277,10 +3422,10 @@
                 diente15c1E = "normal"
             Case 1
                 PnlDiente15c1.BackColor = Color.Yellow
-                diente15c1E = "precaucion"
+                diente15c1E = "restauracion"
             Case 2
                 PnlDiente15c1.BackColor = Color.Red
-                diente15c1E = "alerta"
+                diente15c1E = "cariado"
             Case 3
                 PnlDiente15c1.BackColor = Color.Black
                 diente15c1E = "ausente"
@@ -3307,10 +3452,10 @@
                 diente14c4E = "normal"
             Case 1
                 PnlDiente14c4.BackColor = Color.Yellow
-                diente14c4E = "precaucion"
+                diente14c4E = "restauracion"
             Case 2
                 PnlDiente14c4.BackColor = Color.Red
-                diente14c4E = "alerta"
+                diente14c4E = "cariado"
             Case 3
                 PnlDiente14c4.BackColor = Color.Black
                 diente14c4E = "ausente"
@@ -3333,10 +3478,10 @@
                 diente14c3E = "normal"
             Case 1
                 PnlDiente14c3.BackColor = Color.Yellow
-                diente14c3E = "precaucion"
+                diente14c3E = "restauracion"
             Case 2
                 PnlDiente14c3.BackColor = Color.Red
-                diente14c3E = "alerta"
+                diente14c3E = "cariado"
             Case 3
                 PnlDiente14c3.BackColor = Color.Black
                 diente14c3E = "ausente"
@@ -3358,10 +3503,10 @@
                 diente14c2E = "normal"
             Case 1
                 PnlDiente14c2.BackColor = Color.Yellow
-                diente14c2E = "precaucion"
+                diente14c2E = "restauracion"
             Case 2
                 PnlDiente14c2.BackColor = Color.Red
-                diente14c2E = "alerta"
+                diente14c2E = "cariado"
             Case 3
                 PnlDiente14c2.BackColor = Color.Black
                 diente14c2E = "ausente"
@@ -3386,10 +3531,10 @@
                 diente14c1E = "normal"
             Case 1
                 PnlDiente14c1.BackColor = Color.Yellow
-                diente14c1E = "precaucion"
+                diente14c1E = "restauracion"
             Case 2
                 PnlDiente14c1.BackColor = Color.Red
-                diente14c1E = "alerta"
+                diente14c1E = "cariado"
             Case 3
                 PnlDiente14c1.BackColor = Color.Black
                 diente14c1E = "ausente"
@@ -3417,10 +3562,10 @@
                 diente13c4E = "normal"
             Case 1
                 PnlDiente13c4.BackColor = Color.Yellow
-                diente13c4E = "precaucion"
+                diente13c4E = "restauracion"
             Case 2
                 PnlDiente13c4.BackColor = Color.Red
-                diente13c4E = "alerta"
+                diente13c4E = "cariado"
             Case 3
                 PnlDiente13c4.BackColor = Color.Black
                 diente13c4E = "ausente"
@@ -3442,10 +3587,10 @@
                 diente13c3E = "normal"
             Case 1
                 PnlDiente13c3.BackColor = Color.Yellow
-                diente13c3E = "precaucion"
+                diente13c3E = "restauracion"
             Case 2
                 PnlDiente13c3.BackColor = Color.Red
-                diente13c3E = "alerta"
+                diente13c3E = "cariado"
             Case 3
                 PnlDiente13c3.BackColor = Color.Black
                 diente13c3E = "ausente"
@@ -3468,10 +3613,10 @@
                 diente13c2E = "normal"
             Case 1
                 PnlDiente13c2.BackColor = Color.Yellow
-                diente13c2E = "precaucion"
+                diente13c2E = "restauracion"
             Case 2
                 PnlDiente13c2.BackColor = Color.Red
-                diente13c2E = "alerta"
+                diente13c2E = "cariado"
             Case 3
                 PnlDiente13c2.BackColor = Color.Black
                 diente13c2E = "ausente"
@@ -3494,10 +3639,10 @@
                 diente13c1E = "normal"
             Case 1
                 PnlDiente13c1.BackColor = Color.Yellow
-                diente13c1E = "precaucion"
+                diente13c1E = "restauracion"
             Case 2
                 PnlDiente13c1.BackColor = Color.Red
-                diente13c1E = "alerta"
+                diente13c1E = "cariado"
             Case 3
                 PnlDiente13c1.BackColor = Color.Black
                 diente13c1E = "ausente"
@@ -3523,10 +3668,10 @@
                 diente12c4E = "normal"
             Case 1
                 PnlDiente12c4.BackColor = Color.Yellow
-                diente12c4E = "precaucion"
+                diente12c4E = "restauracion"
             Case 2
                 PnlDiente12c4.BackColor = Color.Red
-                diente12c4E = "alerta"
+                diente12c4E = "cariado"
             Case 3
                 PnlDiente12c4.BackColor = Color.Black
                 diente12c4E = "ausente"
@@ -3550,10 +3695,10 @@
                 diente12c3E = "normal"
             Case 1
                 PnlDiente12c3.BackColor = Color.Yellow
-                diente12c3E = "precaucion"
+                diente12c3E = "restauracion"
             Case 2
                 PnlDiente12c3.BackColor = Color.Red
-                diente12c3E = "alerta"
+                diente12c3E = "cariado"
             Case 3
                 PnlDiente12c3.BackColor = Color.Black
                 diente12c3E = "ausente"
@@ -3577,10 +3722,10 @@
                 diente12c2E = "normal"
             Case 1
                 PnlDiente12c2.BackColor = Color.Yellow
-                diente12c2E = "precaucion"
+                diente12c2E = "restauracion"
             Case 2
                 PnlDiente12c2.BackColor = Color.Red
-                diente12c2E = "alerta"
+                diente12c2E = "cariado"
             Case 3
                 PnlDiente12c2.BackColor = Color.Black
                 diente12c2E = "ausente"
@@ -3603,10 +3748,10 @@
                 diente12c1E = "normal"
             Case 1
                 PnlDiente12c1.BackColor = Color.Yellow
-                diente12c1E = "precaucion"
+                diente12c1E = "restauracion"
             Case 2
                 PnlDiente12c1.BackColor = Color.Red
-                diente12c1E = "alerta"
+                diente12c1E = "cariado"
             Case 3
                 PnlDiente12c1.BackColor = Color.Black
                 diente12c1E = "ausente"
@@ -3632,10 +3777,10 @@
                 diente11c4E = "normal"
             Case 1
                 PnlDiente11c4.BackColor = Color.Yellow
-                diente11c4E = "precaucion"
+                diente11c4E = "restauracion"
             Case 2
                 PnlDiente11c4.BackColor = Color.Red
-                diente11c4E = "alerta"
+                diente11c4E = "cariado"
             Case 3
                 PnlDiente11c4.BackColor = Color.Black
                 diente11c4E = "ausente"
@@ -3658,10 +3803,10 @@
                 diente11c3E = "normal"
             Case 1
                 PnlDiente11c3.BackColor = Color.Yellow
-                diente11c3E = "precaucion"
+                diente11c3E = "restauracion"
             Case 2
                 PnlDiente11c3.BackColor = Color.Red
-                diente11c3E = "alerta"
+                diente11c3E = "cariado"
             Case 3
                 PnlDiente11c3.BackColor = Color.Black
                 diente11c3E = "ausente"
@@ -3684,10 +3829,10 @@
                 diente11c2E = "normal"
             Case 1
                 PnlDiente11c2.BackColor = Color.Yellow
-                diente11c2E = "precaucion"
+                diente11c2E = "restauracion"
             Case 2
                 PnlDiente11c2.BackColor = Color.Red
-                diente11c2E = "alerta"
+                diente11c2E = "cariado"
             Case 3
                 PnlDiente11c2.BackColor = Color.Black
                 diente11c2E = "ausente"
@@ -3709,10 +3854,10 @@
                 diente11c1E = "normal"
             Case 1
                 PnlDiente11c1.BackColor = Color.Yellow
-                diente11c1E = "precaucion"
+                diente11c1E = "restauracion"
             Case 2
                 PnlDiente11c1.BackColor = Color.Red
-                diente11c1E = "alerta"
+                diente11c1E = "cariado"
             Case 3
                 PnlDiente11c1.BackColor = Color.Black
                 diente11c1E = "ausente"
@@ -3739,10 +3884,10 @@
                 diente28c4E = "normal"
             Case 1
                 PnlDiente28c4.BackColor = Color.Yellow
-                diente28c4E = "precaucion"
+                diente28c4E = "restauracion"
             Case 2
                 PnlDiente28c4.BackColor = Color.Red
-                diente28c4E = "alerta"
+                diente28c4E = "cariado"
             Case 3
                 PnlDiente28c4.BackColor = Color.Black
                 diente28c4E = "ausente"
@@ -3763,10 +3908,10 @@
                 diente28c3E = "normal"
             Case 1
                 PnlDiente28c3.BackColor = Color.Yellow
-                diente28c3E = "precaucion"
+                diente28c3E = "restauracion"
             Case 2
                 PnlDiente28c3.BackColor = Color.Red
-                diente28c3E = "alerta"
+                diente28c3E = "cariado"
             Case 3
                 PnlDiente28c3.BackColor = Color.Black
                 diente28c3E = "ausente"
@@ -3787,10 +3932,10 @@
                 diente28c2E = "normal"
             Case 1
                 PnlDiente28c2.BackColor = Color.Yellow
-                diente28c2E = "precaucion"
+                diente28c2E = "restauracion"
             Case 2
                 PnlDiente28c2.BackColor = Color.Red
-                diente28c2E = "alerta"
+                diente28c2E = "cariado"
             Case 3
                 PnlDiente28c2.BackColor = Color.Black
                 diente28c2E = "ausente"
@@ -3815,10 +3960,10 @@
                 diente28c1E = "normal"
             Case 1
                 PnlDiente28c1.BackColor = Color.Yellow
-                diente28c1E = "precaucion"
+                diente28c1E = "restauracion"
             Case 2
                 PnlDiente28c1.BackColor = Color.Red
-                diente28c1E = "alerta"
+                diente28c1E = "cariado"
             Case 3
                 PnlDiente28c1.BackColor = Color.Black
                 diente28c1E = "ausente"
@@ -3844,10 +3989,10 @@
                 diente27c4E = "normal"
             Case 1
                 PnlDiente27c4.BackColor = Color.Yellow
-                diente27c4E = "precaucion"
+                diente27c4E = "restauracion"
             Case 2
                 PnlDiente27c4.BackColor = Color.Red
-                diente27c4E = "alerta"
+                diente27c4E = "cariado"
             Case 3
                 PnlDiente27c4.BackColor = Color.Black
                 diente27c4E = "ausente"
@@ -3869,10 +4014,10 @@
                 diente27c3E = "normal"
             Case 1
                 PnlDiente27c3.BackColor = Color.Yellow
-                diente27c3E = "precaucion"
+                diente27c3E = "restauracion"
             Case 2
                 PnlDiente27c3.BackColor = Color.Red
-                diente27c3E = "alerta"
+                diente27c3E = "cariado"
             Case 3
                 PnlDiente27c3.BackColor = Color.Black
                 diente27c3E = "ausente"
@@ -3895,10 +4040,10 @@
                 diente27c2E = "normal"
             Case 1
                 PnlDiente27c2.BackColor = Color.Yellow
-                diente27c2E = "precaucion"
+                diente27c2E = "restauracion"
             Case 2
                 PnlDiente27c2.BackColor = Color.Red
-                diente27c2E = "alerta"
+                diente27c2E = "cariado"
             Case 3
                 PnlDiente27c2.BackColor = Color.Black
                 diente27c2E = "ausente"
@@ -3922,10 +4067,10 @@
                 diente27c1E = "normal"
             Case 1
                 PnlDiente27c1.BackColor = Color.Yellow
-                diente27c1E = "precaucion"
+                diente27c1E = "restauracion"
             Case 2
                 PnlDiente27c1.BackColor = Color.Red
-                diente27c1E = "alerta"
+                diente27c1E = "cariado"
             Case 3
                 PnlDiente27c1.BackColor = Color.Black
                 diente27c1E = "ausente"
@@ -3951,10 +4096,10 @@
                 diente26c4E = "normal"
             Case 1
                 PnlDiente26c4.BackColor = Color.Yellow
-                diente26c4E = "precaucion"
+                diente26c4E = "restauracion"
             Case 2
                 PnlDiente26c4.BackColor = Color.Red
-                diente26c4E = "alerta"
+                diente26c4E = "cariado"
             Case 3
                 PnlDiente26c4.BackColor = Color.Black
                 diente26c4E = "ausente"
@@ -3978,10 +4123,10 @@
                 diente26c3E = "normal"
             Case 1
                 PnlDiente26c3.BackColor = Color.Yellow
-                diente26c3E = "precaucion"
+                diente26c3E = "restauracion"
             Case 2
                 PnlDiente26c3.BackColor = Color.Red
-                diente26c3E = "alerta"
+                diente26c3E = "cariado"
             Case 3
                 PnlDiente26c3.BackColor = Color.Black
                 diente26c3E = "ausente"
@@ -4006,10 +4151,10 @@
                 diente26c2E = "normal"
             Case 1
                 PnlDiente26c2.BackColor = Color.Yellow
-                diente26c2E = "precaucion"
+                diente26c2E = "restauracion"
             Case 2
                 PnlDiente26c2.BackColor = Color.Red
-                diente26c2E = "alerta"
+                diente26c2E = "cariado"
             Case 3
                 PnlDiente26c2.BackColor = Color.Black
                 diente26c2E = "ausente"
@@ -4032,10 +4177,10 @@
                 diente26c1E = "normal"
             Case 1
                 PnlDiente26c1.BackColor = Color.Yellow
-                diente26c1E = "precaucion"
+                diente26c1E = "restauracion"
             Case 2
                 PnlDiente26c1.BackColor = Color.Red
-                diente26c1E = "alerta"
+                diente26c1E = "cariado"
             Case 3
                 PnlDiente26c1.BackColor = Color.Black
                 diente26c1E = "ausente"
@@ -4061,10 +4206,10 @@
                 diente25c4E = "normal"
             Case 1
                 PnlDiente25c4.BackColor = Color.Yellow
-                diente25c4E = "precaucion"
+                diente25c4E = "restauracion"
             Case 2
                 PnlDiente25c4.BackColor = Color.Red
-                diente25c4E = "alerta"
+                diente25c4E = "cariado"
             Case 3
                 PnlDiente25c4.BackColor = Color.Black
                 diente25c4E = "ausente"
@@ -4089,10 +4234,10 @@
                 diente25c3E = "normal"
             Case 1
                 PnlDiente25c3.BackColor = Color.Yellow
-                diente25c3E = "precaucion"
+                diente25c3E = "restauracion"
             Case 2
                 PnlDiente25c3.BackColor = Color.Red
-                diente25c3E = "alerta"
+                diente25c3E = "cariado"
             Case 3
                 PnlDiente25c3.BackColor = Color.Black
                 diente25c3E = "ausente"
@@ -4115,10 +4260,10 @@
                 diente25c2E = "normal"
             Case 1
                 PnlDiente25c2.BackColor = Color.Yellow
-                diente25c2E = "precaucion"
+                diente25c2E = "restauracion"
             Case 2
                 PnlDiente25c2.BackColor = Color.Red
-                diente25c2E = "alerta"
+                diente25c2E = "cariado"
             Case 3
                 PnlDiente25c2.BackColor = Color.Black
                 diente25c2E = "ausente"
@@ -4143,10 +4288,10 @@
                 diente25c1E = "normal"
             Case 1
                 PnlDiente25c1.BackColor = Color.Yellow
-                diente25c1E = "precaucion"
+                diente25c1E = "restauracion"
             Case 2
                 PnlDiente25c1.BackColor = Color.Red
-                diente25c1E = "alerta"
+                diente25c1E = "cariado"
             Case 3
                 PnlDiente25c1.BackColor = Color.Black
                 diente25c1E = "ausente"
@@ -4173,10 +4318,10 @@
                 diente24c4E = "normal"
             Case 1
                 PnlDiente24c4.BackColor = Color.Yellow
-                diente24c4E = "precaucion"
+                diente24c4E = "restauracion"
             Case 2
                 PnlDiente24c4.BackColor = Color.Red
-                diente24c4E = "alerta"
+                diente24c4E = "cariado"
             Case 3
                 PnlDiente24c4.BackColor = Color.Black
                 diente24c4E = "ausente"
@@ -4198,10 +4343,10 @@
                 diente24c3E = "normal"
             Case 1
                 PnlDiente24c3.BackColor = Color.Yellow
-                diente24c3E = "precaucion"
+                diente24c3E = "restauracion"
             Case 2
                 PnlDiente24c3.BackColor = Color.Red
-                diente24c3E = "alerta"
+                diente24c3E = "cariado"
             Case 3
                 PnlDiente24c3.BackColor = Color.Black
                 diente24c3E = "ausente"
@@ -4225,10 +4370,10 @@
                 diente24c2E = "normal"
             Case 1
                 PnlDiente24c2.BackColor = Color.Yellow
-                diente24c2E = "precaucion"
+                diente24c2E = "restauracion"
             Case 2
                 PnlDiente24c2.BackColor = Color.Red
-                diente24c2E = "alerta"
+                diente24c2E = "cariado"
             Case 3
                 PnlDiente24c2.BackColor = Color.Black
                 diente24c2E = "ausente"
@@ -4252,10 +4397,10 @@
                 diente24c1E = "normal"
             Case 1
                 PnlDiente24c1.BackColor = Color.Yellow
-                diente24c1E = "precaucion"
+                diente24c1E = "restauracion"
             Case 2
                 PnlDiente24c1.BackColor = Color.Red
-                diente24c1E = "alerta"
+                diente24c1E = "cariado"
             Case 3
                 PnlDiente24c1.BackColor = Color.Black
                 diente24c1E = "ausente"
@@ -4281,10 +4426,10 @@
                 diente23c4E = "normal"
             Case 1
                 PnlDiente23c4.BackColor = Color.Yellow
-                diente23c4E = "precaucion"
+                diente23c4E = "restauracion"
             Case 2
                 PnlDiente23c4.BackColor = Color.Red
-                diente23c4E = "alerta"
+                diente23c4E = "cariado"
             Case 3
                 PnlDiente23c4.BackColor = Color.Black
                 diente23c4E = "ausente"
@@ -4306,10 +4451,10 @@
                 diente23c3E = "normal"
             Case 1
                 PnlDiente23c3.BackColor = Color.Yellow
-                diente23c3E = "precaucion"
+                diente23c3E = "restauracion"
             Case 2
                 PnlDiente23c3.BackColor = Color.Red
-                diente23c3E = "alerta"
+                diente23c3E = "cariado"
             Case 3
                 PnlDiente23c3.BackColor = Color.Black
                 diente23c3E = "ausente"
@@ -4332,10 +4477,10 @@
                 diente23c2E = "normal"
             Case 1
                 PnlDiente23c2.BackColor = Color.Yellow
-                diente23c2E = "precaucion"
+                diente23c2E = "restauracion"
             Case 2
                 PnlDiente23c2.BackColor = Color.Red
-                diente23c2E = "alerta"
+                diente23c2E = "cariado"
             Case 3
                 PnlDiente23c2.BackColor = Color.Black
                 diente23c2E = "ausente"
@@ -4358,10 +4503,10 @@
                 diente23c1E = "normal"
             Case 1
                 PnlDiente23c1.BackColor = Color.Yellow
-                diente23c1E = "precaucion"
+                diente23c1E = "restauracion"
             Case 2
                 PnlDiente23c1.BackColor = Color.Red
-                diente23c1E = "alerta"
+                diente23c1E = "cariado"
             Case 3
                 PnlDiente23c1.BackColor = Color.Black
                 diente23c1E = "ausente"
@@ -4389,10 +4534,10 @@
                 diente22c4E = "normal"
             Case 1
                 PnlDiente22c4.BackColor = Color.Yellow
-                diente22c4E = "precaucion"
+                diente22c4E = "restauracion"
             Case 2
                 PnlDiente22c4.BackColor = Color.Red
-                diente22c4E = "alerta"
+                diente22c4E = "cariado"
             Case 3
                 PnlDiente22c4.BackColor = Color.Black
                 diente22c4E = "ausente"
@@ -4415,10 +4560,10 @@
                 diente22c3E = "normal"
             Case 1
                 PnlDiente22c3.BackColor = Color.Yellow
-                diente22c3E = "precaucion"
+                diente22c3E = "restauracion"
             Case 2
                 PnlDiente22c3.BackColor = Color.Red
-                diente22c3E = "alerta"
+                diente22c3E = "cariado"
             Case 3
                 PnlDiente22c3.BackColor = Color.Black
                 diente22c3E = "ausente"
@@ -4442,10 +4587,10 @@
                 diente22c2E = "normal"
             Case 1
                 PnlDiente22c2.BackColor = Color.Yellow
-                diente22c2E = "precaucion"
+                diente22c2E = "restauracion"
             Case 2
                 PnlDiente22c2.BackColor = Color.Red
-                diente22c2E = "alerta"
+                diente22c2E = "cariado"
             Case 3
                 PnlDiente22c2.BackColor = Color.Black
                 diente22c2E = "ausente"
@@ -4468,10 +4613,10 @@
                 diente22c1E = "normal"
             Case 1
                 PnlDiente22c1.BackColor = Color.Yellow
-                diente22c1E = "precaucion"
+                diente22c1E = "restauracion"
             Case 2
                 PnlDiente22c1.BackColor = Color.Red
-                diente22c1E = "alerta"
+                diente22c1E = "cariado"
             Case 3
                 PnlDiente22c1.BackColor = Color.Black
                 diente22c1E = "ausente"
@@ -4499,10 +4644,10 @@
                 diente21c4E = "normal"
             Case 1
                 PnlDiente21c4.BackColor = Color.Yellow
-                diente21c4E = "precaucion"
+                diente21c4E = "restauracion"
             Case 2
                 PnlDiente21c4.BackColor = Color.Red
-                diente21c4E = "alerta"
+                diente21c4E = "cariado"
             Case 3
                 PnlDiente21c4.BackColor = Color.Black
                 diente21c4E = "ausente"
@@ -4526,10 +4671,10 @@
                 diente21c3E = "normal"
             Case 1
                 PnlDiente21c3.BackColor = Color.Yellow
-                diente21c3E = "precaucion"
+                diente21c3E = "restauracion"
             Case 2
                 PnlDiente21c3.BackColor = Color.Red
-                diente21c3E = "alerta"
+                diente21c3E = "cariado"
             Case 3
                 PnlDiente21c3.BackColor = Color.Black
                 diente21c3E = "ausente"
@@ -4552,10 +4697,10 @@
                 diente21c2E = "normal"
             Case 1
                 PnlDiente21c2.BackColor = Color.Yellow
-                diente21c2E = "precaucion"
+                diente21c2E = "restauracion"
             Case 2
                 PnlDiente21c2.BackColor = Color.Red
-                diente21c2E = "alerta"
+                diente21c2E = "cariado"
             Case 3
                 PnlDiente21c2.BackColor = Color.Black
                 diente21c2E = "ausente"
@@ -4578,10 +4723,10 @@
                 diente21c1E = "normal"
             Case 1
                 PnlDiente21c1.BackColor = Color.Yellow
-                diente21c1E = "precaucion"
+                diente21c1E = "restauracion"
             Case 2
                 PnlDiente21c1.BackColor = Color.Red
-                diente21c1E = "alerta"
+                diente21c1E = "cariado"
             Case 3
                 PnlDiente21c1.BackColor = Color.Black
                 diente21c1E = "ausente"
@@ -4611,10 +4756,10 @@
                 diente48c4E = "normal"
             Case 1
                 PnlDiente48c4.BackColor = Color.Yellow
-                diente48c4E = "precaucion"
+                diente48c4E = "restauracion"
             Case 2
                 PnlDiente48c4.BackColor = Color.Red
-                diente48c4E = "alerta"
+                diente48c4E = "cariado"
             Case 3
                 PnlDiente48c4.BackColor = Color.Black
                 diente48c4E = "ausente"
@@ -4635,10 +4780,10 @@
                 diente48c3E = "normal"
             Case 1
                 PnlDiente48c3.BackColor = Color.Yellow
-                diente48c3E = "precaucion"
+                diente48c3E = "restauracion"
             Case 2
                 PnlDiente48c3.BackColor = Color.Red
-                diente48c3E = "alerta"
+                diente48c3E = "cariado"
             Case 3
                 PnlDiente48c3.BackColor = Color.Black
                 diente48c3E = "ausente"
@@ -4659,10 +4804,10 @@
                 diente48c2E = "normal"
             Case 1
                 PnlDiente48c2.BackColor = Color.Yellow
-                diente48c2E = "precaucion"
+                diente48c2E = "restauracion"
             Case 2
                 PnlDiente48c2.BackColor = Color.Red
-                diente48c2E = "alerta"
+                diente48c2E = "cariado"
             Case 3
                 PnlDiente48c2.BackColor = Color.Black
                 diente48c2E = "ausente"
@@ -4687,10 +4832,10 @@
                 diente48c1E = "normal"
             Case 1
                 PnlDiente48c1.BackColor = Color.Yellow
-                diente48c1E = "precaucion"
+                diente48c1E = "restauracion"
             Case 2
                 PnlDiente48c1.BackColor = Color.Red
-                diente48c1E = "alerta"
+                diente48c1E = "cariado"
             Case 3
                 PnlDiente48c1.BackColor = Color.Black
                 diente48c1E = "ausente"
@@ -4716,10 +4861,10 @@
                 diente47c4E = "normal"
             Case 1
                 PnlDiente47c4.BackColor = Color.Yellow
-                diente47c4E = "precaucion"
+                diente47c4E = "restauracion"
             Case 2
                 PnlDiente47c4.BackColor = Color.Red
-                diente47c4E = "alerta"
+                diente47c4E = "cariado"
             Case 3
                 PnlDiente47c4.BackColor = Color.Black
                 diente47c4E = "ausente"
@@ -4741,10 +4886,10 @@
                 diente47c3E = "normal"
             Case 1
                 PnlDiente47c3.BackColor = Color.Yellow
-                diente47c3E = "precaucion"
+                diente47c3E = "restauracion"
             Case 2
                 PnlDiente47c3.BackColor = Color.Red
-                diente47c3E = "alerta"
+                diente47c3E = "cariado"
             Case 3
                 PnlDiente47c3.BackColor = Color.Black
                 diente47c3E = "ausente"
@@ -4767,10 +4912,10 @@
                 diente47c2E = "normal"
             Case 1
                 PnlDiente47c2.BackColor = Color.Yellow
-                diente47c2E = "precaucion"
+                diente47c2E = "restauracion"
             Case 2
                 PnlDiente47c2.BackColor = Color.Red
-                diente47c2E = "alerta"
+                diente47c2E = "cariado"
             Case 3
                 PnlDiente47c2.BackColor = Color.Black
                 diente47c2E = "ausente"
@@ -4794,10 +4939,10 @@
                 diente47c1E = "normal"
             Case 1
                 PnlDiente47c1.BackColor = Color.Yellow
-                diente47c1E = "precaucion"
+                diente47c1E = "restauracion"
             Case 2
                 PnlDiente47c1.BackColor = Color.Red
-                diente47c1E = "alerta"
+                diente47c1E = "cariado"
             Case 3
                 PnlDiente47c1.BackColor = Color.Black
                 diente47c1E = "ausente"
@@ -4814,7 +4959,7 @@
     End Sub
 
     Private Sub PnlDiente46c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente46c4.Click
-        diente46c4 = diente26c4 + 1
+        diente46c4 = diente46c4 + 1
         cambiador46c4 = True
 
         Select Case diente46c4
@@ -4823,10 +4968,10 @@
                 diente46c4E = "normal"
             Case 1
                 PnlDiente46c4.BackColor = Color.Yellow
-                diente46c4E = "precaucion"
+                diente46c4E = "restauracion"
             Case 2
                 PnlDiente46c4.BackColor = Color.Red
-                diente46c4E = "alerta"
+                diente46c4E = "cariado"
             Case 3
                 PnlDiente46c4.BackColor = Color.Black
                 diente46c4E = "ausente"
@@ -4850,10 +4995,10 @@
                 diente46c3E = "normal"
             Case 1
                 PnlDiente46c3.BackColor = Color.Yellow
-                diente46c3E = "precaucion"
+                diente46c3E = "restauracion"
             Case 2
                 PnlDiente46c3.BackColor = Color.Red
-                diente46c3E = "alerta"
+                diente46c3E = "cariado"
             Case 3
                 PnlDiente46c3.BackColor = Color.Black
                 diente46c3E = "ausente"
@@ -4878,10 +5023,10 @@
                 diente46c2E = "normal"
             Case 1
                 PnlDiente46c2.BackColor = Color.Yellow
-                diente46c2E = "precaucion"
+                diente46c2E = "restauracion"
             Case 2
                 PnlDiente46c2.BackColor = Color.Red
-                diente46c2E = "alerta"
+                diente46c2E = "cariado"
             Case 3
                 PnlDiente46c2.BackColor = Color.Black
                 diente46c2E = "ausente"
@@ -4904,10 +5049,10 @@
                 diente46c1E = "normal"
             Case 1
                 PnlDiente46c1.BackColor = Color.Yellow
-                diente46c1E = "precaucion"
+                diente46c1E = "restauracion"
             Case 2
                 PnlDiente46c1.BackColor = Color.Red
-                diente46c1E = "alerta"
+                diente46c1E = "cariado"
             Case 3
                 PnlDiente46c1.BackColor = Color.Black
                 diente46c1E = "ausente"
@@ -4934,10 +5079,10 @@
                 diente45c4E = "normal"
             Case 1
                 PnlDiente45c4.BackColor = Color.Yellow
-                diente45c4E = "precaucion"
+                diente45c4E = "restauracion"
             Case 2
                 PnlDiente45c4.BackColor = Color.Red
-                diente45c4E = "alerta"
+                diente45c4E = "cariado"
             Case 3
                 PnlDiente45c4.BackColor = Color.Black
                 diente45c4E = "ausente"
@@ -4961,10 +5106,10 @@
                 diente45c3E = "normal"
             Case 1
                 PnlDiente45c3.BackColor = Color.Yellow
-                diente45c3E = "precaucion"
+                diente45c3E = "restauracion"
             Case 2
                 PnlDiente45c3.BackColor = Color.Red
-                diente45c3E = "alerta"
+                diente45c3E = "cariado"
             Case 3
                 PnlDiente45c3.BackColor = Color.Black
                 diente45c3E = "ausente"
@@ -4987,10 +5132,10 @@
                 diente45c2E = "normal"
             Case 1
                 PnlDiente45c2.BackColor = Color.Yellow
-                diente45c2E = "precaucion"
+                diente45c2E = "restauracion"
             Case 2
                 PnlDiente45c2.BackColor = Color.Red
-                diente45c2E = "alerta"
+                diente45c2E = "cariado"
             Case 3
                 PnlDiente45c2.BackColor = Color.Black
                 diente45c2E = "ausente"
@@ -5014,10 +5159,10 @@
                 diente45c1E = "normal"
             Case 1
                 PnlDiente45c1.BackColor = Color.Yellow
-                diente45c1E = "precaucion"
+                diente45c1E = "restauracion"
             Case 2
                 PnlDiente45c1.BackColor = Color.Red
-                diente45c1E = "alerta"
+                diente45c1E = "cariado"
             Case 3
                 PnlDiente45c1.BackColor = Color.Black
                 diente45c1E = "ausente"
@@ -5035,7 +5180,7 @@
 
 
     Private Sub PnlDiente44c4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlDiente44c4.Click
-        diente44c4 = diente24c4 + 1
+        diente44c4 = diente44c4 + 1
         cambiador44c4 = True
 
         Select Case diente44c4
@@ -5044,10 +5189,10 @@
                 diente44c4E = "normal"
             Case 1
                 PnlDiente44c4.BackColor = Color.Yellow
-                diente44c4E = "precaucion"
+                diente44c4E = "restauracion"
             Case 2
                 PnlDiente44c4.BackColor = Color.Red
-                diente44c4E = "alerta"
+                diente44c4E = "cariado"
             Case 3
                 PnlDiente44c4.BackColor = Color.Black
                 diente44c4E = "ausente"
@@ -5069,10 +5214,10 @@
                 diente44c3E = "normal"
             Case 1
                 PnlDiente44c3.BackColor = Color.Yellow
-                diente24c3E = "precaucion"
+                diente44c3E = "restauracion"
             Case 2
                 PnlDiente44c3.BackColor = Color.Red
-                diente44c3E = "alerta"
+                diente44c3E = "cariado"
             Case 3
                 PnlDiente44c3.BackColor = Color.Black
                 diente44c3E = "ausente"
@@ -5096,10 +5241,10 @@
                 diente44c2E = "normal"
             Case 1
                 PnlDiente44c2.BackColor = Color.Yellow
-                diente44c2E = "precaucion"
+                diente44c2E = "restauracion"
             Case 2
                 PnlDiente44c2.BackColor = Color.Red
-                diente44c2E = "alerta"
+                diente44c2E = "cariado"
             Case 3
                 PnlDiente44c2.BackColor = Color.Black
                 diente44c2E = "ausente"
@@ -5123,10 +5268,10 @@
                 diente44c1E = "normal"
             Case 1
                 PnlDiente44c1.BackColor = Color.Yellow
-                diente44c1E = "precaucion"
+                diente44c1E = "restauracion"
             Case 2
                 PnlDiente44c1.BackColor = Color.Red
-                diente44c1E = "alerta"
+                diente44c1E = "cariado"
             Case 3
                 PnlDiente44c1.BackColor = Color.Black
                 diente44c1E = "ausente"
@@ -5152,10 +5297,10 @@
                 diente43c4E = "normal"
             Case 1
                 PnlDiente43c4.BackColor = Color.Yellow
-                diente43c4E = "precaucion"
+                diente43c4E = "restauracion"
             Case 2
                 PnlDiente43c4.BackColor = Color.Red
-                diente43c4E = "alerta"
+                diente43c4E = "cariado"
             Case 3
                 PnlDiente43c4.BackColor = Color.Black
                 diente43c4E = "ausente"
@@ -5177,10 +5322,10 @@
                 diente43c3E = "normal"
             Case 1
                 PnlDiente43c3.BackColor = Color.Yellow
-                diente43c3E = "precaucion"
+                diente43c3E = "restauracion"
             Case 2
                 PnlDiente43c3.BackColor = Color.Red
-                diente43c3E = "alerta"
+                diente43c3E = "cariado"
             Case 3
                 PnlDiente43c3.BackColor = Color.Black
                 diente43c3E = "ausente"
@@ -5203,10 +5348,10 @@
                 diente43c2E = "normal"
             Case 1
                 PnlDiente43c2.BackColor = Color.Yellow
-                diente43c2E = "precaucion"
+                diente43c2E = "restauracion"
             Case 2
                 PnlDiente43c2.BackColor = Color.Red
-                diente43c2E = "alerta"
+                diente43c2E = "cariado"
             Case 3
                 PnlDiente43c2.BackColor = Color.Black
                 diente43c2E = "ausente"
@@ -5229,10 +5374,10 @@
                 diente43c1E = "normal"
             Case 1
                 PnlDiente43c1.BackColor = Color.Yellow
-                diente43c1E = "precaucion"
+                diente43c1E = "restauracion"
             Case 2
                 PnlDiente43c1.BackColor = Color.Red
-                diente43c1E = "alerta"
+                diente43c1E = "cariado"
             Case 3
                 PnlDiente43c1.BackColor = Color.Black
                 diente43c1E = "ausente"
@@ -5260,10 +5405,10 @@
                 diente42c4E = "normal"
             Case 1
                 PnlDiente42c4.BackColor = Color.Yellow
-                diente42c4E = "precaucion"
+                diente42c4E = "restauracion"
             Case 2
                 PnlDiente42c4.BackColor = Color.Red
-                diente42c4E = "alerta"
+                diente42c4E = "cariado"
             Case 3
                 PnlDiente42c4.BackColor = Color.Black
                 diente42c4E = "ausente"
@@ -5283,20 +5428,20 @@
         Select Case diente42c3
             Case 0
                 PnlDiente42c3.BackColor = Color.White
-                diente22c3E = "normal"
+                diente42c3E = "normal"
             Case 1
                 PnlDiente42c3.BackColor = Color.Yellow
-                diente22c3E = "precaucion"
+                diente42c3E = "restauracion"
             Case 2
                 PnlDiente42c3.BackColor = Color.Red
-                diente22c3E = "alerta"
+                diente42c3E = "cariado"
             Case 3
                 PnlDiente42c3.BackColor = Color.Black
-                diente22c3E = "ausente"
+                diente42c3E = "ausente"
             Case 4
                 PnlDiente42c3.BackColor = Color.White
-                diente22c3E = "normal"
-                diente22c3 = 0
+                diente42c3E = "normal"
+                diente42c3 = 0
 
         End Select
     End Sub
@@ -5313,10 +5458,10 @@
                 diente42c2E = "normal"
             Case 1
                 PnlDiente42c2.BackColor = Color.Yellow
-                diente42c2E = "precaucion"
+                diente42c2E = "restauracion"
             Case 2
                 PnlDiente42c2.BackColor = Color.Red
-                diente42c2E = "alerta"
+                diente42c2E = "cariado"
             Case 3
                 PnlDiente42c2.BackColor = Color.Black
                 diente42c2E = "ausente"
@@ -5339,20 +5484,20 @@
                 diente42c1E = "normal"
             Case 1
                 PnlDiente42c1.BackColor = Color.Yellow
-                diente42c1E = "precaucion"
+                diente42c1E = "restauracion"
             Case 2
                 PnlDiente42c1.BackColor = Color.Red
-                diente42c1E = "alerta"
+                diente42c1E = "cariado"
             Case 3
                 PnlDiente42c1.BackColor = Color.Black
-                diente22c1E = "ausente"
+                diente42c1E = "ausente"
             Case 4
                 PnlDiente42c1.BackColor = Color.Green
-                diente11c1E = "puente"
+                diente41c1E = "puente"
             Case 5
                 PnlDiente42c1.BackColor = Color.White
-                diente22c1E = "normal"
-                diente22c1 = 0
+                diente42c1E = "normal"
+                diente42c1 = 0
 
         End Select
 
@@ -5370,10 +5515,10 @@
                 diente41c4E = "normal"
             Case 1
                 PnlDiente41c4.BackColor = Color.Yellow
-                diente41c4E = "precaucion"
+                diente41c4E = "restauracion"
             Case 2
                 PnlDiente41c4.BackColor = Color.Red
-                diente41c4E = "alerta"
+                diente41c4E = "cariado"
             Case 3
                 PnlDiente41c4.BackColor = Color.Black
                 diente41c4E = "ausente"
@@ -5397,10 +5542,10 @@
                 diente41c3E = "normal"
             Case 1
                 PnlDiente41c3.BackColor = Color.Yellow
-                diente41c3E = "precaucion"
+                diente41c3E = "restauracion"
             Case 2
                 PnlDiente41c3.BackColor = Color.Red
-                diente41c3E = "alerta"
+                diente41c3E = "cariado"
             Case 3
                 PnlDiente41c3.BackColor = Color.Black
                 diente41c3E = "ausente"
@@ -5423,10 +5568,10 @@
                 diente41c2E = "normal"
             Case 1
                 PnlDiente41c2.BackColor = Color.Yellow
-                diente41c2E = "precaucion"
+                diente41c2E = "restauracion"
             Case 2
                 PnlDiente41c2.BackColor = Color.Red
-                diente41c2E = "alerta"
+                diente41c2E = "cariado"
             Case 3
                 PnlDiente41c2.BackColor = Color.Black
                 diente41c2E = "ausente"
@@ -5449,10 +5594,10 @@
                 diente41c1E = "normal"
             Case 1
                 PnlDiente41c1.BackColor = Color.Yellow
-                diente41c1E = "precaucion"
+                diente41c1E = "restauracion"
             Case 2
                 PnlDiente41c1.BackColor = Color.Red
-                diente41c1E = "alerta"
+                diente41c1E = "cariado"
             Case 3
                 PnlDiente41c1.BackColor = Color.Black
                 diente41c1E = "ausente"
@@ -5481,10 +5626,10 @@
                 diente38c4E = "normal"
             Case 1
                 pnlDiente38c4.BackColor = Color.Yellow
-                diente38c4E = "precaucion"
+                diente38c4E = "restauracion"
             Case 2
                 pnlDiente38c4.BackColor = Color.Red
-                diente38c4E = "alerta"
+                diente38c4E = "cariado"
             Case 3
                 pnlDiente38c4.BackColor = Color.Black
                 diente38c4E = "ausente"
@@ -5505,10 +5650,10 @@
                 diente38c3E = "normal"
             Case 1
                 pnlDiente38c3.BackColor = Color.Yellow
-                diente38c3E = "precaucion"
+                diente38c3E = "restauracion"
             Case 2
                 pnlDiente38c3.BackColor = Color.Red
-                diente38c3E = "alerta"
+                diente38c3E = "cariado"
             Case 3
                 pnlDiente38c3.BackColor = Color.Black
                 diente38c3E = "ausente"
@@ -5529,10 +5674,10 @@
                 diente38c2E = "normal"
             Case 1
                 pnlDiente38c2.BackColor = Color.Yellow
-                diente38c2E = "precaucion"
+                diente38c2E = "restauracion"
             Case 2
                 pnlDiente38c2.BackColor = Color.Red
-                diente38c2E = "alerta"
+                diente38c2E = "cariado"
             Case 3
                 pnlDiente38c2.BackColor = Color.Black
                 diente38c2E = "ausente"
@@ -5557,10 +5702,10 @@
                 diente38c1E = "normal"
             Case 1
                 pnlDiente38c1.BackColor = Color.Yellow
-                diente38c1E = "precaucion"
+                diente38c1E = "restauracion"
             Case 2
                 pnlDiente38c1.BackColor = Color.Red
-                diente38c1E = "alerta"
+                diente38c1E = "cariado"
             Case 3
                 pnlDiente38c1.BackColor = Color.Black
                 diente38c1E = "ausente"
@@ -5586,10 +5731,10 @@
                 diente37c4E = "normal"
             Case 1
                 pnlDiente37c4.BackColor = Color.Yellow
-                diente37c4E = "precaucion"
+                diente37c4E = "restauracion"
             Case 2
                 pnlDiente37c4.BackColor = Color.Red
-                diente37c4E = "alerta"
+                diente37c4E = "cariado"
             Case 3
                 pnlDiente37c4.BackColor = Color.Black
                 diente37c4E = "ausente"
@@ -5611,10 +5756,10 @@
                 diente37c3E = "normal"
             Case 1
                 pnlDiente37c3.BackColor = Color.Yellow
-                diente37c3E = "precaucion"
+                diente37c3E = "restauracion"
             Case 2
                 pnlDiente37c3.BackColor = Color.Red
-                diente37c3E = "alerta"
+                diente37c3E = "cariado"
             Case 3
                 pnlDiente37c3.BackColor = Color.Black
                 diente37c3E = "ausente"
@@ -5637,10 +5782,10 @@
                 diente37c2E = "normal"
             Case 1
                 pnlDiente37c2.BackColor = Color.Yellow
-                diente37c2E = "precaucion"
+                diente37c2E = "restauracion"
             Case 2
                 pnlDiente37c2.BackColor = Color.Red
-                diente37c2E = "alerta"
+                diente37c2E = "cariado"
             Case 3
                 pnlDiente37c2.BackColor = Color.Black
                 diente37c2E = "ausente"
@@ -5664,10 +5809,10 @@
                 diente37c1E = "normal"
             Case 1
                 pnlDiente37c1.BackColor = Color.Yellow
-                diente37c1E = "precaucion"
+                diente37c1E = "restauracion"
             Case 2
                 pnlDiente37c1.BackColor = Color.Red
-                diente37c1E = "alerta"
+                diente37c1E = "cariado"
             Case 3
                 pnlDiente37c1.BackColor = Color.Black
                 diente37c1E = "ausente"
@@ -5693,10 +5838,10 @@
                 diente36c4E = "normal"
             Case 1
                 pnlDiente36c4.BackColor = Color.Yellow
-                diente36c4E = "precaucion"
+                diente36c4E = "restauracion"
             Case 2
                 pnlDiente36c4.BackColor = Color.Red
-                diente36c4E = "alerta"
+                diente36c4E = "cariado"
             Case 3
                 pnlDiente36c4.BackColor = Color.Black
                 diente36c4E = "ausente"
@@ -5720,10 +5865,10 @@
                 diente36c3E = "normal"
             Case 1
                 pnlDiente36c3.BackColor = Color.Yellow
-                diente36c3E = "precaucion"
+                diente36c3E = "restauracion"
             Case 2
                 pnlDiente36c3.BackColor = Color.Red
-                diente36c3E = "alerta"
+                diente36c3E = "cariado"
             Case 3
                 pnlDiente36c3.BackColor = Color.Black
                 diente36c3E = "ausente"
@@ -5748,10 +5893,10 @@
                 diente36c2E = "normal"
             Case 1
                 pnlDiente36c2.BackColor = Color.Yellow
-                diente36c2E = "precaucion"
+                diente36c2E = "restauracion"
             Case 2
                 pnlDiente36c2.BackColor = Color.Red
-                diente36c2E = "alerta"
+                diente36c2E = "cariado"
             Case 3
                 pnlDiente36c2.BackColor = Color.Black
                 diente36c2E = "ausente"
@@ -5774,10 +5919,10 @@
                 diente36c1E = "normal"
             Case 1
                 pnlDiente36c1.BackColor = Color.Yellow
-                diente36c1E = "precaucion"
+                diente36c1E = "restauracion"
             Case 2
                 pnlDiente36c1.BackColor = Color.Red
-                diente36c1E = "alerta"
+                diente36c1E = "cariado"
             Case 3
                 pnlDiente36c1.BackColor = Color.Black
                 diente36c1E = "ausente"
@@ -5804,10 +5949,10 @@
                 diente35c4E = "normal"
             Case 1
                 pnlDiente35c4.BackColor = Color.Yellow
-                diente35c4E = "precaucion"
+                diente35c4E = "restauracion"
             Case 2
                 pnlDiente35c4.BackColor = Color.Red
-                diente35c4E = "alerta"
+                diente35c4E = "cariado"
             Case 3
                 pnlDiente35c4.BackColor = Color.Black
                 diente35c4E = "ausente"
@@ -5831,10 +5976,10 @@
                 diente35c3E = "normal"
             Case 1
                 pnlDiente35c3.BackColor = Color.Yellow
-                diente35c3E = "precaucion"
+                diente35c3E = "restauracion"
             Case 2
                 pnlDiente35c3.BackColor = Color.Red
-                diente35c3E = "alerta"
+                diente35c3E = "cariado"
             Case 3
                 pnlDiente35c3.BackColor = Color.Black
                 diente35c3E = "ausente"
@@ -5857,10 +6002,10 @@
                 diente35c2E = "normal"
             Case 1
                 pnlDiente35c2.BackColor = Color.Yellow
-                diente35c2E = "precaucion"
+                diente35c2E = "restauracion"
             Case 2
                 pnlDiente35c2.BackColor = Color.Red
-                diente35c2E = "alerta"
+                diente35c2E = "cariado"
             Case 3
                 pnlDiente35c2.BackColor = Color.Black
                 diente35c2E = "ausente"
@@ -5884,10 +6029,10 @@
                 diente35c1E = "normal"
             Case 1
                 pnlDiente35c1.BackColor = Color.Yellow
-                diente35c1E = "precaucion"
+                diente35c1E = "restauracion"
             Case 2
                 pnlDiente35c1.BackColor = Color.Red
-                diente35c1E = "alerta"
+                diente35c1E = "cariado"
             Case 3
                 pnlDiente35c1.BackColor = Color.Black
                 diente35c1E = "ausente"
@@ -5914,10 +6059,10 @@
                 diente34c4E = "normal"
             Case 1
                 pnlDiente34c4.BackColor = Color.Yellow
-                diente34c4E = "precaucion"
+                diente34c4E = "restauracion"
             Case 2
                 pnlDiente34c4.BackColor = Color.Red
-                diente34c4E = "alerta"
+                diente34c4E = "cariado"
             Case 3
                 pnlDiente34c4.BackColor = Color.Black
                 diente34c4E = "ausente"
@@ -5939,10 +6084,10 @@
                 diente34c3E = "normal"
             Case 1
                 pnlDiente34c3.BackColor = Color.Yellow
-                diente34c3E = "precaucion"
+                diente34c3E = "restauracion"
             Case 2
                 pnlDiente34c3.BackColor = Color.Red
-                diente34c3E = "alerta"
+                diente34c3E = "cariado"
             Case 3
                 pnlDiente34c3.BackColor = Color.Black
                 diente34c3E = "ausente"
@@ -5966,10 +6111,10 @@
                 diente34c2E = "normal"
             Case 1
                 pnlDiente34c2.BackColor = Color.Yellow
-                diente34c2E = "precaucion"
+                diente34c2E = "restauracion"
             Case 2
                 pnlDiente34c2.BackColor = Color.Red
-                diente34c2E = "alerta"
+                diente34c2E = "cariado"
             Case 3
                 pnlDiente34c2.BackColor = Color.Black
                 diente34c2E = "ausente"
@@ -5993,10 +6138,10 @@
                 diente34c1E = "normal"
             Case 1
                 pnlDiente34c1.BackColor = Color.Yellow
-                diente34c1E = "precaucion"
+                diente34c1E = "restauracion"
             Case 2
                 pnlDiente34c1.BackColor = Color.Red
-                diente34c1E = "alerta"
+                diente34c1E = "cariado"
             Case 3
                 pnlDiente34c1.BackColor = Color.Black
                 diente34c1E = "ausente"
@@ -6022,10 +6167,10 @@
                 diente33c4E = "normal"
             Case 1
                 pnlDiente33c4.BackColor = Color.Yellow
-                diente33c4E = "precaucion"
+                diente33c4E = "restauracion"
             Case 2
                 pnlDiente33c4.BackColor = Color.Red
-                diente33c4E = "alerta"
+                diente33c4E = "cariado"
             Case 3
                 pnlDiente33c4.BackColor = Color.Black
                 diente33c4E = "ausente"
@@ -6047,10 +6192,10 @@
                 diente33c3E = "normal"
             Case 1
                 pnlDiente33c3.BackColor = Color.Yellow
-                diente33c3E = "precaucion"
+                diente33c3E = "restauracion"
             Case 2
                 pnlDiente33c3.BackColor = Color.Red
-                diente33c3E = "alerta"
+                diente33c3E = "cariado"
             Case 3
                 pnlDiente33c3.BackColor = Color.Black
                 diente33c3E = "ausente"
@@ -6073,10 +6218,10 @@
                 diente33c2E = "normal"
             Case 1
                 pnlDiente33c2.BackColor = Color.Yellow
-                diente33c2E = "precaucion"
+                diente33c2E = "restauracion"
             Case 2
                 pnlDiente33c2.BackColor = Color.Red
-                diente33c2E = "alerta"
+                diente33c2E = "cariado"
             Case 3
                 pnlDiente33c2.BackColor = Color.Black
                 diente33c2E = "ausente"
@@ -6099,10 +6244,10 @@
                 diente33c1E = "normal"
             Case 1
                 pnlDiente33c1.BackColor = Color.Yellow
-                diente33c1E = "precaucion"
+                diente33c1E = "restauracion"
             Case 2
                 pnlDiente33c1.BackColor = Color.Red
-                diente33c1E = "alerta"
+                diente33c1E = "cariado"
             Case 3
                 pnlDiente33c1.BackColor = Color.Black
                 diente33c1E = "ausente"
@@ -6130,10 +6275,10 @@
                 diente32c4E = "normal"
             Case 1
                 pnlDiente32c4.BackColor = Color.Yellow
-                diente32c4E = "precaucion"
+                diente32c4E = "restauracion"
             Case 2
                 pnlDiente32c4.BackColor = Color.Red
-                diente32c4E = "alerta"
+                diente32c4E = "cariado"
             Case 3
                 pnlDiente32c4.BackColor = Color.Black
                 diente32c4E = "ausente"
@@ -6156,10 +6301,10 @@
                 diente32c3E = "normal"
             Case 1
                 pnlDiente32c3.BackColor = Color.Yellow
-                diente32c3E = "precaucion"
+                diente32c3E = "restauracion"
             Case 2
                 pnlDiente32c3.BackColor = Color.Red
-                diente32c3E = "alerta"
+                diente32c3E = "cariado"
             Case 3
                 pnlDiente32c3.BackColor = Color.Black
                 diente32c3E = "ausente"
@@ -6183,10 +6328,10 @@
                 diente32c2E = "normal"
             Case 1
                 pnlDiente32c2.BackColor = Color.Yellow
-                diente32c2E = "precaucion"
+                diente32c2E = "restauracion"
             Case 2
                 pnlDiente32c2.BackColor = Color.Red
-                diente32c2E = "alerta"
+                diente32c2E = "cariado"
             Case 3
                 pnlDiente32c2.BackColor = Color.Black
                 diente32c2E = "ausente"
@@ -6209,10 +6354,10 @@
                 diente32c1E = "normal"
             Case 1
                 pnlDiente32c1.BackColor = Color.Yellow
-                diente32c1E = "precaucion"
+                diente32c1E = "restauracion"
             Case 2
                 pnlDiente32c1.BackColor = Color.Red
-                diente32c1E = "alerta"
+                diente32c1E = "cariado"
             Case 3
                 pnlDiente32c1.BackColor = Color.Black
                 diente32c1E = "ausente"
@@ -6240,10 +6385,10 @@
                 diente31c4E = "normal"
             Case 1
                 pnlDiente31c4.BackColor = Color.Yellow
-                diente31c4E = "precaucion"
+                diente31c4E = "restauracion"
             Case 2
                 pnlDiente31c4.BackColor = Color.Red
-                diente31c4E = "alerta"
+                diente31c4E = "cariado"
             Case 3
                 pnlDiente31c4.BackColor = Color.Black
                 diente31c4E = "ausente"
@@ -6268,10 +6413,10 @@
                 diente31c3E = "normal"
             Case 1
                 pnlDiente31c3.BackColor = Color.Yellow
-                diente31c3E = "precaucion"
+                diente31c3E = "restauracion"
             Case 2
                 pnlDiente31c3.BackColor = Color.Red
-                diente31c3E = "alerta"
+                diente31c3E = "cariado"
             Case 3
                 pnlDiente31c3.BackColor = Color.Black
                 diente31c3E = "ausente"
@@ -6294,10 +6439,10 @@
                 diente31c2E = "normal"
             Case 1
                 pnlDiente31c2.BackColor = Color.Yellow
-                diente31c2E = "precaucion"
+                diente31c2E = "restauracion"
             Case 2
                 pnlDiente31c2.BackColor = Color.Red
-                diente31c2E = "alerta"
+                diente31c2E = "cariado"
             Case 3
                 pnlDiente31c2.BackColor = Color.Black
                 diente31c2E = "ausente"
@@ -6320,10 +6465,10 @@
                 diente31c1E = "normal"
             Case 1
                 pnlDiente31c1.BackColor = Color.Yellow
-                diente31c1E = "precaucion"
+                diente31c1E = "restauracion"
             Case 2
                 pnlDiente31c1.BackColor = Color.Red
-                diente31c1E = "alerta"
+                diente31c1E = "cariado"
             Case 3
                 pnlDiente31c1.BackColor = Color.Black
                 diente31c1E = "ausente"
@@ -6715,7 +6860,7 @@
 
 
             If cambiador28c3 = True Then
-                Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente, cara , fecha) values ('" + id_p.ToString + "','" + diente28c3E + "','" + zona2 + "', '8',  '3, '" + fecha.ToString("yyyy-MM-dd hh:mm:ss") + "'');")
+                Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente, cara , fecha) values ('" + id_p.ToString + "','" + diente28c3E + "','" + zona2 + "', '8',  '3', '" + fecha.ToString("yyyy-MM-dd hh:mm:ss") + "');")
                 consultar()
             End If
 
@@ -6917,7 +7062,7 @@
             End If
 
             If cambiador38c4 = True Then
-                Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente, cara) values ('" + id_p.ToString + "','" + diente38c4E + "','" + zona3 + "', '8',  '4', '" + fecha.ToString("yyyy-MM-dd hh:mm:ss") + "');")
+                Consulta = ("insert into estado_dientes (id_p,estado,zona,nro_diente, cara, fecha) values ('" + id_p.ToString + "','" + diente38c4E + "','" + zona3 + "', '8',  '4', '" + fecha.ToString("yyyy-MM-dd hh:mm:ss") + "');")
                 consultar()
 
             End If
@@ -7117,13 +7262,13 @@
 
 
             End If
-            MsgBox("estado de dientes registrado con exito")
+            MsgBox("Estado de dientes registrado con éxito", MsgBoxStyle.Information)
             Me.Dispose()
             frmMarcarCitaConcluida.Show()
 
 
         Catch ex As Exception
-            MsgBox("error al ingresar estado de dientes")
+            MsgBox("Error al ingresar estado de dientes", MsgBoxStyle.Exclamation)
         End Try
 
 

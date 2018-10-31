@@ -1,4 +1,4 @@
-﻿Public Class Agregar_Arancel
+﻿Public Class AgregarArancel
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim nombre As String = TextBox1.Text
@@ -32,4 +32,7 @@
     End Sub
 
 
+    Private Sub Agregar_Arancel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

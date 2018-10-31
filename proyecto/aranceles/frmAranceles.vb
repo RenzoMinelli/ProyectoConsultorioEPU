@@ -66,14 +66,14 @@
 
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
-        Modificar_Arancel.Show()
+        ModificarArancel.Show()
 
     End Sub
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
 
-        Agregar_Arancel.Show()
+        AgregarArancel.Show()
 
     End Sub
 

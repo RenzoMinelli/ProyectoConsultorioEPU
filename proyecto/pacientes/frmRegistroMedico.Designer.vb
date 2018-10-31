@@ -2571,9 +2571,9 @@ Partial Class frmRegistroMedico
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(259, 2)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(69, 24)
+        Me.Label5.Size = New System.Drawing.Size(70, 24)
         Me.Label5.TabIndex = 8
-        Me.Label5.Text = "puente"
+        Me.Label5.Text = "Puente"
         '
         'Panel20
         '

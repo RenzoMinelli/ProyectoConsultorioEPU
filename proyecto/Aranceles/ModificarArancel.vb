@@ -1,4 +1,4 @@
-﻿Public Class Modificar_Arancel
+﻿Public Class ModificarArancel
     Dim id As Integer = frmAranceles.id
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Consulta = "update aranceles set descripcion = '" + TextBox1.Text + "', costo = '" + TextBox2.Text + "' where id_a = " + Str(id) + " and estado = 1;"
