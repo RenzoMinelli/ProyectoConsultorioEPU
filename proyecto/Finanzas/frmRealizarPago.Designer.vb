@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class realizar_pago
+Partial Class frmRealizarPago
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.

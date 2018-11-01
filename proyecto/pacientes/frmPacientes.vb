@@ -326,39 +326,45 @@
 
                     MsgBox("El monto debe contener solo números", MsgBoxStyle.Exclamation)
                     respString = ""
+
+                Else
+                    Dim pago As String = respString
+                    MuestraMsgBoxVersatil("¿Confirma que el paciente " + nombre + " depositó $" + pago + "?", 0)
+                    If respint = 1 Then
+                        saldo -= pago
+                        Try
+                            Consulta = "update paciente set saldo = '" + saldo.ToString + "' where id_p = '" + id_p.ToString + "';"
+                            consultar()
+
+                            Dim fecha As Date = Now.ToShortDateString
+                            Dim nfecha = fecha.ToString("yyyy-MM-dd")
+
+                            Consulta = "insert into recibo (fecha, pago, id_p) values ('" + nfecha + "', '" + pago.ToString + "', '" + id_p.ToString + "');"
+
+                            consultar()
+
+                            MsgBox("Información actualizada", MsgBoxStyle.Information)
+
+                            actTabla(1)
+                            actPanel()
+
+
+                        Catch ex As Exception
+                            MsgBox("Error")
+                        End Try
+                    Else
+                        MsgBox("Ningún cambio ha sido realizado", MsgBoxStyle.Information)
+                    End If
                 End If
+
             Else
+                MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
                 Exit While
+
             End If
            
         End While
-        Dim pago As String = respString
-        MuestraMsgBoxVersatil("¿Confirma que el paciente " + nombre + " depositó $" + pago + "?", 0)
-        If respint = 1 Then
-            saldo -= pago
-            Try
-                Consulta = "update paciente set saldo = '" + saldo.ToString + "' where id_p = '" + id_p.ToString + "';"
-                consultar()
-
-                Dim fecha As Date = Now.ToShortDateString
-                Dim nfecha = fecha.ToString("yyyy-MM-dd")
-
-                Consulta = "insert into recibo (fecha, pago, id_p) values ('" + nfecha + "', '" + pago.ToString + "', '" + id_p.ToString + "');"
-
-                consultar()
-
-                MsgBox("Información actualizada", MsgBoxStyle.Information)
-
-                actTabla(1)
-                actPanel()
-
-
-            Catch ex As Exception
-                MsgBox("Error")
-            End Try
-        Else
-            MsgBox("Ningún cambio ha sido realizado", MsgBoxStyle.Information)
-        End If
+      
 
      
 

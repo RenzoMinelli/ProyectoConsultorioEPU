@@ -7,15 +7,15 @@
         If TextBox1.Text <> "" And IsNumeric(TextBox1.Text) Then
 
 
-            Consulta = "update paciente set saldo = saldo- '" & monto & "' where id_p = '" & Str(realizar_pago.id) & "';"
+            Consulta = "update paciente set saldo = saldo- '" & monto & "' where id_p = '" & Str(frmRealizarPago.id) & "';"
             consultar()
 
-            realizar_pago.actTabla()
+            frmRealizarPago.actTabla()
             frmFinanzas.actTabla("Busqueda")
             Dim fecha As Date = Now.ToShortDateString
             Dim nfecha = fecha.ToString("yyyy-MM-dd")
 
-            Consulta = "insert into recibo (fecha, pago, id_p) values ('" + nfecha + "', '" + monto + "', '" + Str(realizar_pago.id) + "');"
+            Consulta = "insert into recibo (fecha, pago, id_p) values ('" + nfecha + "', '" + monto + "', '" + Str(frmRealizarPago.id) + "');"
 
             consultar()
 
@@ -29,9 +29,8 @@
     End Sub
 
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Dispose()
-    End Sub
 
-  
+    Private Sub inputboxcasero_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

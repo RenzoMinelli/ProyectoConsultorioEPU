@@ -51,6 +51,10 @@
             Consulta = "select * from aranceles where estado = 1"
             consultar()
             dgvAranceles.DataSource = Tabla
+            dgvAranceles.ClearSelection()
+            dgvArancelesUtilizados.ClearSelection()
+            btnEditar.Hide()
+            btnEliminar.Hide()
         Catch ex As Exception
             MsgBox("Error al Eliminar Arancel", MsgBoxStyle.Exclamation)
         End Try

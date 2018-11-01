@@ -1,4 +1,4 @@
-﻿Public Class realizar_pago
+﻿Public Class frmRealizarPago
     Public id As Integer
     Private Sub realizar_pago_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         actTabla()
@@ -12,8 +12,8 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         inputboxcasero.Show()
-        
-       
+
+
 
     End Sub
 
@@ -43,5 +43,5 @@
         DataGridView1.DefaultCellStyle.Font = New Font("Microsoft Sans Serif", 15)
     End Sub
 
-    
+
 End Class

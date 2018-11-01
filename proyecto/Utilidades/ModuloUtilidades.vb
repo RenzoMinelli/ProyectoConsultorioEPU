@@ -1,7 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.OleDb
 Imports MySql.Data.MySqlClient
-Module ModuloBaseDeDatos
+Module ModuloUtilidades
     Public user As String = "root"
     Public pass As String = ""
     Dim ubicacion As String = "server=localhost; user id= 'root'  ; password='';database = consultorio"
@@ -109,6 +109,8 @@ Module ModuloBaseDeDatos
             Dim msgbv As New MsgBoxVersatil()
 
             msgbv.lblTexto.Text = texto
+            msgbv.lblTexto.Location = New Point(msgbv.Width / 2 - msgbv.lblTexto.Width / 2, msgbv.lblTexto.Location.Y)
+            msgbv.lblTexto.TextAlign = ContentAlignment.MiddleCenter
             msgbv.btnNo.Visible = True
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Aceptar"

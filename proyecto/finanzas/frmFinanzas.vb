@@ -96,7 +96,7 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Hide()
-        frmContenedor = realizar_pago
+        frmContenedor = frmRealizarPago
         frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()

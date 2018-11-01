@@ -153,10 +153,10 @@
     <Compile Include="Finanzas\Inputboxcasero.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Finanzas\Realizar_Pago.Designer.vb">
-      <DependentUpon>Realizar_Pago.vb</DependentUpon>
+    <Compile Include="Finanzas\frmRealizarPago.Designer.vb">
+      <DependentUpon>frmRealizarPago.vb</DependentUpon>
     </Compile>
-    <Compile Include="Finanzas\Realizar_Pago.vb">
+    <Compile Include="Finanzas\frmRealizarPago.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Graficas\frmGraficas.Designer.vb">
@@ -195,16 +195,16 @@
     <Compile Include="Aranceles\frmAranceles.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aranceles\Agregar_Arancel.Designer.vb">
-      <DependentUpon>Agregar_Arancel.vb</DependentUpon>
+    <Compile Include="Aranceles\AgregarArancel.Designer.vb">
+      <DependentUpon>AgregarArancel.vb</DependentUpon>
     </Compile>
-    <Compile Include="Aranceles\Agregar_Arancel.vb">
+    <Compile Include="Aranceles\AgregarArancel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aranceles\Modificar_Arancel.Designer.vb">
-      <DependentUpon>Modificar_Arancel.vb</DependentUpon>
+    <Compile Include="Aranceles\ModificarArancel.Designer.vb">
+      <DependentUpon>ModificarArancel.vb</DependentUpon>
     </Compile>
-    <Compile Include="Aranceles\Modificar_Arancel.vb">
+    <Compile Include="Aranceles\ModificarArancel.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Citas\frmCitas.Designer.vb">
@@ -265,7 +265,7 @@
     <Compile Include="Pacientes\frmIngresarPaciente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Utilidades\ModuloBaseDeDatos.vb" />
+    <Compile Include="Utilidades\ModuloUtilidades.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -305,8 +305,8 @@
     <EmbeddedResource Include="Finanzas\Inputboxcasero.resx">
       <DependentUpon>Inputboxcasero.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Finanzas\Realizar_Pago.resx">
-      <DependentUpon>Realizar_Pago.vb</DependentUpon>
+    <EmbeddedResource Include="Finanzas\frmRealizarPago.resx">
+      <DependentUpon>frmRealizarPago.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Graficas\frmGraficas.resx">
       <DependentUpon>frmGraficas.vb</DependentUpon>
@@ -323,11 +323,11 @@
     <EmbeddedResource Include="Aranceles\frmAranceles.resx">
       <DependentUpon>frmAranceles.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Aranceles\Agregar_Arancel.resx">
-      <DependentUpon>Agregar_Arancel.vb</DependentUpon>
+    <EmbeddedResource Include="Aranceles\AgregarArancel.resx">
+      <DependentUpon>AgregarArancel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Aranceles\Modificar_Arancel.resx">
-      <DependentUpon>Modificar_Arancel.vb</DependentUpon>
+    <EmbeddedResource Include="Aranceles\ModificarArancel.resx">
+      <DependentUpon>ModificarArancel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Citas\frmCitas.resx">
       <DependentUpon>frmCitas.vb</DependentUpon>

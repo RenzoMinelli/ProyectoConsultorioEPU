@@ -45,42 +45,46 @@ Public Class frmPlanTratamiento
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
-       
+        MuestraMsgBoxVersatil("¿Desea eliminar el tratamiento " + dgvArancelesSelect.CurrentRow.Cells(3).Value.ToString + "?", 0)
+        If respint = 1 Then
+            If dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString <> "" Then
+                Try
 
-        If dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString <> "" Then
-            Try
+                    Dim id As String = dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString
 
-                Dim id As String = dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString
+                    Consulta = "UPDATE paciente set saldo = saldo - " + (dgvArancelesSelect.CurrentRow.Cells(2).Value * 1.22).ToString + " where id_p = '" + id_p.ToString + "';"
+                    consultar()
 
-                Consulta = "DELETE FROM plan_tratamiento where id_pl = '" + id + "';"
-                consultar()
+                    Consulta = "DELETE FROM plan_tratamiento where id_pl = '" + id + "';"
+                    consultar()
 
-                actArancelesSelect()
+                    actArancelesSelect()
 
-                Consulta = "UPDATE paciente set saldo = saldo - " + (dgvArancelesSelect.CurrentRow.Cells(2).Value * 1.22).ToString + " where id_p = '" + id_p.ToString + "';"
-                consultar()
+                    MsgBox("Elemento eliminado", MsgBoxStyle.Information)
 
+                Catch ex As Exception
+
+                    MsgBox("Error al eliminar el tratamiento" + ex.ToString, MsgBoxStyle.Exclamation)
+                End Try
+
+
+            Else
+
+                dgvArancelesSelect.Rows.RemoveAt(dgvArancelesSelect.CurrentRow.Index)
                 MsgBox("Elemento eliminado", MsgBoxStyle.Information)
+            End If
 
-            Catch ex As Exception
+            If dgvArancelesSelect.RowCount = 0 Then
 
-                MsgBox("Error al eliminar el tratamiento", MsgBoxStyle.Exclamation)
-            End Try
-
-
+                btnEliminar.Visible = False
+                btnModificarPrecio.Visible = False
+                btnModificarDesc.Visible = False
+                btnMarcar.Visible = False
+            End If
         Else
-
-            dgvArancelesSelect.Rows.RemoveAt(dgvArancelesSelect.CurrentRow.Index)
-            MsgBox("Elemento eliminado", MsgBoxStyle.Information)
+            MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
         End If
-
-        If dgvArancelesSelect.RowCount = 0 Then
-
-            btnEliminar.Visible = False
-            btnModificarPrecio.Visible = False
-            btnModificarDesc.Visible = False
-            btnMarcar.Visible = False
-        End If
+       
     End Sub
 
     Private Sub btnModificarPrecio_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarPrecio.Click
