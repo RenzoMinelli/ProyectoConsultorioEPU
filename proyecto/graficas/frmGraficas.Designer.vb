@@ -23,9 +23,9 @@ Partial Class frmGraficas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.dgvInfo = New System.Windows.Forms.DataGridView()
         Me.pbconfig = New System.Windows.Forms.PictureBox()
@@ -83,18 +83,18 @@ Partial Class frmGraficas
         '
         'grafica
         '
-        ChartArea3.Name = "Pacientes"
-        Me.grafica.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.grafica.Legends.Add(Legend3)
+        ChartArea6.Name = "Pacientes"
+        Me.grafica.ChartAreas.Add(ChartArea6)
+        Legend6.Name = "Legend1"
+        Me.grafica.Legends.Add(Legend6)
         Me.grafica.Location = New System.Drawing.Point(1, 37)
         Me.grafica.Name = "grafica"
-        Series3.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        Series3.ChartArea = "Pacientes"
-        Series3.Color = System.Drawing.Color.RoyalBlue
-        Series3.Legend = "Legend1"
-        Series3.Name = "Número de Pacientes"
-        Me.grafica.Series.Add(Series3)
+        Series6.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        Series6.ChartArea = "Pacientes"
+        Series6.Color = System.Drawing.Color.RoyalBlue
+        Series6.Legend = "Legend1"
+        Series6.Name = "Número de Pacientes"
+        Me.grafica.Series.Add(Series6)
         Me.grafica.Size = New System.Drawing.Size(990, 533)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
@@ -184,7 +184,7 @@ Partial Class frmGraficas
         Me.PnlSubMenuDatosGrafica.Controls.Add(Me.pnlNumCitas)
         Me.PnlSubMenuDatosGrafica.Controls.Add(Me.PnlTratamientos)
         Me.PnlSubMenuDatosGrafica.Controls.Add(Me.pnlEdadPaciente)
-        Me.PnlSubMenuDatosGrafica.Location = New System.Drawing.Point(785, 90)
+        Me.PnlSubMenuDatosGrafica.Location = New System.Drawing.Point(785, 83)
         Me.PnlSubMenuDatosGrafica.Name = "PnlSubMenuDatosGrafica"
         Me.PnlSubMenuDatosGrafica.Size = New System.Drawing.Size(206, 154)
         Me.PnlSubMenuDatosGrafica.TabIndex = 13
@@ -295,17 +295,17 @@ Partial Class frmGraficas
         '
         Me.pnlPerspectiva.BackColor = System.Drawing.Color.RoyalBlue
         Me.pnlPerspectiva.Controls.Add(Me.lblCambiarPerspectiva)
-        Me.pnlPerspectiva.Location = New System.Drawing.Point(3, 36)
+        Me.pnlPerspectiva.Location = New System.Drawing.Point(-1, 36)
         Me.pnlPerspectiva.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlPerspectiva.Name = "pnlPerspectiva"
-        Me.pnlPerspectiva.Size = New System.Drawing.Size(204, 32)
+        Me.pnlPerspectiva.Size = New System.Drawing.Size(208, 32)
         Me.pnlPerspectiva.TabIndex = 22
         '
         'lblCambiarPerspectiva
         '
         Me.lblCambiarPerspectiva.AutoSize = True
         Me.lblCambiarPerspectiva.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.lblCambiarPerspectiva.Location = New System.Drawing.Point(3, 4)
+        Me.lblCambiarPerspectiva.Location = New System.Drawing.Point(4, 4)
         Me.lblCambiarPerspectiva.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCambiarPerspectiva.Name = "lblCambiarPerspectiva"
         Me.lblCambiarPerspectiva.Size = New System.Drawing.Size(201, 24)

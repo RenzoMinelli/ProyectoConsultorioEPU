@@ -323,6 +323,7 @@
             grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False
             pnlPerspectiva.Visible = False
             lblCambiarPerspectiva.Visible = False
+            pnlSubMenuCambiarPerspectiva.Visible = False
         End If
 
 
@@ -337,6 +338,7 @@
             grafica.ChartAreas("Pacientes").Area3DStyle.Enable3D = False
             pnlPerspectiva.Visible = False
             lblCambiarPerspectiva.Visible = False
+            pnlSubMenuCambiarPerspectiva.Visible = False
         End If
     End Sub
 
@@ -358,7 +360,7 @@
 
     Private Sub PnlSubmenu3d_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles PnlSubmenu3d.MouseEnter
         pnlActivar3D.BackColor = Color.RoyalBlue
-        pnlSubMenuCambiarPerspectiva.Visible = False
+
     End Sub
 
     Private Sub lblCambiarPers_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblCambiarPerspectiva.MouseEnter

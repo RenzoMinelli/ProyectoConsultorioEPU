@@ -99,7 +99,7 @@ Partial Class frmPacientes
         '
         Me.lblEstado.AutoSize = True
         Me.lblEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEstado.Location = New System.Drawing.Point(279, 15)
+        Me.lblEstado.Location = New System.Drawing.Point(264, 15)
         Me.lblEstado.Name = "lblEstado"
         Me.lblEstado.Size = New System.Drawing.Size(99, 29)
         Me.lblEstado.TabIndex = 21
@@ -119,7 +119,7 @@ Partial Class frmPacientes
         '
         Me.lblTelefono.AutoSize = True
         Me.lblTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTelefono.Location = New System.Drawing.Point(279, 151)
+        Me.lblTelefono.Location = New System.Drawing.Point(264, 151)
         Me.lblTelefono.Name = "lblTelefono"
         Me.lblTelefono.Size = New System.Drawing.Size(99, 29)
         Me.lblTelefono.TabIndex = 19
@@ -179,7 +179,7 @@ Partial Class frmPacientes
         '
         Me.lblNumeroCitasAtendidas.AutoSize = True
         Me.lblNumeroCitasAtendidas.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNumeroCitasAtendidas.Location = New System.Drawing.Point(279, 298)
+        Me.lblNumeroCitasAtendidas.Location = New System.Drawing.Point(264, 298)
         Me.lblNumeroCitasAtendidas.Name = "lblNumeroCitasAtendidas"
         Me.lblNumeroCitasAtendidas.Size = New System.Drawing.Size(99, 29)
         Me.lblNumeroCitasAtendidas.TabIndex = 7
@@ -199,7 +199,7 @@ Partial Class frmPacientes
         '
         Me.lblEnviadoPor.AutoSize = True
         Me.lblEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEnviadoPor.Location = New System.Drawing.Point(279, 187)
+        Me.lblEnviadoPor.Location = New System.Drawing.Point(264, 187)
         Me.lblEnviadoPor.Name = "lblEnviadoPor"
         Me.lblEnviadoPor.Size = New System.Drawing.Size(86, 29)
         Me.lblEnviadoPor.TabIndex = 4
@@ -209,7 +209,7 @@ Partial Class frmPacientes
         '
         Me.lblCedula.AutoSize = True
         Me.lblCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCedula.Location = New System.Drawing.Point(279, 81)
+        Me.lblCedula.Location = New System.Drawing.Point(264, 81)
         Me.lblCedula.Name = "lblCedula"
         Me.lblCedula.Size = New System.Drawing.Size(86, 29)
         Me.lblCedula.TabIndex = 1
@@ -229,7 +229,7 @@ Partial Class frmPacientes
         '
         Me.lblFechaNacimiento.AutoSize = True
         Me.lblFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaNacimiento.Location = New System.Drawing.Point(279, 114)
+        Me.lblFechaNacimiento.Location = New System.Drawing.Point(264, 114)
         Me.lblFechaNacimiento.Name = "lblFechaNacimiento"
         Me.lblFechaNacimiento.Size = New System.Drawing.Size(86, 29)
         Me.lblFechaNacimiento.TabIndex = 3
@@ -249,7 +249,7 @@ Partial Class frmPacientes
         '
         Me.lblDireccionTrabajo.AutoSize = True
         Me.lblDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDireccionTrabajo.Location = New System.Drawing.Point(279, 260)
+        Me.lblDireccionTrabajo.Location = New System.Drawing.Point(264, 260)
         Me.lblDireccionTrabajo.Name = "lblDireccionTrabajo"
         Me.lblDireccionTrabajo.Size = New System.Drawing.Size(86, 29)
         Me.lblDireccionTrabajo.TabIndex = 6
@@ -259,7 +259,7 @@ Partial Class frmPacientes
         '
         Me.lblDireccionParticular.AutoSize = True
         Me.lblDireccionParticular.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDireccionParticular.Location = New System.Drawing.Point(279, 223)
+        Me.lblDireccionParticular.Location = New System.Drawing.Point(264, 223)
         Me.lblDireccionParticular.Name = "lblDireccionParticular"
         Me.lblDireccionParticular.Size = New System.Drawing.Size(86, 29)
         Me.lblDireccionParticular.TabIndex = 5
@@ -269,7 +269,7 @@ Partial Class frmPacientes
         '
         Me.lblNombre.AutoSize = True
         Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.Location = New System.Drawing.Point(279, 48)
+        Me.lblNombre.Location = New System.Drawing.Point(264, 48)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(86, 29)
         Me.lblNombre.TabIndex = 2
@@ -289,7 +289,7 @@ Partial Class frmPacientes
         '
         Me.lblSaldoPendiente.AutoSize = True
         Me.lblSaldoPendiente.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSaldoPendiente.Location = New System.Drawing.Point(279, 333)
+        Me.lblSaldoPendiente.Location = New System.Drawing.Point(264, 333)
         Me.lblSaldoPendiente.Name = "lblSaldoPendiente"
         Me.lblSaldoPendiente.Size = New System.Drawing.Size(86, 29)
         Me.lblSaldoPendiente.TabIndex = 17
