@@ -2058,8 +2058,9 @@ Public Class frmRegistroMedico
                 Consulta = "select a.descripcion as 'Descrpcion General', pl.descripcion as 'Descripcion Especifica', precio as 'Precio' from aranceles a inner join plan_tratamiento pl on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "' and terminado = 0 "
                 consultar()
                 dgvTratamientos.DataSource = Tabla
+                dgvTratamientos.Columns(2).Width = 150
             Catch ex As Exception
-                MsgBox("Error al obtener el presupuesto", MsgBoxStyle.Exclamation)
+                MsgBox("Error al obtener el presupuesto" + ex.ToString, MsgBoxStyle.Exclamation)
             End Try
         ElseIf cbTratamientos.SelectedIndex = 1 Then
 

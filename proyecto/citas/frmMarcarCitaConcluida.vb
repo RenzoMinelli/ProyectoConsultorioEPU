@@ -62,7 +62,7 @@
     End Sub
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-
+        ver = 0
         Me.Hide()
         frmContenedor = frmPlanTratamiento
         frmContenedor.MdiParent = frmMenuInicio

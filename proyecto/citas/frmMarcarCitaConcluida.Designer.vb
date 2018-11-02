@@ -65,7 +65,7 @@ Partial Class frmMarcarCitaConcluida
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvTratamientos.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvTratamientos.Location = New System.Drawing.Point(12, 67)
         Me.dgvTratamientos.Name = "dgvTratamientos"

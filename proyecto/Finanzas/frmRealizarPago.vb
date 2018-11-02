@@ -23,7 +23,7 @@
         Consulta = "select fecha as 'Fecha de Pago', pago as 'Cantidad Depositada ($)'  ,cedula as 'Cedula', nombre as 'Nombre' from recibo r inner join paciente p on p.id_p = r.id_p where fecha <= '" + frmFinanzas.fechah.ToString("yyyy-MM-dd") + "' and fecha >= '" + frmFinanzas.fechad.ToString("yyyy-MM-dd") + "';"
         consultar()
 
-        frmFinanzas.dgbPagos.DataSource = Tabla
+        frmFinanzas.dgvPagos.DataSource = Tabla
     End Sub
     Public Sub actTabla()
         Consulta = "select id_p , nombre , cedula , saldo from paciente;"

@@ -62,7 +62,7 @@ Partial Class frmAranceles
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvAranceles.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvAranceles.Location = New System.Drawing.Point(12, 53)
         Me.dgvAranceles.Name = "dgvAranceles"

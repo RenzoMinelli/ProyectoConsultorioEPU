@@ -178,7 +178,7 @@ Public Class frmPlanTratamiento
             Consulta = "Select id_a, descripcion as 'Descripcion', costo as 'Precio' from aranceles where estado = 1;"
             consultar()
             dgvAranceles.DataSource = Tabla
-
+            dgvAranceles.Columns(2).Width = 100
             If Not IsDBNull(dgvAranceles.Rows(0).Cells(0).Value) Then
                 dgvAranceles.Columns(0).Visible = False
             End If
@@ -253,10 +253,14 @@ Public Class frmPlanTratamiento
 
 
             MsgBox("Guardado con éxito", MsgBoxStyle.Information)
-
+            If ver = 1 Then
+                frmPacientes.Show()
+            Else
+                frmMarcarCitaConcluida.actPlan()
+                frmMarcarCitaConcluida.Show()
+            End If
             Me.Dispose()
-            frmMarcarCitaConcluida.actPlan()
-            frmMarcarCitaConcluida.Show()
+           
 
         Catch ex As Exception
 

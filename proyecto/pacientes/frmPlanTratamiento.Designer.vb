@@ -79,14 +79,14 @@ Partial Class frmPlanTratamiento
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvAranceles.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvAranceles.Location = New System.Drawing.Point(38, 112)
         Me.dgvAranceles.Name = "dgvAranceles"
         Me.dgvAranceles.ReadOnly = True
         Me.dgvAranceles.RowHeadersVisible = False
         Me.dgvAranceles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvAranceles.Size = New System.Drawing.Size(505, 269)
+        Me.dgvAranceles.Size = New System.Drawing.Size(478, 269)
         Me.dgvAranceles.TabIndex = 0
         '
         'lblAranceles
@@ -122,7 +122,6 @@ Partial Class frmPlanTratamiento
         DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvArancelesSelect.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvArancelesSelect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -131,14 +130,14 @@ Partial Class frmPlanTratamiento
         DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvArancelesSelect.DefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvArancelesSelect.Location = New System.Drawing.Point(643, 53)
+        Me.dgvArancelesSelect.Location = New System.Drawing.Point(624, 53)
         Me.dgvArancelesSelect.Name = "dgvArancelesSelect"
         Me.dgvArancelesSelect.ReadOnly = True
         Me.dgvArancelesSelect.RowHeadersVisible = False
         Me.dgvArancelesSelect.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvArancelesSelect.Size = New System.Drawing.Size(491, 328)
+        Me.dgvArancelesSelect.Size = New System.Drawing.Size(532, 328)
         Me.dgvArancelesSelect.TabIndex = 3
         '
         'dgvAuxiliar
@@ -204,7 +203,7 @@ Partial Class frmPlanTratamiento
         Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txbBusqueda.Location = New System.Drawing.Point(38, 53)
         Me.txbBusqueda.Name = "txbBusqueda"
-        Me.txbBusqueda.Size = New System.Drawing.Size(505, 35)
+        Me.txbBusqueda.Size = New System.Drawing.Size(478, 35)
         Me.txbBusqueda.TabIndex = 7
         '
         'btnGuardar
@@ -349,7 +348,7 @@ Partial Class frmPlanTratamiento
         Me.btnMover.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMover.Image = Global.WindowsApplication1.My.Resources.Resources.IconoFlechaIzquierda
         Me.btnMover.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnMover.Location = New System.Drawing.Point(551, 222)
+        Me.btnMover.Location = New System.Drawing.Point(527, 204)
         Me.btnMover.Name = "btnMover"
         Me.btnMover.Size = New System.Drawing.Size(86, 76)
         Me.btnMover.TabIndex = 58

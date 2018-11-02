@@ -119,8 +119,10 @@
         Else
             pnlPerspectiva.Visible = False
         End If
+
         If PnlSubmenu3d.Visible = True Then
             PnlSubmenu3d.Visible = False
+            pnlSubMenuCambiarPerspectiva.Visible = False
         Else
             PnlSubmenu3d.Visible = True
             PnlSubMenuDatosGrafica.Visible = False
@@ -206,7 +208,7 @@
         Else
             PnlSubMenuDatosGrafica.Visible = True
             PnlSubmenu3d.Visible = False
-
+            pnlSubMenuCambiarPerspectiva.Visible = False
         End If
     End Sub
 
@@ -301,7 +303,7 @@
         Else
             PnlSubMenuDatosGrafica.Visible = True
             PnlSubmenu3d.Visible = False
-
+            pnlSubMenuCambiarPerspectiva.Visible = False
         End If
     End Sub
 
@@ -380,6 +382,7 @@
 
     Private Sub pnldesplmenu_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlDesplMenu.MouseEnter
         PnlSubmenu3d.Visible = False
+        pnlSubMenuCambiarPerspectiva.Visible = False
         PnlSubMenuDatosGrafica.Visible = False
     End Sub
 
@@ -604,6 +607,7 @@
         End If
         If PnlSubmenu3d.Visible = True Then
             PnlSubmenu3d.Visible = False
+            pnlSubMenuCambiarPerspectiva.Visible = False
         Else
             PnlSubmenu3d.Visible = True
             PnlSubMenuDatosGrafica.Visible = False

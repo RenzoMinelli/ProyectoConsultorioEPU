@@ -39,15 +39,20 @@
                 Consulta = "select fecha as 'Fecha de Pago', pago as 'Cantidad Depositada ($)'  ,cedula as 'Cedula',  concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'Apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'Nombre' from recibo r inner join paciente p on p.id_p = r.id_p where fecha <= '" + fechah.ToString("yyyy-MM-dd") + "' and fecha >= '" + fechad.ToString("yyyy-MM-dd") + "';"
                 consultar()
 
-                dgbPagos.DataSource = Tabla
+                dgvPagos.DataSource = Tabla
+                dgvPagos.Columns(0).HeaderText = "Fecha de Pago"
+                dgvPagos.Columns(1).HeaderText = "Cantidad Depositada ($)"
+                dgvPagos.Columns(2).HeaderText = "Cédula"
+                dgvPagos.Columns(3).HeaderText = "Apellido"
+                dgvPagos.Columns(4).HeaderText = "Nombre"
 
                 Dim suma As Long = 0
-                If Not IsDBNull(dgbPagos.Rows(0).Cells(0).Value) Then
+                If Not IsDBNull(dgvPagos.Rows(0).Cells(0).Value) Then
 
                     Label4.Text = ""
-                    For x As Integer = 0 To dgbPagos.RowCount - 1
+                    For x As Integer = 0 To dgvPagos.RowCount - 1
 
-                        suma += dgbPagos.Rows(x).Cells(1).Value
+                        suma += dgvPagos.Rows(x).Cells(1).Value
 
                     Next
                 End If
@@ -70,15 +75,15 @@
                 Consulta = "select fecha as 'Fecha de Pago', pago as 'Cantidad Depositada ($)'  ,cedula as 'Cedula',  concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'Apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'Nombre' from recibo r inner join paciente p on p.id_p = r.id_p where fecha <= '" + fechah.ToString("yyyy-MM-dd") + "' and fecha >= '" + fechad.ToString("yyyy-MM-dd") + "' and (cedula like '" + txbBusqueda.Text + "%' or nombre like '" + txbBusqueda.Text + "%' or apellido like '" + txbBusqueda.Text + "%');"
                 consultar()
 
-                dgbPagos.DataSource = Tabla
+                dgvPagos.DataSource = Tabla
 
                 Dim suma As Integer = 0
-                If Not IsDBNull(dgbPagos.Rows(0).Cells(0).Value) Then
+                If Not IsDBNull(dgvPagos.Rows(0).Cells(0).Value) Then
 
                     Label4.Text = ""
-                    For x As Integer = 0 To dgbPagos.RowCount - 1
+                    For x As Integer = 0 To dgvPagos.RowCount - 1
 
-                        suma += dgbPagos.Rows(x).Cells(1).Value
+                        suma += dgvPagos.Rows(x).Cells(1).Value
 
                     Next
                 End If
@@ -104,7 +109,7 @@
 
     End Sub
 
-    Private Sub txbBusqueda_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.Click
+    Private Sub txbBusqueda_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
         'Si el contenido de txbBusqueda es Buscar y de color gris
         If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
@@ -116,7 +121,7 @@
 
     End Sub
 
-    Private Sub txbBusqueda_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.GotFocus
+    Private Sub txbBusqueda_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs)
 
         'Si el contenido de txbBusqueda es Buscar y de color gris
         If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray Then
@@ -128,7 +133,7 @@
 
     End Sub
 
-    Private Sub txbBusqueda_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txbBusqueda.KeyDown
+    Private Sub txbBusqueda_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
 
         'Si el contenido de txbBusqueda es Buscar, de color gris y la tecla presionada no es 
         If txbBusqueda.Text = "Buscar" And txbBusqueda.ForeColor = Color.Gray And Not e.KeyCode = Keys.Back Then
@@ -157,7 +162,7 @@
         End If
     End Sub
 
-    Private Sub txbBusqueda_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
+    Private Sub txbBusqueda_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs)
         actTabla(txbBusqueda.Text)
     End Sub
 End Class
