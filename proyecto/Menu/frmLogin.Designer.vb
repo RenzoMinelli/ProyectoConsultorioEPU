@@ -118,7 +118,7 @@ Partial Class frmLogin
         Me.pnlBarra.Location = New System.Drawing.Point(0, -2)
         Me.pnlBarra.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlBarra.Name = "pnlBarra"
-        Me.pnlBarra.Size = New System.Drawing.Size(494, 50)
+        Me.pnlBarra.Size = New System.Drawing.Size(501, 50)
         Me.pnlBarra.TabIndex = 10
         '
         'pbCerrar

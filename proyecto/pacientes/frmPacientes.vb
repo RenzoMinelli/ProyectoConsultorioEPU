@@ -32,12 +32,7 @@
         'Cuando carga el formulario Paciente, se actualiza el dgbPacientes con los pacientes activos
         actTabla(1)
 
-        'Establezco como debe cargar el txbBusqueda
-        
 
-        My.Computer.FileSystem.CreateDirectory(rutaGuardadoFotos) 'Crea la carpeta "Imágenes VB" en el escritorio si esta no existe
-
-        
 
     End Sub
 
