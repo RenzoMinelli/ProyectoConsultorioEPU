@@ -15,23 +15,6 @@
 
         End Try
     End Sub
-    Private Sub dgvAranceles_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvTratamientos.CellDoubleClick
-
-        MuestraMsgBoxVersatil("¿Desea marcar este tratamiento como concluido?", 0)
-
-        If respint = 0 Then
-
-            MsgBox("Ningún cambio ha sido realizado", MsgBoxStyle.Information)
-
-        Else
-
-
-        End If
-
-    End Sub
-
-    
-
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         Try

@@ -45,7 +45,7 @@ Public Class frmPlanTratamiento
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
-        MuestraMsgBoxVersatil("¿Desea eliminar el tratamiento " + dgvArancelesSelect.CurrentRow.Cells(3).Value.ToString + "?", 0)
+        MuestraMsgBoxVersatil("¿Desea eliminar el tratamiento " + dgvArancelesSelect.CurrentRow.Cells(1).Value.ToString + "?", 0)
         If respint = 1 Then
             If dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString <> "" Then
                 Try
@@ -58,7 +58,7 @@ Public Class frmPlanTratamiento
                     Consulta = "DELETE FROM plan_tratamiento where id_pl = '" + id + "';"
                     consultar()
 
-                    actArancelesSelect()
+                    dgvArancelesSelect.Rows.RemoveAt(dgvArancelesSelect.CurrentRow.Index)
 
                     MsgBox("Elemento eliminado", MsgBoxStyle.Information)
 
@@ -70,7 +70,7 @@ Public Class frmPlanTratamiento
 
             Else
 
-                dgvArancelesSelect.Rows.RemoveAt(dgvArancelesSelect.CurrentRow.Index)
+
                 MsgBox("Elemento eliminado", MsgBoxStyle.Information)
             End If
 
@@ -90,18 +90,24 @@ Public Class frmPlanTratamiento
     Private Sub btnModificarPrecio_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarPrecio.Click
 
         Do
-            MuestraMsgBoxVersatil("Ingrese el nuevo costo del Arancel", 1)
-            If respString = "" Or IsNumeric(respString) Then
+            MuestraMsgBoxVersatil("Ingrese el nuevo costo del Arancel", 2)
+            If respint = 2 Then
+                MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
+                Exit Do
+            Else
+                If respString = "" Or IsNumeric(respString) Then
 
-                If respString = "" Then
-                    dgvArancelesSelect.CurrentRow.Cells(2).Value = "0"
-                    respString = "0"
-                    Exit Do
-                Else
-                    dgvArancelesSelect.CurrentRow.Cells(2).Value = respString
-                    Exit Do
+                    If respString = "" Then
+                        dgvArancelesSelect.CurrentRow.Cells(2).Value = "0"
+                        respString = "0"
+                        Exit Do
+                    Else
+                        dgvArancelesSelect.CurrentRow.Cells(2).Value = respString
+                        Exit Do
+                    End If
                 End If
             End If
+          
 
             MsgBox("Debe ingresar solo números", MsgBoxStyle.Exclamation)
         Loop While Not IsNumeric(respString)
@@ -182,6 +188,7 @@ Public Class frmPlanTratamiento
             If Not IsDBNull(dgvAranceles.Rows(0).Cells(0).Value) Then
                 dgvAranceles.Columns(0).Visible = False
             End If
+            dgvAranceles.Columns(1).HeaderText = "Descripción"
 
         Catch ex As Exception
             MsgBox("Error al cargar los aranceles", MsgBoxStyle.Exclamation)
@@ -205,6 +212,10 @@ Public Class frmPlanTratamiento
             For indice = 0 To dgvArancelesSelect.RowCount - 1
                 listaID_R.Add(dgvArancelesSelect.Rows(indice).Cells(4).Value)
             Next
+
+            dgvArancelesSelect.Columns(1).HeaderText = "Descripción General"
+            dgvArancelesSelect.Columns(2).HeaderText = "Precio"
+            dgvArancelesSelect.Columns(3).HeaderText = "Descripción Específica"
 
 
         Catch ex As Exception
@@ -270,9 +281,13 @@ Public Class frmPlanTratamiento
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarDesc.Click
-        MuestraMsgBoxVersatil("Ingrese la nueva descripcion del Arancel", 1)
+        MuestraMsgBoxVersatil("Ingrese la nueva descripcion del Arancel", 2)
+        If respint = 1 Then
+            dgvArancelesSelect.CurrentRow.Cells(3).Value = respString
+        Else
+            MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
+        End If
 
-        dgvArancelesSelect.CurrentRow.Cells(3).Value = respString
 
     End Sub
 
@@ -281,7 +296,7 @@ Public Class frmPlanTratamiento
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMarcar.Click
         If dgvArancelesSelect.CurrentRow.Cells(1).Value <> "" Then
 
-            MuestraMsgBoxVersatil("¿Desea marcar como concluido el tratamiento sobre " + dgvArancelesSelect.CurrentRow.Cells(3).Value + "?", 0)
+            MuestraMsgBoxVersatil("¿Desea marcar como concluido el tratamiento " + dgvArancelesSelect.CurrentRow.Cells(1).Value + "?", 0)
             If respint = 1 Then
                 Consulta = "update plan_tratamiento set terminado = '1' where id_pl = '" + dgvArancelesSelect.CurrentRow.Cells(4).Value.ToString + "';"
                 consultar()

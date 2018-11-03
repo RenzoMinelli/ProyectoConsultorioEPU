@@ -6,31 +6,55 @@
     Private Sub MsgBoxVersatil_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Me.Location = New Point(screenWidth / 2 - Me.Width / 2, screenHeight / 2 - Me.Height / 2)
-        If lblTexto.Text.Length > 50 Then
 
-            Dim parte1 As String = ""
-            Dim parte2 As String = ""
+        'If lblTexto.Text.Length > 90 Then
 
-            For x = 50 To lblTexto.Text.Length - 1
 
-                While lblTexto.Text(x) <> " "
-                    x += 1
-                    If x > lblTexto.Text.Length - 1 Then
-                        Exit While
-                    End If
+        '    Dim parte1 As String = ""
+        '    Dim parte2 As String = ""
+        '    Dim parte3 As String = ""
+        '    For x = 45 To 90
 
-                End While
+        '        If lblTexto.Text(x) <> " " Then
+        '            x += 1
 
-                parte1 = lblTexto.Text.Substring(0, x)
-                parte2 = lblTexto.Text.Substring(x, lblTexto.Text.Length - x)
+        '        Else
 
-                lblTexto.Text = parte1 + vbNewLine + parte2
 
-                Exit For
+        '            parte1 = lblTexto.Text.Substring(0, x)
+        '            parte2 = lblTexto.Text.Substring(x, lblTexto.Text.Length - x)
 
-            Next
+        '            lblTexto.Text = parte1 + vbNewLine + parte2
 
-        End If
+        '            Exit For
+        '        End If
+
+        '    Next
+
+        'ElseIf lblTexto.Text.Length > 45 Then
+
+
+        '    Dim parte1 As String = ""
+        '    Dim parte2 As String = ""
+
+        '    For x = 45 To lblTexto.Text.Length - 1
+
+        '        If lblTexto.Text(x) <> " " Then
+        '            x += 1
+
+        '        Else
+
+
+        '            parte1 = lblTexto.Text.Substring(0, x)
+        '            parte2 = lblTexto.Text.Substring(x, lblTexto.Text.Length - x)
+
+        '            lblTexto.Text = parte1 + vbNewLine + parte2
+
+        '            Exit For
+        '        End If
+
+        '    Next
+        'End If
 
     End Sub
 

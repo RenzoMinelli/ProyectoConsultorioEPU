@@ -2065,9 +2065,10 @@ Public Class frmRegistroMedico
         ElseIf cbTratamientos.SelectedIndex = 1 Then
 
             Try
-                Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica', terminado as 'Terminado' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a inner join cita c on pl.id_c = c.id_c where pl.id_p = '" + id_p.ToString + "' order by fecha desc;"
+                Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica', terminado as 'Terminado' from plan_tratamiento pl left join aranceles a on pl.id_a = a.id_a inner join cita c on pl.id_c = c.id_c where pl.id_p = '" + id_p.ToString + "' order by fecha desc;"
                 consultar()
                 dgvTratamientos.DataSource = Tabla
+                dgvTratamientos.Columns(2).Width = 150
             Catch ex As Exception
                 MsgBox("Error al obtener registro", MsgBoxStyle.Exclamation)
             End Try

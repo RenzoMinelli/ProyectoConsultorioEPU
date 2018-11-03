@@ -85,6 +85,7 @@ Module ModuloUtilidades
             Dim msgbv As New MsgBoxVersatil()
 
             msgbv.lblTexto.Text = texto
+            msgbv.lblTexto.TextAlign = ContentAlignment.TopCenter
             msgbv.btnNo.Visible = False
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Aceptar"
@@ -110,7 +111,7 @@ Module ModuloUtilidades
 
             msgbv.lblTexto.Text = texto
             msgbv.lblTexto.Location = New Point(msgbv.Width / 2 - msgbv.lblTexto.Width / 2, msgbv.lblTexto.Location.Y)
-            msgbv.lblTexto.TextAlign = ContentAlignment.MiddleCenter
+            msgbv.lblTexto.TextAlign = ContentAlignment.TopCenter
             msgbv.btnNo.Visible = True
             msgbv.btnSi.Visible = True
             msgbv.btnSi.Text = "Aceptar"

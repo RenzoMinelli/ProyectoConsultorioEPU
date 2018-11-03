@@ -32,11 +32,10 @@ Partial Class MsgBoxVersatil
         '
         'lblTexto
         '
-        Me.lblTexto.AutoSize = True
         Me.lblTexto.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTexto.Location = New System.Drawing.Point(12, 78)
+        Me.lblTexto.Location = New System.Drawing.Point(21, 24)
         Me.lblTexto.Name = "lblTexto"
-        Me.lblTexto.Size = New System.Drawing.Size(185, 29)
+        Me.lblTexto.Size = New System.Drawing.Size(631, 232)
         Me.lblTexto.TabIndex = 4
         Me.lblTexto.Text = "Texto a cambiar"
         '
@@ -98,10 +97,10 @@ Partial Class MsgBoxVersatil
         Me.ClientSize = New System.Drawing.Size(676, 348)
         Me.Controls.Add(Me.lblOpcional)
         Me.Controls.Add(Me.txbOpcional)
-        Me.Controls.Add(Me.lblTexto)
         Me.Controls.Add(Me.txbRespuesta)
         Me.Controls.Add(Me.btnSi)
         Me.Controls.Add(Me.btnNo)
+        Me.Controls.Add(Me.lblTexto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MsgBoxVersatil"
         Me.ShowIcon = False

@@ -133,7 +133,7 @@
 
                     'Actualizamos la tabla mostrando solo los pacientes activos
                     actTabla(1)
-
+                    dgvPacientes.ClearSelection()
                 Catch ex As Exception
 
                     'En el caso que de algun error que se muestre un alerta
@@ -164,7 +164,7 @@
 
                     'Actualizamos la tabla mostrando solo los pacientes inactivos
                     actTabla(0)
-
+                    dgvPacientes.ClearSelection()
                 Catch ex As Exception
 
                     'En el caso que de algun error que se muestre un alerta
@@ -385,7 +385,7 @@
 
             'Indicamos que los pacientes mostrados son inactivos
             EstadoPacientes = 0
-
+            dgvPacientes.ClearSelection()
         Else 'Si el estado de los pacientes que se mostraba antes del click era inactivo
 
             'Actualizamos la tabla con pacientes activos
@@ -397,7 +397,7 @@
 
             'Indicamos que los pacientes mostrados son activos
             EstadoPacientes = 1
-
+            dgvPacientes.ClearSelection()
         End If
 
     End Sub

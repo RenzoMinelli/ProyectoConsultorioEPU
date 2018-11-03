@@ -141,7 +141,7 @@ Partial Class frmAranceles
         DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvArancelesUtilizados.DefaultCellStyle = DataGridViewCellStyle5
         Me.dgvArancelesUtilizados.Location = New System.Drawing.Point(698, 53)
         Me.dgvArancelesUtilizados.Name = "dgvArancelesUtilizados"

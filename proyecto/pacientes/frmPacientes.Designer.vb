@@ -22,8 +22,8 @@ Partial Class frmPacientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblEstado = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -97,11 +97,10 @@ Partial Class frmPacientes
         '
         'lblEstado
         '
-        Me.lblEstado.AutoSize = True
         Me.lblEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEstado.Location = New System.Drawing.Point(264, 15)
         Me.lblEstado.Name = "lblEstado"
-        Me.lblEstado.Size = New System.Drawing.Size(99, 29)
+        Me.lblEstado.Size = New System.Drawing.Size(334, 29)
         Me.lblEstado.TabIndex = 21
         Me.lblEstado.Text = "Label21"
         '
@@ -117,11 +116,10 @@ Partial Class frmPacientes
         '
         'lblTelefono
         '
-        Me.lblTelefono.AutoSize = True
         Me.lblTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTelefono.Location = New System.Drawing.Point(264, 151)
         Me.lblTelefono.Name = "lblTelefono"
-        Me.lblTelefono.Size = New System.Drawing.Size(99, 29)
+        Me.lblTelefono.Size = New System.Drawing.Size(334, 29)
         Me.lblTelefono.TabIndex = 19
         Me.lblTelefono.Text = "Label19"
         '
@@ -177,11 +175,10 @@ Partial Class frmPacientes
         '
         'lblNumeroCitasAtendidas
         '
-        Me.lblNumeroCitasAtendidas.AutoSize = True
         Me.lblNumeroCitasAtendidas.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNumeroCitasAtendidas.Location = New System.Drawing.Point(264, 298)
         Me.lblNumeroCitasAtendidas.Name = "lblNumeroCitasAtendidas"
-        Me.lblNumeroCitasAtendidas.Size = New System.Drawing.Size(99, 29)
+        Me.lblNumeroCitasAtendidas.Size = New System.Drawing.Size(334, 29)
         Me.lblNumeroCitasAtendidas.TabIndex = 7
         Me.lblNumeroCitasAtendidas.Text = "Label10"
         '
@@ -197,21 +194,19 @@ Partial Class frmPacientes
         '
         'lblEnviadoPor
         '
-        Me.lblEnviadoPor.AutoSize = True
         Me.lblEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEnviadoPor.Location = New System.Drawing.Point(264, 187)
         Me.lblEnviadoPor.Name = "lblEnviadoPor"
-        Me.lblEnviadoPor.Size = New System.Drawing.Size(86, 29)
+        Me.lblEnviadoPor.Size = New System.Drawing.Size(334, 29)
         Me.lblEnviadoPor.TabIndex = 4
         Me.lblEnviadoPor.Text = "Label7"
         '
         'lblCedula
         '
-        Me.lblCedula.AutoSize = True
         Me.lblCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCedula.Location = New System.Drawing.Point(264, 81)
         Me.lblCedula.Name = "lblCedula"
-        Me.lblCedula.Size = New System.Drawing.Size(86, 29)
+        Me.lblCedula.Size = New System.Drawing.Size(334, 29)
         Me.lblCedula.TabIndex = 1
         Me.lblCedula.Text = "Label4"
         '
@@ -227,11 +222,10 @@ Partial Class frmPacientes
         '
         'lblFechaNacimiento
         '
-        Me.lblFechaNacimiento.AutoSize = True
         Me.lblFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFechaNacimiento.Location = New System.Drawing.Point(264, 114)
         Me.lblFechaNacimiento.Name = "lblFechaNacimiento"
-        Me.lblFechaNacimiento.Size = New System.Drawing.Size(86, 29)
+        Me.lblFechaNacimiento.Size = New System.Drawing.Size(334, 29)
         Me.lblFechaNacimiento.TabIndex = 3
         Me.lblFechaNacimiento.Text = "Label6"
         '
@@ -247,31 +241,28 @@ Partial Class frmPacientes
         '
         'lblDireccionTrabajo
         '
-        Me.lblDireccionTrabajo.AutoSize = True
         Me.lblDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDireccionTrabajo.Location = New System.Drawing.Point(264, 260)
         Me.lblDireccionTrabajo.Name = "lblDireccionTrabajo"
-        Me.lblDireccionTrabajo.Size = New System.Drawing.Size(86, 29)
+        Me.lblDireccionTrabajo.Size = New System.Drawing.Size(334, 29)
         Me.lblDireccionTrabajo.TabIndex = 6
         Me.lblDireccionTrabajo.Text = "Label9"
         '
         'lblDireccionParticular
         '
-        Me.lblDireccionParticular.AutoSize = True
         Me.lblDireccionParticular.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDireccionParticular.Location = New System.Drawing.Point(264, 223)
         Me.lblDireccionParticular.Name = "lblDireccionParticular"
-        Me.lblDireccionParticular.Size = New System.Drawing.Size(86, 29)
+        Me.lblDireccionParticular.Size = New System.Drawing.Size(334, 29)
         Me.lblDireccionParticular.TabIndex = 5
         Me.lblDireccionParticular.Text = "Label8"
         '
         'lblNombre
         '
-        Me.lblNombre.AutoSize = True
         Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombre.Location = New System.Drawing.Point(264, 48)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(86, 29)
+        Me.lblNombre.Size = New System.Drawing.Size(334, 29)
         Me.lblNombre.TabIndex = 2
         Me.lblNombre.Text = "Label5"
         '
@@ -287,11 +278,10 @@ Partial Class frmPacientes
         '
         'lblSaldoPendiente
         '
-        Me.lblSaldoPendiente.AutoSize = True
         Me.lblSaldoPendiente.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSaldoPendiente.Location = New System.Drawing.Point(264, 333)
         Me.lblSaldoPendiente.Name = "lblSaldoPendiente"
-        Me.lblSaldoPendiente.Size = New System.Drawing.Size(86, 29)
+        Me.lblSaldoPendiente.Size = New System.Drawing.Size(334, 29)
         Me.lblSaldoPendiente.TabIndex = 17
         Me.lblSaldoPendiente.Text = "Label3"
         '
@@ -392,23 +382,23 @@ Partial Class frmPacientes
         Me.dgvPacientes.AllowUserToResizeRows = False
         Me.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPacientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPacientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPacientes.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvPacientes.Location = New System.Drawing.Point(17, 70)
         Me.dgvPacientes.MultiSelect = False
         Me.dgvPacientes.Name = "dgvPacientes"
