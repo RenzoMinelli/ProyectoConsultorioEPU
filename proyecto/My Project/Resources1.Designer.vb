@@ -133,6 +133,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property epu() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("epu", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property IconoAgrear() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("IconoAgrear", resourceCulture)
@@ -333,6 +343,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property IconoLupaPeqeña() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("IconoLupaPeqeña", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property IconoMarcarListo() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("IconoMarcarListo", resourceCulture)
@@ -497,6 +517,16 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("rambocursor", resourceCulture)
                 Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ruedita() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ruedita", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         

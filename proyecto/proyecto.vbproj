@@ -77,7 +77,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>65570.ico</ApplicationIcon>
+    <ApplicationIcon>172812.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DataGridViewPrinter">
@@ -597,6 +597,7 @@
     <None Include="Resources\42954 %281%29 %281%29.png" />
     <None Include="Resources\calendario_guardar.png" />
     <None Include="Resources\65570 %282%29.png" />
+    <Content Include="172812.ico" />
     <Content Include="65570.ico" />
     <Content Include="Resources\cancel_exit_cross_close.png" />
     <None Include="Resources\índice.png" />
