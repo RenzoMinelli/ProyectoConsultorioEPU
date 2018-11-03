@@ -11,7 +11,7 @@
             consultar()
 
             frmRealizarPago.actTabla()
-            frmFinanzas.actTabla("Busqueda")
+            frmFinanzas.actTabla()
             Dim fecha As Date = Now.ToShortDateString
             Dim nfecha = fecha.ToString("yyyy-MM-dd")
 
