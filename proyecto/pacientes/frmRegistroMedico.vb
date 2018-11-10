@@ -2102,7 +2102,7 @@ Public Class frmRegistroMedico
 
         Try
             cambiarUsuario("root", "")
-            Consulta = "select * from estado_dientes where id_p = '" + id_p.ToString + "'   order by fecha asc;"
+            Consulta = "select * from estado_dientes where id_p = '" + id_p.ToString + "' and fecha = ( select min(fecha) from estado_dientes where id_p ='" + id_p.ToString + "' );"
             consultar()
             dgvEstadoDiente.DataSource = Tabla
 
