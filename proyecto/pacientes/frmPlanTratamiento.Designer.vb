@@ -39,7 +39,6 @@ Partial Class frmPlanTratamiento
         Me.dgvAuxiliar = New System.Windows.Forms.DataGridView()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnModificarPrecio = New System.Windows.Forms.Button()
-        Me.txbBusqueda = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnModificarDesc = New System.Windows.Forms.Button()
         Me.btnMarcar = New System.Windows.Forms.Button()
@@ -49,6 +48,7 @@ Partial Class frmPlanTratamiento
         Me.dgvDatos = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnMover = New System.Windows.Forms.Button()
+        Me.txbBusqueda = New WindowsApplication1.WaterMarkTextBox()
         CType(Me.dgvAranceles, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvArancelesSelect, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAuxiliar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,7 +114,7 @@ Partial Class frmPlanTratamiento
         Me.dgvArancelesSelect.AllowUserToAddRows = False
         Me.dgvArancelesSelect.AllowUserToDeleteRows = False
         Me.dgvArancelesSelect.AllowUserToResizeColumns = False
-        Me.dgvArancelesSelect.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgvArancelesSelect.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvArancelesSelect.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -197,14 +197,6 @@ Partial Class frmPlanTratamiento
         Me.btnModificarPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnModificarPrecio.UseVisualStyleBackColor = True
         Me.btnModificarPrecio.Visible = False
-        '
-        'txbBusqueda
-        '
-        Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbBusqueda.Location = New System.Drawing.Point(38, 53)
-        Me.txbBusqueda.Name = "txbBusqueda"
-        Me.txbBusqueda.Size = New System.Drawing.Size(478, 35)
-        Me.txbBusqueda.TabIndex = 7
         '
         'btnGuardar
         '
@@ -357,11 +349,22 @@ Partial Class frmPlanTratamiento
         Me.btnMover.UseVisualStyleBackColor = True
         Me.btnMover.Visible = False
         '
+        'txbBusqueda
+        '
+        Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbBusqueda.Location = New System.Drawing.Point(38, 71)
+        Me.txbBusqueda.Name = "txbBusqueda"
+        Me.txbBusqueda.Size = New System.Drawing.Size(478, 31)
+        Me.txbBusqueda.TabIndex = 59
+        Me.txbBusqueda.WaterMarkColor = System.Drawing.Color.Gray
+        Me.txbBusqueda.WaterMarkText = "Buscar"
+        '
         'frmPlanTratamiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1179, 684)
+        Me.Controls.Add(Me.txbBusqueda)
         Me.Controls.Add(Me.btnMover)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
@@ -370,7 +373,6 @@ Partial Class frmPlanTratamiento
         Me.Controls.Add(Me.btnMarcar)
         Me.Controls.Add(Me.btnModificarDesc)
         Me.Controls.Add(Me.btnGuardar)
-        Me.Controls.Add(Me.txbBusqueda)
         Me.Controls.Add(Me.btnModificarPrecio)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.dgvAuxiliar)
@@ -398,7 +400,6 @@ Partial Class frmPlanTratamiento
     Friend WithEvents dgvAuxiliar As System.Windows.Forms.DataGridView
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents btnModificarPrecio As System.Windows.Forms.Button
-    Friend WithEvents txbBusqueda As System.Windows.Forms.TextBox
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents btnModificarDesc As System.Windows.Forms.Button
     Friend WithEvents btnMarcar As System.Windows.Forms.Button
@@ -408,4 +409,5 @@ Partial Class frmPlanTratamiento
     Friend WithEvents dgvDatos As System.Windows.Forms.DataGridView
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btnMover As System.Windows.Forms.Button
+    Friend WithEvents txbBusqueda As WindowsApplication1.WaterMarkTextBox
 End Class

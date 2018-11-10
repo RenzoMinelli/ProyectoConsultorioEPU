@@ -46,19 +46,26 @@
 
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
-        Try
-            Consulta = " update aranceles set estado = 0 where id_a = " + Str(id) + ""
-            consultar()
-            Consulta = "select * from aranceles where estado = 1"
-            consultar()
-            dgvAranceles.DataSource = Tabla
-            dgvAranceles.ClearSelection()
-            dgvArancelesUtilizados.ClearSelection()
-            btnEditar.Hide()
-            btnEliminar.Hide()
-        Catch ex As Exception
-            MsgBox("Error al Eliminar Arancel", MsgBoxStyle.Exclamation)
-        End Try
+        MuestraMsgBoxVersatil("¿Realmente desea eliminar este arancel?", 0)
+        If respint = 2 Then
+            MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
+        Else
+            Try
+                Consulta = " update aranceles set estado = 0 where id_a = " + Str(id) + ""
+                consultar()
+                Consulta = "select * from aranceles where estado = 1"
+                consultar()
+                dgvAranceles.DataSource = Tabla
+                dgvAranceles.ClearSelection()
+                dgvArancelesUtilizados.ClearSelection()
+                btnEditar.Hide()
+                btnEliminar.Hide()
+                MsgBox("Eliminado satisfactoriamente", MsgBoxStyle.Information)
+            Catch ex As Exception
+                MsgBox("Error al Eliminar Arancel", MsgBoxStyle.Exclamation)
+            End Try
+        End If
+      
 
     End Sub
 
