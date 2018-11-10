@@ -10,8 +10,7 @@
             Consulta = "update paciente set saldo = saldo- '" & monto & "' where id_p = '" & Str(frmRealizarPago.id) & "';"
             consultar()
 
-            frmRealizarPago.actTabla()
-            frmFinanzas.actTabla()
+           
             Dim fecha As Date = Now.ToShortDateString
             Dim nfecha = fecha.ToString("yyyy-MM-dd")
 
@@ -19,6 +18,8 @@
 
             consultar()
 
+            frmRealizarPago.actTabla()
+            frmFinanzas.actTabla()
             Me.Dispose()
 
         Else
@@ -29,8 +30,7 @@
     End Sub
 
 
-
-    Private Sub inputboxcasero_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Me.Dispose()
     End Sub
 End Class

@@ -30,26 +30,30 @@ Partial Class inputboxcasero
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(83, 66)
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(87, 103)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(145, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(217, 31)
         Me.TextBox1.TabIndex = 0
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(208, 130)
+        Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.IconoPagar
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(296, 178)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(105, 49)
+        Me.Button1.Size = New System.Drawing.Size(123, 62)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Pagar"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(60, 18)
+        Me.Label1.Location = New System.Drawing.Point(93, 24)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(199, 24)
         Me.Label1.TabIndex = 2
@@ -58,18 +62,21 @@ Partial Class inputboxcasero
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(12, 130)
+        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.X
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(12, 178)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(105, 49)
+        Me.Button2.Size = New System.Drawing.Size(134, 62)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Cancelar"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.UseVisualStyleBackColor = True
         '
         'inputboxcasero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(325, 204)
+        Me.ClientSize = New System.Drawing.Size(431, 252)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)

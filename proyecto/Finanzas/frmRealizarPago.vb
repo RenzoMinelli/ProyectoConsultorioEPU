@@ -20,17 +20,18 @@
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Dispose()
         frmFinanzas.Show()
-        Consulta = "select fecha as 'Fecha de Pago', pago as 'Cantidad Depositada ($)'  ,cedula as 'Cedula', nombre as 'Nombre' from recibo r inner join paciente p on p.id_p = r.id_p where fecha <= '" + frmFinanzas.fechah.ToString("yyyy-MM-dd") + "' and fecha >= '" + frmFinanzas.fechad.ToString("yyyy-MM-dd") + "';"
-        consultar()
-
-        frmFinanzas.dgvPagos.DataSource = Tabla
+        frmFinanzas.actTabla()
     End Sub
     Public Sub actTabla()
         Consulta = "select id_p , nombre , cedula , saldo from paciente;"
         consultar()
         DataGridView1.DataSource = Tabla
         DataGridView1.ClearSelection()
+
         DataGridView1.Columns(0).Visible = False
+        DataGridView1.Columns(1).HeaderText = "Nombre"
+        DataGridView1.Columns(2).HeaderText = "Cédula"
+        DataGridView1.Columns(3).HeaderText = "Saldo"
         Button1.Hide()
         DataGridView1.Columns(0).Width = 300
 

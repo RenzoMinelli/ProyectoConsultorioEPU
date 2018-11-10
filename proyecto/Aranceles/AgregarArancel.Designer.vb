@@ -33,7 +33,7 @@ Partial Class AgregarArancel
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(123, 56)
+        Me.TextBox1.Location = New System.Drawing.Point(203, 50)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(209, 29)
         Me.TextBox1.TabIndex = 3
@@ -42,7 +42,7 @@ Partial Class AgregarArancel
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(11, 116)
+        Me.Label3.Location = New System.Drawing.Point(12, 126)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(68, 25)
         Me.Label3.TabIndex = 2
@@ -51,7 +51,7 @@ Partial Class AgregarArancel
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(122, 116)
+        Me.TextBox2.Location = New System.Drawing.Point(203, 124)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(209, 29)
         Me.TextBox2.TabIndex = 4
@@ -61,7 +61,7 @@ Partial Class AgregarArancel
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.X
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(17, 182)
+        Me.Button2.Location = New System.Drawing.Point(12, 202)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(128, 54)
         Me.Button2.TabIndex = 7
@@ -74,7 +74,7 @@ Partial Class AgregarArancel
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(228, 182)
+        Me.Button1.Location = New System.Drawing.Point(282, 202)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(130, 54)
         Me.Button1.TabIndex = 6
@@ -88,15 +88,15 @@ Partial Class AgregarArancel
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 50)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 25)
+        Me.Label1.Size = New System.Drawing.Size(125, 25)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombre"
+        Me.Label1.Text = "Descripción"
         '
-        'Agregar_Arancel
+        'AgregarArancel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(370, 248)
+        Me.ClientSize = New System.Drawing.Size(424, 268)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button2)
@@ -104,7 +104,7 @@ Partial Class AgregarArancel
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Agregar_Arancel"
+        Me.Name = "AgregarArancel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         Me.ResumeLayout(False)

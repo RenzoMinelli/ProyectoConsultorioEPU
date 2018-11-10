@@ -84,16 +84,16 @@
                 Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo8)
                 Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo9)
                 Me.grafica.Series("Número de Pacientes").Points.AddY(intervalo10)
-                Me.grafica.Series("Número de Pacientes").Points(0).AxisLabel = "0 a 10"
-                Me.grafica.Series("Número de Pacientes").Points(1).AxisLabel = "11 a 20"
-                Me.grafica.Series("Número de Pacientes").Points(2).AxisLabel = "21 a 30"
-                Me.grafica.Series("Número de Pacientes").Points(3).AxisLabel = "31 a 40"
-                Me.grafica.Series("Número de Pacientes").Points(4).AxisLabel = "41 a 50"
-                Me.grafica.Series("Número de Pacientes").Points(5).AxisLabel = "51 a 60"
-                Me.grafica.Series("Número de Pacientes").Points(6).AxisLabel = "61 a 70"
-                Me.grafica.Series("Número de Pacientes").Points(7).AxisLabel = "71 a 80"
-                Me.grafica.Series("Número de Pacientes").Points(8).AxisLabel = "81 a 90"
-                Me.grafica.Series("Número de Pacientes").Points(9).AxisLabel = "Mayores de 90"
+                Me.grafica.Series("Número de Pacientes").Points(0).AxisLabel = "0-10"
+                Me.grafica.Series("Número de Pacientes").Points(1).AxisLabel = "11-20"
+                Me.grafica.Series("Número de Pacientes").Points(2).AxisLabel = "21-30"
+                Me.grafica.Series("Número de Pacientes").Points(3).AxisLabel = "31-40"
+                Me.grafica.Series("Número de Pacientes").Points(4).AxisLabel = "41-50"
+                Me.grafica.Series("Número de Pacientes").Points(5).AxisLabel = "51-60"
+                Me.grafica.Series("Número de Pacientes").Points(6).AxisLabel = "61-70"
+                Me.grafica.Series("Número de Pacientes").Points(7).AxisLabel = "71-80"
+                Me.grafica.Series("Número de Pacientes").Points(8).AxisLabel = "81-90"
+                Me.grafica.Series("Número de Pacientes").Points(9).AxisLabel = "90+"
 
             Catch ex As Exception
                 MsgBox(ex.ToString)
@@ -807,8 +807,6 @@
                     nomtratamiento3 = DgvTratamientos.Rows(2).Cells(2).Value.ToString
 
                     nomtratamiento4 = DgvTratamientos.Rows(3).Cells(2).Value.ToString
-
-                    nomtratamiento5 = DgvTratamientos.Rows(4).Cells(2).Value.ToString
 
                     Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento1)
                     Me.grafica.Series("Total Tratamientos más usados").Points.AddY(tratamiento2)

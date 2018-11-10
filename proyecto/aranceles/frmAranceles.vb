@@ -88,7 +88,7 @@
         Try
 
             Dim busqueda As String = txbBuscarArancel.Text
-            Consulta = "select * from aranceles where descripcion like '" + busqueda + "%'"
+            Consulta = "select * from aranceles where descripcion like '" + busqueda + "%' and estado = 1"
             consultar()
             dgvAranceles.DataSource = Tabla
 
