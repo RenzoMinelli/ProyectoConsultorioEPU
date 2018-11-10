@@ -282,7 +282,7 @@
         frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-
+        frmRegistroMedico.dgvTratamientos.ClearSelection()
     End Sub
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMostrarAntecedentes.Click
@@ -441,5 +441,7 @@
         frmContenedor.MdiParent = frmMenuInicio
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
+        frmPlanTratamiento.dgvAranceles.ClearSelection()
+        frmPlanTratamiento.dgvArancelesSelect.ClearSelection()
     End Sub
 End Class

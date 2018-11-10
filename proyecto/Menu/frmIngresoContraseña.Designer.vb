@@ -22,6 +22,7 @@ Partial Class frmIngresoContraseña
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmIngresoContraseña))
         Me.btnguardar = New System.Windows.Forms.Button()
         Me.txtcontraseña = New System.Windows.Forms.TextBox()
         Me.txtrepcontraseña = New System.Windows.Forms.TextBox()
@@ -109,7 +110,7 @@ Partial Class frmIngresoContraseña
         Me.pnlBarra.BackColor = System.Drawing.Color.RoyalBlue
         Me.pnlBarra.Controls.Add(Me.pbCerrar)
         Me.pnlBarra.Location = New System.Drawing.Point(2, 1)
-        Me.pnlBarra.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlBarra.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlBarra.Name = "pnlBarra"
         Me.pnlBarra.Size = New System.Drawing.Size(614, 41)
         Me.pnlBarra.TabIndex = 7
@@ -137,6 +138,7 @@ Partial Class frmIngresoContraseña
         Me.Controls.Add(Me.txtcontraseña)
         Me.Controls.Add(Me.btnguardar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmIngresoContraseña"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ingreso_contraseña"

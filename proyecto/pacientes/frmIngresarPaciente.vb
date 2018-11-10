@@ -267,7 +267,7 @@
         txbCedula.ForeColor = Color.Black
     End Sub
 
-    Private Sub txbCedula_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub txbCedula_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbCedula.TextChanged
 
 
         If verificarCedula(txbCedula.Text) = False And txbCedula.ForeColor <> Color.Gray Then
@@ -281,15 +281,8 @@
         End If
     End Sub
 
-    Private Sub btnAgregarEstadoDientes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Hide()
-        frmContenedor = pnlfondo
-        frmContenedor.MdiParent = frmMenuInicio
-        frmContenedor.Dock = DockStyle.Fill
-        frmContenedor.Show()
-    End Sub
 
-    Private Sub txbTelefono_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub txbTelefono_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbTelefono.TextChanged
         If IsNumeric(txbTelefono.Text) Or txbTelefono.ForeColor = Color.Gray Then
             epTelefono.SetError(txbTelefono, "")
         Else
@@ -299,4 +292,5 @@
    
 
  
+
 End Class
