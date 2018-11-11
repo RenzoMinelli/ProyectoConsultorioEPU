@@ -112,8 +112,7 @@
                                         Else
                                             HoraAuxFinal = HoraAux
                                         End If
-                                        MsgBox("se acerco")
-
+                                       
                                         If (horaCita <= HoraAuxFinal And horaCita >= HoraAux) Or (horaCitaFinal <= HoraAuxFinal And horaCitaFinal >= HoraAux) Or (horaCita <= HoraAux And horaCitaFinal >= HoraAuxFinal) Then
 
                                             control = 1
