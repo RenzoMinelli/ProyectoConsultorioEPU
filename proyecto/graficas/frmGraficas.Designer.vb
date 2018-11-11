@@ -23,9 +23,9 @@ Partial Class frmGraficas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.dgvInfo = New System.Windows.Forms.DataGridView()
         Me.pbconfig = New System.Windows.Forms.PictureBox()
@@ -83,18 +83,18 @@ Partial Class frmGraficas
         '
         'grafica
         '
-        ChartArea6.Name = "Pacientes"
-        Me.grafica.ChartAreas.Add(ChartArea6)
-        Legend6.Name = "Legend1"
-        Me.grafica.Legends.Add(Legend6)
+        ChartArea1.Name = "Pacientes"
+        Me.grafica.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.grafica.Legends.Add(Legend1)
         Me.grafica.Location = New System.Drawing.Point(1, 37)
         Me.grafica.Name = "grafica"
-        Series6.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        Series6.ChartArea = "Pacientes"
-        Series6.Color = System.Drawing.Color.RoyalBlue
-        Series6.Legend = "Legend1"
-        Series6.Name = "Número de Pacientes"
-        Me.grafica.Series.Add(Series6)
+        Series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        Series1.ChartArea = "Pacientes"
+        Series1.Color = System.Drawing.Color.RoyalBlue
+        Series1.Legend = "Legend1"
+        Series1.Name = "Número de Pacientes"
+        Me.grafica.Series.Add(Series1)
         Me.grafica.Size = New System.Drawing.Size(990, 533)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
@@ -416,9 +416,9 @@ Partial Class frmGraficas
         Me.lbl180.Location = New System.Drawing.Point(52, 5)
         Me.lbl180.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl180.Name = "lbl180"
-        Me.lbl180.Size = New System.Drawing.Size(50, 24)
+        Me.lbl180.Size = New System.Drawing.Size(39, 24)
         Me.lbl180.TabIndex = 0
-        Me.lbl180.Text = "180°"
+        Me.lbl180.Text = "50°"
         '
         'DgvTratamientos
         '
@@ -438,6 +438,7 @@ Partial Class frmGraficas
         Me.dtpAnio.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpAnio.Location = New System.Drawing.Point(1056, 350)
         Me.dtpAnio.Name = "dtpAnio"
+        Me.dtpAnio.ShowUpDown = True
         Me.dtpAnio.Size = New System.Drawing.Size(69, 31)
         Me.dtpAnio.TabIndex = 25
         '

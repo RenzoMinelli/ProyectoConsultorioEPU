@@ -100,7 +100,7 @@
             End Try
         End If
 
-
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 10
 
     End Sub
 
@@ -653,7 +653,7 @@
 
 
     Private Sub PnlOp1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnl180.MouseClick
-        grafica.ChartAreas(0).Area3DStyle.Rotation = 180
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 50
     End Sub
 
 
@@ -674,7 +674,7 @@
     End Sub
 
     Private Sub Lblop1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbl180.Click
-        grafica.ChartAreas(0).Area3DStyle.Rotation = 180
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 50
 
     End Sub
 
@@ -878,9 +878,11 @@
 
     End Sub
 
-    Private Sub LblOp2_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lbl140.MouseClick
+    Private Sub pnl140_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnl140.MouseClick
         grafica.ChartAreas(0).Area3DStyle.Rotation = 140
     End Sub
+
+   
 
     Private Sub PnlOp2_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnl140.MouseEnter
         pnl140.BackColor = Color.MidnightBlue
@@ -898,20 +900,16 @@
         pnl140.BackColor = Color.RoyalBlue
     End Sub
 
-    Private Sub LblOp3_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblPredeterminado.MouseClick
-        grafica.ChartAreas(0).Area3DStyle.Rotation = 30
-    End Sub
-
-    Private Sub PnlOp3_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlPredeterminado.MouseClick
-        grafica.ChartAreas(0).Area3DStyle.Rotation = 10
-    End Sub
-
     Private Sub LblOp3_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblPredeterminado.MouseEnter
         pnlPredeterminado.BackColor = Color.MidnightBlue
     End Sub
 
     Private Sub LblOp3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblPredeterminado.MouseLeave
         pnlPredeterminado.BackColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub pnlPredeterminado_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlPredeterminado.MouseClick
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 10
     End Sub
 
     Private Sub PnlOp3_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlPredeterminado.MouseEnter
@@ -1101,4 +1099,16 @@
     Private Sub lblEdadPaciente_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles lblEdadPaciente.MouseLeave
         pnlEdadPaciente.BackColor = Color.RoyalBlue
     End Sub
+
+    Private Sub lbl140_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbl140.Click
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 140
+    End Sub
+
+  
+
+    Private Sub lblPredeterminado_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblPredeterminado.Click
+        grafica.ChartAreas(0).Area3DStyle.Rotation = 10
+    End Sub
+
+   
 End Class
