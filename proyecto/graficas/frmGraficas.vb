@@ -685,7 +685,7 @@
         Dim numero As Integer = 0
 
         Try
-            Consulta = "select count(*) from plan_tratamiento group by id_a;"
+            Consulta = "select count(*) from plan_tratamiento WHERE id_a is not NULL group by id_a ;"
             consultar()
 
             For Each row In Tabla.Rows
@@ -706,7 +706,7 @@
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
 
-                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a WHERE p.id_a is not NULL group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
 
@@ -727,7 +727,7 @@
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
 
-                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a WHERE p.id_a is not NULL group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
 
@@ -757,7 +757,7 @@
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
 
-                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a WHERE p.id_a is not NULL group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
 
@@ -791,7 +791,7 @@
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
 
-                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a WHERE p.id_a is not NULL group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
 
@@ -829,7 +829,7 @@
                     grafica.Series.Clear()
                     grafica.Series.Add("Total Tratamientos más usados")
 
-                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a group by p.id_a order by 1 desc;"
+                    Consulta = "select count(*), p.id_a , a.descripcion from plan_tratamiento p left join aranceles a on a.id_a = p.id_a WHERE p.id_a is not NULL group by p.id_a order by 1 desc;"
                     consultar()
                     DgvTratamientos.DataSource = Tabla
 
