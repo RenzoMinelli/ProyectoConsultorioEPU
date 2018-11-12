@@ -20,13 +20,13 @@
             pnlPacientes.Enabled = False
             pnlPacientes2.Enabled = False
 
-
-            frmContenedor = frmAranceles
+            frmContenedor = frmCitas
             frmContenedor.MdiParent = Me
             frmContenedor.Dock = DockStyle.Fill
             frmContenedor.Show()
+            lblCitas.ForeColor = Color.White
 
-            lblAranceles.ForeColor = Color.White
+
 
         ElseIf user = "odontologo" Or user = "root" Then
 
@@ -36,7 +36,6 @@
             frmContenedor.MdiParent = Me
             frmContenedor.Dock = DockStyle.Fill
             frmContenedor.Show()
-
             lblCitas.ForeColor = Color.White
 
         End If
