@@ -103,7 +103,7 @@
 
 
         If dgvHora.CurrentCell.Value = "" Then
-           
+
             btnMarcarCita.Hide()
             btnCambiarCita.Hide()
             btnElimiarCita.Hide()
@@ -118,9 +118,10 @@
         Dim verificar As Integer = 0
         Dim indice As Integer = 1
         Dim row As Integer
+
         If dgvHora.CurrentCell.Value <> "" Then
             While verificar = 0
-                If dgvHora.CurrentRow.Index - indice > 0 Then
+                If dgvHora.CurrentRow.Index - indice >= 0 Then
                     If dgvHora.Rows(dgvHora.CurrentRow.Index - indice).Cells(dgvHora.CurrentCell.ColumnIndex).Value = dgvHora.CurrentCell.Value Then
 
                         indice += 1
@@ -367,7 +368,7 @@
                     Next
 
                 End If
-                
+
 
                 horadgv = TimeSpan.Parse(dgvHora.Rows(row).Cells(0).Value.ToString)
 

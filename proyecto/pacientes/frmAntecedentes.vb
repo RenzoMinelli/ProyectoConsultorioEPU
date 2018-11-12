@@ -82,8 +82,6 @@
 
         Else
 
-            MsgBox("Este usuario no tiene " + vbNewLine + "antecedentes registrados", MsgBoxStyle.Exclamation)
-            frmPacientes.Show()
 
         End If
 

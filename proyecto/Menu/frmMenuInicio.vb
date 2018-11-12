@@ -8,17 +8,6 @@
 
     Private Sub Menu_Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-
-
-
-
-        Me.WindowState = FormWindowState.Maximized
-        pbMaximizar.Image = My.Resources.IconoVistaNormal
-        pbMinimizar.Location = New Point(pnlBarraSuperior.Width - 110, pbMinimizar.Location.Y)
-        pbCerrar.Location = New Point(pnlBarraSuperior.Width - 50, pbCerrar.Location.Y)
-        pbMaximizar.Location = New Point(pnlBarraSuperior.Width - 80, pbMaximizar.Location.Y)
-        con = 1
-
         xf = Me.Location.X
         yf = Me.Location.Y
 

@@ -113,6 +113,7 @@
             Consulta = "select contrasenia from usuarios where contrasenia = sha2('" + txtcontraseña.Text + "', 256) and usuario = 'odo';"
             consultar()
             Dim verifi As Integer = 0
+
             For Each row In Tabla.Rows
                 If Not IsDBNull(row("contrasenia")) Then
                     verifi = 1

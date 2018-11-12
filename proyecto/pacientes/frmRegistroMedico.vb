@@ -371,7 +371,7 @@ Public Class frmRegistroMedico
     Private Sub odontograma2()
 
         Try
-            cambiarUsuario("root", "")
+
             Consulta = "select * from estado_dientes where id_p = '" + id_p.ToString + "'   order by fecha asc;"
             consultar()
             dgvEstadoDiente.DataSource = Tabla
@@ -2101,7 +2101,7 @@ Public Class frmRegistroMedico
     Private Sub odontograma1()
 
         Try
-            cambiarUsuario("root", "")
+
             Consulta = "select * from estado_dientes where id_p = '" + id_p.ToString + "' and fecha = ( select min(fecha) from estado_dientes where id_p ='" + id_p.ToString + "' );"
             consultar()
             dgvEstadoDiente.DataSource = Tabla
