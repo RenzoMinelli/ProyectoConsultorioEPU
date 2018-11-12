@@ -110,7 +110,8 @@
             Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "' and terminado = 0;"
             consultar()
             dgvTratamientos.DataSource = Tabla
-
+            dgvTratamientos.Columns(0).HeaderText = "Descripción General"
+            dgvTratamientos.Columns(1).HeaderText = "Descripción Específica"
         Catch ex As Exception
 
         End Try

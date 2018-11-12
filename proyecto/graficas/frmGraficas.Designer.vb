@@ -413,7 +413,7 @@ Partial Class frmGraficas
         Me.lbl180.AutoSize = True
         Me.lbl180.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl180.ForeColor = System.Drawing.Color.MintCream
-        Me.lbl180.Location = New System.Drawing.Point(52, 5)
+        Me.lbl180.Location = New System.Drawing.Point(61, 5)
         Me.lbl180.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl180.Name = "lbl180"
         Me.lbl180.Size = New System.Drawing.Size(39, 24)

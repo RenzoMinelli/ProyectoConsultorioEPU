@@ -59,7 +59,7 @@ Partial Class frmLogin
         Me.btnodontologo.Name = "btnodontologo"
         Me.btnodontologo.Size = New System.Drawing.Size(451, 106)
         Me.btnodontologo.TabIndex = 1
-        Me.btnodontologo.Text = "Odontologo"
+        Me.btnodontologo.Text = "Odontólogo"
         Me.btnodontologo.UseVisualStyleBackColor = True
         '
         'lblingrusuario
@@ -107,7 +107,7 @@ Partial Class frmLogin
         Me.btnAtras.Name = "btnAtras"
         Me.btnAtras.Size = New System.Drawing.Size(216, 89)
         Me.btnAtras.TabIndex = 9
-        Me.btnAtras.Text = "Atras"
+        Me.btnAtras.Text = "Atrás"
         Me.btnAtras.UseVisualStyleBackColor = True
         '
         'pnlBarra

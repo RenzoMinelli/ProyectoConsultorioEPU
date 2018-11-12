@@ -139,7 +139,7 @@ Module ModuloUtilidades
             Dim msgbv As New MsgBoxVersatil()
 
             msgbv.lblOpcional.Visible = True
-            msgbv.lblTexto.Text = "Que realizo"
+            msgbv.lblTexto.Text = "¿Qué realizo?"
             msgbv.lblOpcional.Text = "Monto"
             msgbv.btnNo.Visible = True
             msgbv.btnSi.Visible = True
