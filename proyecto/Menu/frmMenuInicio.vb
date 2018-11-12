@@ -26,10 +26,10 @@
         If user = "funcionario" Then
 
 
-            lblPacientes.Hide()
-            pbPacientes.Hide()
-            pnlPacientes.Hide()
-            pnlPacientes2.Hide()
+            lblPacientes.Enabled = False
+            pbPacientes.Enabled = False
+            pnlPacientes.Enabled = False
+            pnlPacientes2.Enabled = False
 
 
             frmContenedor = frmAranceles
@@ -74,7 +74,6 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-
         lblPacientes.ForeColor = Color.White
         lblAranceles.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
@@ -110,7 +109,7 @@
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
         lblGraficas.ForeColor = Color.RoyalBlue
-        'frmCitas.dgvLunes.ClearSelection()
+
 
     End Sub
 
@@ -179,7 +178,6 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-
         lblFinanzas.ForeColor = Color.White
         lblPacientes.ForeColor = Color.RoyalBlue
         lblAranceles.ForeColor = Color.RoyalBlue
@@ -196,9 +194,9 @@
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.White
         lblAranceles.ForeColor = Color.RoyalBlue
-        lblReloj.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
         lblFinanzas.ForeColor = Color.RoyalBlue
+        lblGraficas.ForeColor = Color.RoyalBlue
         frmPacientes.dgvPacientes.ClearSelection()
     End Sub
 
@@ -247,11 +245,13 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        lblPacientes.ForeColor = Color.RoyalBlue
         lblAranceles.ForeColor = Color.White
-        lblReloj.ForeColor = Color.RoyalBlue
+        lblGraficas.ForeColor = Color.RoyalBlue
+        lblPacientes.ForeColor = Color.RoyalBlue
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
+        frmAranceles.dgvAranceles.ClearSelection()
+        frmAranceles.dgvArancelesUtilizados.ClearSelection()
     End Sub
 
 
@@ -263,9 +263,10 @@
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.White
         lblAranceles.ForeColor = Color.RoyalBlue
-        lblReloj.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
         lblFinanzas.ForeColor = Color.RoyalBlue
+        lblGraficas.ForeColor = Color.RoyalBlue
+        frmPacientes.dgvPacientes.ClearSelection()
     End Sub
 
     Private Sub Panel9_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlCitas.Click
@@ -276,9 +277,9 @@
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.RoyalBlue
         lblAranceles.ForeColor = Color.RoyalBlue
-        lblReloj.ForeColor = Color.RoyalBlue
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
+        lblGraficas.ForeColor = Color.RoyalBlue
     End Sub
 
 
@@ -288,11 +289,13 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-        lblPacientes.ForeColor = Color.RoyalBlue
         lblAranceles.ForeColor = Color.White
-        lblReloj.ForeColor = Color.RoyalBlue
+        lblGraficas.ForeColor = Color.RoyalBlue
+        lblPacientes.ForeColor = Color.RoyalBlue
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
+        frmAranceles.dgvAranceles.ClearSelection()
+        frmAranceles.dgvArancelesUtilizados.ClearSelection()
     End Sub
 
     Private Sub Panel13_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlFinanzas.Click
@@ -301,11 +304,10 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
-
         lblFinanzas.ForeColor = Color.White
         lblPacientes.ForeColor = Color.RoyalBlue
         lblAranceles.ForeColor = Color.RoyalBlue
-        lblReloj.ForeColor = Color.RoyalBlue
+        lblGraficas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
     End Sub
 
@@ -316,11 +318,12 @@
         frmContenedor.MdiParent = Me
         frmContenedor.Dock = DockStyle.Fill
         frmContenedor.Show()
+        lblFinanzas.ForeColor = Color.White
         lblPacientes.ForeColor = Color.RoyalBlue
         lblAranceles.ForeColor = Color.RoyalBlue
-        lblReloj.ForeColor = Color.RoyalBlue
-        lblFinanzas.ForeColor = Color.White
+        lblGraficas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
+
     End Sub
 
     Private Sub PictureBox9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbMaximizar.Click
@@ -361,10 +364,9 @@
         frmContenedor.Show()
         lblPacientes.ForeColor = Color.RoyalBlue
         lblAranceles.ForeColor = Color.RoyalBlue
-        lblReloj.ForeColor = Color.RoyalBlue
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
-        'frmCitas.dgvLunes.ClearSelection()
+        lblGraficas.ForeColor = Color.RoyalBlue
     End Sub
 
     Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblGraficas.Click
@@ -381,8 +383,33 @@
         frmAranceles.dgvAranceles.ClearSelection()
         frmAranceles.dgvArancelesUtilizados.ClearSelection()
     End Sub
+    Private Sub pbGraficas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbGraficas.Click
+        Me.ActiveMdiChild.Dispose()
+        frmContenedor = frmGraficas
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+        lblPacientes.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblGraficas.ForeColor = Color.White
+        lblFinanzas.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
+        frmAranceles.dgvAranceles.ClearSelection()
+        frmAranceles.dgvArancelesUtilizados.ClearSelection()
+    End Sub
 
-
-   
-    
+    Private Sub pnlGraficas_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlGraficas.Click
+        Me.ActiveMdiChild.Dispose()
+        frmContenedor = frmGraficas
+        frmContenedor.MdiParent = Me
+        frmContenedor.Dock = DockStyle.Fill
+        frmContenedor.Show()
+        lblPacientes.ForeColor = Color.RoyalBlue
+        lblAranceles.ForeColor = Color.RoyalBlue
+        lblGraficas.ForeColor = Color.White
+        lblFinanzas.ForeColor = Color.RoyalBlue
+        lblCitas.ForeColor = Color.RoyalBlue
+        frmAranceles.dgvAranceles.ClearSelection()
+        frmAranceles.dgvArancelesUtilizados.ClearSelection()
+    End Sub
 End Class
