@@ -49,7 +49,7 @@ Partial Class frmModificarPaciente
         'txbNombre
         '
         Me.txbNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbNombre.Location = New System.Drawing.Point(325, 91)
+        Me.txbNombre.Location = New System.Drawing.Point(346, 91)
         Me.txbNombre.Name = "txbNombre"
         Me.txbNombre.Size = New System.Drawing.Size(234, 35)
         Me.txbNombre.TabIndex = 1
@@ -77,7 +77,7 @@ Partial Class frmModificarPaciente
         'txbCedula
         '
         Me.txbCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbCedula.Location = New System.Drawing.Point(325, 47)
+        Me.txbCedula.Location = New System.Drawing.Point(346, 47)
         Me.txbCedula.Name = "txbCedula"
         Me.txbCedula.Size = New System.Drawing.Size(234, 35)
         Me.txbCedula.TabIndex = 0
@@ -98,14 +98,14 @@ Partial Class frmModificarPaciente
         Me.lblEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEnviadoPor.Location = New System.Drawing.Point(26, 237)
         Me.lblEnviadoPor.Name = "lblEnviadoPor"
-        Me.lblEnviadoPor.Size = New System.Drawing.Size(297, 29)
+        Me.lblEnviadoPor.Size = New System.Drawing.Size(309, 29)
         Me.lblEnviadoPor.TabIndex = 6
-        Me.lblEnviadoPor.Text = "Por quién fue enviado (op)"
+        Me.lblEnviadoPor.Text = "Por quién fue enviado (opc)"
         '
         'txbEnviadoPor
         '
         Me.txbEnviadoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbEnviadoPor.Location = New System.Drawing.Point(325, 234)
+        Me.txbEnviadoPor.Location = New System.Drawing.Point(346, 234)
         Me.txbEnviadoPor.Name = "txbEnviadoPor"
         Me.txbEnviadoPor.Size = New System.Drawing.Size(234, 35)
         Me.txbEnviadoPor.TabIndex = 4
@@ -123,7 +123,7 @@ Partial Class frmModificarPaciente
         'txbDireccionPersonal
         '
         Me.txbDireccionPersonal.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbDireccionPersonal.Location = New System.Drawing.Point(325, 277)
+        Me.txbDireccionPersonal.Location = New System.Drawing.Point(346, 277)
         Me.txbDireccionPersonal.Name = "txbDireccionPersonal"
         Me.txbDireccionPersonal.Size = New System.Drawing.Size(234, 35)
         Me.txbDireccionPersonal.TabIndex = 5
@@ -134,14 +134,14 @@ Partial Class frmModificarPaciente
         Me.lblDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDireccionTrabajo.Location = New System.Drawing.Point(26, 326)
         Me.lblDireccionTrabajo.Name = "lblDireccionTrabajo"
-        Me.lblDireccionTrabajo.Size = New System.Drawing.Size(279, 29)
+        Me.lblDireccionTrabajo.Size = New System.Drawing.Size(291, 29)
         Me.lblDireccionTrabajo.TabIndex = 10
-        Me.lblDireccionTrabajo.Text = "Dirección de trabajo (op)"
+        Me.lblDireccionTrabajo.Text = "Dirección de trabajo (opc)"
         '
         'txbDireccionTrabajo
         '
         Me.txbDireccionTrabajo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbDireccionTrabajo.Location = New System.Drawing.Point(325, 321)
+        Me.txbDireccionTrabajo.Location = New System.Drawing.Point(346, 321)
         Me.txbDireccionTrabajo.Name = "txbDireccionTrabajo"
         Me.txbDireccionTrabajo.Size = New System.Drawing.Size(234, 35)
         Me.txbDireccionTrabajo.TabIndex = 6
@@ -177,7 +177,7 @@ Partial Class frmModificarPaciente
         Me.btnModificarAntecedentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarAntecedentes.Location = New System.Drawing.Point(39, 371)
         Me.btnModificarAntecedentes.Name = "btnModificarAntecedentes"
-        Me.btnModificarAntecedentes.Size = New System.Drawing.Size(520, 53)
+        Me.btnModificarAntecedentes.Size = New System.Drawing.Size(541, 53)
         Me.btnModificarAntecedentes.TabIndex = 7
         Me.btnModificarAntecedentes.Text = "Modificar Antecedentes"
         Me.btnModificarAntecedentes.UseVisualStyleBackColor = True
@@ -212,7 +212,7 @@ Partial Class frmModificarPaciente
         'txbTelefono
         '
         Me.txbTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbTelefono.Location = New System.Drawing.Point(325, 184)
+        Me.txbTelefono.Location = New System.Drawing.Point(346, 184)
         Me.txbTelefono.Name = "txbTelefono"
         Me.txbTelefono.Size = New System.Drawing.Size(234, 35)
         Me.txbTelefono.TabIndex = 3
@@ -240,7 +240,7 @@ Partial Class frmModificarPaciente
         'txbApellido
         '
         Me.txbApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbApellido.Location = New System.Drawing.Point(325, 138)
+        Me.txbApellido.Location = New System.Drawing.Point(346, 138)
         Me.txbApellido.Name = "txbApellido"
         Me.txbApellido.Size = New System.Drawing.Size(234, 35)
         Me.txbApellido.TabIndex = 2

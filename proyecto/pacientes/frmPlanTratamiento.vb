@@ -187,7 +187,7 @@ Public Class frmPlanTratamiento
 
                 If listaID_R.Contains(dgvArancelesSelect.Rows(x).Cells(4).Value) Then
 
-                    Consulta = "update plan_tratamiento set descripcion = '" + dgvArancelesSelect.Rows(x).Cells(3).Value + "', set precio = '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "' where id_pl = '" + dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "';"
+                    Consulta = "update plan_tratamiento set descripcion = '" + dgvArancelesSelect.Rows(x).Cells(3).Value + "', precio = '" + dgvArancelesSelect.Rows(x).Cells(2).Value.ToString + "' where id_pl = '" + dgvArancelesSelect.Rows(x).Cells(4).Value.ToString + "';"
                     consultar()
 
                     listaID_R.Remove(dgvArancelesSelect.Rows(x).Cells(4).Value)

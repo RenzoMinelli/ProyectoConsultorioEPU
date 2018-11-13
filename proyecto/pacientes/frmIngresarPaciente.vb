@@ -31,7 +31,7 @@
                 dgvPacientesCedulas.DataSource = Tabla
 
                 If Not dgvPacientesCedulas.RowCount = 0 Then
-                    MsgBox("Ya existe usuario con esa cedula", MsgBoxStyle.Exclamation)
+                    MsgBox("Ya existe un paciente con esta cédula", MsgBoxStyle.Exclamation)
                 Else
                     If verificarCedula(txbCedula.Text) = True Then
                         If alergicos = False And diabeticos = False And cardiovasculares = False And fiebre_reumatica = False And coagulacion = False And odontologicos = False And farmacos_recibidos = False And familiares = False And tratamiento_medico = False And observaciones = "" Then
@@ -72,13 +72,13 @@
 
                                     consultar()
 
-                                    MsgBox("Agregado con Exito", MsgBoxStyle.Information)
+                                    MsgBox("Agregado con éxito", MsgBoxStyle.Information)
 
                                     Me.Dispose()
                                     frmPacientes.Show()
                                     frmPacientes.actTabla(1)
                                 Catch ex As Exception
-                                    MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
+                                    MsgBox("Error al ingresar paciente", MsgBoxStyle.Exclamation)
                                 End Try
 
 
@@ -124,7 +124,7 @@
 
 
                             Catch ex As Exception
-                                MsgBox("Error al ingresar usuario", MsgBoxStyle.Exclamation)
+                                MsgBox("Error al ingresar paciente", MsgBoxStyle.Exclamation)
                             End Try
 
                             Try
@@ -139,7 +139,7 @@
                                 consultar()
 
 
-                                MsgBox("Agregado con Exito", MsgBoxStyle.Information)
+                                MsgBox("Agregado con éxito", MsgBoxStyle.Information)
 
                                 Me.Dispose()
                                 frmPacientes.Show()
@@ -273,7 +273,7 @@
         If verificarCedula(txbCedula.Text) = False And txbCedula.ForeColor <> Color.Gray Then
 
 
-            epCedula.SetError(txbCedula, "No es una cedula válida")
+            epCedula.SetError(txbCedula, "No es una cédula válida")
 
         ElseIf verificarCedula(txbCedula.Text) = True Then
 

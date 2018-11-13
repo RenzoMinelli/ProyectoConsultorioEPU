@@ -125,7 +125,7 @@
 
 
                 End If
-                MsgBox("Guardado con Exito", MsgBoxStyle.Information)
+                MsgBox("Guardado con éxito", MsgBoxStyle.Information)
 
                 frmPacientes.Show()
                 frmPacientes.actTabla(1)

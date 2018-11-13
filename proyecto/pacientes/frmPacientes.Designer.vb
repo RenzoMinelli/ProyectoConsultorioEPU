@@ -92,7 +92,7 @@ Partial Class frmPacientes
         Me.Panel1.ForeColor = System.Drawing.Color.Black
         Me.Panel1.Location = New System.Drawing.Point(556, 22)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(611, 465)
+        Me.Panel1.Size = New System.Drawing.Size(605, 465)
         Me.Panel1.TabIndex = 3
         '
         'lblEstado
@@ -136,9 +136,9 @@ Partial Class frmPacientes
         'btnMostrarAntecedentes
         '
         Me.btnMostrarAntecedentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMostrarAntecedentes.Location = New System.Drawing.Point(12, 402)
+        Me.btnMostrarAntecedentes.Location = New System.Drawing.Point(7, 408)
         Me.btnMostrarAntecedentes.Name = "btnMostrarAntecedentes"
-        Me.btnMostrarAntecedentes.Size = New System.Drawing.Size(586, 54)
+        Me.btnMostrarAntecedentes.Size = New System.Drawing.Size(595, 54)
         Me.btnMostrarAntecedentes.TabIndex = 15
         Me.btnMostrarAntecedentes.Text = "Mostrar Antecedentes"
         Me.btnMostrarAntecedentes.UseVisualStyleBackColor = True
@@ -303,7 +303,7 @@ Partial Class frmPacientes
         Me.pnlTapa.ForeColor = System.Drawing.Color.Black
         Me.pnlTapa.Location = New System.Drawing.Point(556, 22)
         Me.pnlTapa.Name = "pnlTapa"
-        Me.pnlTapa.Size = New System.Drawing.Size(611, 465)
+        Me.pnlTapa.Size = New System.Drawing.Size(605, 465)
         Me.pnlTapa.TabIndex = 6
         '
         'lblCartel
@@ -479,7 +479,7 @@ Partial Class frmPacientes
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1179, 684)
+        Me.ClientSize = New System.Drawing.Size(1189, 684)
         Me.Controls.Add(Me.txbBusqueda)
         Me.Controls.Add(Me.btnTratamiento)
         Me.Controls.Add(Me.pnlTapa)

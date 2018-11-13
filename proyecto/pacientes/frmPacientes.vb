@@ -113,7 +113,7 @@
         If EstadoPacientes = 1 Then
 
             'Consultar si desea realmente volverlo inactivo
-            MuestraMsgBoxVersatil("¿Seguro que desea volver inactivo al paciente " + dgvPacientes.CurrentRow.Cells(3).Value + " con la cedula " + dgvPacientes.CurrentRow.Cells(1).Value + "?", 0)
+            MuestraMsgBoxVersatil("¿Seguro que desea volver inactivo al paciente " + dgvPacientes.CurrentRow.Cells(3).Value + " con la cédula " + dgvPacientes.CurrentRow.Cells(1).Value + "?", 0)
 
 
             If respint = 1 Then
@@ -146,7 +146,7 @@
         Else 'Si el estado del paciente es inactivo
 
             'Consultamos si desea realmente volverlo activo
-            MuestraMsgBoxVersatil("¿Seguro que desea volver activo al paciente " + dgvPacientes.CurrentRow.Cells(3).Value + " con la cedula " + dgvPacientes.CurrentRow.Cells(1).Value + "?", 0)
+            MuestraMsgBoxVersatil("¿Seguro que desea volver activo al paciente " + dgvPacientes.CurrentRow.Cells(3).Value + " con la cédula " + dgvPacientes.CurrentRow.Cells(1).Value + "?", 0)
             If respint = 1 Then
 
                 'Si es así, intentamos actualizar la informacion del paciente en la base de datos cambiando el campo estado
