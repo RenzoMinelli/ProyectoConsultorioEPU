@@ -364,7 +364,7 @@ Public Class frmRegistroMedico
         odontograma2()
 
         cbTratamientos.SelectedIndex = 0
-        '  PnlDiente2_21c2.Parent = Panel5
+        lblNombreP.Text += vbNewLine + frmPacientes.nombre + " " + frmPacientes.apellido
     End Sub
 
     
@@ -3772,4 +3772,7 @@ Public Class frmRegistroMedico
 
 
    
+    Private Sub Panel01477_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel01477.Paint
+
+    End Sub
 End Class

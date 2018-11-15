@@ -48,6 +48,7 @@ Partial Class frmPlanTratamiento
         Me.dgvDatos = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnMover = New System.Windows.Forms.Button()
+        Me.lblNombreP = New System.Windows.Forms.Label()
         Me.txbBusqueda = New WindowsApplication1.WaterMarkTextBox()
         CType(Me.dgvAranceles, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvArancelesSelect, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,7 +82,7 @@ Partial Class frmPlanTratamiento
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvAranceles.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvAranceles.Location = New System.Drawing.Point(38, 112)
+        Me.dgvAranceles.Location = New System.Drawing.Point(35, 205)
         Me.dgvAranceles.Name = "dgvAranceles"
         Me.dgvAranceles.ReadOnly = True
         Me.dgvAranceles.RowHeadersVisible = False
@@ -93,7 +94,7 @@ Partial Class frmPlanTratamiento
         '
         Me.lblAranceles.AutoSize = True
         Me.lblAranceles.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAranceles.Location = New System.Drawing.Point(33, 12)
+        Me.lblAranceles.Location = New System.Drawing.Point(30, 105)
         Me.lblAranceles.Name = "lblAranceles"
         Me.lblAranceles.Size = New System.Drawing.Size(291, 29)
         Me.lblAranceles.TabIndex = 1
@@ -103,7 +104,7 @@ Partial Class frmPlanTratamiento
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(638, 12)
+        Me.Label1.Location = New System.Drawing.Point(635, 105)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(258, 29)
         Me.Label1.TabIndex = 2
@@ -132,7 +133,7 @@ Partial Class frmPlanTratamiento
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvArancelesSelect.DefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvArancelesSelect.Location = New System.Drawing.Point(624, 53)
+        Me.dgvArancelesSelect.Location = New System.Drawing.Point(621, 146)
         Me.dgvArancelesSelect.Name = "dgvArancelesSelect"
         Me.dgvArancelesSelect.ReadOnly = True
         Me.dgvArancelesSelect.RowHeadersVisible = False
@@ -175,7 +176,7 @@ Partial Class frmPlanTratamiento
         Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoBorrar2
         Me.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEliminar.Location = New System.Drawing.Point(975, 405)
+        Me.btnEliminar.Location = New System.Drawing.Point(972, 498)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(159, 92)
         Me.btnEliminar.TabIndex = 5
@@ -189,7 +190,7 @@ Partial Class frmPlanTratamiento
         Me.btnModificarPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarPrecio.Image = Global.WindowsApplication1.My.Resources.Resources.IconoMoneda
         Me.btnModificarPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModificarPrecio.Location = New System.Drawing.Point(815, 405)
+        Me.btnModificarPrecio.Location = New System.Drawing.Point(812, 498)
         Me.btnModificarPrecio.Name = "btnModificarPrecio"
         Me.btnModificarPrecio.Size = New System.Drawing.Size(159, 92)
         Me.btnModificarPrecio.TabIndex = 6
@@ -216,7 +217,7 @@ Partial Class frmPlanTratamiento
         Me.btnModificarDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarDesc.Image = Global.WindowsApplication1.My.Resources.Resources.IconoEditar
         Me.btnModificarDesc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModificarDesc.Location = New System.Drawing.Point(642, 405)
+        Me.btnModificarDesc.Location = New System.Drawing.Point(639, 498)
         Me.btnModificarDesc.Name = "btnModificarDesc"
         Me.btnModificarDesc.Size = New System.Drawing.Size(173, 92)
         Me.btnModificarDesc.TabIndex = 9
@@ -230,7 +231,7 @@ Partial Class frmPlanTratamiento
         Me.btnMarcar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMarcar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoMarcarListo
         Me.btnMarcar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnMarcar.Location = New System.Drawing.Point(815, 503)
+        Me.btnMarcar.Location = New System.Drawing.Point(812, 596)
         Me.btnMarcar.Name = "btnMarcar"
         Me.btnMarcar.Size = New System.Drawing.Size(159, 87)
         Me.btnMarcar.TabIndex = 10
@@ -340,7 +341,7 @@ Partial Class frmPlanTratamiento
         Me.btnMover.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMover.Image = Global.WindowsApplication1.My.Resources.Resources.IconoFlechaIzquierda
         Me.btnMover.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnMover.Location = New System.Drawing.Point(527, 204)
+        Me.btnMover.Location = New System.Drawing.Point(524, 297)
         Me.btnMover.Name = "btnMover"
         Me.btnMover.Size = New System.Drawing.Size(86, 76)
         Me.btnMover.TabIndex = 58
@@ -349,10 +350,20 @@ Partial Class frmPlanTratamiento
         Me.btnMover.UseVisualStyleBackColor = True
         Me.btnMover.Visible = False
         '
+        'lblNombreP
+        '
+        Me.lblNombreP.AutoSize = True
+        Me.lblNombreP.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombreP.Location = New System.Drawing.Point(30, 23)
+        Me.lblNombreP.Name = "lblNombreP"
+        Me.lblNombreP.Size = New System.Drawing.Size(328, 31)
+        Me.lblNombreP.TabIndex = 60
+        Me.lblNombreP.Text = "Paciente Seleccionado: "
+        '
         'txbBusqueda
         '
         Me.txbBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbBusqueda.Location = New System.Drawing.Point(38, 71)
+        Me.txbBusqueda.Location = New System.Drawing.Point(35, 164)
         Me.txbBusqueda.Name = "txbBusqueda"
         Me.txbBusqueda.Size = New System.Drawing.Size(478, 31)
         Me.txbBusqueda.TabIndex = 59
@@ -364,6 +375,7 @@ Partial Class frmPlanTratamiento
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1179, 684)
+        Me.Controls.Add(Me.lblNombreP)
         Me.Controls.Add(Me.txbBusqueda)
         Me.Controls.Add(Me.btnMover)
         Me.Controls.Add(Me.Button1)
@@ -410,4 +422,5 @@ Partial Class frmPlanTratamiento
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btnMover As System.Windows.Forms.Button
     Friend WithEvents txbBusqueda As WindowsApplication1.WaterMarkTextBox
+    Friend WithEvents lblNombreP As System.Windows.Forms.Label
 End Class

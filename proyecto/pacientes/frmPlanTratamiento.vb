@@ -15,6 +15,8 @@ Public Class frmPlanTratamiento
         actAranceles()
         actArancelesSelect()
         dgvAranceles.Columns(2).Width = 100
+
+        lblNombreP.Text += frmPacientes.nombre + " " + frmPacientes.apellido
     End Sub
 
     Private Sub dgvAranceles_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvAranceles.CellClick
@@ -207,6 +209,8 @@ Public Class frmPlanTratamiento
             MsgBox("Guardado con éxito", MsgBoxStyle.Information)
             If ver = 1 Then
                 frmPacientes.Show()
+                frmPacientes.actTabla(frmPacientes.EstadoPacientes)
+                frmPacientes.actPanel()
             Else
                 frmMarcarCitaConcluida.actPlan()
                 frmMarcarCitaConcluida.Show()

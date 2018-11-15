@@ -1,7 +1,7 @@
 ﻿Public Class frmPacientes
 
     'EstadoPacientes es una variable utilizada para verificar si se muetran los pacientes activos o inactivos
-    Dim EstadoPacientes As Integer = 1
+    Public EstadoPacientes As Integer = 1
 
     Public nombre As String
     Public apellido As String
@@ -195,8 +195,8 @@
         'Guardamos en las variables los datos acordes
         id_p = dgvPacientes.CurrentRow.Cells(0).Value
         cedula = dgvPacientes.CurrentRow.Cells(1).Value
-        nombre = dgvPacientes.CurrentRow.Cells(3).Value
-        apellido = dgvPacientes.CurrentRow.Cells(4).Value
+        nombre = dgvPacientes.CurrentRow.Cells(4).Value
+        apellido = dgvPacientes.CurrentRow.Cells(3).Value
         nac = dgvPacientes.CurrentRow.Cells(2).Value
         telefono = dgvPacientes.CurrentRow.Cells(5).Value
 
@@ -239,7 +239,7 @@
 
         'Mostramos en Panel
         lblCedula.Text = cedula
-        lblNombre.Text = apellido + " " + nombre
+        lblNombre.Text = nombre + " " + apellido
         lblFechaNacimiento.Text = nac
         lblEnviadoPor.Text = enviado
         lblDireccionParticular.Text = direccion

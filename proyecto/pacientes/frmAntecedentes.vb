@@ -87,7 +87,7 @@
 
 
 
-
+        lblNombreP.Text += frmPacientes.nombre + " " + frmPacientes.apellido
     End Sub
 
 

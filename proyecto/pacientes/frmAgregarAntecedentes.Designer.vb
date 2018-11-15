@@ -139,7 +139,7 @@ Partial Class frmAgregarAntecedentes
         '
         Me.lblObservaciones.AutoSize = True
         Me.lblObservaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblObservaciones.Location = New System.Drawing.Point(388, 44)
+        Me.lblObservaciones.Location = New System.Drawing.Point(579, 41)
         Me.lblObservaciones.Name = "lblObservaciones"
         Me.lblObservaciones.Size = New System.Drawing.Size(181, 29)
         Me.lblObservaciones.TabIndex = 9
