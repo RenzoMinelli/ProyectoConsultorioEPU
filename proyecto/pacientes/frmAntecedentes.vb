@@ -87,13 +87,14 @@
 
 
 
-        lblNombreP.Text += frmPacientes.nombre + " " + frmPacientes.apellido
+        frmMenuInicio.lblNombreP.Text = "Paciente Seleccionado: " + frmPacientes.nombre + " " + frmPacientes.apellido
     End Sub
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         frmPacientes.Show()
         Me.Dispose()
+        frmMenuInicio.lblNombreP.Text = ""
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)

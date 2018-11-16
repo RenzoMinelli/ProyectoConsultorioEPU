@@ -364,7 +364,7 @@ Public Class frmRegistroMedico
         odontograma2()
 
         cbTratamientos.SelectedIndex = 0
-        lblNombreP.Text += vbNewLine + frmPacientes.nombre + " " + frmPacientes.apellido
+        frmMenuInicio.lblNombreP.Text = "Paciente Seleccionado: " + frmPacientes.nombre + " " + frmPacientes.apellido
     End Sub
 
     
@@ -2044,6 +2044,7 @@ Public Class frmRegistroMedico
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Dispose()
         frmPacientes.Show()
+        frmMenuInicio.lblNombreP.Text = ""
     End Sub
 
     Private Sub actTabla()

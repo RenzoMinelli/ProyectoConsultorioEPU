@@ -53,6 +53,7 @@ Partial Class frmMenuInicio
         Me.lblAranceles = New System.Windows.Forms.Label()
         Me.pbAranceles = New System.Windows.Forms.PictureBox()
         Me.pnlMenu = New System.Windows.Forms.Panel()
+        Me.lblNombreP = New System.Windows.Forms.Label()
         Me.pnlBarraSuperior.SuspendLayout()
         CType(Me.pbMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,6 +80,7 @@ Partial Class frmMenuInicio
         'pnlBarraSuperior
         '
         Me.pnlBarraSuperior.BackColor = System.Drawing.Color.RoyalBlue
+        Me.pnlBarraSuperior.Controls.Add(Me.lblNombreP)
         Me.pnlBarraSuperior.Controls.Add(Me.pbMaximizar)
         Me.pnlBarraSuperior.Controls.Add(Me.pbCerrar)
         Me.pnlBarraSuperior.Controls.Add(Me.pbMinimizar)
@@ -230,7 +232,6 @@ Partial Class frmMenuInicio
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel8.Controls.Add(Me.pbConexion)
         Me.Panel8.Controls.Add(Me.lblReloj)
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
@@ -240,7 +241,7 @@ Partial Class frmMenuInicio
         'pbConexion
         '
         Me.pbConexion.Image = Global.WindowsApplication1.My.Resources.Resources.X
-        Me.pbConexion.Location = New System.Drawing.Point(139, 6)
+        Me.pbConexion.Location = New System.Drawing.Point(13, 688)
         Me.pbConexion.Name = "pbConexion"
         Me.pbConexion.Size = New System.Drawing.Size(32, 29)
         Me.pbConexion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -340,6 +341,7 @@ Partial Class frmMenuInicio
         'pnlMenu
         '
         Me.pnlMenu.BackColor = System.Drawing.Color.LightGray
+        Me.pnlMenu.Controls.Add(Me.pbConexion)
         Me.pnlMenu.Controls.Add(Me.pnlAranceles)
         Me.pnlMenu.Controls.Add(Me.pnlFinanzas)
         Me.pnlMenu.Controls.Add(Me.pnlGraficas)
@@ -357,6 +359,16 @@ Partial Class frmMenuInicio
         Me.pnlMenu.Size = New System.Drawing.Size(174, 729)
         Me.pnlMenu.TabIndex = 5
         '
+        'lblNombreP
+        '
+        Me.lblNombreP.AutoSize = True
+        Me.lblNombreP.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombreP.ForeColor = System.Drawing.Color.White
+        Me.lblNombreP.Location = New System.Drawing.Point(6, 1)
+        Me.lblNombreP.Name = "lblNombreP"
+        Me.lblNombreP.Size = New System.Drawing.Size(0, 31)
+        Me.lblNombreP.TabIndex = 61
+        '
         'frmMenuInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -372,6 +384,7 @@ Partial Class frmMenuInicio
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Inicio"
         Me.pnlBarraSuperior.ResumeLayout(False)
+        Me.pnlBarraSuperior.PerformLayout()
         CType(Me.pbMaximizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -426,4 +439,5 @@ Partial Class frmMenuInicio
     Friend WithEvents pbCitas As System.Windows.Forms.PictureBox
     Friend WithEvents pbGraficas As System.Windows.Forms.PictureBox
     Friend WithEvents pbMaximizar As System.Windows.Forms.PictureBox
+    Friend WithEvents lblNombreP As System.Windows.Forms.Label
 End Class

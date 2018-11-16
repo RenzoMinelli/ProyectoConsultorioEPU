@@ -53,7 +53,6 @@ Partial Class frmAntecedentes
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.lblNombreP = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -370,22 +369,11 @@ Partial Class frmAntecedentes
         Me.TextBox1.Size = New System.Drawing.Size(581, 269)
         Me.TextBox1.TabIndex = 54
         '
-        'lblNombreP
-        '
-        Me.lblNombreP.AutoSize = True
-        Me.lblNombreP.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombreP.Location = New System.Drawing.Point(12, 9)
-        Me.lblNombreP.Name = "lblNombreP"
-        Me.lblNombreP.Size = New System.Drawing.Size(328, 31)
-        Me.lblNombreP.TabIndex = 61
-        Me.lblNombreP.Text = "Paciente Seleccionado: "
-        '
         'frmAntecedentes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1179, 684)
-        Me.Controls.Add(Me.lblNombreP)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label19)
@@ -465,5 +453,4 @@ Partial Class frmAntecedentes
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents lblNombreP As System.Windows.Forms.Label
 End Class

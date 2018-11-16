@@ -68,6 +68,7 @@
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblGraficas.ForeColor = Color.RoyalBlue
         frmPacientes.dgvPacientes.ClearSelection()
+        lblNombreP.Text = ""
 
     End Sub
 
@@ -84,6 +85,7 @@
         lblCitas.ForeColor = Color.RoyalBlue
         frmAranceles.dgvAranceles.ClearSelection()
         frmAranceles.dgvArancelesUtilizados.ClearSelection()
+        lblNombreP.Text = ""
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCitas.Click
@@ -97,7 +99,7 @@
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
         lblGraficas.ForeColor = Color.RoyalBlue
-
+        lblNombreP.Text = ""
 
     End Sub
 
@@ -171,7 +173,7 @@
         lblAranceles.ForeColor = Color.RoyalBlue
         lblGraficas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
-
+        lblNombreP.Text = ""
     End Sub
 
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPacientes.Click
@@ -186,6 +188,7 @@
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblGraficas.ForeColor = Color.RoyalBlue
         frmPacientes.dgvPacientes.ClearSelection()
+        lblNombreP.Text = ""
     End Sub
 
     Private Sub Panel8_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel8.MouseDown
@@ -240,6 +243,7 @@
         lblCitas.ForeColor = Color.RoyalBlue
         frmAranceles.dgvAranceles.ClearSelection()
         frmAranceles.dgvArancelesUtilizados.ClearSelection()
+        lblNombreP.Text = ""
     End Sub
 
 
@@ -255,6 +259,7 @@
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblGraficas.ForeColor = Color.RoyalBlue
         frmPacientes.dgvPacientes.ClearSelection()
+        lblNombreP.Text = ""
     End Sub
 
     Private Sub Panel9_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlCitas.Click
@@ -268,6 +273,7 @@
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
         lblGraficas.ForeColor = Color.RoyalBlue
+        lblNombreP.Text = ""
     End Sub
 
 
@@ -284,6 +290,7 @@
         lblCitas.ForeColor = Color.RoyalBlue
         frmAranceles.dgvAranceles.ClearSelection()
         frmAranceles.dgvArancelesUtilizados.ClearSelection()
+        lblNombreP.Text = ""
     End Sub
 
     Private Sub Panel13_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlFinanzas.Click
@@ -297,6 +304,7 @@
         lblAranceles.ForeColor = Color.RoyalBlue
         lblGraficas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
+        lblNombreP.Text = ""
     End Sub
 
 
@@ -311,7 +319,7 @@
         lblAranceles.ForeColor = Color.RoyalBlue
         lblGraficas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.RoyalBlue
-
+        lblNombreP.Text = ""
     End Sub
 
     Private Sub PictureBox9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbMaximizar.Click
@@ -355,6 +363,7 @@
         lblFinanzas.ForeColor = Color.RoyalBlue
         lblCitas.ForeColor = Color.White
         lblGraficas.ForeColor = Color.RoyalBlue
+        lblNombreP.Text = ""
     End Sub
 
     Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblGraficas.Click
@@ -370,6 +379,7 @@
         lblCitas.ForeColor = Color.RoyalBlue
         frmAranceles.dgvAranceles.ClearSelection()
         frmAranceles.dgvArancelesUtilizados.ClearSelection()
+        lblNombreP.Text = ""
     End Sub
     Private Sub pbGraficas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbGraficas.Click
         Me.ActiveMdiChild.Dispose()
@@ -384,6 +394,7 @@
         lblCitas.ForeColor = Color.RoyalBlue
         frmAranceles.dgvAranceles.ClearSelection()
         frmAranceles.dgvArancelesUtilizados.ClearSelection()
+        lblNombreP.Text = ""
     End Sub
 
     Private Sub pnlGraficas_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnlGraficas.Click
@@ -399,5 +410,6 @@
         lblCitas.ForeColor = Color.RoyalBlue
         frmAranceles.dgvAranceles.ClearSelection()
         frmAranceles.dgvArancelesUtilizados.ClearSelection()
+        lblNombreP.Text = ""
     End Sub
 End Class

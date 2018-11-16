@@ -15,8 +15,13 @@ Public Class frmPlanTratamiento
         actAranceles()
         actArancelesSelect()
         dgvAranceles.Columns(2).Width = 100
-
-        lblNombreP.Text += frmPacientes.nombre + " " + frmPacientes.apellido
+        Consulta = "select concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'nombre' from paciente where id_p = '" + id_p.ToString + "';"
+        consultar()
+        For Each row In Tabla.Rows
+            frmPacientes.nombre = row(1)
+            frmPacientes.apellido = row(0)
+        Next
+        frmMenuInicio.lblNombreP.Text = "Paciente Seleccionado: " + frmPacientes.nombre + " " + frmPacientes.apellido
     End Sub
 
     Private Sub dgvAranceles_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvAranceles.CellClick
@@ -330,7 +335,7 @@ Public Class frmPlanTratamiento
 
             frmMarcarCitaConcluida.Show()
         End If
-
+        frmMenuInicio.lblNombreP.Text = ""
 
     End Sub
 
