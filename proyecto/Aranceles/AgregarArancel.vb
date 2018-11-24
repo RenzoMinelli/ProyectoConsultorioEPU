@@ -5,6 +5,9 @@
         Dim costo As String = TextBox2.Text
         If nombre = "" Or costo = "" Then
             MsgBox("Complete los campos", MsgBoxStyle.Exclamation)
+
+        ElseIf Not IsNumeric(costo) Then
+            MsgBox("El costo debe ser un número")
         Else
 
             Try

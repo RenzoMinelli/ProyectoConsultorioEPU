@@ -22,21 +22,13 @@ Partial Class AgregarArancel
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New WindowsApplication1.WaterMarkTextBox()
+        Me.TextBox2 = New WindowsApplication1.WaterMarkTextBox()
         Me.SuspendLayout()
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(203, 50)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(209, 29)
-        Me.TextBox1.TabIndex = 3
         '
         'Label3
         '
@@ -47,14 +39,6 @@ Partial Class AgregarArancel
         Me.Label3.Size = New System.Drawing.Size(68, 25)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Costo"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(203, 124)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(209, 29)
-        Me.TextBox2.TabIndex = 4
         '
         'Button2
         '
@@ -92,17 +76,37 @@ Partial Class AgregarArancel
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Descripción"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(162, 50)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(250, 31)
+        Me.TextBox1.TabIndex = 8
+        Me.TextBox1.WaterMarkColor = System.Drawing.Color.Gray
+        Me.TextBox1.WaterMarkText = "Ej: Moldura"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(162, 126)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(250, 31)
+        Me.TextBox2.TabIndex = 9
+        Me.TextBox2.WaterMarkColor = System.Drawing.Color.Gray
+        Me.TextBox2.WaterMarkText = "Ej: 250"
+        '
         'AgregarArancel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(424, 268)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "AgregarArancel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -111,10 +115,10 @@ Partial Class AgregarArancel
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As WindowsApplication1.WaterMarkTextBox
+    Friend WithEvents TextBox2 As WindowsApplication1.WaterMarkTextBox
 End Class

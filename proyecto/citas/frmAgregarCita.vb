@@ -9,7 +9,10 @@
 
     Private Sub agregarcitas2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        txbFechaHora.Text = frmCitas.fechaCita + "   " + frmCitas.horaCita
+        Dim fecha As Date = frmCitas.fechaCita
+
+        txbFechaHora.Text = fecha.ToString("dd/MM/yyyy") + "   " + frmCitas.horaCita
+
         txbDuracion.Text = "1"
 
 
@@ -17,12 +20,12 @@
 
         Try
 
-            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente where estado = '1' order by apellido asc;"
+            Consulta = "Select concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'Apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'Nombre', cedula as 'Cedula' ,id_p from paciente where estado = '1' order by apellido asc;"
             consultar()
             dgvPacientes.DataSource = Tabla
             dgvPacientes.Columns(3).Visible = False
 
-
+            dgvPacientes.Columns(2).HeaderText = "Cédula"
 
         Catch ex As Exception
 
@@ -32,11 +35,10 @@
 
            
 
-            Consulta = "Select apellido as 'Apellido', nombre as 'Nombre', fecha as 'Fecha', hora as 'Hora', duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + frmCitas.fechaCita + "';"
+            Consulta = "Select concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'Apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'Nombre', fecha as 'Fecha', hora as 'Hora', duracion from cita c inner join paciente p on c.id_p = p.id_p where fecha = '" + frmCitas.fechaCita + "';"
             consultar()
             dgvCitasEnLaFecha.DataSource = Tabla
-
-
+            
         Catch ex As Exception
 
         End Try
@@ -54,6 +56,8 @@
             Consulta = "select a.descripcion as 'Descripcion General', pl.descripcion as 'Descripcion Especifica' from plan_tratamiento pl inner join aranceles a on pl.id_a = a.id_a where id_p = '" + id_p.ToString + "' and terminado = '0';"
             consultar()
             dgvTratamientos.DataSource = Tabla
+            dgvTratamientos.Columns(0).HeaderText = "Descripción General"
+            dgvTratamientos.Columns(1).HeaderText = "Descripción Específica"
         Catch ex As Exception
 
         End Try
@@ -186,59 +190,26 @@
     End Sub
 
 
-
-
-    Private Sub txbBusqueda_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txbBusqueda.KeyDown
-
-        'Si el contenido de txbBusqueda es Buscar, de color gris y la tecla presionada no es 
-        If e.KeyCode = Keys.Back And txbBusqueda.Text.Length = 1 Then
-
-            actTabla()
-
-
-            'Si la tecla presionada es borrar y todo el texto esta seleccionado
-        ElseIf e.KeyCode = Keys.Back And txbBusqueda.SelectedText = txbBusqueda.Text Then
-
-
-            actTabla()
-
-        End If
-    End Sub
+   
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txbBusqueda.TextChanged
 
-        'Cuando el contenido de txbBusqueda cambia, guardamos lo ingresado en la variable busqueda
-        Dim busqueda As String = txbBusqueda.Text
 
-      
+        actTabla()
 
-            'Intentamos obtener los pacientes que cumplan con las condición
-            Try
+
+    End Sub
+    Private Sub actTabla()
+        'Intentamos obtener los pacientes que cumplan con las condición
+        Try
 
             Consulta = "Select  concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'Apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'Nombre', cedula as 'Cedula' ,id_p from paciente where (cedula like '" + txbBusqueda.Text + "%' or nombre like '" + txbBusqueda.Text + "%' or apellido like '" + txbBusqueda.Text + "%' ) and estado = '1'  order by apellido asc;"
             consultar()
             dgvPacientes.DataSource = Tabla
             dgvPacientes.ClearSelection()
-
-            Catch ex As Exception
-
-                'Si se genera una excepción que se muestre una alerta
-                MsgBox("Error al buscar los pacientes", MsgBoxStyle.Exclamation)
-
-            End Try
-
-
-
-    End Sub
-    Private Sub actTabla()
-        Try
-
-            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente where estado = '1'  order by apellido asc ;"
-            consultar()
-            dgvPacientes.DataSource = Tabla
-            dgvPacientes.Columns(3).Visible = False
-
+            dgvPacientes.Columns(2).HeaderText = "Cédula"
         Catch ex As Exception
 
+            'Si se genera una excepción que se muestre una alerta
             MsgBox("Error al buscar los pacientes", MsgBoxStyle.Exclamation)
 
         End Try
