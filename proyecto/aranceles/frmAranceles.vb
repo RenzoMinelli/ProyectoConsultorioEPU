@@ -51,7 +51,7 @@
             MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)
         Else
             Try
-                Consulta = " update aranceles set estado = 0 where id_a = " + Str(id) + ""
+                Consulta = "update aranceles set estado = 0 where id_a = " + Str(id) + ""
                 consultar()
                 Consulta = "select * from aranceles where estado = 1"
                 consultar()
@@ -62,7 +62,7 @@
                 btnEliminar.Hide()
                 MsgBox("Eliminado satisfactoriamente", MsgBoxStyle.Information)
             Catch ex As Exception
-                MsgBox("Error al Eliminar Arancel", MsgBoxStyle.Exclamation)
+                MsgBox("Error al eliminar Arancel", MsgBoxStyle.Exclamation)
             End Try
         End If
       

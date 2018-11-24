@@ -686,7 +686,8 @@
         Dim numero As Integer = 0
 
         Try
-            Consulta = "select count(*) from plan_tratamiento WHERE id_a is not NULL group by id_a ;"
+            Consulta = "select count(*) from plan_tratamiento WHERE id_a is not NULL  group by id_a ;"
+
             consultar()
 
             For Each row In Tabla.Rows

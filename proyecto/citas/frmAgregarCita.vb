@@ -214,7 +214,7 @@
             'Intentamos obtener los pacientes que cumplan con las condición
             Try
 
-            Consulta = "Select nombre as 'Nombre', apellido as 'Apellido', cedula as 'Cedula' ,id_p from paciente where (cedula like '" + txbBusqueda.Text + "%' or nombre like '" + txbBusqueda.Text + "%' or apellido like '" + txbBusqueda.Text + "%' ) and estado = '1'  order by apellido asc;"
+            Consulta = "Select  concat(upper(left(apellido,1)), lower(substring(apellido from 2))) as 'Apellido', concat(upper(left(nombre,1)), lower(substring(nombre from 2))) as 'Nombre', cedula as 'Cedula' ,id_p from paciente where (cedula like '" + txbBusqueda.Text + "%' or nombre like '" + txbBusqueda.Text + "%' or apellido like '" + txbBusqueda.Text + "%' ) and estado = '1'  order by apellido asc;"
             consultar()
             dgvPacientes.DataSource = Tabla
             dgvPacientes.ClearSelection()

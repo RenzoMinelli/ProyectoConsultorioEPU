@@ -2,22 +2,28 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim nombre As String = TextBox1.Text
-
         Dim costo As String = TextBox2.Text
-        Try
-            Consulta = "insert into aranceles (descripcion, costo,estado) values ('" + nombre + "','" + costo + "',1);"
-            consultar()
+        If nombre = "" Or costo = "" Then
+            MsgBox("Complete los campos", MsgBoxStyle.Exclamation)
+        Else
 
-            'actualizo la tabla
+            Try
+                Consulta = "insert into aranceles (descripcion, costo,estado) values ('" + nombre + "','" + costo + "',1);"
+                consultar()
 
-            Consulta = "select * from aranceles where estado = 1"
-            consultar()
-            frmAranceles.dgvAranceles.DataSource = Tabla
-            Me.Dispose()
-            frmAranceles.Show()
-        Catch ex As Exception
-            MsgBox("Error al agregar un arancel", MsgBoxStyle.Exclamation)
-        End Try
+                'actualizo la tabla
+
+                Consulta = "select * from aranceles where estado = 1"
+                consultar()
+                frmAranceles.dgvAranceles.DataSource = Tabla
+                Me.Dispose()
+                frmAranceles.Show()
+            Catch ex As Exception
+                MsgBox("Error al agregar un arancel", MsgBoxStyle.Exclamation)
+            End Try
+
+        End If
+       
 
 
     End Sub

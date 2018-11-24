@@ -28,6 +28,7 @@ Partial Class frmRealizarPago
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.txbBuscar = New WindowsApplication1.WaterMarkTextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -37,6 +38,7 @@ Partial Class frmRealizarPago
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
@@ -55,19 +57,19 @@ Partial Class frmRealizarPago
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView1.Location = New System.Drawing.Point(64, 96)
+        Me.DataGridView1.Location = New System.Drawing.Point(27, 135)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(918, 307)
+        Me.DataGridView1.Size = New System.Drawing.Size(1119, 307)
         Me.DataGridView1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(321, 30)
+        Me.Label1.Location = New System.Drawing.Point(343, 27)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(372, 25)
         Me.Label1.TabIndex = 1
@@ -78,7 +80,7 @@ Partial Class frmRealizarPago
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.IconoPagar
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(800, 460)
+        Me.Button1.Location = New System.Drawing.Point(815, 479)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(182, 61)
         Me.Button1.TabIndex = 2
@@ -91,7 +93,7 @@ Partial Class frmRealizarPago
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.IconoFlechaIzquierda
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(64, 460)
+        Me.Button2.Location = New System.Drawing.Point(12, 500)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(126, 61)
         Me.Button2.TabIndex = 3
@@ -99,11 +101,22 @@ Partial Class frmRealizarPago
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'txbBuscar
+        '
+        Me.txbBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbBuscar.Location = New System.Drawing.Point(331, 80)
+        Me.txbBuscar.Name = "txbBuscar"
+        Me.txbBuscar.Size = New System.Drawing.Size(409, 31)
+        Me.txbBuscar.TabIndex = 4
+        Me.txbBuscar.WaterMarkColor = System.Drawing.Color.Gray
+        Me.txbBuscar.WaterMarkText = "Buscar Paciente"
+        '
         'frmRealizarPago
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1040, 607)
+        Me.ClientSize = New System.Drawing.Size(1179, 684)
+        Me.Controls.Add(Me.txbBuscar)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
@@ -120,4 +133,5 @@ Partial Class frmRealizarPago
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents txbBuscar As WindowsApplication1.WaterMarkTextBox
 End Class

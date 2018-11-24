@@ -931,7 +931,7 @@ Partial Class pnlfondo
         'PnlDiente21c3
         '
         Me.PnlDiente21c3.BackColor = System.Drawing.Color.White
-        Me.PnlDiente21c3.Location = New System.Drawing.Point(554, 90)
+        Me.PnlDiente21c3.Location = New System.Drawing.Point(559, 90)
         Me.PnlDiente21c3.Name = "PnlDiente21c3"
         Me.PnlDiente21c3.Size = New System.Drawing.Size(37, 20)
         Me.PnlDiente21c3.TabIndex = 178
@@ -947,7 +947,7 @@ Partial Class pnlfondo
         'PnlDiente21c2
         '
         Me.PnlDiente21c2.BackColor = System.Drawing.Color.White
-        Me.PnlDiente21c2.Location = New System.Drawing.Point(575, 76)
+        Me.PnlDiente21c2.Location = New System.Drawing.Point(580, 76)
         Me.PnlDiente21c2.Name = "PnlDiente21c2"
         Me.PnlDiente21c2.Size = New System.Drawing.Size(18, 34)
         Me.PnlDiente21c2.TabIndex = 180
@@ -963,7 +963,7 @@ Partial Class pnlfondo
         'PnlDiente21c4
         '
         Me.PnlDiente21c4.BackColor = System.Drawing.Color.White
-        Me.PnlDiente21c4.Location = New System.Drawing.Point(552, 76)
+        Me.PnlDiente21c4.Location = New System.Drawing.Point(557, 76)
         Me.PnlDiente21c4.Name = "PnlDiente21c4"
         Me.PnlDiente21c4.Size = New System.Drawing.Size(18, 34)
         Me.PnlDiente21c4.TabIndex = 181
@@ -1051,7 +1051,7 @@ Partial Class pnlfondo
         'PnlDiente21c1
         '
         Me.PnlDiente21c1.BackColor = System.Drawing.Color.White
-        Me.PnlDiente21c1.Location = New System.Drawing.Point(555, 74)
+        Me.PnlDiente21c1.Location = New System.Drawing.Point(560, 74)
         Me.PnlDiente21c1.Name = "PnlDiente21c1"
         Me.PnlDiente21c1.Size = New System.Drawing.Size(35, 22)
         Me.PnlDiente21c1.TabIndex = 179
@@ -1059,7 +1059,7 @@ Partial Class pnlfondo
         'PnlDiente11c1
         '
         Me.PnlDiente11c1.BackColor = System.Drawing.Color.White
-        Me.PnlDiente11c1.Location = New System.Drawing.Point(503, 73)
+        Me.PnlDiente11c1.Location = New System.Drawing.Point(499, 73)
         Me.PnlDiente11c1.Name = "PnlDiente11c1"
         Me.PnlDiente11c1.Size = New System.Drawing.Size(35, 22)
         Me.PnlDiente11c1.TabIndex = 175
@@ -1067,7 +1067,7 @@ Partial Class pnlfondo
         'PnlDiente11c3
         '
         Me.PnlDiente11c3.BackColor = System.Drawing.Color.White
-        Me.PnlDiente11c3.Location = New System.Drawing.Point(502, 89)
+        Me.PnlDiente11c3.Location = New System.Drawing.Point(498, 89)
         Me.PnlDiente11c3.Name = "PnlDiente11c3"
         Me.PnlDiente11c3.Size = New System.Drawing.Size(37, 20)
         Me.PnlDiente11c3.TabIndex = 174
@@ -1075,7 +1075,7 @@ Partial Class pnlfondo
         'PnlDiente11c4
         '
         Me.PnlDiente11c4.BackColor = System.Drawing.Color.White
-        Me.PnlDiente11c4.Location = New System.Drawing.Point(500, 75)
+        Me.PnlDiente11c4.Location = New System.Drawing.Point(496, 75)
         Me.PnlDiente11c4.Name = "PnlDiente11c4"
         Me.PnlDiente11c4.Size = New System.Drawing.Size(18, 34)
         Me.PnlDiente11c4.TabIndex = 177
@@ -1083,7 +1083,7 @@ Partial Class pnlfondo
         'PnlDiente11c2
         '
         Me.PnlDiente11c2.BackColor = System.Drawing.Color.White
-        Me.PnlDiente11c2.Location = New System.Drawing.Point(523, 75)
+        Me.PnlDiente11c2.Location = New System.Drawing.Point(519, 75)
         Me.PnlDiente11c2.Name = "PnlDiente11c2"
         Me.PnlDiente11c2.Size = New System.Drawing.Size(18, 34)
         Me.PnlDiente11c2.TabIndex = 176

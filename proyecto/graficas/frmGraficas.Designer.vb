@@ -95,7 +95,7 @@ Partial Class frmGraficas
         Series1.Legend = "Legend1"
         Series1.Name = "Número de Pacientes"
         Me.grafica.Series.Add(Series1)
-        Me.grafica.Size = New System.Drawing.Size(990, 533)
+        Me.grafica.Size = New System.Drawing.Size(990, 635)
         Me.grafica.TabIndex = 0
         Me.grafica.Text = "Chart1"
         '
