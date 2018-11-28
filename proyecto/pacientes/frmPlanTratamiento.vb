@@ -25,11 +25,11 @@ Public Class frmPlanTratamiento
     End Sub
 
     Private Sub dgvAranceles_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvAranceles.CellClick
-        btnMover.Visible = True
-        btnEliminar.Visible = False
-        btnModificarPrecio.Visible = False
-        btnModificarDesc.Visible = False
-        btnMarcar.Visible = False
+        btnMover.Enabled = True
+        btnEliminar.Enabled = False
+        btnModificarPrecio.Enabled = False
+        btnModificarDesc.Enabled = False
+        btnMarcar.Enabled = False
     End Sub
 
     Private Sub dgvAranceles_MouseDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgvAranceles.MouseDoubleClick
@@ -43,11 +43,11 @@ Public Class frmPlanTratamiento
         id_Arancel = dgvArancelesSelect.CurrentRow.Cells(0).Value
         descEsp = dgvArancelesSelect.CurrentRow.Cells(3).Value
 
-        btnEliminar.Visible = True
-        btnModificarPrecio.Visible = True
-        btnModificarDesc.Visible = True
-        btnMarcar.Visible = True
-        btnMover.Visible = False
+        btnEliminar.Enabled = True
+        btnModificarPrecio.Enabled = True
+        btnModificarDesc.Enabled = True
+        btnMarcar.Enabled = True
+        btnMover.Enabled = False
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
@@ -82,10 +82,10 @@ Public Class frmPlanTratamiento
 
             If dgvArancelesSelect.RowCount = 0 Then
 
-                btnEliminar.Visible = False
-                btnModificarPrecio.Visible = False
-                btnModificarDesc.Visible = False
-                btnMarcar.Visible = False
+                btnEliminar.Enabled = False
+                btnModificarPrecio.Enabled = False
+                btnModificarDesc.Enabled = False
+                btnMarcar.Enabled = False
             End If
         Else
             MsgBox("Ningún cambio fue realizado", MsgBoxStyle.Information)

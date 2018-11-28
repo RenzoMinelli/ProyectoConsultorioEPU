@@ -121,14 +121,17 @@
   <data name="checkmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoImprimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\34091(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="letterx_87521" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\letterx_87521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconoAranceles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money-bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoAgrear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1600 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoEditar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\500px-Edit_font_awesome.svg(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="calendario_borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendario_borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,15 +142,6 @@
   <data name="IconoCerrar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\media(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoConexion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\70002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IconoEditarDoc2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\índice(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IconoMoneda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fac159a300a5cd5efbd3c544cb37d3b0(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="calendario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,14 +151,14 @@
   <data name="IconoAgregarDoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\56238.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoModificarUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Users-Edit-User-icon (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoDientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\65570 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoPagar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\banknotes(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoConexion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\70002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoMarcarListo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\read_consent_to_tick_icon_461639(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconoMinimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimize-window.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +166,11 @@
   <data name="IconoFlechaDercha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\right-arrow1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoSubirArchivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\upload-file_icon-icons.com_56026 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoMarcarListo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\read_consent_to_tick_icon_461639(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rambocursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rambocursor.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,23 +181,29 @@
   <data name="IconoFinazas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\64979.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoBorrar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IconoPacientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\25437.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconoVistaNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_509774(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IconoVolverInactivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\675024_delete_512x512(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoAgregarCita2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\42954 (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel_exit_cross_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_exit_cross_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_509774" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_509774.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoPagar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banknotes(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconoModificarArchivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +211,8 @@
   <data name="calendario_guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendario_guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoVolverInactivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\675024_delete_512x512(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoMoneda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fac159a300a5cd5efbd3c544cb37d3b0(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="notebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,8 +223,11 @@
   <data name="users_21945" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users_21945.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoEditar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\500px-Edit_font_awesome.svg(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoEditarGraf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrench-and-nut_icon-icons.com_70326(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoImprimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\34091(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,31 +235,28 @@
   <data name="IconoModificarDoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\índice(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoAgrear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1600 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoModificarUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Users-Edit-User-icon (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconoCerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\índice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoEditarGraf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wrench-and-nut_icon-icons.com_70326(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoEditarDoc2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\índice(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cancel_exit_cross_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel_exit_cross_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoBorrar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconoFlechaIzquierda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circled-left-2(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoAgregarCita2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\42954 (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoSubirArchivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upload-file_icon-icons.com_56026 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconoVistaMaximizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximize-window(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconoDientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\65570 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="overtime (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overtime (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

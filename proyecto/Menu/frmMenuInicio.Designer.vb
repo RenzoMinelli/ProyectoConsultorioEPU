@@ -26,6 +26,7 @@ Partial Class frmMenuInicio
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMenuInicio))
         Me.tmrReloj = New System.Windows.Forms.Timer(Me.components)
         Me.pnlBarraSuperior = New System.Windows.Forms.Panel()
+        Me.lblNombreP = New System.Windows.Forms.Label()
         Me.pbMaximizar = New System.Windows.Forms.PictureBox()
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
         Me.pbMinimizar = New System.Windows.Forms.PictureBox()
@@ -53,7 +54,6 @@ Partial Class frmMenuInicio
         Me.lblAranceles = New System.Windows.Forms.Label()
         Me.pbAranceles = New System.Windows.Forms.PictureBox()
         Me.pnlMenu = New System.Windows.Forms.Panel()
-        Me.lblNombreP = New System.Windows.Forms.Label()
         Me.pnlBarraSuperior.SuspendLayout()
         CType(Me.pbMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -90,6 +90,16 @@ Partial Class frmMenuInicio
         Me.pnlBarraSuperior.Size = New System.Drawing.Size(1176, 38)
         Me.pnlBarraSuperior.TabIndex = 7
         '
+        'lblNombreP
+        '
+        Me.lblNombreP.AutoSize = True
+        Me.lblNombreP.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombreP.ForeColor = System.Drawing.Color.White
+        Me.lblNombreP.Location = New System.Drawing.Point(6, 1)
+        Me.lblNombreP.Name = "lblNombreP"
+        Me.lblNombreP.Size = New System.Drawing.Size(0, 31)
+        Me.lblNombreP.TabIndex = 61
+        '
         'pbMaximizar
         '
         Me.pbMaximizar.Image = Global.WindowsApplication1.My.Resources.Resources.IconoVistaMaximizar
@@ -121,11 +131,11 @@ Partial Class frmMenuInicio
         '
         Me.lblReloj.AutoSize = True
         Me.lblReloj.BackColor = System.Drawing.Color.Transparent
-        Me.lblReloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblReloj.ForeColor = System.Drawing.Color.White
-        Me.lblReloj.Location = New System.Drawing.Point(12, 3)
+        Me.lblReloj.Location = New System.Drawing.Point(20, 3)
         Me.lblReloj.Name = "lblReloj"
-        Me.lblReloj.Size = New System.Drawing.Size(103, 29)
+        Me.lblReloj.Size = New System.Drawing.Size(120, 31)
         Me.lblReloj.TabIndex = 9
         Me.lblReloj.Text = "00:00:00"
         '
@@ -171,10 +181,11 @@ Partial Class frmMenuInicio
         '
         'pbCitas
         '
-        Me.pbCitas.Image = Global.WindowsApplication1.My.Resources.Resources.notebook
+        Me.pbCitas.Image = Global.WindowsApplication1.My.Resources.Resources.overtime__1_
         Me.pbCitas.Location = New System.Drawing.Point(6, 0)
         Me.pbCitas.Name = "pbCitas"
-        Me.pbCitas.Size = New System.Drawing.Size(35, 39)
+        Me.pbCitas.Size = New System.Drawing.Size(28, 32)
+        Me.pbCitas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbCitas.TabIndex = 25
         Me.pbCitas.TabStop = False
         '
@@ -358,16 +369,6 @@ Partial Class frmMenuInicio
         Me.pnlMenu.Name = "pnlMenu"
         Me.pnlMenu.Size = New System.Drawing.Size(174, 729)
         Me.pnlMenu.TabIndex = 5
-        '
-        'lblNombreP
-        '
-        Me.lblNombreP.AutoSize = True
-        Me.lblNombreP.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombreP.ForeColor = System.Drawing.Color.White
-        Me.lblNombreP.Location = New System.Drawing.Point(6, 1)
-        Me.lblNombreP.Name = "lblNombreP"
-        Me.lblNombreP.Size = New System.Drawing.Size(0, 31)
-        Me.lblNombreP.TabIndex = 61
         '
         'frmMenuInicio
         '
