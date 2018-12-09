@@ -118,7 +118,7 @@ Partial Class frmIngresarPaciente
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.Image = Global.WindowsApplication1.My.Resources.Resources.checkmark
         Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAgregar.Location = New System.Drawing.Point(499, 550)
+        Me.btnAgregar.Location = New System.Drawing.Point(824, 550)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(146, 63)
         Me.btnAgregar.TabIndex = 10

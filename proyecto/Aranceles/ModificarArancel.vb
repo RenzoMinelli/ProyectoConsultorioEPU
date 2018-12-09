@@ -4,11 +4,13 @@
         Consulta = "update aranceles set descripcion = '" + TextBox1.Text + "', costo = '" + TextBox2.Text + "' where id_a = " + Str(id) + " and estado = 1;"
         consultar()
         frmAranceles.Show()
+        frmFondoTransparente.Dispose()
         Me.Dispose()
 
         Consulta = "select * from aranceles where estado = 1"
         consultar()
         frmAranceles.dgvAranceles.DataSource = Tabla
+        frmFondoTransparente.Dispose()
         Me.Dispose()
         frmAranceles.Show()
     End Sub
@@ -41,6 +43,7 @@
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        frmFondoTransparente.Dispose()
         Me.Dispose()
     End Sub
 

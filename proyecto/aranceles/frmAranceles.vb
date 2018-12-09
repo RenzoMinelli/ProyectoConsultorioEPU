@@ -78,13 +78,14 @@
 
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
+        frmFondoTransparente.Show()
         ModificarArancel.Show()
 
     End Sub
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
-
+        frmFondoTransparente.Show()
         AgregarArancel.Show()
 
     End Sub

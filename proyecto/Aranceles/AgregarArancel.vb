@@ -19,6 +19,7 @@
                 Consulta = "select * from aranceles where estado = 1"
                 consultar()
                 frmAranceles.dgvAranceles.DataSource = Tabla
+                frmFondoTransparente.Dispose()
                 Me.Dispose()
                 frmAranceles.Show()
             Catch ex As Exception
@@ -36,7 +37,8 @@
 
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Hide()
+        frmFondoTransparente.Dispose()
+        Me.Dispose()
         frmAranceles.Show()
     End Sub
 
