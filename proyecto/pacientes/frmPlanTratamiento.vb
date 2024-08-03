@@ -10,7 +10,8 @@ Public Class frmPlanTratamiento
 
     Private Sub PlanTratamiento_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         btnMover.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
-       
+        btnMover.Visible = True
+        btnMover.Enabled = False
 
         actAranceles()
         actArancelesSelect()
@@ -33,7 +34,7 @@ Public Class frmPlanTratamiento
     End Sub
 
     Private Sub dgvAranceles_MouseDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dgvAranceles.MouseDoubleClick
-        btnMover.Visible = True
+        btnMover.Enabled = True
         btnMover.PerformClick()
 
     End Sub
