@@ -49,7 +49,6 @@ Module ModuloUtilidades
             MysqlConexion.Close()
             conex = True
         Catch ex As Exception
-
             conex = False
         End Try
 
