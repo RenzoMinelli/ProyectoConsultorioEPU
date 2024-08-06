@@ -1,18 +1,27 @@
 ﻿Public Class ModificarArancel
     Dim id As Integer = frmAranceles.id
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Consulta = "update aranceles set descripcion = '" + TextBox1.Text + "', costo = '" + TextBox2.Text + "' where id_a = " + Str(id) + " and estado = 1;"
-        consultar()
-        frmAranceles.Show()
-        frmFondoTransparente.Dispose()
-        Me.Dispose()
+        Dim nombre As String = TextBox1.Text
+        Dim costo As String = TextBox2.Text
 
-        Consulta = "select * from aranceles where estado = 1"
-        consultar()
-        frmAranceles.dgvAranceles.DataSource = Tabla
-        frmFondoTransparente.Dispose()
-        Me.Dispose()
-        frmAranceles.Show()
+        If nombre = "" Or costo = "" Then
+            MsgBox("Complete los campos", MsgBoxStyle.Exclamation)
+        ElseIf Not IsNumeric(costo) Then
+            MsgBox("El costo debe ser un número")
+        Else
+            Consulta = "update aranceles set descripcion = '" + nombre + "', costo = '" + costo + "' where id_a = " + Str(id) + " and estado = 1;"
+            consultar()
+            frmAranceles.Show()
+            frmFondoTransparente.Dispose()
+            Me.Dispose()
+
+            Consulta = "select * from aranceles where estado = 1"
+            consultar()
+            frmAranceles.dgvAranceles.DataSource = Tabla
+            frmFondoTransparente.Dispose()
+            Me.Dispose()
+            frmAranceles.Show()
+        End If
     End Sub
 
     Private Sub Form3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
