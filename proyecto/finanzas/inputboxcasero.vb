@@ -3,8 +3,8 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim monto As String = TextBox1.Text
 
-       
-            If TextBox1.Text <> "" And IsNumeric(TextBox1.Text) Then
+
+        If TextBox1.Text <> "" And IsNumeric(TextBox1.Text) Then
 
             MuestraMsgBoxVersatil("¿Confirma que el paciente depositó $" + monto + " ?", 0)
             If respint = 2 Then
